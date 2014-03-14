@@ -1,61 +1,4 @@
 {
-  "projectMgmt": {  // ADIwg extension
-    "projectId": "",
-    "projectRecordComplete": "",
-    "projectIsLocatable": "",
-    "dataAvailable": "",
-    "projectMetadataLastUpdated": "",
-    "shortAbstract": "",
-    "editLink": ""
-  },
-  "associativeResource": [ // ADIwg extension
-    {
-      "name": {
-        "citation": {
-          "title": "",
-          "date": [
-            {
-              "date": "",
-              "dateType": ""
-            }
-          ],
-          "edition": "",
-          "citedResponsibleParty": [
-            {
-              "contactId": "",
-              "role": ""
-            }
-          ],
-          "presentationForm": "",
-          "isbn": "",
-          "issn": ""
-        }
-      },
-      "associationType": "",
-      "initiativeType": "",
-      "metadataReference": {
-        "citation": {
-          "title": "",
-          "date": [
-            {
-              "date": "",
-              "dateType": ""
-            }
-          ],
-          "edition": "",
-          "citedResponsibleParty": [
-            {
-              "contactId": "",
-              "role": ""
-            }
-          ],
-          "presentationForm": "",
-          "isbn": "",
-          "issn": ""
-        }
-      }
-    }
-  ],
   "contacts": [ // multi-purpose; to use provide id and role
     {
       "contactId": "",
@@ -95,6 +38,15 @@
     }
   ],
   "metadata": {
+    "projectManagement": {  // ADIwg extension
+      "projectId": "",
+      "projectRecordComplete": "",
+      "projectIsLocatable": "",
+      "dataAvailable": "",
+      "projectMetadataLastUpdated": "",
+      "shortAbstract": "",
+      "editLink": ""
+    },
     "fileIdentifier": "", // GUID
     "hierarchyLevel": [""],
     "contact": [
@@ -352,6 +304,54 @@
             ]
           }
         ]
+      }
+    ],
+    "associatedResource": [ // ADIwg extension
+      {
+        "name": {
+          "citation": {
+            "title": "",
+            "date": [
+              {
+                "date": "",
+                "dateType": ""
+              }
+            ],
+            "edition": "",
+            "citedResponsibleParty": [
+              {
+                "contactId": "",
+                "role": ""
+              }
+            ],
+            "presentationForm": "",
+            "isbn": "",
+            "issn": ""
+          }
+        },
+        "associationType": "",
+        "initiativeType": "",
+        "metadataReference": {
+          "citation": {
+            "title": "",
+            "date": [
+              {
+                "date": "",
+                "dateType": ""
+              }
+            ],
+            "edition": "",
+            "citedResponsibleParty": [
+              {
+                "contactId": "",
+                "role": ""
+              }
+            ],
+            "presentationForm": "",
+            "isbn": "",
+            "issn": ""
+          }
+        }
       }
     ]
   }
