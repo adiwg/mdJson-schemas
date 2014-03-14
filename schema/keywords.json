@@ -1,0 +1,37 @@
+{
+  "id": "keywords.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for a keyword entry",
+  "type": "object",
+  "required": ["keyword"],
+  "additionalProperties": false,
+  "properties": {
+    "keyword": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "keywordType": {
+      "type": "string"
+    },
+    "thesaurus": {
+      "$ref": "#/definitions/thesaurus"
+    }
+  },
+  "definitions": {
+    "thesaurus": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "thesaurusLink": {
+          "$ref": "../schema.json#definitions/url"
+        },
+        "citation": {
+          "$ref": "citation.json#definitions/citationBase"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "onlineResource.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for online resource",
+  "type": "object",
+  "required": ["linkage"],
+  "additionalProperties": false,
+  "properties": {
+    "linkage": {
+      "$ref": "../schema.json#definitions/url"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "function": {
+      "type": "string"
+    }
+  }
+}

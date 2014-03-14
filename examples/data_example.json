@@ -1,0 +1,371 @@
+{
+  "contacts": [
+    {
+      "contactId": "1",
+      "individualName": "Josh Bradley",
+      "organizationName": "Arctic Landscape Conservation Cooperative",
+      "positionName": "Data Manager",
+      "onlineResource": [
+        {
+          "linkage": "http://arcticlcc.org",
+          "name": "Arctic LCC website",
+          "description": "Website for the Arctic Landscape Conservation Cooperative",
+          "function": "information"
+        }, {
+          "linkage": "http://alaska.usgs.gov/akcsc",
+          "name": "Alaska Climate Science Center",
+          "description": "Website for the USGS Alaska Climate Science Center"
+        }, {
+          "linkage": "https://google.com"
+        }
+      ],
+      "voice": [
+        {
+          "phoneName": "office",
+          "phoneNumber": "+1 907.455.1847"
+        }, {
+          "phoneName": "mobile",
+          "phoneNumber": "907-455-1847"
+        }
+      ],
+      "sms": [
+        {
+          "phoneName": "office",
+          "phoneNumber": "907-455-1847"
+        }, {
+          "phoneName": "mobile",
+          "phoneNumber": "907-455-1847"
+        }
+      ],
+      "fax": [
+        {
+          "phoneName": "office",
+          "phoneNumber": "907-455-1847"
+        }, {
+          "phoneName": "alt",
+          "phoneNumber": "907-999-9999"
+        }
+      ],
+      "address": {
+        "deliveryPoint": ["101 12th Avenue", "Room 110"],
+        "city": "Fairbanks",
+        "administrativeArea": "AK",
+        "postalCode": "99701",
+        "country": "USA",
+        "electronicMailAddress": ["joshua_bradley@fws.gov", "jbradley@arcticlcc.org"]
+      },
+      "contactInstructions": "Don't call me, I'll call you."
+    }, {
+      "contactId": "2",
+      "organizationName": "Arctic Landscape Conservation Cooperative",
+      "onlineResource": [
+        {
+          "linkage": "http://arcticlcc.org",
+          "name": "Arctic LCC website",
+          "description": "Website for the Arctic Landscape Conservation Cooperative"
+        }
+      ],
+      "voice": [
+        {
+          "phoneName": "office",
+          "phoneNumber": "907-786-3605"
+        }, {
+          "phoneName": "mobile",
+          "phoneNumber": "907-306-1895"
+        }
+      ],
+      "fax": [
+        {
+          "phoneName": "office",
+          "phoneNumber": "907-786-3592"
+        }
+      ],
+      "address": {
+        "deliveryPoint": ["1011 E. Tudor Rd"],
+        "city": "Anchorage",
+        "administrativeArea": "AK",
+        "postalCode": "99503",
+        "country": "USA",
+        "electronicMailAddress": ["staff@arcticlcc.org"]
+      }
+    }, {
+      "contactId": "3",
+      "organizationName": "Arctic Landscape Conservation Cooperative",
+      "positionName": "Data Manager",
+      "address": {
+        "deliveryPoint": ["101 12th Avenue", "Room 110"],
+        "city": "Fairbanks",
+        "administrativeArea": "AK",
+        "postalCode": "99701",
+        "country": "USA",
+        "electronicMailAddress": ["joshua_bradley@fws.gov", "jbradley@arcticlcc.org"]
+      }
+    }
+  ],
+  "metadata": {
+    "fileIdentifier": "a2342cc0-e1db-0130-e0b7-080027a263b8",
+    "contact": [
+      {
+        "contactId": "1",
+        "role": "custodian"
+      }
+    ],
+    "dateStamp": "2013-08-07",
+    "dataSetURI": "http://arcticlcc.org/projects/management/project-tracking-system",
+    "identificationInfo": {
+      "citation": {
+        "title": "Project Tracking System",
+        "date": [
+          {
+            "date": "2013-03-13",
+            "dateType": "creation"
+          }
+        ],
+        "citedResponsibleParty": [
+          {
+            "contactId": "1",
+            "role": "originator"
+          }, {
+            "contactId": "2",
+            "role": "publisher"
+          }
+        ]
+      },
+      "pointOfContact": [
+        {
+          "contactId": "1",
+          "role": "custodian"
+        }
+      ],
+      "abstract": "The Arctic LCC has developed a Project Tracking System(PTS) to assist with the management of projects. The PTS is used to track projects throughout all stages of development, from receipt of proposals through delivery of final products.",
+      "status": "onGoing",
+      "language": ["eng; USA"],
+      "resourceFormat": [
+        {
+          "name": "ExtJS",
+          "version": "4.0.7"
+        }, {
+          "name": "PostgreSQL",
+          "version": "9.1"
+        }, {
+          "name": "PHP",
+          "version": "5.3"
+        }
+      ],
+      "keywords": [
+        {
+          "keyword": ["Oceans > Ocean temperature > Thermocline", "Oceans > Ocean Temperature > Water Temperature", "Oceans > Ocean Heat Budget > Heat Flux"],
+          "keywordType": "theme",
+          "thesaurus": {
+            "thesaurusLink": "http://gcmdservices.gsfc.nasa.gov/static/kms/sciencekeywords/sciencekeywords.csv",
+            "citation": {
+              "title": "NASA/Global Change Master Directory (GCMD) Earth Science Keywords.",
+              "date": [
+                {
+                  "date": "2013-09-19",
+                  "dateType": "revision"
+                }
+              ],
+              "edition": "Version 8.0.0.0.0",
+              "citedResponsibleParty": [
+                {
+                  "contactId": "1",
+                  "role": "originator"
+                }, {
+                  "contactId": "2",
+                  "role": "owner"
+                }
+              ],
+              "presentationForm": "documentDigital",
+              "isbn": "HB12365.214",
+              "issn": "0ab4-dd983c01"
+            }
+          }
+        }, {
+          "keyword": ["Oceans > Ocean temperature > Thermocline", "Oceans > Ocean Temperature > Water Temperature", "Oceans > Ocean Heat Budget > Heat Flux"],
+          "keywordType": "theme",
+          "thesaurus": {
+            "thesaurusLink": "http://gcmdservices.gsfc.nasa.gov/static/kms/sciencekeywords/sciencekeywords.csv",
+            "citation": {
+              "title": "NASA/Global Change Master Directory (GCMD) Earth Science Keywords.",
+              "date": [
+                {
+                  "date": "2013-09-19",
+                  "dateType": "revision"
+                }
+              ]
+            }
+          }
+        }, {
+          "keyword": ["In Situ/Laboratory Instruments > Temperature/Humidity Sensors > Thermometers"],
+          "keywordType": "instrument",
+          "thesaurus": {
+            "citation": {
+              "title": "NASA/Global Change Master Directory (GCMD) Earth Science Keywords."
+            }
+          }
+        }, {
+          "keyword": ["In Situ/Laboratory Instruments > Temperature/Humidity Sensors > Thermometers"],
+          "keywordType": "instrument"
+        }, {
+          "keyword": ["In Situ/Laboratory Instruments > Temperature/Humidity Sensors > Thermometers"],
+          "thesaurus": {
+            "citation": {
+              "title": "NASA/Global Change Master Directory (GCMD) Earth Science Keywords."
+            }
+          }
+        }, {
+          "keyword": ["thermocline", "sea surface temperature"]
+        }
+      ],
+      "taxonomy": {
+        "classSystem": [
+          {
+            "title": "Otter Record Survey",
+            "date": [
+              {
+                "date": "2000",
+                "dateType": "publication"
+              }
+            ],
+            "citedResponsibleParty": [
+              {
+                "contactId": "2",
+                "role": "publisher"
+              }
+            ]
+          }, {
+            "title": "Another Record Survey",
+            "date": [
+              {
+                "date": "2003",
+                "dateType": "publication"
+              }
+            ],
+            "citedResponsibleParty": [
+              {
+                "contactId": "1",
+                "role": "publisher"
+              }
+            ]
+          }
+        ],
+        "taxonGeneralScope": "The otters observed were identified to the subspecies criterion and identified as southern sea otters.",
+        "observer": [
+          {
+            "contactId": "1",
+            "role": "principalInvestigator"
+          }, {
+            "contactId": "2",
+            "role": "pointOfContact"
+          }
+        ],
+        "taxonomicProcedures": "volunteers observed sea otters using binoculars in pairs",
+        "voucher": {
+          "specimen": "weathered skull found on beach",
+          "repository": {
+            "contactId": "2",
+            "role": "publisher"
+          }
+        },
+        "taxonClass": [
+          {
+            "taxonRank": "Kingdom",
+            "taxonValue": "Animalia"
+          }, {
+            "taxonRank": "Phylum",
+            "taxonValue": "Chordata"
+          }, {
+            "taxonRank": "Subphylum",
+            "taxonValue": "Vertebrata"
+          }, {
+            "taxonRank": "Class",
+            "taxonValue": "Mammalia"
+          }, {
+            "taxonRank": "Subclass",
+            "taxonValue": "Theria"
+          }, {
+            "taxonRank": "Infraclass",
+            "taxonValue": "Eutheria"
+          }, {
+            "taxonRank": "Order",
+            "taxonValue": "Carnivora"
+          }, {
+            "taxonRank": "Suborder",
+            "taxonValue": "Caniformia"
+          }, {
+            "taxonRank": "Family",
+            "taxonValue": "Mustilidae"
+          }, {
+            "taxonRank": "Subfamily",
+            "taxonValue": "Lutrinae"
+          }, {
+            "taxonRank": "Genus",
+            "taxonValue": "Enhydra"
+          }, {
+            "common": "Sea Otter",
+            "taxonRank": "Species",
+            "taxonValue": "Enhydra lutris"
+          }, {
+            "common": "Southern Sea Otter",
+            "taxonRank": "Subspecies",
+            "taxonValue": "Enhydra"
+          }
+        ]
+      }
+    },
+    "distributionInfo": [
+      {
+        "distributorContact": {
+          "contactId": "4",
+          "role": "custodian"
+        },
+        "distributionOrderProcess": [
+          {
+            "fees": "0.00USD",
+            "plannedAvailabilityDateTime": "2013-06-21",
+            "orderingInstructions": "Send an e-mail",
+            "turnaround": "up to 3 hours"
+          }, {
+            "fees": "3.00USD",
+            "turnaround": "immediate"
+          }
+        ],
+        "distributorFormat": [
+          {
+            "name": "netCDF",
+            "version": "4.0"
+          }, {
+            "name": "Excel Spreadsheet",
+            "version": "xlsx"
+          }
+        ],
+        "distributorTransferOptions": [
+          {
+            "online": [
+              {
+                "linkage": "http://aoos.org/aoos-data-resources",
+                "name": "Aoos Data Resources",
+                "description": "This page provides links to interactive maps and data discovery tools.",
+                "function": "information"
+              }, {
+                "linkage": "http://aoos.org/fake_resource_location",
+                "function": "download"
+              }
+            ],
+            "offline": {
+              "name": "dvd",
+              "mediumFormat": "iso9660",
+              "mediumNote": "To receive a dvd in the mail, contact the distributor POC."
+            }
+          }
+        ]
+      }, {
+        "distributorContact": {
+          "contactId": "5",
+          "role": "distributor"
+        }
+      }
+    ]
+  }
+}

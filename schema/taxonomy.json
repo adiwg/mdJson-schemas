@@ -1,0 +1,61 @@
+{
+  "id": "taxonomy.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for taxonomy",
+  "type": "object",
+  "required": ["classSystem", "taxonomicProcedures", "taxonClass"],
+  "additionalProperties": false,
+  "properties": {
+    "classSystem": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "citation.json"
+      }
+    },
+    "taxonGeneralScope": {
+      "type": "string"
+    },
+    "observer": {
+      "type": "array",
+      "items": {
+        "$ref": "contacts.json#/definitions/contactRef"
+      }
+    },
+    "taxonomicProcedures": {
+      "type": "string"
+    },
+    "voucher": {
+      "type": "object",
+      "required": ["specimen", "repository"],
+      "properties": {
+        "specimen": {
+          "type": "string"
+        },
+        "repository": {
+          "$ref": "contacts.json#/definitions/contactRef"
+        }
+      }
+    },
+    "taxonClass": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["taxonRank", "taxonValue"],
+        "additionalProperties": false,
+        "properties": {
+          "taxonRank": {
+            "type": "string"
+          },
+          "taxonValue": {
+            "type": "string"
+          },
+          "common": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

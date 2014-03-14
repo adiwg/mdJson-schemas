@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "geojson.json#",
+  "title": "Geo JSON object",
+  "description": "Schema for a Geo JSON object",
+  "type": "object",
+  "required": ["type"],
+  "properties": {
+    "crs": {
+      "$ref": "crs.json#"
+    },
+    "bbox": {
+      "$ref": "bbox.json#"
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "geometry.json#"
+    }, {
+      "$ref": "#/definitions/geometryCollection"
+    }, {
+      "$ref": "#/definitions/feature"
+    }, {
+      "$ref": "#/definitions/featureCollection"
+    }
+  ],
+  "definitions": {
+    "geometryCollection": {
+      "title": "GeometryCollection",
+      "description": "A collection of geometry objects",
+      "required": ["geometries"],
+      "properties": {
+        "type": {
+          "enum": ["GeometryCollection"]
+        },
+        "geometries": {
+          "type": "array",
+          "items": {
+            "$ref": "geometry.json#"
+          }
+        }
+      }
+    },
+    "feature": {
+      "title": "Feature",
+      "description": "A Geo JSON feature object",
+      "required": ["geometry", "properties"],
+      "properties": {
+        "type": {
+          "enum": ["Feature"]
+        },
+        "geometry": {
+          "oneOf": [
+            {
+              "type": "null"
+            }, {
+              "$ref": "geometry.json#"
+            }
+          ]
+        },
+        "properties": {
+          "$ref": "#/definitions/featureProperties"
+        },
+        "id": {
+          "type": ["string", "number"]
+        }
+      }
+    },
+    "featureCollection": {
+      "title": "FeatureCollection",
+      "description": "A Geo JSON feature collection",
+      "required": ["features"],
+      "properties": {
+        "type": {
+          "enum": ["FeatureCollection"]
+        },
+        "properties": {
+          "$ref": "#/definitions/featureProperties"
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/feature"
+          }
+        }
+      }
+    },
+    "featureProperties": {
+      "title": "FeatureProperties",
+      "description": "Properties of a feature or collection.",
+      "oneOf": [
+        {
+          "type": "null"
+        }, {
+          "type": "object",
+          "properties": {
+            "includesData": {
+              "type": ["boolean", "null"]
+            },
+            "temporalElement": {
+
+              "$ref": "../extent.json#definitions/temporalElement"
+            },
+            "verticalElement": {
+              "type": "array",
+              "items": {
+                "$ref": "../extent.json#definitions/verticalElement"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+

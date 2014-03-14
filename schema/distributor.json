@@ -1,0 +1,89 @@
+{
+  "id": "distributor.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for a distributor entry",
+  "type": "object",
+  "required": ["distributorContact"],
+  "additionalProperties": false,
+  "properties": {
+    "distributorContact": {
+      "$ref": "contacts.json#/definitions/contactRef"
+    },
+    "distributionOrderProcess": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+
+        "properties": {
+          "fees": {
+            "type": "string"
+          },
+          "plannedAvailabilityDateTime": {
+            "$ref": "../schema.json#definitions/date"
+          },
+          "orderingInstructions": {
+            "type": "string"
+          },
+          "turnaround": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "distributorFormat": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/format"
+      }
+    },
+    "distributorTransferOptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+
+        "properties": {
+          "online": {
+            "type": "array",
+            "items": {
+              "$ref": "./onlineResource.json#"
+            },
+            "uniqueItems": true
+          },
+          "offline": {
+            "type": "object",
+            "additionalProperties": false,
+
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "mediumFormat": {
+                "type": "string"
+              },
+              "mediumNote": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "format": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

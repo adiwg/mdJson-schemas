@@ -1,0 +1,195 @@
+[
+  {
+    "contactId": "1",
+    "individualName": "Josh Bradley",
+    "organizationName": "Arctic Landscape Conservation Cooperative",
+    "positionName": "Data Manager",
+    "onlineResource": [
+      {
+        "linkage": "http://arcticlcc.org",
+        "name": "Arctic LCC website",
+        "description": "Website for the Arctic Landscape Conservation Cooperative",
+        "function": "information"
+      }, {
+        "linkage": "http://alaska.usgs.gov/akcsc",
+        "name": "Alaska Climate Science Center",
+        "description": "Website for the USGS Alaska Climate Science Center"
+      }, {
+        "linkage": "https://google.com"
+      }
+    ],
+    "voice": [
+      {
+        "phoneName": "office",
+        "phoneNumber": "+1 907.455.1847"
+      }, {
+        "phoneName": "mobile",
+        "phoneNumber": "907-455-1847"
+      }
+    ],
+    "sms": [
+      {
+        "phoneName": "office",
+        "phoneNumber": "907-455-1847"
+      }, {
+        "phoneName": "mobile",
+        "phoneNumber": "907-455-1847"
+      }
+    ],
+    "fax": [
+      {
+        "phoneName": "office",
+        "phoneNumber": "907-455-1847"
+      }, {
+        "phoneName": "alt",
+        "phoneNumber": "907-999-9999"
+      }
+    ],
+    "address": {
+      "deliveryPoint": ["101 12th Avenue", "Room 110"],
+      "city": "Fairbanks",
+      "administrativeArea": "AK",
+      "postalCode": "99701",
+      "country": "USA",
+      "electronicMailAddress": ["joshua_bradley@fws.gov", "jbradley@arcticlcc.org"]
+    },
+    "contactInstructions": "Don't call me, I'll call you."
+  }, {
+    "contactId": "2",
+    "organizationName": "Arctic Landscape Conservation Cooperative",
+    "onlineResource": [
+      {
+        "linkage": "http://arcticlcc.org",
+        "name": "Arctic LCC website",
+        "description": "Website for the Arctic Landscape Conservation Cooperative",
+        "function": "information"
+      }
+    ],
+    "voice": [
+      {
+        "phoneName": "office",
+        "phoneNumber": "907-786-3605"
+      }, {
+        "phoneName": "mobile",
+        "phoneNumber": "907-306-1895"
+      }
+    ],
+    "fax": [
+      {
+        "phoneName": "office",
+        "phoneNumber": "907-786-3592"
+      }
+    ],
+    "address": {
+      "deliveryPoint": ["1011 E. Tudor Rd"],
+      "city": "Anchorage",
+      "administrativeArea": "AK",
+      "postalCode": "99503",
+      "country": "USA",
+      "electronicMailAddress": ["staff@arcticlcc.org"]
+    }
+  }, {
+    "contactId": "3",
+    "organizationName": "Arctic Landscape Conservation Cooperative",
+    "positionName": "Data Manager",
+    "address": {
+      "deliveryPoint": ["101 12th Avenue", "Room 110"],
+      "city": "Fairbanks",
+      "administrativeArea": "AK",
+      "postalCode": "99701",
+      "country": "USA",
+      "electronicMailAddress": ["joshua_bradley@fws.gov", "jbradley@arcticlcc.org"]
+    }
+  }, {
+    "contactId": "4",
+    "individualName": "Chris Turner",
+    "organizationName": "Axiom Consulting & Design",
+    "positionName": "Data Librarian",
+    "onlineResource": [
+      {
+        "linkage": "http://axiomalaska.com",
+        "name": "Axiom Consulting & Design",
+        "description": "Website for Axiom Consulting and Design"
+      }, {
+        "linkage": "http://www.aoos.org",
+        "name": "The Alaska Ocean Observing System",
+        "description": "The homepage for AOOS, the eye on Alaska's coasts and oceans"
+      }
+    ],
+    "voice": [
+      {
+        "phoneName": "mobile",
+        "phoneNumber": "907-555-1234"
+      }
+    ],
+    "sms": [
+      {
+        "phoneName": "mobile",
+        "phoneNumber": "907-555-1234"
+      }
+    ],
+    "fax": [
+      {
+        "phoneName": "office",
+        "phoneNumber": "907-555-6543"
+      }, {
+        "phoneName": "alt",
+        "phoneNumber": "1-800-598-5571"
+      }
+    ],
+    "address": {
+      "deliveryPoint": ["523 W 8th Ave", "Suite 104"],
+      "city": "Anchorage",
+      "administrativeArea": "Alaska",
+      "postalCode": "99501",
+      "country": "USA",
+      "electronicMailAddress": ["chris@axiomalaska.com", "theotherchris@axiomalaska.com"]
+    }
+  }, {
+    "contactId": "5",
+    "individualName": "Sirhc Renrut",
+    "organizationName": "Moixa Designs and Consulting",
+    "positionName": "Data Wrangler",
+    "onlineResource": [
+      {
+        "linkage": "http://moixaalaska.com",
+        "name": "Moixa Design and Consulting",
+        "description": "Website for Moixa Design and Consulting"
+      }, {
+        "linkage": "http://www.aoos.org"
+      }
+    ],
+    "voice": [
+      {
+        "phoneName": "office",
+        "phoneNumber": "907-458-8765"
+      }, {
+        "phoneName": "mobile",
+        "phoneNumber": "907-567-1234"
+      }
+    ],
+    "sms": [
+      {
+        "phoneName": "mobile",
+        "phoneNumber": "907-567-1234"
+      }
+    ],
+    "fax": [
+      {
+        "phoneName": "office",
+        "phoneNumber": "907-567-6543"
+      }, {
+        "phoneName": "alt",
+        "phoneNumber": "1-800-598-5571"
+      }
+    ],
+    "address": {
+      "deliveryPoint": ["532 W 8th Ave", "Suite 401"],
+      "city": "Anchorage",
+      "administrativeArea": "Alaska",
+      "postalCode": "99501",
+      "country": "USA",
+      "electronicMailAddress": ["sirhc@moixaalaska.com"]
+    }
+  }
+]

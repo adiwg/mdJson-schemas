@@ -1,0 +1,23 @@
+{
+  "id": "usage.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for usage",
+  "type": "object",
+  "required": ["specificUsage", "userContactInfo"],
+  "additionalProperties": true,
+  "properties": {
+    "specificUsage": {
+      "type": "string"
+    },
+    "userDeterminedLimitations": {
+      "type": "string"
+    }
+  },
+  "userContactInfo": {
+    "type": "array",
+    "uniqueItems": true,
+    "items": {
+      "$ref": "contacts.json#/definitions/contactRef"
+    }
+  }
+}

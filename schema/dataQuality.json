@@ -1,0 +1,82 @@
+{
+  "id": "dataQuality.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for dataQuality",
+  "type": "object",
+  "required": ["scope"],
+  "additionalProperties": false,
+  "properties": {
+    "scope": {
+      "type": "string"
+    },
+    "lineage": {
+      "$ref": "#/definitions/lineage"
+    }
+  },
+  "definitions": {
+    "lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "statement": {
+          "type": "string"
+        },
+        "processStep": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/processStep"
+          }
+        },
+        "source": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/source"
+          }
+        }
+      }
+    },
+    "processStep": {
+      "type": "object",
+      "required": ["description"],
+      "additionalProperties": false,
+      "properties": {
+        "stepId": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "dateTime": {
+          "$ref": "../schema.json#definitions/date"
+        },
+        "processor": {
+          "type": "array",
+          "items": {
+            "$ref": "contacts.json#/definitions/contactRef"
+          }
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "citation": {
+          "$ref": "./citation.json#"
+        },
+        "processStep": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/processStep"
+          }
+        }
+      }
+    }
+  }
+}

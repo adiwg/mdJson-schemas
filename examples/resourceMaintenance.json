@@ -1,0 +1,10 @@
+[
+  {
+    "maintFreq": "daily",
+    "maintNote": ["model is updated each morning"]
+  }, {
+    "maintFreq": "asNeeded"
+  }, {
+    "maintNote": ["Test of missing frequency code."]
+  }
+]

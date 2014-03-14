@@ -1,0 +1,29 @@
+{
+  "id": "resolution.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for spatial resolution",
+  "anyOf": [
+    {
+      "type": "object",
+      "required": ["equivalentScale"],
+      "additionalProperties": true,
+      "properties": {
+        "equivalentScale": {
+          "type": "number"
+        }
+      }
+    }, {
+      "type": "object",
+      "required": ["distance"],
+      "additionalProperties": true,
+      "properties": {
+        "distance": {
+          "type": "number"
+        },
+        "uom": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

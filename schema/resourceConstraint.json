@@ -1,0 +1,65 @@
+{
+  "id": "resourceConstraint.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for resource constraint",
+  "anyOf": [
+    {
+      "$ref": "#/definitions/useLimitations"
+    }, {
+      "$ref": "#/definitions/legalConstraints"
+    }, {
+      "$ref": "#/definitions/securityConstraints"
+    }
+  ],
+  "definitions": {
+    "useLimitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "legalConstraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "accessConstraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "useConstraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "otherConstraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "securityConstraints": {
+      "type": "object",
+      "required": ["classification"],
+      "additionalProperties": false,
+      "properties": {
+        "classification": {
+          "type": "string"
+        },
+        "userNote": {
+          "type": "string"
+        },
+        "classSystem": {
+          "type": "string"
+        },
+        "handlingDescription": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

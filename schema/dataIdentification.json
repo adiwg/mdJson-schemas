@@ -1,0 +1,124 @@
+{
+  "id": "dataIdentification.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for data identication section",
+  "type": "object",
+  "required": ["citation", "abstract", "status", "language"],
+  "additionalProperties": false,
+  "properties": {
+    "citation": {
+      "$ref": "./citation.json#"
+    },
+    "abstract": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "credit": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string"
+    },
+    "pointOfContact": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "./contacts.json#/definitions/contactRef"
+      }
+    },
+    "resourceMaintenance": {
+      "type": "array",
+      "items": {
+        "$ref": "./maintInfo.json#"
+      }
+    },
+    "graphicOverview": {
+      "type": "array",
+      "items": {
+        "$ref": "./browseGraphic.json#"
+      }
+    },
+    "useLimitations": {
+      "$ref": "./resourceConstraint.json#/definitions/useLimitations"
+    },
+    "legalConstraints": {
+      "type": "array",
+      "items": {
+        "$ref": "./resourceConstraint.json#/definitions/legalConstraints"
+      }
+    },
+    "securityConstraints": {
+      "type": "array",
+      "items": {
+        "$ref": "./resourceConstraint.json#/definitions/securityConstraints"
+      }
+    },
+    "resourceFormat": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "./distributor.json#/definitions/format"
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "./keywords.json"
+      }
+    },
+    "resourceSpecificUsage": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "./usage.json"
+      }
+    },
+    "taxonomy": {
+      "$ref": "./taxonomy.json"
+    },
+    "spatialRepresentation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "spatialResolution": {
+      "type": "array",
+      "items": {
+        "$ref": "./resolution.json"
+      }
+    },
+    "language": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "topicCategory": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "environmentalDesc": {
+      "type": "string"
+    },
+    "extent": {
+      "type": "array",
+      "items": {
+        "$ref": "./extent.json"
+      }
+    },
+    "supplementalInfo": {
+      "type": "string"
+    }
+  }
+}

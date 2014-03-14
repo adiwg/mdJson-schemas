@@ -1,0 +1,63 @@
+{
+  "id": "citation.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for citation",
+  "type": "object",
+  "required": ["title", "date"],
+  "anyOf": [
+    {
+      "$ref": "#/definitions/citationBase"
+    }
+  ],
+  "definitions": {
+    "citationBase": {
+      "description": "base schema for citation, date not required",
+      "type": "object",
+      "required": ["title"],
+      "additionalProperties": false,
+      "properties": {
+        "linkage": {
+          "$ref": "../schema.json#definitions/url"
+        },
+        "title": {
+          "type": "string"
+        },
+        "edition": {
+          "type": "string"
+        },
+        "presentationForm": {
+          "type": "string"
+        },
+        "isbn": {
+          "type": "string"
+        },
+        "issn": {
+          "type": "string"
+        },
+        "date": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["date", "dateType"],
+            "properties": {
+              "date": {
+                "$ref": "../schema.json#definitions/date"
+              },
+              "dateType": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "citedResponsibleParty": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "contacts.json#/definitions/contactRef"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "bbox.json#",
+  "description": "A bounding box as defined by GeoJSON, minimum of 4 elements",
+  "type": "array",
+  "minItems": 4,
+  "items": {
+    "type": "number"
+  }
+}

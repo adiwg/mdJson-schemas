@@ -1,0 +1,22 @@
+{
+  "id": "browseGraphic.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for browse graphic",
+  "type": "object",
+  "required": ["fileName"],  
+  "additionalProperties": true,
+  "properties": {
+    "fileName": {
+      "type": "string"
+    },
+    "fileDescription": {
+      "type": "string"
+    },
+    "fileType": {
+      "type": "string"
+    },
+    "fileLink": {
+      "$ref": "../schema.json#definitions/url"
+    }
+  }
+}

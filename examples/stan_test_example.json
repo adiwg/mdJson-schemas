@@ -1,0 +1,1547 @@
+{
+    "contacts": [
+        {
+            "contactId": "1",
+            "individualName": "Josh Bradley",
+            "organizationName": "Arctic Landscape Conservation Cooperative",
+            "positionName": "Data Manager",
+            "onlineResource": [
+                {
+                    "linkage": "http://arcticlcc.org",
+                    "name": "Arctic LCC website",
+                    "description": "Website for the Arctic Landscape Conservation Cooperative"
+                },
+                {
+                    "linkage": "http://alaska.usgs.gov/akcsc",
+                    "name": "Alaska Climate Science Center",
+                    "description": "Website for the USGS Alaska Climate Science Center"
+                }
+            ],
+            "voice": [
+                {
+                    "phoneName": "office",
+                    "phoneNumber": "+1 907.455.1847"
+                },
+                {
+                    "phoneName": "mobile",
+                    "phoneNumber": "907-223-8752"
+                },
+                {
+                    "phoneNumber": "808-555-1212"
+                }
+            ],
+            "sms": [
+                {
+                    "phoneName": "mobile",
+                    "phoneNumber": "907-223-8752"
+                }
+            ],
+            "fax": [
+                {
+                    "phoneName": "mobile",
+                    "phoneNumber": "907-230-4350"
+                },
+                {
+                    "phoneName": "alternate",
+                    "phoneNumber": "907-999-9999"
+                }
+            ],
+            "address": {
+                "deliveryPoint": ["101 12th Avenue", "Room 110"],
+                "city": "Fairbanks",
+                "administrativeArea": "AK",
+                "postalCode": "99701",
+                "country": "USA",
+                "electronicMailAddress": ["joshua_bradley@fws.gov", "jbradley@arcticlcc.org"]
+            }
+        },
+        {
+            "contactId": "2",
+            "organizationName": "Arctic Landscape Conservation Cooperative",
+            "onlineResource": [
+                {
+                    "linkage": "http://arcticlcc.org",
+                    "name": "Arctic LCC website",
+                    "description": "Website for the Arctic Landscape Conservation Cooperative"
+                }
+            ],
+            "voice": [
+                {
+                    "phoneName": "office",
+                    "phoneNumber": "907-786-3605"
+                },
+                {
+                    "phoneName": "mobile",
+                    "phoneNumber": "907-306-1895"
+                }
+            ],
+            "fax": [
+                {
+                    "phoneName": "office",
+                    "phoneNumber": "907-786-3592"
+                }
+            ],
+            "address": {
+                "deliveryPoint": ["1011 E. Tudor Rd"],
+                "city": "Anchorage",
+                "administrativeArea": "AK",
+                "postalCode": "99503",
+                "country": "USA",
+                "electronicMailAddress": ["staff@arcticlcc.org"]
+            }
+        },
+        {
+            "contactId": "3",
+            "organizationName": "Arctic Landscape Conservation Cooperative",
+            "positionName": "Data Manager",
+            "address": {
+                "deliveryPoint": ["101 12th Avenue", "Room 110"],
+                "city": "Fairbanks",
+                "administrativeArea": "AK",
+                "postalCode": "99701",
+                "country": "USA",
+                "electronicMailAddress": ["joshua_bradley@fws.gov", "jbradley@arcticlcc.org"]
+            }
+        },
+        {
+            "contactId": "4",
+            "individualName": "Chris Turner",
+            "organizationName": "Axiom Consulting & Design",
+            "positionName": "Data Librarian",
+            "onlineResource": [
+                {
+                    "linkage": "http://axiomalaska.com",
+                    "name": "Axiom Consulting & Design",
+                    "description": "Website for Axiom Consulting and Design"
+                },
+                {
+                    "linkage": "www.aoos.org",
+                    "name": "The Alaska Ocean Observing System",
+                    "description": "The homepage for AOOS, the eye on Alaska's coasts and oceans"
+                }
+            ],
+            "voice": [
+                {
+                    "phoneName": "mobile",
+                    "phoneNumber": "907-555-1234"
+                }
+            ],
+            "sms": [
+                {
+                    "phoneName": "mobile",
+                    "phoneNumber": "907-555-1234"
+                }
+            ],
+            "fax": [
+                {
+                    "phoneName": "office",
+                    "phoneNumber": "907-555-6543"
+                },
+                {
+                    "phoneName": "alt",
+                    "phoneNumber": "1-800-598-5571"
+                }
+            ],
+            "address": {
+                "deliveryPoint": ["523 W 8th Ave", "Suite 104"],
+                "city": "Anchorage",
+                "administrativeArea": "Alaska",
+                "postalCode": "99501",
+                "country": "USA",
+                "electronicMailAddress": ["chris@axiomalaska.com", "theotherchris@axiomalaska.com"]
+            }
+        },
+        {
+            "contactId": "5",
+            "individualName": "Sirhc Renrut",
+            "organizationName": "Moixa Designs and Consulting",
+            "positionName": "Data Wrangler",
+            "onlineResource": [
+                {
+                    "linkage": "http://moixaalaska.com",
+                    "name": "Moixa Design and Consulting",
+                    "description": "Website for Moixa Design and Consulting"
+                },
+                {
+                    "linkage": "www.oaos.org"
+                }
+            ],
+            "voice": [
+                {
+                    "phoneName": "office",
+                    "phoneNumber": "907-458-8765"
+                },
+                {
+                    "phoneName": "mobile",
+                    "phoneNumber": "907-567-1234"
+                }
+            ],
+            "sms": [
+                {
+                    "phoneName": "mobile",
+                    "phoneNumber": "907-567-1234"
+                }
+            ],
+            "fax": [
+                {
+                    "phoneName": "office",
+                    "phoneNumber": "907-567-6543"
+                },
+                {
+                    "phoneName": "alt",
+                    "phoneNumber": "1-800-598-5571"
+                }
+            ],
+            "address": {
+                "deliveryPoint": ["532 W 8th Ave", "Suite 401"],
+                "city": "Anchorage",
+                "administrativeArea": "Alaska",
+                "postalCode": "99501",
+                "country": "USA",
+                "electronicMailAddress": ["sirhc@moixaalaska.com"]
+            }
+        }
+    ],
+    "metadata": {
+        "fileIdentifier": "a2342cc0-e1db-0130-e0b7-080027a263b8",
+        "hierarchyLevel": ["dataset","nonGeographicDataset","attribute"],
+        "contact": [
+            {
+                "contactId": "1",
+                "role": "custodian"
+            }
+        ],
+        "dateStamp": "2013-08-07",
+        "dataSetURI": "http://arcticlcc.org/projects/management/project-tracking-system",
+        "spatialReference": ["WGS84","NAD27","MHW"],
+        "identificationInfo": {
+            "citation": {
+                "title": "Project Tracking System",
+                "date": [
+                    {
+                        "date": "2011-11-11",
+                        "dateType": "publication"
+                    },
+                    {
+                        "date": "2013-03-13T17:30-08:00",
+                        "dateType": "revision"
+                    }
+                ],
+                "edition": "version 1.2.0",
+                "citedResponsibleParty": [
+                    {
+                        "contactId": "1",
+                        "role": "originator"
+                    },
+                    {
+                        "contactId": "2",
+                        "role": "publisher"
+                    }
+                ],
+                "presentationForm": "documentDigital",
+                "isbn": "HB12365.214",
+                "issn": "0ab4-dd983c01"
+            },
+            "pointOfContact": [
+                {
+                    "contactId": "1",
+                    "role": "custodian"
+                }
+            ],
+            "abstract": "The Arctic LCC has developed a Project Tracking System(PTS) to assist with the management of projects. The PTS is used to track projects throughout all stages of development, from receipt of proposals through delivery of final products.",
+            "status": "onGoing",
+            "language": [
+                "eng; USA","spa; Spanish; Castilian"
+            ],
+            "purpose": "The LAS files can be used to create DEMs and also to extract topographic data in software that does not support raster data. Other surface features can also be extracted with custom applications. LiDAR data has a wide range of uses such as earthquake hazard studies, hydrologic modeling, forestry, coastal engineering, roadway and pipeline engineering, flood plain mapping, wetland studies, geologic studies and a variety of analytical and cartographic projects.",
+            "credit": [
+                "FEMA",
+                "Washington DNR and Lewis County",
+                "Puget Sound LiDAR Consortium (PSLC) - The PSLC is supported by the Puget Sound Regional Council, the National Aeronautical and Space Administration (NASA), the United States Geological Survey (USGS) and numerous partners in local, state, and tribal government."
+            ],
+            "spatialRepresentation": [
+                "textTable","grid","tin"
+            ],
+            "topicCategory": [
+                "boundaries",
+                "environment",
+                "climatologyMeteorologyAtmosphere"
+            ],
+            "environmentalDesc": "Processed datafiles created in a Windows 7 environment, using R x64 2.15.1, Kepler 2.3, pgAdminIII and Postgres 9.1, and ArcInfo 10.2",
+            "supplementalInfo": "A footprint of this data set may be viewed in Google Earth at: <ftp://ftp.csc.noaa.gov/pub/crs/beachmap/qa_docs/wa/pslc2012/wa2012_pslc_chehalis_footprint.KMZ> A Lidar Report from the vendor for this data set may be viewed here: <ftp://ftp.csc.noaa.gov/pub/crs/beachmap/qa_docs/wa/pslc2012/wa2012_pslc_chehalis_lidarreport.pdf>",
+            "resourceFormat": [
+                {
+                    "name": "ExtJS",
+                    "version": "4.0.7"
+                },
+                {
+                    "name": "PostgreSQL"
+                },
+                {
+                    "name": "",
+                    "version": "5.3"
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword": ["Oceans > Ocean temperature > Thermocline",
+                        "Oceans > Ocean Temperature > Water Temperature",
+                        "Oceans > Ocean Heat Budget > Heat Flux"],
+                    "keywordType": "theme",
+                    "thesaurus": {
+                        "thesaurusLink": "http://gcmdservices.gsfc.nasa.gov/static/kms/sciencekeywords/sciencekeywords.csv",
+                        "citation": {
+                            "title": "NASA/Global Change Master Directory (GCMD) Earth Science Keywords.",
+                            "date": [
+                                {
+                                    "date": "2013-09-19",
+                                    "dateType": "revision"
+                                }
+                            ],
+                            "edition": "Version 8.0.0.0.0",
+                            "citedResponsibleParty": [
+                                {
+                                    "contactId": "1",
+                                    "role": "originator"
+                                }, {
+                                    "contactId": "2",
+                                    "role": "owner"
+                                }
+                            ],
+                            "presentationForm": "documentDigital",
+                            "isbn": "HB12365.214",
+                            "issn": "0ab4-dd983c01"
+                        }
+                    }
+                },
+                {
+                    "keyword": ["In Situ/Laboratory Instruments > Temperature/Humidity Sensors > Thermometers"],
+                    "keywordType": "instrument",
+                    "thesaurus": {
+                        "citation": {
+                            "title": "NASA/Global Change Master Directory (GCMD) Earth Science Keywords Version 7.0.0."
+                        }
+                    }
+                },
+                {
+                    "keyword": ["thermocline", "sea surface temperature"]
+                }
+            ],
+            "resourceMaintenance": [
+                {
+                    "maintFreq": "fortnightly"
+                },
+                {
+                    "maintFreq": "annually",
+                    "maintNote": ["Updates to data are generally in available November after the season's field data has been validated"]
+                },
+                {
+                    "maintNote": ["Test of missing frequency code","Test of multiple notes"]
+                }
+            ],
+            "resourceSpecificUsage": [
+                {
+                    "specificUsage": "Developed for land use planning.",
+                    "userDeterminedLimitations": "Not suitable for use for navigation.",
+                    "userContactInfo": [
+                        {
+                            "contactId": "3",
+                            "role": "publisher"
+                        },
+                        {
+                            "contactId": "3",
+                            "role": "author"
+                        }
+                    ]
+                },
+                {
+                    "specificUsage": "Bathymetry datasets developed for modeling physical oceanographic conditions in the Barrow Straight.",
+                    "userContactInfo": [
+                        {
+                            "contactId": "1",
+                            "role": "custodian"
+                        }
+                    ]
+                }
+            ],
+            "graphicOverview": [
+                {
+                    "fileName": "allRecs_callCounts_bowhead_2010.jpg",
+                    "fileDescription": "This image is a spectraplot visualizing the density of Bowhead whale calls in the Northeast Chukchi Sea, AMAR recorder locations, and industry lease areas.",
+                    "fileType": "JPEG",
+                    "fileLink": "http://aoos.org/aoos-data-resources/bowhead_images2010_0114.jpg"
+                }, {
+                    "fileName": "cross_section_perc_sommer_2010.png",
+                    "fileDescription": "."
+                }, {
+                    "fileName": "pln40_perc_2010_01.png",
+                    "fileType": "PNG"
+                }, {
+                    "fileName": "pln40_spec_summer_2010.png"
+                }
+            ],
+            "useLimitations": ["not for suitable for navigation",
+                "draft version", "not intended for general use",
+                "don't be a jerk"],
+            "legalConstraints": [
+                {
+                    "accessConstraints": ["patentPending", "restricted"],
+                    "useConstraints": ["restricted"],
+                    "otherConstraints": ["Legally barred from use for navigation."]
+                }, {
+                    "accessConstraints": ["otherRestrictions"],
+                    "useConstraints": ["otherRestrictions"],
+                    "otherConstraints": ["Access Constraints: No one else. Use Constraints: None"]
+                }, {
+                    "accessConstraints": ["copyright", "patent", "patentPending", "trademark", "license",
+                        "intellectualPropertyRights", "restricted", "otherRestrictions"]
+                }
+            ],
+            "securityConstraints": [
+                {
+                    "classification": "unclassified",
+                    "userNote": "security clearance not required",
+                    "classSystem": "none",
+                    "handlingDescription": "this is how to handle things..."
+                }, {
+                    "classification": "intellectualPropertyRights"
+                }, {
+                    "classification": "secret",
+                    "userNote": "shhhhh"
+                }
+            ],
+            "taxonomy": {
+                "classSystem": [
+                    {
+                        "title": "Otter Record Survey",
+                        "date": [
+                            {
+                                "date": "2000",
+                                "dateType": "publication"
+                            }
+                        ],
+                        "citedResponsibleParty": [
+                            {
+                                "contactId": "2",
+                                "role": "publisher"
+                            }
+                        ]
+                    }
+                ],
+                "taxonGeneralScope": "The otters observed were identified to the subspecies criterion and identified as southern sea otters.",
+                "observer": [
+                    {
+                        "contactId": "1",
+                        "role": "principalInvestigator"
+                    },
+                    {
+                        "contactId": "2",
+                        "role": "pointOfContact"
+                    }
+                ],
+                "taxonomicProcedures": "volunteers observed sea otters using binoculars in pairs",
+                "voucher": {
+                    "specimen": "weathered skull found on beach",
+                    "repository": {
+                        "contactId": "2",
+                        "role": "publisher"
+                    }
+                },
+                "taxonClass": [
+                    {
+                        "taxonRank": "Kingdom",
+                        "taxonValue": "Animalia"
+                    },{
+                        "taxonRank": "Phylum",
+                        "taxonValue": "Chordata"
+                    },{
+                        "taxonRank": "Subphylum",
+                        "taxonValue": "Vertebrata"
+                    },{
+                        "taxonRank": "Class",
+                        "taxonValue": "Mammalia"
+                    },{
+                        "taxonRank": "Subclass",
+                        "taxonValue": "Theria"
+                    },{
+                        "taxonRank": "Infraclass",
+                        "taxonValue": "Eutheria"
+                    },{
+                        "taxonRank": "Order",
+                        "taxonValue": "Carnivora"
+                    },{
+                        "taxonRank": "Suborder",
+                        "taxonValue": "Caniformia"
+                    },{
+                        "taxonRank": "Family",
+                        "taxonValue": "Mustilidae"
+                    },{
+                        "taxonRank": "Subfamily",
+                        "taxonValue": "Lutrinae"
+                    },{
+                        "taxonRank": "Genus",
+                        "taxonValue": "Enhydra"
+                    },{
+                        "common": "Sea Otter",
+                        "taxonRank": "Species",
+                        "taxonValue": "Enhydra lutris"
+                    },{
+                        "common": "Southern Sea Otter",
+                        "taxonRank": "Subspecies",
+                        "taxonValue": "Enhydra"
+                    }
+                ]
+            },
+            "spatialResolution": [
+                {
+                    "equivalentScale": "45000"
+                },
+                {
+                    "distance": "45",
+                    "uom": "kilometers"
+                }
+            ],
+            "extent": [
+                {
+                    "description":"Single Points, multiple elements",
+                    "geographicElement":[
+                        {
+                            "type":"Feature",
+                            "id":"point1",
+                            "properties":{
+                                "identifier":"PNT-12345",
+                                "idAuthority":"http://www.gtnp.org",
+                                "name":"BS7882",
+                                "description":"Sea buoy BS7882 location"
+                            },
+                            "geometry":{
+                                "type":"Point",
+                                "coordinates":[
+                                    -164.87402357161,
+                                    59.165040850639
+                                ]
+                            },
+                            "crs":{
+                                "type":"name",
+                                "properties":{
+                                    "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+                                }
+                            }
+                        },
+                        {
+                            "type":"Feature",
+                            "id":"point100",
+                            "properties":{
+                                "identifier":"PNT-12346",
+                                "idAuthority":"http://www.gtnp.org",
+                                "name":"BS999",
+                                "description":"Sea buoy BS999 location"
+                            },
+                            "geometry":{
+                                "type":"Point",
+                                "coordinates":[
+                                    -164.87302357161,
+                                    59.145040850639
+                                ]
+                            },
+                            "crs":{
+                                "type":"name",
+                                "properties":{
+                                    "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "description":"List of Points",
+                    "geographicElement":[
+                        {
+                            "type":"Feature",
+                            "bbox":[
+                                -164.88550989974,
+                                59.159712874412,
+                                -164.86353724349,
+                                59.169368826866
+                            ],
+                            "id":"pointlist1",
+                            "properties":{
+                                "name":"Fishin' spots",
+                                "description":"These points have shared attributes",
+                                "includesData":true
+                            },
+                            "geometry":{
+                                "type":"MultiPoint",
+                                "coordinates":[
+                                    [
+                                        -164.87402357161,
+                                        59.165040850639
+                                    ],
+                                    [
+                                        -164.87502357161,
+                                        59.164040850639
+                                    ],
+                                    [
+                                        -164.88387053359,
+                                        59.161207759012
+                                    ]
+                                ]
+                            },
+                            "crs":{
+                                "type":"name",
+                                "properties":{
+                                    "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "description":"List of Points with attributes",
+                    "geographicElement":[
+                        {
+                            "type":"FeatureCollection",
+                            "id":"multiPt1",
+                            "bbox":[
+                                -164.88550989974,
+                                59.159712874412,
+                                -164.86353724349,
+                                59.169368826866
+                            ],
+                            "properties":{
+                                "name":"A FeatureCollection(points)",
+                                "description":"represents GML MultiGeometry"
+                            },
+                            "crs":{
+                                "type":"name",
+                                "properties":{
+                                    "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+                                }
+                            },
+                            "features":[
+                                {
+                                    "type":"Feature",
+                                    "id":"point010",
+                                    "properties":{
+                                        "identifier":"PNT-12345",
+                                        "idAuthority":"http://www.gtnp.org",
+                                        "name":"BS7882",
+                                        "description":"point valid on or after a specific date",
+                                        "temporalElement":{
+                                            "date":[
+                                                "2011-09-15",
+                                                "2012-08-14"
+                                            ]
+                                        }
+                                    },
+                                    "geometry":{
+                                        "type":"Point",
+                                        "coordinates":[
+                                            -164.88550989974,
+                                            59.179712874412
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type":"Feature",
+                                    "id":"point012",
+                                    "properties":{
+                                        "description":"point valid on or after a specific date",
+                                        "temporalElement":{
+                                            "timeInstant":[
+                                                {
+                                                    "description":"ground condition",
+                                                    "timePosition":"2012-07-15T08:05:00-09:00"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "geometry":{
+                                        "type":"Point",
+                                        "coordinates":[
+                                            -164.87550989974,
+                                            59.209712874412
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type":"Feature",
+                                    "id":"point013",
+                                    "properties":{
+                                        "description":"point valid over a time period",
+                                        "temporalElement":{
+                                            "timePeriod":[
+                                                {
+                                                    "beginPosition":"2013-08-24T08:05:00",
+                                                    "endPosition":"2013-10-04"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "geometry":{
+                                        "type":"Point",
+                                        "coordinates":[
+                                            -164.89650989974,
+                                            59.249712874412
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "description":"Single Line",
+                    "geographicElement":[
+                        {
+                            "type":"Feature",
+                            "id":"line1",
+                            "properties":{
+                                "name":"Summer 2012 Bering Sea Survey Track",
+                                "description":"Coordinates of ship track"
+                            },
+                            "geometry":{
+                                "type":"LineString",
+                                "coordinates":[
+                                    [
+                                        -157.0702509848438,
+                                        71.10933136359692
+                                    ],
+                                    [
+                                        -154.6526281903968,
+                                        70.40820968995817
+                                    ],
+                                    [
+                                        -150.7617407589279,
+                                        70.02201223417278
+                                    ],
+                                    [
+                                        -150.8371960238169,
+                                        70.43210058905156
+                                    ],
+                                    [
+                                        -152.2049884417053,
+                                        70.87235618158296
+                                    ],
+                                    [
+                                        -154.5708878990441,
+                                        71.04082324476376
+                                    ]
+                                ]
+                            },
+                            "crs":{
+                                "type":"name",
+                                "properties":{
+                                    "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "description":"List of Lines",
+                    "geographicElement":[
+                        {
+                            "type":"Feature",
+                            "bbox":[
+                                -157.07025098484,
+                                70.022012234173,
+                                35.2,
+                                -150.76174075893,
+                                71.109331363597,
+                                125.8
+                            ],
+                            "id":"linelist1",
+                            "properties":{
+                                "name":"Lines",
+                                "description":"These lines have shared attributes",
+                                "includesData":true
+                            },
+                            "geometry":{
+                                "type":"MultiLineString",
+                                "coordinates":[
+                                    [
+                                        [
+                                            -157.0702509848438,
+                                            71.10933136359692,
+                                            35.2
+                                        ],
+                                        [
+                                            -154.6526281903968,
+                                            70.40820968995817,
+                                            68.1
+                                        ],
+                                        [
+                                            -150.7617407589279,
+                                            70.02201223417278,
+                                            84.7
+                                        ],
+                                        [
+                                            -150.8371960238169,
+                                            70.43210058905156,
+                                            125.8
+                                        ],
+                                        [
+                                            -152.2049884417053,
+                                            70.87235618158296,
+                                            116.0
+                                        ]
+                                    ],
+                                    [
+                                        [
+                                            -154.5708878990441,
+                                            71.04082324476376,
+                                            36.9
+                                        ],
+                                        [
+                                            -150.7617407589279,
+                                            70.02201223417278,
+                                            84.7
+                                        ],
+                                        [
+                                            -154.6526281903968,
+                                            70.40820968995817,
+                                            68.1
+                                        ],
+                                        [
+                                            -157.0702509848438,
+                                            71.10933136359692,
+                                            35.2
+                                        ]
+                                    ],
+                                    [
+                                        [
+                                            -150.7617407589279,
+                                            70.02201223417278,
+                                            84.7
+                                        ],
+                                        [
+                                            -154.6526281903968,
+                                            70.40820968995817,
+                                            68.1
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "crs":{
+                                "type":"name",
+                                "properties":{
+                                    "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "description":"List of Lines with attributes",
+                    "geographicElement":[
+                        {
+                            "type":"FeatureCollection",
+                            "id":"multiline1",
+                            "bbox":[
+                                -157.07025098484,
+                                70.022012234173,
+                                35.2,
+                                -150.76174075893,
+                                71.109331363597,
+                                125.8
+                            ],
+                            "properties":{
+                                "name":"A FeatureCollection(lines)",
+                                "description":"represents GML MultiGeometry"
+                            },
+                            "crs":{
+                                "type":"name",
+                                "properties":{
+                                    "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+                                }
+                            },
+                            "features":[
+                                {
+                                    "type":"Feature",
+                                    "id":"multiLine001",
+                                    "properties":{
+                                        "name":"Josh",
+                                        "description":"First line in multiline object",
+                                        "temporalElement":{
+                                            "date":[
+                                                "2011-09-15",
+                                                "2012-08-13",
+                                                "2013-08-05"
+                                            ]
+                                        }
+                                    },
+                                    "geometry":{
+                                        "type":"LineString",
+                                        "coordinates":[
+                                            [
+                                                -157.0702509848438,
+                                                71.10933136359692,
+                                                35.2
+                                            ],
+                                            [
+                                                -154.6526281903968,
+                                                70.40820968995817,
+                                                68.1
+                                            ],
+                                            [
+                                                -150.7617407589279,
+                                                70.02201223417278,
+                                                84.7
+                                            ],
+                                            [
+                                                -150.8371960238169,
+                                                70.43210058905156,
+                                                125.8
+                                            ],
+                                            [
+                                                -152.2049884417053,
+                                                70.87235618158296,
+                                                116.0
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type":"Feature",
+                                    "id":"multiLine002",
+                                    "properties":{
+                                        "name":"Chris",
+                                        "description":"Second line in multiline object",
+                                        "temporalElement":{
+                                            "date":[
+                                                "2011-09-15",
+                                                "2012-08-13",
+                                                "2013-08-05"
+                                            ],
+                                            "timeInstant":[
+                                                {
+                                                    "id":"ti-035",
+                                                    "description":"the moment I realized I was lost",
+                                                    "timePosition":"1968-12-15T08:05:00.0+09:00"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "geometry":{
+                                        "type":"LineString",
+                                        "coordinates":[
+                                            [
+                                                -154.5708878990441,
+                                                71.04082324476376,
+                                                36.9
+                                            ],
+                                            [
+                                                -150.7617407589279,
+                                                70.02201223417278,
+                                                84.7
+                                            ],
+                                            [
+                                                -154.6526281903968,
+                                                70.40820968995817,
+                                                68.1
+                                            ],
+                                            [
+                                                -157.0702509848438,
+                                                71.10933136359692,
+                                                35.2
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type":"Feature",
+                                    "id":"multiLine003",
+                                    "properties":{
+                                        "name":"Allison",
+                                        "description":"Third line in multiline object"
+                                    },
+                                    "geometry":{
+                                        "type":"LineString",
+                                        "coordinates":[
+                                            [
+                                                -150.7617407589279,
+                                                70.02201223417278,
+                                                84.7
+                                            ],
+                                            [
+                                                -154.6526281903968,
+                                                70.40820968995817,
+                                                68.1
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "description":"BBOX only",
+                    "geographicElement":[
+                        {
+                            "type":"Feature",
+                            "bbox":[
+                                -148.1764,
+                                57.01428,
+                                -132.821,
+                                60.917
+                            ],
+                            "geometry":null,
+                            "properties":{
+                                "includesData":true,
+                                "description":"Gulf of Alaska"
+                            },
+                            "crs":{
+                                "type":"link",
+                                "properties":{
+                                    "href":"http://spatialreference.org/ref/epsg/4326/proj4/",
+                                    "type":"proj4"
+                                }
+                            }
+                        }
+                    ],
+                    "temporalElement":{
+                        "timeInstant":[
+                            {
+                                "id":"ti-001",
+                                "description":"ground condition",
+                                "timePosition":"2012-07-15T08:05:00.0+09:00"
+                            }
+                        ]
+                    },
+                    "verticalElement":[
+                        {
+                            "minimumValue":-500,
+                            "maximumValue":0,
+                            "verticalCRSTitle":"NAVD88 depth",
+                            "verticalCRSLink":"http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::6357"
+                        }
+                    ]
+                },
+                {
+                    "description":"Polygon with BBOX",
+                    "geographicElement":[
+                        {
+                            "type":"Feature",
+                            "id":"unique1",
+                            "bbox":[
+                                -148.1764,
+                                57.01428,
+                                -132.821,
+                                60.917
+                            ],
+                            "geometry":{
+                                "type":"Polygon",
+                                "coordinates":[
+                                    [
+                                        [
+                                            -139.388046,
+                                            59.828561
+                                        ],
+                                        [
+                                            -140.882186,
+                                            59.839602
+                                        ],
+                                        [
+                                            -143.101425,
+                                            60.22375
+                                        ],
+                                        [
+                                            -147.056503,
+                                            60.829147
+                                        ],
+                                        [
+                                            -148.902206,
+                                            59.982807
+                                        ],
+                                        [
+                                            -148.792343,
+                                            57.944338
+                                        ],
+                                        [
+                                            -134.576034,
+                                            57.663361
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "properties":{
+                                "includesData":true,
+                                "description":"Gulf of Alaska"
+                            },
+                            "crs":{
+                                "type":"name",
+                                "properties":{
+                                    "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+                                }
+                            }
+                        },
+                        {
+                            "type":"Feature",
+                            "id":"unique101",
+                            "bbox":[
+                                -97.067240989074,
+                                18.556394455134,
+                                -80.807475364074,
+                                29.366941330134
+                            ],
+                            "geometry":{
+                                "type":"Polygon",
+                                "coordinates":[
+                                    [
+                                        [
+                                            -84.059428489074,
+                                            29.366941330134
+                                        ],
+                                        [
+                                            -97.067240989074,
+                                            28.048581955134
+                                        ],
+                                        [
+                                            -95.397319114074,
+                                            18.556394455134
+                                        ],
+                                        [
+                                            -80.895365989074,
+                                            24.620847580134
+                                        ],
+                                        [
+                                            -80.807475364074,
+                                            24.708738205134
+                                        ],
+                                        [
+                                            -84.059428489074,
+                                            29.366941330134
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "properties":{
+                                "includesData":false,
+                                "description":"Gulf of Mexico",
+                                "text":"Whatever I want."
+                            },
+                            "crs":{
+                                "type":"name",
+                                "properties":{
+                                    "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+                                }
+                            }
+                        }
+                    ],
+                    "temporalElement":{
+                        "timePeriod":[
+                            {
+                                "id":"tp-001",
+                                "description":"Ground Condition",
+                                "beginPosition":"1987-05-16T16:05:00",
+                                "endPosition":"2011-12"
+                            },
+                            {
+                                "id":"tp-101",
+                                "description":"Below Ground Condition",
+                                "beginPosition":"1987-08-13T16:05:00",
+                                "endPosition":"2012-12-12"
+                            }
+                        ]
+                    },
+                    "verticalElement":[
+                        {
+                            "minimumValue":0,
+                            "maximumValue":1000,
+                            "verticalCRSTitle":"NAVD88 height",
+                            "verticalCRSLink":"http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::5703"
+                        },
+                        {
+                            "minimumValue":1500,
+                            "maximumValue":0,
+                            "verticalCRSTitle":"NAVD88 depth",
+                            "verticalCRSLink":"http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::6357"
+                        }
+                    ]
+                },
+                {
+                    "description":"A feature collection with just polygons",
+                    "geographicElement":[
+                        {
+                            "type":"FeatureCollection",
+                            "id":"unique2",
+                            "bbox":[
+                                -149.89603182812,
+                                61.215716023773,
+                                -149.87405917187,
+                                61.225371976227
+                            ],
+                            "properties":{
+                                "name":"A FeatureCollection(polygons)",
+                                "description":"represents GML MultiGeometry",
+                                "includesData":true
+                            },
+                            "crs":{
+                                "type":"name",
+                                "properties":{
+                                    "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+                                }
+                            },
+                            "features":[
+                                {
+                                    "type":"Feature",
+                                    "id":"unique3",
+                                    "geometry":{
+                                        "type":"Polygon",
+                                        "coordinates":[
+                                            [
+                                                [
+                                                    -149.880796,
+                                                    61.21988
+                                                ],
+                                                [
+                                                    -149.880625,
+                                                    61.221305
+                                                ],
+                                                [
+                                                    -149.889386,
+                                                    61.221346
+                                                ],
+                                                [
+                                                    -149.880796,
+                                                    61.21988
+                                                ]
+                                            ],
+                                            [
+                                                [
+                                                    -149.8807,
+                                                    61.21990
+                                                ],
+                                                [
+                                                    -149.880627,
+                                                    61.221300
+                                                ],
+                                                [
+                                                    -149.8809,
+                                                    61.221300
+                                                ],
+                                                [
+                                                    -149.8807,
+                                                    61.21990
+                                                ]
+                                            ],
+                                            [
+                                                [
+                                                    -149.889300,
+                                                    61.221300
+                                                ],
+                                                [
+                                                    -149.889382,
+                                                    61.221345
+                                                ],
+                                                [
+                                                    -149.889382,
+                                                    61.221445
+                                                ],
+                                                [
+                                                    -149.889300,
+                                                    61.221300
+                                                ]
+                                            ]
+                                        ]
+                                    },
+                                    "properties":{
+                                        "name":"Buttress Park sampling location",
+                                        "description":"Boundary of area in downtown Anchorage where sampling occurred"
+                                    }
+                                },
+                                {
+                                    "type":"Feature",
+                                    "id":"unique4",
+                                    "geometry":{
+                                        "type":"Polygon",
+                                        "coordinates":[
+                                            [
+                                                [
+                                                    -149.888221,
+                                                    61.219643
+                                                ],
+                                                [
+                                                    -149.889466,
+                                                    61.219643
+                                                ],
+                                                [
+                                                    -149.889251,
+                                                    61.219973
+                                                ],
+                                                [
+                                                    -149.887835,
+                                                    61.219952
+                                                ],
+                                                [
+                                                    -149.888221,
+                                                    61.219643
+                                                ]
+                                            ]
+                                        ]
+                                    },
+                                    "properties":{
+                                        "includesData":false,
+                                        "name":"Equipment staging area",
+                                        "description":"Area where sampling equipment was stored, no sampling occurred (Note:includesData should be ignored here. Would need to move this feature into another geographicElement.)"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "temporalElement":{
+                        "timePeriod":[
+                            {
+                                "id":"tp-002",
+                                "beginPosition":"2013-08-24T08:05:00",
+                                "endPosition":"2013-10-04"
+                            },
+                            {
+                                "id":"tp-004",
+                                "beginPosition":"2010-08-24T08:05:00",
+                                "endPosition":"2014-10-04",
+                                "description":"The best days of my life"
+                            }
+                        ],
+                        "timeInstant":[
+                            {
+                                "id":"ti-002",
+                                "description":"below ground condition",
+                                "timePosition":"2012-07-15T08:05:00.0+09:00"
+                            },
+                            {
+                                "id":"ti-003",
+                                "description":"below ground condition",
+                                "timePosition":"2012-08-16T08:06:00.0+09:00"
+                            }
+                        ]
+                    },
+                    "verticalElement":[
+                        {
+                            "minimumValue":60.5,
+                            "maximumValue":110.68,
+                            "verticalCRSTitle":"NAVD88 height (ftUS)",
+                            "verticalCRSLink":"http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:axis-name:EPSG::9904"
+                        }
+                    ]
+                }
+            ]
+        },
+        "distributionInfo": [
+            {
+                "distributorContact": {
+                    "contactId": "4",
+                    "role": "custodian"
+                },
+                "distributionOrderProcess": [
+                    {
+                        "fees": "0.00USD",
+                        "plannedAvailabilityDateTime": "2013-06-21T00:00:00-08:00",
+                        "orderingInstructions": "Call 555-1212 and yell at the operator",
+                        "turnaround": "up to 3 hours"
+                    },
+                    {
+                        "fees": "3.00USD",
+                        "turnaround": "immediate"
+                    }
+                ],
+                "distributorFormat": [
+                    {
+                        "name": "netCDF",
+                        "version": "4.0"
+                    },
+                    {
+                        "name": "Excel Spreadsheet",
+                        "version": "xlsx"
+                    },
+                    {
+                        "name": "CSV"
+                    }
+                ],
+                "distributorTransferOptions": [
+                    {
+                        "online": [
+                            {
+                                "linkage": "http://aoos.org/aoos-data-resources",
+                                "name": "AOOS Data Resources",
+                                "description": "This page provides links to interactive maps and data discovery tools.",
+                                "function": "information"
+                            },
+                            {
+                                "linkage": "http://aoos.org/fake_resource_location"
+                            }
+                        ],
+                        "offline": {
+                            "name": "dvd",
+                            "mediumFormat": "iso9660",
+                            "mediumNote": "To receive a dvd in the mail, contact the distributor POC."
+                        }
+                    }
+                ]
+            },
+            {
+                "distributorContact": {
+                    "contactId": "5",
+                    "role": "distributor"
+                }
+            }
+        ],
+        "dataQualityInfo": [
+            {
+                "scope": "dataset",
+                "lineage": {
+                    "statement": "derived from that other dataset",
+                    "processStep": [
+                        {
+                            "stepId": "135b",
+                            "description": "Manually combed through to find obvious junk data values, changed value to 999999999999999999999",
+                            "rationale": "It had to be done!",
+                            "dateTime": "2011-08-23",
+                            "processor": [
+                                {
+                                    "contactId": "3",
+                                    "role": "processor"
+                                },
+                                {
+                                    "contactId": "2",
+                                    "role": "publisher"
+                                }
+                            ]
+                        },
+                        {
+                            "description": "changed junk data value to 9999",
+                            "rationale": "Way too many 9's that first time.",
+                            "dateTime": "2013-08-28",
+                            "processor": [
+                                {
+                                    "contactId": "4",
+                                    "role": "processor"
+                                }
+                            ]
+                        }
+                    ],
+                    "source": [
+                        {
+                            "description": "For this work, a mesoscale numerical model (WRF) will be initialized using the National Centers for Environmental Prediction (NCEP) North American Regional Reanalysis (NARR) output at 32-km resolution.  The NARR data provides the “best-guess” analysis of atmospheric conditions for use in historical studies.  The NARR domain covers all of North and Central America, much of the northeastern Pacific and northern Atlantic Oceans, including Alaska and Hawaii.  Ten years of NARR data will be used (1 Jan 2000 – 31 Dec 2009).",
+                            "citation": {
+                                "title": "Very High-Resolution Dynamic Downscaling of Regional Climate and Hydrology",
+                                "date": [
+                                    {
+                                        "date": "2000-01-21",
+                                        "dateType": "publication"
+                                    }
+                                ],
+                                "edition": "version 1.2.0",
+                                "citedResponsibleParty": [
+                                    {
+                                        "contactId": "1",
+                                        "role": "originator"
+                                    }
+                                ],
+                                "presentationForm": "documentDigital",
+                                "isbn": "HB12365.214",
+                                "issn": "0ab4-dd983c01"
+                            },
+                            "processStep": [
+                                {
+                                    "stepId": "135bc",
+                                    "description": "The NARR data will be used to initialize the WRF model.  The NARR data cannot be used by the WRF directly.  Instead, WRF-required initial data and lateral data will be created from the NARR data using the WRF Preprocessing System (WPS) utilities.  In addition, the 32-km grid resolution of the NARR data will be objectively analyzed to the WRF 4-km grid. ",
+                                    "rationale": "It had to be done!",
+                                    "dateTime": "2013-08-13",
+                                    "processor": [
+                                        {
+                                            "contactId": "3",
+                                            "role": "processor"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "stepId": "135bd",
+                                    "description": "The Hawaii Forest Bird Survey Vegetation Database includes data for over 40,400 vegetation plots that were sampled on the island of Hawaii in 1977.  This database records with cover data that can be used for modeling their distribution abundance.",
+                                    "rationale": "It had to be done!",
+                                    "dateTime": "2013-08-13",
+                                    "processor": [
+                                        {
+                                            "contactId": "3",
+                                            "role": "processor"
+                                        }
+                                    ]
+                                }
+
+                            ]
+                        },
+                        {
+                            "description": "We got this dataset from those guys in Fairbanks."
+                        }
+                    ]
+                }
+            },
+            {
+                "scope": "dataset",
+                "lineage": {
+                    "statement": "This is that other dataset that you might have heard about.",
+                    "source": [
+                        {
+                            "description": "This dataset came from somewhere. It was collected by so and so.",
+                            "citation": {
+                                "title": "Example_dataset_20111009_turner_v1-12.csv",
+                                "date": [
+                                    {
+                                        "date": "2011-10-09"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "scope": "series",
+                "lineage": {
+                    "statement": "This series is made up of those datasets."
+                }
+            },
+            {
+                "scope": "dataset",
+                "lineage": {
+                    "statement": "This another ctd datas from the GAK1 location.",
+                    "processStep": [
+                        {
+                            "description": "This is how this dataset was processed."
+                        }
+                    ]
+                }
+            },
+            {
+                "scope": "dataset",
+                "lineage": {
+                    "statement": "This series is made up of those datasets.",
+                    "source": [
+                        {
+                            "description": "We got this dataset from those guys in Fairbanks."
+                        }
+                    ]
+                }
+            }
+        ],
+        "metadataMaintenance": {
+            "maintFreq": "annually",
+            "maintNote": [
+                "metadata is updated each year after data from that year has been added to the dataset",
+                "Oh, and this is a second note."
+            ],
+            "maintContact": [
+                {
+                    "contactId": "4",
+                    "role": "custodian"
+                },
+                {
+                    "contactId": "2",
+                    "role": "owner"
+                }
+            ]
+        }
+    }
+}

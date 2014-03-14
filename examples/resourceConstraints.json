@@ -1,0 +1,25 @@
+[
+  {
+    "accessConstraints": ["patentPending", "restricted"],
+    "useConstraints": ["restricted"],
+    "otherConstraints": ["Legally barred from use for navigation."]
+  }, {
+    "accessConstraints": ["otherRestrictions"],
+    "useConstraints": ["otherRestrictions"],
+    "otherConstraints": ["Access Constraints: No one else. Use Constraints: None"]
+  }, {
+    "accessConstraints": ["copyright", "patent", "patentPending", "trademark", "license", "intellectualPropertyRights", "restricted", "otherRestrictions"]
+  }
+  , {
+    "classification": "unclassified",
+    "userNote": "security clearance not required",
+    "classSystem": "none",
+    "handlingDescription": "this is how to handle things..."
+  }, {
+    "classification": "intellectualPropertyRights"
+  }, {
+    "classification": "secret",
+    "userNote": "shhhhh"
+  },
+  ["not for suitable for navigation", "draft version", "not intended for general use", "don't be a jerk"]
+]

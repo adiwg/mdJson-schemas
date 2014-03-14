@@ -1,0 +1,175 @@
+{
+  "id": "contacts.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for a contacts list, contains definitions for individual and organization",
+  "type": "array",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "anyOf": [
+      {
+        "$ref": "#/definitions/individual"
+      }, {
+        "$ref": "#/definitions/organization"
+      }
+    ]
+  },
+  "definitions": {
+    "phone": {
+      "type": "object",
+      "required": ["phoneNumber"],
+      "properties": {
+        "phoneName": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string",
+          "pattern": "^[0-9+()#. \/ext-]+$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "deliveryPoint": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "city": {
+          "type": "string"
+        },
+        "administrativeArea": {
+          "type": "string"
+        },
+        "postalCode": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "electronicMailAddress": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^.+@.+\\..+$"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "individual": {
+      "type": "object",
+      "required": ["contactId", "individualName"],
+      "additionalProperties": true,
+      "properties": {
+        "contactId": {
+          "type": "string"
+        },
+        "individualName": {
+          "type": "string"
+        },
+        "positionName": {
+          "type": "string"
+        },
+        "organizationName": {
+          "type": "string"
+        },
+        "address": {
+          "$ref": "#/definitions/address"
+        },
+        "onlineResource": {
+          "type": "array",
+          "items": {
+            "$ref": "./onlineResource.json#"
+          },
+          "uniqueItems": true
+        },
+        "contactInstructions": {
+          "type": "string"
+        },
+        "voice": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/phone"
+          }
+        },
+        "fax": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/phone"
+          }
+        },
+        "sms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/phone"
+          }
+        }
+      }
+    },
+    "organization": {
+      "type": "object",
+      "required": ["contactId", "organizationName"],
+      "additionalProperties": true,
+      "properties": {
+        "contactId": {
+          "type": "string"
+        },
+        "positionName": {
+          "type": "string"
+        },
+        "organizationName": {
+          "type": "string"
+        },
+        "address": {
+          "$ref": "#/definitions/address"
+        },
+        "onlineResource": {
+          "type": "array",
+          "items": {
+            "$ref": "./onlineResource.json#"
+          },
+          "uniqueItems": true
+        },
+        "contactInstructions": {
+          "type": "string"
+        },
+        "voice": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/phone"
+          }
+        },
+        "fax": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/phone"
+          }
+        },
+        "sms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/phone"
+          }
+        }
+      }
+    },
+    "contactRef": {
+      "type": "object",
+      "required": ["contactId", "role"],
+      "properties": {
+        "contactId": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

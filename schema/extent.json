@@ -1,0 +1,118 @@
+{
+  "id": "extent.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for extent",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "geographicElement": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "type": {
+            "enum": ["Feature", "FeatureCollection"]
+          }
+        },
+        "oneOf": [
+          {
+            "$ref": "./geojson/geojson.json#"
+          }
+        ]
+      }
+    },
+    "verticalElement": {
+      "type": "array",
+      "items": {
+        "$ref": "#definitions/verticalExtent"
+      }
+    },
+    "temporalElement": {
+
+      "$ref": "#definitions/temporalElement"
+    }
+  },
+  "definitions": {
+    "timeInstant": {
+      "type": "object",
+      "required": ["timePosition"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "timePosition": {
+          "$ref": "../schema.json#definitions/date"
+        }
+      }
+    },
+    "timePeriod": {
+      "type": "object",
+      "required": ["beginPosition", "endPosition"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "beginPosition": {
+          "$ref": "../schema.json#definitions/date"
+        },
+        "endPosition": {
+          "$ref": "../schema.json#definitions/date"
+        }
+      }
+    },
+    "temporalElement": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "timeInstant": {
+          "type": "array",
+          "items": {
+            "$ref": "#definitions/timeInstant"
+          }
+        },
+        "timePeriod": {
+          "type": "array",
+          "items": {
+            "$ref": "#definitions/timePeriod"
+          }
+        },
+        "date": {
+          "type": "array",
+          "items": {
+            "$ref": "../schema.json#definitions/date"
+          }
+        }
+      }
+    },
+    "verticalExtent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minimumValue", "maximumValue", "verticalCRSTitle", "verticalCRSLink"],
+      "properties": {
+        "minimumValue": {
+          "type": "number"
+        },
+        "maximumValue": {
+          "type": "number"
+        },
+        "verticalCRSTitle": {
+          "type": "string"
+        },
+        "verticalCRSLink": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

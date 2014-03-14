@@ -1,0 +1,26 @@
+{
+  "id": "maintInfo.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for maintenance information",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "maintFreq": {
+      "type": "string"
+    },
+    "maintNote": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+    ,
+    "maintContact": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "contacts.json#/definitions/contactRef"
+      }
+    }
+  }
+}
