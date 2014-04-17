@@ -1,4 +1,5 @@
 {
+    "jsonVersion": "",
     "contacts": [
         {
             "contactId": "",
@@ -45,7 +46,7 @@
                 "role": ""
             }
         ],
-        "metadataCreateDate": "",
+        "metadataCreationDate": "",
         "metadataURI": "",
         "metadataMaintenance": {
             "maintFreq": "",
@@ -246,104 +247,121 @@
                     "description": "",
                     "geographicElement":[
                         {
-                            "id": "",
                             "type": "Feature",
-                            "name": "",
-                            "description": "",
-                            "includesData": true,
-                            "assignedId": {
-                                "identifier": "",
-                                "idAuthority": ""
-                            },
-                            "boundingBox": {
-                                "west": 0,
-                                "south": 0,
-                                "east": 0,
-                                "north": 0
-                            },
+                            "id": "",
+                            "bbox":[
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
                             "geometry":{
                                 "type": "Point",
                                 "coordinates": [
-                                    {
-                                        "longitude-x": 0,
-                                        "latitude-y": 0,
-                                        "elevation-z": 0
-                                    }
+                                    0,
+                                    0,
+                                    0
                                 ]
                             },
                             "geometry": {
                                 "type": "LineString",
                                 "coordinates": [
-                                    {
-                                        "longitude-x": 0,
-                                        "latitude-y": 0,
-                                        "elevation-z": 0
-                                    }
+                                    [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0
+                                    ]
                                 ]
                             },
                             "geometry": {
                                 "type":"Polygon",
-                                "outerRing": [
-                                    {
-                                        "longitude-x": 0,
-                                        "latitude-y": 0,
-                                        "elevation-z": 0
-                                    }
-                                ],
-                                "exclusionRings": [
+                                "coordinates": [
                                     [
-                                        {
-                                            "longitude-x": 0,
-                                            "latitude-y": 0,
-                                            "elevation-z": 0
-                                        }
+                                        [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        [
+                                            0,
+                                            0,
+                                            0
+                                        ]
+                                    ],
+                                    [
+                                        [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        [
+                                            0,
+                                            0,
+                                            0
+                                        ]
                                     ]
                                 ]
                             },
                             "crs": {
                                 "type": "",
                                 "properties": {
-                                    "crsName": "",
-                                    "referenceURI": "",
+                                    "name": "",
+                                    "href": "",
                                     "type": ""
                                 }
                             },
-                            "temporalElement": {
-                                "date": [""],
-                                "timeInstant": [
-                                    {
-                                        "id":"",
-                                        "description": "",
-                                        "timePosition": ""
-                                    }
-                                ],
-                                "timePosition": [
-                                    {
-                                        "id":"",
-                                        "description": "",
-                                        "beginPosition": "",
-                                        "endPosition": ""
-                                    }
-                                ]
+                            "properties": {
+                                "elementName": "",
+                                "description": "",
+                                "includesData": true,
+                                "temporalElement": {
+                                    "date": [""],
+                                    "timeInstant": [
+                                        {
+                                            "id":"",
+                                            "description": "",
+                                            "timePosition": ""
+                                        }
+                                    ],
+                                    "timePosition": [
+                                        {
+                                            "id":"",
+                                            "description": "",
+                                            "beginPosition": "",
+                                            "endPosition": ""
+                                        }
+                                    ]
+                                },
+                                "assignedId": {
+                                    "identifier": "",
+                                    "idAuthority": ""
+                                }
                             }
                         },
                         {
-                            "id": "",
                             "type": "FeatureCollection",
-                            "name":"",
-                            "description": "",
-                            "includesData": true,
-                            "boundingBox": {
-                                "west": 0,
-                                "south": 0,
-                                "east": 0,
-                                "north": 0
+                            "id": "",
+                            "bbox": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "properties": {
+                                "name":"",
+                                "description": "",
+                                "includesData": true
                             },
                             "crs": {
                                 "type": "",
                                 "properties": {
-                                    "crsName": "",
-                                    "referenceURI": "",
+                                    "name": "",
+                                    "href": "",
                                     "type": ""
                                 }
                             },
@@ -379,9 +397,92 @@
                 }
             ],
             "associatedResource": [
-
+                {
+                    "associationType": "",
+                    "resourceType": "",
+                    "resourceCitation": {
+                        "title": "",
+                        "date": [
+                            {
+                                "date": "",
+                                "dateType": ""
+                            }
+                        ],
+                        "edition": "",
+                        "citedResponsibleParty": [
+                            {
+                                "contactId": "",
+                                "role": ""
+                            }
+                        ],
+                        "presentationForm": "",
+                        "isbn": "",
+                        "issn": "",
+                        "onlineResource": [
+                            {
+                                "doi": "",
+                                "resourceURI": "",
+                                "protocol": "",
+                                "name": "",
+                                "description": "",
+                                "function": ""
+                            }
+                        ]
+                    }
+                }
             ],
-            "additionalDocumentation": []
+            "additionalIdentifier": [
+                {
+                    "associationType": "",
+                    "authority": {
+                        "title": "",
+                        "date": [
+                            {
+                                "date": "",
+                                "dateType": ""
+                            }
+                        ],
+                        "citedResponsibleParty": [
+                            {
+                                "contactId": "",
+                                "role": ""
+                            }
+                        ]
+                    },
+                    "code": ""
+                }
+            ],
+            "additionalDocumentation": [
+                {
+                    "title": "",
+                    "date": [
+                        {
+                            "date": "",
+                            "dateType": ""
+                        }
+                    ],
+                    "edition": "",
+                    "citedResponsibleParty": [
+                        {
+                            "contactId": "",
+                            "role": ""
+                        }
+                    ],
+                    "presentationForm": "",
+                    "isbn": "",
+                    "issn": "",
+                    "onlineResource": [
+                        {
+                            "doi": "",
+                            "resourceURI": "",
+                            "protocol": "",
+                            "name": "",
+                            "description": "",
+                            "function": ""
+                        }
+                    ]
+                }
+            ]
         },
         "distributionInfo": [
             {
