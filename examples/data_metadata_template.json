@@ -7,24 +7,22 @@
             "positionName": "",
             "onlineResource": [
                 {
-                    "linkage": "",
                     "doi": "",
+                    "resourceURI": "",
+                    "protocol": "",
                     "name": "",
                     "description": "",
                     "function": ""
                 }
             ],
             "contactInstructions": "",
-            "voice": [
+            "phoneBook": [
                 {
                     "phoneName": "",
-                    "phoneNumber": ""
-                }
-            ],
-            "fax": [
-                {
-                    "phoneName": "",
-                    "phoneNumber": ""
+                    "phoneNumber": "",
+                    "voice": true,
+                    "fax": true,
+                    "sms": true
                 }
             ],
             "address": {
@@ -38,17 +36,27 @@
         }
     ],
     "metadata": {
-        "fileIdentifier": "",
-        "parentIdentifier": "",
-        "hierarchyLevel": [""],
-        "contact": [
+        "metadataIdentifier": "",
+        "parentMetadataIdentifier": "",
+        "metadataScope": [""],
+        "metadataContact": [
             {
                 "contactId": "",
                 "role": ""
             }
         ],
-        "dateStamp": "",
-        "dataSetURI": "",
+        "metadataCreateDate": "",
+        "metadataURI": "",
+        "metadataMaintenance": {
+            "maintFreq": "",
+            "maintNote": [""],
+            "maintContact": [
+                {
+                    "contactId": "",
+                    "role": ""
+                }
+            ]
+        },
         "spatialReference": [""],
         "identificationInfo": {
             "citation": {
@@ -68,7 +76,17 @@
                 ],
                 "presentationForm": "",
                 "isbn": "",
-                "issn": ""
+                "issn": "",
+                "onlineResource": [
+                    {
+                        "doi": "",
+                        "resourceURI": "",
+                        "protocol": "",
+                        "name": "",
+                        "description": "",
+                        "function": ""
+                    }
+                ]
             },
             "pointOfContact": [
                 {
@@ -78,7 +96,7 @@
             ],
             "abstract": "",
             "status": "",
-            "language": [";"],
+            "language": [""],
             "purpose": "",
             "credit": [""],
             "spatialRepresentation": [""],
@@ -151,22 +169,24 @@
                     "fileLink": ""
                 }
             ],
-            "useLimitations": [""],
-            "legalConstraints": [
-                {
-                    "accessConstraints": [""],
-                    "useConstraints": [""],
-                    "otherConstraints": [""]
-                }
-            ],
-            "securityConstraints": [
-                {
-                    "classification": "",
-                    "userNote": "",
-                    "classSystem": "",
-                    "handlingDescription": ""
-                }
-            ],
+            "constraints": {
+                "useLimitations": [""],
+                "legalConstraints": [
+                    {
+                        "accessConstraints": [""],
+                        "useConstraints": [""],
+                        "otherConstraints": [""]
+                    }
+                ],
+                "securityConstraints": [
+                    {
+                        "classification": "",
+                        "userNote": "",
+                        "classSystem": "",
+                        "handlingDescription": ""
+                    }
+                ]
+            },
             "taxonomy": {
                 "classSystem": [
                     {
@@ -226,18 +246,69 @@
                     "description": "",
                     "geographicElement":[
                         {
-                            "type": "Feature",
-                            "bbox":[
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
                             "id": "",
-                            "properties": {
-                                "name": "",
-                                "description": "",
-                                "includesData": true,
+                            "type": "Feature",
+                            "name": "",
+                            "description": "",
+                            "includesData": true,
+                            "assignedId": {
+                                "identifier": "",
+                                "idAuthority": ""
+                            },
+                            "boundingBox": {
+                                "west": 0,
+                                "south": 0,
+                                "east": 0,
+                                "north": 0
+                            },
+                            "geometry":{
+                                "type": "Point",
+                                "coordinates": [
+                                    {
+                                        "longitude-x": 0,
+                                        "latitude-y": 0,
+                                        "elevation-z": 0
+                                    }
+                                ]
+                            },
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [
+                                    {
+                                        "longitude-x": 0,
+                                        "latitude-y": 0,
+                                        "elevation-z": 0
+                                    }
+                                ]
+                            },
+                            "geometry": {
+                                "type":"Polygon",
+                                "outerRing": [
+                                    {
+                                        "longitude-x": 0,
+                                        "latitude-y": 0,
+                                        "elevation-z": 0
+                                    }
+                                ],
+                                "exclusionRings": [
+                                    [
+                                        {
+                                            "longitude-x": 0,
+                                            "latitude-y": 0,
+                                            "elevation-z": 0
+                                        }
+                                    ]
+                                ]
+                            },
+                            "crs": {
+                                "type": "",
+                                "properties": {
+                                    "crsName": "",
+                                    "referenceURI": "",
+                                    "type": ""
+                                }
+                            },
+                            "temporalElement": {
                                 "date": [""],
                                 "timeInstant": [
                                     {
@@ -253,92 +324,26 @@
                                         "beginPosition": "",
                                         "endPosition": ""
                                     }
-                                ],
-                                "identifier": "",
-                                "idAuthority": "",
-                                "scope": "",
-                                "initiativeType": ""
-                            },
-                            "geometry":{
-                                "type": "Point",
-                                "coordinates": [
-                                    0,
-                                    0,
-                                    0
                                 ]
-                            },
-                            "geometry": {
-                                "type": "LineString",
-                                "coordinates": [
-                                    [
-                                        0,
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        0,
-                                        0,
-                                        0
-                                    ]
-                                ]
-                            },
-                            "geometry": {
-                                "type":"Polygon",
-                                "coordinates": [
-                                    [
-                                        [
-                                            0,
-                                            0,
-                                            0
-                                        ],
-                                        [
-                                            0,
-                                            0,
-                                            0
-                                        ]
-                                    ],
-                                    [
-                                        [
-                                            0,
-                                            0,
-                                            0
-                                        ],
-                                        [
-                                            0,
-                                            0,
-                                            0
-                                        ]
-                                    ]
-                                ]
-                            },
-                            "crs": {
-                                "type": "",
-                                "properties": {
-                                    "name": "",
-                                    "href": "",
-                                    "type": ""
-                                }
                             }
                         },
                         {
-                            "type": "FeatureCollection",
                             "id": "",
-                            "bbox": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "properties": {
-                                "name":"",
-                                "description": "",
-                                "includesData": true
+                            "type": "FeatureCollection",
+                            "name":"",
+                            "description": "",
+                            "includesData": true,
+                            "boundingBox": {
+                                "west": 0,
+                                "south": 0,
+                                "east": 0,
+                                "north": 0
                             },
                             "crs": {
                                 "type": "",
                                 "properties": {
-                                    "name": "",
-                                    "href": "",
+                                    "crsName": "",
+                                    "referenceURI": "",
                                     "type": ""
                                 }
                             },
@@ -372,7 +377,11 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "associatedResource": [
+
+            ],
+            "additionalDocumentation": []
         },
         "distributionInfo": [
             {
@@ -398,8 +407,9 @@
                     {
                         "online": [
                             {
-                                "linkage": "",
                                 "doi": "",
+                                "resourceURI": "",
+                                "protocol": "",
                                 "name": "",
                                 "description": "",
                                 "function": ""
@@ -473,16 +483,6 @@
                     ]
                 }
             }
-        ],
-        "metadataMaintenance": {
-            "maintFreq": "",
-            "maintNote": [""],
-            "maintContact": [
-                {
-                    "contactId": "",
-                    "role": ""
-                }
-            ]
-        }
+        ]
     }
 }
