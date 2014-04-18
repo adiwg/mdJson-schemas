@@ -428,7 +428,7 @@
                         "online": [
                             {
                                 "doi": "",
-                                "resourceURI": "",
+                                "URI": "",
                                 "protocol": "",
                                 "name": "",
                                 "description": "",
@@ -536,7 +536,7 @@
                     "onlineResource": [
                         {
                             "doi": "",
-                            "resourceURI": "",
+                            "URI": "",
                             "protocol": "",
                             "name": "",
                             "description": "",
@@ -569,7 +569,7 @@
                 "onlineResource": [
                     {
                         "doi": "",
-                        "resourceURI": "",
+                        "URI": "",
                         "protocol": "",
                         "name": "",
                         "description": "",
