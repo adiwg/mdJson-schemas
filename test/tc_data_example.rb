@@ -26,7 +26,7 @@ class TestExamples < Test::Unit::TestCase
   end
 
   def test_data_template
-    errors = JSON::Validator.fully_validate(@@schema, '../examples/data_metadata_template.json')
+    errors = JSON::Validator.fully_validate(@@schema, '../examples/adiwg_metadata_template.json')
     assert(errors.empty?, errors.join("/n"))
   end
 

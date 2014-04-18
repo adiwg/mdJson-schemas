@@ -1,0 +1,583 @@
+{
+    "jsonVersion": "",
+    "contacts": [
+        {
+            "contactId": "",
+            "individualName": "",
+            "organizationName": "",
+            "positionName": "",
+            "onlineResource": [
+                {
+                    "doi": "",
+                    "URI": "",
+                    "protocol": "",
+                    "name": "",
+                    "description": "",
+                    "function": ""
+                }
+            ],
+            "contactInstructions": "",
+            "phoneBook": [
+                {
+                    "phoneName": "",
+                    "phoneNumber": "",
+                    "voice": true,
+                    "fax": true,
+                    "sms": true
+                }
+            ],
+            "address": {
+                "deliveryPoint": [""],
+                "city": "",
+                "administrativeArea": "",
+                "postalCode": "",
+                "country": "",
+                "electronicMailAddress": [""]
+            }
+        }
+    ],
+    "metadata": {
+        "metadataIdentifier": "",
+        "parentMetadataIdentifier": "",
+        "metadataScope": [""],
+        "metadataContact": [
+            {
+                "contactId": "",
+                "role": ""
+            }
+        ],
+        "metadataCreationDate": "",
+        "metadataURI": "",
+        "metadataStatus": "",
+        "metadataMaintenance": {
+            "maintFreq": "",
+            "maintNote": [""],
+            "maintContact": [
+                {
+                    "contactId": "",
+                    "role": ""
+                }
+            ]
+        },
+        "spatialDatum": [""],
+        "identificationInfo": {
+            "resourceId": "",
+            "citation": {
+                "title": "",
+                "date": [
+                    {
+                        "date": "",
+                        "dateType": ""
+                    }
+                ],
+                "edition": "",
+                "responsibleParty": [
+                    {
+                        "contactId": "",
+                        "role": "",
+                        "partyAssignedId": [
+                            {
+                                "idType": "",
+                                "id": ""
+                            }
+                        ]
+                    }
+                ],
+                "presentationForm": "",
+                "doi": "",
+                "isbn": "",
+                "issn": ""
+            },
+            "pointOfContact": [
+                {
+                    "contactId": "",
+                    "role": ""
+                }
+            ],
+            "abstract": "",
+            "shortAbstract": "",
+            "status": "",
+            "hasMapLocation": true,
+            "hasDataAvailable": true,
+            "language": [""],
+            "purpose": "",
+            "credit": [""],
+            "spatialRepresentation": [""],
+            "topicCategory": [""],
+            "environmentalDesc": "",
+            "resourceFormat": [
+                {
+                    "name": "",
+                    "version": ""
+                }
+            ],
+            "keywords": [
+                {
+                    "keyword": [""],
+                    "keywordType": "",
+                    "thesaurus": {
+                        "thesaurusLink": "",
+                        "citation": {
+                            "title": "",
+                            "date": [
+                                {
+                                    "date": "",
+                                    "dateType": ""
+                                }
+                            ],
+                            "edition": "",
+                            "citedResponsibleParty": [
+                                {
+                                    "contactId": "",
+                                    "role": ""
+                                }
+                            ],
+                            "presentationForm": "",
+                            "doi": "",
+                            "isbn": "",
+                            "issn": ""
+                        }
+                    }
+                }
+            ],
+            "resourceMaintenance": [
+                {
+                    "maintFreq": "",
+                    "maintNote": [""],
+                    "contact": [
+                        {
+                            "contactId": "",
+                            "role": ""
+                        }
+                    ]
+                }
+            ],
+            "resourceSpecificUsage": [
+                {
+                    "specificUsage": "",
+                    "userDeterminedLimitations": "",
+                    "userContactInfo": [
+                        {
+                            "contactId": "",
+                            "role": ""
+                        }
+                    ]
+                }
+            ],
+            "graphicOverview": [
+                {
+                    "fileName": "",
+                    "fileDescription": "",
+                    "fileType": "",
+                    "fileLink": ""
+                }
+            ],
+            "constraints": {
+                "useLimitations": [""],
+                "legalConstraints": [
+                    {
+                        "accessConstraints": [""],
+                        "useConstraints": [""],
+                        "otherConstraints": [""]
+                    }
+                ],
+                "securityConstraints": [
+                    {
+                        "classification": "",
+                        "userNote": "",
+                        "classSystem": "",
+                        "handlingDescription": ""
+                    }
+                ]
+            },
+            "taxonomy": {
+                "classSystem": [
+                    {
+                        "title": "",
+                        "date": [
+                            {
+                                "date": "",
+                                "dateType": ""
+                            }
+                        ],
+                        "edition": "",
+                        "citedResponsibleParty": [
+                            {
+                                "contactId": "",
+                                "role": ""
+                            }
+                        ],
+                        "presentationForm": "",
+                        "ISBN": "",
+                        "ISSN": ""
+                    }
+                ],
+                "taxonGeneralScope": "",
+                "observer": [
+                    {
+                        "contactId": "",
+                        "role": ""
+                    }
+                ],
+                "taxonomicProcedures": "",
+                "voucher": {
+                    "specimen": "",
+                    "repository": {
+                        "contactId": "",
+                        "role": ""
+                    }
+                },
+                "taxonClass": [
+                    {
+                        "common": "",
+                        "taxonRank": "",
+                        "taxonValue": ""
+                    }
+                ]
+            },
+            "spatialResolution": [
+                {
+                    "equivalentScale": 0
+                },
+                {
+                    "distance": 0,
+                    "uom": ""
+                }
+            ],
+            "extent": [
+                {
+                    "description": "",
+                    "geographicElement": [
+                        {
+                            "type": "Feature",
+                            "id": "",
+                            "bbox": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [
+                                    [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                ]
+                            },
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        [
+                                            0,
+                                            0,
+                                            0
+                                        ]
+                                    ],
+                                    [
+                                        [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        [
+                                            0,
+                                            0,
+                                            0
+                                        ]
+                                    ]
+                                ]
+                            },
+                            "crs": {
+                                "type": "",
+                                "properties": {
+                                    "name": "",
+                                    "href": "",
+                                    "type": ""
+                                }
+                            },
+                            "properties": {
+                                "featureName": "",
+                                "description": "",
+                                "includesData": true,
+                                "temporalElement": {
+                                    "date": [""],
+                                    "timeInstant": [
+                                        {
+                                            "id": "",
+                                            "description": "",
+                                            "timePosition": ""
+                                        }
+                                    ],
+                                    "timePosition": [
+                                        {
+                                            "id": "",
+                                            "description": "",
+                                            "beginPosition": "",
+                                            "endPosition": ""
+                                        }
+                                    ]
+                                },
+                                "assignedId": {
+                                    "identifier": "",
+                                    "idAuthority": ""
+                                },
+                                "featureScope": "",
+                                "featureAcquisitionMethod": ""
+                            }
+                        },
+                        {
+                            "type": "FeatureCollection",
+                            "id": "",
+                            "bbox": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "properties": {
+                                "name": "",
+                                "description": "",
+                                "includesData": true
+                            },
+                            "crs": {
+                                "type": "",
+                                "properties": {
+                                    "name": "",
+                                    "href": "",
+                                    "type": ""
+                                }
+                            },
+                            "features": [
+                                {}
+                            ]
+                        }
+                    ],
+                    "temporalElement": {
+                        "date": [""],
+                        "timeInstant": [
+                            {
+                                "id": "",
+                                "description": "",
+                                "timePosition": ""
+                            }
+                        ],
+                        "timePosition": [
+                            {
+                                "id": "",
+                                "description": "",
+                                "beginPosition": "",
+                                "endPosition": ""
+                            }
+                        ]
+                    },
+                    "verticalElement": [
+                        {
+                            "minimumValue": 0,
+                            "maximumValue": 0,
+                            "verticalCRSTitle": "",
+                            "verticalCRSLink": ""
+                        }
+                    ]
+                }
+            ],
+            "supplementalInfo": ""
+        },
+        "distributionInfo": [
+            {
+                "distributorContact": {
+                    "contactId": "",
+                    "role": ""
+                },
+                "distributionOrderProcess": [
+                    {
+                        "fees": "",
+                        "plannedAvailabilityDateTime": "",
+                        "orderingInstructions": "",
+                        "turnaround": ""
+                    }
+                ],
+                "distributorFormat": [
+                    {
+                        "name": "",
+                        "version": ""
+                    }
+                ],
+                "distributorTransferOptions": [
+                    {
+                        "online": [
+                            {
+                                "doi": "",
+                                "URI": "",
+                                "protocol": "",
+                                "name": "",
+                                "description": "",
+                                "function": ""
+                            }
+                        ],
+                        "offline": {
+                            "name": "",
+                            "mediumFormat": "",
+                            "mediumNote": ""
+                        }
+                    }
+                ]
+            }
+        ],
+        "dataQualityInfo": [
+            {
+                "scope": "",
+                "lineage": {
+                    "statement": "",
+                    "processStep": [
+                        {
+                            "stepId": "",
+                            "description": "",
+                            "rationale": "",
+                            "dateTime": "",
+                            "processor": [
+                                {
+                                    "contactId": "",
+                                    "role": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "source": [
+                        {
+                            "description": "",
+                            "citation": {
+                                "title": "",
+                                "date": [
+                                    {
+                                        "date": "",
+                                        "dateType": ""
+                                    }
+                                ],
+                                "edition": "",
+                                "citedResponsibleParty": [
+                                    {
+                                        "contactId": "",
+                                        "role": ""
+                                    }
+                                ],
+                                "presentationForm": "",
+                                "isbn": "",
+                                "issn": ""
+                            },
+                            "processStep": [
+                                {
+                                    "stepId": "",
+                                    "description": "",
+                                    "rationale": "",
+                                    "dateTime": "",
+                                    "processor": [
+                                        {
+                                            "contactId": "",
+                                            "role": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "associatedResource": [
+            {
+                "associationType": "",
+                "resourceType": "",
+                "resourceCitation": {
+                    "title": "",
+                    "date": [
+                        {
+                            "date": "",
+                            "dateType": ""
+                        }
+                    ],
+                    "edition": "",
+                    "citedResponsibleParty": [
+                        {
+                            "contactId": "",
+                            "role": "",
+                            "partyAssignedId": [
+                                {
+                                    "idType": "",
+                                    "id": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "presentationForm": "",
+                    "doi": "",
+                    "isbn": "",
+                    "issn": "",
+                    "onlineResource": [
+                        {
+                            "doi": "",
+                            "URI": "",
+                            "protocol": "",
+                            "name": "",
+                            "description": "",
+                            "function": ""
+                        }
+                    ]
+                }
+            }
+        ],
+        "additionalDocumentation": [
+            {
+                "title": "",
+                "date": [
+                    {
+                        "date": "",
+                        "dateType": ""
+                    }
+                ],
+                "edition": "",
+                "citedResponsibleParty": [
+                    {
+                        "contactId": "",
+                        "role": ""
+                    }
+                ],
+                "presentationForm": "",
+                "doi": "",
+                "isbn": "",
+                "issn": "",
+                "onlineResource": [
+                    {
+                        "doi": "",
+                        "URI": "",
+                        "protocol": "",
+                        "name": "",
+                        "description": "",
+                        "function": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
