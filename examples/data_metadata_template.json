@@ -9,7 +9,7 @@
             "onlineResource": [
                 {
                     "doi": "",
-                    "resourceURI": "",
+                    "URI": "",
                     "protocol": "",
                     "name": "",
                     "description": "",
@@ -48,6 +48,7 @@
         ],
         "metadataCreationDate": "",
         "metadataURI": "",
+        "metadataStatus": "",
         "metadataMaintenance": {
             "maintFreq": "",
             "maintNote": [""],
@@ -58,7 +59,7 @@
                 }
             ]
         },
-        "spatialReference": [""],
+        "spatialDatum": [""],
         "identificationInfo": {
             "citation": {
                 "title": "",
@@ -69,25 +70,22 @@
                     }
                 ],
                 "edition": "",
-                "citedResponsibleParty": [
+                "responsibleParty": [
                     {
                         "contactId": "",
-                        "role": ""
+                        "role": "",
+                        "partyAssignedId": [
+                            {
+                                "idType": "",
+                                "id": ""
+                            }
+                        ]
                     }
                 ],
                 "presentationForm": "",
+                "doi": "",
                 "isbn": "",
-                "issn": "",
-                "onlineResource": [
-                    {
-                        "doi": "",
-                        "resourceURI": "",
-                        "protocol": "",
-                        "name": "",
-                        "description": "",
-                        "function": ""
-                    }
-                ]
+                "issn": ""
             },
             "pointOfContact": [
                 {
@@ -96,14 +94,16 @@
                 }
             ],
             "abstract": "",
+            "shortAbstract": "",
             "status": "",
+            "hasMapLocation": true,
+            "hasDataAvailable": true,
             "language": [""],
             "purpose": "",
             "credit": [""],
             "spatialRepresentation": [""],
             "topicCategory": [""],
             "environmentalDesc": "",
-            "supplementalInfo": "",
             "resourceFormat": [
                 {
                     "name": "",
@@ -132,6 +132,7 @@
                                 }
                             ],
                             "presentationForm": "",
+                            "doi": "",
                             "isbn": "",
                             "issn": ""
                         }
@@ -245,17 +246,17 @@
             "extent": [
                 {
                     "description": "",
-                    "geographicElement":[
+                    "geographicElement": [
                         {
                             "type": "Feature",
                             "id": "",
-                            "bbox":[
+                            "bbox": [
                                 0,
                                 0,
                                 0,
                                 0
                             ],
-                            "geometry":{
+                            "geometry": {
                                 "type": "Point",
                                 "coordinates": [
                                     0,
@@ -279,7 +280,7 @@
                                 ]
                             },
                             "geometry": {
-                                "type":"Polygon",
+                                "type": "Polygon",
                                 "coordinates": [
                                     [
                                         [
@@ -316,21 +317,21 @@
                                 }
                             },
                             "properties": {
-                                "elementName": "",
+                                "featureName": "",
                                 "description": "",
                                 "includesData": true,
                                 "temporalElement": {
                                     "date": [""],
                                     "timeInstant": [
                                         {
-                                            "id":"",
+                                            "id": "",
                                             "description": "",
                                             "timePosition": ""
                                         }
                                     ],
                                     "timePosition": [
                                         {
-                                            "id":"",
+                                            "id": "",
                                             "description": "",
                                             "beginPosition": "",
                                             "endPosition": ""
@@ -340,7 +341,9 @@
                                 "assignedId": {
                                     "identifier": "",
                                     "idAuthority": ""
-                                }
+                                },
+                                "featureScope": "",
+                                "featureAcquisitionMethod": ""
                             }
                         },
                         {
@@ -353,7 +356,7 @@
                                 0
                             ],
                             "properties": {
-                                "name":"",
+                                "name": "",
                                 "description": "",
                                 "includesData": true
                             },
@@ -365,28 +368,30 @@
                                     "type": ""
                                 }
                             },
-                            "features":[{}]
+                            "features": [
+                                {}
+                            ]
                         }
                     ],
                     "temporalElement": {
                         "date": [""],
                         "timeInstant": [
                             {
-                                "id":"",
+                                "id": "",
                                 "description": "",
                                 "timePosition": ""
                             }
                         ],
                         "timePosition": [
                             {
-                                "id":"",
+                                "id": "",
                                 "description": "",
                                 "beginPosition": "",
                                 "endPosition": ""
                             }
                         ]
                     },
-                    "verticalElement":[
+                    "verticalElement": [
                         {
                             "minimumValue": 0,
                             "maximumValue": 0,
@@ -396,93 +401,7 @@
                     ]
                 }
             ],
-            "associatedResource": [
-                {
-                    "associationType": "",
-                    "resourceType": "",
-                    "resourceCitation": {
-                        "title": "",
-                        "date": [
-                            {
-                                "date": "",
-                                "dateType": ""
-                            }
-                        ],
-                        "edition": "",
-                        "citedResponsibleParty": [
-                            {
-                                "contactId": "",
-                                "role": ""
-                            }
-                        ],
-                        "presentationForm": "",
-                        "isbn": "",
-                        "issn": "",
-                        "onlineResource": [
-                            {
-                                "doi": "",
-                                "resourceURI": "",
-                                "protocol": "",
-                                "name": "",
-                                "description": "",
-                                "function": ""
-                            }
-                        ]
-                    }
-                }
-            ],
-            "additionalIdentifier": [
-                {
-                    "associationType": "",
-                    "authority": {
-                        "title": "",
-                        "date": [
-                            {
-                                "date": "",
-                                "dateType": ""
-                            }
-                        ],
-                        "citedResponsibleParty": [
-                            {
-                                "contactId": "",
-                                "role": ""
-                            }
-                        ]
-                    },
-                    "code": ""
-                }
-            ],
-            "additionalDocumentation": [
-                {
-                    "title": "",
-                    "date": [
-                        {
-                            "date": "",
-                            "dateType": ""
-                        }
-                    ],
-                    "edition": "",
-                    "citedResponsibleParty": [
-                        {
-                            "contactId": "",
-                            "role": ""
-                        }
-                    ],
-                    "presentationForm": "",
-                    "isbn": "",
-                    "issn": "",
-                    "onlineResource": [
-                        {
-                            "doi": "",
-                            "resourceURI": "",
-                            "protocol": "",
-                            "name": "",
-                            "description": "",
-                            "function": ""
-                        }
-                    ]
-                }
-            ]
+            "supplementalInfo": ""
         },
         "distributionInfo": [
             {
@@ -583,6 +502,80 @@
                         }
                     ]
                 }
+            }
+        ],
+        "associatedResource": [
+            {
+                "associationType": "",
+                "resourceType": "",
+                "resourceCitation": {
+                    "title": "",
+                    "date": [
+                        {
+                            "date": "",
+                            "dateType": ""
+                        }
+                    ],
+                    "edition": "",
+                    "citedResponsibleParty": [
+                        {
+                            "contactId": "",
+                            "role": "",
+                            "partyAssignedId": [
+                                {
+                                    "idType": "",
+                                    "id": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "presentationForm": "",
+                    "doi": "",
+                    "isbn": "",
+                    "issn": "",
+                    "onlineResource": [
+                        {
+                            "doi": "",
+                            "resourceURI": "",
+                            "protocol": "",
+                            "name": "",
+                            "description": "",
+                            "function": ""
+                        }
+                    ]
+                }
+            }
+        ],
+        "additionalDocumentation": [
+            {
+                "title": "",
+                "date": [
+                    {
+                        "date": "",
+                        "dateType": ""
+                    }
+                ],
+                "edition": "",
+                "citedResponsibleParty": [
+                    {
+                        "contactId": "",
+                        "role": ""
+                    }
+                ],
+                "presentationForm": "",
+                "doi": "",
+                "isbn": "",
+                "issn": "",
+                "onlineResource": [
+                    {
+                        "doi": "",
+                        "resourceURI": "",
+                        "protocol": "",
+                        "name": "",
+                        "description": "",
+                        "function": ""
+                    }
+                ]
             }
         ]
     }
