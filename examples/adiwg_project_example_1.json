@@ -2,9 +2,9 @@
     "jsonVersion": "adiwgJSON-1.0",
     "contacts": [
         {
-            "contactId": "",
-            "individualName": "",
-            "organizationName": "",
+            "contactId": "2",
+            "individualName": "Urban, Frank",
+            "organizationName": "US Geological Survey",
             "positionName": "",
             "onlineResource": [
                 {
@@ -19,36 +19,247 @@
             "contactInstructions": "",
             "phoneBook": [
                 {
-                    "phoneName": "",
-                    "phoneNumber": "",
+                    "phoneName": "office",
+                    "phoneNumber": "303-236-5953",
                     "voice": true,
-                    "fax": true,
-                    "sms": true
+                    "fax": false,
+                    "sms": false
                 }
             ],
             "address": {
-                "deliveryPoint": [""],
-                "city": "",
-                "administrativeArea": "",
-                "postalCode": "",
-                "country": "",
+                "deliveryPoint": ["West 6th Ave. & Kipling St.", "DFC Bldg. 810"],
+                "city": "Lakewood",
+                "administrativeArea": "CO",
+                "postalCode": "80225",
+                "country": "USA",
+                "electronicMailAddress": ["furban@usgs.gov"]
+            }
+        },
+        {
+            "contactId": "3",
+            "individualName": "",
+            "organizationName": "US Geological Survey - Permafrost and Climate Monitoring",
+            "positionName": "",
+            "onlineResource": [
+                {
+                    "doi": "",
+                    "URI": "http://data.usgs.gov/climateMonitoring/region/show?region=alaska",
+                    "protocol": "http",
+                    "name": "Real-Time Permafrost and Climate Monitoring Network - Arctic Alaska",
+                    "description": "",
+                    "function": "information"
+                }
+            ],
+            "contactInstructions": "",
+            "phoneBook": [
+                {
+                    "phoneName": "main office",
+                    "phoneNumber": "303-236-5900",
+                    "voice": true,
+                    "fax": false,
+                    "sms": false
+                }
+            ],
+            "address": {
+                "deliveryPoint": ["West 6th Ave. & Kipling St.", "DFC Bldg. 810"],
+                "city": "Lakewood",
+                "administrativeArea": "CO",
+                "postalCode": "80225",
+                "country": "USA",
+                "electronicMailAddress": ["pcm_info@usgs.gov"]
+            }
+        },
+        {
+            "contactId": "4",
+            "individualName": "",
+            "organizationName": "FWS - Arctic National Wildlife Refuge",
+            "positionName": "",
+            "onlineResource": [
+                {
+                    "doi": "",
+                    "URI": "",
+                    "protocol": "",
+                    "name": "",
+                    "description": "",
+                    "function": ""
+                }
+            ],
+            "contactInstructions": "",
+            "phoneBook": [
+                {
+                    "phoneName": "main office",
+                    "phoneNumber": "907-456-0250",
+                    "voice": true,
+                    "fax": false,
+                    "sms": false
+                },
+                {
+                    "phoneName": "main office",
+                    "phoneNumber": "907-456-0428",
+                    "voice": false,
+                    "fax": true,
+                    "sms": false
+                }
+            ],
+            "address": {
+                "deliveryPoint": ["101 12th Avenue"],
+                "city": "Fairbanks",
+                "administrativeArea": "AK",
+                "postalCode": "99701",
+                "country": "USA",
                 "electronicMailAddress": [""]
             }
+        },
+        {
+            "contactId": "5",
+            "individualName": "",
+            "organizationName": "BLM - Arctic Field Office",
+            "positionName": "",
+            "onlineResource": [
+                {
+                    "doi": "",
+                    "URI": "",
+                    "protocol": "",
+                    "name": "",
+                    "description": "",
+                    "function": ""
+                }
+            ],
+            "contactInstructions": "",
+            "phoneBook": [
+                {
+                    "phoneName": "main office",
+                    "phoneNumber": "907-474-2200",
+                    "voice": true,
+                    "fax": false,
+                    "sms": false
+                },
+                {
+                    "phoneName": "main office",
+                    "phoneNumber": "907-474-2280",
+                    "voice": false,
+                    "fax": true,
+                    "sms": false
+                }
+            ],
+            "address": {
+                "deliveryPoint": ["1150 University Avenue"],
+                "city": "Fairbanks",
+                "administrativeArea": "AK",
+                "postalCode": "99709",
+                "country": "USA",
+                "electronicMailAddress": [""]
+            }
+        },
+        {
+            "contactId": "6",
+            "individualName": "Clow, Gary D.",
+            "organizationName": "US Geological Survey",
+            "positionName": "Research Geophysicist",
+            "onlineResource": [
+                {
+                    "doi": "",
+                    "URI": "",
+                    "protocol": "",
+                    "name": "",
+                    "description": "",
+                    "function": ""
+                }
+            ],
+            "contactInstructions": "",
+            "phoneBook": [
+                {
+                    "phoneName": "office",
+                    "phoneNumber": "303-236-5944",
+                    "voice": true,
+                    "fax": false,
+                    "sms": false
+                }
+            ],
+            "address": {
+                "deliveryPoint": ["West 6th Ave. & Kipling St.", "DFC Bldg. 810", "Building 25"],
+                "city": "Lakewood",
+                "administrativeArea": "CO",
+                "postalCode": "80225",
+                "country": "USA",
+                "electronicMailAddress": ["gclow@usgs.gov"]
+            }
+        },
+        {
+            "contactId": "7",
+            "individualName": "Brown, A.C.",
+            "organizationName": "US Geological Survey - Alaska Science Center",
+            "positionName": "Metadata Specialist",
+            "onlineResource": [
+                {
+                    "doi": "",
+                    "URI": "",
+                    "protocol": "",
+                    "name": "",
+                    "description": "",
+                    "function": ""
+                }
+            ],
+            "contactInstructions": "",
+            "phoneBook": [
+                {
+                    "phoneName": "office",
+                    "phoneNumber": "907-786-7002",
+                    "voice": true,
+                    "fax": false,
+                    "sms": false
+                },
+                {
+                    "phoneName": "main office",
+                    "phoneNumber": "907-786-7040",
+                    "voice": false,
+                    "fax": true,
+                    "sms": false
+                }
+            ],
+            "address": {
+                "deliveryPoint": ["4210 University Drive", "Suite 201"],
+                "city": "Anchorage",
+                "administrativeArea": "AK",
+                "postalCode": "99508",
+                "country": "USA",
+                "electronicMailAddress": ["acbrown2@usgs.gov"]
+            }
+        },
+        {
+            "contactId": "8",
+            "individualName": "",
+            "organizationName": "National Science Foundation",
+            "positionName": "",
+            "onlineResource": [
+                {
+                    "doi": "",
+                    "URI": "http://www.nsf.gov/awards/about.jsp",
+                    "protocol": "http",
+                    "name": "NSF awarded projects",
+                    "description": "",
+                    "function": "information"
+                }
+            ],
+            "contactInstructions": "",
+            "phoneBook": [],
+            "address": {}
         }
     ],
     "metadata": {
-        "metadataIdentifier": "",
+        "metadataIdentifier": "D5D16D06-CEEB-E011-8260-000C2952247E",
         "parentMetadataIdentifier": "",
-        "metadataScope": [""],
+        "metadataScope": ["project"],
         "metadataContact": [
             {
-                "contactId": "",
-                "role": ""
+                "contactId": "7",
+                "role": "custodian"
             }
         ],
-        "metadataCreationDate": "",
-        "metadataURI": "",
-        "metadataStatus": "",
+        "metadataCreationDate": "2014-02-28",
+        "metadataLastUpdate": "2012-12-21",
+        "metadataURI": "http://alaska.usgs.gov/rex/adiwg/public/projects/32.xml",
+        "metadataStatus": "completed",
         "metadataMaintenance": {
             "maintFreq": "",
             "maintNote": [""],
@@ -59,26 +270,66 @@
                 }
             ]
         },
-        "spatialDatum": [""],
+        "spatialDatum": ["EPSG:4326"],
         "identificationInfo": {
-            "resourceId": "",
+            "resourceId": "32",
             "citation": {
-                "title": "",
+                "title": "Real-Time Permafrost and Climate Monitoring Network - Arctic Alaska",
                 "date": [
                     {
-                        "date": "",
-                        "dateType": ""
+                        "date": "2012-12-21",
+                        "dateType": "revision"
                     }
                 ],
                 "edition": "",
                 "responsibleParty": [
                     {
-                        "contactId": "",
-                        "role": "",
-                        "partyAssignedId": [
+                        "contactId": "2",
+                        "role": "principleInvestigator",
+                        "partyAssignedCode": [
                             {
-                                "idType": "",
-                                "id": ""
+                                "code": "",
+                                "codeType": ""
+                            }
+                        ]
+                    },
+                    {
+                        "contactId": "8",
+                        "role": "funder",
+                        "partyAssignedCode": [
+                            {
+                                "code": "A516548V0034",
+                                "codeType": "Grant Award Number"
+                            }
+                        ]
+                    },
+                    {
+                        "contactId": "3",
+                        "role": "administrator",
+                        "partyAssignedCode": [
+                            {
+                                "code": "",
+                                "codeType": ""
+                            }
+                        ]
+                    },
+                    {
+                        "contactId": "4",
+                        "role": "collaborator",
+                        "partyAssignedCode": [
+                            {
+                                "code": "",
+                                "codeType": ""
+                            }
+                        ]
+                    },
+                    {
+                        "contactId": "7",
+                        "role": "publisher",
+                        "partyAssignedCode": [
+                            {
+                                "code": "",
+                                "codeType": ""
                             }
                         ]
                     }
@@ -90,13 +341,13 @@
             },
             "pointOfContact": [
                 {
-                    "contactId": "",
-                    "role": ""
+                    "contactId": "2",
+                    "role": "pointOfContact"
                 }
             ],
-            "abstract": "",
-            "shortAbstract": "",
-            "status": "",
+            "abstract": "DOI is developing a long-term permafrost monitoring network on federal lands in northern Alaska as part of the Global Terrestrial Network for Permafrost (GTN-P) and the Global Climate Observing System (GCOS). DOI/GTN-P consists of two subnetworks: 1) a network of 15 automated surface stations, and 2) a 20-element deep borehole array. The surface stations continuously monitor changes in permafrost active-layer as well as a number of other climate parameters, including: permafrost temperature, soil moisture, snow depth, air temperature, wind speed and direction, up- and downwelling shortwave radiation, albedo, and cloudiness. A portion of the surface network is now available in near real-time through radio telemetry. Vegetation changes are coincidentally monitored at these sites. The borehole array is used to monitor the thermal state of the underlying permafrost. This is the largest array of deep boreholes in the world currently available for monitoring the thermal state of permafrost. Many of the surface stations are co-located with deep boreholes, effectively forming 'permafrost observatories.' In conjunction with DOI/GTN-P, we are developing models for synthesizing climate observations and for investigating how the cryosphere responds to climate change. These models will improve existing predictive capabilities for DOI lands. Climate projections by global coupled Atmosphere-Ocean General Circulation Models (AOGCMs) suggest significant environmental changes will occur in the Arctic during the next 80 years (http://www.acia.uaf.edu). According to these models, climate change will be Arctic-wide with a pronounced enhancement over the Arctic Ocean and adjacent coastal plains. These projections suggest large climate-induced landscape and ecosystem changes are likely to occur in northern Alaska during the next few decades. Important issues for DOI lands in this region include: permafrost degradation; vulnerability of high northern infrastructure to permafrost instability; large potential greenhouse gas (CO2, methane) emissions form warming permafrost; shifting vegetation patterns; impacts of habitat changes of wildlife; changing stream flow and lake levels; impacts of ecosystem changes on Native peoples: and, coastal erosion, inundation of coastal areas by storm surges. Given the large potential impacts, and the significant uncertainty in the model projections, a comprehensive monitoring effort is warranted.",
+            "shortAbstract": "DOI is developing a long-term permafrost monitoring network on federal lands in northern Alaska as part of the Global Terrestrial Network for Permafrost (GTN-P) and the Global Climate Observing System (GCOS).",
+            "status": "onGoing",
             "hasMapLocation": true,
             "hasDataAvailable": true,
             "language": [""],
@@ -113,16 +364,49 @@
             ],
             "keywords": [
                 {
-                    "keyword": [""],
-                    "keywordType": "",
+                    "keyword": ["Atmosphere > Clouds",
+                        "Atmosphere > Atmospheric Temperature > Air Temperature",
+                        "Cryosphere > Snow/Ice > Albedo",
+                        "Cryosphere > Frozen Ground > Permafrost",
+                        "Cryosphere > Snow/Ice > Snow Depth",
+                        "Land Surface > Soils > Soil Moisture/Water Content",
+                        "Cryosphere > Frozen Ground > Soil Temperature"],
+                    "keywordType": "theme",
                     "thesaurus": {
-                        "thesaurusLink": "",
+                        "thesaurusLink": "http://gcmdservices.gsfc.nasa.gov/static/kms/sciencekeywords/sciencekeywords.csv",
                         "citation": {
-                            "title": "",
+                            "title": "NASA/Global Change Master Directory (GCMD) Earth Science Keywords",
                             "date": [
                                 {
-                                    "date": "",
-                                    "dateType": ""
+                                    "date": "2013-09-19",
+                                    "dateType": "revision"
+                                }
+                            ],
+                            "edition": "Version 8.0.0.0.0",
+                            "citedResponsibleParty": [
+                                {
+                                    "contactId": "",
+                                    "role": ""
+                                }
+                            ],
+                            "presentationForm": "documentDigital",
+                            "doi": "",
+                            "isbn": "",
+                            "issn": ""
+                        }
+                    }
+                },
+                {
+                    "keyword": ["North Slope Borough", "Barrow", "Point Barrow"],
+                    "keywordType": "place",
+                    "thesaurus": {
+                        "thesaurusLink": "http://geonames.usgs.gov/",
+                        "citation": {
+                            "title": "United States Board on Geographic Names",
+                            "date": [
+                                {
+                                    "date": "1993-02-01",
+                                    "dateType": "creation"
                                 }
                             ],
                             "edition": "",
@@ -132,8 +416,7 @@
                                     "role": ""
                                 }
                             ],
-                            "presentationForm": "",
-                            "doi": "",
+                            "presentationForm": "documentDigital",
                             "isbn": "",
                             "issn": ""
                         }
@@ -252,74 +535,22 @@
                             "type": "Feature",
                             "id": "",
                             "bbox": [
-                                0,
-                                0,
-                                0,
-                                0
+                                -161.45,
+                                68.25,
+                                -148.272,
+                                71.22
                             ],
-                            "geometry": {
-                                "type": "Point",
-                                "coordinates": [
-                                    0,
-                                    0,
-                                    0
-                                ]
-                            },
-                            "geometry": {
-                                "type": "LineString",
-                                "coordinates": [
-                                    [
-                                        0,
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        0,
-                                        0,
-                                        0
-                                    ]
-                                ]
-                            },
-                            "geometry": {
-                                "type": "Polygon",
-                                "coordinates": [
-                                    [
-                                        [
-                                            0,
-                                            0,
-                                            0
-                                        ],
-                                        [
-                                            0,
-                                            0,
-                                            0
-                                        ]
-                                    ],
-                                    [
-                                        [
-                                            0,
-                                            0,
-                                            0
-                                        ],
-                                        [
-                                            0,
-                                            0,
-                                            0
-                                        ]
-                                    ]
-                                ]
-                            },
                             "crs": {
-                                "type": "",
+                                "type": "name",
                                 "properties": {
-                                    "name": "",
+                                    "name": "EPSG:4326",
                                     "href": "",
                                     "type": ""
                                 }
                             },
                             "properties": {
-                                "featureName": "",
-                                "description": "",
+                                "featureName": "North Slope Borehole Project Boundary",
+                                "description": "DOI/GTN-P Deep Borehole Array",
                                 "includesData": true,
                                 "temporalElement": {
                                     "date": [""],
@@ -357,20 +588,129 @@
                                 0
                             ],
                             "properties": {
-                                "name": "",
-                                "description": "",
+                                "name": "North Slope Borehole Locations",
+                                "description": "DOI/GTN-P Deep Borehole Array",
                                 "includesData": true
                             },
                             "crs": {
-                                "type": "",
+                                "type": "name",
                                 "properties": {
-                                    "name": "",
+                                    "name": "EPSG:4326",
                                     "href": "",
                                     "type": ""
                                 }
                             },
                             "features": [
-                                {}
+                                {
+                                    "type": "Feature",
+                                    "id": "US 93",
+                                    "bbox": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "geometry": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            -148.272,
+                                            69.39999,
+                                            200
+                                        ]
+                                    },
+                                    "crs": {
+                                        "type": "",
+                                        "properties": {
+                                            "name": "",
+                                            "href": "",
+                                            "type": ""
+                                        }
+                                    },
+                                    "properties": {
+                                        "featureName": "Echooka",
+                                        "description": "",
+                                        "includesData": true,
+                                        "temporalElement": {
+                                            "date": ["1973-09-26"],
+                                            "timeInstant": [
+                                                {
+                                                    "id": "",
+                                                    "description": "",
+                                                    "timePosition": ""
+                                                }
+                                            ],
+                                            "timePosition": [
+                                                {
+                                                    "id": "",
+                                                    "description": "",
+                                                    "beginPosition": "",
+                                                    "endPosition": ""
+                                                }
+                                            ]
+                                        },
+                                        "assignedId": {
+                                            "identifier": "US93",
+                                            "idAuthority": "http://www.gtnp.org"
+                                        },
+                                        "featureScope": "dataCollectionSite",
+                                        "featureAcquisitionMethod": "DGPS"
+                                    }
+                                },
+                                {
+                                    "type": "Feature",
+                                    "id": "US 15",
+                                    "bbox": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "geometry": {
+                                        "type": "Point",
+                                        "coordinates": [
+                                            -159.001,
+                                            70.71564,
+                                            23
+                                        ]
+                                    },
+                                    "crs": {
+                                        "type": "",
+                                        "properties": {
+                                            "name": "",
+                                            "href": "",
+                                            "type": ""
+                                        }
+                                    },
+                                    "properties": {
+                                        "featureName": "Peard Bay",
+                                        "description": "",
+                                        "includesData": true,
+                                        "temporalElement": {
+                                            "date": ["1978-09-15"],
+                                            "timeInstant": [
+                                                {
+                                                    "id": "",
+                                                    "description": "",
+                                                    "timePosition": ""
+                                                }
+                                            ],
+                                            "timePosition": [
+                                                {
+                                                    "id": "",
+                                                    "description": "",
+                                                    "beginPosition": "",
+                                                    "endPosition": ""
+                                                }
+                                            ]
+                                        },
+                                        "assignedId": {
+                                            "identifier": "US15",
+                                            "idAuthority": "http://www.gtnp.org"
+                                        },
+                                        "featureScope": "dataCollectionSite",
+                                        "featureAcquisitionMethod": "DGPS"
+                                    }
+                                }
                             ]
                         }
                     ],
@@ -393,15 +733,15 @@
                         ]
                     },
                     "verticalElement": [
-                        {
-                            "minimumValue": 0,
-                            "maximumValue": 0,
-                            "verticalCRSTitle": "",
-                            "verticalCRSLink": ""
-                        }
-                    ]
-                }
-            ],
+                            {
+                                "minimumValue": 0,
+                                "maximumValue": 0,
+                                "verticalCRSTitle": "",
+                                "verticalCRSLink": ""
+                            }
+                        ]
+                    }
+                ],
             "supplementalInfo": ""
         },
         "distributionInfo": [
@@ -522,10 +862,10 @@
                         {
                             "contactId": "",
                             "role": "",
-                            "partyAssignedId": [
+                            "partyAssignedCode": [
                                 {
-                                    "idType": "",
-                                    "id": ""
+                                    "code": "",
+                                    "codeType": ""
                                 }
                             ]
                         }

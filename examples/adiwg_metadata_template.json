@@ -1,5 +1,5 @@
 {
-    "jsonVersion": "",
+    "jsonVersion": "adiwgJSON-1.0",
     "contacts": [
         {
             "contactId": "",
@@ -47,6 +47,7 @@
             }
         ],
         "metadataCreationDate": "",
+        "metadataLastUpdate": "",
         "metadataURI": "",
         "metadataStatus": "",
         "metadataMaintenance": {
@@ -75,10 +76,10 @@
                     {
                         "contactId": "",
                         "role": "",
-                        "partyAssignedId": [
+                        "partyAssignedCode": [
                             {
-                                "idType": "",
-                                "id": ""
+                                "code": "",
+                                "codeType": ""
                             }
                         ]
                     }
@@ -522,10 +523,10 @@
                         {
                             "contactId": "",
                             "role": "",
-                            "partyAssignedId": [
+                            "partyAssignedCode": [
                                 {
-                                    "idType": "",
-                                    "id": ""
+                                    "code": "",
+                                    "codeType": ""
                                 }
                             ]
                         }
