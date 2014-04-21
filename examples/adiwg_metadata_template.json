@@ -62,7 +62,6 @@
         },
         "spatialDatum": [""],
         "identificationInfo": {
-            "resourceId": "",
             "citation": {
                 "title": "",
                 "date": [
@@ -78,8 +77,8 @@
                         "role": "",
                         "partyAssignedCode": [
                             {
-                                "code": "",
-                                "codeType": ""
+                                "codeName": "",
+                                "code": ""
                             }
                         ]
                     }
@@ -525,8 +524,8 @@
                             "role": "",
                             "partyAssignedCode": [
                                 {
-                                    "code": "",
-                                    "codeType": ""
+                                    "codeName": "",
+                                    "code": ""
                                 }
                             ]
                         }

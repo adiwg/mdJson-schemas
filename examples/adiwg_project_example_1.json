@@ -2,6 +2,47 @@
     "jsonVersion": "adiwgJSON-1.0",
     "contacts": [
         {
+            "contactId": "1",
+            "individualName": "",
+            "organizationName": "US Geological Survey - Alaska Science Center",
+            "positionName": "",
+            "onlineResource": [
+                {
+                    "doi": "",
+                    "URI": "http://alaska.usgs.gov/",
+                    "protocol": "http",
+                    "name": "Alaska Science Center Home Page",
+                    "description": "Alaska Science Center home page",
+                    "function": "information"
+                }
+            ],
+            "contactInstructions": "Complete Department and Employee phone book online with email addresses",
+            "phoneBook": [
+                {
+                    "phoneName": "Main Phone",
+                    "phoneNumber": "907-786-7000",
+                    "voice": true,
+                    "fax": false,
+                    "sms": false
+                },
+                {
+                    "phoneName": "Main Fax",
+                    "phoneNumber": "907-786-7020",
+                    "voice": false,
+                    "fax": true,
+                    "sms": false
+                }
+            ],
+            "address": {
+                "deliveryPoint": ["4210 University Drive"],
+                "city": "Anchorage",
+                "administrativeArea": "AK",
+                "postalCode": "99508",
+                "country": "USA",
+                "electronicMailAddress": [""]
+            }
+        },
+        {
             "contactId": "2",
             "individualName": "Urban, Frank",
             "organizationName": "US Geological Survey",
@@ -272,7 +313,6 @@
         },
         "spatialDatum": ["EPSG:4326"],
         "identificationInfo": {
-            "resourceId": "32",
             "citation": {
                 "title": "Real-Time Permafrost and Climate Monitoring Network - Arctic Alaska",
                 "date": [
@@ -284,12 +324,22 @@
                 "edition": "",
                 "responsibleParty": [
                     {
+                        "contactId": "1",
+                        "role": "owner",
+                        "partyAssignedCode": [
+                            {
+                                "codeName": "ASC Project ID",
+                                "code": "32"
+                            }
+                        ]
+                    },
+                    {
                         "contactId": "2",
                         "role": "principleInvestigator",
                         "partyAssignedCode": [
                             {
-                                "code": "",
-                                "codeType": ""
+                                "codeName": "",
+                                "code": ""
                             }
                         ]
                     },
@@ -298,8 +348,8 @@
                         "role": "funder",
                         "partyAssignedCode": [
                             {
-                                "code": "A516548V0034",
-                                "codeType": "Grant Award Number"
+                                "codeName": "NSF Grant Award Number",
+                                "code": "A516548V0034"
                             }
                         ]
                     },
@@ -308,8 +358,8 @@
                         "role": "administrator",
                         "partyAssignedCode": [
                             {
-                                "code": "",
-                                "codeType": ""
+                                "codeName": "",
+                                "code": ""
                             }
                         ]
                     },
@@ -318,8 +368,8 @@
                         "role": "collaborator",
                         "partyAssignedCode": [
                             {
-                                "code": "",
-                                "codeType": ""
+                                "codeName": "",
+                                "code": ""
                             }
                         ]
                     },
@@ -328,8 +378,8 @@
                         "role": "publisher",
                         "partyAssignedCode": [
                             {
-                                "code": "",
-                                "codeType": ""
+                                "codeName": "",
+                                "code": ""
                             }
                         ]
                     }
@@ -864,8 +914,8 @@
                             "role": "",
                             "partyAssignedCode": [
                                 {
-                                    "code": "",
-                                    "codeType": ""
+                                    "codeName": "",
+                                    "code": ""
                                 }
                             ]
                         }
