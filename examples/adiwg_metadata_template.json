@@ -21,9 +21,7 @@
                 {
                     "phoneName": "",
                     "phoneNumber": "",
-                    "voice": true,
-                    "fax": true,
-                    "sms": true
+                    "service": [""]
                 }
             ],
             "address": {
@@ -339,10 +337,12 @@
                                         }
                                     ]
                                 },
-                                "assignedId": {
-                                    "identifier": "",
-                                    "idAuthority": ""
-                                },
+                                "assignedId": [
+                                    {
+                                        "idAuthority": "",
+                                        "identifier": ""
+                                    }
+                                ],
                                 "featureScope": "",
                                 "featureAcquisitionMethod": ""
                             }
