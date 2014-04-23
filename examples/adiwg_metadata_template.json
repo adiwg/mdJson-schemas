@@ -8,12 +8,12 @@
             "positionName": "",
             "onlineResource": [
                 {
-                    "doi": "",
                     "URI": "",
                     "protocol": "",
                     "name": "",
                     "description": "",
-                    "function": ""
+                    "function": "",
+                    "doi": ""
                 }
             ],
             "contactInstructions": "",
@@ -73,18 +73,30 @@
                     {
                         "contactId": "",
                         "role": "",
-                        "partyAssignedCode": [
+                        "partyAssignedId": [
                             {
-                                "codeName": "",
-                                "code": ""
+                                "identifierName": "",
+                                "identifier": ""
                             }
                         ]
                     }
                 ],
                 "presentationForm": "",
-                "doi": "",
-                "isbn": "",
-                "issn": ""
+                "additionalIdentifier": {
+                    "doi": "",
+                    "isbn": "",
+                    "issn": ""
+                },
+                "onlineResource": [
+                    {
+                        "URI": "",
+                        "protocol": "",
+                        "name": "",
+                        "description": "",
+                        "function": "",
+                        "doi": ""
+                    }
+                ]
             },
             "pointOfContact": [
                 {
@@ -102,14 +114,14 @@
             "credit": [""],
             "spatialRepresentation": [""],
             "topicCategory": [""],
-            "environmentalDesc": "",
-            "resourceFormat": [
+            "environmentalDescription": "",
+            "resourceNativeFormat": [
                 {
                     "name": "",
                     "version": ""
                 }
             ],
-            "keywords": [
+            "keyword": [
                 {
                     "keyword": [""],
                     "keywordType": "",
@@ -131,9 +143,11 @@
                                 }
                             ],
                             "presentationForm": "",
-                            "doi": "",
-                            "isbn": "",
-                            "issn": ""
+                            "additionalIdentifier": {
+                                "doi": "",
+                                "isbn": "",
+                                "issn": ""
+                            }
                         }
                     }
                 }
@@ -170,7 +184,7 @@
                     "fileLink": ""
                 }
             ],
-            "constraints": {
+            "constraint": {
                 "useLimitations": [""],
                 "legalConstraints": [
                     {
@@ -249,61 +263,34 @@
                         {
                             "type": "Feature",
                             "id": "",
-                            "bbox": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
+                            "bbox": [0, 0, 0, 0],
                             "geometry": {
                                 "type": "Point",
                                 "coordinates": [
-                                    0,
-                                    0,
-                                    0
+                                    [0, 0, 0]
                                 ]
                             },
                             "geometry": {
                                 "type": "LineString",
                                 "coordinates": [
-                                    [
-                                        0,
-                                        0,
-                                        0
-                                    ],
-                                    [
-                                        0,
-                                        0,
-                                        0
-                                    ]
+                                    [0, 0, 0],
+                                    [0, 0, 0]
                                 ]
                             },
                             "geometry": {
                                 "type": "Polygon",
                                 "coordinates": [
                                     [
-                                        [
-                                            0,
-                                            0,
-                                            0
-                                        ],
-                                        [
-                                            0,
-                                            0,
-                                            0
-                                        ]
+                                        [0, 0, 0],
+                                        [0, 0, 0],
+                                        [0, 0, 0],
+                                        [0, 0, 0]
                                     ],
                                     [
-                                        [
-                                            0,
-                                            0,
-                                            0
-                                        ],
-                                        [
-                                            0,
-                                            0,
-                                            0
-                                        ]
+                                        [0, 0, 0],
+                                        [0, 0, 0],
+                                        [0, 0, 0],
+                                        [0, 0, 0]
                                     ]
                                 ]
                             },
@@ -337,9 +324,19 @@
                                         }
                                     ]
                                 },
+                                "verticalElement": [
+                                    {
+                                        "minimumValue": 0,
+                                        "maximumValue": 0,
+                                        "verticalCRSTitle": "",
+                                        "verticalCRSLink": ""
+                                    }
+                                ],
                                 "assignedId": [
                                     {
-                                        "idAuthority": "",
+                                        "contactId": "",
+                                        "role": "",
+                                        "identifierName": "",
                                         "identifier": ""
                                     }
                                 ],
@@ -350,12 +347,7 @@
                         {
                             "type": "FeatureCollection",
                             "id": "",
-                            "bbox": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
+                            "bbox": [0, 0, 0, 0],
                             "properties": {
                                 "name": "",
                                 "description": "",
@@ -369,9 +361,7 @@
                                     "type": ""
                                 }
                             },
-                            "features": [
-                                {}
-                            ]
+                            "features": [ {} ]
                         }
                     ],
                     "temporalElement": {
@@ -428,12 +418,12 @@
                     {
                         "online": [
                             {
-                                "doi": "",
                                 "URI": "",
                                 "protocol": "",
                                 "name": "",
                                 "description": "",
-                                "function": ""
+                                "function": "",
+                                "doi": ""
                             }
                         ],
                         "offline": {
@@ -483,8 +473,11 @@
                                     }
                                 ],
                                 "presentationForm": "",
-                                "isbn": "",
-                                "issn": ""
+                                "additionalIdentifier": {
+                                    "doi": "",
+                                    "isbn": "",
+                                    "issn": ""
+                                }
                             },
                             "processStep": [
                                 {
@@ -531,17 +524,19 @@
                         }
                     ],
                     "presentationForm": "",
-                    "doi": "",
-                    "isbn": "",
-                    "issn": "",
+                    "additionalIdentifier": {
+                        "doi": "",
+                        "isbn": "",
+                        "issn": ""
+                    },
                     "onlineResource": [
                         {
-                            "doi": "",
                             "URI": "",
                             "protocol": "",
                             "name": "",
                             "description": "",
-                            "function": ""
+                            "function": "",
+                            "doi": ""
                         }
                     ]
                 }
@@ -564,17 +559,19 @@
                     }
                 ],
                 "presentationForm": "",
-                "doi": "",
-                "isbn": "",
-                "issn": "",
+                "additionalIdentifier": {
+                    "doi": "",
+                    "isbn": "",
+                    "issn": ""
+                },
                 "onlineResource": [
                     {
-                        "doi": "",
                         "URI": "",
                         "protocol": "",
                         "name": "",
                         "description": "",
-                        "function": ""
+                        "function": "",
+                        "doi": ""
                     }
                 ]
             }
