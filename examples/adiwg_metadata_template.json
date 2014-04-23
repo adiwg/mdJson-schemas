@@ -49,9 +49,9 @@
         "metadataURI": "",
         "metadataStatus": "",
         "metadataMaintenance": {
-            "maintFreq": "",
-            "maintNote": [""],
-            "maintContact": [
+            "maintenanceFrequency": "",
+            "maintenanceNote": [""],
+            "maintenanceContact": [
                 {
                     "contactId": "",
                     "role": ""
@@ -114,10 +114,10 @@
             "credit": [""],
             "spatialRepresentation": [""],
             "topicCategory": [""],
-            "environmentalDescription": "",
+            "environmentDescription": "",
             "resourceNativeFormat": [
                 {
-                    "name": "",
+                    "formatName": "",
                     "version": ""
                 }
             ],
@@ -154,8 +154,8 @@
             ],
             "resourceMaintenance": [
                 {
-                    "maintFreq": "",
-                    "maintNote": [""],
+                    "maintenanceFrequency": "",
+                    "maintenanceNote": [""],
                     "contact": [
                         {
                             "contactId": "",
@@ -167,7 +167,7 @@
             "resourceSpecificUsage": [
                 {
                     "specificUsage": "",
-                    "userDeterminedLimitations": "",
+                    "userDeterminedLimitation": "",
                     "userContactInfo": [
                         {
                             "contactId": "",
@@ -185,20 +185,20 @@
                 }
             ],
             "constraint": {
-                "useLimitations": [""],
-                "legalConstraints": [
+                "useLimitation": [""],
+                "legalConstraint": [
                     {
-                        "accessConstraints": [""],
-                        "useConstraints": [""],
-                        "otherConstraints": [""]
+                        "accessConstraint": [""],
+                        "useConstraint": [""],
+                        "otherConstraint": [""]
                     }
                 ],
-                "securityConstraints": [
+                "securityConstraint": [
                     {
                         "classification": "",
-                        "userNote": "",
-                        "classSystem": "",
-                        "handlingDescription": ""
+                        "classificationSystem": "",
+                        "handlingDescription": "",
+                        "userNote": ""
                     }
                 ]
             },
