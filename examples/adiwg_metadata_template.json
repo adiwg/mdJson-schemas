@@ -1,6 +1,9 @@
 {
-    "jsonVersion": "adiwgJSON-1.0",
-    "contacts": [
+    "jsonVersion": {
+        "name": "adiwgJSON",
+        "version": "1.0.6"
+    },
+    "contact": [
         {
             "contactId": "",
             "individualName": "",
@@ -35,31 +38,32 @@
         }
     ],
     "metadata": {
-        "metadataIdentifier": "",
-        "parentMetadataIdentifier": "",
-        "metadataScope": [""],
-        "metadataContact": [
-            {
-                "contactId": "",
-                "role": ""
-            }
-        ],
-        "metadataCreationDate": "",
-        "metadataLastUpdate": "",
-        "metadataURI": "",
-        "metadataStatus": "",
-        "metadataMaintenance": {
-            "maintenanceFrequency": "",
-            "maintenanceNote": [""],
-            "maintenanceContact": [
+        "metadataInfo": {
+            "metadataIdentifier": "",
+            "parentMetadataIdentifier": "",
+            "metadataScope": [""],
+            "metadataContact": [
                 {
                     "contactId": "",
                     "role": ""
                 }
-            ]
+            ],
+            "metadataCreationDate": "",
+            "metadataLastUpdate": "",
+            "metadataURI": "",
+            "metadataStatus": "",
+            "metadataMaintenance": {
+                "maintenanceFrequency": "",
+                "maintenanceNote": [""],
+                "maintenanceContact": [
+                    {
+                        "contactId": "",
+                        "role": ""
+                    }
+                ]
+            }
         },
-        "spatialDatum": [""],
-        "identificationInfo": {
+        "resourceInfo": {
             "citation": {
                 "title": "",
                 "date": [
@@ -112,7 +116,6 @@
             "language": [""],
             "purpose": "",
             "credit": [""],
-            "spatialRepresentation": [""],
             "topicCategory": [""],
             "environmentDescription": "",
             "resourceNativeFormat": [
@@ -247,6 +250,8 @@
                     }
                 ]
             },
+            "spatialDatum": [""],
+            "spatialRepresentation": [""],
             "spatialResolution": [
                 {
                     "equivalentScale": 0
