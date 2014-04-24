@@ -397,6 +397,69 @@
                     ]
                 }
             ],
+            "dataQualityInfo": [
+                {
+                    "scope": "",
+                    "lineage": {
+                        "statement": "",
+                        "processStep": [
+                            {
+                                "stepId": "",
+                                "description": "",
+                                "rationale": "",
+                                "dateTime": "",
+                                "processor": [
+                                    {
+                                        "contactId": "",
+                                        "role": ""
+                                    }
+                                ]
+                            }
+                        ],
+                        "source": [
+                            {
+                                "description": "",
+                                "citation": {
+                                    "title": "",
+                                    "date": [
+                                        {
+                                            "date": "",
+                                            "dateType": ""
+                                        }
+                                    ],
+                                    "edition": "",
+                                    "citedResponsibleParty": [
+                                        {
+                                            "contactId": "",
+                                            "role": ""
+                                        }
+                                    ],
+                                    "presentationForm": "",
+                                    "additionalIdentifier": {
+                                        "doi": "",
+                                        "isbn": "",
+                                        "issn": ""
+                                    }
+                                },
+                                "processStep": [
+                                    {
+                                        "stepId": "",
+                                        "description": "",
+                                        "rationale": "",
+                                        "dateTime": "",
+                                        "processor": [
+                                            {
+                                                "contactId": "",
+                                                "role": ""
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ],
             "supplementalInfo": ""
         },
         "distributionInfo": [
@@ -438,69 +501,6 @@
                         }
                     }
                 ]
-            }
-        ],
-        "dataQualityInfo": [
-            {
-                "scope": "",
-                "lineage": {
-                    "statement": "",
-                    "processStep": [
-                        {
-                            "stepId": "",
-                            "description": "",
-                            "rationale": "",
-                            "dateTime": "",
-                            "processor": [
-                                {
-                                    "contactId": "",
-                                    "role": ""
-                                }
-                            ]
-                        }
-                    ],
-                    "source": [
-                        {
-                            "description": "",
-                            "citation": {
-                                "title": "",
-                                "date": [
-                                    {
-                                        "date": "",
-                                        "dateType": ""
-                                    }
-                                ],
-                                "edition": "",
-                                "citedResponsibleParty": [
-                                    {
-                                        "contactId": "",
-                                        "role": ""
-                                    }
-                                ],
-                                "presentationForm": "",
-                                "additionalIdentifier": {
-                                    "doi": "",
-                                    "isbn": "",
-                                    "issn": ""
-                                }
-                            },
-                            "processStep": [
-                                {
-                                    "stepId": "",
-                                    "description": "",
-                                    "rationale": "",
-                                    "dateTime": "",
-                                    "processor": [
-                                        {
-                                            "contactId": "",
-                                            "role": ""
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
             }
         ],
         "associatedResource": [
