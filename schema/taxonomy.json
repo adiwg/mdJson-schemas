@@ -19,7 +19,7 @@
     "observer": {
       "type": "array",
       "items": {
-        "$ref": "contacts.json#/definitions/contactRef"
+        "$ref": "contact.json#/definitions/contactRef"
       }
     },
     "taxonomicProcedures": {
@@ -33,7 +33,7 @@
           "type": "string"
         },
         "repository": {
-          "$ref": "contacts.json#/definitions/contactRef"
+          "$ref": "contact.json#/definitions/contactRef"
         }
       }
     },

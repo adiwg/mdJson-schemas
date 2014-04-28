@@ -26,12 +26,12 @@ class TestExamples < Test::Unit::TestCase
   end
 
   def test_data_template
-    errors = JSON::Validator.fully_validate(@@schema, '../examples/adiwg_metadata_template.json')
+    errors = JSON::Validator.fully_validate(@@schema, '../templates/adiwg_metadata_template.json')
     assert(errors.empty?, errors.join("/n"))
   end
 
-  def test_contacts
-    errors = JSON::Validator.fully_validate('../schema/contacts.json', '../examples/contacts.json')
+  def test_contact
+    errors = JSON::Validator.fully_validate('../schema/contact.json', '../examples/contact.json')
     assert(errors.empty?, errors.join("/n"))
   end
 

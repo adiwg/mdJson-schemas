@@ -1,7 +1,7 @@
 {
-    "jsonVersion": {
+    "version": {
         "name": "adiwgJSON",
-        "version": "1.0.6"
+        "version": "0.2.6"
     },
     "contact": [
         {
@@ -11,7 +11,7 @@
             "positionName": "",
             "onlineResource": [
                 {
-                    "URI": "",
+                    "uri": "",
                     "protocol": "",
                     "name": "",
                     "description": "",
@@ -50,7 +50,7 @@
             ],
             "metadataCreationDate": "",
             "metadataLastUpdate": "",
-            "metadataURI": "",
+            "metadataUri": "",
             "metadataStatus": "",
             "metadataMaintenance": {
                 "maintenanceFrequency": "",
@@ -93,7 +93,7 @@
                 },
                 "onlineResource": [
                     {
-                        "URI": "",
+                        "uri": "",
                         "protocol": "",
                         "name": "",
                         "description": "",
@@ -486,7 +486,7 @@
                     {
                         "online": [
                             {
-                                "URI": "",
+                                "uri": "",
                                 "protocol": "",
                                 "name": "",
                                 "description": "",
@@ -520,7 +520,7 @@
                         {
                             "contactId": "",
                             "role": "",
-                            "partyAssignedCode": [
+                            "resourceCode": [
                                 {
                                     "codeName": "",
                                     "code": ""
@@ -536,7 +536,7 @@
                     },
                     "onlineResource": [
                         {
-                            "URI": "",
+                            "uri": "",
                             "protocol": "",
                             "name": "",
                             "description": "",
@@ -571,7 +571,7 @@
                 },
                 "onlineResource": [
                     {
-                        "URI": "",
+                        "uri": "",
                         "protocol": "",
                         "name": "",
                         "description": "",

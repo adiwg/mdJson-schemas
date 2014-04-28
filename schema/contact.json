@@ -1,5 +1,5 @@
 {
-  "id": "contacts.json#",
+  "id": "contact.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "schema for a contacts list, contains definitions for individual and organization",
   "type": "array",
@@ -25,6 +25,13 @@
         "phoneNumber": {
           "type": "string",
           "pattern": "^[0-9+()#. \/ext-]+$"
+        },
+        "service": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
         }
       },
       "additionalProperties": false
@@ -92,19 +99,7 @@
         "contactInstructions": {
           "type": "string"
         },
-        "voice": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/phone"
-          }
-        },
-        "fax": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/phone"
-          }
-        },
-        "sms": {
+        "phoneBook": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/phone"
@@ -139,19 +134,7 @@
         "contactInstructions": {
           "type": "string"
         },
-        "voice": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/phone"
-          }
-        },
-        "fax": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/phone"
-          }
-        },
-        "sms": {
+        "phoneBook": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/phone"

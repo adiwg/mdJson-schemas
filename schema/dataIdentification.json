@@ -29,7 +29,7 @@
       "minItems": 1,
       "uniqueItems": true,
       "items": {
-        "$ref": "./contacts.json#/definitions/contactRef"
+        "$ref": "./contact.json#/definitions/contactRef"
       }
     },
     "resourceMaintenance": {
