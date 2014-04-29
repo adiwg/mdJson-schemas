@@ -30,6 +30,11 @@ class TestExamples < Test::Unit::TestCase
     assert(errors.empty?, errors.join("/n"))
   end
 
+  def test_lcc_example
+    errors = JSON::Validator.fully_validate('../schema.json', '../examples/lcc_project_example.json')
+    assert(errors.empty?, errors.join("/n"))
+  end
+
   def test_contact
     errors = JSON::Validator.fully_validate('../schema/contact.json', '../examples/contact.json')
     assert(errors.empty?, errors.join("/n"))
