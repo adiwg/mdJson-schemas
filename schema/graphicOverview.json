@@ -1,5 +1,5 @@
 {
-  "id": "browseGraphic.json#",
+  "id": "graphicOverview.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "schema for browse graphic",
   "type": "object",

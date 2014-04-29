@@ -1,7 +1,7 @@
 [
   {
     "specificUsage": "Developed for land use planning.",
-    "userDeterminedLimitations": "Not suitable for use for navigation.",
+    "userDeterminedLimitation": "Not suitable for use for navigation.",
     "userContactInfo": [
       {
         "contactId": "3",

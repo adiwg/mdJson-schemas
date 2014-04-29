@@ -6,10 +6,18 @@
         "type":"Feature",
         "id":"point1",
         "properties":{
-          "identifier":"PNT-12345",
-          "idAuthority":"http://www.gtnp.org",
           "name":"BS7882",
-          "description":"Sea buoy BS7882 location"
+          "description":"Sea buoy BS7882 location",
+          "assignedId": [
+            {
+              "contact": {
+                "contactId": "1",
+                "role": "creator"
+              },
+              "identifierName": "http://www.gtnp.org",
+              "identifier": "PNT-12345"
+            }
+          ]
         },
         "geometry":{
           "type":"Point",

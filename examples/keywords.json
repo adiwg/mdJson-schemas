@@ -13,7 +13,7 @@
           }
         ],
         "edition": "Version 8.0.0.0.0",
-        "citedResponsibleParty": [
+        "responsibleParty": [
           {
             "contactId": "1",
             "role": "originator"
@@ -22,9 +22,11 @@
             "role": "owner"
           }
         ],
-        "presentationForm": "documentDigital",
-        "isbn": "HB12365.214",
-        "issn": "0ab4-dd983c01"
+        "presentationForm": ["documentDigital"],
+        "additionalIdentifier": {
+          "isbn": "HB12365.214",
+          "issn": "0ab4-dd983c01"
+        }
       }
     }
   }, {

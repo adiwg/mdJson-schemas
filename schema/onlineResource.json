@@ -3,13 +3,19 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "schema for online resource",
   "type": "object",
-  "required": ["linkage"],
+  "required": ["uri"],
   "additionalProperties": false,
   "properties": {
-    "linkage": {
-      "$ref": "../schema.json#definitions/url"
+    "uri": {
+      "$ref": "../schema.json#definitions/uri"
     },
     "name": {
+      "type": "string"
+    },
+    "protocol": {
+      "type": "string"
+    },
+    "doi": {
       "type": "string"
     },
     "description": {

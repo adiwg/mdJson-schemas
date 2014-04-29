@@ -42,15 +42,17 @@
               }
             ],
             "edition": "version 1.2.0",
-            "citedResponsibleParty": [
+            "responsibleParty": [
               {
                 "contactId": "1",
                 "role": "originator"
               }
             ],
-            "presentationForm": "documentDigital",
-            "isbn": "HB12365.214",
-            "issn": "0ab4-dd983c01"
+            "presentationForm": ["documentDigital"],
+            "additionalIdentifier": {
+              "isbn": "HB12365.214",
+              "issn": "0ab4-dd983c01"
+            }
           },
           "processStep": [
             {

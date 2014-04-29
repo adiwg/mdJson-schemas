@@ -8,7 +8,7 @@
           "dateType": "creation"
         }
       ],
-      "citedResponsibleParty": [
+      "responsibleParty": [
         {
           "contactId": "1",
           "role": "originator"
@@ -27,19 +27,19 @@
     "abstract": "The Arctic LCC has developed a Project Tracking System(PTS) to assist with the management of projects. The PTS is used to track projects throughout all stages of development, from receipt of proposals through delivery of final products.",
     "status": "onGoing",
     "language": ["eng; USA"],
-    "resourceFormat": [
+    "resourceNativeFormat": [
       {
-        "name": "ExtJS",
+        "formatName": "ExtJS",
         "version": "4.0.7"
       }, {
-        "name": "PostgreSQL",
+        "formatName": "PostgreSQL",
         "version": "9.1"
       }, {
-        "name": "PHP",
+        "formatName": "PHP",
         "version": "5.3"
       }
     ],
-    "keywords": [
+    "keyword": [
         {
           "keyword": ["Oceans > Ocean temperature > Thermocline", "Oceans > Ocean Temperature > Water Temperature", "Oceans > Ocean Heat Budget > Heat Flux"],
           "keywordType": "theme",
@@ -54,7 +54,7 @@
                 }
               ],
               "edition": "Version 8.0.0.0.0",
-              "citedResponsibleParty": [
+              "responsibleParty": [
                 {
                   "contactId": "1",
                   "role": "originator"
@@ -63,9 +63,12 @@
                   "role": "owner"
                 }
               ],
-              "presentationForm": "documentDigital",
-              "isbn": "HB12365.214",
-              "issn": "0ab4-dd983c01"
+              "presentationForm": ["documentDigital"],
+              "additionalIdentifier": {
+                "doi": "10.1000/182",
+                "isbn": "HB12365.214",
+                "issn": "0ab4-dd983c01"
+              }
             }
           }
         }, {
@@ -119,7 +122,7 @@
           }
         ],
         "edition":"version 1.2.0",
-        "citedResponsibleParty":[
+        "responsibleParty":[
           {
             "contactId":"1",
             "role":"originator"
@@ -129,9 +132,12 @@
             "role":"publisher"
           }
         ],
-        "presentationForm":"documentDigital",
-        "isbn":"HB12365.214",
-        "issn":"0ab4-dd983c01"
+        "presentationForm":["documentDigital"],
+        "additionalIdentifier": {
+          "doi": "10.1000/182",
+          "isbn": "HB12365.214",
+          "issn": "0ab4-dd983c01"
+        }
       },
       "pointOfContact":[
         {
@@ -161,23 +167,23 @@
         "environment",
         "climatologyMeteorologyAtmosphere"
       ],
-      "environmentalDesc":"Processed datafiles created in a Windows 7 environment, using R x64 2.15.1, Kepler 2.3, pgAdminIII and Postgres 9.1, and ArcInfo 10.2",
+      "environmentDescription":"Processed datafiles created in a Windows 7 environment, using R x64 2.15.1, Kepler 2.3, pgAdminIII and Postgres 9.1, and ArcInfo 10.2",
       "supplementalInfo":"A footprint of this data set may be viewed in Google Earth at: <ftp://ftp.csc.noaa.gov/pub/crs/beachmap/qa_docs/wa/pslc2012/wa2012_pslc_chehalis_footprint.KMZ> A Lidar Report from the vendor for this data set may be viewed here: <ftp://ftp.csc.noaa.gov/pub/crs/beachmap/qa_docs/wa/pslc2012/wa2012_pslc_chehalis_lidarreport.pdf>",
-      "resourceFormat":[
+      "resourceNativeFormat":[
         {
-          "name":"ExtJS",
+          "formatName":"ExtJS",
           "version":"4.0.7"
         },
         {
-          "name":"PostgreSQL",
+          "formatName":"PostgreSQL",
           "version":"9.1"
         },
         {
-          "name":"PHP",
+          "formatName":"PHP",
           "version":"5.3"
         }
       ],
-      "keywords":[
+      "keyword":[
         {
           "keyword":[
             "Oceans > Ocean temperature > Thermocline",
@@ -196,7 +202,7 @@
                 }
               ],
               "edition":"Version 8.0.0.0.0",
-              "citedResponsibleParty":[
+              "responsibleParty":[
                 {
                   "contactId":"1",
                   "role":"originator"
@@ -206,9 +212,12 @@
                   "role":"owner"
                 }
               ],
-              "presentationForm":"documentDigital",
-              "isbn":"HB12365.214",
-              "issn":"0ab4-dd983c01"
+              "presentationForm":["documentDigital"],
+              "additionalIdentifier": {
+                "doi": "10.1000/182",
+                "isbn": "HB12365.214",
+                "issn": "0ab4-dd983c01"
+              }
             }
           }
         },
@@ -232,20 +241,20 @@
       ],
       "resourceMaintenance":[
         {
-          "maintFreq":"fortnightly"
+          "maintenanceFrequency":"fortnightly"
         },
         {
-          "maintFreq":"annually",
-          "maintNote":["Updates to data are generally in available November after the season's field data has been validated"]
+          "maintenanceFrequency":"annually",
+          "maintenanceNote":["Updates to data are generally in available November after the season's field data has been validated"]
         },
         {
-          "maintNote":["Test of missing frequency code"]
+          "maintenanceNote":["Test of missing frequency code"]
         }
       ],
       "resourceSpecificUsage":[
         {
           "specificUsage":"Developed for land use planning.",
-          "userDeterminedLimitations":"Not suitable for use for navigation.",
+          "userDeterminedLimitation":"Not suitable for use for navigation.",
           "userContactInfo":[
             {
               "contactId":"3",
@@ -286,38 +295,38 @@
           "fileName":"pln40_spec_summer_2010.png"
         }
       ],
-      "useLimitations":[
+      "constraint":{"useLimitations":[
         "not for suitable for navigation",
         "draft version",
         "not intended for general use",
         "don't be a jerk"
       ],
-      "legalConstraints":[
+      "legalConstraint":[
         {
-          "accessConstraints":[
+          "accessConstraint":[
             "patentPending",
             "restricted"
           ],
-          "useConstraints":[
+          "useConstraint":[
             "restricted"
           ],
-          "otherConstraints":[
+          "otherConstraint":[
             "Legally barred from use for navigation."
           ]
         },
         {
-          "accessConstraints":[
+          "accessConstraint":[
             "otherRestrictions"
           ],
-          "useConstraints":[
+          "useConstraint":[
             "otherRestrictions"
           ],
-          "otherConstraints":[
-            "Access Constraints: No one else. Use Constraints: None"
+          "otherConstraint":[
+            "Access Constraint: No one else. Use Constraint: None"
           ]
         },
         {
-          "accessConstraints":[
+          "accessConstraint":[
             "copyright",
             "patent",
             "patentPending",
@@ -329,11 +338,11 @@
           ]
         }
       ],
-      "securityConstraints":[
+      "securityConstraint":[
         {
           "classification":"unclassified",
           "userNote":"security clearance not required",
-          "classSystem":"none",
+          "classificationSystem":"none",
           "handlingDescription":"this is how to handle things..."
         },
         {
@@ -343,9 +352,9 @@
           "classification":"secret",
           "userNote":"shhhhh"
         }
-      ],
+      ]},
       "taxonomy":{
-        "classSystem":[
+        "classificationSystem":[
           {
             "title":"Otter Record Survey",
             "date":[
@@ -354,7 +363,7 @@
                 "dateType":"publication"
               }
             ],
-            "citedResponsibleParty":[
+            "responsibleParty":[
               {
                 "contactId":"2",
                 "role":"publisher"
@@ -373,7 +382,7 @@
             "role":"pointOfContact"
           }
         ],
-        "taxonomicProcedures":"volunteers observed sea otters using binoculars in pairs",
+        "taxonomicProcedure":"volunteers observed sea otters using binoculars in pairs",
         "voucher":{
           "specimen":"weathered skull found on beach",
           "repository":{

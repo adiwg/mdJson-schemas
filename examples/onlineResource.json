@@ -1,10 +1,12 @@
 [
   {
-    "linkage": "http://arcticlcc.org",
+    "uri": "http://arcticlcc.org",
     "name": "Arctic LCC website",
+    "protocol": "http",
     "description": "Website for the Arctic Landscape Conservation Cooperative",
-    "function": "information"
+    "function": "information",
+    "doi": "10.1111/j.1365-2575.2012.00413.x"
   }, {
-    "linkage": "http://arcticlcc.org"
+    "uri": "http://arcticlcc.org"
   }
 ]

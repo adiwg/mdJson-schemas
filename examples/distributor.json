@@ -17,10 +17,10 @@
     ],
     "distributorFormat": [
       {
-        "name": "netCDF",
+        "formatName": "netCDF",
         "version": "4.0"
       }, {
-        "name": "Excel Spreadsheet",
+        "formatName": "Excel Spreadsheet",
         "version": "xlsx"
       }
     ],
@@ -28,12 +28,12 @@
       {
         "online": [
           {
-            "linkage": "http://aoos.org/aoos-data-resources",
+            "uri": "http://aoos.org/aoos-data-resources",
             "name": "Aoos Data Resources",
             "description": "This page provides links to interactive maps and data discovery tools.",
             "function": "information"
           }, {
-            "linkage": "http://aoos.org/fake_resource_location",
+            "uri": "http://aoos.org/fake_resource_location",
             "function": "download"
           }
         ],

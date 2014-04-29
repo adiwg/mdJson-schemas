@@ -103,16 +103,16 @@
     }
   ],
   "metadata": {
-    "fileIdentifier": "a2342cc0-e1db-0130-e0b7-080027a263b8",
+    "metadataIdentifier": "a2342cc0-e1db-0130-e0b7-080027a263b8",
     "contact": [
       {
         "contactId": "1",
         "role": "custodian"
       }
     ],
-    "dateStamp": "2013-08-07",
+    "metadataCreationDate": "2013-08-07",
     "dataSetURI": "http://arcticlcc.org/projects/management/project-tracking-system",
-    "identificationInfo": {
+    "resourceInfo": {
       "citation": {
         "title": "Project Tracking System",
         "date": [
@@ -121,7 +121,7 @@
             "dateType": "creation"
           }
         ],
-        "citedResponsibleParty": [
+        "responsibleParty": [
           {
             "contactId": "1",
             "role": "originator"
@@ -140,15 +140,15 @@
       "abstract": "The Arctic LCC has developed a Project Tracking System(PTS) to assist with the management of projects. The PTS is used to track projects throughout all stages of development, from receipt of proposals through delivery of final products.",
       "status": "onGoing",
       "language": ["eng; USA"],
-      "resourceFormat": [
+      "resourceNativeFormat": [
         {
-          "name": "ExtJS",
+          "formatName": "ExtJS",
           "version": "4.0.7"
         }, {
-          "name": "PostgreSQL",
+          "formatName": "PostgreSQL",
           "version": "9.1"
         }, {
-          "name": "PHP",
+          "formatName": "PHP",
           "version": "5.3"
         }
       ],
@@ -167,7 +167,7 @@
                 }
               ],
               "edition": "Version 8.0.0.0.0",
-              "citedResponsibleParty": [
+              "responsibleParty": [
                 {
                   "contactId": "1",
                   "role": "originator"
@@ -228,7 +228,7 @@
                 "dateType": "publication"
               }
             ],
-            "citedResponsibleParty": [
+            "responsibleParty": [
               {
                 "contactId": "2",
                 "role": "publisher"
@@ -242,7 +242,7 @@
                 "dateType": "publication"
               }
             ],
-            "citedResponsibleParty": [
+            "responsibleParty": [
               {
                 "contactId": "1",
                 "role": "publisher"
@@ -260,7 +260,7 @@
             "role": "pointOfContact"
           }
         ],
-        "taxonomicProcedures": "volunteers observed sea otters using binoculars in pairs",
+        "taxonomicProcedure": "volunteers observed sea otters using binoculars in pairs",
         "voucher": {
           "specimen": "weathered skull found on beach",
           "repository": {

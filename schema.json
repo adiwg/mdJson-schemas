@@ -3,10 +3,19 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "schema for ADIwg JSON metadata",
   "type": "object",
-  "required": ["contacts", "metadata"],
+  "required": ["version", "contact", "metadata"],
   "properties": {
-    "contacts": {
-      "$ref": "schema/contacts.json"
+    "verion": {
+      "name": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "[0-9]\\.[0-9]\\.[0-9]"
+      }
+    },
+    "contact": {
+      "$ref": "schema/contact.json"
     },
     "metadata": {
       "$ref": "schema/metadata.json"
@@ -17,6 +26,10 @@
       "type": "string",
       "pattern": "(https?|ftp):\\/\\/(-\\.)?([^\\s\\/?\\.#-]+\\.?)+(\\/[^\\s]*)?$"
     },
+    "uri": {
+      "type": "string",
+      "pattern": "((?<=\\()[A-Za-z][A-Za-z0-9\\+\\.\\-]*:([A-Za-z0-9\\.\\-_~:/\\?#\\[\\]@!\\$&'\\(\\)\\*\\+,;=]|%[A-Fa-f0-9]{2})+(?=\\)))|([A-Za-z][A-Za-z0-9\\+\\.\\-]*:([A-Za-z0-9\\.\\-_~:/\\?#\\[\\]@!\\$&'\\(\\)\\*\\+,;=]|%[A-Fa-f0-9]{2})+)"
+    },
     "date": {
       "oneOf": [
         {
@@ -24,6 +37,6 @@
           "pattern": "^(\\d{4}(-\\d{2})?(-\\d{2})?$)|(^\\d{4}-\\d{2}-\\d{2}(T\\d{2})?(\\:\\d{2}(\\:\\d{2}(\\.\\d+)?)?|Z)?(Z|(-|\\+)\\d{2}(:\\d{2})?)?$)"
         }
       ]
-    }   
+    }
   }
 }

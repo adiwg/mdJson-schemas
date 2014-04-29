@@ -15,7 +15,7 @@ class TestExamples < Test::Unit::TestCase
 
   @@data = '../examples/data_example.json'
   @@schema = '../schema.json'
-  def test_example
+=begin  def test_example
     errors = JSON::Validator.fully_validate(@@schema, @@data)
     assert(errors.empty?, errors.join("/n"))
   end
@@ -24,14 +24,19 @@ class TestExamples < Test::Unit::TestCase
     errors = JSON::Validator.fully_validate(@@schema, '../examples/full_example.json')
     assert(errors.empty?, errors.join("/n"))
   end
-
+=end
   def test_data_template
-    errors = JSON::Validator.fully_validate(@@schema, '../examples/data_metadata_template.json')
+    errors = JSON::Validator.fully_validate(@@schema, '../templates/adiwg_metadata_template.json')
     assert(errors.empty?, errors.join("/n"))
   end
 
-  def test_contacts
-    errors = JSON::Validator.fully_validate('../schema/contacts.json', '../examples/contacts.json')
+  def test_lcc_example
+    errors = JSON::Validator.fully_validate('../schema.json', '../examples/lcc_project_example.json')
+    assert(errors.empty?, errors.join("/n"))
+  end
+
+  def test_contact
+    errors = JSON::Validator.fully_validate('../schema/contact.json', '../examples/contact.json')
     assert(errors.empty?, errors.join("/n"))
   end
 
@@ -55,13 +60,13 @@ class TestExamples < Test::Unit::TestCase
     assert(errors.empty?, errors.join("/n"))
   end
 
-  def test_browseGraphic
-    errors = JSON::Validator.fully_validate('../schema/browseGraphic.json', '../examples/browseGraphic.json', :list => true)
+  def test_graphicOverview
+    errors = JSON::Validator.fully_validate('../schema/graphicOverview.json', '../examples/graphicOverview.json', :list => true)
     assert(errors.empty?, errors.join("/n"))
   end
 
-  def test_dataIdentification
-    errors = JSON::Validator.fully_validate('../schema/dataIdentification.json', '../examples/dataIdentification.json', :list => true)
+  def test_resourceInfo
+    errors = JSON::Validator.fully_validate('../schema/resourceInfo.json', '../examples/resourceInfo.json', :list => true)
     assert(errors.empty?, errors.join("/n"))
   end
 
@@ -81,12 +86,12 @@ class TestExamples < Test::Unit::TestCase
   end
 
   def test_contactRef
-    errors = JSON::Validator.fully_validate('../schema/contacts.json', '../examples/contactRef.json', :fragment => "#/definitions/contactRef")
+    errors = JSON::Validator.fully_validate('../schema/contact.json', '../examples/contactRef.json', :fragment => "#/definitions/contactRef", :list => true)
     assert(errors.empty?, errors.join("/n"))
   end
 
   def test_keywords
-    errors = JSON::Validator.fully_validate('../schema/keywords.json', '../examples/keywords.json', :list => true)
+    errors = JSON::Validator.fully_validate('../schema/keyword.json', '../examples/keywords.json', :list => true)
     assert(errors.empty?, errors.join("/n"))
   end
 

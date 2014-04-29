@@ -6,40 +6,27 @@
     "positionName": "Data Manager",
     "onlineResource": [
       {
-        "linkage": "http://arcticlcc.org",
+        "uri": "http://arcticlcc.org",
         "name": "Arctic LCC website",
         "description": "Website for the Arctic Landscape Conservation Cooperative",
         "function": "information"
       }, {
-        "linkage": "http://alaska.usgs.gov/akcsc",
+        "uri": "http://alaska.usgs.gov/akcsc",
         "name": "Alaska Climate Science Center",
         "description": "Website for the USGS Alaska Climate Science Center"
       }, {
-        "linkage": "https://google.com"
+        "uri": "https://google.com"
       }
     ],
-    "voice": [
+    "phoneBook": [
       {
         "phoneName": "office",
-        "phoneNumber": "+1 907.455.1847"
+        "phoneNumber": "+1 907.455.1847",
+        "service": ["voice", "sms", "fax"]
       }, {
         "phoneName": "mobile",
-        "phoneNumber": "907-455-1847"
-      }
-    ],
-    "sms": [
-      {
-        "phoneName": "office",
-        "phoneNumber": "907-455-1847"
-      }, {
-        "phoneName": "mobile",
-        "phoneNumber": "907-455-1847"
-      }
-    ],
-    "fax": [
-      {
-        "phoneName": "office",
-        "phoneNumber": "907-455-1847"
+        "phoneNumber": "907-455-1847",
+        "service": ["voice", "sms", "notISO"]
       }, {
         "phoneName": "alt",
         "phoneNumber": "907-999-9999"
@@ -59,25 +46,24 @@
     "organizationName": "Arctic Landscape Conservation Cooperative",
     "onlineResource": [
       {
-        "linkage": "http://arcticlcc.org",
+        "uri": "http://arcticlcc.org",
         "name": "Arctic LCC website",
         "description": "Website for the Arctic Landscape Conservation Cooperative",
         "function": "information"
       }
     ],
-    "voice": [
+    "phoneBook": [
       {
         "phoneName": "office",
         "phoneNumber": "907-786-3605"
       }, {
         "phoneName": "mobile",
-        "phoneNumber": "907-306-1895"
-      }
-    ],
-    "fax": [
-      {
-        "phoneName": "office",
-        "phoneNumber": "907-786-3592"
+        "phoneNumber": "907-306-1895",
+        "service": ["voice", "sms"]
+      }, {
+        "phoneName": "fax",
+        "phoneNumber": "907-786-3592",
+        "service": ["fax"]
       }
     ],
     "address": {
@@ -107,36 +93,30 @@
     "positionName": "Data Librarian",
     "onlineResource": [
       {
-        "linkage": "http://axiomalaska.com",
+        "uri": "http://axiomalaska.com",
         "name": "Axiom Consulting & Design",
         "description": "Website for Axiom Consulting and Design"
       }, {
-        "linkage": "http://www.aoos.org",
+        "uri": "http://www.aoos.org",
         "name": "The Alaska Ocean Observing System",
         "description": "The homepage for AOOS, the eye on Alaska's coasts and oceans"
       }
     ],
-    "voice": [
-      {
-        "phoneName": "mobile",
-        "phoneNumber": "907-555-1234"
-      }
-    ],
-    "sms": [
-      {
-        "phoneName": "mobile",
-        "phoneNumber": "907-555-1234"
-      }
-    ],
-    "fax": [
+    "phoneBook": [
       {
         "phoneName": "office",
-        "phoneNumber": "907-555-6543"
+        "phoneNumber": "+1 907.455.1847",
+        "service": ["voice", "sms", "fax"]
+      }, {
+        "phoneName": "mobile",
+        "phoneNumber": "907-455-1847",
+        "service": ["voice", "sms"]
       }, {
         "phoneName": "alt",
-        "phoneNumber": "1-800-598-5571"
+        "phoneNumber": "907-999-9999"
       }
-    ],
+    ]
+    ,
     "address": {
       "deliveryPoint": ["523 W 8th Ave", "Suite 104"],
       "city": "Anchorage",
@@ -152,35 +132,25 @@
     "positionName": "Data Wrangler",
     "onlineResource": [
       {
-        "linkage": "http://moixaalaska.com",
+        "uri": "http://moixaalaska.com",
         "name": "Moixa Design and Consulting",
         "description": "Website for Moixa Design and Consulting"
       }, {
-        "linkage": "http://www.aoos.org"
+        "uri": "http://www.aoos.org"
       }
     ],
-    "voice": [
+    "phoneBook": [
       {
         "phoneName": "office",
-        "phoneNumber": "907-458-8765"
+        "phoneNumber": "+1 907.455.1847",
+        "service": ["voice", "sms", "fax"]
       }, {
         "phoneName": "mobile",
-        "phoneNumber": "907-567-1234"
-      }
-    ],
-    "sms": [
-      {
-        "phoneName": "mobile",
-        "phoneNumber": "907-567-1234"
-      }
-    ],
-    "fax": [
-      {
-        "phoneName": "office",
-        "phoneNumber": "907-567-6543"
+        "phoneNumber": "907-455-1847",
+        "service": ["voice", "sms"]
       }, {
         "phoneName": "alt",
-        "phoneNumber": "1-800-598-5571"
+        "phoneNumber": "907-999-9999"
       }
     ],
     "address": {

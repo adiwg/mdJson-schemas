@@ -6,15 +6,6 @@
         "date": "2013-03-13",
         "dateType": "creation"
       }
-    ],
-    "citedResponsibleParty": [
-      {
-        "contactId": "1",
-        "role": "originator"
-      }, {
-        "contactId": "2",
-        "role": "publisher"
-      }
     ]
   }, {
     "title": "Project Tracking System",
@@ -22,6 +13,15 @@
       {
         "date": "2013-03-13",
         "dateType": "creation"
+      }
+    ],
+    "responsibleParty": [
+      {
+        "contactId": "1",
+        "role": "originator"
+      }, {
+        "contactId": "2",
+        "role": "publisher"
       }
     ]
   }, {
@@ -36,7 +36,7 @@
       }
     ],
     "edition": "version 1.2.0",
-    "citedResponsibleParty": [
+    "responsibleParty": [
       {
         "contactId": "1",
         "role": "originator"
@@ -45,8 +45,16 @@
         "role": "publisher"
       }
     ],
-    "presentationForm": "digitalDocument",
-    "isbn": "HB12365.214",
-    "issn": "0ab4-dd983c01"
+    "presentationForm": ["digitalDocument"],
+    "onlineResource": [
+      {
+        "uri": "http://dx.doi.org/10.1000/182"
+      }
+    ],
+    "additionalIdentifier": {
+      "doi": "10.1000/182",
+      "isbn": "HB12365.214",
+      "issn": "0ab4-dd983c01"
+    }
   }
 ]

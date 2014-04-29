@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "properties": {
     "distributorContact": {
-      "$ref": "contacts.json#/definitions/contactRef"
+      "$ref": "contact.json#/definitions/contactRef"
     },
     "distributionOrderProcess": {
       "type": "array",
@@ -74,10 +74,10 @@
   "definitions": {
     "format": {
       "type": "object",
-      "required": ["name"],
+      "required": ["formatName"],
       "additionalProperties": false,
       "properties": {
-        "name": {
+        "formatName": {
           "type": "string"
         },
         "version": {

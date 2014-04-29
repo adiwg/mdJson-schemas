@@ -4,20 +4,20 @@
   "description": "schema for usage",
   "type": "object",
   "required": ["specificUsage", "userContactInfo"],
-  "additionalProperties": true,
+  "additionalProperties": false,
   "properties": {
     "specificUsage": {
       "type": "string"
     },
-    "userDeterminedLimitations": {
+    "userDeterminedLimitation": {
       "type": "string"
-    }
-  },
-  "userContactInfo": {
-    "type": "array",
-    "uniqueItems": true,
-    "items": {
-      "$ref": "contacts.json#/definitions/contactRef"
+    },
+    "userContactInfo": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "contact.json#/definitions/contactRef"
+      }
     }
   }
 }

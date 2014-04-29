@@ -3,10 +3,10 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "schema for taxonomy",
   "type": "object",
-  "required": ["classSystem", "taxonomicProcedures", "taxonClass"],
+  "required": ["classificationSystem", "taxonomicProcedure", "taxonClass"],
   "additionalProperties": false,
   "properties": {
-    "classSystem": {
+    "classificationSystem": {
       "type": "array",
       "minItems": 1,
       "items": {
@@ -19,10 +19,10 @@
     "observer": {
       "type": "array",
       "items": {
-        "$ref": "contacts.json#/definitions/contactRef"
+        "$ref": "contact.json#/definitions/contactRef"
       }
     },
-    "taxonomicProcedures": {
+    "taxonomicProcedure": {
       "type": "string"
     },
     "voucher": {
@@ -33,7 +33,7 @@
           "type": "string"
         },
         "repository": {
-          "$ref": "contacts.json#/definitions/contactRef"
+          "$ref": "contact.json#/definitions/contactRef"
         }
       }
     },
