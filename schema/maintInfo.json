@@ -5,17 +5,17 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "maintFreq": {
+    "maintenanceFrequency": {
       "type": "string"
     },
-    "maintNote": {
+    "maintenanceNote": {
       "type": "array",
       "items": {
         "type": "string"
       }
     }
     ,
-    "maintContact": {
+    "maintenanceContact": {
       "type": "array",
       "uniqueItems": true,
       "items": {

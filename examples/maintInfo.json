@@ -1,8 +1,8 @@
 [
   {
-    "maintFreq": "annually",
-    "maintNote": ["metadata is updated each year after data from that year has been added to the dataset", "Oh, and this is a second note."],
-    "maintContact": [
+    "maintenanceFrequency": "annually",
+    "maintenanceNote": ["metadata is updated each year after data from that year has been added to the dataset", "Oh, and this is a second note."],
+    "maintenanceContact": [
       {
         "contactId": "4",
         "role": "custodian"
@@ -12,11 +12,11 @@
       }
     ]
   }, {
-    "maintFreq": "annually",
-    "maintNote": ["metadata is updated each year after data from that year has been added to the datasest"]
+    "maintenanceFrequency": "annually",
+    "maintenanceNote": ["metadata is updated each year after data from that year has been added to the datasest"]
   }, {
-    "maintFreq": "asNeeded"
+    "maintenanceFrequency": "asNeeded"
   }, {
-    "maintNote": ["Test of missing frequency code."]
+    "maintenanceNote": ["Test of missing frequency code."]
   }
 ]

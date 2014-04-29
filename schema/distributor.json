@@ -74,10 +74,10 @@
   "definitions": {
     "format": {
       "type": "object",
-      "required": ["name"],
+      "required": ["formatName"],
       "additionalProperties": false,
       "properties": {
-        "name": {
+        "formatName": {
           "type": "string"
         },
         "version": {

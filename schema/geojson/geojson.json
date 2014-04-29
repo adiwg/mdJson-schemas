@@ -104,7 +104,34 @@
             "verticalElement": {
               "type": "array",
               "items": {
-                "$ref": "../extent.json#definitions/verticalElement"
+                "$ref": "../extent.json#definitions/verticalExtent"
+              }
+            },
+            "featureName": {
+              "type": "string"
+            },
+            "featureScope": {
+              "type": "string"
+            },
+            "featureAcquisitionMethod": {
+              "type": "string"
+            },
+            "assignedId": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["identifier"],
+                "properties": {
+                  "contact": {
+                    "$ref": "../contact.json#/definitions/contactRef"
+                  },
+                  "identifierName": {
+                    "type": "string"
+                  },
+                  "identifier": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }

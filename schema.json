@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "schema for ADIwg JSON metadata",
   "type": "object",
-  "required": ["version", "contacts", "metadata"],
+  "required": ["version", "contact", "metadata"],
   "properties": {
     "verion": {
       "name": {
@@ -14,7 +14,7 @@
         "pattern": "[0-9]\\.[0-9]\\.[0-9]"
       }
     },
-    "contacts": {
+    "contact": {
       "$ref": "schema/contact.json"
     },
     "metadata": {

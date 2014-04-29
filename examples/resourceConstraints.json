@@ -1,19 +1,19 @@
 [
   {
-    "accessConstraints": ["patentPending", "restricted"],
-    "useConstraints": ["restricted"],
-    "otherConstraints": ["Legally barred from use for navigation."]
+    "accessConstraint": ["patentPending", "restricted"],
+    "useConstraint": ["restricted"],
+    "otherConstraint": ["Legally barred from use for navigation."]
   }, {
-    "accessConstraints": ["otherRestrictions"],
-    "useConstraints": ["otherRestrictions"],
-    "otherConstraints": ["Access Constraints: No one else. Use Constraints: None"]
+    "accessConstraint": ["otherRestrictions"],
+    "useConstraint": ["otherRestrictions"],
+    "otherConstraint": ["Access Constraint: No one else. Use Constraint: None"]
   }, {
-    "accessConstraints": ["copyright", "patent", "patentPending", "trademark", "license", "intellectualPropertyRights", "restricted", "otherRestrictions"]
+    "accessConstraint": ["copyright", "patent", "patentPending", "trademark", "license", "intellectualPropertyRights", "restricted", "otherRestrictions"]
   }
   , {
     "classification": "unclassified",
     "userNote": "security clearance not required",
-    "classSystem": "none",
+    "classificationSystem": "none",
     "handlingDescription": "this is how to handle things..."
   }, {
     "classification": "intellectualPropertyRights"

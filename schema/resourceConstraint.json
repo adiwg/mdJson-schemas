@@ -4,37 +4,37 @@
   "description": "schema for resource constraint",
   "anyOf": [
     {
-      "$ref": "#/definitions/useLimitations"
+      "$ref": "#/definitions/useLimitation"
     }, {
-      "$ref": "#/definitions/legalConstraints"
+      "$ref": "#/definitions/legalConstraint"
     }, {
-      "$ref": "#/definitions/securityConstraints"
+      "$ref": "#/definitions/securityConstraint"
     }
   ],
   "definitions": {
-    "useLimitations": {
+    "useLimitation": {
       "type": "array",
       "items": {
         "type": "string"
       }
     },
-    "legalConstraints": {
+    "legalConstraint": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "accessConstraints": {
+        "accessConstraint": {
           "type": "array",
           "items": {
             "type": "string"
           }
         },
-        "useConstraints": {
+        "useConstraint": {
           "type": "array",
           "items": {
             "type": "string"
           }
         },
-        "otherConstraints": {
+        "otherConstraint": {
           "type": "array",
           "items": {
             "type": "string"
@@ -42,7 +42,7 @@
         }
       }
     },
-    "securityConstraints": {
+    "securityConstraint": {
       "type": "object",
       "required": ["classification"],
       "additionalProperties": false,
@@ -53,7 +53,7 @@
         "userNote": {
           "type": "string"
         },
-        "classSystem": {
+        "classificationSystem": {
           "type": "string"
         },
         "handlingDescription": {

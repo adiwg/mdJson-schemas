@@ -285,7 +285,7 @@
         ],
         "dateStamp": "2014-02-28",
         "spatialReference": ["epsg:4326"],
-        "identificationInfo": {
+        "resourceInfo": {
             "citation": {
                 "title": "Real-Time Permafrost and Climate Monitoring Network - Arctic Alaska",
                 "date": [
@@ -473,11 +473,11 @@
                 }
             ],
             "useLimitations": [""],
-            "legalConstraints": [
+            "legalConstraint": [
                 {
-                    "accessConstraints": [""],
-                    "useConstraints": [""],
-                    "otherConstraints": [""]
+                    "accessConstraint": [""],
+                    "useConstraint": [""],
+                    "otherConstraint": [""]
                 }
             ],
             "extent": [

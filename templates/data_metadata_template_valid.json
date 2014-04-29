@@ -50,7 +50,7 @@
         "dateStamp": "",
         "dataSetURI": "",
         "spatialReference": [""],
-        "identificationInfo": {
+        "resourceInfo": {
             "citation": {
                 "title": "",
                 "date": [
@@ -152,14 +152,14 @@
                 }
             ],
             "useLimitations": [""],
-            "legalConstraints": [
+            "legalConstraint": [
                 {
-                    "accessConstraints": [""],
-                    "useConstraints": [""],
-                    "otherConstraints": [""]
+                    "accessConstraint": [""],
+                    "useConstraint": [""],
+                    "otherConstraint": [""]
                 }
             ],
-            "securityConstraints": [
+            "securityConstraint": [
                 {
                     "classification": "",
                     "userNote": "",
@@ -196,7 +196,7 @@
                         "role": ""
                     }
                 ],
-                "taxonomicProcedures": "",
+                "taxonomicProcedure": "",
                 "voucher": {
                     "specimen": "",
                     "repository": {

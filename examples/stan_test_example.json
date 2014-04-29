@@ -203,7 +203,7 @@
         }
     ],
     "metadata": {
-        "fileIdentifier": "a2342cc0-e1db-0130-e0b7-080027a263b8",
+        "metadataIdentifier": "a2342cc0-e1db-0130-e0b7-080027a263b8",
         "hierarchyLevel": ["dataset","nonGeographicDataset","attribute"],
         "contact": [
             {
@@ -211,10 +211,10 @@
                 "role": "custodian"
             }
         ],
-        "dateStamp": "2013-08-07",
+        "metadataCreationDate": "2013-08-07",
         "dataSetURI": "http://arcticlcc.org/projects/management/project-tracking-system",
         "spatialReference": ["WGS84","NAD27","MHW"],
-        "identificationInfo": {
+        "resourceInfo": {
             "citation": {
                 "title": "Project Tracking System",
                 "date": [
@@ -228,7 +228,7 @@
                     }
                 ],
                 "edition": "version 1.2.0",
-                "citedResponsibleParty": [
+                "responsibleParty": [
                     {
                         "contactId": "1",
                         "role": "originator"
@@ -269,16 +269,16 @@
             ],
             "environmentalDesc": "Processed datafiles created in a Windows 7 environment, using R x64 2.15.1, Kepler 2.3, pgAdminIII and Postgres 9.1, and ArcInfo 10.2",
             "supplementalInfo": "A footprint of this data set may be viewed in Google Earth at: <ftp://ftp.csc.noaa.gov/pub/crs/beachmap/qa_docs/wa/pslc2012/wa2012_pslc_chehalis_footprint.KMZ> A Lidar Report from the vendor for this data set may be viewed here: <ftp://ftp.csc.noaa.gov/pub/crs/beachmap/qa_docs/wa/pslc2012/wa2012_pslc_chehalis_lidarreport.pdf>",
-            "resourceFormat": [
+            "resourceNativeFormat": [
                 {
-                    "name": "ExtJS",
+                    "formatName": "ExtJS",
                     "version": "4.0.7"
                 },
                 {
-                    "name": "PostgreSQL"
+                    "formatName": "PostgreSQL"
                 },
                 {
-                    "name": "",
+                    "formatName": "",
                     "version": "5.3"
                 }
             ],
@@ -299,7 +299,7 @@
                                 }
                             ],
                             "edition": "Version 8.0.0.0.0",
-                            "citedResponsibleParty": [
+                            "responsibleParty": [
                                 {
                                     "contactId": "1",
                                     "role": "originator"
@@ -329,20 +329,20 @@
             ],
             "resourceMaintenance": [
                 {
-                    "maintFreq": "fortnightly"
+                    "maintenanceFrequency": "fortnightly"
                 },
                 {
-                    "maintFreq": "annually",
-                    "maintNote": ["Updates to data are generally in available November after the season's field data has been validated"]
+                    "maintenanceFrequency": "annually",
+                    "maintenanceNote": ["Updates to data are generally in available November after the season's field data has been validated"]
                 },
                 {
-                    "maintNote": ["Test of missing frequency code","Test of multiple notes"]
+                    "maintenanceNote": ["Test of missing frequency code","Test of multiple notes"]
                 }
             ],
             "resourceSpecificUsage": [
                 {
                     "specificUsage": "Developed for land use planning.",
-                    "userDeterminedLimitations": "Not suitable for use for navigation.",
+                    "userDeterminedLimitation": "Not suitable for use for navigation.",
                     "userContactInfo": [
                         {
                             "contactId": "3",
@@ -383,21 +383,21 @@
             "useLimitations": ["not for suitable for navigation",
                 "draft version", "not intended for general use",
                 "don't be a jerk"],
-            "legalConstraints": [
+            "legalConstraint": [
                 {
-                    "accessConstraints": ["patentPending", "restricted"],
-                    "useConstraints": ["restricted"],
-                    "otherConstraints": ["Legally barred from use for navigation."]
+                    "accessConstraint": ["patentPending", "restricted"],
+                    "useConstraint": ["restricted"],
+                    "otherConstraint": ["Legally barred from use for navigation."]
                 }, {
-                    "accessConstraints": ["otherRestrictions"],
-                    "useConstraints": ["otherRestrictions"],
-                    "otherConstraints": ["Access Constraints: No one else. Use Constraints: None"]
+                    "accessConstraint": ["otherRestrictions"],
+                    "useConstraint": ["otherRestrictions"],
+                    "otherConstraint": ["Access Constraint: No one else. Use Constraint: None"]
                 }, {
-                    "accessConstraints": ["copyright", "patent", "patentPending", "trademark", "license",
+                    "accessConstraint": ["copyright", "patent", "patentPending", "trademark", "license",
                         "intellectualPropertyRights", "restricted", "otherRestrictions"]
                 }
             ],
-            "securityConstraints": [
+            "securityConstraint": [
                 {
                     "classification": "unclassified",
                     "userNote": "security clearance not required",
@@ -420,7 +420,7 @@
                                 "dateType": "publication"
                             }
                         ],
-                        "citedResponsibleParty": [
+                        "responsibleParty": [
                             {
                                 "contactId": "2",
                                 "role": "publisher"
@@ -439,7 +439,7 @@
                         "role": "pointOfContact"
                     }
                 ],
-                "taxonomicProcedures": "volunteers observed sea otters using binoculars in pairs",
+                "taxonomicProcedure": "volunteers observed sea otters using binoculars in pairs",
                 "voucher": {
                     "specimen": "weathered skull found on beach",
                     "repository": {
@@ -1434,7 +1434,7 @@
                                     }
                                 ],
                                 "edition": "version 1.2.0",
-                                "citedResponsibleParty": [
+                                "responsibleParty": [
                                     {
                                         "contactId": "1",
                                         "role": "originator"
@@ -1527,12 +1527,12 @@
             }
         ],
         "metadataMaintenance": {
-            "maintFreq": "annually",
-            "maintNote": [
+            "maintenanceFrequency": "annually",
+            "maintenanceNote": [
                 "metadata is updated each year after data from that year has been added to the dataset",
                 "Oh, and this is a second note."
             ],
-            "maintContact": [
+            "maintenanceContact": [
                 {
                     "contactId": "4",
                     "role": "custodian"

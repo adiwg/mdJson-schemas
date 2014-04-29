@@ -3,52 +3,55 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "schema for metadata section",
   "type": "object",
-  "required": ["contact", "dateStamp", "identificationInfo"],
+  "required": ["resourceInfo"],
   "additionalProperties": false,
   "properties": {
-    "fileIdentifier": {
-      "type": "string"
-    },
-    "language": {
-      "type": "string"
-    },
-    "characterInfo": {
-      "type": "string"
-    },
-    "hierarchyLevel": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "uniqueItems": true
-    },
-    "contact": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "$ref": "contact.json#/definitions/contactRef"
+    "metadataInfo": {
+      "required": ["metadataContact", "metadataCreationDate"],
+      "additionalProperties": false,
+      "properties": {
+        "metadataIdentifier": {
+          "type": "string"
+        },
+        "parentMetadataIdentifier": {
+          "type": "string"
+        },
+        "metadataScope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "metadataContact": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "contact.json#/definitions/contactRef"
+          }
+        },
+        "metadataCharacterSet": {
+          "type": "string"
+        },
+        "metadataCreationDate": {
+          "$ref": "../schema.json#definitions/date"
+        },
+        "metadataLastUpdate": {
+          "$ref": "../schema.json#definitions/date"
+        },
+        "metadataUri": {
+          "$ref": "../schema.json#definitions/uri"
+        },
+        "metadataStatus": {
+          "type": "string"
+        },
+        "metadataMaintenance": {
+          "$ref": "./maintInfo.json#"
+        }
       }
     },
-    "dateStamp": {
-      "$ref": "../schema.json#definitions/date"
-    },
-    "metadataStandardName": {
-      "type": "string"
-    },
-    "metadataStandardVersion": {
-      "type": "string"
-    },
-    "dataSetURI": {
-      "type": "string"
-    },
-    "spatialReference": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "identificationInfo": {
-      "$ref": "./dataIdentification.json#"
+    "resourceInfo": {
+      "$ref": "./resourceInfo.json#"
     },
     "distributionInfo": {
       "type": "array",
@@ -57,14 +60,29 @@
         "$ref": "./distributor.json#"
       }
     },
-    "dataQualityInfo": {
+    "associatedResource": {
+      "additionalProperties": false,
       "type": "array",
+      "minItems": 1,
       "items": {
-        "$ref": "./dataQuality.json#"
+        "associationType": {
+          "type": "string"
+        },
+        "resourceType": {
+          "type": "string"
+        },
+        "resourceCitation": {
+          "$ref": "./citation.json#"
+        }
       }
     },
-    "metadataMaintenance": {
-      "$ref": "./maintInfo.json#"
+    "additionalDocumentation": {
+      "additionalProperties": false,
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "./citation.json#"
+      }
     }
   }
 }

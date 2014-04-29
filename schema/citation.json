@@ -16,22 +16,7 @@
       "required": ["title"],
       "additionalProperties": false,
       "properties": {
-        "linkage": {
-          "$ref": "../schema.json#definitions/url"
-        },
         "title": {
-          "type": "string"
-        },
-        "edition": {
-          "type": "string"
-        },
-        "presentationForm": {
-          "type": "string"
-        },
-        "isbn": {
-          "type": "string"
-        },
-        "issn": {
           "type": "string"
         },
         "date": {
@@ -50,11 +35,40 @@
             }
           }
         },
-        "citedResponsibleParty": {
+        "edition": {
+          "type": "string"
+        },
+        "responsibleParty": {
           "type": "array",
           "minItems": 1,
           "items": {
             "$ref": "contact.json#/definitions/contactRef"
+          }
+        },
+        "presentationForm": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "additionalIdentifier": {
+          "type": "object",
+          "properties": {
+            "doi": {
+              "type": "string"
+            },
+            "isbn": {
+              "type": "string"
+            },
+            "issn": {
+              "type": "string"
+            }
+          }
+        },
+        "onlineResource": {
+          "type": "array",
+          "items": {
+            "$ref": "./onlineResource.json#"
           }
         }
       }

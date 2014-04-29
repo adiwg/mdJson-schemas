@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "properties": {
     "uri": {
-      "$ref": "../schema.json#definitions/url"
+      "$ref": "../schema.json#definitions/uri"
     },
     "name": {
       "type": "string"

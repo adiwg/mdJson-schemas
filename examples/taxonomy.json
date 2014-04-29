@@ -1,6 +1,6 @@
 [
   {
-    "classSystem": [
+    "classificationSystem": [
       {
         "title": "Otter Record Survey",
         "date": [
@@ -9,7 +9,7 @@
             "dateType": "publication"
           }
         ],
-        "citedResponsibleParty": [
+        "responsibleParty": [
           {
             "contactId": "2",
             "role": "publisher"
@@ -24,13 +24,13 @@
             "dateType": "publication"
           }
         ],
-        "citedResponsibleParty": [
+        "responsibleParty": [
           {
             "contactId": "1",
             "role": "publisher"
           }
         ]
-      }      
+      }
     ],
     "taxonGeneralScope": "The otters observed were identified to the subspecies criterion and identified as southern sea otters.",
     "observer": [
@@ -42,7 +42,7 @@
         "role": "pointOfContact"
       }
     ],
-    "taxonomicProcedures": "volunteers observed sea otters using binoculars in pairs",
+    "taxonomicProcedure": "volunteers observed sea otters using binoculars in pairs",
     "voucher": {
       "specimen": "weathered skull found on beach",
       "repository": {
