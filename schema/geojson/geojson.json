@@ -119,19 +119,7 @@
             "assignedId": {
               "type": "array",
               "items": {
-                "type": "object",
-                "required": ["identifier"],
-                "properties": {
-                  "contact": {
-                    "$ref": "../contact.json#/definitions/contactRef"
-                  },
-                  "identifierName": {
-                    "type": "string"
-                  },
-                  "identifier": {
-                    "type": "string"
-                  }
-                }
+                  "$ref": "../contact.json#/definitions/contactRef"
               }
             }
           }

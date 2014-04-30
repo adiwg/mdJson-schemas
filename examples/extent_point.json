@@ -10,12 +10,14 @@
           "description":"Sea buoy BS7882 location",
           "assignedId": [
             {
-              "contact": {
-                "contactId": "1",
-                "role": "creator"
-              },
-              "identifierName": "http://www.gtnp.org",
-              "identifier": "PNT-12345"
+              "contactId": "1",
+              "role": "creator",
+              "resourceIdentifier": [
+                {
+                  "identifierName": "http://www.gtnp.org",
+                  "identifier": "PNT-12345"
+                }
+              ]
             }
           ]
         },

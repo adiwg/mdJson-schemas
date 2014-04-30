@@ -337,12 +337,14 @@
                 ],
                 "assignedId": [
                   {
-                    "contact": {
-                      "contactId": "",
-                      "role": ""
-                    },
-                    "identifierName": "",
-                    "identifier": ""
+                    "contactId": "",
+                    "role": "",
+                    "resourceIdentifier": [
+                      {
+                        "identifierName": "",
+                        "identifier": ""
+                      }
+                    ]
                   }
                 ],
                 "featureScope": "",
