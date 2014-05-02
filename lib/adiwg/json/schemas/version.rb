@@ -1,5 +1,5 @@
 module Adiwg
-    module Json
+    module JSON
         module Schemas
             # Current schema version number
             VERSION = "0.4.0"

@@ -5,7 +5,7 @@ require 'adiwg/json/schemas/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "adiwg-json-schemas"
-  spec.version       = Adiwg::Json::Schemas::VERSION
+  spec.version       = Adiwg::JSON::Schemas::VERSION
   spec.authors       = ["Josh Bradley, Stan Smith"]
   spec.email         = ["jbradley@arcticlcc.org"]
   spec.description   = %q{JSON schemas for validating according to the the ADIwg project and data metadata standard. The schemas comply JSON Schema draft version 4.}
@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features|tc|)/})
+  spec.test_files    = spec.files.grep(%r{^(test|spec|features|)/})
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.3"
