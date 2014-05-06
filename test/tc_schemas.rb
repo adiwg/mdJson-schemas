@@ -6,7 +6,7 @@
 =end
 
 require "test/unit"
-require 'adiwg-json_schemas'
+require 'adiwg/json_schemas'
 require 'json-schema'
 
 class TestExamples < Test::Unit::TestCase
