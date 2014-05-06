@@ -6,14 +6,14 @@
 =end
 
 require "test/unit"
-require 'adiwg-json-schemas'
+require 'adiwg-json_schemas'
 require 'json-schema'
 
 class TestExamples < Test::Unit::TestCase
 
-  @@dir = Adiwg::JSON::Schemas::Utils.schema_dir
-  @@ex = Adiwg::JSON::Schemas::Utils.examples_dir
-  @@schema = Adiwg::JSON::Schemas::Utils.schema_path
+  @@dir = ADIWG::JsonSchemas::Utils.schema_dir
+  @@ex = ADIWG::JsonSchemas::Utils.examples_dir
+  @@schema = ADIWG::JsonSchemas::Utils.schema_path
 
 =begin  def test_example
     errors = JSON::Validator.fully_validate(@@schema, @@data)
