@@ -26,12 +26,12 @@
     "verticalElement": {
       "type": "array",
       "items": {
-        "$ref": "#definitions/verticalExtent"
+        "$ref": "#/definitions/verticalExtent"
       }
     },
     "temporalElement": {
 
-      "$ref": "#definitions/temporalElement"
+      "$ref": "#/definitions/temporalElement"
     }
   },
   "definitions": {
@@ -47,7 +47,7 @@
           "type": "string"
         },
         "timePosition": {
-          "$ref": "../schema.json#definitions/date"
+          "$ref": "../schema.json#/definitions/date"
         }
       }
     },
@@ -63,10 +63,10 @@
           "type": "string"
         },
         "beginPosition": {
-          "$ref": "../schema.json#definitions/date"
+          "$ref": "../schema.json#/definitions/date"
         },
         "endPosition": {
-          "$ref": "../schema.json#definitions/date"
+          "$ref": "../schema.json#/definitions/date"
         }
       }
     },
@@ -78,19 +78,19 @@
         "timeInstant": {
           "type": "array",
           "items": {
-            "$ref": "#definitions/timeInstant"
+            "$ref": "#/definitions/timeInstant"
           }
         },
         "timePeriod": {
           "type": "array",
           "items": {
-            "$ref": "#definitions/timePeriod"
+            "$ref": "#/definitions/timePeriod"
           }
         },
         "date": {
           "type": "array",
           "items": {
-            "$ref": "../schema.json#definitions/date"
+            "$ref": "../schema.json#/definitions/date"
           }
         }
       }

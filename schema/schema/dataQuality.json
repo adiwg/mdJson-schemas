@@ -50,7 +50,7 @@
           "type": "string"
         },
         "dateTime": {
-          "$ref": "../schema.json#definitions/date"
+          "$ref": "../schema.json#/definitions/date"
         },
         "processor": {
           "type": "array",

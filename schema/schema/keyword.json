@@ -26,10 +26,10 @@
       "additionalProperties": false,
       "properties": {
         "thesaurusLink": {
-          "$ref": "../schema.json#definitions/url"
+          "$ref": "../schema.json#/definitions/url"
         },
         "citation": {
-          "$ref": "citation.json#definitions/citationBase"
+          "$ref": "citation.json#/definitions/citationBase"
         }
       }
     }

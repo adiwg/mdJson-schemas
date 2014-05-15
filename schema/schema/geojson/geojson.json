@@ -99,12 +99,12 @@
             },
             "temporalElement": {
 
-              "$ref": "../extent.json#definitions/temporalElement"
+              "$ref": "../extent.json#/definitions/temporalElement"
             },
             "verticalElement": {
               "type": "array",
               "items": {
-                "$ref": "../extent.json#definitions/verticalExtent"
+                "$ref": "../extent.json#/definitions/verticalExtent"
               }
             },
             "featureName": {

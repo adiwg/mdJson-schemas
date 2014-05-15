@@ -27,7 +27,7 @@
             "required": ["date", "dateType"],
             "properties": {
               "date": {
-                "$ref": "../schema.json#definitions/date"
+                "$ref": "../schema.json#/definitions/date"
               },
               "dateType": {
                 "type": "string"

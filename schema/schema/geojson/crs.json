@@ -35,7 +35,7 @@
             "required": [ "href" ],
             "properties": {
                 "href": {
-                  "$ref": "../../schema.json#definitions/url"
+                  "$ref": "../../schema.json#/definitions/url"
                 },
                 "type": {
                     "type": "string",

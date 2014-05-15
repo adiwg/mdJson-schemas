@@ -16,7 +16,7 @@
       "type": "string"
     },
     "fileLink": {
-      "$ref": "../schema.json#definitions/url"
+      "$ref": "../schema.json#/definitions/url"
     }
   }
 }

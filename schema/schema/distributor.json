@@ -20,7 +20,7 @@
             "type": "string"
           },
           "plannedAvailabilityDateTime": {
-            "$ref": "../schema.json#definitions/date"
+            "$ref": "../schema.json#/definitions/date"
           },
           "orderingInstructions": {
             "type": "string"

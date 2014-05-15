@@ -34,13 +34,13 @@
           "type": "string"
         },
         "metadataCreationDate": {
-          "$ref": "../schema.json#definitions/date"
+          "$ref": "../schema.json#/definitions/date"
         },
         "metadataLastUpdate": {
-          "$ref": "../schema.json#definitions/date"
+          "$ref": "../schema.json#/definitions/date"
         },
         "metadataUri": {
-          "$ref": "../schema.json#definitions/uri"
+          "$ref": "../schema.json#/definitions/uri"
         },
         "metadataStatus": {
           "type": "string"
