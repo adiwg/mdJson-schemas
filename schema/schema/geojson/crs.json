@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "crs.json#",    
+    "id": "crs.json#",
     "title": "crs",
     "description": "a Coordinate Reference System object",
     "type": [ "object", "null" ],
@@ -16,6 +16,7 @@
     ],
     "definitions": {
         "namedCrs": {
+            "title": "namedCrs",
             "properties": {
                 "type": { "enum": [ "name" ] },
                 "properties": {
@@ -32,6 +33,7 @@
         },
         "linkedObject": {
             "type": "object",
+            "title": "linkedObject",
             "required": [ "href" ],
             "properties": {
                 "href": {
@@ -44,6 +46,7 @@
             }
         },
         "linkedCrs": {
+            "title": "linkedCrs",
             "properties": {
                 "type": { "enum": [ "link" ] },
                 "properties": { "$ref": "#/definitions/linkedObject" }

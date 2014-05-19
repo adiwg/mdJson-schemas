@@ -76,6 +76,7 @@
   ],
   "definitions": {
     "position": {
+      "title": "position",
       "description": "A single position",
       "type": "array",
       "minItems": 2,
@@ -86,6 +87,7 @@
       "additionalItems": false
     },
     "positionArray": {
+      "title": "positionArray",
       "description": "An array of positions",
       "type": "array",
       "items": {
@@ -93,11 +95,13 @@
       }
     },
     "lineString": {
+      "title": "lineString",
       "description": "An array of two or more positions",
       "allOf": [
         {
           "$ref": "#/definitions/positionArray"
         }, {
+          "title": "minimum 2",
           "minItems": 2
         }
       ]
@@ -108,6 +112,7 @@
         {
           "$ref": "#/definitions/positionArray"
         }, {
+          "title": "minimum 4",
           "minItems": 4
         }
       ]

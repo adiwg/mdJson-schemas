@@ -71,6 +71,7 @@
     },
     "individual": {
       "type": "object",
+      "title": "individual",
       "required": ["contactId", "individualName"],
       "additionalProperties": true,
       "properties": {
@@ -109,6 +110,7 @@
     },
     "organization": {
       "type": "object",
+      "title": "organization",
       "required": ["contactId", "organizationName"],
       "additionalProperties": true,
       "properties": {

@@ -52,7 +52,8 @@
         "geometry": {
           "oneOf": [
             {
-              "type": "null"
+              "type": "null",
+              "title": "null geometry"
             }, {
               "$ref": "geometry.json#"
             }
@@ -90,9 +91,11 @@
       "description": "Properties of a feature or collection.",
       "oneOf": [
         {
+          "title": "null",
           "type": "null"
         }, {
           "type": "object",
+          "title": "featureProperties",
           "properties": {
             "includesData": {
               "type": ["boolean", "null"]

@@ -11,6 +11,7 @@
   ],
   "definitions": {
     "citationBase": {
+      "title": "citation",
       "description": "base schema for citation, date not required",
       "type": "object",
       "required": ["title"],
