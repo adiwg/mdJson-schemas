@@ -61,18 +61,22 @@
       }
     },
     "associatedResource": {
-      "additionalProperties": false,
       "type": "array",
       "minItems": 1,
       "items": {
-        "associationType": {
-          "type": "string"
-        },
-        "resourceType": {
-          "type": "string"
-        },
-        "resourceCitation": {
-          "$ref": "./citation.json#"
+        "type": "object",
+        "required": ["associationType", "resourceType"],
+        "additionalProperties": false,
+        "properties": {
+          "associationType": {
+            "type": "string"
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "resourceCitation": {
+            "$ref": "./citation.json#"
+          }
         }
       }
     },
