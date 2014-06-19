@@ -146,6 +146,7 @@
     },
     "contactRef": {
       "type": "object",
+      "additionalProperties": false,
       "required": ["contactId", "role"],
       "properties": {
         "contactId": {
@@ -153,21 +154,6 @@
         },
         "role": {
           "type": "string"
-        },
-        "resourceIdentifier": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "required": ["identifier"],
-            "properties": {
-              "identifierName": {
-                "type": "string"
-              },
-              "identifier": {
-                "type": "string"
-              }
-            }
-          }
         }
       }
     }

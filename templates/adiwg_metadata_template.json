@@ -1,7 +1,7 @@
 {
   "version": {
     "name": "adiwgJSON",
-    "version": "0.3.0"
+    "version": "0.5.0"
   },
   "contact": [
     {
@@ -51,6 +51,7 @@
       "metadataCreationDate": "0000-00-00",
       "metadataLastUpdate": "0000-00-00",
       "metadataUri": "http://thisisanexample.com",
+      "metadataCharacterSet": "",
       "metadataStatus": "",
       "metadataMaintenance": {
         "maintenanceFrequency": "",
@@ -76,13 +77,7 @@
         "responsibleParty": [
           {
             "contactId": "",
-            "role": "",
-            "resourceIdentifier": [
-              {
-                "identifierName": "",
-                "identifier": ""
-              }
-            ]
+            "role": ""
           }
         ],
         "presentationForm": [""],
@@ -102,6 +97,34 @@
           }
         ]
       },
+      "resourceIdentifier": [
+        {
+          "title": "",
+          "date": [
+            {
+              "date": "0000-00-00",
+              "dateType": ""
+            }
+          ],
+          "responsibleParty": [
+            {
+              "contactId": "",
+              "role": ""
+            }
+          ],
+          "onlineResource": [
+            {
+              "uri": "http://thisisanexample.com",
+              "protocol": "",
+              "name": "",
+              "description": "",
+              "function": "",
+              "doi": ""
+            }
+          ],
+          "identifier": ""
+        }
+      ],
       "pointOfContact": [
         {
           "contactId": "",
@@ -337,14 +360,30 @@
                 ],
                 "assignedId": [
                   {
-                    "contactId": "",
-                    "role": "",
-                    "resourceIdentifier": [
+                    "title": "",
+                    "date": [
                       {
-                        "identifierName": "",
-                        "identifier": ""
+                        "date": "0000-00-00",
+                        "dateType": ""
                       }
-                    ]
+                    ],
+                    "responsibleParty": [
+                      {
+                        "contactId": "",
+                        "role": ""
+                      }
+                    ],
+                    "onlineResource": [
+                      {
+                        "uri": "http://thisisanexample.com",
+                        "protocol": "",
+                        "name": "",
+                        "description": "",
+                        "function": "",
+                        "doi": ""
+                      }
+                    ],
+                    "identifier": ""
                   }
                 ],
                 "featureScope": "",
@@ -519,13 +558,67 @@
           "responsibleParty": [
             {
               "contactId": "",
-              "role": "",
-              "resourceCode": [
-                {
-                  "codeName": "",
-                  "code": ""
-                }
-              ]
+              "role": ""
+            }
+          ],
+          "presentationForm": [""],
+          "additionalIdentifier": {
+            "doi": "",
+            "isbn": "",
+            "issn": ""
+          },
+          "onlineResource": [
+            {
+              "uri": "http://thisisanexample.com",
+              "protocol": "",
+              "name": "",
+              "description": "",
+              "function": "",
+              "doi": ""
+            }
+          ]
+        },
+        "resourceIdentifier": [
+          {
+            "title": "",
+            "date": [
+              {
+                "date": "0000-00-00",
+                "dateType": ""
+              }
+            ],
+            "responsibleParty": [
+              {
+                "contactId": "",
+                "role": ""
+              }
+            ],
+            "onlineResource": [
+              {
+                "uri": "http://thisisanexample.com",
+                "protocol": "",
+                "name": "",
+                "description": "",
+                "function": "",
+                "doi": ""
+              }
+            ],
+            "identifier": ""
+          }
+        ],
+        "metadataCitation": {
+          "title": "",
+          "date": [
+            {
+              "date": "0000-00-00",
+              "dateType": ""
+            }
+          ],
+          "edition": "",
+          "responsibleParty": [
+            {
+              "contactId": "",
+              "role": ""
             }
           ],
           "presentationForm": [""],

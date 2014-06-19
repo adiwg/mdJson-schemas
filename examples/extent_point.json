@@ -7,19 +7,39 @@
         "id":"point1",
         "properties":{
           "name":"BS7882",
-          "description":"Sea buoy BS7882 location",
+          "description":"Borehole BS7882 location",
           "assignedId": [
-            {
-              "contactId": "1",
-              "role": "creator",
-              "resourceIdentifier": [
-                {
-                  "identifierName": "http://www.gtnp.org",
-                  "identifier": "PNT-12345"
-                }
-              ]
-            }
-          ]
+              {
+                "title":"Global Terrestrial Network for Permafrost Identifiers",
+                "responsibleParty":[
+                  {
+                    "contactId":"8",
+                    "role":"originator"
+                  }
+                ],
+                "onlineResource":[
+                  {
+                    "uri":"http://www.gtnp.org"
+                  }
+                ],
+                "identifier":"US 01"
+              },
+              {
+                "title":"US Geological Survey borehole identifier",
+                "responsibleParty":[
+                  {
+                    "contactId":"3",
+                    "role":"originator"
+                  }
+                ],
+                "onlineResource":[
+                  {
+                    "uri":"http://data.usgs.gov/climateMonitoring/region/show?region=alaska"
+                  }
+                ],
+                "identifier":"ATI"
+              }
+            ]
         },
         "geometry":{
           "type":"Point",

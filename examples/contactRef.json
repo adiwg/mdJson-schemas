@@ -4,12 +4,6 @@
     "role": "custodian"
   }, {
     "contactId": "1",
-    "role": "funder",
-    "resourceIdentifier": [
-      {
-        "identifierName": "Project Code",
-        "identifier": "ALCC2014-01"
-      }
-    ]
+    "role": "funder"
   }
 ]

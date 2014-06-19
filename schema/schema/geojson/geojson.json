@@ -122,7 +122,7 @@
             "assignedId": {
               "type": "array",
               "items": {
-                  "$ref": "../contact.json#/definitions/contactRef"
+                "$ref": "../citation.json#/definitions/resourceIdentifier"
               }
             }
           }

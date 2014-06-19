@@ -107,12 +107,6 @@
           {
             "contactId": "1",
             "role": "primaryLCC",
-            "resourceIdentifier": [
-              {
-                "identifierName": "projectId",
-                "identifier": "ALCC2010-05"
-              }
-            ],
             "funding": [
               {
                 "fiscalYear": 2010,
@@ -140,12 +134,6 @@
           }, {
             "contactId": "4",
             "role": "partnerLCC",
-            "resourceIdentifier": [
-              {
-                "identifierName": "projectId",
-                "identifier": "WA2011_09"
-              }
-            ],
             "funding": [
               {
                 "fiscalYear": 2011,
@@ -155,12 +143,6 @@
           }, {
             "contactId": "6",
             "role": "partnerLCC",
-            "resourceIdentifier": [
-              {
-                "identifierName": "projectId",
-                "identifier": "NWB-002"
-              }
-            ],
             "funding": [
               {
                 "fiscalYear": 2011,
@@ -189,6 +171,41 @@
           }
         ]
       },
+      "resourceIdentifier": [
+        {
+          "title": "Arctic LCC Project",
+          "responsibleParty": [
+            {
+              "contactId": "1",
+              "role": "originator"
+            }
+          ],
+          "identifier": "ALCC2010-05"
+        }, {
+          "title": "WA LCC Project",
+          "responsibleParty": [
+            {
+              "contactId": "4",
+              "role": "collaborator"
+            }
+          ],
+          "onlineResource": [
+            {
+              "uri": "http://thisisanexample.com"
+            }
+          ],
+          "identifier": "WA2011_09"
+        }, {
+          "title": "NWB LCC Project",
+          "responsibleParty": [
+            {
+              "contactId": "4",
+              "role": "collaborator"
+            }
+          ],
+          "identifier": "NWB-002"
+        }
+      ],
       "pointOfContact": [
         {
           "contactId": "1",
