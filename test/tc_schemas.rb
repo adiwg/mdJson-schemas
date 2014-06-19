@@ -16,12 +16,11 @@ class TestExamples < Test::Unit::TestCase
   @@schema = ADIWG::JsonSchemas::Utils.schema_path
 
   def test_data_template
-    errors = JSON::Validator.fully_validate(@@schema, @@dir + '../templates/adiwg_metadata_template.json')
+    errors = JSON::Validator.fully_validate(@@schema, @@dir + '../templates/adiwg_metadata_template.json', :strict => false)
     assert(errors.empty?, errors.join("/n"))
   end
 
   def test_full_example
-      puts @@ex + 'full_example.json'
     errors = JSON::Validator.fully_validate(@@schema , @@ex + 'full_example.json')
     assert(errors.empty?, errors.join("/n"))
   end

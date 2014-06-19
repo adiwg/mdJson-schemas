@@ -1,5 +1,5 @@
 {
-  "jsonVersion":{
+  "version":{
     "name":"adiwgJSON",
     "version":"0.3.0"
   },
@@ -356,6 +356,7 @@
       "metadataCreationDate":"2014-02-28",
       "metadataLastUpdate":"2012-12-21",
       "metadataUri":"http://alaska.usgs.gov/rex/adiwg/public/projects/32.xml",
+      "metadataCharacterSet": "utf8",
       "metadataStatus":"completed",
       "metadataMaintenance":{
         "maintenanceFrequency":"asNeeded",
@@ -525,7 +526,9 @@
               "presentationForm":[
                 "documentDigital"
               ],
-              "doi":"10.1000/182"
+              "additionalIdentifier":{
+                "doi":"10.1000/182"
+              }
             }
           }
         },
@@ -535,7 +538,7 @@
           ],
           "keywordType":"theme",
           "thesaurus":{
-            "thesaurusLink":"",
+            "thesaurusLink":"http://example.com",
             "citation":{
               "title":"NSF IPY Discipline Codes",
               "responsibleParty":[
@@ -687,7 +690,7 @@
           {
             "classification":"unclassified",
             "userNote":"security clearance not required",
-            "classSystem":"none",
+            "classificationSystem":"none",
             "handlingDescription":"this is how to handle things..."
           },
           {
@@ -728,7 +731,7 @@
             "role":"pointOfContact"
           }
         ],
-        "taxonomicProcedures":"volunteers observed sea otters using binoculars in pairs",
+        "taxonomicProcedure":"volunteers observed sea otters using binoculars in pairs",
         "voucher":{
           "specimen":"weathered skull found on beach",
           "repository":{
@@ -827,11 +830,10 @@
                 500
               ],
               "crs":{
-                "type":"name",
+                "type":"link",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "href":"http://spatialreference.org/ref/epsg/wgs-84/proj4/",
+                  "type":"proj4"
                 }
               }
             },
@@ -857,9 +859,7 @@
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "name":"EPSG:4326"
                 }
               }
             },
@@ -938,11 +938,9 @@
                 ]
               ],
               "crs":{
-                "type":"name",
+                "type":"link",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "href":"http://spatialreference.org/ref/epsg/wgs-84/proj4/"
                 }
               }
             },
@@ -967,9 +965,7 @@
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "name":"EPSG:4326"
                 }
               }
             },
@@ -1046,9 +1042,7 @@
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "name":"EPSG:4326"
                 }
               }
             },
@@ -1295,11 +1289,10 @@
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "name":"EPSG:4326"
                 }
               },
+              "geometry": null,
               "properties":{
                 "featureName":"Project bounding box",
                 "description":"bounding box for DOI/GTN-P Deep Borehole Array",
@@ -1309,15 +1302,10 @@
             {
               "type":"Feature",
               "id":"point001",
-              "bbox":[
-
-              ],
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "name":"EPSG:4326"
                 }
               },
               "geometry":{
@@ -1337,15 +1325,10 @@
             {
               "type":"Feature",
               "id":"multiPoint011",
-              "bbox":[
-
-              ],
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "name":"EPSG:4326"
                 }
               },
               "geometry":{
@@ -1372,15 +1355,10 @@
             {
               "type":"Feature",
               "id":"line001",
-              "bbox":[
-
-              ],
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "name":"EPSG:4326"
                 }
               },
               "geometry":{
@@ -1412,15 +1390,10 @@
             {
               "type":"Feature",
               "id":"multiLine011",
-              "bbox":[
-
-              ],
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "name":"EPSG:4326"
                 }
               },
               "geometry":{
@@ -1509,9 +1482,7 @@
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "name":"EPSG:4326"
                 }
               },
               "properties":{
@@ -1601,9 +1572,7 @@
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
                 }
               },
               "properties":{
@@ -1727,9 +1696,7 @@
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
                 }
               },
               "properties":{
@@ -1749,9 +1716,7 @@
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"EPSG:4326",
-                  "href":"",
-                  "type":""
+                  "name":"EPSG:4326"
                 }
               },
               "features":[
@@ -1849,7 +1814,7 @@
                           "id":"timePeriod0120",
                           "description":"Period of borehole operation",
                           "beginPosition":"1981-08-22",
-                          "endPosition":""
+                          "endPosition":"1982-08-22"
                         }
                       ]
                     }
@@ -2011,7 +1976,8 @@
                   "title":"Example_dataset_20111009_turner_v1-12.csv",
                   "date":[
                     {
-                      "date":"2011-10-09"
+                      "date":"2011-10-09",
+                      "dateType":"revision"
                     }
                   ]
                 }
@@ -2070,15 +2036,15 @@
         ],
         "distributorFormat":[
           {
-            "name":"netCDF",
+            "formatName":"netCDF",
             "version":"4.0"
           },
           {
-            "name":"Excel Spreadsheet",
+            "formatName":"Excel Spreadsheet",
             "version":"xlsx"
           },
           {
-            "name":"CSV"
+            "formatName":"CSV"
           }
         ],
         "distributorTransferOptions":[
