@@ -146,7 +146,7 @@
     },
     "contactRef": {
       "type": "object",
-      "additionalProperties": false,
+      "additionalProperties": true,
       "required": ["contactId", "role"],
       "properties": {
         "contactId": {
