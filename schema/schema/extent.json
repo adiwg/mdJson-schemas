@@ -13,7 +13,7 @@
       "items": {
         "properties": {
           "type": {
-            "enum": ["Feature", "FeatureCollection"]
+            "enum": ["Feature", "FeatureCollection", "GeometryCollection", "Point", "MultiPoint", "LineString", "MultiLineString", "Polygon", "MultiPolygon"]
           }
         },
         "oneOf": [
