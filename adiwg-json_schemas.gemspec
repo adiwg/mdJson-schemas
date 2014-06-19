@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = ADIWG::JsonSchemas::VERSION
   spec.authors       = ["Josh Bradley, Stan Smith"]
   spec.email         = ["jbradley@arcticlcc.org"]
-  spec.description   = %q{JSON schemas for validating according to the the ADIwg project and data metadata standard. The schemas comply JSON Schema draft version 4.}
+  spec.description   = %q{JSON schemas for validating according to the the ADIwg project and data metadata standard. The schemas comply with JSON Schema draft version 4.}
   spec.summary       = %q{JSON schemas for the ADIwg metadata standard}
   spec.homepage      = "https://github.com/adiwg/adiwg-json-schemas"
   spec.license       = "UNLICENSE"
