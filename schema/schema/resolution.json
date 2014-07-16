@@ -5,6 +5,7 @@
   "anyOf": [
     {
       "type": "object",
+      "title": "scaleFactor",
       "required": ["equivalentScale"],
       "additionalProperties": true,
       "properties": {
@@ -14,6 +15,7 @@
       }
     }, {
       "type": "object",
+      "title": "distance",
       "required": ["distance"],
       "additionalProperties": true,
       "properties": {
