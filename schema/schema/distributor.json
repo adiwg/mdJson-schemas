@@ -47,7 +47,7 @@
           "online": {
             "type": "array",
             "items": {
-              "$ref": "./onlineResource.json#"
+              "$ref": "onlineResource.json#"
             },
             "uniqueItems": true
           },

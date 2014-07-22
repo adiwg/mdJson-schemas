@@ -93,7 +93,7 @@
         "onlineResource": {
           "type": "array",
           "items": {
-            "$ref": "./onlineResource.json#"
+            "$ref": "onlineResource.json#"
           },
           "uniqueItems": true
         },
@@ -129,7 +129,7 @@
         "onlineResource": {
           "type": "array",
           "items": {
-            "$ref": "./onlineResource.json#"
+            "$ref": "onlineResource.json#"
           },
           "uniqueItems": true
         },

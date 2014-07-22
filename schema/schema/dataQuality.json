@@ -68,7 +68,7 @@
           "type": "string"
         },
         "citation": {
-          "$ref": "./citation.json#"
+          "$ref": "citation.json#"
         },
         "processStep": {
           "type": "array",

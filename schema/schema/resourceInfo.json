@@ -7,12 +7,12 @@
   "additionalProperties": false,
   "properties": {
     "citation": {
-      "$ref": "./citation.json#"
+      "$ref": "citation.json#"
     },
     "resourceIdentifier": {
       "type": "array",
       "items": {
-        "$ref": "./citation.json#/definitions/resourceIdentifier"
+        "$ref": "citation.json#/definitions/resourceIdentifier"
       }
     },
     "pointOfContact": {
@@ -20,7 +20,7 @@
       "minItems": 1,
       "uniqueItems": true,
       "items": {
-        "$ref": "./contact.json#/definitions/contactRef"
+        "$ref": "contact.json#/definitions/contactRef"
       }
     },
     "abstract": {
@@ -70,57 +70,57 @@
       "minItems": 1,
       "uniqueItems": true,
       "items": {
-        "$ref": "./distributor.json#/definitions/format"
+        "$ref": "distributor.json#/definitions/format"
       }
     },
     "keyword": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "./keyword.json"
+        "$ref": "keyword.json"
       }
     },
     "resourceMaintenance": {
       "type": "array",
       "items": {
-        "$ref": "./maintInfo.json#"
+        "$ref": "maintInfo.json#"
       }
     },
     "resourceSpecificUsage": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "$ref": "./usage.json"
+        "$ref": "usage.json"
       }
     },
     "graphicOverview": {
       "type": "array",
       "items": {
-        "$ref": "./graphicOverview.json#"
+        "$ref": "graphicOverview.json#"
       }
     },
     "constraint": {
       "type": "object",
       "properties": {
         "useLimitation": {
-          "$ref": "./resourceConstraint.json#/definitions/useLimitation"
+          "$ref": "resourceConstraint.json#/definitions/useLimitation"
         },
         "legalConstraint": {
           "type": "array",
           "items": {
-            "$ref": "./resourceConstraint.json#/definitions/legalConstraint"
+            "$ref": "resourceConstraint.json#/definitions/legalConstraint"
           }
         },
         "securityConstraint": {
           "type": "array",
           "items": {
-            "$ref": "./resourceConstraint.json#/definitions/securityConstraint"
+            "$ref": "resourceConstraint.json#/definitions/securityConstraint"
           }
         }
       }
     },
     "taxonomy": {
-      "$ref": "./taxonomy.json"
+      "$ref": "taxonomy.json"
     },
     "spatialDatum": {
       "description": "Description of the spatial and temporal reference systems used in the dataset.",
@@ -138,19 +138,19 @@
     "spatialResolution": {
       "type": "array",
       "items": {
-        "$ref": "./resolution.json"
+        "$ref": "resolution.json"
       }
     },
     "extent": {
       "type": "array",
       "items": {
-        "$ref": "./extent.json"
+        "$ref": "extent.json"
       }
     },
     "dataQualityInfo": {
       "type": "array",
       "items": {
-        "$ref": "./dataQuality.json#"
+        "$ref": "dataQuality.json#"
       }
     },
     "supplementalInfo": {

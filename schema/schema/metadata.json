@@ -46,18 +46,18 @@
           "type": "string"
         },
         "metadataMaintenance": {
-          "$ref": "./maintInfo.json#"
+          "$ref": "maintInfo.json#"
         }
       }
     },
     "resourceInfo": {
-      "$ref": "./resourceInfo.json#"
+      "$ref": "resourceInfo.json#"
     },
     "distributionInfo": {
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "./distributor.json#"
+        "$ref": "distributor.json#"
       }
     },
     "associatedResource": {
@@ -75,15 +75,15 @@
             "type": "string"
           },
           "resourceCitation": {
-            "$ref": "./citation.json#"
+            "$ref": "citation.json#"
           },
           "metadataCitation": {
-            "$ref": "./citation.json#"
+            "$ref": "citation.json#"
           },
           "resourceIdentifier": {
             "type": "array",
             "items": {
-              "$ref": "./citation.json#/definitions/resourceIdentifier"
+              "$ref": "citation.json#/definitions/resourceIdentifier"
             }
           }
         }
@@ -94,7 +94,7 @@
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "./citation.json#"
+        "$ref": "citation.json#"
       }
     }
   }
