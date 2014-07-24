@@ -6,8 +6,10 @@
 =end
 
 require "test/unit"
-require 'adiwg/json_schemas'
+require "json"
 require 'json-schema'
+
+require File.dirname(__FILE__) + '/../lib/adiwg-json_schemas.rb'
 
 class TestExamples < Test::Unit::TestCase
 
