@@ -4,34 +4,9 @@
   "description": "schema for citation",
   "type": "object",
   "required": ["title", "date"],
-  "properties": {
-    "edition": {
-      "type": "string"
-    },
-    "presentationForm": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "additionalIdentifier": {
-      "type": "object",
-      "properties": {
-        "doi": {
-          "type": "string"
-        },
-        "isbn": {
-          "type": "string"
-        },
-        "issn": {
-          "type": "string"
-        }
-      }
-    }
-  },
   "allOf": [
     {
-      "$ref": "#/definitions/citationBase"
+      "$ref": "#/definitions/citationMain"
     }
   ],
   "definitions": {
@@ -76,6 +51,39 @@
           }
         }
       }
+    },
+    "citationMain": {
+      "type": "object",
+      "properties": {
+        "edition": {
+          "type": "string"
+        },
+        "presentationForm": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "additionalIdentifier": {
+          "type": "object",
+          "properties": {
+            "doi": {
+              "type": "string"
+            },
+            "isbn": {
+              "type": "string"
+            },
+            "issn": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/definitions/citationBase"
+        }
+      ]
     },
     "resourceIdentifier": {
       "title": "resource identifier",
