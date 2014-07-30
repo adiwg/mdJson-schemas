@@ -98,7 +98,7 @@
           "title": "featureProperties",
           "properties": {
             "includesData": {
-              "type": ["boolean", "null"]
+              "type": "boolean"
             },
             "temporalElement": {
 
@@ -109,6 +109,9 @@
               "items": {
                 "$ref": "../extent.json#/definitions/verticalExtent"
               }
+            },
+            "description": {
+              "type": "string"
             },
             "featureName": {
               "type": "string"
