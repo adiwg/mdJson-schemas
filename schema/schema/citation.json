@@ -11,7 +11,7 @@
   ],
   "definitions": {
     "citationBase": {
-      "title": "citation",
+      "title": "base citation",
       "description": "base schema for citation, date not required",
       "type": "object",
       "required": ["title"],
@@ -54,6 +54,7 @@
     },
     "citationMain": {
       "type": "object",
+      "title": "citation",
       "properties": {
         "edition": {
           "type": "string"
