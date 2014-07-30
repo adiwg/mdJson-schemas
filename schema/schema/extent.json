@@ -53,7 +53,6 @@
     },
     "timePeriod": {
       "type": "object",
-      "required": ["beginPosition", "endPosition"],
       "additionalProperties": false,
       "properties": {
         "id": {
@@ -68,7 +67,16 @@
         "endPosition": {
           "$ref": "../schema.json#/definitions/date"
         }
-      }
+      },
+      "anyOf": [
+        {
+          "title": "beginPosition required",
+          "required": ["beginPosition"]
+        }, {
+          "title": "endPosition required",
+          "required": ["endPosition"]
+        }
+      ]
     },
     "temporalElement": {
       "type": "object",

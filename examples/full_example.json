@@ -1774,8 +1774,7 @@
                         {
                           "id":"timePeriod010",
                           "description":"Period of borehole operation",
-                          "beginPosition":"1977-12-14",
-                          "endPosition":"2007-08-13"
+                          "beginPosition":"1977-12-14"
                         }
                       ]
                     }
