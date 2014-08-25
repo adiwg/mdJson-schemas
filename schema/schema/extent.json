@@ -117,8 +117,8 @@
         "verticalCRSTitle": {
           "type": "string"
         },
-        "verticalCRSLink": {
-          "type": "string"
+        "verticalCRSUri": {
+          "$ref": "../schema.json#/definitions/uri"
         }
       }
     }
