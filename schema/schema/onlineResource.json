@@ -15,9 +15,6 @@
     "protocol": {
       "type": "string"
     },
-    "doi": {
-      "type": "string"
-    },
     "description": {
       "type": "string"
     },

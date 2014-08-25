@@ -2144,8 +2144,7 @@
               "protocol":"HTTP",
               "name":"",
               "description":"project metadata record",
-              "function":"",
-              "doi":""
+              "function":""
             }
           ]
         }
@@ -2175,8 +2174,7 @@
             "protocol":"http",
             "name":"Journal of Glaciology",
             "description":"Publication document",
-            "function":"download",
-            "doi":"10.1594/PANGAEA.55517"
+            "function":"download"
           }
         ]
       },

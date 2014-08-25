@@ -65,17 +65,17 @@
             "type": "string"
           }
         },
-        "additionalIdentifier": {
+        "identifier": {
           "type": "object",
           "properties": {
-            "doi": {
+            "identifier": {
               "type": "string"
             },
-            "isbn": {
+            "type": {
               "type": "string"
             },
-            "issn": {
-              "type": "string"
+            "authority": {
+              "$ref": "#/definitions/citationBase"
             }
           }
         }
@@ -86,8 +86,8 @@
         }
       ]
     },
-    "resourceIdentifier": {
-      "title": "resource identifier",
+    "identifier": {
+      "title": "identifier",
       "description": "Assigned identifier for a resource, based on citation",
       "type": "object",
       "required": ["identifier"],

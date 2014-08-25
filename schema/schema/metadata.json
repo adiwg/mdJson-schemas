@@ -79,12 +79,6 @@
           },
           "metadataCitation": {
             "$ref": "citation.json#"
-          },
-          "resourceIdentifier": {
-            "type": "array",
-            "items": {
-              "$ref": "citation.json#/definitions/resourceIdentifier"
-            }
           }
         }
       }

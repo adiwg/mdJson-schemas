@@ -9,12 +9,6 @@
     "citation": {
       "$ref": "citation.json#"
     },
-    "resourceIdentifier": {
-      "type": "array",
-      "items": {
-        "$ref": "citation.json#/definitions/resourceIdentifier"
-      }
-    },
     "pointOfContact": {
       "type": "array",
       "minItems": 1,
