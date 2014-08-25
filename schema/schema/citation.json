@@ -6,7 +6,7 @@
   "required": ["title", "date"],
   "allOf": [
     {
-      "$ref": "#/definitions/citationMain"
+      "$ref": "#/definitions/citationFull"
     }
   ],
   "definitions": {
@@ -35,7 +35,6 @@
             }
           }
         },
-
         "responsibleParty": {
           "type": "array",
           "minItems": 1,
@@ -43,7 +42,6 @@
             "$ref": "contact.json#/definitions/contactRef"
           }
         },
-
         "onlineResource": {
           "type": "array",
           "items": {
@@ -52,9 +50,9 @@
         }
       }
     },
-    "citationMain": {
+    "citationFull": {
       "type": "object",
-      "title": "citation",
+      "title": "full citation",
       "properties": {
         "edition": {
           "type": "string"
