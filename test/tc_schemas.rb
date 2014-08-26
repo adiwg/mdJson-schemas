@@ -5,8 +5,8 @@
 * License: Public Domain
 =end
 
-require "test/unit"
-require "json"
+require 'test/unit'
+require 'json'
 require 'json-schema'
 require File.dirname(__FILE__) + '/../lib/adiwg-json_schemas.rb'
 
@@ -23,6 +23,11 @@ class TestExamples < Test::Unit::TestCase
 
     def test_full_example
         errors = JSON::Validator.fully_validate(@@schema , @@ex + 'full_example.json')
+        assert(errors.empty?, errors.join("/n"))
+    end
+
+    def test_full_example2
+        errors = JSON::Validator.fully_validate(@@schema , @@ex + 'full_example2.json')
         assert(errors.empty?, errors.join("/n"))
     end
 
