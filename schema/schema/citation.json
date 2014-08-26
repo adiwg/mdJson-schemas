@@ -64,17 +64,9 @@
           }
         },
         "identifier": {
-          "type": "object",
-          "properties": {
-            "identifier": {
-              "type": "string"
-            },
-            "type": {
-              "type": "string"
-            },
-            "authority": {
-              "$ref": "#/definitions/citationBase"
-            }
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/identifier"
           }
         }
       },
@@ -86,19 +78,20 @@
     },
     "identifier": {
       "title": "identifier",
-      "description": "Assigned identifier for a resource, based on citation",
+      "description": "Assigned identifier for a resource.",
       "type": "object",
       "required": ["identifier"],
       "properties": {
         "identifier": {
           "type": "string"
-        }
-      },
-      "allOf": [
-        {
+        },
+        "type": {
+          "type": "string"
+        },
+        "authority": {
           "$ref": "#/definitions/citationBase"
         }
-      ]
+      }
     }
   }
 }

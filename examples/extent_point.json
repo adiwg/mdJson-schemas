@@ -10,34 +10,38 @@
           "description":"Borehole BS7882 location",
           "assignedId": [
               {
-                "title":"Global Terrestrial Network for Permafrost Identifiers",
-                "responsibleParty":[
-                  {
-                    "contactId":"8",
-                    "role":"originator"
-                  }
-                ],
-                "onlineResource":[
-                  {
-                    "uri":"http://www.gtnp.org"
-                  }
-                ],
-                "identifier":"US 01"
+                "identifier":"US 01",
+                "authority": {
+                  "title":"Global Terrestrial Network for Permafrost Identifiers",
+                  "responsibleParty":[
+                    {
+                      "contactId":"8",
+                      "role":"originator"
+                    }
+                  ],
+                  "onlineResource":[
+                    {
+                      "uri":"http://www.gtnp.org"
+                    }
+                  ]
+                }
               },
               {
-                "title":"US Geological Survey borehole identifier",
-                "responsibleParty":[
-                  {
-                    "contactId":"3",
-                    "role":"originator"
-                  }
-                ],
-                "onlineResource":[
-                  {
-                    "uri":"http://data.usgs.gov/climateMonitoring/region/show?region=alaska"
-                  }
-                ],
-                "identifier":"ATI"
+                "identifier":"ATI",
+                "authority": {
+                  "title":"US Geological Survey borehole identifier",
+                  "responsibleParty":[
+                    {
+                      "contactId":"3",
+                      "role":"originator"
+                    }
+                  ],
+                  "onlineResource":[
+                    {
+                      "uri":"http://data.usgs.gov/climateMonitoring/region/show?region=alaska"
+                    }
+                  ]
+                }
               }
             ]
         },
