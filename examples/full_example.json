@@ -1751,7 +1751,7 @@
                     "featureName":"Atigaru",
                     "description":"Deep permafrost borehole",
                     "includesData":true,
-                    "assignedId":[
+                    "identifier":[
                       {
                         "identifier":"US 01",
                         "authority":{
@@ -1815,7 +1815,7 @@
                     "featureName":"Awuna",
                     "description":"Deep permafrost borehole",
                     "includesData":true,
-                    "assignedId":[
+                    "identifier":[
                       {
                         "identifier":"US 02",
                         "authority":{
@@ -1858,7 +1858,7 @@
                     "featureName":"Drew Point",
                     "description":"Deep permafrost borehole",
                     "includesData":true,
-                    "assignedId":[
+                    "identifier":[
                       {
                         "identifier":"US 03",
                         "authority":{

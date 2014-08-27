@@ -401,8 +401,19 @@
             "type":"Feature",
             "id":"point1",
             "properties":{
-              "identifier":"PNT-12345",
-              "idAuthority":"http://www.gtnp.org",
+              "identifier":[
+                {
+                  "identifier":"PNT-12345",
+                  "authority":{
+                    "title":"Global Terrestrial Network for Permafrost Identifiers",
+                    "onlineResource":[
+                      {
+                        "uri":"http://www.gtnp.org"
+                      }
+                    ]
+                  }
+                }
+              ],
               "name":"BS7882",
               "description":"Sea buoy BS7882 location"
             },
@@ -424,8 +435,19 @@
             "type":"Feature",
             "id":"point100",
             "properties":{
-              "identifier":"PNT-12346",
-              "idAuthority":"http://www.gtnp.org",
+              "identifier":[
+                {
+                  "identifier":"PNT-12346",
+                  "authority":{
+                    "title":"Global Terrestrial Network for Permafrost Identifiers",
+                    "onlineResource":[
+                      {
+                        "uri":"http://www.gtnp.org"
+                      }
+                    ]
+                  }
+                }
+              ],
               "name":"BS999",
               "description":"Sea buoy BS999 location"
             },
@@ -515,8 +537,19 @@
                 "type":"Feature",
                 "id":"point010",
                 "properties":{
-                  "identifier":"PNT-12345",
-                  "idAuthority":"http://www.gtnp.org",
+                  "identifier":[
+                    {
+                      "identifier":"PNT-12345",
+                      "authority":{
+                        "title":"Global Terrestrial Network for Permafrost Identifiers",
+                        "onlineResource":[
+                          {
+                            "uri":"http://www.gtnp.org"
+                          }
+                        ]
+                      }
+                    }
+                  ],
                   "name":"BS7882",
                   "description":"point valid on or after a specific date",
                   "temporalElement":{
