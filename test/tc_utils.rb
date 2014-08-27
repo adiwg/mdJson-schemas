@@ -6,7 +6,7 @@
 =end
 
 require "test/unit"
-require File.dirname(__FILE__) + '/../lib/adiwg-json_schemas.rb'
+require File.join(File.dirname(__FILE__),'..','lib', 'adiwg-json_schemas.rb')
 
 class TestUtils < Test::Unit::TestCase
     def test_examples_dir
