@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "schema for browse graphic",
   "type": "object",
-  "required": ["fileName"],  
+  "required": ["fileName"],
   "additionalProperties": true,
   "properties": {
     "fileName": {
@@ -15,8 +15,8 @@
     "fileType": {
       "type": "string"
     },
-    "fileLink": {
-      "$ref": "../schema.json#/definitions/url"
+    "fileUri": {
+      "$ref": "../schema.json#/definitions/uri"
     }
   }
 }

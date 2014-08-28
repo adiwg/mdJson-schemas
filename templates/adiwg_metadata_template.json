@@ -1,7 +1,7 @@
 {
   "version": {
     "name": "adiwgJSON",
-    "version": "0.5.0"
+    "version": "0.6.0"
   },
   "contact": [
     {
@@ -15,8 +15,7 @@
           "protocol": "",
           "name": "",
           "description": "",
-          "function": "",
-          "doi": ""
+          "function": ""
         }
       ],
       "contactInstructions": "",
@@ -81,50 +80,46 @@
           }
         ],
         "presentationForm": [""],
-        "additionalIdentifier": {
-          "doi": "",
-          "isbn": "",
-          "issn": ""
-        },
         "onlineResource": [
           {
             "uri": "http://thisisanexample.com",
             "protocol": "",
             "name": "",
             "description": "",
-            "function": "",
-            "doi": ""
+            "function": ""
+          }
+        ],
+        "identifier": [
+          {
+            "identifier": "",
+            "type": "",
+            "authority": {
+              "title": "",
+              "date": [
+                {
+                  "date": "0000-00-00",
+                  "dateType": ""
+                }
+              ],
+              "responsibleParty": [
+                {
+                  "contactId": "",
+                  "role": ""
+                }
+              ],
+              "onlineResource": [
+                {
+                  "uri": "http://thisisanexample.com",
+                  "protocol": "",
+                  "name": "",
+                  "description": "",
+                  "function": ""
+                }
+              ]
+            }
           }
         ]
       },
-      "resourceIdentifier": [
-        {
-          "title": "",
-          "date": [
-            {
-              "date": "0000-00-00",
-              "dateType": ""
-            }
-          ],
-          "responsibleParty": [
-            {
-              "contactId": "",
-              "role": ""
-            }
-          ],
-          "onlineResource": [
-            {
-              "uri": "http://thisisanexample.com",
-              "protocol": "",
-              "name": "",
-              "description": "",
-              "function": "",
-              "doi": ""
-            }
-          ],
-          "identifier": ""
-        }
-      ],
       "pointOfContact": [
         {
           "contactId": "",
@@ -152,29 +147,51 @@
           "keyword": [""],
           "keywordType": "",
           "thesaurus": {
-            "thesaurusLink": "http://thisisanexample.com",
-            "citation": {
-              "title": "",
-              "date": [
-                {
-                  "date": "0000-00-00",
-                  "dateType": ""
-                }
-              ],
-              "edition": "",
-              "responsibleParty": [
-                {
-                  "contactId": "",
-                  "role": ""
-                }
-              ],
-              "presentationForm": [""],
-              "additionalIdentifier": {
-                "doi": "",
-                "isbn": "",
-                "issn": ""
+            "title": "",
+            "date": [
+              {
+                "date": "0000-00-00",
+                "dateType": ""
               }
-            }
+            ],
+            "edition": "",
+            "responsibleParty": [
+              {
+                "contactId": "",
+                "role": ""
+              }
+            ],
+            "presentationForm": [""],
+            "identifier": [
+              {
+                "identifier": "",
+                "type": "",
+                "authority": {
+                  "title": "",
+                  "date": [
+                    {
+                      "date": "0000-00-00",
+                      "dateType": ""
+                    }
+                  ],
+                  "responsibleParty": [
+                    {
+                      "contactId": "",
+                      "role": ""
+                    }
+                  ],
+                  "onlineResource": [
+                    {
+                      "uri": "http://thisisanexample.com",
+                      "protocol": "",
+                      "name": "",
+                      "description": "",
+                      "function": ""
+                    }
+                  ]
+                }
+              }
+            ]
           }
         }
       ],
@@ -246,11 +263,36 @@
               }
             ],
             "presentationForm": [""],
-            "additionalIdentifier": {
-              "doi": "",
-              "isbn": "",
-              "issn": ""
-            }
+            "identifier": [
+              {
+                "identifier": "",
+                "type": "",
+                "authority": {
+                  "title": "",
+                  "date": [
+                    {
+                      "date": "0000-00-00",
+                      "dateType": ""
+                    }
+                  ],
+                  "responsibleParty": [
+                    {
+                      "contactId": "",
+                      "role": ""
+                    }
+                  ],
+                  "onlineResource": [
+                    {
+                      "uri": "http://thisisanexample.com",
+                      "protocol": "",
+                      "name": "",
+                      "description": "",
+                      "function": ""
+                    }
+                  ]
+                }
+              }
+            ]
           }
         ],
         "taxonGeneralScope": "",
@@ -355,35 +397,36 @@
                     "minimumValue": 0,
                     "maximumValue": 0,
                     "verticalCRSTitle": "",
-                    "verticalCRSLink": "http://thisisanexample.com"
+                    "verticalCRSUri": "http://thisisanexample.com"
                   }
                 ],
-                "assignedId": [
+                "identifier": [
                   {
-                    "title": "",
-                    "date": [
-                      {
-                        "date": "0000-00-00",
-                        "dateType": ""
-                      }
-                    ],
-                    "responsibleParty": [
-                      {
-                        "contactId": "",
-                        "role": ""
-                      }
-                    ],
-                    "onlineResource": [
-                      {
-                        "uri": "http://thisisanexample.com",
-                        "protocol": "",
-                        "name": "",
-                        "description": "",
-                        "function": "",
-                        "doi": ""
-                      }
-                    ],
-                    "identifier": ""
+                    "identifier": "",
+                    "authority": {
+                      "title": "",
+                      "date": [
+                        {
+                          "date": "0000-00-00",
+                          "dateType": ""
+                        }
+                      ],
+                      "responsibleParty": [
+                        {
+                          "contactId": "",
+                          "role": ""
+                        }
+                      ],
+                      "onlineResource": [
+                        {
+                          "uri": "http://thisisanexample.com",
+                          "protocol": "",
+                          "name": "",
+                          "description": "",
+                          "function": ""
+                        }
+                      ]
+                    }
                   }
                 ],
                 "featureScope": "",
@@ -431,7 +474,7 @@
               "minimumValue": 0,
               "maximumValue": 0,
               "verticalCRSTitle": "",
-              "verticalCRSLink": "http://thisisanexample.com"
+              "verticalCRSUri": "http://thisisanexample.com"
             }
           ]
         }
@@ -474,11 +517,36 @@
                     }
                   ],
                   "presentationForm": [""],
-                  "additionalIdentifier": {
-                    "doi": "",
-                    "isbn": "",
-                    "issn": ""
-                  }
+                  "identifier": [
+                    {
+                      "identifier": "",
+                      "type": "",
+                      "authority": {
+                        "title": "",
+                        "date": [
+                          {
+                            "date": "0000-00-00",
+                            "dateType": ""
+                          }
+                        ],
+                        "responsibleParty": [
+                          {
+                            "contactId": "",
+                            "role": ""
+                          }
+                        ],
+                        "onlineResource": [
+                          {
+                            "uri": "http://thisisanexample.com",
+                            "protocol": "",
+                            "name": "",
+                            "description": "",
+                            "function": ""
+                          }
+                        ]
+                      }
+                    }
+                  ]
                 },
                 "processStep": [
                   {
@@ -529,8 +597,7 @@
                 "protocol": "",
                 "name": "",
                 "description": "",
-                "function": "",
-                "doi": ""
+                "function": ""
               }
             ],
             "offline": {
@@ -562,50 +629,46 @@
             }
           ],
           "presentationForm": [""],
-          "additionalIdentifier": {
-            "doi": "",
-            "isbn": "",
-            "issn": ""
-          },
+          "identifier": [
+            {
+              "identifier": "",
+              "type": "",
+              "authority": {
+                "title": "",
+                "date": [
+                  {
+                    "date": "0000-00-00",
+                    "dateType": ""
+                  }
+                ],
+                "responsibleParty": [
+                  {
+                    "contactId": "",
+                    "role": ""
+                  }
+                ],
+                "onlineResource": [
+                  {
+                    "uri": "http://thisisanexample.com",
+                    "protocol": "",
+                    "name": "",
+                    "description": "",
+                    "function": ""
+                  }
+                ]
+              }
+            }
+          ],
           "onlineResource": [
             {
               "uri": "http://thisisanexample.com",
               "protocol": "",
               "name": "",
               "description": "",
-              "function": "",
-              "doi": ""
+              "function": ""
             }
           ]
         },
-        "resourceIdentifier": [
-          {
-            "title": "",
-            "date": [
-              {
-                "date": "0000-00-00",
-                "dateType": ""
-              }
-            ],
-            "responsibleParty": [
-              {
-                "contactId": "",
-                "role": ""
-              }
-            ],
-            "onlineResource": [
-              {
-                "uri": "http://thisisanexample.com",
-                "protocol": "",
-                "name": "",
-                "description": "",
-                "function": "",
-                "doi": ""
-              }
-            ],
-            "identifier": ""
-          }
-        ],
         "metadataCitation": {
           "title": "",
           "date": [
@@ -622,19 +685,43 @@
             }
           ],
           "presentationForm": [""],
-          "additionalIdentifier": {
-            "doi": "",
-            "isbn": "",
-            "issn": ""
-          },
+          "identifier": [
+            {
+              "identifier": "",
+              "type": "",
+              "authority": {
+                "title": "",
+                "date": [
+                  {
+                    "date": "0000-00-00",
+                    "dateType": ""
+                  }
+                ],
+                "responsibleParty": [
+                  {
+                    "contactId": "",
+                    "role": ""
+                  }
+                ],
+                "onlineResource": [
+                  {
+                    "uri": "http://thisisanexample.com",
+                    "protocol": "",
+                    "name": "",
+                    "description": "",
+                    "function": ""
+                  }
+                ]
+              }
+            }
+          ],
           "onlineResource": [
             {
               "uri": "http://thisisanexample.com",
               "protocol": "",
               "name": "",
               "description": "",
-              "function": "",
-              "doi": ""
+              "function": ""
             }
           ]
         }
@@ -657,19 +744,43 @@
           }
         ],
         "presentationForm": [""],
-        "additionalIdentifier": {
-          "doi": "",
-          "isbn": "",
-          "issn": ""
-        },
+        "identifier": [
+          {
+            "identifier": "",
+            "type": "",
+            "authority": {
+              "title": "",
+              "date": [
+                {
+                  "date": "0000-00-00",
+                  "dateType": ""
+                }
+              ],
+              "responsibleParty": [
+                {
+                  "contactId": "",
+                  "role": ""
+                }
+              ],
+              "onlineResource": [
+                {
+                  "uri": "http://thisisanexample.com",
+                  "protocol": "",
+                  "name": "",
+                  "description": "",
+                  "function": ""
+                }
+              ]
+            }
+          }
+        ],
         "onlineResource": [
           {
             "uri": "http://thisisanexample.com",
             "protocol": "",
             "name": "",
             "description": "",
-            "function": "",
-            "doi": ""
+            "function": ""
           }
         ]
       }

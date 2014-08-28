@@ -17,21 +17,7 @@
       "type": "string"
     },
     "thesaurus": {
-      "$ref": "#/definitions/thesaurus"
-    }
-  },
-  "definitions": {
-    "thesaurus": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "thesaurusLink": {
-          "$ref": "../schema.json#/definitions/url"
-        },
-        "citation": {
-          "$ref": "citation.json#/definitions/citationMain"
-        }
-      }
+      "$ref": "citation.json#/definitions/citationFull"
     }
   }
 }

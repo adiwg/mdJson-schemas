@@ -78,6 +78,9 @@
         "properties": {
           "$ref": "#/definitions/featureProperties"
         },
+        "id": {
+          "type": ["string", "number"]
+        },
         "features": {
           "type": "array",
           "items": {
@@ -122,10 +125,10 @@
             "featureAcquisitionMethod": {
               "type": "string"
             },
-            "assignedId": {
+            "identifier": {
               "type": "array",
               "items": {
-                "$ref": "../citation.json#/definitions/resourceIdentifier"
+                "$ref": "../citation.json#/definitions/identifier"
               }
             }
           }

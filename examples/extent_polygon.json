@@ -38,7 +38,7 @@
         "minimumValue":-500,
         "maximumValue":0,
         "verticalCRSTitle":"NAVD88 depth",
-        "verticalCRSLink":"http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::6357"
+        "verticalCRSUri":"http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::6357"
       }
     ]
   },
@@ -174,13 +174,13 @@
         "minimumValue":0,
         "maximumValue":1000,
         "verticalCRSTitle":"NAVD88 height",
-        "verticalCRSLink":"http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::5703"
+        "verticalCRSUri":"http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::5703"
       },
       {
         "minimumValue":1500,
         "maximumValue":0,
         "verticalCRSTitle":"NAVD88 depth",
-        "verticalCRSLink":"http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::6357"
+        "verticalCRSUri":"http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::6357"
       }
     ]
   },
@@ -346,7 +346,7 @@
         "minimumValue":60.5,
         "maximumValue":110.68,
         "verticalCRSTitle":"NAVD88 height (ftUS)",
-        "verticalCRSLink":"http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:axis-name:EPSG::9904"
+        "verticalCRSUri":"http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:axis-name:EPSG::9904"
       }
     ]
   }

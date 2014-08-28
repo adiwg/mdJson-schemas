@@ -355,8 +355,8 @@
       ],
       "metadataCreationDate":"2014-02-28",
       "metadataLastUpdate":"2012-12-21",
-      "metadataUri":"http://alaska.usgs.gov/rex/adiwg/public/projects/32.xml",
       "metadataCharacterSet":"utf8",
+      "metadataUri":"http://alaska.usgs.gov/rex/adiwg/public/projects/32.xml",
       "metadataStatus":"completed",
       "metadataMaintenance":{
         "maintenanceFrequency":"asNeeded",
@@ -409,6 +409,20 @@
         ],
         "identifier":[
           {
+            "identifier":"10/1256.0011",
+            "type":"doi"
+          },
+          {
+            "identifier":"978-1490564098",
+            "type":"isbn"
+          },
+          {
+            "identifier":"1234-5017",
+            "type":"issn"
+          },
+          {
+            "identifier":"32",
+            "type":"projectId",
             "authority":{
               "title":"ASC Project ID",
               "date":[
@@ -422,38 +436,29 @@
                   "contactId":"1",
                   "role":"owner"
                 }
-              ]
-            },
-            "identifier":"32"
-          },
-          {
-            "authority":{
-              "title":"NSF Grant Award Number",
-              "responsibleParty":[
-                {
-                  "contactId":"9",
-                  "role":"funder"
-                }
               ],
               "onlineResource":[
                 {
-                  "uri":"http://thisisanexample.com",
-                  "protocol":"HTTP",
-                  "name":"Example is the name",
-                  "description":"It's an example!",
-                  "function":"See description"
+                  "uri":"http://alaska.usgs.gov/portal/project.php?project_id=32",
+                  "protocol":"http",
+                  "name":"DOI/GTN-Permafrost and Climate-Monitoring Network",
+                  "description":"Project detail page",
+                  "function":"information"
                 }
               ]
-            },
-            "identifier":"A516548V0034"
+            }
           },
           {
-            "type":"doi",
-            "identifier":"10/1256.321475266"
-          },
-          {
-            "type":"isbn",
-            "identifier":"ISBNYYt470098j"
+            "identifier":"A516548V0034",
+            "type":"awardNum",
+            "authority":{
+              "title":"NSF Grant Award Number",
+              "onlineResource":[
+                {
+                  "uri":"http://NSFexample.org/grants/thisone"
+                }
+              ]
+            }
           }
         ],
         "onlineResource":[
@@ -503,8 +508,16 @@
           "version":"2008 R2"
         },
         {
+          "formatName":"MS-SQL-Server",
+          "version":"2008 R2"
+        },
+        {
           "formatName":"JSON",
           "version":""
+        },
+        {
+          "formatName":"Simple JSON",
+          "version":"none"
         }
       ],
       "keyword":[
@@ -531,15 +544,15 @@
             "presentationForm":[
               "documentDigital"
             ],
+            "identifier":[
+              {
+                "identifier":"10.1000/182",
+                "type":"doi"
+              }
+            ],
             "onlineResource":[
               {
                 "uri":"http://gcmdservices.gsfc.nasa.gov/static/kms/sciencekeywords/sciencekeywords.csv"
-              }
-            ],
-            "identifier":[
-              {
-                "type":"doi",
-                "identifier":"10.1000/182"
               }
             ]
           }
@@ -642,13 +655,13 @@
           "fileName":"GTNP AK Collection Site Map",
           "fileDescription":"Map of borehole locations for permafrost data collection in Alaska in association with the Global Terrestrial Network forr Permafrost",
           "fileType":"Map image in PDF format",
-          "uri":"http://alaska.usgs.gov/free/maps/GTNP North Slope.pdf"
+          "fileUri":"http://alaska.usgs.gov/free/maps/GTNP North Slope.pdf"
         },
         {
           "fileName":"allRecs_callCounts_bowhead_2010.jpg",
           "fileDescription":"This image is a spectraplot visualizing the density of Bowhead whale calls in the Northeast Chukchi Sea, AMAR recorder locations, and industry lease areas.",
           "fileType":"JPEG",
-          "uri":"http://aoos.org/aoos-data-resources/bowhead_images2010_0114.jpg"
+          "fileUri":"http://aoos.org/aoos-data-resources/bowhead_images2010_0114.jpg"
         },
         {
           "fileName":"pln40_perc_2010_01.png",
@@ -846,10 +859,9 @@
                 500
               ],
               "crs":{
-                "type":"link",
+                "type":"name",
                 "properties":{
-                  "href":"http://spatialreference.org/ref/epsg/wgs-84/proj4/",
-                  "type":"proj4"
+                  "name":"EPSG:4326"
                 }
               }
             },
@@ -954,9 +966,9 @@
                 ]
               ],
               "crs":{
-                "type":"link",
+                "type":"name",
                 "properties":{
-                  "href":"http://spatialreference.org/ref/epsg/wgs-84/proj4/"
+                  "name":"EPSG:4326"
                 }
               }
             },
@@ -979,9 +991,10 @@
                 ]
               ],
               "crs":{
-                "type":"name",
+                "type":"link",
                 "properties":{
-                  "name":"EPSG:4326"
+                  "href":"http://spatialreference.org/ref/epsg/wgs-84/proj4/",
+                  "type":"proj4"
                 }
               }
             },
@@ -1302,13 +1315,14 @@
                 -148.00,
                 71.00
               ],
+              "geometry":null,
               "crs":{
-                "type":"name",
+                "type":"link",
                 "properties":{
-                  "name":"EPSG:4326"
+                  "href":"http://spatialreference.org/ref/epsg/wgs-84/proj4/",
+                  "type":"proj4"
                 }
               },
-              "geometry":null,
               "properties":{
                 "featureName":"Project bounding box",
                 "description":"bounding box for DOI/GTN-P Deep Borehole Array",
@@ -1588,7 +1602,7 @@
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+                  "name":"EPSG:4326"
                 }
               },
               "properties":{
@@ -1712,7 +1726,7 @@
               "crs":{
                 "type":"name",
                 "properties":{
-                  "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+                  "name":"EPSG:4326"
                 }
               },
               "properties":{
@@ -1754,6 +1768,7 @@
                     "identifier":[
                       {
                         "identifier":"US 01",
+                        "type":"databaseId",
                         "authority":{
                           "title":"Global Terrestrial Network for Permafrost Identifiers",
                           "responsibleParty":[
@@ -1771,6 +1786,7 @@
                       },
                       {
                         "identifier":"ATI",
+                        "type":"databaseId",
                         "authority":{
                           "title":"US Geological Survey borehole identifier",
                           "responsibleParty":[
@@ -1794,7 +1810,8 @@
                         {
                           "id":"timePeriod010",
                           "description":"Period of borehole operation",
-                          "beginPosition":"1977-12-14"
+                          "beginPosition":"1977-12-14",
+                          "endPosition":"2007-08-13"
                         }
                       ]
                     }
@@ -1818,12 +1835,14 @@
                     "identifier":[
                       {
                         "identifier":"US 02",
+                        "type":"databaseId",
                         "authority":{
                           "title":"Global Terrestrial Network for Permafrost Identifiers"
                         }
                       },
                       {
                         "identifier":"AWUN",
+                        "type":"databaseId",
                         "authority":{
                           "title":"US Geological Survey borehole identifier"
                         }
@@ -1837,7 +1856,7 @@
                           "id":"timePeriod0120",
                           "description":"Period of borehole operation",
                           "beginPosition":"1981-08-22",
-                          "endPosition":"1982-08-22"
+                          "endPosition":"2007-08-13"
                         }
                       ]
                     }
@@ -1861,12 +1880,14 @@
                     "identifier":[
                       {
                         "identifier":"US 03",
+                        "type":"databaseId",
                         "authority":{
                           "title":"Global Terrestrial Network for Permafrost Identifiers"
                         }
                       },
                       {
                         "identifier":"DWPT",
+                        "type":"databaseId",
                         "authority":{
                           "title":"US Geological Survey borehole identifier"
                         }
@@ -1956,12 +1977,12 @@
                   ],
                   "identifier":[
                     {
-                      "type":"isbn",
-                      "identifier":"HB12365.214"
+                      "identifier":"0ab4-dd983c01",
+                      "type":"issn"
                     },
                     {
-                      "type":"issn",
-                      "identifier":"0ab4-dd983c01"
+                      "identifier":"547-2239078752",
+                      "type":"isbn"
                     }
                   ]
                 },
@@ -2131,6 +2152,8 @@
           ],
           "identifier":[
             {
+              "identifier":"2014AKCSC-03",
+              "type":"awardNum",
               "authority":{
                 "title":"NCCWSC Grant Award Number",
                 "responsibleParty":[
@@ -2139,8 +2162,7 @@
                     "role":"funder"
                   }
                 ]
-              },
-              "identifier":"2014AKCSC-03"
+              }
             }
           ],
           "onlineResource":[
@@ -2198,6 +2220,12 @@
         ],
         "presentationForm":[
           "documentDigital"
+        ],
+        "identifier":[
+          {
+            "identifier":"10/00125.55517",
+            "type":"doi"
+          }
         ],
         "onlineResource":[
           {

@@ -106,7 +106,7 @@
     "verticalExtent": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["minimumValue", "maximumValue", "verticalCRSTitle", "verticalCRSLink"],
+      "required": ["minimumValue", "maximumValue", "verticalCRSTitle", "verticalCRSUri"],
       "properties": {
         "minimumValue": {
           "type": "number"
@@ -117,8 +117,8 @@
         "verticalCRSTitle": {
           "type": "string"
         },
-        "verticalCRSLink": {
-          "type": "string"
+        "verticalCRSUri": {
+          "$ref": "../schema.json#/definitions/uri"
         }
       }
     }
