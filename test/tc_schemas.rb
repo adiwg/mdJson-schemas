@@ -86,6 +86,11 @@ class TestExamples < Test::Unit::TestCase
     assert(errors.empty?, errors.join("/n"))
   end
 
+  def test_spatialRef
+    errors = JSON::Validator.fully_validate(@@dir + 'schema/resourceInfo.json', @@ex + 'spatialRef.json', :fragment => "#/properties/spatialReferenceSystem", :list => false)
+    assert(errors.empty?, errors.join("/n"))
+  end
+
   def test_contactRef
     errors = JSON::Validator.fully_validate(@@dir + 'schema/contact.json', @@ex + 'contactRef.json', :fragment => "#/definitions/contactRef", :list => true)
     assert(errors.empty?, errors.join("/n"))

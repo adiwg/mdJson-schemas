@@ -116,11 +116,32 @@
     "taxonomy": {
       "$ref": "taxonomy.json"
     },
-    "spatialDatum": {
+    "spatialReferenceSystem": {
       "description": "Description of the spatial and temporal reference systems used in the dataset.",
-      "type": "array",
-      "items": {
-        "type": "string"
+      "example": "../../examples/spatialRef.json"
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "array",
+          "description": "A recognized reference system name.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "epsgNumber": {
+          "type": "array",
+          "description": "The EPSG Geodetic Parameter Dataset of the reference system, see epsg-registry.org.",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "wkt": {
+          "type": "array",
+          "description": "Well-known text representation of the reference system.",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "spatialRepresentation": {
