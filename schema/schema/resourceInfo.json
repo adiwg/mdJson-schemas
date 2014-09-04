@@ -118,7 +118,7 @@
     },
     "spatialReferenceSystem": {
       "description": "Description of the spatial and temporal reference systems used in the dataset.",
-      "example": "../../examples/spatialRef.json"
+      "example": "../../examples/spatialRef.json",
       "type": "object",
       "properties": {
         "name": {
