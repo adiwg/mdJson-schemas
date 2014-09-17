@@ -9,6 +9,9 @@ require 'test/unit'
 require 'json'
 require 'json-schema'
 require File.join(File.dirname(__FILE__),'..','lib', 'adiwg-json_schemas.rb')
+#json-schema patch
+require File.join(File.dirname(__FILE__),'..','lib', 'adiwg', 'json_schemas', 'validator.rb')
+
 
 class TestExamples < Test::Unit::TestCase
 
