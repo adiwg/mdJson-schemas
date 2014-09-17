@@ -19,6 +19,16 @@ class TestExamples < Test::Unit::TestCase
   @@ex = File.join(File.dirname(__FILE__),'..','examples/')
   @@schema = File.join(File.dirname(__FILE__),'..','schema','schema.json')
 
+  def test_schemas
+    #Validate the schemas themselves
+    puts "\nValidating schemas, Please wait... \n"
+    schemas = `git ls-files #{@@dir}`.split($/)
+    schemas.each do |schema|
+      errors = JSON::Validator.fully_validate('http://json-schema.org/draft-04/schema', schema, :strict => false)
+      assert(errors.empty?, errors.join("/n"))
+    end
+  end
+
   def test_data_template
     errors = JSON::Validator.fully_validate(@@schema, @@dir + '../templates/adiwg_metadata_template.json', :strict => false)
     assert(errors.empty?, errors.join("/n"))
