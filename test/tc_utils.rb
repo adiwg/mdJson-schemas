@@ -7,8 +7,6 @@
 
 require "test/unit"
 require File.join(File.dirname(__FILE__),'..','lib', 'adiwg-json_schemas.rb')
-#json-schema patch
-require File.join(File.dirname(__FILE__),'..','lib', 'adiwg', 'json_schemas', 'validator.rb')
 
 class TestUtils < Test::Unit::TestCase
     def test_examples_dir
