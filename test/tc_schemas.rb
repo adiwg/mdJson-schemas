@@ -9,9 +9,9 @@ require 'test/unit'
 require 'json'
 require 'json-schema'
 require File.join(File.dirname(__FILE__),'..','lib', 'adiwg-json_schemas.rb')
+
 #json-schema patch
 require File.join(File.dirname(__FILE__),'..','lib', 'adiwg', 'json_schemas', 'validator.rb')
-
 
 class TestExamples < Test::Unit::TestCase
 
@@ -23,10 +23,14 @@ class TestExamples < Test::Unit::TestCase
     #Validate the schemas themselves
     puts "\nValidating schemas, Please wait... \n"
     schemas = `git ls-files #{@@dir}`.split($/)
+    errors = Array.new
+
     schemas.each do |schema|
-      errors = JSON::Validator.fully_validate('http://json-schema.org/draft-04/schema', schema, :strict => false)
-      assert(errors.empty?, errors.join("/n"))
+      error = JSON::Validator.fully_validate('http://json-schema.org/draft-04/schema', schema)
+      errors += error
     end
+
+    assert(errors.empty?, errors.join("/n"))
   end
 
   def test_data_template
