@@ -11,10 +11,10 @@
       "additionalProperties": false,
       "properties": {
         "metadataIdentifier": {
-          "type": "string"
+          "$ref": "citation.json#/definitions/identifier"
         },
-        "parentMetadataIdentifier": {
-          "type": "string"
+        "parentMetadata": {
+          "$ref": "citation.json#/definitions/citationFull"
         },
         "metadataScope": {
           "type": "array",

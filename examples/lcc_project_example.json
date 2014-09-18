@@ -1,7 +1,7 @@
 {
   "version":{
     "name":"adiwgJSON",
-    "version":"0.7.0"
+    "version":"0.8.0"
   },
   "contact":[
     {
@@ -92,7 +92,10 @@
   ],
   "metadata":{
     "metadataInfo":{
-      "metadataIdentifier":"D5D16D06-CEEB-E011-8260-000C2952247E",
+      "metadataIdentifier":{
+        "identifier":"D5D16D06-CEEB-E011-8260-000C2952247E",
+        "type":"uuid"
+      },
       "metadataScope":[
         "project"
       ],

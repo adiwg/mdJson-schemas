@@ -1,7 +1,7 @@
 {
   "version": {
     "name": "adiwgJSON",
-    "version": "0.7.0"
+    "version": "0.8.0"
   },
   "contact": [
     {
@@ -38,8 +38,42 @@
   ],
   "metadata": {
     "metadataInfo": {
-      "metadataIdentifier": "",
-      "parentMetadataIdentifier": "",
+      "metadataIdentifier": {
+        "identifier": "",
+        "type": ""
+      },
+      "parentMetadata": {
+        "title": "",
+        "date": [
+          {
+            "date": "0000-00-00",
+            "dateType": ""
+          }
+        ],
+        "edition": "",
+        "responsibleParty": [
+          {
+            "contactId": "",
+            "role": ""
+          }
+        ],
+        "presentationForm": [""],
+        "identifier": [
+          {
+            "identifier": "",
+            "type": ""
+          }
+        ],
+        "onlineResource": [
+          {
+            "uri": "http://thisisanexample.com",
+            "protocol": "",
+            "name": "",
+            "description": "",
+            "function": ""
+          }
+        ]
+      },
       "metadataScope": [""],
       "metadataContact": [
         {
@@ -49,8 +83,8 @@
       ],
       "metadataCreationDate": "0000-00-00",
       "metadataLastUpdate": "0000-00-00",
+      "metadataCharacterSet": "utf8",
       "metadataUri": "http://thisisanexample.com",
-      "metadataCharacterSet": "",
       "metadataStatus": "",
       "metadataMaintenance": {
         "maintenanceFrequency": "",
@@ -80,15 +114,6 @@
           }
         ],
         "presentationForm": [""],
-        "onlineResource": [
-          {
-            "uri": "http://thisisanexample.com",
-            "protocol": "",
-            "name": "",
-            "description": "",
-            "function": ""
-          }
-        ],
         "identifier": [
           {
             "identifier": "",
@@ -117,6 +142,15 @@
                 }
               ]
             }
+          }
+        ],
+        "onlineResource": [
+          {
+            "uri": "http://thisisanexample.com",
+            "protocol": "",
+            "name": "",
+            "description": "",
+            "function": ""
           }
         ]
       },
@@ -191,6 +225,15 @@
                   ]
                 }
               }
+            ],
+            "onlineResource": [
+              {
+                "uri": "http://thisisanexample.com",
+                "protocol": "",
+                "name": "",
+                "description": "",
+                "function": ""
+              }
             ]
           }
         }
@@ -224,7 +267,7 @@
           "fileName": "",
           "fileDescription": "",
           "fileType": "",
-          "fileLink": "http://thisisanexample.com"
+          "fileUri": "http://thisisanexample.com"
         }
       ],
       "constraint": {
@@ -292,6 +335,15 @@
                   ]
                 }
               }
+            ],
+            "onlineResource": [
+              {
+                "uri": "http://thisisanexample.com",
+                "protocol": "",
+                "name": "",
+                "description": "",
+                "function": ""
+              }
             ]
           }
         ],
@@ -319,9 +371,9 @@
         ]
       },
       "spatialReferenceSystem": {
-        "name": [" "],
+        "name": [""],
         "epsgNumber": [0],
-        "wkt": [" "]
+        "wkt": [""]
       },
       "spatialRepresentation": [""],
       "spatialResolution": [
@@ -337,6 +389,130 @@
           "description": "",
           "geographicElement": [
             {
+              "type": "Point",
+              "bbox": [0, 0, 0, 0],
+              "coordinates": [0, 0, 0],
+              "crs": {
+                "type": "name",
+                "properties": {
+                  "name": ""
+                }
+              }
+            }, {
+              "type": "LineString",
+              "bbox": [0, 0, 0, 0],
+              "coordinates": [
+                [0, 0, 0],
+                [0, 0, 0]
+              ],
+              "crs": {
+                "type": "name",
+                "properties": {
+                  "name": ""
+                }
+              }
+            }, {
+              "type": "Polygon",
+              "bbox": [0, 0, 0, 0],
+              "coordinates": [
+                [
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0]
+                ],
+                [
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0]
+                ]
+              ],
+              "crs": {
+                "type": "name",
+                "properties": {
+                  "name": ""
+                }
+              }
+            }, {
+              "type": "MultiPoint",
+              "bbox": [0, 0, 0, 0],
+              "coordinates": [
+                [0, 0, 0],
+                [0, 0, 0]
+              ],
+              "crs": {
+                "type": "name",
+                "properties": {
+                  "name": ""
+                }
+              }
+            }, {
+              "type": "MultiLineString",
+              "bbox": [0, 0, 0, 0],
+              "coordinates": [
+                [
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0]
+                ],
+                [
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0]
+                ]
+              ],
+              "crs": {
+                "type": "name",
+                "properties": {
+                  "name": ""
+                }
+              }
+            }, {
+              "type": "MultiPolygon",
+              "bbox": [0, 0, 0, 0],
+              "coordinates": [
+                [
+                  [
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0]
+                  ],
+                  [
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0]
+                  ]
+                ],
+                [
+                  [
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0]
+                  ],
+                  [
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0]
+                  ]
+                ]
+              ],
+              "crs": {
+                "type": "name",
+                "properties": {
+                  "name": ""
+                }
+              }
+            }, {
+              "type": "GeometryCollection",
+              "geometries": []
+            }, {
               "type": "Feature",
               "id": "",
               "bbox": [0, 0, 0, 0],
@@ -407,6 +583,7 @@
                 "identifier": [
                   {
                     "identifier": "",
+                    "type": "",
                     "authority": {
                       "title": "",
                       "date": [

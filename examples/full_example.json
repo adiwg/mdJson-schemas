@@ -1,7 +1,7 @@
 {
   "version":{
     "name":"adiwgJSON",
-    "version":"0.7.0"
+    "version":"0.8.0"
   },
   "contact":[
     {
@@ -341,8 +341,45 @@
   ],
   "metadata":{
     "metadataInfo":{
-      "metadataIdentifier":"D5D16D06-CEEB-E011-8260-000C2952247E",
-      "parentMetadataIdentifier":"D5D16D06-TFDE-lE01-9427-000C548U45JA",
+      "metadataIdentifier":{
+        "identifier":"D5D16D06-CEEB-E011-8260-000C2952247E",
+        "type":"uuid"
+      },
+      "parentMetadata":{
+        "title":"Changing Arctic Ecosystems Initiative (CAE)",
+        "date":[
+          {
+            "date":"2011-09-14",
+            "dateType":"publication"
+          }
+        ],
+        "identifier":[
+          {
+            "identifier":"D5B16D06-CFEB-E011-8260-000C2952247E",
+            "type":"uuid"
+          },
+          {
+            "identifier":"ALCC2018-99",
+            "type":"project"
+          }
+        ],
+        "responsibleParty":[
+          {
+            "contactId":"1",
+            "role":"pointOfContact"
+          }
+        ],
+        "presentationForm":[
+          "documentDigital"
+        ],
+        "onlineResource":[
+          {
+            "uri":"http://alaska.usgs.gov/rex/adiwg/public/projects/316?format=xml",
+            "protocol":"http",
+            "description":"Project metadata record for CAE"
+          }
+        ]
+      },
       "metadataScope":[
         "dataset",
         "project"
