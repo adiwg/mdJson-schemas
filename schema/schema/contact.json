@@ -2,52 +2,14 @@
   "id": "contact.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "An array of contacts to be referenced throughout the metadata, contains references for both individuals and organizations.",
-  "example": "../../examples/contact.json#/0",
+  "example": "../../examples/contact.json",
   "translation": {
-    "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
     "FGDC CSDGM": ["cntinfo"]
   },
   "type": "array",
   "minItems": 1,
   "uniqueItems": true,
   "items": {
-    "type": "object",
-    "title": "contact",
-    "description": "Contact information for a person.",
-    "example": "../../examples/contact.json#/0",
-    "translation": {
-      "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
-      "FGDC CSDGM": ["cntinfo"]
-    },
-    "required": ["contactId"],
-    "additionalProperties": true,
-    "properties": {
-      "contactId": {
-        "type": "string"
-      },
-      "positionName": {
-        "type": "string"
-      },
-      "address": {
-        "$ref": "#/definitions/address"
-      },
-      "onlineResource": {
-        "type": "array",
-        "items": {
-          "$ref": "onlineResource.json#"
-        },
-        "uniqueItems": true
-      },
-      "contactInstructions": {
-        "type": "string"
-      },
-      "phoneBook": {
-        "type": "array",
-        "items": {
-          "$ref": "#/definitions/phone"
-        }
-      }
-    },
     "anyOf": [
       {
         "$ref": "#/definitions/individual"
@@ -111,6 +73,40 @@
       },
       "additionalProperties": false
     },
+    "baseContact": {
+      "type": "object",
+      "title": "base contact",
+      "description": "Basic information for a contact.",
+      "required": ["contactId"],
+      "additionalProperties": true,
+      "properties": {
+        "contactId": {
+          "type": "string"
+        },
+        "positionName": {
+          "type": "string"
+        },
+        "address": {
+          "$ref": "#/definitions/address"
+        },
+        "onlineResource": {
+          "type": "array",
+          "items": {
+            "$ref": "onlineResource.json#"
+          },
+          "uniqueItems": true
+        },
+        "contactInstructions": {
+          "type": "string"
+        },
+        "phoneBook": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/phone"
+          }
+        }
+      }
+    },
     "individual": {
       "type": "object",
       "title": "individual",
@@ -118,7 +114,7 @@
       "example": "../../examples/contact.json#/0",
       "translation": {
         "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
-        "FGDC CSDGM": ["cntinfo"]
+        "FGDC CSDGM": ["cntinfo > cntperp"]
       },
       "required": ["individualName"],
       "additionalProperties": true,
@@ -126,18 +122,34 @@
         "individualName": {
           "type": "string"
         }
-      }
+      },
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseContact"
+        }
+      ]
     },
     "organization": {
       "type": "object",
       "title": "organization",
+      "description": "Contact information for an organization.",
+      "example": "../../examples/contact.json#/1",
+      "translation": {
+        "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
+        "FGDC CSDGM": ["cntinfo > cntorgp"]
+      },
       "required": ["organizationName"],
       "additionalProperties": true,
       "properties": {
         "organizationName": {
           "type": "string"
         }
-      }
+      },
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseContact"
+        }
+      ]
     },
     "contactRef": {
       "type": "object",

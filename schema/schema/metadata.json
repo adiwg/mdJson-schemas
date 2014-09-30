@@ -1,13 +1,20 @@
 {
   "id": "metadata.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "schema for metadata section",
+  "description": "The main body of the metadata record.",
   "type": "object",
+  "example": "../../examples/full_example.json#/metadata",
+  "translation": {
+    "ISO 19115-2": ["MI_Metadata"],
+    "FGDC CSDGM": ["metainfo"]
+  },
   "required": ["resourceInfo"],
   "additionalProperties": false,
   "properties": {
     "metadataInfo": {
       "type": "object",
+      "description": "General information about the metadata record.",
+      "example": "../../examples/full_example.json#/metadata/metadataInfo",
       "required": ["metadataContact", "metadataCreationDate"],
       "additionalProperties": false,
       "properties": {
@@ -56,12 +63,24 @@
     },
     "distributionInfo": {
       "type": "array",
+      "description": "Information about the distributor of and options for obtaining the resorce.",
+      "example": "../../examples/full_example.json#/metadata/distributionInfo",
+      "translation": {
+        "ISO 19115-2": ["MD_Metadata > distribution > MD_Distribution"],
+        "FGDC CSDGM": ["distinfo"]
+      },
       "items": {
         "$ref": "distributor.json#"
       }
     },
     "associatedResource": {
       "type": "array",
+      "description": "Information about a resoure related to the data resource, such as: study, dataset, project, etc. An associated resource may be a child reference, or reference a larger work, such as an iniative.",
+      "example": "../../examples/full_example.json#/metadata/associatedResource",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > aggregateInformation > MD_AggregateInformation"],
+        "FGDC CSDGM": ["idinfo > crossref"]
+      },
       "items": {
         "type": "object",
         "required": ["associationType", "resourceType"],
@@ -85,6 +104,11 @@
     "additionalDocumentation": {
       "additionalProperties": false,
       "type": "array",
+      "description": "Additional references associated with the data resource, such as; web sites, documents for additional reading, etc.",
+      "example": "../../examples/full_example.json#/metadata/additionalDocumentation",
+      "translation": {
+        "FGDC CSDGM": ["idinfo > crossref"]
+      },
       "items": {
         "$ref": "citation.json#"
       }

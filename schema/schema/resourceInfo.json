@@ -1,8 +1,13 @@
 {
   "id": "resourceInfo.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "schema for ADIwg metadata resourceInfo section",
+  "description": "Information about the data resource.",
   "type": "object",
+  "example": "../../examples/full_example.json#/metadata/resourceInfo",
+  "translation": {
+    "ISO 19115-2": ["MD_Metadata > identificationInfo > MD_DataIdentification"],
+    "FGDC CSDGM": ["idinfo"]
+  },
   "required": ["citation", "abstract", "status", "language"],
   "additionalProperties": false,
   "properties": {
@@ -120,7 +125,7 @@
       "description": "Geospatial referencing system associated with describing the geospatial extent of the data resource. The referencing can be provided indirectly by an EPSG number, a named reference, or providing the parameters in a well known text (WKT) format.",
       "example": "../../examples/spatialRef.json",
       "translation": {
-        "ISO 19115-2":["MD_Metadata > referenceSystemInfo > MD_ReferenceSystem > referenceSystemIdentifier > RS_Identifier > code"]
+        "ISO 19115-2": ["MD_Metadata > referenceSystemInfo > MD_ReferenceSystem > referenceSystemIdentifier > RS_Identifier > code"]
       },
       "type": "object",
       "properties": {
