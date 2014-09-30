@@ -117,8 +117,11 @@
       "$ref": "taxonomy.json"
     },
     "spatialReferenceSystem": {
-      "description": "Description of the spatial and temporal reference systems used in the dataset.",
+      "description": "Geospatial referencing system associated with describing the geospatial extent of the data resource. The referencing can be provided indirectly by an EPSG number, a named reference, or providing the parameters in a well known text (WKT) format.",
       "example": "../../examples/spatialRef.json",
+      "translation": {
+        "ISO 19115-2":["MD_Metadata > referenceSystemInfo > MD_ReferenceSystem > referenceSystemIdentifier > RS_Identifier > code"]
+      },
       "type": "object",
       "properties": {
         "name": {

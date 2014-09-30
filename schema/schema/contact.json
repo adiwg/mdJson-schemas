@@ -1,11 +1,53 @@
 {
   "id": "contact.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "schema for a contacts list, contains definitions for individual and organization",
+  "description": "An array of contacts to be referenced throughout the metadata, contains references for both individuals and organizations.",
+  "example": "../../examples/contact.json#/0",
+  "translation": {
+    "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
+    "FGDC CSDGM": ["cntinfo"]
+  },
   "type": "array",
   "minItems": 1,
   "uniqueItems": true,
   "items": {
+    "type": "object",
+    "title": "contact",
+    "description": "Contact information for a person.",
+    "example": "../../examples/contact.json#/0",
+    "translation": {
+      "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
+      "FGDC CSDGM": ["cntinfo"]
+    },
+    "required": ["contactId"],
+    "additionalProperties": true,
+    "properties": {
+      "contactId": {
+        "type": "string"
+      },
+      "positionName": {
+        "type": "string"
+      },
+      "address": {
+        "$ref": "#/definitions/address"
+      },
+      "onlineResource": {
+        "type": "array",
+        "items": {
+          "$ref": "onlineResource.json#"
+        },
+        "uniqueItems": true
+      },
+      "contactInstructions": {
+        "type": "string"
+      },
+      "phoneBook": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/phone"
+        }
+      }
+    },
     "anyOf": [
       {
         "$ref": "#/definitions/individual"
@@ -72,75 +114,28 @@
     "individual": {
       "type": "object",
       "title": "individual",
-      "required": ["contactId", "individualName"],
+      "description": "Contact information for a person.",
+      "example": "../../examples/contact.json#/0",
+      "translation": {
+        "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
+        "FGDC CSDGM": ["cntinfo"]
+      },
+      "required": ["individualName"],
       "additionalProperties": true,
       "properties": {
-        "contactId": {
-          "type": "string"
-        },
         "individualName": {
           "type": "string"
-        },
-        "positionName": {
-          "type": "string"
-        },
-        "organizationName": {
-          "type": "string"
-        },
-        "address": {
-          "$ref": "#/definitions/address"
-        },
-        "onlineResource": {
-          "type": "array",
-          "items": {
-            "$ref": "onlineResource.json#"
-          },
-          "uniqueItems": true
-        },
-        "contactInstructions": {
-          "type": "string"
-        },
-        "phoneBook": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/phone"
-          }
         }
       }
     },
     "organization": {
       "type": "object",
       "title": "organization",
-      "required": ["contactId", "organizationName"],
+      "required": ["organizationName"],
       "additionalProperties": true,
       "properties": {
-        "contactId": {
-          "type": "string"
-        },
-        "positionName": {
-          "type": "string"
-        },
         "organizationName": {
           "type": "string"
-        },
-        "address": {
-          "$ref": "#/definitions/address"
-        },
-        "onlineResource": {
-          "type": "array",
-          "items": {
-            "$ref": "onlineResource.json#"
-          },
-          "uniqueItems": true
-        },
-        "contactInstructions": {
-          "type": "string"
-        },
-        "phoneBook": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/phone"
-          }
         }
       }
     },
