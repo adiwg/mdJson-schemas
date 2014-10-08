@@ -31,9 +31,6 @@
     "status": {
       "type": "string"
     },
-    "resourceUri": {
-      "$ref": "../schema.json#/definitions/uri"
-    },
     "hasMapLocation": {
       "type": "boolean"
     },
