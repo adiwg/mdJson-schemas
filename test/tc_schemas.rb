@@ -48,6 +48,11 @@ class TestExamples < Test::Unit::TestCase
     assert(errors.empty?, errors.join("/n"))
   end
 
+  def test_minimum_example
+    errors = JSON::Validator.fully_validate(@@schema , @@ex + 'minimum_example.json')
+    assert(errors.empty?, errors.join("/n"))
+  end
+
   def test_lcc_example
     errors = JSON::Validator.fully_validate(@@schema , @@ex + 'lcc_project_example.json')
     assert(errors.empty?, errors.join("/n"))
