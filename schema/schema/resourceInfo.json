@@ -8,7 +8,7 @@
     "ISO 19115-2": ["MD_Metadata > identificationInfo > MD_DataIdentification"],
     "FGDC CSDGM": ["idinfo"]
   },
-  "required": ["citation", "abstract", "status", "language"],
+  "required": ["citation", "abstract", "status", "language", "pointOfContact"],
   "additionalProperties": false,
   "properties": {
     "citation": {
