@@ -1,7 +1,7 @@
 {
   "id": "resourceInfo.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Information about the data resource.",
+  "description": "Information about the resource.",
   "type": "object",
   "example": "../../examples/full_example.json#/metadata/resourceInfo",
   "translation": {
@@ -12,10 +12,19 @@
   "additionalProperties": false,
   "properties": {
     "citation": {
+      "description": "Citation for the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > citation > CI_Citation"],
+        "FGDC CSDGM": ["idinfo > citation"]
+      },
       "$ref": "citation.json#"
     },
     "pointOfContact": {
       "type": "array",
+      "description": "Identification of, and means of communication with, person(s) and organizations that may be contacted for acquiring knowledge about or acquisition of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > pointOfContact"]
+      },
       "minItems": 1,
       "uniqueItems": true,
       "items": {
@@ -23,19 +32,35 @@
       }
     },
     "abstract": {
-      "type": "string"
+      "type": "string",
+      "description": "Brief narrative summary of the content of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > abstract"],
+        "FGDC CSDGM": ["idinfo > descript > abstract"]
+      }
     },
     "shortAbstract": {
-      "type": "string"
+      "type": "string",
+      "description": "A short description of the resource. Max of 300 characters."
     },
     "status": {
-      "type": "string"
+      "type": "string",
+      "description": "Status of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > status"],
+        "FGDC CSDGM": ["idinfo > status > progress"]
+      }
     },
     "hasMapLocation": {
-      "type": "boolean"
+      "type": "boolean",
+      "description": "A flag indicating that a project has a geographic location associated with it and therefore can be located using a map interface. Not mapped to ISO."
     },
     "hasDataAvailable": {
-      "type": "boolean"
+      "type": "boolean",
+      "description": "A flag to indicate whether data for this project is available for distribution.",
+      "translation": {
+        "FGDC CSDGM": ["dist"]
+      }
     },
     "language": {
       "type": "array",

@@ -6,7 +6,7 @@
   "example": "../../examples/full_example.json#/metadata",
   "translation": {
     "ISO 19115-2": ["MI_Metadata"],
-    "FGDC CSDGM": ["metainfo"]
+    "FGDC CSDGM": ["metadata"]
   },
   "required": ["resourceInfo"],
   "additionalProperties": false,
@@ -19,13 +19,25 @@
       "additionalProperties": false,
       "properties": {
         "metadataIdentifier": {
+          "description": "Unique identifier for this metadata file.",
+          "translation": {
+            "ISO 19115-2": ["MI_Metadata > fileIdentifier"]
+          },
           "$ref": "citation.json#/definitions/identifier"
         },
         "parentMetadata": {
+          "description": "Identifier of the metadata to which this metadata is a subset (child).",
+          "translation": {
+            "ISO 19115-2": ["MI_Metadata > parentIdentifier"]
+          },
           "$ref": "citation.json#/definitions/citationFull"
         },
         "metadataScope": {
           "type": "array",
+          "description": "Identifier of the metadata to which this metadata is a subset (child).",
+          "translation": {
+            "ISO 19115-2": ["MI_Metadata > parentIdentifier"]
+          },
           "items": {
             "type": "string"
           },
@@ -33,27 +45,52 @@
         },
         "metadataContact": {
           "type": "array",
+          "description": "Person or organization responsible for metadata information (metadata custodian).",
+          "translation": {
+            "ISO 19115-2": ["MI_Metadata > contact > CI_Contact > responsibleParty > CI_ResponsibleParty"],
+            "FGDC CSDGM": ["metainfo > metc > cntinfo"]
+          },
           "minItems": 1,
           "items": {
             "$ref": "contact.json#/definitions/contactRef"
           }
         },
         "metadataCharacterSet": {
-          "type": "string"
+          "type": "string",
+          "description": "Full name of the character coding standard used for the metadata set. ",
+          "translation": {
+            "ISO 19115-2": ["MI_Metadata > characterSet [MD_CharacterSetCode]"]
+          }
         },
         "metadataCreationDate": {
-          "$ref": "../schema.json#/definitions/date"
+          "$ref": "../schema.json#/definitions/date",
+          "description": "Date that the metadata was created.",
+          "translation": {
+            "ISO 19115-2": ["MI_Metadata > dateStamp"],
+            "FGDC CSDGM": ["metainfo > metd"]
+          }
         },
         "metadataLastUpdate": {
-          "$ref": "../schema.json#/definitions/date"
+          "$ref": "../schema.json#/definitions/date",
+          "description": "Date that the metadata was updated.",
+          "translation": {
+            "ISO 19115-2": ["MI_Metadata > dateStamp"],
+            "FGDC CSDGM": ["metainfo > metrd"]
+          }
         },
         "metadataUri": {
-          "$ref": "../schema.json#/definitions/uri"
+          "$ref": "../schema.json#/definitions/uri",
+          "description": "Uniform Resource Identifier (URI) of the metadata record."
         },
         "metadataStatus": {
-          "type": "string"
+          "type": "string",
+          "description": "Status of the metadata record."
         },
         "metadataMaintenance": {
+          "description": "Provides information about the frequency of metadata updates, and the scope of those updates.",
+          "translation": {
+            "ISO 19115-2": ["MI_Metadata > metadataMaintenance > MD_MaintenanceInformation"]
+          },
           "$ref": "maintInfo.json#"
         }
       }

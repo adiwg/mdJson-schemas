@@ -2,14 +2,25 @@
   "id": "maintInfo.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "schema for maintenance information",
+  "translation": {
+    "ISO 19115-2": ["MD_MaintenanceInformation"]
+  },
   "type": "object",
   "additionalProperties": false,
   "properties": {
     "maintenanceFrequency": {
-      "type": "string"
+      "type": "string",
+      "description": "Describes the frequency of additions and updates made to a resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_MaintenanceInformation > maintenanceAndUpdateFrequency [MD_MaintenanceFrequencyCode]"]
+      }
     },
     "maintenanceNote": {
       "type": "array",
+      "description": "Notes regarding the maintenance of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_MaintenanceInformation > maintenanceNote"]
+      },
       "items": {
         "type": "string"
       }
@@ -17,6 +28,11 @@
     ,
     "maintenanceContact": {
       "type": "array",
+      "description": "Contact information for the maintainer of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_MaintenanceInformation > contact > CI_Contact"],
+        "FGDC CSDGM": ["metainfo > metc"]
+      },
       "uniqueItems": true,
       "items": {
         "$ref": "contact.json#/definitions/contactRef"
