@@ -78,10 +78,19 @@
       "additionalProperties": false,
       "properties": {
         "formatName": {
-          "type": "string"
+          "type": "string",
+          "description": "Name of the data transfer format(s).",
+          "translation": {
+            "ISO 19115-2": ["MD_Format > name"]
+          }
         },
         "version": {
-          "type": "string"
+          "type": "string",
+          "description": "Version of the format (date, number, etc.)",
+          "translation": {
+            "ISO 19115-2": ["MD_Format > version"],
+            "FGDC CSDGM": ["idinfo > citation > citeinfo > edition"]
+          }
         }
       }
     }

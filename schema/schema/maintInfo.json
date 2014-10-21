@@ -1,11 +1,11 @@
 {
   "id": "maintInfo.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "schema for maintenance information",
+  "type": "object",
+  "description": "Information about the maintenance of a resource.",
   "translation": {
     "ISO 19115-2": ["MD_MaintenanceInformation"]
   },
-  "type": "object",
   "additionalProperties": false,
   "properties": {
     "maintenanceFrequency": {
