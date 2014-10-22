@@ -96,6 +96,10 @@
       }
     },
     "resourceInfo": {
+      "translation": {
+        "ISO 19115-2": ["MD_Metadata > identificationInfo > MD_DataIdentification"],
+        "FGDC CSDGM": ["idinfo"]
+      },
       "$ref": "resourceInfo.json#"
     },
     "distributionInfo": {
@@ -115,7 +119,7 @@
       "description": "Information about a resoure related to the data resource, such as: study, dataset, project, etc. An associated resource may be a child reference, or reference a larger work, such as an iniative.",
       "example": "../../examples/full_example.json#/metadata/associatedResource",
       "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > aggregateInformation > MD_AggregateInformation"],
+        "ISO 19115-2": ["MD_DataIdentification > aggregationInfo > MD_AggregateInformation"],
         "FGDC CSDGM": ["idinfo > crossref"]
       },
       "items": {
@@ -124,15 +128,29 @@
         "additionalProperties": false,
         "properties": {
           "associationType": {
-            "type": "string"
+            "type": "string",
+            "description": "Identifies the type of association, such as; source, cross reference, etc.",
+            "translation": {
+              "ISO 19115-2": ["MD_AggregateInformation > associationType [DS_AssociationTypeCode]"]
+            }
           },
           "resourceType": {
-            "type": "string"
+            "type": "string",
+            "description": "Identifies the type of resource, such as; a dataset, study, publication, etc.",
+            "translation": {
+              "ISO 19115-2": ["MD_AggregateInformation > initiativeType > [DS_InitiativeTypeCode]"]
+            }
           },
           "resourceCitation": {
+            "description": "Citation for the associated resource.",
+            "translation": {
+              "ISO 19115-2": ["MD_AggregateInformation > aggregateDataSetName > CI_Citation"],
+              "FGDC CSDGM": ["idinfo > crossref > citeinfo"]
+            },
             "$ref": "citation.json#"
           },
           "metadataCitation": {
+            "description": "Citation for the associated resource metadata.",
             "$ref": "citation.json#"
           }
         }
@@ -141,10 +159,10 @@
     "additionalDocumentation": {
       "additionalProperties": false,
       "type": "array",
-      "description": "Additional references associated with the data resource, such as; web sites, documents for additional reading, etc.",
-      "example": "../../examples/full_example.json#/metadata/additionalDocumentation",
+      "description": "Additional references associated with the resource, such as; web sites, documents for additional reading, etc.",
       "translation": {
-        "FGDC CSDGM": ["idinfo > crossref"]
+        "ISO 19115-2": ["MD_DataIdentification > aggregationInfo > MD_AggregateInformation > aggregateDataSetName > CI_Citation"],
+        "FGDC CSDGM": ["idinfo > crossref "]
       },
       "items": {
         "$ref": "citation.json#"

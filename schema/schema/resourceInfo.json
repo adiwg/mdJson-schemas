@@ -5,7 +5,7 @@
   "type": "object",
   "example": "../../examples/full_example.json#/metadata/resourceInfo",
   "translation": {
-    "ISO 19115-2": ["MD_Metadata > identificationInfo > MD_DataIdentification"],
+    "ISO 19115-2": ["MD_DataIdentification"],
     "FGDC CSDGM": ["idinfo"]
   },
   "required": ["citation", "abstract", "status", "language", "pointOfContact"],
@@ -198,6 +198,10 @@
       }
     },
     "taxonomy": {
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > taxonomy"],
+        "FGDC CSDGM": ["idinfo > taxonomy"]
+      },
       "$ref": "taxonomy.json"
     },
     "spatialReferenceSystem": {
@@ -233,30 +237,52 @@
     },
     "spatialRepresentation": {
       "type": "array",
+      "description": "Format of the resource geographic extent, such as; vector, grid, etc.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdenification > spatialRepresentationType [MD_SpatialRepresentationTypeCode]"],
+        "FGDC CSDGM": ["spdoinfo"]
+      },
       "items": {
         "type": "string"
       }
     },
     "spatialResolution": {
       "type": "array",
+      "description": "Information about the scale of the geographic extent.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdenification > spatialResolution > MD_Resolution"]
+      },
       "items": {
         "$ref": "resolution.json"
       }
     },
     "extent": {
       "type": "array",
+      "description": "Information about the geographic extent of the resource. A resource may have multiple extents.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > extent > EX_Extent"]
+      },
       "items": {
         "$ref": "extent.json"
       }
     },
     "dataQualityInfo": {
       "type": "array",
+      "description": "Information about the quality of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > dataQualityInfo > DQ_DataQuality"],
+        "FGDC CSDGM": ["dataqual"]
+      },
       "items": {
         "$ref": "dataQuality.json#"
       }
     },
     "supplementalInfo": {
-      "type": "string"
+      "type": "string",
+      "description": "Any other descriptive information about the dataset.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > supplementalInfo"]
+      }
     }
   }
 }
