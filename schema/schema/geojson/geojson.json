@@ -130,7 +130,7 @@
               "type": "boolean",
               "description": "A boolean indicating whether geographic object is defining an extent, or used to describe an area of exception, such as \"holes\" in polygons.",
               "translation": {
-                "ISO 19115-2": ["EX_Extent > geographicElement > EX_GeographicBoundingBox > extentTypeCode,EX_Extent > geographicElement > EX_BoundingPolygon > extentTypeCode"]
+                "ISO 19115-2": ["EX_Extent > geographicElement > EX_GeographicBoundingBox > extentTypeCode", "EX_Extent > geographicElement > EX_BoundingPolygon > extentTypeCode"]
               }
             },
             "temporalElement": {
