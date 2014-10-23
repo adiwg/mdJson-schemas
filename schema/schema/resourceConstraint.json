@@ -93,7 +93,7 @@
         },
         "handlingDescription": {
           "type": "string",
-          "description": "Additional description regarding the secuirity handling of the resource or metadata.",
+          "description": "Additional description regarding the security handling of the resource or metadata.",
           "translation": {
             "ISO 19115-2": ["MD_SecurityConstraints > handlingDescription"]
           }

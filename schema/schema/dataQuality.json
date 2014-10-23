@@ -96,7 +96,7 @@
           }
         },
         "dateTime": {
-          "description": "Date and time or date at which the process or methodology step occured.",
+          "description": "Date and time or date at which the process or methodology step occurred.",
           "translation": {
             "ISO 19115-2": ["LI_ProcessStep > dateTime"],
             "FGDC CSDGM": ["dataqual > lineage > procstep > procdate"]

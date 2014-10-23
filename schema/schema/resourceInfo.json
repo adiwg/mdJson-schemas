@@ -61,7 +61,7 @@
     },
     "language": {
       "type": "array",
-      "description": "Language(s) used within the resouurce. Should be a valid ISO 639-3 code.",
+      "description": "Language(s) used within the resource. Should be a valid ISO 639-3 code.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > language"]
       },

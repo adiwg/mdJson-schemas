@@ -18,7 +18,7 @@
     },
     "userDeterminedLimitation": {
       "type": "string",
-      "description": "Usage that the provider's have determed the resource not being suitable for.",
+      "description": "Usage that the provider's have determined the resource not being suitable for.",
       "translation": {
         "ISO 19115-2": ["MD_Usage > userDeterminedLimitations"]
       }

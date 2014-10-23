@@ -104,7 +104,7 @@
     },
     "distributionInfo": {
       "type": "array",
-      "description": "Information about the distributor of and options for obtaining the resorce.",
+      "description": "Information about the distributor of and options for obtaining the resource.",
       "example": "../../examples/full_example.json#/metadata/distributionInfo",
       "translation": {
         "ISO 19115-2": ["MD_Metadata > distribution > MD_Distribution"],
@@ -116,7 +116,7 @@
     },
     "associatedResource": {
       "type": "array",
-      "description": "Information about a resoure related to the data resource, such as: study, dataset, project, etc. An associated resource may be a child reference, or reference a larger work, such as an iniative.",
+      "description": "Information about a resource related to the data resource, such as: study, dataset, project, etc. An associated resource may be a child reference, or reference a larger work, such as an initiative.",
       "example": "../../examples/full_example.json#/metadata/associatedResource",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > aggregationInfo > MD_AggregateInformation"],
