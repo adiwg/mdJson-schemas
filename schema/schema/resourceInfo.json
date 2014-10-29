@@ -19,6 +19,13 @@
       },
       "$ref": "citation.json#"
     },
+    "resourceTimePeriod" : {
+      "description": "Time period for the resource, e.g. project start and end date(s).",
+      "translation": {
+        "ISO 19115-2": ["EX_Extent > temporalElement > EX_TemporalExtent > extent > TimePeriod"]
+      },
+      "$ref": "extent.json#/definitions/timePeriod"
+    },
     "pointOfContact": {
       "type": "array",
       "description": "Identification of, and means of communication with, person(s) and organizations that may be contacted for acquiring knowledge about or acquisition of the resource.",
