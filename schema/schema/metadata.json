@@ -34,9 +34,9 @@
         },
         "metadataScope": {
           "type": "array",
-          "description": "Identifier of the metadata to which this metadata is a subset (child).",
+          "description": "Describes the subject matter to which the metadata is relevant.",
           "translation": {
-            "ISO 19115-2": ["MI_Metadata > parentIdentifier"]
+            "ISO 19115-2": ["MI_Metadata > hierarchyLevel [MD_ScopeCode]"]
           },
           "items": {
             "type": "string"
