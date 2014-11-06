@@ -1,5 +1,6 @@
 [
   {
+    "resourceType":"project",
     "citation":{
       "title":"Project Tracking System",
       "date":[
@@ -94,6 +95,7 @@
     ]
   },
   {
+    "resourceType":"project",
     "citation":{
       "title":"Project Tracking System",
       "date":[

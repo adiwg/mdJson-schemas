@@ -96,9 +96,6 @@
         "identifier":"D5D16D06-CEEB-E011-8260-000C2952247E",
         "type":"uuid"
       },
-      "metadataScope":[
-        "project"
-      ],
       "metadataContact":[
         {
           "contactId":"1",
@@ -123,6 +120,7 @@
       }
     },
     "resourceInfo":{
+      "resourceType":"project",
       "citation":{
         "title":"Integrated Ecosystem Model (AIEM) for Alaska",
         "date":[

@@ -23,16 +23,22 @@
         {
           "phoneName": "",
           "phoneNumber": "999-999-9999",
-          "service": [""]
+          "service": [
+            ""
+          ]
         }
       ],
       "address": {
-        "deliveryPoint": [""],
+        "deliveryPoint": [
+          ""
+        ],
         "city": "",
         "administrativeArea": "",
         "postalCode": "",
         "country": "",
-        "electronicMailAddress": ["hello@example.com"]
+        "electronicMailAddress": [
+          "hello@example.com"
+        ]
       }
     }
   ],
@@ -57,7 +63,9 @@
             "role": ""
           }
         ],
-        "presentationForm": [""],
+        "presentationForm": [
+          ""
+        ],
         "identifier": [
           {
             "identifier": "",
@@ -74,7 +82,6 @@
           }
         ]
       },
-      "metadataScope": [""],
       "metadataContact": [
         {
           "contactId": "",
@@ -88,7 +95,9 @@
       "metadataStatus": "",
       "metadataMaintenance": {
         "maintenanceFrequency": "",
-        "maintenanceNote": [""],
+        "maintenanceNote": [
+          ""
+        ],
         "maintenanceContact": [
           {
             "contactId": "",
@@ -98,6 +107,7 @@
       }
     },
     "resourceInfo": {
+      "resourceType": "",
       "citation": {
         "title": "",
         "date": [
@@ -113,7 +123,9 @@
             "role": ""
           }
         ],
-        "presentationForm": [""],
+        "presentationForm": [
+          ""
+        ],
         "identifier": [
           {
             "identifier": "",
@@ -165,10 +177,16 @@
       "status": "",
       "hasMapLocation": true,
       "hasDataAvailable": true,
-      "language": [""],
+      "language": [
+        ""
+      ],
       "purpose": "",
-      "credit": [""],
-      "topicCategory": [""],
+      "credit": [
+        ""
+      ],
+      "topicCategory": [
+        ""
+      ],
       "environmentDescription": "",
       "resourceNativeFormat": [
         {
@@ -178,7 +196,9 @@
       ],
       "keyword": [
         {
-          "keyword": [""],
+          "keyword": [
+            ""
+          ],
           "keywordType": "",
           "thesaurus": {
             "title": "",
@@ -195,7 +215,9 @@
                 "role": ""
               }
             ],
-            "presentationForm": [""],
+            "presentationForm": [
+              ""
+            ],
             "identifier": [
               {
                 "identifier": "",
@@ -241,7 +263,9 @@
       "resourceMaintenance": [
         {
           "maintenanceFrequency": "",
-          "maintenanceNote": [""],
+          "maintenanceNote": [
+            ""
+          ],
           "maintenanceContact": [
             {
               "contactId": "",
@@ -271,12 +295,20 @@
         }
       ],
       "constraint": {
-        "useLimitation": [""],
+        "useLimitation": [
+          ""
+        ],
         "legalConstraint": [
           {
-            "accessConstraint": [""],
-            "useConstraint": [""],
-            "otherConstraint": [""]
+            "accessConstraint": [
+              ""
+            ],
+            "useConstraint": [
+              ""
+            ],
+            "otherConstraint": [
+              ""
+            ]
           }
         ],
         "securityConstraint": [
@@ -305,7 +337,9 @@
                 "role": ""
               }
             ],
-            "presentationForm": [""],
+            "presentationForm": [
+              ""
+            ],
             "identifier": [
               {
                 "identifier": "",
@@ -371,15 +405,24 @@
         ]
       },
       "spatialReferenceSystem": {
-        "name": [""],
-        "epsgNumber": [0],
-        "wkt": [""]
+        "name": [
+          ""
+        ],
+        "epsgNumber": [
+          0
+        ],
+        "wkt": [
+          ""
+        ]
       },
-      "spatialRepresentation": [""],
+      "spatialRepresentation": [
+        ""
+      ],
       "spatialResolution": [
         {
           "equivalentScale": 0
-        }, {
+        },
+        {
           "distance": 0,
           "uom": ""
         }
@@ -390,20 +433,43 @@
           "geographicElement": [
             {
               "type": "Point",
-              "bbox": [0, 0, 0, 0],
-              "coordinates": [0, 0, 0],
+              "bbox": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "coordinates": [
+                0,
+                0,
+                0
+              ],
               "crs": {
                 "type": "name",
                 "properties": {
                   "name": ""
                 }
               }
-            }, {
+            },
+            {
               "type": "LineString",
-              "bbox": [0, 0, 0, 0],
+              "bbox": [
+                0,
+                0,
+                0,
+                0
+              ],
               "coordinates": [
-                [0, 0, 0],
-                [0, 0, 0]
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
               ],
               "crs": {
                 "type": "name",
@@ -411,21 +477,59 @@
                   "name": ""
                 }
               }
-            }, {
+            },
+            {
               "type": "Polygon",
-              "bbox": [0, 0, 0, 0],
+              "bbox": [
+                0,
+                0,
+                0,
+                0
+              ],
               "coordinates": [
                 [
-                  [0, 0, 0],
-                  [0, 0, 0],
-                  [0, 0, 0],
-                  [0, 0, 0]
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
                 ],
                 [
-                  [0, 0, 0],
-                  [0, 0, 0],
-                  [0, 0, 0],
-                  [0, 0, 0]
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
                 ]
               ],
               "crs": {
@@ -434,12 +538,26 @@
                   "name": ""
                 }
               }
-            }, {
+            },
+            {
               "type": "MultiPoint",
-              "bbox": [0, 0, 0, 0],
+              "bbox": [
+                0,
+                0,
+                0,
+                0
+              ],
               "coordinates": [
-                [0, 0, 0],
-                [0, 0, 0]
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
               ],
               "crs": {
                 "type": "name",
@@ -447,21 +565,59 @@
                   "name": ""
                 }
               }
-            }, {
+            },
+            {
               "type": "MultiLineString",
-              "bbox": [0, 0, 0, 0],
+              "bbox": [
+                0,
+                0,
+                0,
+                0
+              ],
               "coordinates": [
                 [
-                  [0, 0, 0],
-                  [0, 0, 0],
-                  [0, 0, 0],
-                  [0, 0, 0]
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
                 ],
                 [
-                  [0, 0, 0],
-                  [0, 0, 0],
-                  [0, 0, 0],
-                  [0, 0, 0]
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
                 ]
               ],
               "crs": {
@@ -470,36 +626,106 @@
                   "name": ""
                 }
               }
-            }, {
+            },
+            {
               "type": "MultiPolygon",
-              "bbox": [0, 0, 0, 0],
+              "bbox": [
+                0,
+                0,
+                0,
+                0
+              ],
               "coordinates": [
                 [
                   [
-                    [0, 0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0]
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
                   ],
                   [
-                    [0, 0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0]
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
                   ]
                 ],
                 [
                   [
-                    [0, 0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0]
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
                   ],
                   [
-                    [0, 0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0]
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
                   ]
                 ]
               ],
@@ -509,38 +735,91 @@
                   "name": ""
                 }
               }
-            }, {
+            },
+            {
               "type": "GeometryCollection",
-              "geometries": []
-            }, {
+              "geometries": [
+
+              ]
+            },
+            {
               "type": "Feature",
               "id": "",
-              "bbox": [0, 0, 0, 0],
+              "bbox": [
+                0,
+                0,
+                0,
+                0
+              ],
               "geometry": {
                 "type": "Point",
-                "coordinates": [0, 0, 0]
+                "coordinates": [
+                  0,
+                  0,
+                  0
+                ]
               },
               "geometry": {
                 "type": "LineString",
                 "coordinates": [
-                  [0, 0, 0],
-                  [0, 0, 0]
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
                 ]
               },
               "geometry": {
                 "type": "Polygon",
                 "coordinates": [
                   [
-                    [0, 0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0]
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
                   ],
                   [
-                    [0, 0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0]
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
                   ]
                 ]
               },
@@ -555,7 +834,9 @@
                 "description": "",
                 "includesData": true,
                 "temporalElement": {
-                  "date": ["0000-00-00"],
+                  "date": [
+                    "0000-00-00"
+                  ],
                   "timeInstant": [
                     {
                       "id": "",
@@ -613,10 +894,16 @@
                 "featureScope": "",
                 "featureAcquisitionMethod": ""
               }
-            }, {
+            },
+            {
               "type": "FeatureCollection",
               "id": "",
-              "bbox": [0, 0, 0, 0],
+              "bbox": [
+                0,
+                0,
+                0,
+                0
+              ],
               "properties": {
                 "name": "",
                 "description": "",
@@ -629,11 +916,15 @@
                   "type": ""
                 }
               },
-              "features": []
+              "features": [
+
+              ]
             }
           ],
           "temporalElement": {
-            "date": ["0000-00-00"],
+            "date": [
+              "0000-00-00"
+            ],
             "timeInstant": [
               {
                 "id": "",
@@ -697,7 +988,9 @@
                       "role": ""
                     }
                   ],
-                  "presentationForm": [""],
+                  "presentationForm": [
+                    ""
+                  ],
                   "identifier": [
                     {
                       "identifier": "",
@@ -793,6 +1086,7 @@
     "associatedResource": [
       {
         "associationType": "",
+        "initiativeType": "",
         "resourceType": "",
         "resourceCitation": {
           "title": "",
@@ -809,7 +1103,9 @@
               "role": ""
             }
           ],
-          "presentationForm": [""],
+          "presentationForm": [
+            ""
+          ],
           "identifier": [
             {
               "identifier": "",
@@ -865,7 +1161,9 @@
               "role": ""
             }
           ],
-          "presentationForm": [""],
+          "presentationForm": [
+            ""
+          ],
           "identifier": [
             {
               "identifier": "",
@@ -910,60 +1208,65 @@
     ],
     "additionalDocumentation": [
       {
-        "title": "",
-        "date": [
-          {
-            "date": "0000-00-00",
-            "dateType": ""
-          }
-        ],
-        "edition": "",
-        "responsibleParty": [
-          {
-            "contactId": "",
-            "role": ""
-          }
-        ],
-        "presentationForm": [""],
-        "identifier": [
-          {
-            "identifier": "",
-            "type": "",
-            "authority": {
-              "title": "",
-              "date": [
-                {
-                  "date": "0000-00-00",
-                  "dateType": ""
-                }
-              ],
-              "responsibleParty": [
-                {
-                  "contactId": "",
-                  "role": ""
-                }
-              ],
-              "onlineResource": [
-                {
-                  "uri": "http://thisisanexample.com",
-                  "protocol": "",
-                  "name": "",
-                  "description": "",
-                  "function": ""
-                }
-              ]
+        "resourceType": "",
+        "citation": {
+          "title": "",
+          "date": [
+            {
+              "date": "0000-00-00",
+              "dateType": ""
             }
-          }
-        ],
-        "onlineResource": [
-          {
-            "uri": "http://thisisanexample.com",
-            "protocol": "",
-            "name": "",
-            "description": "",
-            "function": ""
-          }
-        ]
+          ],
+          "edition": "",
+          "responsibleParty": [
+            {
+              "contactId": "",
+              "role": ""
+            }
+          ],
+          "presentationForm": [
+            ""
+          ],
+          "identifier": [
+            {
+              "identifier": "",
+              "type": "",
+              "authority": {
+                "title": "",
+                "date": [
+                  {
+                    "date": "0000-00-00",
+                    "dateType": ""
+                  }
+                ],
+                "responsibleParty": [
+                  {
+                    "contactId": "",
+                    "role": ""
+                  }
+                ],
+                "onlineResource": [
+                  {
+                    "uri": "http://thisisanexample.com",
+                    "protocol": "",
+                    "name": "",
+                    "description": "",
+                    "function": ""
+                  }
+                ]
+              }
+            }
+          ],
+          "onlineResource": [
+            {
+              "uri": "http://thisisanexample.com",
+              "protocol": "",
+              "name": "",
+              "description": "",
+              "function": ""
+            }
+          ]
+        }
       }
     ]
   }

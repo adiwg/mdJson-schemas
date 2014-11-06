@@ -8,9 +8,16 @@
     "ISO 19115-2": ["MD_DataIdentification"],
     "FGDC CSDGM": ["idinfo"]
   },
-  "required": ["citation", "abstract", "status", "language", "pointOfContact"],
+  "required": ["resourceType", "citation", "abstract", "status", "language", "pointOfContact"],
   "additionalProperties": false,
   "properties": {
+    "resourceType": {
+      "type": "string",
+      "description": "Identifies the type of resource, such as; a dataset, study, publication, etc.",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > hierarchyLevel [MD_ScopeCode]"]
+      }
+    },
     "citation": {
       "description": "Citation for the resource.",
       "translation": {
@@ -19,7 +26,7 @@
       },
       "$ref": "citation.json#"
     },
-    "resourceTimePeriod" : {
+    "resourceTimePeriod": {
       "description": "Time period for the resource, e.g. project start and end date(s).",
       "translation": {
         "ISO 19115-2": ["EX_Extent > temporalElement > EX_TemporalExtent > extent > TimePeriod"]

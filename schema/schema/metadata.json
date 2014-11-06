@@ -32,17 +32,6 @@
           },
           "$ref": "citation.json#/definitions/citationFull"
         },
-        "metadataScope": {
-          "type": "array",
-          "description": "Describes the subject matter to which the metadata is relevant.",
-          "translation": {
-            "ISO 19115-2": ["MI_Metadata > hierarchyLevel [MD_ScopeCode]"]
-          },
-          "items": {
-            "type": "string"
-          },
-          "uniqueItems": true
-        },
         "metadataContact": {
           "type": "array",
           "description": "Person or organization responsible for metadata information (metadata custodian).",
@@ -134,12 +123,16 @@
               "ISO 19115-2": ["MD_AggregateInformation > associationType [DS_AssociationTypeCode]"]
             }
           },
-          "resourceType": {
+          "initiativeType": {
             "type": "string",
-            "description": "Identifies the type of resource, such as; a dataset, study, publication, etc.",
+            "description": "Identifies type of initiative under which the resource was produced - the activity that resulted in the resource.",
             "translation": {
               "ISO 19115-2": ["MD_AggregateInformation > initiativeType > [DS_InitiativeTypeCode]"]
             }
+          },
+          "resourceType": {
+            "type": "string",
+            "description": "Identifies the type of resource, such as; a dataset, study, publication, etc."
           },
           "resourceCitation": {
             "description": "Citation for the associated resource.",
@@ -157,7 +150,6 @@
       }
     },
     "additionalDocumentation": {
-      "additionalProperties": false,
       "type": "array",
       "description": "Additional references associated with the resource, such as; web sites, documents for additional reading, etc.",
       "translation": {
@@ -165,7 +157,16 @@
         "FGDC CSDGM": ["idinfo > crossref "]
       },
       "items": {
-        "$ref": "citation.json#"
+        "required": ["citation"],
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "description": "Identifies the type of resource, such as; userGuide, website, report, etc."
+          },
+          "citation": {
+            "$ref": "citation.json#"
+          }
+        }
       }
     }
   }

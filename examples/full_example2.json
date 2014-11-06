@@ -380,10 +380,6 @@
           }
         ]
       },
-      "metadataScope":[
-        "dataset",
-        "project"
-      ],
       "metadataContact":[
         {
           "contactId":"7",
@@ -409,6 +405,7 @@
       }
     },
     "resourceInfo":{
+      "resourceType":"project",
       "citation":{
         "title":"Real-Time Permafrost and Climate Monitoring Network - Arctic Alaska",
         "date":[
@@ -2185,7 +2182,8 @@
     "associatedResource":[
       {
         "associationType":"crossReference",
-        "resourceType":"study",
+        "initiativeType":"collection",        
+        "resourceType":"dataset",
         "resourceCitation":{
           "title":"U.S. Geological Survey's Borehole Temperature Logs from Arctic Alaska, pre-1989",
           "date":[
@@ -2258,63 +2256,69 @@
     ],
     "additionalDocumentation":[
       {
-        "title":"A new high_precision borehole-temperature logging system used at GISP2, Greenland, and Taylor Dome, Antarctica",
-        "date":[
-          {
-            "date":"1996",
-            "dateType":"publication"
-          }
-        ],
-        "responsibleParty":[
-          {
-            "contactId":"5",
-            "role":"author"
-          }
-        ],
-        "presentationForm":[
-          "documentDigital"
-        ],
-        "identifier":[
-          {
-            "identifier":"10/00125.55517",
-            "type":"doi"
-          }
-        ],
-        "onlineResource":[
-          {
-            "uri":"http://www.igsoc.org/journal.old/42/142/igs_journal_vol42_issue142_pg576-584.pdf",
-            "protocol":"http",
-            "name":"Journal of Glaciology",
-            "description":"Publication document",
-            "function":"download"
-          }
-        ]
+        "resourceType":"publication",
+        "citation":{
+          "title":"A new high_precision borehole-temperature logging system used at GISP2, Greenland, and Taylor Dome, Antarctica",
+          "date":[
+            {
+              "date":"1996",
+              "dateType":"publication"
+            }
+          ],
+          "responsibleParty":[
+            {
+              "contactId":"5",
+              "role":"author"
+            }
+          ],
+          "presentationForm":[
+            "documentDigital"
+          ],
+          "identifier":[
+            {
+              "identifier":"10/00125.55517",
+              "type":"doi"
+            }
+          ],
+          "onlineResource":[
+            {
+              "uri":"http://www.igsoc.org/journal.old/42/142/igs_journal_vol42_issue142_pg576-584.pdf",
+              "protocol":"http",
+              "name":"Journal of Glaciology",
+              "description":"Publication document",
+              "function":"download"
+            }
+          ]
+        }
       },
       {
-        "title":"Thermal State of Permafrost (TSP): The US Contribution to the International Permafrost Observatory Network",
-        "date":[
-          {
-            "date":"2006",
-            "dateType":"award"
-          }
-        ],
-        "responsibleParty":[
-          {
-            "contactId":"9",
-            "role":"funder"
-          }
-        ],
-        "presentationForm":[
-          "documentDigital"
-        ],
-        "onlineResource":[
-          {
-            "uri":"http://www.nsf.gov/awardsearch/showAward?AWD_ID=0520578",
-            "protocol":"http",
-            "name":"U.S.  National Science Foundation Award database",
-            "description":"Grant award"
-          }
-        ]
+        "resourceType":"publication",
+        "citation":{
+          "title":"Thermal State of Permafrost (TSP): The US Contribution to the International Permafrost Observatory Network",
+          "date":[
+            {
+              "date":"2006",
+              "dateType":"award"
+            }
+          ],
+          "responsibleParty":[
+            {
+              "contactId":"9",
+              "role":"funder"
+            }
+          ],
+          "presentationForm":[
+            "documentDigital"
+          ],
+          "onlineResource":[
+            {
+              "uri":"http://www.nsf.gov/awardsearch/showAward?AWD_ID=0520578",
+              "protocol":"http",
+              "name":"U.S.  National Science Foundation Award database",
+              "description":"Grant award"
+            }
+          ]
+        }
       }
     ]
   }
