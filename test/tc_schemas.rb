@@ -5,7 +5,7 @@
 * License: Public Domain
 =end
 
-require 'test/unit'
+require 'minitest/autorun'
 require 'json'
 require 'json-schema'
 require File.join(File.dirname(__FILE__),'..','lib', 'adiwg-json_schemas.rb')
@@ -13,7 +13,7 @@ require File.join(File.dirname(__FILE__),'..','lib', 'adiwg-json_schemas.rb')
 #json-schema patch
 require File.join(File.dirname(__FILE__),'..','lib', 'adiwg', 'json_schemas', 'validator.rb')
 
-class TestExamples < Test::Unit::TestCase
+class TestExamples < Minitest::Test
 
   @@dir = File.join(File.dirname(__FILE__),'..','schema/')
   @@ex = File.join(File.dirname(__FILE__),'..','examples/')

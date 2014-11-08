@@ -5,10 +5,10 @@
 * License: Public Domain
 =end
 
-require "test/unit"
+require 'minitest/autorun'
 require File.join(File.dirname(__FILE__),'..','lib', 'adiwg-json_schemas.rb')
 
-class TestUtils < Test::Unit::TestCase
+class TestUtils < Minitest::Test
     def test_examples_dir
         errors = File.exist?(ADIWG::JsonSchemas::Utils.examples_dir)
         assert_equal( true, errors, failure_message = 'Examples directory does not exist.')
