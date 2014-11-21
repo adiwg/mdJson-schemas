@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["jbradley@arcticlcc.org"]
   spec.description   = %q{JSON schemas for validating according to the the ADIwg project and data metadata standard. The schemas comply with JSON Schema draft version 4.}
   spec.summary       = %q{JSON schemas for the ADIwg metadata standard}
-  spec.homepage      = "https://github.com/adiwg/adiwg-json-schemas"
+  spec.homepage      = "https://github.com/adiwg/mdJson-schemas"
   spec.license       = "UNLICENSE"
 
   spec.files         = `git ls-files`.split($/)

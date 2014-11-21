@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/adiwg/adiwg-json-schemas.svg?branch=master)](https://travis-ci.org/adiwg/adiwg-json-schemas)
+[![Build Status](https://travis-ci.org/adiwg/mdJson-schemas.svg?branch=master)](https://travis-ci.org/adiwg/mdJson-schemas)
 
-# adiwg-json-schemas
+# mdJson-schemas
 
 
 JSON schemas for the ADIwg project and data metadata standard
