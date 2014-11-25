@@ -24,7 +24,7 @@
     },
     "fileType": {
       "type": "string",
-      "description": "Format of the browse graphic, such as; PDF, JPEG, TIFF, etc.",
+      "description": "Format of the browse graphic, such as: PDF, JPEG, TIFF, etc.",
       "translation": {
         "ISO 19115-2": ["MD_BrowseGraphic > fileType"],
         "FGDC CSDGM": ["idinfo > browse > browset"]

@@ -14,7 +14,7 @@
   "definitions": {
     "useLimitation": {
       "type": "string",
-      "description": "Limitation affecting the fitness for use of the resource or metadata. For example, “not to be used for navigation”.",
+      "description": "Limitation affecting the fitness for use of the resource or metadata. For example, \"not to be used for navigation\".",
       "translation": {
         "ISO 19115-2": ["MD_Constraints > useLimitation"]
       }

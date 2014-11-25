@@ -184,7 +184,7 @@
       "properties": {
         "individualName": {
           "type": "string",
-          "description": "Name of the person – surname, given name, title separated by a delimiter.",
+          "description": "Name of the person - surname, given name, title separated by a delimiter.",
           "translation": {
             "ISO 19115-2": ["CI_ResponsibleParty > individualName"],
             "FGDC CSDGM": ["cntinfo > cntperp > cntper"]

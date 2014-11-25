@@ -13,7 +13,7 @@
   "properties": {
     "resourceType": {
       "type": "string",
-      "description": "Identifies the type of resource, such as; a dataset, study, publication, etc.",
+      "description": "Identifies the type of resource, such as: a dataset, study, publication, etc.",
       "translation": {
         "ISO 19115-2": ["MI_Metadata > hierarchyLevel [MD_ScopeCode]"]
       }
@@ -104,7 +104,7 @@
     },
     "topicCategory": {
       "type": "array",
-      "description": "General theme keyword of the resource, such as; oceans, biota atmosphere, etc.",
+      "description": "General theme keyword of the resource, such as: oceans, biota atmosphere, etc.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > topicCategory"]
       },
@@ -114,7 +114,7 @@
     },
     "environmentDescription": {
       "type": "string",
-      "description": "Description of the dataset in the producer’s processing environment, including items such as the software, the computer, the computer operating system, file name, and the dataset size.",
+      "description": "Description of the dataset in the producer's processing environment, including items such as the software, the computer, the computer operating system, file name, and the dataset size.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > environmentDescription"],
         "FGDC CSDGM": ["idinfo > native"]
@@ -251,7 +251,7 @@
     },
     "spatialRepresentation": {
       "type": "array",
-      "description": "Format of the resource geographic extent, such as; vector, grid, etc.",
+      "description": "Format of the resource geographic extent, such as: vector, grid, etc.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdenification > spatialRepresentationType [MD_SpatialRepresentationTypeCode]"],
         "FGDC CSDGM": ["spdoinfo"]

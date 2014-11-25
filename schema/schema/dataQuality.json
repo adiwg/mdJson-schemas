@@ -36,7 +36,7 @@
       "properties": {
         "statement": {
           "type": "string",
-          "description": "General explanation of the data producer’s knowledge about the lineage of a dataset.",
+          "description": "General explanation of the data producer's knowledge about the lineage of a dataset.",
           "translation": {
             "ISO 19115-2": ["LI_Lineage > statement"]
           }

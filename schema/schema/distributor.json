@@ -109,7 +109,7 @@
             "properties": {
               "name": {
                 "type": "string",
-                "description": "Name of the format the data is distributed in, such as; dvd, hardcopy, etc.",
+                "description": "Name of the format the data is distributed in, such as: dvd, hardcopy, etc.",
                 "translation": {
                   "ISO 19115-2": ["MD_Medium > name [MD_MediumNameCode]"],
                   "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt > offoptn > offmedia"]
@@ -117,7 +117,7 @@
               },
               "mediumFormat": {
                 "type": "string",
-                "description": "Method used by the resource provider to write to the medium, such as; tar, iso9660, etc.",
+                "description": "Method used by the resource provider to write to the medium, such as: tar, iso9660, etc.",
                 "translation": {
                   "ISO 19115-2": ["MD_Medium > mediumFormat [MD_MediumFormatCode]"],
                   "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt > offoptn > recfmt"]

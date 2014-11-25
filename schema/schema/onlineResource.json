@@ -2,7 +2,7 @@
   "id": "onlineResource.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "description": "Information about accessing on-line resources and services.",
+  "description": "Information about accessing online resources and services.",
   "required": ["uri"],
   "additionalProperties": false,
   "properties": {
@@ -18,7 +18,7 @@
     },
     "protocol": {
       "type": "string",
-      "description": "The connection protocol to be used such as ftp, http, etc.",
+      "description": "The connection protocol to be used such as: ftp, http, etc.",
       "translation": {
         "ISO 19115-2": ["CI_OnlineResource > protocol"]
       }
