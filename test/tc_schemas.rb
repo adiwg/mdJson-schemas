@@ -26,7 +26,7 @@ class TestExamples < Minitest::Test
     errors = Array.new
 
     schemas.each do |schema|
-      error = JSON::Validator.fully_validate('http://json-schema.org/draft-04/schema', schema)
+      error = JSON::Validator.fully_validate(File.join(File.dirname(__FILE__), 'draft-04.json'), schema)
       errors += error
     end
 
