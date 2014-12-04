@@ -68,6 +68,11 @@ class TestExamples < Minitest::Test
     assert(errors.empty?, errors.join("/n"))
   end
 
+  def test_dictionary
+    errors = JSON::Validator.fully_validate(@@dir + 'schema/dataDictionary.json', @@ex + 'dataDictionary.json', :list => true)
+    assert(errors.empty?, errors.join("/n"))
+  end
+
   def test_taxonomy
     errors = JSON::Validator.fully_validate(@@dir + 'schema/taxonomy.json', @@ex + 'taxonomy.json', :list => true)
     assert(errors.empty?, errors.join("/n"))

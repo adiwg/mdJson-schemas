@@ -1,0 +1,189 @@
+{
+  "id": "dataDictionary.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "A catalogue containing definitions and descriptions of the resource types, resource attributes, and resource associations.",
+  "required": ["dictionaryInfo"],
+  "example": "../../examples/full_example.json#/metadata/dataDictionary",
+  "additionalProperties": false,
+  "properties": {
+    "dictionaryInfo": {
+      "type": "object",
+      "description": "Information describing the dictionary and its source.",
+      "required": ["resourceType", "citation", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "citation": {
+          "description": "Citation for the dictionary.",
+          "$ref": "citation.json#/definitions/dictionary"
+        },
+        "resourceType": {
+          "type": "string",
+          "description": "The type of resource described by the dictionary."
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the dictionary."
+        },
+        "language": {
+          "type": "string",
+          "description": "Language used within the dictionary. Should be a valid ISO 639-3 code."
+        }
+      }
+    },
+    "domain": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "Information describing an enumerated list of values.",
+        "required": ["domainId", "codeName", "description", "member"],
+        "additionalProperties": false,
+        "properties": {
+          "domainId": {
+            "type": "string"
+          },
+          "commonName": {
+            "type": "string"
+          },
+          "codeName": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "member": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "value", "definition"],
+              "additionalProperties": false,
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "definition": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "entity": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entityId", "codeName", "definition"],
+        "additionalProperties": false,
+        "properties": {
+          "entityId": {
+            "type": "string"
+          },
+          "commonName": {
+            "type": "string"
+          },
+          "codeName": {
+            "type": "string"
+          },
+          "definition": {
+            "type": "string"
+          },
+          "primaryKeyAttributeCodeName": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "index": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["codeName", "allowDuplicates", "attributeCodeName"],
+              "additionalProperties": false,
+              "properties": {
+                "codeName": {
+                  "type": "string"
+                },
+                "allowDuplicates": {
+                  "type": "boolean"
+                },
+                "attributeCodeName": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "attribute": {
+            "type": "array",
+            "required": ["codeName", "dataType", "definition", "allowNull"],
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "commonName": {
+                  "type": "string"
+                },
+                "codeName": {
+                  "type": "string"
+                },
+                "definition": {
+                  "type": "string"
+                },
+                "dataType": {
+                  "type": "string"
+                },
+                "allowNull": {
+                  "type": "boolean"
+                },
+                "units": {
+                  "type": "string"
+                },
+                "domainId": {
+                  "type": "string"
+                },
+                "minValue": {
+                  "type": "string"
+                },
+                "maxValue": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "foreignKey": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["localAttributeCodeName", "referencedEntityCodeName", "referencedAttributeCodeName"],
+              "additionalProperties": false,
+              "properties": {
+                "localAttributeCodeName": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "referencedEntityCodeName": {
+                  "type": "string"
+                },
+                "referencedAttributeCodeName": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -154,6 +154,27 @@
           "$ref": "#/definitions/citationBase"
         }
       }
+    },
+    "dictionary": {
+      "type": "object",
+      "required": ["title", "date"],
+      "title": "dictionary citation",
+      "description": "A citation object for data dictionaries.",
+      "properties": {
+        "edition": {
+          "type": "string",
+          "description": "Version identifier for the dictionary.",
+          "translation": {
+            "ISO 19115-2": ["CI_Citation > edition"],
+            "FGDC CSDGM": ["idinfo > citation > edition"]
+          }
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/definitions/citationBase"
+        }
+      ]
     }
   }
 }
