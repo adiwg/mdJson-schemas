@@ -1,7 +1,7 @@
 {
   "id": "schema.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "schema for ADIwg mdJSON metadata",
   "type": "object",
   "required": ["version", "contact", "metadata"],
@@ -29,6 +29,9 @@
     },
     "metadata": {
       "$ref": "schema/metadata.json"
+    },
+    "dataDictionary": {
+      "$ref": "schema/dataDictionary.json"
     }
   },
   "definitions": {

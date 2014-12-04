@@ -1,7 +1,7 @@
 {
   "version": {
     "name": "mdJson",
-    "version": "0.9.3"
+    "version": "0.9.4"
   },
   "contact": [
     {
@@ -1037,7 +1037,7 @@
             "codeName": "",
             "definition": "",
             "dataType": "",
-            "required": true,
+            "allowNull": true,
             "units": "",
             "domainId": "",
             "minValue": "",

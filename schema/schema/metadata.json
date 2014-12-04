@@ -168,9 +168,6 @@
           }
         }
       }
-    },
-    "dataDictionary": {
-      "$ref": "dataDictionary.json#"
     }
   }
 }
