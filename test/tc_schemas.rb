@@ -34,7 +34,7 @@ class TestExamples < Minitest::Test
   end
 
   def test_data_template
-    errors = JSON::Validator.fully_validate(@@schema, @@dir + '../templates/adiwg_metadata_template.json', :strict => false)
+    errors = JSON::Validator.fully_validate(@@schema, @@dir + '../templates/mdJson_template.json', :strict => false)
     assert(errors.empty?, errors.join("/n"))
   end
 

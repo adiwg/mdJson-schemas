@@ -1,7 +1,7 @@
 {
   "version": {
     "name": "mdJson",
-    "version": "0.9.0"
+    "version": "0.9.3"
   },
   "contact": [
     {
@@ -23,22 +23,16 @@
         {
           "phoneName": "",
           "phoneNumber": "999-999-9999",
-          "service": [
-            ""
-          ]
+          "service": [""]
         }
       ],
       "address": {
-        "deliveryPoint": [
-          ""
-        ],
+        "deliveryPoint": [""],
         "city": "",
         "administrativeArea": "",
         "postalCode": "",
         "country": "",
-        "electronicMailAddress": [
-          "hello@example.com"
-        ]
+        "electronicMailAddress": ["hello@example.com"]
       }
     }
   ],
@@ -63,9 +57,7 @@
             "role": ""
           }
         ],
-        "presentationForm": [
-          ""
-        ],
+        "presentationForm": [""],
         "identifier": [
           {
             "identifier": "",
@@ -95,9 +87,7 @@
       "metadataStatus": "",
       "metadataMaintenance": {
         "maintenanceFrequency": "",
-        "maintenanceNote": [
-          ""
-        ],
+        "maintenanceNote": [""],
         "maintenanceContact": [
           {
             "contactId": "",
@@ -123,9 +113,7 @@
             "role": ""
           }
         ],
-        "presentationForm": [
-          ""
-        ],
+        "presentationForm": [""],
         "identifier": [
           {
             "identifier": "",
@@ -177,16 +165,10 @@
       "status": "",
       "hasMapLocation": true,
       "hasDataAvailable": true,
-      "language": [
-        ""
-      ],
+      "language": [""],
       "purpose": "",
-      "credit": [
-        ""
-      ],
-      "topicCategory": [
-        ""
-      ],
+      "credit": [""],
+      "topicCategory": [""],
       "environmentDescription": "",
       "resourceNativeFormat": [
         {
@@ -196,9 +178,7 @@
       ],
       "keyword": [
         {
-          "keyword": [
-            ""
-          ],
+          "keyword": [""],
           "keywordType": "",
           "thesaurus": {
             "title": "",
@@ -215,9 +195,7 @@
                 "role": ""
               }
             ],
-            "presentationForm": [
-              ""
-            ],
+            "presentationForm": [""],
             "identifier": [
               {
                 "identifier": "",
@@ -263,9 +241,7 @@
       "resourceMaintenance": [
         {
           "maintenanceFrequency": "",
-          "maintenanceNote": [
-            ""
-          ],
+          "maintenanceNote": [""],
           "maintenanceContact": [
             {
               "contactId": "",
@@ -295,20 +271,12 @@
         }
       ],
       "constraint": {
-        "useLimitation": [
-          ""
-        ],
+        "useLimitation": [""],
         "legalConstraint": [
           {
-            "accessConstraint": [
-              ""
-            ],
-            "useConstraint": [
-              ""
-            ],
-            "otherConstraint": [
-              ""
-            ]
+            "accessConstraint": [""],
+            "useConstraint": [""],
+            "otherConstraint": [""]
           }
         ],
         "securityConstraint": [
@@ -337,9 +305,7 @@
                 "role": ""
               }
             ],
-            "presentationForm": [
-              ""
-            ],
+            "presentationForm": [""],
             "identifier": [
               {
                 "identifier": "",
@@ -405,24 +371,15 @@
         ]
       },
       "spatialReferenceSystem": {
-        "name": [
-          ""
-        ],
-        "epsgNumber": [
-          0
-        ],
-        "wkt": [
-          ""
-        ]
+        "name": [""],
+        "epsgNumber": [0],
+        "wkt": [""]
       },
-      "spatialRepresentation": [
-        ""
-      ],
+      "spatialRepresentation": [""],
       "spatialResolution": [
         {
           "equivalentScale": 0
-        },
-        {
+        }, {
           "distance": 0,
           "uom": ""
         }
@@ -433,43 +390,20 @@
           "geographicElement": [
             {
               "type": "Point",
-              "bbox": [
-                0,
-                0,
-                0,
-                0
-              ],
-              "coordinates": [
-                0,
-                0,
-                0
-              ],
+              "bbox": [0, 0, 0, 0],
+              "coordinates": [0, 0, 0],
               "crs": {
                 "type": "name",
                 "properties": {
                   "name": ""
                 }
               }
-            },
-            {
+            }, {
               "type": "LineString",
-              "bbox": [
-                0,
-                0,
-                0,
-                0
-              ],
+              "bbox": [0, 0, 0, 0],
               "coordinates": [
-                [
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  0,
-                  0,
-                  0
-                ]
+                [0, 0, 0],
+                [0, 0, 0]
               ],
               "crs": {
                 "type": "name",
@@ -477,59 +411,21 @@
                   "name": ""
                 }
               }
-            },
-            {
+            }, {
               "type": "Polygon",
-              "bbox": [
-                0,
-                0,
-                0,
-                0
-              ],
+              "bbox": [0, 0, 0, 0],
               "coordinates": [
                 [
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ]
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0]
                 ],
                 [
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ]
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0]
                 ]
               ],
               "crs": {
@@ -538,26 +434,12 @@
                   "name": ""
                 }
               }
-            },
-            {
+            }, {
               "type": "MultiPoint",
-              "bbox": [
-                0,
-                0,
-                0,
-                0
-              ],
+              "bbox": [0, 0, 0, 0],
               "coordinates": [
-                [
-                  0,
-                  0,
-                  0
-                ],
-                [
-                  0,
-                  0,
-                  0
-                ]
+                [0, 0, 0],
+                [0, 0, 0]
               ],
               "crs": {
                 "type": "name",
@@ -565,59 +447,21 @@
                   "name": ""
                 }
               }
-            },
-            {
+            }, {
               "type": "MultiLineString",
-              "bbox": [
-                0,
-                0,
-                0,
-                0
-              ],
+              "bbox": [0, 0, 0, 0],
               "coordinates": [
                 [
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ]
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0]
                 ],
                 [
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ]
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, 0]
                 ]
               ],
               "crs": {
@@ -626,106 +470,36 @@
                   "name": ""
                 }
               }
-            },
-            {
+            }, {
               "type": "MultiPolygon",
-              "bbox": [
-                0,
-                0,
-                0,
-                0
-              ],
+              "bbox": [0, 0, 0, 0],
               "coordinates": [
                 [
                   [
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ]
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0]
                   ],
                   [
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ]
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0]
                   ]
                 ],
                 [
                   [
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ]
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0]
                   ],
                   [
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ]
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0]
                   ]
                 ]
               ],
@@ -735,91 +509,38 @@
                   "name": ""
                 }
               }
-            },
-            {
+            }, {
               "type": "GeometryCollection",
-              "geometries": [
-
-              ]
-            },
-            {
+              "geometries": []
+            }, {
               "type": "Feature",
               "id": "",
-              "bbox": [
-                0,
-                0,
-                0,
-                0
-              ],
+              "bbox": [0, 0, 0, 0],
               "geometry": {
                 "type": "Point",
-                "coordinates": [
-                  0,
-                  0,
-                  0
-                ]
+                "coordinates": [0, 0, 0]
               },
               "geometry": {
                 "type": "LineString",
                 "coordinates": [
-                  [
-                    0,
-                    0,
-                    0
-                  ],
-                  [
-                    0,
-                    0,
-                    0
-                  ]
+                  [0, 0, 0],
+                  [0, 0, 0]
                 ]
               },
               "geometry": {
                 "type": "Polygon",
                 "coordinates": [
                   [
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ]
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0]
                   ],
                   [
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      0
-                    ]
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0]
                   ]
                 ]
               },
@@ -834,9 +555,7 @@
                 "description": "",
                 "includesData": true,
                 "temporalElement": {
-                  "date": [
-                    "0000-00-00"
-                  ],
+                  "date": ["0000-00-00"],
                   "timeInstant": [
                     {
                       "id": "",
@@ -894,16 +613,10 @@
                 "featureScope": "",
                 "featureAcquisitionMethod": ""
               }
-            },
-            {
+            }, {
               "type": "FeatureCollection",
               "id": "",
-              "bbox": [
-                0,
-                0,
-                0,
-                0
-              ],
+              "bbox": [0, 0, 0, 0],
               "properties": {
                 "name": "",
                 "description": "",
@@ -916,15 +629,11 @@
                   "type": ""
                 }
               },
-              "features": [
-
-              ]
+              "features": []
             }
           ],
           "temporalElement": {
-            "date": [
-              "0000-00-00"
-            ],
+            "date": ["0000-00-00"],
             "timeInstant": [
               {
                 "id": "",
@@ -988,9 +697,7 @@
                       "role": ""
                     }
                   ],
-                  "presentationForm": [
-                    ""
-                  ],
+                  "presentationForm": [""],
                   "identifier": [
                     {
                       "identifier": "",
@@ -1103,9 +810,7 @@
               "role": ""
             }
           ],
-          "presentationForm": [
-            ""
-          ],
+          "presentationForm": [""],
           "identifier": [
             {
               "identifier": "",
@@ -1161,9 +866,7 @@
               "role": ""
             }
           ],
-          "presentationForm": [
-            ""
-          ],
+          "presentationForm": [""],
           "identifier": [
             {
               "identifier": "",
@@ -1224,9 +927,7 @@
               "role": ""
             }
           ],
-          "presentationForm": [
-            ""
-          ],
+          "presentationForm": [""],
           "identifier": [
             {
               "identifier": "",
@@ -1267,6 +968,89 @@
             }
           ]
         }
+      }
+    ]
+  },
+  "dataDictionary": {
+    "dictionaryInfo": {
+      "citation": {
+        "title": "",
+        "date": [
+          {
+            "date": "0000-00-00",
+            "dateType": ""
+          }
+        ],
+        "edition": "",
+        "responsibleParty": [
+          {
+            "contactId": "",
+            "role": ""
+          }
+        ],
+        "onlineResource": [
+          {
+            "uri": "http://thisisanexample.com",
+            "protocol": "",
+            "name": "",
+            "description": "",
+            "function": ""
+          }
+        ]
+      },
+      "description": "",
+      "resourceType": "",
+      "language": ""
+    },
+    "domain": [
+      {
+        "domainId": "",
+        "commonName": "",
+        "codeName": "",
+        "description": "",
+        "member": [
+          {
+            "name": "",
+            "value": "",
+            "definition": ""
+          }
+        ]
+      }
+    ],
+    "entity": [
+      {
+        "entityId": "",
+        "commonName": "",
+        "codeName": "",
+        "definition": "",
+        "primaryKeyAttributeCodeName": [""],
+        "index": [
+          {
+            "codeName": "",
+            "allowDuplicates": false,
+            "attributeCodeName": [""]
+          }
+        ],
+        "attribute": [
+          {
+            "commonName": "",
+            "codeName": "",
+            "definition": "",
+            "dataType": "",
+            "required": true,
+            "units": "",
+            "domainId": "",
+            "minValue": "",
+            "maxValue": ""
+          }
+        ],
+        "foreignKey": [
+          {
+            "localAttributeCodeName": [""],
+            "referencedEntityCodeName": "",
+            "referencedAttributeCodeName": [""]
+          }
+        ]
       }
     ]
   }
