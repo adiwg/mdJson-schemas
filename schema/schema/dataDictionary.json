@@ -122,9 +122,9 @@
           },
           "attribute": {
             "type": "array",
-            "required": ["codeName", "dataType", "definition", "allowNull"],
             "items": {
               "type": "object",
+              "required": ["codeName", "dataType", "definition", "allowNull"],
               "additionalProperties": false,
               "properties": {
                 "commonName": {
