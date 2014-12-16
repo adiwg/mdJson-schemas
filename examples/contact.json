@@ -1,5 +1,35 @@
 [
   {
+    "contactId": "contactId",
+    "individualName": "individualName",
+    "organizationName": "organizationName",
+    "positionName": "positionName",
+    "onlineResource": [
+      {
+        "uri": "http://thisisanexample1.com",
+        "protocol": "protocol1",
+        "name": "name1",
+        "description": "description1",
+        "function": "function1"
+      }
+    ],
+    "contactInstructions": "contactInstructions",
+    "phoneBook": [
+      {
+        "phoneName": "phoneName1",
+        "phoneNumber": "111-111-1111",
+        "service": ["service11", "service12"]
+      }
+    ],
+    "address": {
+      "deliveryPoint": ["deliveryPoint1", "deliveryPoint2"],
+      "city": "city",
+      "administrativeArea": "administrativeArea",
+      "postalCode": "postalCode",
+      "country": "country",
+      "electronicMailAddress": ["example1@example.com", "example2@example.com"]
+    }
+  }, {
     "contactId": "1",
     "individualName": "Josh Bradley",
     "organizationName": "Arctic Landscape Conservation Cooperative",

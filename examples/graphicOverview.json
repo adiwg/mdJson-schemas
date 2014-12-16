@@ -1,5 +1,10 @@
 [
   {
+    "fileName": "fileName",
+    "fileDescription": "fileDescription",
+    "fileType": "fileType",
+    "uri": "http://thisisanexample.com"
+  }, {
     "fileName": "allRecs_callCounts_bowhead_2010.jpg",
     "fileDescription": "This image is a spectraplot visualizing the density of Bowhead whale calls in the Northeast Chukchi Sea, AMAR recorder locations, and industry lease areas.",
     "fileType": "JPEG",

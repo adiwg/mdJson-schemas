@@ -168,4 +168,19 @@ class TestExamples < Minitest::Test
     errors = JSON::Validator.fully_validate(@@schema, @@ex + 'uri.json', :fragment => "#/definitions/uri",  :list => true)
     assert(errors.empty?, errors.join("/n"))
   end
+
+  def test_additionalDocumentation
+    errors = JSON::Validator.fully_validate(@@dir + 'schema/metadata.json', @@ex + 'additionalDocumentation.json', :fragment => "#/properties/additionalDocumentation", :list => false)
+    assert(errors.empty?, errors.join("/n"))
+  end
+
+  def test_associatedResource
+    errors = JSON::Validator.fully_validate(@@dir + 'schema/metadata.json', @@ex + 'associatedResource.json', :fragment => "#/properties/associatedResource", :list => false)
+    assert(errors.empty?, errors.join("/n"))
+  end
+
+  def test_address
+    errors = JSON::Validator.fully_validate(@@dir + 'schema/contact.json', @@ex + 'address.json', :fragment => "#/definitions/address", :list => true)
+    assert(errors.empty?, errors.join("/n"))
+  end
 end
