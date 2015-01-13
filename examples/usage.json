@@ -1,5 +1,17 @@
 [
   {
+    "specificUsage": "specificUsage",
+    "userDeterminedLimitation": "userDeterminedLimitation",
+    "userContactInfo": [
+      {
+        "contactId": "contactId1",
+        "role": "role1"
+      }, {
+        "contactId": "contactId2",
+        "role": "role2"
+      }
+    ]
+  }, {
     "specificUsage": "Developed for land use planning.",
     "userDeterminedLimitation": "Not suitable for use for navigation.",
     "userContactInfo": [

@@ -11,6 +11,12 @@
         "name": "name1",
         "description": "description1",
         "function": "function1"
+      }, {
+        "uri": "http://thisisanexample2.com",
+        "protocol": "protocol2",
+        "name": "name2",
+        "description": "description2",
+        "function": "function2"
       }
     ],
     "contactInstructions": "contactInstructions",
@@ -19,6 +25,10 @@
         "phoneName": "phoneName1",
         "phoneNumber": "111-111-1111",
         "service": ["service11", "service12"]
+      }, {
+        "phoneName": "phoneName2",
+        "phoneNumber": "222-222-2222",
+        "service": ["service21", "service22"]
       }
     ],
     "address": {
@@ -27,7 +37,7 @@
       "administrativeArea": "administrativeArea",
       "postalCode": "postalCode",
       "country": "country",
-      "electronicMailAddress": ["example1@example.com", "example2@example.com"]
+      "electronicMailAddress": ["example@example1.com", "example@example2.com"]
     }
   }, {
     "contactId": "1",

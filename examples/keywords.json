@@ -1,5 +1,76 @@
 [
   {
+    "keyword": ["keyword1", "keyword2"],
+    "keywordType": "keywordType",
+    "thesaurus": {
+      "title": "title",
+      "date": [
+        {
+          "date": "1111-11-11",
+          "dateType": "dateType1"
+        }, {
+          "date": "1112-11-11",
+          "dateType": "dateType2"
+        }
+      ],
+      "edition": "edition",
+      "responsibleParty": [
+        {
+          "contactId": "contactId1",
+          "role": "role1"
+        }, {
+          "contactId": "contactId2",
+          "role": "role2"
+        }
+      ],
+      "presentationForm": ["presentationForm1", "presentationForm2"],
+      "identifier": [
+        {
+          "identifier": "identifier1",
+          "type": "type1",
+          "authority": {
+            "title": "title",
+            "date": [
+              {
+                "date": "1111-11-11",
+                "dateType": "dateType1"
+              }
+            ],
+            "responsibleParty": [
+              {
+                "contactId": "contactId1",
+                "role": "role1"
+              }
+            ],
+            "onlineResource": [
+              {
+                "uri": "http://thisisanexample1.com",
+                "protocol": "protocol1",
+                "name": "name1",
+                "description": "description1",
+                "function": "function1"
+              }
+            ]
+          }
+        }
+      ],
+      "onlineResource": [
+        {
+          "uri": "http://thisisanexample1.com",
+          "protocol": "protocol1",
+          "name": "name1",
+          "description": "description1",
+          "function": "function1"
+        }, {
+          "uri": "http://thisisanexample2.com",
+          "protocol": "protocol2",
+          "name": "name2",
+          "description": "description2",
+          "function": "function2"
+        }
+      ]
+    }
+  }, {
     "keyword": ["Oceans > Ocean temperature > Thermocline", "Oceans > Ocean Temperature > Water Temperature", "Oceans > Ocean Heat Budget > Heat Flux"],
     "keywordType": "theme",
     "thesaurus": {

@@ -1,5 +1,17 @@
 [
   {
+    "maintenanceFrequency": "maintenanceFrequency",
+    "maintenanceNote": ["maintenanceNote1", "maintenanceNote2"],
+    "maintenanceContact": [
+      {
+        "contactId": "contactId1",
+        "role": "role1"
+      }, {
+        "contactId": "contactId2",
+        "role": "role2"
+      }
+    ]
+  }, {
     "maintenanceFrequency": "annually",
     "maintenanceNote": ["metadata is updated each year after data from that year has been added to the dataset", "Oh, and this is a second note."],
     "maintenanceContact": [

@@ -2,6 +2,138 @@
   {
     "dictionaryInfo": {
       "citation": {
+        "title": "title",
+        "date": [
+          {
+            "date": "1111-11-11",
+            "dateType": "dateType1"
+          }, {
+            "date": "1112-11-11",
+            "dateType": "dateType2"
+          }
+        ],
+        "edition": "edition",
+        "responsibleParty": [
+          {
+            "contactId": "contactId1",
+            "role": "role1"
+          }, {
+            "contactId": "contactId2",
+            "role": "role2"
+          }
+        ],
+        "onlineResource": [
+          {
+            "uri": "http://thisisanexample1.com",
+            "protocol": "protocol1",
+            "name": "name1",
+            "description": "description1",
+            "function": "function1"
+          }, {
+            "uri": "http://thisisanexample2.com",
+            "protocol": "protocol2",
+            "name": "name2",
+            "description": "description2",
+            "function": "function2"
+          }
+        ]
+      },
+      "description": "description",
+      "resourceType": "resourceType",
+      "language": "language"
+    },
+    "domain": [
+      {
+        "domainId": "domainId1",
+        "commonName": "commonName1",
+        "codeName": "codeName1",
+        "description": "description1",
+        "member": [
+          {
+            "name": "name11",
+            "value": "value11",
+            "definition": "definition11"
+          }, {
+            "name": "name12",
+            "value": "value12",
+            "definition": "definition12"
+          }
+        ]
+      }, {
+        "domainId": "domainId2",
+        "commonName": "commonName2",
+        "codeName": "codeName2",
+        "description": "description2",
+        "member": [
+          {
+            "name": "name21",
+            "value": "value21",
+            "definition": "definition21"
+          }, {
+            "name": "name22",
+            "value": "value22",
+            "definition": "definition22"
+          }
+        ]
+      }
+    ],
+    "entity": [
+      {
+        "entityId": "entityId1",
+        "commonName": "commonName1",
+        "codeName": "codeName1",
+        "definition": "definition1",
+        "primaryKeyAttributeCodeName": ["primaryKeyAttributeCodeName11", "primaryKeyAttributeCodeName12"],
+        "index": [
+          {
+            "codeName": "codeName11",
+            "allowDuplicates": false,
+            "attributeCodeName": ["attributeCodeName111", "attributeCodeName112"]
+          }, {
+            "codeName": "codeName12",
+            "allowDuplicates": false,
+            "attributeCodeName": ["attributeCodeName121", "attributeCodeName122"]
+          }
+        ],
+        "attribute": [
+          {
+            "commonName": "commonName11",
+            "codeName": "codeName11",
+            "definition": "definition11",
+            "dataType": "dataType11",
+            "allowNull": true,
+            "units": "units11",
+            "domainId": "domainId11",
+            "minValue": "minValue11",
+            "maxValue": "maxValue11"
+          }, {
+            "commonName": "commonName12",
+            "codeName": "codeName12",
+            "definition": "definition12",
+            "dataType": "dataType12",
+            "allowNull": true,
+            "units": "units12",
+            "domainId": "domainId12",
+            "minValue": "minValue12",
+            "maxValue": "maxValue12"
+          }
+        ],
+        "foreignKey": [
+          {
+            "localAttributeCodeName": ["localAttributeCodeName111", "localAttributeCodeName112"],
+            "referencedEntityCodeName": "referencedEntityCodeName11",
+            "referencedAttributeCodeName": ["referencedAttributeCodeName111", "referencedAttributeCodeName112"]
+          }, {
+            "localAttributeCodeName": ["localAttributeCodeName121", "localAttributeCodeName122"],
+            "referencedEntityCodeName": "referencedEntityCodeName12",
+            "referencedAttributeCodeName": ["referencedAttributeCodeName121", "referencedAttributeCodeName122"]
+          }
+        ]
+      }
+    ]
+  }, {
+    "dictionaryInfo": {
+      "citation": {
         "title": "Project Metadata Database",
         "date": [
           {

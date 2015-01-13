@@ -1,12 +1,152 @@
 [
   {
+    "scope": "scope",
+    "lineage": {
+      "statement": "statement",
+      "processStep": [
+        {
+          "stepId": "stepId1",
+          "description": "description1",
+          "rationale": "rationale1",
+          "dateTime": "1111-11-11",
+          "processor": [
+            {
+              "contactId": "contactId11",
+              "role": "role11"
+            }, {
+              "contactId": "contactId12",
+              "role": "role12"
+            }
+          ]
+        }, {
+          "stepId": "stepId2",
+          "description": "description2",
+          "rationale": "rationale2",
+          "dateTime": "1112-11-11",
+          "processor": [
+            {
+              "contactId": "contactId21",
+              "role": "role21"
+            }, {
+              "contactId": "contactId22",
+              "role": "role22"
+            }
+          ]
+        }
+      ],
+      "source": [
+        {
+          "description": "description1",
+          "citation": {
+            "title": "title",
+            "date": [
+              {
+                "date": "1111-11-11",
+                "dateType": "dateType1"
+              }, {
+                "date": "1112-11-11",
+                "dateType": "dateType2"
+              }
+            ],
+            "edition": "edition",
+            "responsibleParty": [
+              {
+                "contactId": "contactId1",
+                "role": "role1"
+              }, {
+                "contactId": "contactId2",
+                "role": "role2"
+              }
+            ],
+            "presentationForm": ["presentationForm1", "presentationForm2"],
+            "identifier": [
+              {
+                "identifier": "identifier1",
+                "type": "type1",
+                "authority": {
+                  "title": "title",
+                  "date": [
+                    {
+                      "date": "1111-11-11",
+                      "dateType": "dateType1"
+                    }
+                  ],
+                  "responsibleParty": [
+                    {
+                      "contactId": "contactId1",
+                      "role": "role1"
+                    }
+                  ],
+                  "onlineResource": [
+                    {
+                      "uri": "http://thisisanexample1.com",
+                      "protocol": "protocol1",
+                      "name": "name1",
+                      "description": "description1",
+                      "function": "function1"
+                    }
+                  ]
+                }
+              }
+            ],
+            "onlineResource": [
+              {
+                "uri": "http://thisisanexample1.com",
+                "protocol": "protocol1",
+                "name": "name1",
+                "description": "description1",
+                "function": "function1"
+              }, {
+                "uri": "http://thisisanexample2.com",
+                "protocol": "protocol2",
+                "name": "name2",
+                "description": "description2",
+                "function": "function2"
+              }
+            ]
+          },
+          "processStep": [
+            {
+              "stepId": "stepId11",
+              "description": "description11",
+              "rationale": "rationale11",
+              "dateTime": "1111-11-11",
+              "processor": [
+                {
+                  "contactId": "contactId111",
+                  "role": "role111"
+                }, {
+                  "contactId": "contactId112",
+                  "role": "role112"
+                }
+              ]
+            }, {
+              "stepId": "stepId22",
+              "description": "description22",
+              "rationale": "rationale22",
+              "dateTime": "1122-11-11",
+              "processor": [
+                {
+                  "contactId": "contactId221",
+                  "role": "role221"
+                }, {
+                  "contactId": "contactId222",
+                  "role": "role222"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }, {
     "scope": "dataset",
     "lineage": {
       "statement": "derived from that other dataset",
       "processStep": [
         {
           "stepId": "135b",
-          "description": "Manually combed through to find obvious junk data values, changed value to 999999999999999999999",
+          "description": "Manually combed through to find obvious junk data values, changed value to 9999",
           "rationale": "It had to be done!",
           "dateTime": "2011-08-23",
           "processor": [

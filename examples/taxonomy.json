@@ -2,6 +2,106 @@
   {
     "classificationSystem": [
       {
+        "title": "title1",
+        "date": [
+          {
+            "date": "1111-11-11",
+            "dateType": "dateType11"
+          }, {
+            "date": "1112-11-11",
+            "dateType": "dateType12"
+          }
+        ],
+        "edition": "edition",
+        "responsibleParty": [
+          {
+            "contactId": "contactId11",
+            "role": "role11"
+          }, {
+            "contactId": "contactId12",
+            "role": "role12"
+          }
+        ],
+        "presentationForm": ["presentationForm11", "presentationForm12"],
+        "identifier": [
+          {
+            "identifier": "identifier111",
+            "type": "type111",
+            "authority": {
+              "title": "title111",
+              "date": [
+                {
+                  "date": "1111-11-11",
+                  "dateType": "dateType111"
+                }
+              ],
+              "responsibleParty": [
+                {
+                  "contactId": "contactId111",
+                  "role": "role111"
+                }
+              ],
+              "onlineResource": [
+                {
+                  "uri": "http://thisisanexample111.com",
+                  "protocol": "protocol111",
+                  "name": "name111",
+                  "description": "description111",
+                  "function": "function111"
+                }
+              ]
+            }
+          }
+        ],
+        "onlineResource": [
+          {
+            "uri": "http://thisisanexample11.com",
+            "protocol": "protocol11",
+            "name": "name11",
+            "description": "description11",
+            "function": "function11"
+          }, {
+            "uri": "http://thisisanexample12.com",
+            "protocol": "protocol12",
+            "name": "name12",
+            "description": "description12",
+            "function": "function12"
+          }
+        ]
+      }
+    ],
+    "taxonGeneralScope": "taxonGeneralScope1",
+    "observer": [
+      {
+        "contactId": "contactId11",
+        "role": "role11"
+      }, {
+        "contactId": "contactId12",
+        "role": "role12"
+      }
+    ],
+    "taxonomicProcedure": "taxonomicProcedure1",
+    "voucher": {
+      "specimen": "specimen1",
+      "repository": {
+        "contactId": "contactId1",
+        "role": "role1"
+      }
+    },
+    "taxonClass": [
+      {
+        "common": "common11",
+        "taxonRank": "taxonRank11",
+        "taxonValue": "taxonValue11"
+      }, {
+        "common": "common12",
+        "taxonRank": "taxonRank12",
+        "taxonValue": "taxonValue12"
+      }
+    ]
+  }, {
+    "classificationSystem": [
+      {
         "title": "Otter Record Survey",
         "date": [
           {
@@ -15,8 +115,7 @@
             "role": "publisher"
           }
         ]
-      },
-      {
+      }, {
         "title": "Another Record Survey",
         "date": [
           {

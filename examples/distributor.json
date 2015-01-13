@@ -1,6 +1,66 @@
 [
   {
     "distributorContact": {
+      "contactId": "contactId",
+      "role": "role"
+    },
+    "distributionOrderProcess": [
+      {
+        "fees": "fees1",
+        "plannedAvailabilityDateTime": "1111-11-11",
+        "orderingInstructions": "orderingInstructions1",
+        "turnaround": "turnaround1"
+      }, {
+        "fees": "fees2",
+        "plannedAvailabilityDateTime": "1112-11-11",
+        "orderingInstructions": "orderingInstructions2",
+        "turnaround": "turnaround2"
+      }
+    ],
+    "distributorFormat": [
+      {
+        "formatName": "formatName1",
+        "version": "version1"
+      }, {
+        "formatName": "formatName2",
+        "version": "version2"
+      }
+    ],
+    "distributorTransferOptions": [
+      {
+        "online": [
+          {
+            "uri": "http://thisisanexample11.com",
+            "protocol": "protocol11",
+            "name": "name11",
+            "description": "description11",
+            "function": "function11"
+          }
+        ],
+        "offline": {
+          "name": "name1",
+          "mediumFormat": "mediumFormat1",
+          "mediumNote": "mediumNote1"
+        }
+      }, {
+        "online": [
+          {
+            "uri": "http://thisisanexample21.com",
+            "protocol": "protocol21",
+            "name": "name21",
+            "description": "description21",
+            "function": "function21"
+          }
+        ],
+        "offline": {
+          "name": "name2",
+          "mediumFormat": "mediumFormat2",
+          "mediumNote": "mediumNote2"
+        }
+      }
+    ]
+  }, {
+    "distributorContact": {
       "contactId": "4",
       "role": "custodian"
     },
