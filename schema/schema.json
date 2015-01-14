@@ -15,10 +15,12 @@
       "properties": {
         "name": {
           "type": "string",
+          "example": "../examples/full_example.json#/version",
           "description": "Schema identifier, i.e. the name of the schema standard."
         },
         "version": {
           "type": "string",
+          "example": "../examples/full_example.json#/version",
           "description": "Specific version number of the schema standard.",
           "pattern": "[0-9]\\.[0-9]\\.[0-9]"
         }
@@ -42,6 +44,7 @@
     "uri": {
       "type": "string",
       "description": "Location (address) for on-line access using a Uniform Resource Identifier, usually in the form of a Uniform Resource Locator (URL).",
+      "example": "../examples/uri.json",
       "translation": {
         "ISO 19115-2": ["CI_OnlineResource > linkage"]
       },

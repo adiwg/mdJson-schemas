@@ -62,9 +62,12 @@
           "name":"LinkedIn",
           "description":"Frank Urban's Linked In page",
           "function":"information"
+        },
+        {
+          "uri":"http://data.usgs.gov/climateMonitoring/region/show?region=alaska"
         }
       ],
-      "contactInstructions":"Like the message says, Leave a message if no answer",
+      "contactInstructions":"Leave a message if no answer.",
       "phoneBook":[
         {
           "phoneName":"office",
@@ -443,6 +446,8 @@
         ],
         "identifier":[
           {
+            "identifier":"32",
+            "type": "projectId",
             "authority":{
               "title":"ASC Project ID",
               "date":[
@@ -456,9 +461,17 @@
                   "contactId":"1",
                   "role":"owner"
                 }
+              ],
+              "onlineResource":[
+                {
+                  "uri":"http://alaska.usgs.gov/portal/project.php?project_id=32",
+                  "protocol":"HTTP",
+                  "name":"ASC Project page identifier",
+                  "description":"Links to Project page on the ASC website using the identifier.",
+                  "function":"information"
+                }
               ]
-            },
-            "identifier":"32"
+            }
           },
           {
             "authority":{

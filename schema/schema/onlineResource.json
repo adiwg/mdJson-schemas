@@ -3,6 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Information about accessing online resources and services.",
+  "example": "../../examples/full_example.json#/contact/1/onlineResource",
   "required": ["uri"],
   "additionalProperties": false,
   "properties": {

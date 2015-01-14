@@ -6,7 +6,7 @@
     "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
     "FGDC CSDGM": ["[single member of array] = cntinfo"]
   },
-  "example": "../../examples/contact.json",
+  "example": "../../examples/full_example.json#/contact",
   "type": "array",
   "minItems": 1,
   "uniqueItems": true,
@@ -22,6 +22,7 @@
   "definitions": {
     "phone": {
       "type": "object",
+      "example": "../../examples/full_example.json#/contact/1/phoneBook",
       "required": ["phoneNumber"],
       "properties": {
         "phoneName": {
@@ -51,6 +52,7 @@
     },
     "address": {
       "type": "object",
+      "example": "../../examples/full_example.json#/contact/1/address",
       "description": "Physical and email address at which the organization or individual may be contacted.",
       "translation": {
         "ISO 19115-2": ["CI_ResponsibleParty > contactInfo > CI_Contact > address > CI_Address"],
@@ -125,10 +127,12 @@
       "additionalProperties": true,
       "properties": {
         "contactId": {
-          "type": "string"
+          "type": "string",
+          "example": "../../examples/full_example.json#/contact/1"
         },
         "positionName": {
           "type": "string",
+          "example": "../../examples/full_example.json#/contact/1",
           "description": "Role or position of the person, usually within a given organization.",
           "translation": {
             "ISO 19115-2": ["CI_ResponsibleParty > positionName"],
@@ -141,6 +145,7 @@
         "onlineResource": {
           "type": "array",
           "description": "Information about accessing on-line resources and services. This may be a website, profile page, GitHub page, etc. related to the contact.",
+          "example": "../../examples/full_example.json#/contact/1",
           "translation": {
             "ISO 19115-2": ["CI_ResponsibleParty > contactInfo > CI_Contact > onlineResource > CI_OnlineResource"]
           },
@@ -152,6 +157,7 @@
         "contactInstructions": {
           "type": "string",
           "description": "Supplemental instructions on how or when to contact the individual or organization.",
+          "example": "../../examples/full_example.json#/contact/1",
           "translation": {
             "ISO 19115-2": ["CI_Contact > contactInstructions"],
             "FGDC CSDGM": ["cntinfo > cntinst"]
@@ -160,6 +166,7 @@
         "phoneBook": {
           "type": "array",
           "description": "Supplemental instructions on how or when to contact the individual or organization.",
+          "example": "../../examples/full_example.json#/contact/1",
           "translation": {
             "ISO 19115-2": ["CI_Contact > contactInstructions"],
             "FGDC CSDGM": ["cntinfo > cntinst"]
@@ -174,7 +181,6 @@
       "type": "object",
       "title": "individual",
       "description": "Contact information for a person.",
-      "example": "../../examples/contact.json#/0",
       "translation": {
         "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
         "FGDC CSDGM": ["cntinfo > cntperp"]
@@ -185,6 +191,7 @@
         "individualName": {
           "type": "string",
           "description": "Name of the person - surname, given name, title separated by a delimiter.",
+          "example": "../../examples/full_example.json#/contact/1",
           "translation": {
             "ISO 19115-2": ["CI_ResponsibleParty > individualName"],
             "FGDC CSDGM": ["cntinfo > cntperp > cntper"]
@@ -200,7 +207,7 @@
     "organization": {
       "type": "object",
       "title": "organization",
-      "example": "../../examples/contact.json#/1",
+      "example": "../../examples/full_example.json#/contact/0",
       "translation": {
         "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
         "FGDC CSDGM": ["cntinfo > cntorgp"]
@@ -225,6 +232,7 @@
     },
     "contactRef": {
       "type": "object",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/citation/responsibleParty",
       "additionalProperties": true,
       "required": ["contactId", "role"],
       "properties": {

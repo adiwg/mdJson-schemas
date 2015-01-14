@@ -16,6 +16,7 @@
     "citationBase": {
       "title": "base citation",
       "description": "A minimal citation object supporting only basic attributes.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/citation/identifier/0/authority",
       "translation": {
         "FGDC CSDGM": ["idinfo > citation > citeinfo"]
       },
@@ -39,6 +40,7 @@
           "minItems": 1,
           "items": {
             "type": "object",
+            "example": "../../examples/full_example.json#/metadata/resourceInfo/citation/date",
             "required": ["date", "dateType"],
             "properties": {
               "date": {
@@ -86,6 +88,7 @@
       "type": "object",
       "title": "full citation",
       "description": "A full citation object, all attributes are supported.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/citation",
       "properties": {
         "edition": {
           "type": "string",
@@ -126,6 +129,7 @@
     "identifier": {
       "title": "identifier",
       "description": "Assigned identifier for a resource.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/citation/identifier",
       "translation": {
         "ISO 19115-2": ["MD_Identifier"]
       },
@@ -148,6 +152,7 @@
         },
         "authority": {
           "description": "Citation for the authority issuing the identifier.",
+          "example": "../../examples/full_example.json#/metadata/resourceInfo/citation/identifier",
           "translation": {
             "ISO 19115-2": ["MD_Identifier > authority > CI_Citation"]
           },
