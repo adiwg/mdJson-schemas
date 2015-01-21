@@ -154,6 +154,11 @@
           }
         ]
       },
+      "resourceTimePeriod": {
+        "description": "",
+        "beginPosition": "0000-00-00",
+        "endPosition": "0000-00-00"
+      },
       "pointOfContact": [
         {
           "contactId": "",
