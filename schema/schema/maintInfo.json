@@ -3,6 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Information about the maintenance of a resource.",
+  "example": "../../examples/full_example.json#/metadata/metadataInfo/metadataMaintenance",
   "translation": {
     "ISO 19115-2": ["MD_MaintenanceInformation"]
   },

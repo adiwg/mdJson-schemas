@@ -180,6 +180,7 @@
     "individual": {
       "type": "object",
       "title": "individual",
+      "example": "../../examples/full_example.json#/contact/1",
       "description": "Contact information for a person.",
       "translation": {
         "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
