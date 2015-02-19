@@ -33,7 +33,10 @@
       "$ref": "schema/metadata.json"
     },
     "dataDictionary": {
-      "$ref": "schema/dataDictionary.json"
+      "type": "array",
+      "items": {
+        "$ref": "schema/dataDictionary.json"
+      }
     }
   },
   "definitions": {

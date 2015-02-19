@@ -623,7 +623,6 @@
               "id": "",
               "bbox": [0, 0, 0, 0],
               "properties": {
-                "name": "",
                 "description": "",
                 "includesData": true
               },
@@ -976,87 +975,91 @@
       }
     ]
   },
-  "dataDictionary": {
-    "dictionaryInfo": {
-      "citation": {
-        "title": "",
-        "date": [
-          {
-            "date": "0000-00-00",
-            "dateType": ""
-          }
-        ],
-        "edition": "",
-        "responsibleParty": [
-          {
-            "contactId": "",
-            "role": ""
-          }
-        ],
-        "onlineResource": [
-          {
-            "uri": "http://thisisanexample.com",
-            "protocol": "",
-            "name": "",
-            "description": "",
-            "function": ""
-          }
-        ]
-      },
-      "description": "",
-      "resourceType": "",
-      "language": ""
-    },
-    "domain": [
-      {
-        "domainId": "",
-        "commonName": "",
-        "codeName": "",
+  "dataDictionary": [
+    {
+      "dictionaryInfo": {
+        "citation": {
+          "title": "",
+          "date": [
+            {
+              "date": "0000-00-00",
+              "dateType": ""
+            }
+          ],
+          "edition": "",
+          "responsibleParty": [
+            {
+              "contactId": "",
+              "role": ""
+            }
+          ],
+          "onlineResource": [
+            {
+              "uri": "http://thisisanexample.com",
+              "protocol": "",
+              "name": "",
+              "description": "",
+              "function": ""
+            }
+          ]
+        },
         "description": "",
-        "member": [
-          {
-            "name": "",
-            "value": "",
-            "definition": ""
-          }
-        ]
-      }
-    ],
-    "entity": [
-      {
-        "entityId": "",
-        "commonName": "",
-        "codeName": "",
-        "definition": "",
-        "primaryKeyAttributeCodeName": [""],
-        "index": [
-          {
-            "codeName": "",
-            "allowDuplicates": false,
-            "attributeCodeName": [""]
-          }
-        ],
-        "attribute": [
-          {
-            "commonName": "",
-            "codeName": "",
-            "definition": "",
-            "dataType": "",
-            "allowNull": true,
-            "units": "",
-            "domainId": "",
-            "minValue": "",
-            "maxValue": ""
-          }
-        ],
-        "foreignKey": [
-          {
-            "localAttributeCodeName": [""],
-            "referencedEntityCodeName": "",
-            "referencedAttributeCodeName": [""]
-          }
-        ]
-      }
-    ]
-  }
+        "resourceType": "",
+        "language": ""
+      },
+      "domain": [
+        {
+          "domainId": "",
+          "commonName": "",
+          "codeName": "",
+          "description": "",
+          "member": [
+            {
+              "name": "",
+              "value": "",
+              "definition": ""
+            }
+          ]
+        }
+      ],
+      "entity": [
+        {
+          "entityId": "",
+          "commonName": "",
+          "codeName": "",
+          "alias": [""],
+          "definition": "",
+          "primaryKeyAttributeCodeName": [""],
+          "index": [
+            {
+              "codeName": "",
+              "allowDuplicates": false,
+              "attributeCodeName": [""]
+            }
+          ],
+          "attribute": [
+            {
+              "commonName": "",
+              "codeName": "",
+              "alias": [""],
+              "definition": "",
+              "dataType": "",
+              "allowNull": true,
+              "units": "",
+              "domainId": "",
+              "minValue": "",
+              "maxValue": ""
+            }
+          ],
+          "foreignKey": [
+            {
+              "localAttributeCodeName": [""],
+              "referencedEntityCodeName": "",
+              "referencedAttributeCodeName": [""]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

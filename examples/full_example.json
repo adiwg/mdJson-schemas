@@ -2305,7 +2305,7 @@
       }
     ]
   },
-  "dataDictionary": {
+  "dataDictionary": [{
     "dictionaryInfo": {
       "citation": {
         "title": "Project Metadata Database",
@@ -2451,6 +2451,7 @@
         "entityId": "entity001",
         "commonName": "agency",
         "codeName": "AGENCY",
+        "alias": ["partners"],
         "definition": "Organizations providing some contribution to Alaska Science Center research.",
         "primaryKeyAttributeCodeName": ["agency_id"],
         "index": [
@@ -2464,6 +2465,7 @@
           {
             "commonName": "agency ID",
             "codeName": "agency_id",
+            "alias": ["id", "agencyid"],
             "definition": "Unique sequential ID for the agency assigned by the database.",
             "dataType": "integer",
             "allowNull": false
@@ -2715,5 +2717,5 @@
         ]
       }
     ]
-  }
+  }]
 }

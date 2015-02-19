@@ -89,6 +89,12 @@
           "codeName": {
             "type": "string"
           },
+          "alias": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "definition": {
             "type": "string"
           },
@@ -132,6 +138,12 @@
                 },
                 "codeName": {
                   "type": "string"
+                },
+                "alias": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "definition": {
                   "type": "string"
