@@ -82,6 +82,7 @@
         "entityId": "entityId1",
         "commonName": "commonName1",
         "codeName": "codeName1",
+        "alias": ["alias11", "alias12"],
         "definition": "definition1",
         "primaryKeyAttributeCodeName": ["primaryKeyAttributeCodeName11", "primaryKeyAttributeCodeName12"],
         "index": [
@@ -99,6 +100,7 @@
           {
             "commonName": "commonName11",
             "codeName": "codeName11",
+            "alias": ["alias111", "alias112"],
             "definition": "definition11",
             "dataType": "dataType11",
             "allowNull": true,
