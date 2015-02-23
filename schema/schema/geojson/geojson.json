@@ -3,6 +3,7 @@
   "id": "geojson.json#",
   "title": "GeoJSON object",
   "description": "GeoJSON is a format for encoding a variety of geographic data structures. A GeoJSON object may represent a geometry, a feature, or a collection of features. \n\nGeoJSON supports the following geometry types: Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon, and GeometryCollection. Features in GeoJSON contain a geometry object and additional properties, and a feature collection represents a list of features. \n\nSee http://geojson.org for the full specification.",
+  "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/0/geographicElement",
   "type": "object",
   "required": ["type"],
   "properties": {
@@ -29,6 +30,7 @@
     "geometryCollection": {
       "title": "GeometryCollection",
       "description": "A collection of geometry objects",
+      "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/1/geographicElement",
       "translation": {
         "ISO 19115-2": ["EX_Extent > geographicElement > EX_BoundingPolygon > polygon > MultiGeometry"]
       },

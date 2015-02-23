@@ -2,6 +2,7 @@
   "id": "resolution.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Information about the scale of the geographic extent.",
+  "example": "../../examples/full_example.json#/metadata/resourceInfo/spatialResolution",
   "translation": {
     "ISO 19115-2": ["MD_Resolution"]
   },
@@ -10,6 +11,7 @@
       "type": "object",
       "title": "scaleFactor",
       "description": "Scale of geographic extent",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/spatialResolution",
       "required": ["equivalentScale"],
       "additionalProperties": true,
       "properties": {
@@ -24,6 +26,7 @@
     }, {
       "type": "object",
       "title": "distance",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/spatialResolution",
       "description": "Scale of geographic extent expressed in ground distance parameters.",
       "required": ["distance"],
       "additionalProperties": true,

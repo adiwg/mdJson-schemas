@@ -3,6 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Information about the geographic extent of the resource.",
+  "example": "../../examples/full_example.json#/metadata/resourceInfo/extent",
   "translation": {
     "ISO 19115-2": ["EX_Extent"]
   },
@@ -19,9 +20,11 @@
       "type": "array",
       "description": "A grouping of geographic objects that comprises all or part of the extent.",
       "translation": {
-        "ISO 19115-2": ["EX_Extent > geographicElement >"]
+        "ISO 19115-2": ["EX_Extent > geographicElement"]
       },
       "items": {
+        "type": "object",
+        "example": "../../examples/full_example.json#/metadata/resourceInfo/extent/0/geographicElement",
         "properties": {
           "type": {
             "enum": ["Feature", "FeatureCollection", "GeometryCollection", "Point", "MultiPoint", "LineString", "MultiLineString", "Polygon", "MultiPolygon"],
@@ -80,6 +83,7 @@
     "timePeriod": {
       "type": "object",
       "description": "A span of time represented by a start date/time and an ending date/time.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/extent/0/temporalElement/timePeriod/0",
       "additionalProperties": false,
       "properties": {
         "id": {

@@ -3,6 +3,7 @@
   "id": "geometry.json#",
   "title": "geometry",
   "description": "A geometry is a GeoJSON object where the type member's value is one of the following strings: \"Point\", \"MultiPoint\", \"LineString\", \"MultiLineString\", \"Polygon\", \"MultiPolygon\", or \"GeometryCollection\".\n\nA GeoJSON geometry object of any type other than \"GeometryCollection\" must have a member with the name \"coordinates\". The value of the coordinates member is always an array. The structure for the elements in this array is determined by the type of geometry.",
+  "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/0/geographicElement",
   "translation": {
     "ISO 19115-2": ["EX_Extent > geographicElement > EX_BoundingPolygon > polygon > [Point | LineString | Polygon > [interior | exterior] | MultiGeometry]"]
   },
@@ -11,7 +12,10 @@
   "oneOf": [
     {
       "title": "Point",
+      "type": "object",
+
       "description": "A point geometry object.",
+      "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/0/geographicElement/0",
       "translation": {
         "ISO 19115-2": ["EX_Extent > geographicElement > EX_BoundingPolygon > polygon > Point"]
       },
@@ -30,7 +34,10 @@
       }
     }, {
       "title": "MultiPoint",
+      "type": "object",
+
       "description": "A geographic object comprised of multiple points.",
+      "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/0/geographicElement/3",
       "translation": {
         "ISO 19115-2": ["EX_Extent > geographicElement > EX_BoundingPolygon > polygon > MultiGeometry > geometryMembers > Point[ ]"]
       },
@@ -49,7 +56,9 @@
       }
     }, {
       "title": "LineString",
+      "type": "object",
       "description": "A geometry object comprised of a minimum of two positions.",
+      "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/0/geographicElement/1",
       "translation": {
         "ISO 19115-2": ["EX_Extent > geographicElement > EX_BoundingPolygon > polygon > LineString"]
       },
@@ -68,7 +77,9 @@
       }
     }, {
       "title": "MultiLineString",
+      "type": "object",
       "description": "A geometry object comprised of one or more LineStrings.",
+      "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/0/geographicElement/4",
       "translation": {
         "ISO 19115-2": ["EX_Extent > geographicElement > EX_BoundingPolygon > polygon > MultiGeometry > geometryMembers > LineString[ ]"]
       },
@@ -90,7 +101,9 @@
       }
     }, {
       "title": "Polygon",
+      "type": "object",
       "description": "A geometry object that is composed of a set of LinearRings. A LinearRing is a closed LineString with 4 or more positions. The first and last positions are equivalent (they represent equivalent points).\n\nFor Polygons with multiple rings, the first must be the exterior ring and any others must be interior rings or holes.",
+      "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/0/geographicElement/2",
       "translation": {
         "ISO 19115-2": ["EX_Extent > geographicElement > EX_BoundingPolygon > polygon > Polygon"]
       },
@@ -105,7 +118,9 @@
       }
     }, {
       "title": "MultiPolygon",
+      "type": "object",
       "description": "A geometry object comprised of multiple polygons. ",
+      "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/0/geographicElement/5",
       "translation": {
         "ISO 19115-2": ["EX_Extent > geographicElement > EX_BoundingPolygon > polygon > MultiGeometry > geometryMembers > Polygon[ ]"]
       },
@@ -162,7 +177,7 @@
     },
     "linearRing": {
       "title": "LinearRing",
-      "description": "An array of four positions where the first equals the last",
+      "description": "An array of a minimum of four positions where the first equals the last",
       "allOf": [
         {
           "$ref": "#/definitions/positionArray"

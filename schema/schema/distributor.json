@@ -141,6 +141,7 @@
     "format": {
       "type": "object",
       "description": "Provides information about the format used by the distributor.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/resourceNativeFormat",
       "translation": {
         "ISO 19115-2": ["MD_Format"],
         "FGDC CSDGM": ["distinfo > stdorder > digform"]

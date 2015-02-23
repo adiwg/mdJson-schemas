@@ -2,6 +2,7 @@
   "id": "keyword.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "schema for a keyword entry",
+  "example": "../../examples/full_example.json#/metadata/resourceInfo/keyword",
   "type": "object",
   "required": ["keyword"],
   "additionalProperties": false,
@@ -27,6 +28,7 @@
     },
     "thesaurus": {
       "description": "Name of the formally registered thesaurus or a similar authoritative source of keywords.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/keyword/0/thesaurus",
       "translation": {
         "ISO 19115-2": ["MD_Keywords > thesaurusName > CI_Citation"],
         "FGDC CSDGM": ["idinfo>keywords>theme>themekt", "idinfo>keywords>place>placekt", "idinfo>keywords>temporal>tempkt", "idinfo>keywords>stratum>stratkt"]

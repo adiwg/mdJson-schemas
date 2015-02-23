@@ -3,6 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Description of ways in which the resource is currently or has been used.",
+  "example": "../../examples/full_example.json#/metadata/resourceInfo/resourceSpecificUsage/0",
   "translation": {
     "ISO 19115-2": ["MD_Usage"]
   },

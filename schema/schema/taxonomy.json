@@ -3,6 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Information on the taxa (1 or more) included in the data set, including keywords, taxonomic system and coverage information, and taxonomic classification system.",
+  "example": "../../examples/full_example.json#/metadata/resourceInfo/taxonomy",
   "translation": {
     "ISO 19115-2": ["MD_TaxonSys"],
     "FGDC CSDGM": ["idinfo > taxonomy"]
@@ -50,6 +51,7 @@
     "voucher": {
       "type": "object",
       "description": "Information on the types of specimen, the repository, and the individuals who identified the vouchers.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/taxonomy",
       "translation": {
         "ISO 19115-2": ["MD_TaxonSys > voucher > MD_Vouchers"],
         "FGDC CSDGM": ["idinfo > taxonomy > taxonsys > vouchers"]
@@ -66,6 +68,7 @@
         },
         "repository": {
           "description": "Information about the curator or contact person and/or agency responsible for the specimens.",
+          "example": "../../examples/full_example.json#/metadata/resourceInfo/taxonomy/voucher",
           "translation": {
             "ISO 19115-2": ["MD_Vouchers > reposit > CI_ResponsibleParty"],
             "FGDC CSDGM": ["idinfo > taxonomy > taxonsys > vouchers > reposit"]
@@ -84,6 +87,7 @@
       "minItems": 1,
       "items": {
         "type": "object",
+        "example": "../../examples/full_example.json#/metadata/resourceInfo/taxonomy",
         "required": ["taxonRank", "taxonValue"],
         "additionalProperties": false,
         "properties": {

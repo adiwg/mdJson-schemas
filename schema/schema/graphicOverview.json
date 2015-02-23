@@ -1,6 +1,7 @@
 {
   "id": "graphicOverview.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "example": "../../examples/full_example.json#/metadata/resourceInfo/graphicOverview/0",
   "description": "schema for browse graphic",
   "type": "object",
   "required": ["fileName"],

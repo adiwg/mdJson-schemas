@@ -184,6 +184,7 @@
       "properties": {
         "useLimitation": {
           "type": "array",
+          "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint",
           "translation": {
             "ISO 19115-2": ["MD_DataIdentification > resourceConstraints > MD_Constraints[useLimitation]"]
           },
@@ -193,6 +194,7 @@
         },
         "legalConstraint": {
           "type": "array",
+          "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint/legalConstraint",
           "translation": {
             "ISO 19115-2": ["MI_Metadata > resourceConstraints > MD_LegalConstraints"]
           },
@@ -202,6 +204,7 @@
         },
         "securityConstraint": {
           "type": "array",
+          "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint/securityConstraint",
           "translation": {
             "ISO 19115-2": ["MI_Metadata > resourceConstraints > MD_SecurityConstraints"]
           },
