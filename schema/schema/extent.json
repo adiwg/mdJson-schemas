@@ -55,6 +55,7 @@
   "definitions": {
     "timeInstant": {
       "type": "object",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/extent/0/temporalElement/timeInstant/0",
       "required": ["timePosition"],
       "additionalProperties": false,
       "properties": {
@@ -130,6 +131,7 @@
     "temporalElement": {
       "type": "object",
       "description": "Temporal context for the resource.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/extent/0/temporalElement",
       "translation": {
         "ISO 19115-2": ["EX_Extent > temporalElement > EX_TemporalExtent"]
       },

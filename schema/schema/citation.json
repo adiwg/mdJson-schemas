@@ -162,6 +162,7 @@
     },
     "dictionary": {
       "type": "object",
+      "example": "../../examples/full_example.json#/dataDictionary/0/dictionaryInfo/citation",
       "required": ["title", "date"],
       "title": "dictionary citation",
       "description": "A citation object for data dictionaries.",

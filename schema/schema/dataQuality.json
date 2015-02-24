@@ -3,6 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Information about the quality of the resource.",
+  "example": "../../examples/full_example.json#/metadata/resourceInfo/dataQualityInfo",
   "translation": {
     "ISO 19115-2": ["DQ_DataQuality"],
     "FGDC CSDGM": ["dataqual"]
@@ -29,6 +30,7 @@
     "lineage": {
       "type": "object",
       "description": "Non-quantitative quality information about the lineage of the resource as specified by the scope.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/dataQualityInfo/0/lineage",
       "translation": {
         "ISO 19115-2": ["LI_Lineage"]
       },
@@ -67,6 +69,7 @@
     "processStep": {
       "type": "object",
       "description": "Process or methodology steps applied to development of the resource.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/dataQualityInfo/0/lineage/processStep",
       "translation": {
         "ISO 19115-2": ["LI_ProcessStep"]
       },
@@ -119,6 +122,7 @@
     "source": {
       "type": "object",
       "description": "Information about the source of the resource relative to the data lineage.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/dataQualityInfo/0/lineage/source",
       "translation": {
         "ISO 19115-2": ["LI_Source"]
       },

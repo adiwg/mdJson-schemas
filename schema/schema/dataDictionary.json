@@ -3,18 +3,20 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "A catalogue containing definitions and descriptions of the resource types, resource attributes, and resource associations.",
+  "example": "../../examples/full_example.json#/dataDictionary/0",
   "required": ["dictionaryInfo"],
-  "example": "../../examples/full_example.json#/metadata/dataDictionary",
   "additionalProperties": false,
   "properties": {
     "dictionaryInfo": {
       "type": "object",
       "description": "Information describing the dictionary and its source.",
+      "example": "../../examples/full_example.json#/dataDictionary/0/dictionaryInfo",
       "required": ["resourceType", "citation", "description"],
       "additionalProperties": false,
       "properties": {
         "citation": {
           "description": "Citation for the dictionary.",
+          "example": "../../examples/full_example.json#/dataDictionary/0/dictionaryInfo",
           "$ref": "citation.json#/definitions/dictionary"
         },
         "resourceType": {
@@ -36,6 +38,7 @@
       "items": {
         "type": "object",
         "description": "Information describing an enumerated list of values.",
+        "example": "../../examples/full_example.json#/dataDictionary/0/domain/0",
         "required": ["domainId", "codeName", "description", "member"],
         "additionalProperties": false,
         "properties": {
@@ -55,6 +58,7 @@
             "type": "array",
             "items": {
               "type": "object",
+              "example": "../../examples/full_example.json#/dataDictionary/0/domain/0/member",
               "required": ["name", "value", "definition"],
               "additionalProperties": false,
               "properties": {
@@ -77,6 +81,7 @@
       "type": "array",
       "items": {
         "type": "object",
+        "example": "../../examples/full_example.json#/dataDictionary/0/entity/1",
         "required": ["entityId", "codeName", "definition"],
         "additionalProperties": false,
         "properties": {
@@ -108,6 +113,7 @@
             "type": "array",
             "items": {
               "type": "object",
+              "example": "../../examples/full_example.json#/dataDictionary/0/entity/1/index",
               "required": ["codeName", "allowDuplicates", "attributeCodeName"],
               "additionalProperties": false,
               "properties": {
@@ -130,6 +136,7 @@
             "type": "array",
             "items": {
               "type": "object",
+              "example": "../../examples/full_example.json#/dataDictionary/0/entity/1/attribute",
               "required": ["codeName", "dataType", "definition", "allowNull"],
               "additionalProperties": false,
               "properties": {
@@ -173,6 +180,7 @@
             "type": "array",
             "items": {
               "type": "object",
+              "example": "../../examples/full_example.json#/dataDictionary/0/entity/1/foreignKey",
               "required": ["localAttributeCodeName", "referencedEntityCodeName", "referencedAttributeCodeName"],
               "additionalProperties": false,
               "properties": {

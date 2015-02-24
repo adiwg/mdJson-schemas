@@ -54,7 +54,9 @@
     },
     "feature": {
       "title": "Feature",
+      "type": "object",
       "description": "A GeoJSON object with the type \"Feature\" is a feature object. A feature object has a geometry, properties, and an optional identifier.",
+      "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/2/geographicElement/1",
       "required": ["geometry", "properties"],
       "properties": {
         "type": {
@@ -87,7 +89,9 @@
     },
     "featureCollection": {
       "title": "FeatureCollection",
+      "type": "object",
       "description": "A GeoJSON object comprised of multiple Feature objects.",
+      "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/3/geographicElement/0",
       "required": ["features"],
       "properties": {
         "type": {
@@ -107,6 +111,7 @@
         "features": {
           "type": "array",
           "description": "Set of Features constituting the FeatureCollection.",
+          "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/2/geographicElement",
           "translation": {
             "ISO 19115-2": ["geographicElement > EX_BoundingPolygon > polygon > MultiGeometry"]
           },
@@ -119,6 +124,7 @@
     "featureProperties": {
       "title": "FeatureProperties",
       "description": "JSON object containing information about a feature or collection.",
+      "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/2/geographicElement/1",
       "oneOf": [
         {
           "title": "null",
@@ -127,6 +133,7 @@
         }, {
           "type": "object",
           "title": "featureProperties",
+          "example": "../../../examples/full_example.json#/metadata/resourceInfo/extent/2/geographicElement/1",
           "properties": {
             "includesData": {
               "type": "boolean",

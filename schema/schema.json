@@ -34,6 +34,7 @@
     },
     "dataDictionary": {
       "type": "array",
+      "example": "../examples/full_example.json#/dataDictionary",
       "items": {
         "$ref": "schema/dataDictionary.json"
       }
