@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/adiwg/mdJson-schemas.svg?branch=master)](https://travis-ci.org/adiwg/mdJson-schemas)
+[![Gem Version](https://badge.fury.io/rb/adiwg-mdjson_schemas.svg)](http://badge.fury.io/rb/adiwg-mdjson_schemas)
 
 # mdJson-schemas
 
