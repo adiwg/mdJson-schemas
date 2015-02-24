@@ -1,13 +1,13 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'adiwg/json_schemas/version'
+require 'adiwg/mdjson_schemas/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "adiwg-json_schemas"
-  spec.version       = ADIWG::JsonSchemas::VERSION
+  spec.name          = "adiwg-mdjson_schemas"
+  spec.version       = ADIWG::MdjsonSchemas::VERSION
   spec.authors       = ["Josh Bradley, Stan Smith"]
-  spec.email         = ["jbradley@arcticlcc.org"]
+  spec.email         = ["adiwg@adiwg.org"]
   spec.description   = %q{JSON schemas for validating according to the the ADIwg project and data metadata standard. The schemas comply with JSON Schema draft version 4.}
   spec.summary       = %q{JSON schemas for the ADIwg metadata standard}
   spec.homepage      = "https://github.com/adiwg/mdJson-schemas"

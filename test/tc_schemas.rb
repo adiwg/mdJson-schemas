@@ -8,10 +8,10 @@
 require 'minitest/autorun'
 require 'json'
 require 'json-schema'
-require File.join(File.dirname(__FILE__),'..','lib', 'adiwg-json_schemas.rb')
+require File.join(File.dirname(__FILE__),'..','lib', 'adiwg-mdjson_schemas.rb')
 
 #json-schema patch
-require File.join(File.dirname(__FILE__),'..','lib', 'adiwg', 'json_schemas', 'validator.rb')
+require File.join(File.dirname(__FILE__),'..','lib', 'adiwg', 'mdjson_schemas', 'validator.rb')
 
 class TestExamples < Minitest::Test
 

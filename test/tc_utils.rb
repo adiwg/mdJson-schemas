@@ -6,21 +6,22 @@
 =end
 
 require 'minitest/autorun'
-require File.join(File.dirname(__FILE__),'..','lib', 'adiwg-json_schemas.rb')
+require File.join(File.dirname(__FILE__),'..','lib', 'adiwg-mdjson_schemas.rb')
 
 class TestUtils < Minitest::Test
     def test_examples_dir
-        errors = File.exist?(ADIWG::JsonSchemas::Utils.examples_dir)
+      puts ADIWG::MdjsonSchemas::Utils.examples_dir
+        errors = File.exist?(ADIWG::MdjsonSchemas::Utils.examples_dir)
         assert_equal( true, errors, failure_message = 'Examples directory does not exist.')
     end
 
     def test_schema_path
-        errors = File.file?(ADIWG::JsonSchemas::Utils.schema_path)
+        errors = File.file?(ADIWG::MdjsonSchemas::Utils.schema_path)
         assert_equal( true, errors, failure_message = 'File schema.json does not exist.')
     end
 
     def test_schema_dir
-        errors = File.exist?(ADIWG::JsonSchemas::Utils.schema_dir)
+        errors = File.exist?(ADIWG::MdjsonSchemas::Utils.schema_dir)
         assert_equal( true, errors, failure_message = 'Schema directory does not exist.')
     end
 end

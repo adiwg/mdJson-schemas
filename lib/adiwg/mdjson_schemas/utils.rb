@@ -1,5 +1,5 @@
 module ADIWG
-    module JsonSchemas
+    module MdjsonSchemas
         module Utils
             # Return the path to main schema.json file.
             def self.schema_path
