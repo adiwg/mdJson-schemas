@@ -8,7 +8,7 @@
     "ISO 19115-2": ["MD_Usage"]
   },
   "required": ["specificUsage", "userContactInfo"],
-  "additionalProperties": false,
+  "additionalProperties": true,
   "properties": {
     "specificUsage": {
       "type": "string",

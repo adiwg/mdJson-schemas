@@ -11,7 +11,7 @@
       "description": "Identifies the version of the JSON schema standard that applies to the metadata.",
       "example": "../examples/full_example.json#/version",
       "required": ["name", "version"],
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "type": "string",

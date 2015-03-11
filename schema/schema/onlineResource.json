@@ -5,7 +5,7 @@
   "description": "Information about accessing online resources and services.",
   "example": "../../examples/full_example.json#/contact/1/onlineResource",
   "required": ["uri"],
-  "additionalProperties": false,
+  "additionalProperties": true,
   "properties": {
     "uri": {
       "$ref": "../schema.json#/definitions/uri"

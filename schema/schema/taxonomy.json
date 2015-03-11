@@ -9,7 +9,7 @@
     "FGDC CSDGM": ["idinfo > taxonomy"]
   },
   "required": ["classificationSystem", "taxonomicProcedure", "taxonClass"],
-  "additionalProperties": false,
+  "additionalProperties": true,
   "properties": {
     "classificationSystem": {
       "type": "array",
@@ -89,7 +89,7 @@
         "type": "object",
         "example": "../../examples/full_example.json#/metadata/resourceInfo/taxonomy",
         "required": ["taxonRank", "taxonValue"],
-        "additionalProperties": false,
+        "additionalProperties": true,
         "properties": {
           "taxonRank": {
             "type": "string",

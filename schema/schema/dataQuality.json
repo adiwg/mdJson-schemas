@@ -9,7 +9,7 @@
     "FGDC CSDGM": ["dataqual"]
   },
   "required": ["scope"],
-  "additionalProperties": false,
+  "additionalProperties": true,
   "properties": {
     "scope": {
       "type": "string",
@@ -34,7 +34,7 @@
       "translation": {
         "ISO 19115-2": ["LI_Lineage"]
       },
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "statement": {
           "type": "string",
@@ -74,7 +74,7 @@
         "ISO 19115-2": ["LI_ProcessStep"]
       },
       "required": ["description"],
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "stepId": {
           "type": "string",
@@ -126,7 +126,7 @@
       "translation": {
         "ISO 19115-2": ["LI_Source"]
       },
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "description": {
           "type": "string",

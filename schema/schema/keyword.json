@@ -5,7 +5,7 @@
   "example": "../../examples/full_example.json#/metadata/resourceInfo/keyword",
   "type": "object",
   "required": ["keyword"],
-  "additionalProperties": false,
+  "additionalProperties": true,
   "properties": {
     "keyword": {
       "type": "array",

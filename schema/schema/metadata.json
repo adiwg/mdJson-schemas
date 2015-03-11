@@ -9,14 +9,14 @@
     "FGDC CSDGM": ["metadata"]
   },
   "required": ["resourceInfo"],
-  "additionalProperties": false,
+  "additionalProperties": true,
   "properties": {
     "metadataInfo": {
       "type": "object",
       "description": "General information about the metadata record.",
       "example": "../../examples/full_example.json#/metadata/metadataInfo",
       "required": ["metadataContact", "metadataCreationDate"],
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "metadataIdentifier": {
           "description": "Unique identifier for this metadata file.",
@@ -114,7 +114,7 @@
       "items": {
         "type": "object",
         "required": ["associationType", "resourceType"],
-        "additionalProperties": false,
+        "additionalProperties": true,
         "properties": {
           "associationType": {
             "type": "string",

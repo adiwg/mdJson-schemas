@@ -9,7 +9,7 @@
     "FGDC CSDGM": ["idinfo"]
   },
   "required": ["resourceType", "citation", "abstract", "status", "language", "pointOfContact"],
-  "additionalProperties": false,
+  "additionalProperties": true,
   "properties": {
     "resourceType": {
       "type": "string",

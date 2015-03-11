@@ -8,7 +8,7 @@
     "FGDC CSDGM": ["distinfo"]
   },
   "required": ["distributorContact"],
-  "additionalProperties": false,
+  "additionalProperties": true,
   "properties": {
     "distributorContact": {
       "description": "Party from whom the resource may be obtained. Note: This list need not be exhaustive.",
@@ -26,7 +26,7 @@
       },
       "items": {
         "type": "object",
-        "additionalProperties": false,
+        "additionalProperties": true,
         "properties": {
           "fees": {
             "type": "string",
@@ -82,7 +82,7 @@
           "ISO 19115-2": ["MD_Distributor > distributorTransferOptions > MD_DigitalTransferOptions"],
           "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt"]
         },
-        "additionalProperties": false,
+        "additionalProperties": true,
 
         "properties": {
           "online": {
@@ -104,7 +104,7 @@
               "ISO 19115-2": ["MD_DigitalTransferOptions > offline > MD_Medium"],
               "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt > offoptn"]
             },
-            "additionalProperties": false,
+            "additionalProperties": true,
 
             "properties": {
               "name": {
@@ -147,7 +147,7 @@
         "FGDC CSDGM": ["distinfo > stdorder > digform"]
       },
       "required": ["formatName"],
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "formatName": {
           "type": "string",
