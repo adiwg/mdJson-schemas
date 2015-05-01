@@ -209,6 +209,7 @@
       "type": "object",
       "title": "organization",
       "example": "../../examples/full_example.json#/contact/0",
+      "description": "Contact information for an organization.",
       "translation": {
         "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
         "FGDC CSDGM": ["cntinfo > cntorgp"]

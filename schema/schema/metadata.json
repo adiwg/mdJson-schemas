@@ -105,7 +105,7 @@
     },
     "associatedResource": {
       "type": "array",
-      "description": "Information about a resource related to the data resource, such as: study, dataset, project, etc. An associated resource may be a child reference, or reference a larger work, such as an initiative.",
+      "description": "Other resources which are directly related to the subject resource such as parent, child, or sibling datasets or projects.",
       "example": "../../examples/full_example.json#/metadata/associatedResource",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > aggregationInfo > MD_AggregateInformation"],
@@ -118,7 +118,7 @@
         "properties": {
           "associationType": {
             "type": "string",
-            "description": "Identifies the type of association, such as: source, cross reference, etc.",
+            "description": "Identifies how the associated resource is related to the subject resource such as 'is a component of', 'larger work citation', 'cross reference', etc.",
             "translation": {
               "ISO 19115-2": ["MD_AggregateInformation > associationType [DS_AssociationTypeCode]"]
             }
@@ -151,7 +151,7 @@
     },
     "additionalDocumentation": {
       "type": "array",
-      "description": "Additional references associated with the resource, such as: web sites, documents for additional reading, etc.",
+      "description": "Other documents related to, but not defining, the resource such as factsheets, data catalog pages, award documents, proposals, and informational websites.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > aggregationInfo > MD_AggregateInformation > aggregateDataSetName > CI_Citation"],
         "FGDC CSDGM": ["idinfo > crossref "]

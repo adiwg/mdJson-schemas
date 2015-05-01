@@ -2,7 +2,7 @@
   "id": "graphicOverview.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "example": "../../examples/full_example.json#/metadata/resourceInfo/graphicOverview/0",
-  "description": "schema for browse graphic",
+  "description": "Provides a path or link to images, maps, flow charts, models, etc. that illustrate the resource.",
   "type": "object",
   "required": ["fileName"],
   "additionalProperties": true,

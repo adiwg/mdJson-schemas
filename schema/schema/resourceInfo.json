@@ -167,7 +167,7 @@
     },
     "graphicOverview": {
       "type": "array",
-      "description": "A browse graphic associated with the resource in which to gain an at-a-glance referencing for the resource, such as geographic location and extent.",
+      "description": "Provides a path or link to images, maps, flow charts, models, etc. that illustrate the resource.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > graphicOverview > MD_BrowseGraphic"]
       },
