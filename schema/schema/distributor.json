@@ -75,13 +75,13 @@
     },
     "distributorTransferOptions": {
       "type": "array",
+      "description": "Describes method and media by which a resource is obtained from the distributor.",
+      "translation": {
+        "ISO 19115-2": ["MD_Distributor > distributorTransferOptions > MD_DigitalTransferOptions"],
+        "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt"]
+      },
       "items": {
         "type": "object",
-        "description": "Identifier whether resource is available on-line or by off-line procedure.",
-        "translation": {
-          "ISO 19115-2": ["MD_Distributor > distributorTransferOptions > MD_DigitalTransferOptions"],
-          "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt"]
-        },
         "additionalProperties": true,
 
         "properties": {

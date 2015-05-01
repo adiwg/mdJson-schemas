@@ -12,21 +12,21 @@
   "properties": {
     "specificUsage": {
       "type": "string",
-      "description": "Brief description of the resource usage.",
+      "description": "A brief description about how the resource is being used.",
       "translation": {
         "ISO 19115-2": ["MD_Usage > specific usage"]
       }
     },
     "userDeterminedLimitation": {
       "type": "string",
-      "description": "Usage that the provider's have determined the resource not being suitable for.",
+      "description": "A brief description of applications, determined by the user, for which the resource is not suitable.",
       "translation": {
         "ISO 19115-2": ["MD_Usage > userDeterminedLimitations"]
       }
     },
     "userContactInfo": {
       "type": "array",
-      "description": "Identification of and means of communicating with the person(s) and organization(s) using the resource.",
+      "description": "Identification of the persons and/or organizations that are using the resource.",
       "translation": {
         "ISO 19115-2": ["MD_Usage > userContactInfo"]
       },

@@ -143,7 +143,7 @@
               }
             },
             "temporalElement": {
-              "description": "The temporal reference associated with an feature.",
+              "description": "The temporal reference associated with a feature.",
               "$ref": "../extent.json#/definitions/temporalElement"
             },
             "verticalElement": {

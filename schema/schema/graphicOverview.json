@@ -9,7 +9,7 @@
   "properties": {
     "fileName": {
       "type": "string",
-      "description": "Name of the file that contains a browse graphic for the resource.",
+      "description": "Name of the file that contains a graphic overview of the resource.",
       "translation": {
         "ISO 19115-2": ["MD_BrowseGraphic > filename"],
         "FGDC CSDGM": ["idinfo > browse > browsen"]
@@ -17,7 +17,7 @@
     },
     "fileDescription": {
       "type": "string",
-      "description": "Description of the browse graphic.",
+      "description": "Description of the graphic overview.",
       "translation": {
         "ISO 19115-2": ["MD_BrowseGraphic > fileDescription"],
         "FGDC CSDGM": ["idinfo > browse > browsed"]
@@ -25,14 +25,14 @@
     },
     "fileType": {
       "type": "string",
-      "description": "Format of the browse graphic, such as: PDF, JPEG, TIFF, etc.",
+      "description": "The format in which the illustration is encoded such as GIF, JPEG, PBM, PS, TIFF.",
       "translation": {
         "ISO 19115-2": ["MD_BrowseGraphic > fileType"],
         "FGDC CSDGM": ["idinfo > browse > browset"]
       }
     },
     "fileUri": {
-      "description": "URI of the browse graphic.",
+      "description": "URI of the graphic overview.",
       "translation": {
         "ISO 19115-2": ["MD_BrowseGraphic > filename @xlink:href"]
       },

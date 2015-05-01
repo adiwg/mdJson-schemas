@@ -60,7 +60,7 @@
       "properties": {
         "specimen": {
           "type": "string",
-          "description": "Word or phrase describing the type of specimen collected (e.g. herbarium specimens, blood samples, photographs, individuals, or batches). Example: \"herbarium specimens\", \"blood samples\", \"photographs\", \"individuals\", \"free text\".",
+          "description": "Word or phrase describing the type of specimen collected (e.g. 'herbarium specimens', 'blood samples', 'photographs', 'individuals', or 'batches').",
           "translation": {
             "ISO 19115-2": ["MD_Vouchers > specimen"],
             "FGDC CSDGM": ["idinfo > taxonomy > taxonsys > vouchers > specimens"]

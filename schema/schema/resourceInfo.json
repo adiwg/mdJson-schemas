@@ -275,7 +275,7 @@
     },
     "extent": {
       "type": "array",
-      "description": "Information about the geographic extent of the resource. A resource may have multiple extents.",
+      "description": "Information about the geographic, vertical, and temporal extent of the resource. A resource may have multiple extents.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > extent > EX_Extent"]
       },
@@ -285,7 +285,7 @@
     },
     "dataQualityInfo": {
       "type": "array",
-      "description": "Information about the quality of the resource.",
+      "description": "Information that describes the data quality, lineage, and/or processing steps that were applied to the whole or part of the data resource.",
       "translation": {
         "ISO 19115-2": ["MI_Metadata > dataQualityInfo > DQ_DataQuality"],
         "FGDC CSDGM": ["dataqual"]

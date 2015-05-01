@@ -2,7 +2,7 @@
   "id": "dataQuality.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "description": "Information about the quality of the resource.",
+  "description": "Information that describes the data quality, lineage, and/or processing steps that were applied to the whole or part of the data resource.",
   "example": "../../examples/full_example.json#/metadata/resourceInfo/dataQualityInfo",
   "translation": {
     "ISO 19115-2": ["DQ_DataQuality"],
@@ -29,7 +29,7 @@
   "definitions": {
     "lineage": {
       "type": "object",
-      "description": "Non-quantitative quality information about the lineage of the resource as specified by the scope.",
+      "description": "Procedural (non-quantitative) data quality information about the portion of the data resource identified by the data quality scope.",
       "example": "../../examples/full_example.json#/metadata/resourceInfo/dataQualityInfo/0/lineage",
       "translation": {
         "ISO 19115-2": ["LI_Lineage"]
@@ -38,14 +38,14 @@
       "properties": {
         "statement": {
           "type": "string",
-          "description": "General explanation of the data producer's knowledge about the lineage of a dataset.",
+          "description": "A general statement of the actions taken to verify, transform, repair, and integrate the data within the data quality scope.",
           "translation": {
             "ISO 19115-2": ["LI_Lineage > statement"]
           }
         },
         "processStep": {
           "type": "array",
-          "description": "Process or methodology steps applied to development of the resource.",
+          "description": "A brief statement describing an individual, non-trivial process or methodology step taken in development of the resource data within the data quality scope.",
           "translation": {
             "ISO 19115-2": ["LI_Lineage > processStep > LI_ProcessStep"]
           },
@@ -55,7 +55,7 @@
         },
         "source": {
           "type": "array",
-          "description": "Information about the source of the resource relative to the data quality scope.",
+          "description": "Information about the source data used in creating the data identified by the data quality scope.",
           "translation": {
             "ISO 19115-2": ["LI_Lineage > source > LI_Source"],
             "FGDC CSDGM": ["dataqual > lineage > srcinfo"]
@@ -121,7 +121,7 @@
     },
     "source": {
       "type": "object",
-      "description": "Information about the source of the resource relative to the data lineage.",
+      "description": "Information about the source data used in creating the data identified by the data quality scope.",
       "example": "../../examples/full_example.json#/metadata/resourceInfo/dataQualityInfo/0/lineage/source",
       "translation": {
         "ISO 19115-2": ["LI_Source"]
@@ -130,13 +130,13 @@
       "properties": {
         "description": {
           "type": "string",
-          "description": "Description of the source for the resource.",
+          "description": "A brief description about the source dataset used in creating the data identified by the data quality scope.",
           "translation": {
             "ISO 19115-2": ["LI_Source > description"]
           }
         },
         "citation": {
-          "description": "Citation for the source.",
+          "description": "A citation providing information about the source dataset, including an online resource or other access instructions.",
           "translation": {
             "ISO 19115-2": ["LI_Source > sourceCitation > CI_Citation"],
             "FGDC CSDGM": ["dataqual > lineage > srcinfo > srccite > citeinfo"]
@@ -145,7 +145,7 @@
         },
         "processStep": {
           "type": "array",
-          "description": "Process or methodology steps applied to the development of the source.",
+          "description": "A description of a non-trivial event or transformation taken to prepare the source data for use in creating the data identified by the data quality scope.",
           "translation": {
             "ISO 19115-2": ["LI_Source > sourceStep > LI_ProcessStep"]
           },

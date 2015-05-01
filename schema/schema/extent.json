@@ -2,7 +2,7 @@
   "id": "extent.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "description": "Information about the geographic extent of the resource.",
+  "description": "Information about the geographic, vertical, and temporal extent of a resource.",
   "example": "../../examples/full_example.json#/metadata/resourceInfo/extent",
   "translation": {
     "ISO 19115-2": ["EX_Extent"]
@@ -18,7 +18,7 @@
     },
     "geographicElement": {
       "type": "array",
-      "description": "A grouping of geographic objects that comprises all or part of the extent.",
+      "description": "An array of objects each describing a geographic boundary or location comprising all or a portion of the resource.",
       "translation": {
         "ISO 19115-2": ["EX_Extent > geographicElement"]
       },
@@ -40,7 +40,7 @@
     },
     "verticalElement": {
       "type": "array",
-      "description": "Vertical element of an extent.",
+      "description": "An array of objects each describing a vertical boundary comprising all or a portion of the resource.",
       "translation": {
         "ISO 19115-2": ["EX_Extent > verticalElement > EX_VerticalExtent "]
       },
@@ -49,7 +49,8 @@
       }
     },
     "temporalElement": {
-      "$ref": "#/definitions/temporalElement"
+      "$ref": "#/definitions/temporalElement",
+      "description": "An array of objects each describing a temporal boundary comprising all or a portion of the resource."
     }
   },
   "definitions": {
@@ -61,14 +62,14 @@
       "properties": {
         "id": {
           "type": "string",
-          "description": "A unique identifier for a temporal element.",
+          "description": "A unique identifier for the timeInstant.",
           "translation": {
             "ISO 19115-2": ["EX_TemporalExtent > extent > TimeInstant @id"]
           }
         },
         "description": {
           "type": "string",
-          "description": "Text associated with the time instance.",
+          "description": "A brief description providing relevant information about the date and time.",
           "translation": {
             "ISO 19115-2": ["EX_TemporalExtent > extent > TimeInstant > description"]
           }
@@ -83,20 +84,20 @@
     },
     "timePeriod": {
       "type": "object",
-      "description": "A span of time represented by a start date/time and an ending date/time.",
+      "description": "A span of time represented by a starting date-time and an ending date-time.",
       "example": "../../examples/full_example.json#/metadata/resourceInfo/extent/0/temporalElement/timePeriod/0",
       "additionalProperties": true,
       "properties": {
         "id": {
           "type": "string",
-          "description": "A unique identifier for a temporal element.",
+          "description": "A unique identifier for a time period.",
           "translation": {
             "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod @id"]
           }
         },
         "description": {
           "type": "string",
-          "description": "Text associated with the time instance.",
+          "description": "A brief description providing relevant information about the time period.",
           "translation": {
             "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod > description "]
           }
@@ -140,7 +141,7 @@
       "properties": {
         "timeInstant": {
           "type": "array",
-          "description": "A set of date time instances.",
+          "description": "A set of date-time instances, each with an associated identifier and description.",
           "translation": {
             "ISO 19115-2": ["EX_TemporalExtent > extent > TimeInstant"]
           },
@@ -150,7 +151,7 @@
         },
         "timePeriod": {
           "type": "array",
-          "description": "A set of time periods.",
+          "description": "A set of time periods(a span of time represented by a starting date-time and an ending date-time).",
           "translation": {
             "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod"]
           },
@@ -160,7 +161,7 @@
         },
         "date": {
           "type": "array",
-          "description": "A set of date times.",
+          "description": "A set of date-times.",
           "translation": {
             "ISO 19115-2": ["EX_TemporalExtent > extent > TimeInstant > timePosition"]
           },
