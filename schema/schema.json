@@ -34,6 +34,10 @@
     },
     "dataDictionary": {
       "type": "array",
+      "description": "A description of the contents, format and structure of the physical objects in a data resource.",
+      "translation": {
+        "ISO 19115-2": ["FC_FeatureCatalogue"]
+      },
       "example": "../examples/full_example.json#/dataDictionary",
       "items": {
         "$ref": "schema/dataDictionary.json"

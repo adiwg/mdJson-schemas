@@ -27,7 +27,7 @@
           "type": "string",
           "description": "Name by which the cited resource is known.",
           "translation": {
-            "ISO 19115-2": ["CI_Citation > title"],
+            "ISO 19115-2": ["CI_Citation > title", "FC_FeatureCatalogue > name"],
             "FGDC CSDGM": ["idinfo > citation > citeinfo > title"]
           }
         },
@@ -45,7 +45,7 @@
             "properties": {
               "date": {
                 "translation": {
-                  "ISO 19115-2": ["CI_Date > date"],
+                  "ISO 19115-2": ["CI_Date > date", "FC_FeatureCatalogue > versionDate"],
                   "FGDC CSDGM": ["idinfo > citation > citeinfo > pubdate"]
                 },
                 "$ref": "../schema.json#/definitions/date"
@@ -64,7 +64,7 @@
           "type": "array",
           "description": "Identification of, and means of communication with, person(s) and organization(s) associated with the cited resource.",
           "translation": {
-            "ISO 19115-2": ["CI_Citation > citedResponsibleParty > CI_ResponsibleParty"],
+            "ISO 19115-2": ["CI_Citation > citedResponsibleParty > CI_ResponsibleParty", "FC_FeatureCatalogue > producer > CI_ResponisbleParty"],
             "FGDC CSDGM": ["idinfo > ptcontac > cntinfo"]
           },
           "minItems": 1,
@@ -171,8 +171,7 @@
           "type": "string",
           "description": "Version identifier for the dictionary.",
           "translation": {
-            "ISO 19115-2": ["CI_Citation > edition"],
-            "FGDC CSDGM": ["idinfo > citation > edition"]
+            "ISO 19115-2": ["FC_FeatureCatalogue > versionNumber"]
           }
         }
       },

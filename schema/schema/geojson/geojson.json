@@ -169,7 +169,7 @@
             },
             "featureScope": {
               "type": "string",
-              "description": "Scope of the geographic feature."
+              "description": "A word or phrase identifying the type of object described by the feature."
             },
             "featureAcquisitionMethod": {
               "type": "string",

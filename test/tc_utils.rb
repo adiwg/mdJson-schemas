@@ -10,7 +10,6 @@ require File.join(File.dirname(__FILE__),'..','lib', 'adiwg-mdjson_schemas.rb')
 
 class TestUtils < Minitest::Test
     def test_examples_dir
-      puts ADIWG::MdjsonSchemas::Utils.examples_dir
         errors = File.exist?(ADIWG::MdjsonSchemas::Utils.examples_dir)
         assert_equal( true, errors, failure_message = 'Examples directory does not exist.')
     end

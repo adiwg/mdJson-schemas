@@ -16,7 +16,7 @@
     "useLimitation": {
       "type": "string",
       "description": "Limitation affecting the fitness for use of the resource or metadata. For example, \"not to be used for navigation\".",
-  "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint/useLimitation",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint/useLimitation",
       "translation": {
         "ISO 19115-2": ["MD_Constraints > useLimitation"]
       }
@@ -24,7 +24,7 @@
     "legalConstraint": {
       "type": "object",
       "description": "Restrictions and legal prerequisites for accessing and using the resource or metadata.",
-  "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint/legalConstraint",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint/legalConstraint",
       "translation": {
         "ISO 19115-2": ["MD_LegalConstraints"]
       },
