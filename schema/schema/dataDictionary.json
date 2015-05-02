@@ -139,7 +139,7 @@
           },
           "alias": {
             "type": "array",
-            "description": "An array of quoted strings providing alternalte names used to identify this entity",
+            "description": "An array of quoted strings providing alternate names used to identify this entity",
             "translation": {
               "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > aliases > localName"]
             },
