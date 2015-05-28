@@ -83,6 +83,13 @@
         "type": "string"
       }
     },
+    "resourceCharacterSet": {
+      "type": "string",
+      "description": "Full name of the character encoding standard used by the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > characterSet [MD_CharacterSetCode]"]
+      }
+    },
     "purpose": {
       "type": "string",
       "description": "A summary of intentions for which the resource was created.",
