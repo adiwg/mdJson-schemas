@@ -61,7 +61,7 @@
       "type": "string",
       "description": "Status of the resource.",
       "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > status"],
+        "ISO 19115-2": ["MD_DataIdentification > status [MD_ProgressCode]"],
         "FGDC CSDGM": ["idinfo > status > progress"]
       }
     },
