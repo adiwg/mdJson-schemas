@@ -537,6 +537,7 @@
         "eng; USA",
         "esp; MEX"
       ],
+      "characterSet": ["utf8"],
       "purpose":"Long-term monitoring of permafrost conditions in the Alaska Arctic",
       "credit":[
         "Allison Gaylord - Nunatech",

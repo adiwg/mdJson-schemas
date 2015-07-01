@@ -171,6 +171,7 @@
       "hasMapLocation": true,
       "hasDataAvailable": true,
       "language": [""],
+      "characterSet": [""],
       "purpose": "",
       "credit": [""],
       "topicCategory": [""],
