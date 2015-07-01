@@ -113,6 +113,7 @@
       },
       "items": {
         "type": "object",
+        "example": "../../examples/full_example.json#/metadata/associatedResource",
         "required": ["associationType", "resourceType"],
         "additionalProperties": true,
         "properties": {
@@ -132,7 +133,10 @@
           },
           "resourceType": {
             "type": "string",
-            "description": "Identifies the type of resource, such as: a dataset, study, publication, etc."
+            "description": "Identifies the type of resource, such as: a dataset, study, publication, etc.",
+            "translation": {
+              "ISO 19115-2": ["[MD_ScopeCode]"]
+            }
           },
           "resourceCitation": {
             "description": "Citation for the associated resource.",
@@ -161,7 +165,10 @@
         "properties": {
           "resourceType": {
             "type": "string",
-            "description": "Identifies the type of resource, such as: userGuide, website, report, etc."
+            "description": "Identifies the type of resource, such as: userGuide, website, report, etc.",
+            "translation": {
+              "ISO 19115-2": ["[MD_ScopeCode]"]
+            }
           },
           "citation": {
             "$ref": "citation.json#"
