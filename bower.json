@@ -1,0 +1,30 @@
+{
+  "name": "mdjson-schemas",
+  "version": "1.0.2",
+  "homepage": "https://github.com/adiwg/mdJson-schemas",
+  "authors": [
+    "Josh Bradley <jbradley@arcticlcc.org>"
+  ],
+  "description": "JSON schemas, examples, and templates for ADIwg metadata standards",
+  "main": "schema/schema.json",
+  "keywords": [
+    "json",
+    "json-schema",
+    "metadata",
+    "ADIwg"
+  ],
+  "license": "Unlicense",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "lib",
+    "*.gemspec",
+    "Gemfile",
+    "Gemfile.lock",
+    "pkg",
+    "Rakefile"
+  ]
+}
