@@ -1006,7 +1006,8 @@
         },
         "description": "",
         "resourceType": "",
-        "language": ""
+        "language": "",
+        "includedWithDataset": true
       },
       "domain": [
         {

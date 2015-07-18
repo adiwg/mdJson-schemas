@@ -2352,7 +2352,8 @@
         },
         "description":"Data dictionary for the ADIwg project metadata standard for 2011 based on the FGDC standard.",
         "resourceType":"database",
-        "language":"eng; US"
+        "language":"eng; US",
+        "includedWithDataset": true
       },
       "domain":[
         {
