@@ -143,6 +143,24 @@
             "ISO 19115-2": ["MD_Identifier > code"]
           }
         },
+        "namespace": {
+          "type": "string",
+          "description": "A string which unambiguously defines the namespace for the identifier.",
+          "translation": {
+            "ISO 19115-2": ["RS_Identifier > codeSpace"]
+          }
+        },
+        "version": {
+          "type": "string",
+          "description": "The version of the identifier.",
+          "translation": {
+            "ISO 19115-2": ["RS_Identifier > version"]
+          }
+        },
+        "description": {
+          "type": "string",
+          "description": "A natural language description of the meaning of the identifier value."
+        },
         "type": {
           "type": "string",
           "description": "The type of identifier, e.g. doi, isbn, issn, etc.",
