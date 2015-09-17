@@ -75,7 +75,8 @@
     },
     "language": {
       "type": "array",
-      "description": "Language(s) used within the resource. Should be a valid ISO 639-3 code.",
+      "deprecated": true,
+      "description": "Language(s) used within the resource. Should be a valid ISO 639-3 code. NOTE:This property has been deprecated in favor of 'locale'.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > language"]
       },
@@ -85,12 +86,20 @@
     },
     "characterSet": {
       "type": "array",
-      "description": "Full name of the character encoding standard used by the resource.",
+      "deprecated": true,
+      "description": "Full name of the character encoding standard used by the resource. NOTE:This property has been deprecated in favor of 'locale'.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > characterSet [MD_CharacterSetCode]"]
       },
       "items": {
         "type": "string"
+      }
+    },
+    "locale": {
+      "type": "array",
+      "description": "Localised language(s) and characterset(s) used within the resource.",
+      "items": {
+        "$ref": "locale.json"
       }
     },
     "purpose": {

@@ -393,6 +393,13 @@
       "metadataLastUpdate":"2012-12-21",
       "metadataUri":"http://alaska.usgs.gov/rex/adiwg/public/projects/32.xml",
       "metadataCharacterSet":"utf8",
+      "metadataLocale":[
+        {
+          "language": "eng",
+          "country": "USA",
+          "characterSet": "usAscii"
+        }
+      ],
       "metadataStatus":"completed",
       "metadataMaintenance":{
         "maintenanceFrequency":"asNeeded",
@@ -539,6 +546,18 @@
         "esp; MEX"
       ],
       "characterSet": ["utf8"],
+      "locale":[
+        {
+          "language": "eng",
+          "country": "USA",
+          "characterSet": "usAscii"
+        },
+        {
+          "language": "esp",
+          "country": "MEX",
+          "characterSet": "utf8"
+        }
+      ],
       "purpose":"Long-term monitoring of permafrost conditions in the Alaska Arctic",
       "credit":[
         "Allison Gaylord - Nunatech",
