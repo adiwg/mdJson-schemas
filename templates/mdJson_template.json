@@ -44,6 +44,7 @@
       },
       "parentMetadata": {
         "title": "",
+        "alternateTitle": "",
         "date": [
           {
             "date": "0000-00-00",
@@ -107,6 +108,7 @@
       "resourceType": "",
       "citation": {
         "title": "",
+        "alternateTitle": "",
         "date": [
           {
             "date": "0000-00-00",
@@ -127,6 +129,7 @@
             "type": "",
             "authority": {
               "title": "",
+              "alternateTitle": "",
               "date": [
                 {
                   "date": "0000-00-00",
@@ -202,6 +205,7 @@
           "keywordType": "",
           "thesaurus": {
             "title": "",
+            "alternateTitle": "",
             "date": [
               {
                 "date": "0000-00-00",
@@ -222,6 +226,7 @@
                 "type": "",
                 "authority": {
                   "title": "",
+                  "alternateTitle": "",
                   "date": [
                     {
                       "date": "0000-00-00",
@@ -312,6 +317,7 @@
         "classificationSystem": [
           {
             "title": "",
+            "alternateTitle": "",
             "date": [
               {
                 "date": "0000-00-00",
@@ -332,6 +338,7 @@
                 "type": "",
                 "authority": {
                   "title": "",
+                  "alternateTitle": "",
                   "date": [
                     {
                       "date": "0000-00-00",
@@ -606,6 +613,7 @@
                     "type": "",
                     "authority": {
                       "title": "",
+                      "alternateTitle": "",
                       "date": [
                         {
                           "date": "0000-00-00",
@@ -690,6 +698,7 @@
             "description": "",
             "authority": {
               "title": "",
+              "alternateTitle": "",
               "date": [
                 {
                   "date": "",
@@ -724,6 +733,7 @@
             "description": "",
             "authority": {
               "title": "",
+              "alternateTitle": "",
               "date": [
                 {
                   "date": "",
@@ -771,6 +781,7 @@
                       "description": "",
                       "authority": {
                         "title": "",
+                        "alternateTitle": "",
                         "date": [
                           {
                             "date": "",
@@ -856,6 +867,7 @@
                 "description": "",
                 "citation": {
                   "title": "",
+                  "alternateTitle": "",
                   "date": [
                     {
                       "date": "0000-00-00",
@@ -876,6 +888,7 @@
                       "type": "",
                       "authority": {
                         "title": "",
+                        "alternateTitle": "",
                         "date": [
                           {
                             "date": "0000-00-00",
@@ -969,6 +982,7 @@
         "resourceType": "",
         "resourceCitation": {
           "title": "",
+          "alternateTitle": "",
           "date": [
             {
               "date": "0000-00-00",
@@ -989,6 +1003,7 @@
               "type": "",
               "authority": {
                 "title": "",
+                "alternateTitle": "",
                 "date": [
                   {
                     "date": "0000-00-00",
@@ -1025,6 +1040,7 @@
         },
         "metadataCitation": {
           "title": "",
+          "alternateTitle": "",
           "date": [
             {
               "date": "0000-00-00",
@@ -1045,6 +1061,7 @@
               "type": "",
               "authority": {
                 "title": "",
+                "alternateTitle": "",
                 "date": [
                   {
                     "date": "0000-00-00",
@@ -1086,6 +1103,7 @@
         "resourceType": "",
         "citation": {
           "title": "",
+          "alternateTitle": "",
           "date": [
             {
               "date": "0000-00-00",
@@ -1106,6 +1124,7 @@
               "type": "",
               "authority": {
                 "title": "",
+                "alternateTitle": "",
                 "date": [
                   {
                     "date": "0000-00-00",
@@ -1148,6 +1167,7 @@
       "dictionaryInfo": {
         "citation": {
           "title": "",
+          "alternateTitle": "",
           "date": [
             {
               "date": "0000-00-00",
