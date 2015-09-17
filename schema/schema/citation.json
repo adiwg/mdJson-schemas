@@ -31,6 +31,10 @@
             "FGDC CSDGM": ["idinfo > citation > citeinfo > title"]
           }
         },
+        "alternateTitle": {
+          "type": "string",
+          "description": "Alias by which the cited resource is known."
+        },
         "date": {
           "type": "array",
           "description": "Date referenced to the cited resource.",

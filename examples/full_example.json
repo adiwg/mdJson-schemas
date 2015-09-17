@@ -476,6 +476,7 @@
           {
             "authority":{
               "title":"NSF Grant Award Number",
+              "alternateTitle":"Award Number",
               "responsibleParty":[
                 {
                   "contactId":"9",
