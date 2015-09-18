@@ -305,6 +305,16 @@
         "$ref": "extent.json"
       }
     },
+    "gridInfo": {
+      "type": "array",
+      "description": "Information about grid objects in the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_GridSpatialRepresentation"]
+      },
+      "items": {
+        "$ref": "gridInfo.json"
+      }
+    },
     "dataQualityInfo": {
       "type": "array",
       "description": "Information that describes the data quality, lineage, and/or processing steps that were applied to the whole or part of the data resource.",

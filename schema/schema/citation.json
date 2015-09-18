@@ -33,7 +33,10 @@
         },
         "alternateTitle": {
           "type": "string",
-          "description": "Alias by which the cited resource is known."
+          "description": "Alias by which the cited resource is known.",
+          "translation": {
+            "ISO 19115-2": ["CI_Citation > alternateTitle"]
+          }
         },
         "date": {
           "type": "array",

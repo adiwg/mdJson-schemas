@@ -687,6 +687,23 @@
           ]
         }
       ],
+      "gridInfo": [
+          {
+              "numberOfDimensions": 9,
+              "dimension": [
+                  {
+                      "dimensionType": "",
+                      "dimensionSize": 9,
+                      "resolution": 9.99,
+                      "resolutionUnit": "",
+                      "dimensionTitle": "",
+                      "dimensionDescription": ""
+                  }
+              ],
+              "cellGeometry": "",
+              "transformationParameterAvailability": false
+          }
+      ],
       "rasterInfo": [
         {
           "rasterDescription": "",
