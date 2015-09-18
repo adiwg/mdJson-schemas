@@ -1,0 +1,215 @@
+{
+  "id": "coverageInfo.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Details about the content of a raster resource.",
+  "translation": {
+    "ISO 19115-2": [""]
+  },
+  "required": [""],
+  "additionalProperties": true,
+  "properties": {
+    "coverageDescription": {
+      "type": "string",
+      "description": "",
+      "translation": {
+        "ISO 19115-2": ["MI_ImageDescription > attributeDescription"]
+      }
+    },
+    "processingLevel": {
+      "description": "image distributor’s code that identifies the level of radiometric and geometric processing that has been applied.",
+      "translation": {
+        "ISO 19115-2": ["MI_ImageDescription > processingLevelCode > RS_Identifier"]
+      },
+      "$ref": "citation.json#/definitions/identifier"
+    },
+
+    "coverageType": {
+      "type": "string"
+    },
+    "coverageName": {
+      "type": "string"
+    },
+    "coverageDescription": {
+      "type": "string"
+    },
+    "processingLevel": {
+      "type": "object"
+    },
+    "coverageItem": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "itemName": {
+            "type": "string"
+          },
+          "itemType": {
+            "type": "string"
+          },
+          "itemDescription": {
+            "type": "string"
+          },
+          "minValue": {
+            "type": "number"
+          },
+          "maxValue": {
+            "type": "number"
+          },
+          "units": {
+            "type": "string"
+          },
+          "scaleFactor": {
+            "type": "number"
+          },
+          "offset": {
+            "type": "number"
+          },
+          "meanValue": {
+            "type": "number"
+          },
+          "standardDeviation": {
+            "type": "number"
+          },
+          "bitsPerValue": {
+            "type": "integer"
+          },
+          "classedData": {
+            "type": "object",
+            "properties": {
+              "numberOfClasses": {
+                "type": "integer"
+              },
+              "classedDataItem": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "className": {
+                      "type": "string"
+                    },
+                    "classDescription": {
+                      "type": "string"
+                    },
+                    "classValue": {
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "sensorInfo": {
+            "type": "object",
+            "properties": {
+              "toneGradations": {
+                "type": "integer"
+              },
+              "sensorMin": {
+                "type": "number"
+              },
+              "sensorMax": {
+                "type": "number"
+              },
+              "sensorUnits": {
+                "type": "string"
+              },
+              "sensorPeakResponse": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "imageInfo": {
+      "type": "object",
+      "description": "Details about the content of a raster resource.",
+      "translation": {
+        "ISO 19115-2": [""]
+      },
+      "required": [""],
+      "additionalProperties": true,
+      "properties": {
+        "illuminationElevationAngle": {
+          "type": "number",
+          "description": "Illumination elevation measured in degrees clockwise from the target plane at intersection of the optical line of sight with the Earth’s surface. For images from a scanning device, refer to the centre pixel of the image.",
+          "translation": {
+            "ISO 19115-2": ["MI_ImageDescription > illiminationElevationAngle"]
+          }
+        },
+        "illuminationAzimuthAngle": {
+          "type": "number",
+          "description": "Illumination azimuth measured in degrees clockwise from true north at the time the image is taken. For images from a scanning device, refer to the centre pixel of the image",
+          "translation": {
+            "ISO 19115-2": ["MI_ImageDescription > illuminationAzimuthAngle"]
+          }
+        },
+        "imagingCondition": {
+          "type": "string",
+          "description": "Code which indicates conditions which may affect the image.",
+          "translation": {
+            "ISO 19115-2": ["MI_ImageDescription > imageCondition > MD_ImageConditionCode"]
+          }
+        },
+        "imageQuality": {
+          "description": "Specifies the image quality.",
+          "translation": {
+            "ISO 19115-2": ["MI_ImageDescription > imageQualityCode > RS_Identifier"]
+          },
+          "$ref": "citation.json#/definitions/identifier"
+        },
+        "cloudCoverPercent": {
+          "type": "number",
+          "maximum": 100,
+          "description": "Area of the dataset obscured by clouds, expressed as a percentage of the spatial extent.",
+          "translation": {
+            "ISO 19115-2": ["MI_ImageDescription > cloudCoverPercentage"]
+          }
+        },
+        "compressionQuantity": {
+          "type": "number",
+          "description": "Count of the number of lossy compression cycles performed on the image.",
+          "translation": {
+            "ISO 19115-2": ["MI_ImageDescription > compressionGenerationQuality"]
+          }
+        },
+        "triangulationIndicator": {
+          "type": "boolean",
+          "description": "Indication of whether or not triangulation has been performed upon the image.",
+          "translation": {
+            "ISO 19115-2": ["MI_ImageDescription > triangulationIndicator"]
+          }
+        },
+        "radiometricCalibrationAvailable": {
+          "type": "boolean",
+          "description": "Indication of whether or not the radiometric calibration information for generating the radiometrically calibrated standard data product is available.",
+          "translation": {
+            "ISO 19115-2": ["MI_ImageDescription > radiometricCalibrationDataAvailability"]
+          }
+        },
+        "cameraCalibrationAvailable": {
+          "type": "boolean",
+          "description": "Indication of whether or not constants are available which allow for camera calibration corrections.",
+          "translation": {
+            "ISO 19115-2": ["MI_ImageDescription > camerCalibrationInformationAvailability"]
+          }
+        },
+        "filmDistortionAvailable": {
+          "type": "boolean",
+          "description": "Indication of whether or not Calibration Reseau information is available",
+          "translation": {
+            "ISO 19115-2": ["MI_ImageDescription > filmDistrotionInformationAvailability"]
+          }
+        },
+        "lensDistortionAvailable": {
+          "type": "boolean",
+          "description": "Indication of whether or not lens aberration correction information is available.",
+          "translation": {
+            "ISO 19115-2": ["MI_ImageDescription > lensDistortionInformationAvailability"]
+          }
+        }
+      }
+    }
+  }
+}
