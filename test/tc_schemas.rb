@@ -19,6 +19,10 @@ class TestExamples < Minitest::Test
   @@ex = File.join(File.dirname(__FILE__),'..','examples/')
   @@schema = File.join(File.dirname(__FILE__),'..','schema','schema.json')
 
+  def load_json( filename )
+    JSON.load File.new( filename )
+  end
+
   def test_schemas
     #Validate the schemas themselves
     #puts "\nValidating schemas, Please wait... \n"
@@ -74,7 +78,10 @@ class TestExamples < Minitest::Test
   end
 
   def test_coverageInfo
-    errors = JSON::Validator.fully_validate(@@dir + 'schema/coverageInfo.json', @@ex + 'coverageInfo.json', :strict => true)
+    errors = JSON::Validator.fully_validate(@@dir + 'schema/coverageInfo.json', load_json(@@ex + 'coverageInfo.json')[0], :strict => true)
+    assert(errors.empty?, errors.join("\n"))
+
+    errors = JSON::Validator.fully_validate(@@dir + 'schema/coverageInfo.json', @@ex + 'coverageInfo.json', :list => true)
     assert(errors.empty?, errors.join("\n"))
   end
 
@@ -155,7 +162,13 @@ class TestExamples < Minitest::Test
   end
 
   def test_distributor
+    errors = JSON::Validator.fully_validate(@@dir + 'schema/distributor.json', load_json(@@ex + 'distributor.json')[0], :strict => true)
+    assert(errors.empty?, errors.join("\n"))
+
     errors = JSON::Validator.fully_validate(@@dir + 'schema/distributor.json', @@ex + 'distributor.json', :list => true)
+    assert(errors.empty?, errors.join("\n"))
+
+    errors = JSON::Validator.fully_validate(@@dir + 'schema/distributor.json', load_json(@@ex + 'format.json')[0],:fragment => "#/definitions/format", :strict => true)
     assert(errors.empty?, errors.join("\n"))
 
     errors = JSON::Validator.fully_validate(@@dir + 'schema/distributor.json', @@ex + 'format.json', :fragment => "#/definitions/format", :list => true)
