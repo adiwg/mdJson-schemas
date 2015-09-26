@@ -63,6 +63,9 @@ class TestExamples < Minitest::Test
   end
 
   def test_contact
+    errors = JSON::Validator.fully_validate(@@dir + 'schema/contact.json', load_json(@@ex + 'contact.json')[0], :fragment => "#/definitions/individual",:strict => true)
+    assert(errors.empty?, errors.join("\n"))
+
     errors = JSON::Validator.fully_validate(@@dir + 'schema/contact.json', @@ex + 'contact.json')
     assert(errors.empty?, errors.join("\n"))
   end
@@ -167,7 +170,9 @@ class TestExamples < Minitest::Test
 
     errors = JSON::Validator.fully_validate(@@dir + 'schema/distributor.json', @@ex + 'distributor.json', :list => true)
     assert(errors.empty?, errors.join("\n"))
+  end
 
+  def test_format
     errors = JSON::Validator.fully_validate(@@dir + 'schema/distributor.json', load_json(@@ex + 'format.json')[0],:fragment => "#/definitions/format", :strict => true)
     assert(errors.empty?, errors.join("\n"))
 

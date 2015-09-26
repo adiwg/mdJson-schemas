@@ -1081,14 +1081,17 @@
             "turnaround": ""
           }
         ],
-        "distributorFormat": [
-          {
-            "formatName": "",
-            "version": ""
-          }
-        ],
         "distributorTransferOptions": [
           {
+            "distributorFormat": [
+              {
+                "formatName": "",
+                "version": "",
+                "compressionMethod": ""
+              }
+            ],
+            "transferSize": 9.9,
+            "transferSizeUnits": "kB",
             "online": [
               {
                 "uri": "http://thisisanexample.com",
@@ -1100,6 +1103,8 @@
             ],
             "offline": {
               "name": "",
+              "mediumCapacity": 9.9,
+              "mediumCapacityUnits": "GB",
               "mediumFormat": "",
               "mediumNote": ""
             }

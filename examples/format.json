@@ -1,12 +1,10 @@
 [
   {
     "formatName": "formatName",
-    "version": "version",
-    "compressionMethod": "compressionMethod"
+    "version": "version"
   }, {
     "formatName": "netCDF",
-    "version": "4.0",
-    "compressionMethod": "zip"
+    "version": "4.0"
   }, {
     "formatName": "Excel Spreadsheet",
     "version": "xlsx"

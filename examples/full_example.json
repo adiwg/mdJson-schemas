@@ -2363,21 +2363,24 @@
             "turnaround":"immediate"
           }
         ],
-        "distributorFormat":[
-          {
-            "formatName":"netCDF",
-            "version":"4.0"
-          },
-          {
-            "formatName":"Excel Spreadsheet",
-            "version":"xlsx"
-          },
-          {
-            "formatName":"CSV"
-          }
-        ],
         "distributorTransferOptions":[
           {
+            "distributorFormat":[
+              {
+                "formatName":"netCDF",
+                "version":"4.0",
+                "compressionMethod": "zip"
+              },
+              {
+                "formatName":"Excel Spreadsheet",
+                "version":"xlsx"
+              },
+              {
+                "formatName":"CSV"
+              }
+            ],
+            "transferSize": 9.9,
+            "transferSizeUnits": "kB",
             "online":[
               {
                 "uri":"http://aoos.org/aoos-data-resources",
@@ -2391,6 +2394,8 @@
             ],
             "offline":{
               "name":"dvd",
+              "mediumCapacity": 4.7,
+              "mediumCapacityUnits": "GB",
               "mediumFormat":"iso9660",
               "mediumNote":"To receive a dvd in the mail, contact the distributor POC."
             }

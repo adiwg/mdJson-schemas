@@ -21,7 +21,7 @@
       {
         "formatName": "formatName1",
         "version": "version1",
-        "compressionMethod": "compressionMethod1"
+        "compressionMethod": 1
       }, {
         "formatName": "formatName2",
         "version": "version2",
@@ -57,7 +57,7 @@
           "mediumFormat": "mediumFormat1",
           "mediumNote": "mediumNote1" ,
           "mediumCapacity": 1.1,
-          "mediumCapacityUnits": "mediumCapacityUnits1"
+          "mediumCapacityUnits": "kB"
         }
       }, {
         "distributorFormat": [
@@ -87,7 +87,7 @@
           "mediumFormat": "mediumFormat2",
           "mediumNote": "mediumNote2",
           "mediumCapacity": 2.2,
-          "mediumCapacityUnits": "mediumCapacityUnits2"
+          "mediumCapacityUnits": "MB"
         }
       }
     ]
