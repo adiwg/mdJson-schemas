@@ -64,7 +64,8 @@
     },
     "distributorFormat": {
       "type": "array",
-      "description": "Provides information about the format used by the distributor.",
+      "deprecated": true,
+      "description": "Provides information about the format used by the distributor. Deprecated: moved to distributorTransferOptions.",
       "translation": {
         "ISO 19115-2": ["MD_Distribution > distributor > MD_Distributor > distributorFormat > MD_Format"],
         "FGDC CSDGM": ["distinfo > stdorder > digform"]
@@ -85,6 +86,27 @@
         "additionalProperties": true,
 
         "properties": {
+          "distributorFormat": {
+            "type": "array",
+            "description": "Provides information about the format used by the distributor.",
+            "translation": {
+              "ISO 19115-2": ["MD_Distribution > distributor > MD_Distributor > distributorFormat > MD_Format"],
+              "FGDC CSDGM": ["distinfo > stdorder > digform"]
+            },
+            "items": {
+              "$ref": "#/definitions/format"
+            }
+          },
+          "transferSize": {
+            "type": "number",
+            "description": "Total size of the transfer."
+          },
+          "transferSizeUnits": {
+            "type": {
+              "enum": ["kB", "KB", "MB", "GB", "TB"]
+            },
+            "description": "Units of transfer size."
+          },
           "online": {
             "type": "array",
             "description": "Information about obtaining the resource on-line.",
@@ -114,6 +136,16 @@
                   "ISO 19115-2": ["MD_Medium > name [MD_MediumNameCode]"],
                   "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt > offoptn > offmedia"]
                 }
+              },
+              "mediumCapacity": {
+                "type": "number",
+                "description": "Total capacity of the storage format."
+              },
+              "mediumCapacityUnits": {
+                "type": {
+                  "enum": ["kB", "KB", "MB", "GB", "TB"]
+                },
+                "description": "Units of medium capacity."
               },
               "mediumFormat": {
                 "type": "string",
@@ -164,6 +196,10 @@
             "ISO 19115-2": ["MD_Format > version"],
             "FGDC CSDGM": ["idinfo > citation > citeinfo > edition"]
           }
+        },
+        "compressionMethod": {
+          "type": "string",
+          "description": "Method used to compress the format."
         }
       }
     }
