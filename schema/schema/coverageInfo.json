@@ -2,97 +2,169 @@
   "id": "coverageInfo.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "description": "Details about the content of a raster resource.",
+  "example": "../../examples/full_example.json#/metadata/resourceInfo/coverageInfo/0",
+  "description": "Details about the content of a raster(grid) resource.",
   "translation": {
-    "ISO 19115-2": [""]
+    "ISO 19115-2": ["MI_Metadata > contentInfo"]
   },
-  "required": [""],
+  "required": ["coverageType"],
   "additionalProperties": true,
   "properties": {
+    "coverageType": {
+      "type": "string",
+      "description": "Type of information represented by the cell values",
+      "translation": {
+        "ISO 19115-2": ["MI_ImageDescription | MI_CoverageDescription > contentType"]
+      }
+    },
+    "coverageName": {
+      "type": "string",
+      "description": "The name(title) of the coverage.",
+      "translation": {
+        "ISO 19115-2": ["MI_ImageDescription | MI_CoverageDescription > attributeDescription > gco:RecordType"]
+      }
+    },
     "coverageDescription": {
       "type": "string",
-      "description": "",
+      "description": "A description of the coverage",
       "translation": {
-        "ISO 19115-2": ["MI_ImageDescription > attributeDescription"]
+        "ISO 19115-2": ["MI_ImageDescription | MI_CoverageDescription > attributeDescription > gco:RecordType"]
       }
     },
     "processingLevel": {
-      "description": "image distributor’s code that identifies the level of radiometric and geometric processing that has been applied.",
+      "description": "Code that identifies the level of radiometric and geometric processing that has been applied.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/coverageInfo/0/processingLevel",
       "translation": {
         "ISO 19115-2": ["MI_ImageDescription > processingLevelCode > RS_Identifier"]
       },
       "$ref": "citation.json#/definitions/identifier"
     },
-
-    "coverageType": {
-      "type": "string"
-    },
-    "coverageName": {
-      "type": "string"
-    },
-    "coverageDescription": {
-      "type": "string"
-    },
-    "processingLevel": {
-      "type": "object"
-    },
     "coverageItem": {
       "type": "array",
+      "description": "Information about the item(s) described by the grid cell.",
+      "example": "../../examples/full_example.json#/metadata/resourceInfo/coverageInfo/1",
+      "translation": {
+        "ISO 19115-2": ["MI_CoverageDescription > [gmi:rangeElementDescription | gmd:dimension]"]
+      },
       "items": {
         "type": "object",
+        "description": "Information about an item described by the grid cell.",
+        "example": "../../examples/full_example.json#/metadata/resourceInfo/coverageInfo/1",
         "properties": {
           "itemName": {
-            "type": "string"
+            "type": "string",
+            "description": "Coverage item name.",
+            "translation": {
+              "ISO 19115-2": ["MI_CoverageDescription >  gmi:rangeElementDescription > gmi:MI_RangeElementDescription > gmi:name", "MI_CoverageDescription >  gmd:dimension > gmd:MD:Band > gmd:sequenceIdentifier > gco:MemberName > gco:aName"]
+            }
           },
           "itemType": {
-            "type": "string"
+            "type": "string",
+            "description": "The type of value for the coverage item.",
+            "translation": {
+              "ISO 19115-2": ["MI_CoverageDescription > gmd:dimension > gmd:MD:Band > gmd:sequenceIdentifier > gco:MemberName > gco:attributeType > gco:TypeName > gco:aName"]
+            }
           },
           "itemDescription": {
-            "type": "string"
+            "type": "string",
+            "description": "Description of the coverage item.",
+            "translation": {
+              "ISO 19115-2": ["MI_CoverageDescription >  gmi:rangeElementDescription > gmi:MI_RangeElementDescription > gmi:definition", "MI_CoverageDescription >  gmd:dimension > gmd:MD_Band > gmd:descriptor ]"]
+            }
           },
           "minValue": {
-            "type": "number"
+            "type": "number",
+            "description": "The minimum value of data values in the domain of the coverage item.",
+            "translation": {
+              "ISO 19115-2": ["MI_CoverageDescription > gmd:dimension > gmd:MD_Band > gmd:minValue > gco:Real"]
+            }
           },
           "maxValue": {
-            "type": "number"
+            "type": "number",
+            "description": "The maximum value of data values in the domain of the coverage item",
+            "translation": {
+              "ISO 19115-2": ["MI_CoverageDescription > gmd:dimension > gmd:MD_Band > gmd:maxValue > gco:Real"]
+            }
           },
           "units": {
-            "type": "string"
+            "type": "string",
+            "description": "The units of data in which the coverage item is expressed.",
+            "translation": {
+              "ISO 19115-2": ["MI_CoverageDescription > gmd:dimension > gmd:MD_Band > gmd:units > gml:unitDefinition > gml:identifier"]
+            }
           },
           "scaleFactor": {
-            "type": "number"
+            "type": "number",
+            "description": "The scale factor which has been applied to the coverage item",
+            "translation": {
+              "ISO 19115-2": ["MI_CoverageDescription > gmd:dimension > gmd:MD_Band > gmd:scaleFactor > gco:Real"]
+            }
           },
           "offset": {
-            "type": "number"
+            "type": "number",
+            "description": "The physical value corresponding to a coverage item value of zero.",
+            "translation": {
+              "ISO 19115-2": ["MI_CoverageDescription > gmd:dimension > gmd:MD_Band > gmd:offset > gco:Real"]
+            }
           },
           "meanValue": {
-            "type": "number"
+            "type": "number",
+            "description": "The mean value of data values in the coverage item."
           },
           "standardDeviation": {
-            "type": "number"
+            "type": "number",
+            "description": "The standard deviation of data values in the coverage item."
           },
           "bitsPerValue": {
-            "type": "integer"
+            "type": "integer",
+            "description": "The maximum number of significant bits in the uncompressed representation for the value in each pixel.",
+            "translation": {
+              "ISO 19115-2": ["MI_CoverageDescription > gmd:dimension > gmd:MD_Band > gmd:bitsPerValue > gco:Integer"]
+            }
           },
-          "classedData": {
+          "classifiedData": {
             "type": "object",
+            "description": "The information about the thematic classification used with this coverage item.",
+            "example": "../../examples/full_example.json#/metadata/resourceInfo/coverageInfo/1",
+            "translation": {
+              "ISO 19115-2": ["MI_CoverageDescription >  gmi:rangeElementDescription > gmi:MI_RangeElementDescription"]
+            } ,
             "properties": {
               "numberOfClasses": {
-                "type": "integer"
+                "type": "integer",
+                "description": "The number of values used in a thematic classification resource."
               },
-              "classedDataItem": {
+              "classifiedDataItem": {
                 "type": "array",
+                "description": "Information about thematic classification item(s).",
+                "translation": {
+                  "ISO 19115-2": ["MI_CoverageDescription >  gmi:rangeElementDescription > gmi:MI_RangeElementDescription > gmi:rangeElement"]
+                } ,
                 "items": {
                   "type": "object",
+                  "description": "Information about a thematic classification item.",
+                  "example": "../../examples/full_example.json#/metadata/resourceInfo/coverageInfo/1",
                   "properties": {
                     "className": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "The name of the thematic classification item.",
+                      "translation": {
+                        "ISO 19115-2": ["MI_CoverageDescription >  gmi:rangeElementDescription > gmi:MI_RangeElementDescription > gmi:rangeElement  > gco:Record > gmd:RS_Identifier > gmd:authority > gmd:CI_Citation > gmd:title"]
+                      }
                     },
                     "classDescription": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "The description of the thematic classification item.",
+                      "translation": {
+                        "ISO 19115-2": ["MI_CoverageDescription >  gmi:rangeElementDescription > gmi:MI_RangeElementDescription > gmi:rangeElement  > gco:Record > gmd:RS_Identifier > gmd:authority > gmd:CI_Citation > gmd:alternateTitle"]
+                      }
                     },
                     "classValue": {
-                      "type": "number"
+                      "type": "number",
+                      "description": "The thematic classification value.",
+                      "translation": {
+                        "ISO 19115-2": ["MI_CoverageDescription >  gmi:rangeElementDescription > gmi:MI_RangeElementDescription > gmi:rangeElement  > gco:Record > gmd:RS_Identifier > gmd:code"]
+                      }
                     }
                   }
                 }
@@ -101,21 +173,37 @@
           },
           "sensorInfo": {
             "type": "object",
+            "description": "Information about the sensor that collected the grid cell values.",
+            "example": "../../examples/full_example.json#/metadata/resourceInfo/coverageInfo/3",
+            "translation": {
+              "ISO 19115-2": ["MI_CoverageDescription > gmi:rangeElementDescription | gmd:dimension"]
+            } ,
             "properties": {
               "toneGradations": {
-                "type": "integer"
+                "type": "integer",
+                "description": "The number of discrete numerical values in the grid data.",
+                "translation": {
+                  "ISO 19115-2": ["MI_CoverageDescription > gmd:dimension > gmd:MD_Band > gmd:toneGradition > gco:Integer"]
+                }
               },
               "sensorMin": {
-                "type": "number"
+                "type": "number",
+                "description": "The shortest wavelength that the sensor is capable of collecting within a designated band."
               },
               "sensorMax": {
-                "type": "number"
+                "type": "number",
+                "description": "The longest wavelength that the sensor is capable of collecting within a designated band."
               },
               "sensorUnits": {
-                "type": "string"
+                "type": "string",
+                "description": "The unit in which sensor wavelengths are expressed."
               },
               "sensorPeakResponse": {
-                "type": "number"
+                "type": "number",
+                "description": "The wavelength at which the sensor response is highest.",
+                "translation": {
+                  "ISO 19115-2": ["MI_CoverageDescription > gmd:dimension > gmd:MD_Band > gmd:peakResponse > gco:Real"]
+                }
               }
             }
           }
@@ -124,11 +212,11 @@
     },
     "imageInfo": {
       "type": "object",
-      "description": "Details about the content of a raster resource.",
+      "description": "Information about the image.",
       "translation": {
-        "ISO 19115-2": [""]
+        "ISO 19115-2": ["MI_ImageDescription"]
       },
-      "required": [""],
+      "required": [],
       "additionalProperties": true,
       "properties": {
         "illuminationElevationAngle": {

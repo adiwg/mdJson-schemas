@@ -73,6 +73,11 @@ class TestExamples < Minitest::Test
     assert(errors.empty?, errors.join("\n"))
   end
 
+  def test_coverageInfo
+    errors = JSON::Validator.fully_validate(@@dir + 'schema/coverageInfo.json', @@ex + 'coverageInfo.json', :strict => true)
+    assert(errors.empty?, errors.join("\n"))
+  end
+
   def test_citation
     errors = JSON::Validator.fully_validate(@@dir + 'schema/citation.json', @@ex + 'citation.json', :list => true)
     assert(errors.empty?, errors.join("\n"))

@@ -315,6 +315,16 @@
         "$ref": "gridInfo.json"
       }
     },
+    "coverageInfo": {
+      "type": "array",
+      "description": "Details about the content of a raster(grid) resource.",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > contentInfo"]
+      },
+      "items": {
+        "$ref": "coverageInfo.json"
+      }
+    },
     "dataQualityInfo": {
       "type": "array",
       "description": "Information that describes the data quality, lineage, and/or processing steps that were applied to the whole or part of the data resource.",
