@@ -4,6 +4,7 @@
     "individualName": "individualName",
     "organizationName": "organizationName",
     "positionName": "positionName",
+    "primaryRole": "primaryRole",
     "onlineResource": [
       {
         "uri": "http://thisisanexample1.com",
@@ -44,6 +45,7 @@
     "individualName": "Josh Bradley",
     "organizationName": "Arctic Landscape Conservation Cooperative",
     "positionName": "Data Manager",
+    "primaryRole": "custodian",
     "onlineResource": [
       {
         "uri": "http://arcticlcc.org",

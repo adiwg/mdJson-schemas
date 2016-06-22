@@ -140,6 +140,11 @@
             "FGDC CSDGM": ["cntinfo > cntpos"]
           }
         },
+        "primaryRole": {
+          "type": "string",
+          "description": "The main role of the contact in relation to the resource.",
+          "example": "../../examples/full_example.json#/contact/1"
+        },
         "address": {
           "$ref": "#/definitions/address"
         },

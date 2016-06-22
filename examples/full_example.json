@@ -7,6 +7,7 @@
     {
       "contactId":"1",
       "organizationName":"US Geological Survey - Alaska Science Center",
+      "primaryRole": "owner",
       "onlineResource":[
         {
           "uri":"http://alaska.usgs.gov/",
@@ -48,6 +49,7 @@
       "individualName":"Urban, Frank",
       "organizationName":"US Geological Survey",
       "positionName":"Research Geologist",
+      "primaryRole": "principleInvestigator",          
       "onlineResource":[
         {
           "uri":"http://academic.research.microsoft.com/Author/27724864/frank-e-urban",
