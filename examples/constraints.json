@@ -1,0 +1,38 @@
+{
+   "constraints": [
+      {
+         "constraint": [
+            {
+               "useLimitation": [
+                  "useLimitation0"
+               ]
+            },
+            {
+               "useLimitation": [
+                  "useLimitation1"
+               ]
+            }
+         ],
+         "legalConstraint": [
+            {
+               "accessConstraint": [
+                  "accessConstraint0"
+               ]
+            },
+            {
+               "accessConstraint": [
+                  "accessConstraint1"
+               ]
+            }
+         ],
+         "securityConstraint": [
+            {
+               "classification": "classification0"
+            },
+            {
+               "classification": "classification1"
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,53 @@
+{
+   "resourceMaintenance": [
+      {
+         "frequency": "frequency",
+         "date": [
+            {
+               "date": "2016-10-12",
+               "dateType": "dateType"
+            },
+            {
+               "date": "2016-10-12",
+               "dateType": "dateType"
+            }
+         ],
+         "scope": [
+            {
+               "scopeCode": "scopeCode"
+            },
+            {
+               "scopeCode": "scopeCode"
+            }
+         ],
+         "note": [
+            "note0",
+            "note1"
+         ],
+         "contact": [
+            {
+               "role": "role",
+               "timePeriod": {
+                  "startDateTime": "2016-10-14"
+               },
+               "party": [
+                  {
+                     "contactId": "individualId0"
+                  }
+               ]
+            },
+            {
+               "role": "role",
+               "timePeriod": {
+                  "startDateTime": "2016-10-14"
+               },
+               "party": [
+                  {
+                     "contactId": "individualId0"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

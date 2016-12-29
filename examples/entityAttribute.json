@@ -1,0 +1,34 @@
+{
+   "attribute": [
+      {
+         "commonName": "commonName",
+         "codeName": "codeName",
+         "alias": [
+            "alias0",
+            "alias1"
+         ],
+         "definition": "definition",
+         "dataType": "dataType",
+         "allowNull": true,
+         "units": "units",
+         "domainId": "domainId",
+         "minValue": "minValue",
+         "maxValue": "maxValue"
+      },
+      {
+         "commonName": "Employee ID",
+         "codeName": "empId",
+         "alias": [
+            "employeeId",
+            "employeeNumber"
+         ],
+         "definition": "Numeric code to uniquely identify an employee of Acme Oil",
+         "dataType": "numeric",
+         "allowNull": true,
+         "units": "meters",
+         "domainId": "dom042",
+         "minValue": "1000000",
+         "maxValue": "5000000"
+      }
+   ]
+}

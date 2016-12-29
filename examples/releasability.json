@@ -1,0 +1,24 @@
+{
+   "releasability": [
+      {
+         "addressee": [
+            {
+               "role": "role",
+               "roleExtent": {
+                  "description": "description"
+               },
+               "party": [
+                  {
+                     "contactId": "individualId0"
+                  }
+               ]
+            }
+         ],
+         "statement": "statement",
+         "disseminationConstraint": [
+            "disseminationConstraint0",
+            "disseminationConstraint1"
+         ]
+      }
+   ]
+}

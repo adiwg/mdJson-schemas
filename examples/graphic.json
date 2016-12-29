@@ -1,0 +1,36 @@
+{
+   "graphic": [
+      {
+         "fileName": "fileName",
+         "fileDescription": "fileDescription",
+         "fileType": "fileType",
+         "fileConstraint": [
+            {
+               "constraint": [
+                  {
+                     "useLimitation": [
+                        "useLimitation0"
+                     ]
+                  }
+               ],
+               "legalConstraint": [],
+               "securityConstraint": []
+            },
+            {
+               "constraint": [],
+               "legalConstraint": [],
+               "securityConstraint": [
+                  {
+                     "classification": "classification"
+                  }
+               ]
+            }
+         ],
+         "fileUri": [
+            {
+               "uri": "uri"
+            }
+         ]
+      }
+   ]
+}

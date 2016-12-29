@@ -1,0 +1,23 @@
+{
+   "georeferenceableRepresentation": [
+      {
+         "gridRepresentation": {
+            "numberOfDimensions": 9,
+            "cellGeometry": "cellGeometry",
+            "transformParamsAvailability": true
+         },
+         "controlPointAvailability": true,
+         "orientationParameterAvailability": true,
+         "orientationParameterDescription": "orientationParameterDescription",
+         "georeferencedParameter": "georeferencedParameter",
+         "parameterCitation": [
+            {
+               "title": "title"
+            },
+            {
+               "title": "title"
+            }
+         ]
+      }
+   ]
+}

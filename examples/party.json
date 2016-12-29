@@ -1,0 +1,24 @@
+{
+   "party": [
+      {
+         "contactId": "individualId0"
+      },
+      {
+         "contactId": "organizationId0",
+         "organizationMembers": [
+            "individualId0",
+            "individualId1"
+         ]
+      },
+      {
+         "contactId": "individualId9"
+      },
+      {
+         "contactId": "organizationId0",
+         "organizationMembers": [
+            "individualId9",
+            "individualId1"
+         ]
+      }
+   ]
+}

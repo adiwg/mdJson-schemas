@@ -1,0 +1,20 @@
+{
+   "funding": [
+      {
+         "allocation": [
+            {
+               "amount": 9.9,
+               "currency": "currency"
+            },
+            {
+               "amount": 9.9,
+               "currency": "currency"
+            }
+         ],
+         "timePeriod": {
+            "startDateTime": "2016-10-14T11:10:15.2-10:00",
+            "endDateTime": "2016-12-31"
+         }
+      }
+   ]
+}

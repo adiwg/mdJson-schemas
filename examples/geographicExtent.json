@@ -1,0 +1,29 @@
+{
+  "geographicExtent": [
+    {
+      "containsData": false,
+      "identifier": {
+        "identifier": "identifier"
+      },
+      "boundingBox": {
+        "westLongitude": -140.0,
+        "eastLongitude": -120.0,
+        "southLatitude": 49.0,
+        "northLatitude": 70.0
+      },
+      "geographicElement": [
+        {
+          "type": "Point",
+          "coordinates": [100.0, 0.0]
+        },
+        {
+          "type": "LineString",
+          "coordinates": [
+            [100.0, 0.0],
+            [101.0, 1.0]
+          ]
+        }
+      ]
+    }
+  ]
+}

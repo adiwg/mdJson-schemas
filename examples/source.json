@@ -1,0 +1,30 @@
+{
+   "source": [
+      {
+         "description": "description",
+         "sourceCitation": {
+            "title": "title"
+         },
+         "sourceMetadata": [
+            {
+               "title": "title"
+            },
+            {
+               "title": "title"
+            }
+         ],
+         "scaleDenominator": 9,
+         "referenceSystem": {
+            "referenceSystemType": "referenceSystemType"
+         },
+         "sourceStep": [
+            {
+               "description": "description"
+            },
+            {
+               "description": "description"
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,13 @@
+{
+   "temporalExtent": [
+      {
+         "type": "instant",
+         "timeInstant": {
+            "dateTime": "2016-10-24T11:10:15.2-10:00"
+         },
+         "timePeriod": {
+            "startDateTime": "2016-10-24T11:10:15.2-10:00"
+         }
+      }
+   ]
+}

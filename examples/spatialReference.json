@@ -1,0 +1,10 @@
+{
+   "spatialReferenceSystem": [
+      {
+         "referenceSystemType": "referenceSystemType",
+         "referenceSystem": {
+            "identifier": "identifier"
+         }
+      }
+   ]
+}

@@ -1,0 +1,115 @@
+{
+   "metadata": [
+      {
+         "metadataInfo": {
+            "metadataIdentifier": {
+               "identifier": "identifier"
+            },
+            "metadataContact": [
+               {
+                  "role": "role",
+                  "timePeriod": {
+                     "startDateTime": "2016-10-31"
+                  },
+                  "party": [
+                     {
+                        "contactId": "individualId0"
+                     }
+                  ]
+               }
+            ]
+         },
+         "resourceInfo": {
+            "resourceType": "resourceType",
+            "citation": {
+               "title": "title"
+            },
+            "abstract": "abstract",
+            "pointOfContact": [
+               {
+                  "role": "role",
+                  "timePeriod": {
+                     "startDateTime": "2016-10-14"
+                  },
+                  "party": [
+                     {
+                        "contactId": "individualId0"
+                     }
+                  ]
+               }
+            ],
+            "defaultResourceLocale": {
+               "language": "LanguageCode",
+               "country": "CountryCode",
+               "characterSet": "MD_CharacterSetCode"
+            }
+         },
+         "resourceLineage": [
+            {
+               "statement": "statement"
+            },
+            {
+               "statement": "statement"
+            }
+         ],
+         "resourceDistribution": [
+            {
+               "description": "description"
+            },
+            {
+               "description": "description"
+            }
+         ],
+         "associatedResource": [
+            {
+               "resourceType": "resourceType",
+               "associationType": "associationType",
+               "resourceCitation": {
+                  "title": "title"
+               }
+            },
+            {
+               "resourceType": "resourceType",
+               "associationType": "associationType",
+               "metadataCitation": {
+                  "title": "title"
+               }
+            }
+
+         ],
+         "additionalDocumentation": [
+            {
+               "resourceType": "resourceType",
+               "citation": [
+                  {
+                     "title": "title"
+                  }
+               ]
+            },
+            {
+               "resourceType": "resourceType",
+               "citation": [
+                  {
+                     "title": "title"
+                  }
+               ]
+            }
+         ],
+         "funding": [
+            {
+               "allocation": [
+                  {
+                     "amount": 9.9,
+                     "currency": "currency"
+                  }
+               ]
+            },
+            {
+               "timePeriod": {
+                  "endDateTime": "2016-12-31"
+               }
+            }
+         ]
+      }
+   ]
+}

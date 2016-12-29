@@ -1,0 +1,23 @@
+{
+  "geometryProperties": [
+    {
+      "featureName": [
+        "featureName0",
+        "featureName1"
+      ],
+      "description": "description",
+      "gmlIdentifier": [
+        {
+          "identifier": "identifier0",
+          "namespace": "namespace0"
+        },
+        {
+          "identifier": "identifier1",
+          "namespace": "namespace1"
+        }
+      ],
+      "featureScope": "featureScope",
+      "acquisitionMethod": "acquisitionMethod"
+    }
+  ]
+}

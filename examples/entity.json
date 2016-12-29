@@ -1,0 +1,57 @@
+{
+   "entity": [
+      {
+         "entityId": "entityId",
+         "commonName": "commonName",
+         "codeName": "codeName",
+         "alias": [
+            "alias0",
+            "alias1"
+         ],
+         "definition": "definition",
+         "primaryKeyAttributeCodeName": [
+            "primaryKeyAttributeCodeName0",
+            "primaryKeyAttributeCodeName1"
+         ],
+         "index": [],
+         "attribute": [],
+         "foreignKey": []
+      },
+      {
+         "entityId": "",
+         "commonName": "",
+         "codeName": "",
+         "alias": [""],
+         "definition": "",
+         "primaryKeyAttributeCodeName": [""],
+         "index": [
+            {
+               "codeName": "",
+               "allowDuplicates": false,
+               "attributeCodeName": [""]
+            }
+         ],
+         "attribute": [
+            {
+               "commonName": "",
+               "codeName": "",
+               "alias": [""],
+               "definition": "",
+               "dataType": "",
+               "allowNull": true,
+               "units": "",
+               "domainId": "",
+               "minValue": "",
+               "maxValue": ""
+            }
+         ],
+         "foreignKey": [
+            {
+               "localAttributeCodeName": [""],
+               "referencedEntityCodeName": "",
+               "referencedAttributeCodeName": [""]
+            }
+         ]
+      }
+   ]
+}

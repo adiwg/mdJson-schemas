@@ -1,35 +1,36 @@
-[
-  {
-    "specificUsage": "specificUsage",
-    "userDeterminedLimitation": "userDeterminedLimitation",
-    "userContactInfo": [
+{
+   "resourceUsage": [
       {
-        "contactId": "contactId1",
-        "role": "role1"
-      }, {
-        "contactId": "contactId2",
-        "role": "role2"
+         "specificUsage": "specificUsage",
+         "userDeterminedLimitation": "userDeterminedLimitation",
+         "limitationResponse": [
+            "limitationResponse0",
+            "limitationResponse1"
+         ],
+         "userContactInfo": [
+            {
+               "role": "role0",
+               "timePeriod": {
+                  "startDateTime": "2016-10-14"
+               },
+               "party": [
+                  {
+                     "contactId": "individualId0"
+                  }
+               ]
+            },
+            {
+               "role": "role1",
+               "roleExtent": {
+                  "description": "description1"
+               },
+               "party": [
+                  {
+                     "contactId": "individualId1"
+                  }
+               ]
+            }
+         ]
       }
-    ]
-  }, {
-    "specificUsage": "Developed for land use planning.",
-    "userDeterminedLimitation": "Not suitable for use for navigation.",
-    "userContactInfo": [
-      {
-        "contactId": "3",
-        "role": "publisher"
-      }, {
-        "contactId": "3",
-        "role": "author"
-      }
-    ]
-  }, {
-    "specificUsage": "Bathymetry datasets developed for modeling physical oceanographic conditions in the Barrow Straight.",
-    "userContactInfo": [
-      {
-        "contactId": "1",
-        "role": "custodian"
-      }
-    ]
-  }
-]
+   ]
+}

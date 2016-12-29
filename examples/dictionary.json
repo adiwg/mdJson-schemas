@@ -1,0 +1,61 @@
+{
+   "dataDictionary": [
+      {
+         "resourceType": "resourceType",
+         "citation": {
+            "title": "title"
+         },
+         "description": "description",
+         "language": "language",
+         "dictionaryIncludedWithResource": true,
+         "domain": [
+            {
+               "domainId": "domainId0",
+               "commonName": "commonName",
+               "codeName": "codeName",
+               "description": "description",
+               "domainItem": [
+                  {
+                     "name": "name0",
+                     "value": "value0",
+                     "definition": "definition0"
+                  }
+               ]
+            },
+            {
+               "domainId": "domainId1",
+               "commonName": "commonName",
+               "codeName": "codeName",
+               "description": "description",
+               "domainItem": [
+                  {
+                     "name": "name0",
+                     "value": "value0",
+                     "definition": "definition0"
+                  }
+               ]
+            }
+         ],
+         "entity": [
+            {
+               "entityId": "entityId0",
+               "commonName": "commonName",
+               "codeName": "codeName",
+               "definition": "definition",
+               "primaryKeyAttributeCodeName": [
+                  "primaryKeyAttributeCodeName0"
+               ]
+            },
+            {
+               "entityId": "entityId1",
+               "commonName": "commonName",
+               "codeName": "codeName",
+               "definition": "definition",
+               "primaryKeyAttributeCodeName": [
+                  "primaryKeyAttributeCodeName0"
+               ]
+            }
+         ]
+      }
+   ]
+}

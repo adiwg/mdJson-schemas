@@ -1,0 +1,92 @@
+{
+  "mdJson": {
+    "schema": {
+      "name": "name",
+      "version": "version"
+    },
+    "contact": [
+      {
+        "contactId": "individualId0",
+        "isOrganization": false,
+        "name": "name0"
+      },
+      {
+        "contactId": "individualId1",
+        "isOrganization": false,
+        "name": "name1"
+      }
+    ],
+    "metadata": {
+      "metadataInfo": {
+        "metadataIdentifier": {
+          "identifier": "identifier"
+        },
+        "metadataContact": [
+          {
+            "role": "role",
+            "timePeriod": {
+              "startDateTime": "2016-10-31"
+            },
+            "party": [
+              {
+                "contactId": "individualId0"
+              }
+            ]
+          },
+          {
+            "role": "role",
+            "timePeriod": {
+              "startDateTime": "2016-10-31"
+            },
+            "party": [
+              {
+                "contactId": "individualId1"
+              }
+            ]
+          }
+        ]
+      },
+      "resourceInfo": {
+        "resourceType": "resourceType",
+        "citation": {
+          "title": "title"
+        },
+        "abstract": "abstract",
+        "pointOfContact": [
+          {
+            "role": "role",
+            "timePeriod": {
+              "startDateTime": "2016-10-14"
+            },
+            "party": [
+              {
+                "contactId": "individualId0"
+              }
+            ]
+          }
+        ],
+        "defaultResourceLocale": {
+          "language": "LanguageCode",
+          "country": "CountryCode",
+          "characterSet": "MD_CharacterSetCode"
+        }
+      }
+    },
+    "dataDictionary": [
+      {
+        "resourceType": "resourceType",
+        "citation": {
+          "title": "title"
+        },
+        "description": "description"
+      },
+      {
+        "resourceType": "resourceType",
+        "citation": {
+          "title": "title"
+        },
+        "description": "description"
+      }
+    ]
+  }
+}

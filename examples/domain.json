@@ -1,0 +1,33 @@
+{
+   "domain": [
+      {
+         "domainId": "domainId",
+         "commonName": "commonName",
+         "codeName": "codeName",
+         "description": "description",
+         "domainItem": [
+            {
+               "name": "name0",
+               "value": "value0",
+               "definition": "definition0"
+            },
+            {
+               "name": "name1",
+               "value": "value1",
+               "definition": "definition1"
+            }
+         ]
+      },
+      {
+         "domainId": "dom022",
+         "commonName": "US States",
+         "codeName": "STATE",
+         "description": "States of the United States of America",
+         "domainItem": [
+            {
+               "see": "domainMember 2.0"
+            }
+         ]
+      }
+   ]
+}
