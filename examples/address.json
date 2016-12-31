@@ -1,18 +1,14 @@
-{
-   "address": [
-      {
-         "deliveryPoint": [
-            "deliveryPoint0",
-            "deliveryPoint1"
-         ],
-         "city": "city",
-         "administrativeArea": "administrativeArea",
-         "postalCode": "postalCode",
-         "country": "country",
-         "electronicMailAddress": [
-            "email0@example.com",
-            "email1@example.com"
-         ]
-      }
-   ]
-}
+[{
+  "deliveryPoint": [
+    "deliveryPoint0",
+    "deliveryPoint1"
+  ],
+  "city": "city",
+  "administrativeArea": "administrativeArea",
+  "postalCode": "postalCode",
+  "country": "country",
+  "electronicMailAddress": [
+    "email0@example.com",
+    "email1@example.com"
+  ]
+}]
