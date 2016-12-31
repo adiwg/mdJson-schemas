@@ -1,56 +1,40 @@
-{
-   "contact": [
-      {
-         "contactId": "contactId",
-         "isOrganization": true,
-         "name": "name",
-         "positionName": "positionName",
-         "memberOfOrganization": [
-            "memberOfOrganization0",
-            "memberOfOrganization1"
-         ],
-         "logoGraphic": [
-            {
-               "fileName": "fileName"
-            },
-            {
-               "fileName": "fileName"
-            }
-         ],
-         "phone": [
-            {
-               "phoneName": "phoneName",
-               "phoneNumber": "111-111-1111",
-               "service": ["service0", "service1", "service2"]
-            },
-            {
-               "phoneName": "phoneName",
-               "phoneNumber": "111-111-1111",
-               "service": ["service0", "service1", "service2"]
-            }
-         ],
-         "address": [
-            {
-               "electronicMailAddress": ["electronicMailAddress"]
-            },
-            {
-               "electronicMailAddress": ["electronicMailAddress"]
-            }
-         ],
-         "onlineResource": [
-            {
-               "uri": "uri"
-            },
-            {
-               "uri": "uri"
-            }
-         ],
-         "hoursOfService": [
-            "hoursOfService0",
-            "hoursOfService1"
-         ],
-         "contactInstructions": "contactInstructions",
-         "contactType": "contactType"
-      }
-   ]
-}
+ [{
+   "contactId": "contactId",
+   "isOrganization": true,
+   "name": "name",
+   "positionName": "positionName",
+   "memberOfOrganization": [
+     "memberOfOrganization0",
+     "memberOfOrganization1"
+   ],
+   "logoGraphic": [{
+     "fileName": "fileName"
+   }, {
+     "fileName": "fileName"
+   }],
+   "phone": [{
+     "phoneName": "phoneName",
+     "phoneNumber": "111-111-1111",
+     "service": ["service0", "service1", "service2"]
+   }, {
+     "phoneName": "phoneName",
+     "phoneNumber": "111-111-1111",
+     "service": ["service0", "service1", "service2"]
+   }],
+   "address": [{
+     "electronicMailAddress": ["electronicMailAddress@foo.bar"]
+   }, {
+     "electronicMailAddress": ["electronicMailAddress@foo.bar"]
+   }],
+   "onlineResource": [{
+     "uri": "urn:uri"
+   }, {
+     "uri": "http://foo.com"
+   }],
+   "hoursOfService": [
+     "hoursOfService0",
+     "hoursOfService1"
+   ],
+   "contactInstructions": "contactInstructions",
+   "contactType": "contactType"
+ }]

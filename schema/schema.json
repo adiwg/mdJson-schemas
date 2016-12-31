@@ -27,7 +27,13 @@
       }
     },
     "contact": {
-      "$ref": "schema/contact.json"
+      "type": "array",
+      "description": "An array of contacts to be referenced throughout the metadata. Any contact used in the metadata record must be stored within this array and referenced by contactId. Items in array may be used 0-n times throughout the record.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "schema/contact.json"
+      }
     },
     "metadata": {
       "$ref": "schema/metadata.json"
