@@ -191,7 +191,7 @@
         "ISO 19115-2": ["MD_DataIdentification > graphicOverview > MD_BrowseGraphic"]
       },
       "items": {
-        "$ref": "graphicOverview.json#"
+        "$ref": "graphic.json#"
       }
     },
     "constraint": {

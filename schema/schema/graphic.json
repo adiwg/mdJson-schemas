@@ -1,5 +1,5 @@
 {
-  "id": "graphicOverview.json#",
+  "id": "graphic.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "example": "../../examples/full_example.json#/metadata/resourceInfo/graphicOverview/0",
   "description": "Provides a path or link to images, maps, flow charts, models, etc. that illustrate the resource.",
@@ -9,7 +9,7 @@
   "properties": {
     "fileName": {
       "type": "string",
-      "description": "Name of the file that contains a graphic overview of the resource.",
+      "description": "Name of the file that contains a graphic describing the resource.",
       "translation": {
         "ISO 19115-2": ["MD_BrowseGraphic > filename"],
         "FGDC CSDGM": ["idinfo > browse > browsen"]
@@ -17,7 +17,7 @@
     },
     "fileDescription": {
       "type": "string",
-      "description": "Description of the graphic overview.",
+      "description": "Description of the graphic.",
       "translation": {
         "ISO 19115-2": ["MD_BrowseGraphic > fileDescription"],
         "FGDC CSDGM": ["idinfo > browse > browsed"]
@@ -31,12 +31,35 @@
         "FGDC CSDGM": ["idinfo > browse > browset"]
       }
     },
+    "fileConstraint": {
+      "type": "object",
+      "description": "Identifies, legal, security, and other constraint requirements associated with use and distribution of the graphic",
+      "example": "../../examples/",
+      "translation": {},
+      "properties": {
+        "constraint": {
+          "type": "array",
+          "items": {
+            "$ref": "resourceConstraint.json#"
+          }
+        },
+        "legalConstraint": {
+          "type": "array",
+          "items": {
+            "$ref": "resourceConstraint.json#/definitions/legalConstraint"
+          }
+        }
+      }
+    },
     "fileUri": {
-      "description": "URI of the graphic overview.",
+      "type": "array",
+      "description": "URI of the graphic.",
       "translation": {
         "ISO 19115-2": ["MD_BrowseGraphic > filename @xlink:href"]
       },
-      "$ref": "../schema.json#/definitions/uri"
+      "items": {
+        "$ref": "onlineResource.json#"
+      }
     }
   }
 }
