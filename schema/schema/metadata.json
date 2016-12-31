@@ -60,7 +60,7 @@
           }
         },
         "metadataCreationDate": {
-          "$ref": "../schema.json#/definitions/date",
+          "$ref": "common.json#/definitions/date",
           "description": "Date that the metadata was created.",
           "translation": {
             "ISO 19115-2": ["MI_Metadata > dateStamp"],
@@ -68,7 +68,7 @@
           }
         },
         "metadataLastUpdate": {
-          "$ref": "../schema.json#/definitions/date",
+          "$ref": "common.json#/definitions/date",
           "description": "Date that the metadata was updated.",
           "translation": {
             "ISO 19115-2": ["MI_Metadata > dateStamp"],
@@ -76,7 +76,7 @@
           }
         },
         "metadataUri": {
-          "$ref": "../schema.json#/definitions/uri",
+          "$ref": "common.json#/definitions/uri",
           "description": "Uniform Resource Identifier (URI) of the metadata record."
         },
         "metadataStatus": {

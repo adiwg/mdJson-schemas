@@ -104,7 +104,7 @@
             "ISO 19115-2": ["LI_ProcessStep > dateTime"],
             "FGDC CSDGM": ["dataqual > lineage > procstep > procdate"]
           },
-          "$ref": "../schema.json#/definitions/date"
+          "$ref": "common.json#/definitions/date"
         },
         "processor": {
           "type": "array",

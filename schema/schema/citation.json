@@ -55,7 +55,7 @@
                   "ISO 19115-2": ["CI_Date > date", "FC_FeatureCatalogue > versionDate"],
                   "FGDC CSDGM": ["idinfo > citation > citeinfo > pubdate"]
                 },
-                "$ref": "../schema.json#/definitions/date"
+                "$ref": "common.json#/definitions/date"
               },
               "dateType": {
                 "type": "string",

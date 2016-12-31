@@ -78,7 +78,7 @@
           "translation": {
             "ISO 19115-2": ["EX_TemporalExtent > extent > TimeInstant > timePosition"]
           },
-          "$ref": "../schema.json#/definitions/date"
+          "$ref": "common.json#/definitions/date"
         }
       }
     },
@@ -108,7 +108,7 @@
             "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod > beginPosition "],
             "FGDC CSDGM": ["idinfo > timeperd > rngdates > begdate"]
           },
-          "$ref": "../schema.json#/definitions/date"
+          "$ref": "common.json#/definitions/date"
         },
         "endPosition": {
           "description": "Ending date, or date and time.",
@@ -116,7 +116,7 @@
             "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod > endPosition"],
             "FGDC CSDGM": ["idinfo > timeperd > rngdates > enddate"]
           },
-          "$ref": "../schema.json#/definitions/date"
+          "$ref": "common.json#/definitions/date"
         }
       },
       "anyOf": [
@@ -166,7 +166,7 @@
             "ISO 19115-2": ["EX_TemporalExtent > extent > TimeInstant > timePosition"]
           },
           "items": {
-            "$ref": "../schema.json#/definitions/date"
+            "$ref": "common.json#/definitions/date"
           }
         }
       }
@@ -207,7 +207,7 @@
           "translation": {
             "ISO 19115-2": ["EX_VerticalExtent > verticalCRS @xlink:href "]
           },
-          "$ref": "../schema.json#/definitions/uri"
+          "$ref": "common.json#/definitions/uri"
         }
       }
     }

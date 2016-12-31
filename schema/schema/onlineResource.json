@@ -8,7 +8,7 @@
   "additionalProperties": true,
   "properties": {
     "uri": {
-      "$ref": "../schema.json#/definitions/uri"
+      "$ref": "common.json#/definitions/uri"
     },
     "name": {
       "type": "string",
