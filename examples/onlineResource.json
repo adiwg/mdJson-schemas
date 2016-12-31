@@ -1,18 +1,13 @@
-{
-   "onlineResource": [
-      {
-         "uri": "http://URI.example.com",
-         "protocol": "protocol",
-         "name": "name",
-         "description": "description",
-         "function": "function"
-      },
-      {
-         "uri": "https://www.amazon.com/Kindle-eBooks",
-         "protocol": "HTTP",
-         "name": "Kindle Books",
-         "description": "Home for Amazon Kindle eBooks",
-         "function": "sales"
-      }
-   ]
-}
+[{
+  "uri": "http://URI.example.com",
+  "protocol": "protocol",
+  "name": "name",
+  "description": "description",
+  "function": "function"
+}, {
+  "uri": "https://www.amazon.com/Kindle-eBooks",
+  "protocol": "HTTP",
+  "name": "Kindle Books",
+  "description": "Home for Amazon Kindle eBooks",
+  "function": "sales"
+}]
