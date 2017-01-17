@@ -1,51 +1,21 @@
 {
-   "legalConstraint": [
+   "constraint": [
       {
-         "useLimitation": [
-            "useLimitation0",
-            "useLimitation1"
-         ],
-         "scope": {
-            "scopeCode": "scopeCode"
-         },
-         "graphic": [
-            {
-               "fileName": "fileName"
-            }
-         ],
-         "reference": [
-            {
-               "title": "title"
-            }
-         ],
-         "releasability": {
-            "statement": "statement"
-         },
-         "responsibleParty": [
-            {
-               "role": "role",
-               "roleExtent": {
-                  "description": "description"
-               },
-               "party": [
-                  {
-                     "contactId": "individualId0"
-                  }
-               ]
-            }
-         ],
-         "useConstraint": [
-            "useConstraint0",
-            "useConstraint1"
-         ],
-         "accessConstraint": [
-            "accessConstraint0",
-            "accessConstraint1"
-         ],
-         "otherConstraint": [
-            "otherConstraint0",
-            "otherConstraint1"
-         ]
+         "type": "legal",
+         "legalConstraint": {
+            "useConstraint": [
+               "useConstraint0",
+               "useConstraint1"
+            ],
+            "accessConstraint": [
+               "accessConstraint0",
+               "accessConstraint1"
+            ],
+            "otherConstraint": [
+               "otherConstraint0",
+               "otherConstraint1"
+            ]
+         }
       }
    ]
 }

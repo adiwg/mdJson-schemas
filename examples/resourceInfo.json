@@ -218,34 +218,32 @@
           ]
         }
       ],
-      "constraints": {
-        "constraint": [
-          {
-            "useLimitation": [
-              "useLimitation0"
-            ]
-          }
-        ],
-        "legalConstraint": [
-          {
-            "useLimitation": [
-              "useLimitation1"
+      "constraint": [
+        {
+          "type": "use",
+          "useLimitation": [
+            "useLimitation0",
+            "useLimitation1"
+          ]
+        },
+        {
+          "type": "legal",
+          "legalConstraint": {
+            "useConstraint": [
+              "useConstraint0",
+              "useConstraint1"
             ],
             "accessConstraint": [
-              "accessConstraint10",
-              "accessConstraint11"
+              "accessConstraint0",
+              "accessConstraint1"
+            ],
+            "otherConstraint": [
+              "otherConstraint0",
+              "otherConstraint1"
             ]
           }
-        ],
-        "securityConstraint": [
-          {
-            "useLimitation": [
-              "useLimitation2"
-            ],
-            "classification": "classification2"
-          }
-        ]
-      },
+        }
+      ],
       "defaultResourceLocale": {
         "language": "LanguageCode",
         "country": "CountryCode",

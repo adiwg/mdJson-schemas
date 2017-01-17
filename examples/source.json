@@ -14,8 +14,11 @@
             }
          ],
          "scaleDenominator": 9,
-         "referenceSystem": {
-            "referenceSystemType": "referenceSystemType"
+         "sourceReferenceSystem": {
+            "referenceSystemType": "referenceSystemType",
+            "referenceSystem": {
+               "identifier": "identifier"
+            }
          },
          "sourceStep": [
             {

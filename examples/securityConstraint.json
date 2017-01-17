@@ -1,43 +1,13 @@
 {
-   "securityConstraint": [
+   "constraint": [
       {
-         "useLimitation": [
-            "useLimitation0",
-            "useLimitation1"
-         ],
-         "scope": {
-            "scopeCode": "scopeCode"
-         },
-         "graphic": [
-            {
-               "fileName": "fileName"
-            }
-         ],
-         "reference": [
-            {
-               "title": "title"
-            }
-         ],
-         "releasability": {
-            "statement": "statement"
-         },
-         "responsibleParty": [
-            {
-               "role": "role",
-               "roleExtent": {
-                  "description": "description"
-               },
-               "party": [
-                  {
-                     "contactId": "individualId0"
-                  }
-               ]
-            }
-         ],
-         "classification": "classification",
-         "classificationSystem": "classificationSystem",
-         "userNote": "userNote",
-         "handlingDescription": "handlingDescription"
+         "type": "security",
+         "securityConstraint": {
+            "classification": "classification",
+            "classificationSystem": "classificationSystem",
+            "userNote": "userNote",
+            "handlingDescription": "handlingDescription"
+         }
       }
    ]
 }

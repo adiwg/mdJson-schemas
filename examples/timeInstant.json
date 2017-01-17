@@ -3,7 +3,7 @@
     {
       "id": "id",
       "description": "description",
-      "gmlIdentifier": {
+      "identifier": {
         "identifier": "identifier",
         "namespace": "namespace"
       },

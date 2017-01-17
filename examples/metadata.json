@@ -71,11 +71,10 @@
             {
                "resourceType": "resourceType",
                "associationType": "associationType",
-               "metadataCitation": {
+               "resourceCitation": {
                   "title": "title"
                }
             }
-
          ],
          "additionalDocumentation": [
             {

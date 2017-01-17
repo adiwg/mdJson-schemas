@@ -5,10 +5,10 @@
          "transferSize": 9.9,
          "onlineOption": [
             {
-               "uri": "uri0"
+               "resourceURI": "uri0"
             },
             {
-               "uri": "uri1"
+               "resourceURI": "uri1"
             }
          ],
          "offlineOption": [

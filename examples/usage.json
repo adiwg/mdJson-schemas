@@ -2,10 +2,35 @@
    "resourceUsage": [
       {
          "specificUsage": "specificUsage",
+         "temporalExtent": [
+            {
+               "type": "instant",
+               "timeInstant": {
+                  "dateTime": "2016-10-24T11:10:15.2-10:00"
+               }
+            },
+            {
+               "type": "period",
+               "timePeriod": {
+                  "startDateTime": "2016-10-24T11:10:15.2-10:00"
+               }
+            }
+         ],
          "userDeterminedLimitation": "userDeterminedLimitation",
          "limitationResponse": [
             "limitationResponse0",
             "limitationResponse1"
+         ],
+         "documentedIssue": {
+            "title": "title0"
+         },
+         "additionalDocumentation": [
+            {
+               "title": "title1"
+            },
+            {
+               "title": "title2"
+            }
          ],
          "userContactInfo": [
             {

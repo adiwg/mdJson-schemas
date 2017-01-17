@@ -1,6 +1,7 @@
 {
    "constraint": [
       {
+         "type": "use",
          "useLimitation": [
             "useLimitation0",
             "useLimitation1"
@@ -10,12 +11,18 @@
          },
          "graphic": [
             {
-               "fileName": "fileName"
+               "fileName": "fileName0"
+            },
+            {
+               "fileName": "fileName1"
             }
          ],
          "reference": [
             {
-               "title": "title"
+               "title": "title0"
+            },
+            {
+               "title": "title1"
             }
          ],
          "releasability": {
@@ -23,9 +30,20 @@
          },
          "responsibleParty": [
             {
-               "role": "role",
+               "role": "role0",
                "roleExtent": {
-                  "description": "description"
+                  "description": "description0"
+               },
+               "party": [
+                  {
+                     "contactId": "individualId0"
+                  }
+               ]
+            },
+            {
+               "role": "role1",
+               "roleExtent": {
+                  "description": "description1"
                },
                "party": [
                   {
@@ -33,7 +51,27 @@
                   }
                ]
             }
-         ]
+         ],
+         "legalConstraint": {
+            "useConstraint": [
+               "useConstraint0",
+               "useConstraint1"
+            ],
+            "accessConstraint": [
+               "accessConstraint0",
+               "accessConstraint1"
+            ],
+            "otherConstraint": [
+               "otherConstraint0",
+               "otherConstraint1"
+            ]
+         },
+         "securityConstraint": {
+            "classification": "classification",
+            "classificationSystem": "classificationSystem",
+            "userNote": "userNote",
+            "handlingDescription": "handlingDescription"
+         }
       }
    ]
 }
