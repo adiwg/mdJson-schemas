@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "releasability.json#",
+  "type": "object",
+  "description": "",
+  "minProperties": 1,
+  "additionalProperties": true,
+  "properties": {
+    "addressee": {
+      "type": "array",
+      "example": "",
+
+      "minItems": 1,
+      "items": {
+        "$ref": "./responsibility.json#"
+      }
+    },
+    "statement": {
+      "type": "string",
+      "description": "The release statement.",
+      "example": "",
+      "translation": {},
+      "minLength": 1
+    },
+    "disseminationConstraint": {
+      "type": "array",
+      "description": "Factor in determining releasability",
+      "example": "",
+      "translation": {},
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "anyOf": [{
+    "title": "Addressee is required.",
+    "required": ["addressee"]
+  }, {
+    "title": "Statement is required.",
+    "required": ["statement"]
+  }]
+}
