@@ -1,13 +1,9 @@
-{
-   "identifier": [
-      {
-         "identifier": "identifier",
-         "namespace": "namespace",
-         "version": "version",
-         "description": "description",
-         "authority": {
-            "title": "title"
-         }
-      }
-   ]
-}
+ [{
+   "identifier": "identifier",
+   "namespace": "namespace",
+   "version": "version",
+   "description": "description",
+   "authority": {
+     "title": "title"
+   }
+ }]

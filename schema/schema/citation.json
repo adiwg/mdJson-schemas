@@ -7,21 +7,18 @@
   },
   "type": "object",
   "required": ["title", "date"],
-  "allOf": [
-    {
-      "$ref": "#/definitions/citationFull"
-    }
-  ],
+  "allOf": [{
+    "$ref": "#/definitions/citationFull"
+  }],
   "definitions": {
-    "citationBase": {
-      "title": "base citation",
-      "description": "A minimal citation object supporting only basic attributes.",
-      "example": "../../examples/full_example.json#/metadata/resourceInfo/citation/identifier/0/authority",
+    "citationFull": {
+      "type": "object",
+      "title": "full citation",
+      "description": "A full citation object, all attributes are supported.",
+      "example": "",
       "translation": {
         "FGDC CSDGM": ["idinfo > citation > citeinfo"]
       },
-      "type": "object",
-      "required": ["title"],
       "properties": {
         "title": {
           "type": "string",
@@ -32,10 +29,13 @@
           }
         },
         "alternateTitle": {
-          "type": "string",
+          "type": "array",
           "description": "Alias by which the cited resource is known.",
           "translation": {
             "ISO 19115-2": ["CI_Citation > alternateTitle"]
+          },
+          "items": {
+            "type": "string"
           }
         },
         "date": {
@@ -47,7 +47,7 @@
           "minItems": 1,
           "items": {
             "type": "object",
-            "example": "../../examples/full_example.json#/metadata/resourceInfo/citation/date",
+            "example": "",
             "required": ["date", "dateType"],
             "properties": {
               "date": {
@@ -67,6 +67,14 @@
             }
           }
         },
+        "edition": {
+          "type": "string",
+          "description": "Version identifier for the resource.",
+          "translation": {
+            "ISO 19115-2": ["CI_Citation > edition"],
+            "FGDC CSDGM": ["idinfo > citation > edition"]
+          }
+        },
         "responsibleParty": {
           "type": "array",
           "description": "Identification of, and means of communication with, person(s) and organization(s) associated with the cited resource.",
@@ -76,33 +84,7 @@
           },
           "minItems": 1,
           "items": {
-            "$ref": "contact.json#/definitions/contactRef"
-          }
-        },
-        "onlineResource": {
-          "type": "array",
-          "description": "On-line information related to the citation.",
-          "translation": {
-            "ISO 19115-2": ["CI_Citation > citedResponsibleParty > CI_ResponsibleParty > contact > CI_Contact > onlineResource > CI_OnlineResource"]
-          },
-          "items": {
-            "$ref": "onlineResource.json#"
-          }
-        }
-      }
-    },
-    "citationFull": {
-      "type": "object",
-      "title": "full citation",
-      "description": "A full citation object, all attributes are supported.",
-      "example": "../../examples/full_example.json#/metadata/resourceInfo/citation",
-      "properties": {
-        "edition": {
-          "type": "string",
-          "description": "Version identifier for the resource.",
-          "translation": {
-            "ISO 19115-2": ["CI_Citation > edition"],
-            "FGDC CSDGM": ["idinfo > citation > edition"]
+            "$ref": "responsibility.json#"
           }
         },
         "presentationForm": {
@@ -123,71 +105,65 @@
             "ISO 19115-2": ["CI_Citation > identifier"]
           },
           "items": {
-            "$ref": "#/definitions/identifier"
-          }
-        }
-      },
-      "allOf": [
-        {
-          "$ref": "#/definitions/citationBase"
-        }
-      ]
-    },
-    "identifier": {
-      "title": "identifier",
-      "description": "Assigned identifier for a resource.",
-      "example": "../../examples/full_example.json#/metadata/resourceInfo/citation/identifier",
-      "translation": {
-        "ISO 19115-2": ["MD_Identifier"]
-      },
-      "type": "object",
-      "required": ["identifier"],
-      "properties": {
-        "identifier": {
-          "type": "string",
-          "description": "A name that is used to identify the resource.",
-          "translation": {
-            "ISO 19115-2": ["MD_Identifier > code"]
+            "$ref": "./identifier.json#"
           }
         },
-        "namespace": {
-          "type": "string",
-          "description": "A string which unambiguously defines the namespace for the identifier.",
-          "translation": {
-            "ISO 19115-2": ["RS_Identifier > codeSpace"]
+        "series": {
+          "$ref": "#/definitions/series"
+
+        },
+        "otherCitationDetails": {
+          "type": "array",
+          "description": "Other information required to complete the citation that is not recorded elsewhere.",
+          "example": "",
+          "translation": {},
+          "items": {
+            "type": "string"
           }
         },
-        "version": {
-          "type": "string",
-          "description": "The version of the identifier.",
+        "onlineResource": {
+          "type": "array",
+          "description": "On-line information related to the citation.",
           "translation": {
-            "ISO 19115-2": ["RS_Identifier > version"]
-          }
-        },
-        "description": {
-          "type": "string",
-          "description": "A natural language description of the meaning of the identifier value."
-        },
-        "type": {
-          "type": "string",
-          "description": "The type of identifier, e.g. doi, isbn, issn, etc.",
-          "translation": {
-            "ISO 19115-2": ["CI_Citation > ISBN", "CI_Citation > ISSN"]
-          }
-        },
-        "authority": {
-          "description": "Citation for the authority issuing the identifier.",
-          "example": "../../examples/full_example.json#/metadata/resourceInfo/citation/identifier",
-          "translation": {
-            "ISO 19115-2": ["MD_Identifier > authority > CI_Citation"]
+            "ISO 19115-2": ["CI_Citation > citedResponsibleParty > CI_ResponsibleParty > contact > CI_Contact > onlineResource > CI_OnlineResource"]
           },
-          "$ref": "#/definitions/citationBase"
+          "items": {
+            "$ref": "onlineResource.json#"
+          }
+        },
+        "graphic": {
+          "type": "array",
+          "description": "Online graphic associated with the citation",
+          "example": "",
+          "translation": {},
+          "items": {
+            "$ref": "./graphic.json#"
+          }
+        }
+      }
+    },
+    "series": {
+      "type": "object",
+      "description": "Information about the series, or aggregate resource, to which a resource belongs.",
+      "example": "",
+      "translation": {},
+      "minProperties": 1,
+      "additionalProperties": true,
+      "properties": {
+        "seriesName": {
+          "type": "string"
+        },
+        "seriesIssue": {
+          "type": "string"
+        },
+        "issuePage": {
+          "type": "string"
         }
       }
     },
     "dictionary": {
       "type": "object",
-      "example": "../../examples/full_example.json#/dataDictionary/0/dictionaryInfo/citation",
+      "example": "",
       "required": ["title", "date"],
       "title": "dictionary citation",
       "description": "A citation object for data dictionaries.",
@@ -200,11 +176,9 @@
           }
         }
       },
-      "allOf": [
-        {
-          "$ref": "#/definitions/citationBase"
-        }
-      ]
+      "allOf": [{
+        "$ref": "#/definitions/citationFull"
+      }]
     }
   }
 }
