@@ -1,77 +1,62 @@
-{
-   "constraint": [
-      {
-         "type": "use",
-         "useLimitation": [
-            "useLimitation0",
-            "useLimitation1"
-         ],
-         "scope": {
-            "scopeCode": "scopeCode"
-         },
-         "graphic": [
-            {
-               "fileName": "fileName0"
-            },
-            {
-               "fileName": "fileName1"
-            }
-         ],
-         "reference": [
-            {
-               "title": "title0"
-            },
-            {
-               "title": "title1"
-            }
-         ],
-         "releasability": {
-            "statement": "statement"
-         },
-         "responsibleParty": [
-            {
-               "role": "role0",
-               "roleExtent": {
-                  "description": "description0"
-               },
-               "party": [
-                  {
-                     "contactId": "individualId0"
-                  }
-               ]
-            },
-            {
-               "role": "role1",
-               "roleExtent": {
-                  "description": "description1"
-               },
-               "party": [
-                  {
-                     "contactId": "individualId0"
-                  }
-               ]
-            }
-         ],
-         "legalConstraint": {
-            "useConstraint": [
-               "useConstraint0",
-               "useConstraint1"
-            ],
-            "accessConstraint": [
-               "accessConstraint0",
-               "accessConstraint1"
-            ],
-            "otherConstraint": [
-               "otherConstraint0",
-               "otherConstraint1"
-            ]
-         },
-         "securityConstraint": {
-            "classification": "classification",
-            "classificationSystem": "classificationSystem",
-            "userNote": "userNote",
-            "handlingDescription": "handlingDescription"
-         }
-      }
-   ]
-}
+ [{
+   "type": "use",
+   "useLimitation": [
+     "useLimitation0",
+     "useLimitation1"
+   ],
+   "scope": {
+     "scopeCode": "scopeCode"
+   },
+   "graphic": [{
+     "fileName": "fileName0"
+   }, {
+     "fileName": "fileName1"
+   }],
+   "reference": [{
+     "title": "title0"
+   }, {
+     "title": "title1"
+   }],
+   "releasability": {
+     "statement": "statement"
+   },
+   "responsibleParty": [{
+       "role": "role0",
+       "roleExtent": {
+         "description": "description0"
+       },
+       "party": [{
+         "contactId": "individualId0"
+       }]
+     },
+     {
+       "role": "role1",
+       "roleExtent": {
+         "description": "description1"
+       },
+       "party": [{
+         "contactId": "individualId0"
+       }]
+     }
+   ],
+   "legal": {
+     "useConstraint": [
+       "useConstraint0",
+       "useConstraint1"
+     ],
+     "accessConstraint": [
+       "accessConstraint0",
+       "accessConstraint1"
+     ],
+     "otherConstraint": [
+       "otherConstraint0",
+       "otherConstraint1"
+     ]
+   },
+   "security": {
+     "classification": "classification",
+     "classificationSystem": "classificationSystem",
+     "userNote": "userNote",
+     "handlingDescription": "handlingDescription"
+   }
+ }]

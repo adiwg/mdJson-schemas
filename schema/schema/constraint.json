@@ -1,26 +1,82 @@
 {
-  "id": "resourceConstraint.json#",
+  "id": "constraint.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "schema for resource constraint",
   "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint",
-  "anyOf": [
-    {
-      "$ref": "#/definitions/useLimitation"
-    }, {
-      "$ref": "#/definitions/legalConstraint"
-    }, {
-      "$ref": "#/definitions/securityConstraint"
-    }
-  ],
-  "definitions": {
-    "useLimitation": {
+  "anyOf": [{
+    "required": ["useLimitation"]
+  }, {
+    "required": ["security"],
+    "type": "string",
+    "enum": ["security"]
+  }, {
+    "required": ["legal"],
+    "type": "string",
+    "enum": ["legal"]
+  }],
+  "properties": {
+    "type": {
       "type": "string",
+      "description": "Indicates the type of constraint.",
+      "example": "",
+      "enum": ["use", "legal", "security"]
+    },
+    "useLimitation": {
+      "type": "array",
       "description": "Limitation affecting the fitness for use of the resource or metadata. For example, \"not to be used for navigation\".",
-      "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint/useLimitation",
+      "example": "",
       "translation": {
         "ISO 19115-2": ["MD_Constraints > useLimitation"]
+      },
+      "items": {}
+    },
+    "scope": {
+      "description": "temporal extent and or level of the application of the constraint restrictions.",
+      "example": "",
+      "$ref": "./scope.json#"
+    },
+    "graphic": {
+      "type": "array",
+      "description": "Graphic or symbol indicating the constraint",
+      "example": "",
+      "items": {
+        "$ref": "./graphic.json#"
       }
     },
+    "reference": {
+      "type": "array",
+      "description": "Citation for the limitation or constraint",
+      "example": "",
+      "translation": {},
+      "items": {
+        "$ref": "./citation.json#"
+      }
+    },
+    "releasability": {
+      "$ref": "./releasability.json#",
+      "description": "Information concerning the parties to who the resource can or cannot be released.",
+      "example": ""
+    },
+    "responsibleParty": {
+      "type": "array",
+      "description": "Entity responsible for the resource constraint",
+      "example": "",
+      "translation": {},
+      "items": {
+        "$ref": "./responsibility.json#"
+      }
+    },
+    "legal": {
+      "$ref": "#/definitions/legalConstraint"
+    },
+    "security": {
+      "$ref": "#/definitions/securityConstraint"
+
+    }
+
+
+  },
+  "definitions": {
     "legalConstraint": {
       "type": "object",
       "description": "Restrictions and legal prerequisites for accessing and using the resource or metadata.",
@@ -29,6 +85,7 @@
         "ISO 19115-2": ["MD_LegalConstraints"]
       },
       "additionalProperties": true,
+      "minProperties": 1,
       "properties": {
         "accessConstraint": {
           "type": "array",
@@ -72,6 +129,7 @@
         "ISO 19115-2": ["MD_SecurityConstraints"]
       },
       "required": ["classification"],
+      "minProperties": 1,
       "additionalProperties": true,
       "properties": {
         "classification": {

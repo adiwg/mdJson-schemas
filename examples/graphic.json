@@ -11,7 +11,7 @@
      },
      {
        "type": "legal",
-       "legalConstraint": {
+       "legal": {
          "useConstraint": [
            "useConstraint0",
            "useConstraint1"
@@ -27,7 +27,7 @@
        }
      }
    ],
-   "fileURI": [{
-     "uri": "uri"
+   "fileUri": [{
+     "uri": "http://adiwg.org"
    }]
  }]

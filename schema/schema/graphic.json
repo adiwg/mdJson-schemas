@@ -32,23 +32,12 @@
       }
     },
     "fileConstraint": {
-      "type": "object",
+      "type": "array",
       "description": "Identifies, legal, security, and other constraint requirements associated with use and distribution of the graphic",
       "example": "../../examples/",
       "translation": {},
-      "properties": {
-        "constraint": {
-          "type": "array",
-          "items": {
-            "$ref": "resourceConstraint.json#"
-          }
-        },
-        "legalConstraint": {
-          "type": "array",
-          "items": {
-            "$ref": "resourceConstraint.json#/definitions/legalConstraint"
-          }
-        }
+      "items": {
+        "$ref": "constraint.json#"
       }
     },
     "fileUri": {
