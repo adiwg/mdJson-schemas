@@ -229,28 +229,6 @@
         }
       },
       "additionalProperties": true
-    },
-    "contactRef": {
-      "type": "object",
-      "example": "../../examples/full_example.json#/metadata/resourceInfo/citation/responsibleParty",
-      "additionalProperties": true,
-      "required": ["contactId", "role"],
-      "properties": {
-        "contactId": {
-          "type": "string",
-          "description": "Identifier matching a contactId in the main contact array."
-        },
-        "role": {
-          "type": "string",
-          "description": "Function performed by the contact in the current context.",
-          "translation": {
-            "ISO 19115-2": [
-              "MI_Metadata > Contact > CI_Contact > role [CI_RoleCode]"
-            ],
-            "FGDC CSDGM": ["metainfo > cntinfo > cntpos"]
-          }
-        }
-      }
     }
   }
 }
