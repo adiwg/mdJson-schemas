@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "scope.json#",
+  "type": "object",
+  "title": "",
+  "description": "The target resource and physical extent for which information is reported.",
+  "additionalProperties": true,
+  "required": ["scopeCode"],
+  "properties": {
+    "scopeCode": {
+      "type": "string",
+      "title": "",
+      "description": "Class of information to which the resource applies.",
+      "example": "",
+      "translation": {}
+    },
+    "scopeDescription": {
+      "type": "array",
+      "description": "Detailed description/listing of the items specified by the scope.",
+      "example": "",
+      "translation": {},
+      "items": {
+        "type": "object",
+        "required": ["type", "description"],
+        "additionalProperties": true,
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "The type of item described.",
+            "example": "",
+            "translation": {},
+            "minLength": 1,
+            "enum": ["dataset", "attribute", "feature", "other"]
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the scope item.",
+            "example": "",
+            "translation": {},
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "timePeriod": {
+      "type": "array",
+      "description": "information about the temporal extent of the resource specified by the scope",
+      "example": "",
+      "translation": {},
+      "items": {
+        "$ref": "./timePeriod.json#"
+      }
+    }
+  }
+}
