@@ -6,7 +6,7 @@
     "ISO 19115-2": ["CI_Citation"]
   },
   "type": "object",
-  "required": ["title", "date"],
+  "required": ["title"],
   "allOf": [{
     "$ref": "#/definitions/citationFull"
   }],

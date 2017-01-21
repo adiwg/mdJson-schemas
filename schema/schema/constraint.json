@@ -7,12 +7,16 @@
     "required": ["useLimitation"]
   }, {
     "required": ["security"],
-    "type": "string",
-    "enum": ["security"]
+    "type": {
+      "type": "string",
+      "enum": ["security"]
+    }
   }, {
     "required": ["legal"],
-    "type": "string",
-    "enum": ["legal"]
+    "type": {
+      "type": "string",
+      "enum": ["legal"]
+    }
   }],
   "properties": {
     "type": {

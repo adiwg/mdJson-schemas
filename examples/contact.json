@@ -1,6 +1,6 @@
  [{
    "contactId": "contactId",
-   "isOrganization": true,
+   "isOrganization": false,
    "name": "name",
    "positionName": "positionName",
    "memberOfOrganization": [
