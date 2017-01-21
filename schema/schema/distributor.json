@@ -17,7 +17,7 @@
         "ISO 19115-2": ["MD_Distribution > distributor > MD_Distributor > distributorContact > CI_ResponsibleParty"],
         "FGDC CSDGM": ["distinfo > distrib > cntinfo"]
       },
-      "$ref": "contact.json#/definitions/contactRef"
+      "$ref": "./responsibility.json#"
     },
     "distributionOrderProcess": {
       "type": "array",

@@ -41,7 +41,7 @@
           },
           "minItems": 1,
           "items": {
-            "$ref": "contact.json#/definitions/contactRef"
+            "$ref": "./responsibility.json#"
           }
         },
         "metadataCharacterSet": {

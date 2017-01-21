@@ -114,7 +114,7 @@
             "FGDC CSDGM": ["dataqual > lineage > procstep > proccont > cntinfo"]
           },
           "items": {
-            "$ref": "contact.json#/definitions/contactRef"
+            "$ref": "./responsibility.json#"
           }
         }
       }
