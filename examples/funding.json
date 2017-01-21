@@ -1,20 +1,33 @@
-{
-   "funding": [
+[{
+    "allocation": [{
+        "amount": 300.00,
+        "currency": "USD",
+        "source": "Alpha contactId",
+        "recipient": "Beta contactId",
+        "matching": true,
+        "comment": "some comments about the allocation"
+      },
       {
-         "allocation": [
-            {
-               "amount": 9.9,
-               "currency": "currency"
-            },
-            {
-               "amount": 9.9,
-               "currency": "currency"
-            }
-         ],
-         "timePeriod": {
-            "startDateTime": "2016-10-14T11:10:15.2-10:00",
-            "endDateTime": "2016-12-31"
-         }
+        "amount": 700,
+        "currency": "EUR",
+        "source": "Beta contactId"
       }
-   ]
-}
+    ],
+    "timePeriod": {
+      "startDateTime": "2015-10-01",
+      "endDateTime": "2016-09-30"
+    }
+  },
+  {
+    "timePeriod": {
+      "startDateTime": "2015-10-01",
+      "endDateTime": "2016-09-30"
+    }
+  },
+  {
+    "allocation": [{
+      "amount": 300000,
+      "currency": "USD"
+    }]
+  }
+]
