@@ -37,7 +37,7 @@
       "translation": {
         "ISO 19115-2": ["MI_ImageDescription > processingLevelCode > RS_Identifier"]
       },
-      "$ref": "citation.json#/definitions/identifier"
+      "$ref": "./identifier.json#"
     },
     "coverageItem": {
       "type": "array",
@@ -245,7 +245,7 @@
           "translation": {
             "ISO 19115-2": ["MI_ImageDescription > imageQualityCode > RS_Identifier"]
           },
-          "$ref": "citation.json#/definitions/identifier"
+          "$ref": "./identifier.json#"
         },
         "cloudCoverPercent": {
           "type": "number",

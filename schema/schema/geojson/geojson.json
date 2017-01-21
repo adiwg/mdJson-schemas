@@ -182,7 +182,7 @@
                 "ISO 19115-2": ["geographicElement > EX_GeographicDescription > geographicIdentifier > MD_Identifier"]
               },
               "items": {
-                "$ref": "../citation.json#/definitions/identifier"
+                "$ref": ".././identifier.json#"
               }
             }
           }
