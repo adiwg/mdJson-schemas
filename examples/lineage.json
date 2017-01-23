@@ -1,34 +1,21 @@
-{
-   "resourceLineage": [
-      {
-         "statement": "statement",
-         "resourceScope": {
-            "scopeCode": "scopeCode"
-         },
-         "lineageCitation": [
-            {
-               "title": "title"
-            },
-            {
-               "title": "title"
-            }
-         ],
-         "source": [
-            {
-               "description": "description"
-            },
-            {
-               "description": "description"
-            }
-         ],
-         "processStep": [
-            {
-               "description": "description"
-            },
-            {
-               "description": "description"
-            }
-         ]
-      }
-   ]
-}
+[{
+  "statement": "statement",
+  "scope": {
+    "scopeCode": "scopeCode"
+  },
+  "citation": [{
+    "title": "title"
+  }, {
+    "title": "title"
+  }],
+  "source": [{
+    "description": "description"
+  }, {
+    "description": "description"
+  }],
+  "processStep": [{
+    "description": "description"
+  }, {
+    "description": "description"
+  }]
+}]

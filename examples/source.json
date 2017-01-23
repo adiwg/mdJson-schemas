@@ -1,33 +1,23 @@
-{
-   "source": [
-      {
-         "description": "description",
-         "sourceCitation": {
-            "title": "title"
-         },
-         "sourceMetadata": [
-            {
-               "title": "title"
-            },
-            {
-               "title": "title"
-            }
-         ],
-         "scaleDenominator": 9,
-         "sourceReferenceSystem": {
-            "referenceSystemType": "referenceSystemType",
-            "referenceSystem": {
-               "identifier": "identifier"
-            }
-         },
-         "sourceStep": [
-            {
-               "description": "description"
-            },
-            {
-               "description": "description"
-            }
-         ]
-      }
-   ]
-}
+ [{
+   "description": "description",
+   "citation": {
+     "title": "title"
+   },
+   "metadataCitation": [{
+     "title": "title"
+   }, {
+     "title": "title"
+   }],
+   "scaleDenominator": 9,
+   "referenceSystem": {
+     "type": "referenceSystemType",
+     "systemIdentifier": {
+       "identifier": "identifier"
+     }
+   },
+   "processStep": [{
+     "description": "description"
+   }, {
+     "description": "description"
+   }]
+ }]
