@@ -6,7 +6,7 @@
   "required": [],
   "minProperties": 1,
   "additionalProperties": true,
-  "oneOf": [{
+  "anyOf": [{
       "required": ["allocation"]
     },
     {

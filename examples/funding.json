@@ -2,15 +2,15 @@
     "allocation": [{
         "amount": 300.00,
         "currency": "USD",
-        "source": "Alpha contactId",
-        "recipient": "Beta contactId",
+        "sourceId": "Alpha contactId",
+        "recipientId": "Beta contactId",
         "matching": true,
         "comment": "some comments about the allocation"
       },
       {
         "amount": 700,
         "currency": "EUR",
-        "source": "Beta contactId"
+        "sourceId": "Beta contactId"
       }
     ],
     "timePeriod": {
