@@ -22,6 +22,11 @@
         "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod > description "]
       }
     },
+    "identifier":{
+        "$ref" : "./identifier.json#",
+        "description" : "Identifier for the timePeriod.",
+        "example": ""
+    },
     "periodName": {
       "type": "array",
       "description": "Names associated with the time period.",
