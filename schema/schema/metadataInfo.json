@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "metadataInfo.json#",
+  "type": "object",
+  "description": "General information about the metadata record.",
+  "example": "",
+  "required": ["metadataContact", "metadataCreationDate"],
+  "additionalProperties": true,
+  "properties": {
+    "metadataIdentifier": {
+      "description": "Identifier for the metadata.",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > fileIdentifier"]
+      },
+      "$ref": "./identifier.json#"
+    },
+    "parentMetadata": {
+      "description": "Identifier of the metadata to which this metadata is a subset (child).",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > parentIdentifier"]
+      },
+      "$ref": "citation.json#/definitions/citationFull"
+    },
+    "metadataLocale": {
+      "description": "Main localised language and characterset used within the metadata record.",
+      "$ref": "locale.json"
+    },
+    "additionalMetadataLocale": {
+      "metadataLocale": {
+        "type": "array",
+        "description": "Additional localised language(s) and characterset(s) used within the metadata record.",
+        "items": {
+          "$ref": "locale.json"
+        }
+      }
+    },
+    "scope": {
+      "type": "array",
+      "description": "The scope/type of resource for which metadata is provided.",
+      "example": "",
+      "translation": {},
+      "items": {
+        "$ref": "./scope.json#"
+      }
+    },
+    "metadataContact": {
+      "type": "array",
+      "description": "Person or organization responsible for metadata information (metadata custodian).",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > contact > CI_Contact > responsibleParty > CI_ResponsibleParty"],
+        "FGDC CSDGM": ["metainfo > metc > cntinfo"]
+      },
+      "minItems": 1,
+      "items": {
+        "$ref": "./responsibility.json#"
+      }
+    },
+    "metadataCreationDate": {
+      "$ref": "common.json#/definitions/date",
+      "description": "Date that the metadata was created.",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > dateStamp"],
+        "FGDC CSDGM": ["metainfo > metd"]
+      }
+    },
+    "metadataDate": {
+      "type": "array",
+      "description": "Date that the metadata was updated.",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > dateStamp"],
+        "FGDC CSDGM": ["metainfo > metrd"]
+      },
+      "items":{
+        "$ref": "common.json#/definitions/dateObject"
+      }
+    },
+    "metadataOnlineResource": {
+      "type": "array",
+      "description": "Online location where the metadata is available.",
+      "example": "",
+      "translation": {},
+      "items": {
+        "$ref": "./onlineResource.json#"
+      }
+    },
+    "alternateMetadataReference": {
+      "type": "array",
+      "description": "Reference to alternative metadata for the resource.",
+      "example": "",
+      "translation": {},
+      "items": {
+        "$ref": "./citation.json#"
+      }
+    },
+    "metadataStatus": {
+      "type": "string",
+      "description": "Status of the metadata record."
+    },
+    "metadataMaintenance": {
+      "description": "Provides information about the frequency of metadata updates, and the scope of those updates.",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > metadataMaintenance > MD_MaintenanceInformation"]
+      },
+      "$ref": "maintInfo.json#"
+    }
+  }
+}

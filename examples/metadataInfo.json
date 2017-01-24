@@ -1,92 +1,68 @@
-{
-   "metadataInfo": [
-      {
-         "metadataIdentifier": {
-            "identifier": "identifier"
-         },
-         "parentMetadata": {
-            "title": "title"
-         },
-         "defaultMetadataLocale": {
-            "language": "language",
-            "country": "country",
-            "characterSet": "characterSet"
-         },
-         "otherMetadataLocale": [
-            {
-               "language": "language",
-               "country": "country",
-               "characterSet": "characterSet"
-            },
-            {
-               "language": "language",
-               "country": "country",
-               "characterSet": "characterSet"
-            }
-         ],
-         "resourceScope": [
-            {
-               "scopeCode": "scopeCode"
-            },
-            {
-               "scopeCode": "scopeCode"
-            }
-         ],
-         "metadataContact": [
-            {
-               "role": "role",
-               "timePeriod": {
-                  "startDateTime": "2016-10-31"
-               },
-               "party": [
-                  {
-                     "contactId": "individualId0"
-                  }
-               ]
-            },
-            {
-               "role": "role",
-               "timePeriod": {
-                  "startDateTime": "2016-10-31"
-               },
-               "party": [
-                  {
-                     "contactId": "individualId0"
-                  }
-               ]
-            }
-         ],
-         "metadataCreationDate": "2016-09-28",
-         "otherMetadataDates": [
-            {
-               "date": "2016-10-31",
-               "dateType": "dateType"
-            },
-            {
-               "date": "2016-10-31",
-               "dateType": "dateType"
-            }
-         ],
-         "metadataLinkage": [
-            {
-               "uri": "uri"
-            },
-            {
-               "uri": "uri"
-            }
-         ],
-         "metadataMaintenance": {
-            "frequency": "frequency"
-         },
-         "alternateMetadataReference": [
-            {
-               "title": "title"
-            },
-            {
-               "title": "title"
-            }
-         ],
-         "metadataStatus": "metadataStatus"
-      }
-   ]
-}
+[{
+  "metadataIdentifier": {
+    "identifier": "identifier"
+  },
+  "parentMetadata": {
+    "title": "title"
+  },
+  "metadataLocale": {
+    "language": "language",
+    "country": "country",
+    "characterSet": "characterSet"
+  },
+  "additionalMetadataLocale": [{
+    "language": "language",
+    "country": "country",
+    "characterSet": "characterSet"
+  }, {
+    "language": "language",
+    "country": "country",
+    "characterSet": "characterSet"
+  }],
+  "scope": [{
+    "scopeCode": "scopeCode"
+  }, {
+    "scopeCode": "scopeCode"
+  }],
+  "metadataContact": [{
+      "role": "role",
+      "timePeriod": [{
+        "startDateTime": "2016-10-31"
+      }],
+      "party": [{
+        "contactId": "individualId0"
+      }]
+    },
+    {
+      "role": "role",
+      "timePeriod": [{
+        "startDateTime": "2016-10-31"
+      }],
+      "party": [{
+        "contactId": "individualId0"
+      }]
+    }
+  ],
+  "metadataCreationDate": "2016-09-28",
+  "metadataDate": [{
+    "date": "2016-10-31",
+    "dateType": "dateType"
+  }, {
+    "date": "2016-10-31",
+    "dateType": "dateType"
+  }],
+  "metadataOnlineResource": [{
+    "uri": "http://adiwg.org"
+  }, {
+    "uri": "http://adiwg.org"
+  }],
+  "metadataMaintenance": {
+    "frequency": "frequency"
+  },
+  "alternateMetadataReference": [{
+    "title": "title"
+  }, {
+    "title": "title"
+  }],
+  "metadataStatus": "metadataStatus"
+}]
