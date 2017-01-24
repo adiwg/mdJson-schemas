@@ -2,8 +2,8 @@
   "id": "lineage.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "description": "Procedural (non-quantitative) data quality information about the portion of the data resource identified by the data quality scope.",
-  "example": "../../examples/full_example.json#/metadata/resourceInfo/dataQualityInfo/0/lineage",
+  "description": "Information on the history of the resource.",
+  "example": "",
   "translation": {
     "ISO 19115-2": ["LI_Lineage"]
   },
