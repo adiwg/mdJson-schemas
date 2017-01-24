@@ -5,12 +5,12 @@
   "parentMetadata": {
     "title": "title"
   },
-  "metadataLocale": {
+  "defaultMetadataLocale": {
     "language": "language",
     "country": "country",
     "characterSet": "characterSet"
   },
-  "additionalMetadataLocale": [{
+  "otherMetadataLocale": [{
     "language": "language",
     "country": "country",
     "characterSet": "characterSet"

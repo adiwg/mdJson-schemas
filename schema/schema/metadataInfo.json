@@ -21,17 +21,15 @@
       },
       "$ref": "citation.json#/definitions/citationFull"
     },
-    "metadataLocale": {
+    "defaultMetadataLocale": {
       "description": "Main localised language and characterset used within the metadata record.",
       "$ref": "locale.json"
     },
-    "additionalMetadataLocale": {
-      "metadataLocale": {
-        "type": "array",
-        "description": "Additional localised language(s) and characterset(s) used within the metadata record.",
-        "items": {
-          "$ref": "locale.json"
-        }
+    "otherMetadataLocale": {
+      "type": "array",
+      "description": "Additional localised language(s) and characterset(s) used within the metadata record.",
+      "items": {
+        "$ref": "locale.json"
       }
     },
     "scope": {
@@ -70,7 +68,7 @@
         "ISO 19115-2": ["MI_Metadata > dateStamp"],
         "FGDC CSDGM": ["metainfo > metrd"]
       },
-      "items":{
+      "items": {
         "$ref": "common.json#/definitions/dateObject"
       }
     },
