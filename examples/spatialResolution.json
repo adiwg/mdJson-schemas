@@ -1,14 +1,11 @@
-{
-   "spatialResolution": [
-      {
-         "type": "scaleFactor",
-         "scaleFactor": 99999,
-         "measure": {
-            "type": "distance",
-            "value": 99.9,
-            "unitOfMeasure": "unitOfMeasure"
-         },
-         "levelOfDetail": "levelOfDetail"
-      }
-   ]
-}
+ [{
+   "scaleFactor": 99999
+ }, {
+   "measure": {
+     "type": "distance",
+     "value": 99.9,
+     "unitOfMeasure": "unitOfMeasure"
+   }
+ }, {
+   "levelOfDetail": "levelOfDetail"
+ }]
