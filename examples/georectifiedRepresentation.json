@@ -1,0 +1,19 @@
+ [{
+   "gridRepresentation": {
+     "numberOfDimensions": 9,
+     "cellGeometry": "cellGeometry",
+     "transformParamsAvailability": true
+   },
+   "checkPointAvailable": true,
+   "checkPointDescription": "checkPointDescription",
+   "cornerPoints": [
+     [0.0, 0.0],
+     [0.0, 1.0],
+     [1.0, 1.0],
+     [1.0, 0.0]
+   ],
+   "centerPoint": [0.5, 0.5],
+   "pointInPixel": "pointInPixel",
+   "transformationDimensionDescription": "transformationDimensionDescription",
+   "transformationDimensionMapping": "transformationDimensionMapping"
+ }]
