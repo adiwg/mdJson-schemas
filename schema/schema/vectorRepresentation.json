@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "vectorRepresentation.json#",
+    "type" : "object",
+    "description" : "Information about the vector spatial objects in the resource",
+    "minProperties" : 1,
+    "additionalProperties" : true,
+    "properties" : {
+      "topologyLevel": {
+          "type" : "string",
+          "description" : "Identifies the degree of complexity of the spatial relationships",
+          "example": "",
+          "translation": {},
+          "minLength" : 1
+      },
+      "vectorObject": {
+          "type" : "array",
+          "description" : "Information about the geometric objects used in the resource",
+          "example": "",
+          "translation": {},
+          "items" : {
+            "$ref": "#/definitions/vectorObject"
+          }
+      }
+    },
+    "definitions" : {
+      "vectorObject": {
+          "type" : "object",
+          "description" : "Information about the geometric objects used in the resource.",
+          "example": "",
+          "translation": {},
+          "required" : ["objectType"],
+          "additionalProperties" : true,
+          "properties" : {
+            "objectType": {
+                "type" : "string",
+                "description" : "Name of point or vector objects used to locate zero-, one-, two-, or three-dimensional spatial locations in the resource.",
+                "example": "",
+                "translation": {},
+                "minLength" : 1
+            },
+            "objectCount": {
+                "type" : "integer",
+                "description" : "The total number of point or vector objects occurring in the dataset.",
+                "example": "",
+                "translation": {}
+            }
+          }
+      }
+    }
+}

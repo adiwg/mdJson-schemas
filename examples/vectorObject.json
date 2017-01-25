@@ -1,8 +1,4 @@
-{
-   "vectorObject": [
-      {
-         "objectType": "objectType",
-         "objectCount": 9
-      }
-   ]
-}
+[{
+  "objectType": "objectType",
+  "objectCount": 9
+}]
