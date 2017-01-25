@@ -1,15 +1,11 @@
-{
-   "dimension": [
-      {
-         "dimensionType": "dimensionType",
-         "dimensionSize": 9,
-         "resolution": {
-            "type": "distance",
-            "value": 9.9,
-            "unitOfMeasure": "feet"
-         },
-         "dimensionTitle": "dimensionTitle",
-         "dimensionDescription": "dimensionDescription"
-      }
-   ]
-}
+ [{
+   "dimensionType": "dimensionType",
+   "dimensionSize": 9,
+   "resolution": {
+     "type": "distance",
+     "value": 9.9,
+     "unitOfMeasure": "feet"
+   },
+   "dimensionTitle": "dimensionTitle",
+   "dimensionDescription": "dimensionDescription"
+ }]

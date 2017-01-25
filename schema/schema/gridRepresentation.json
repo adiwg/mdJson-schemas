@@ -1,7 +1,7 @@
 {
-  "id": "gridInfo.json#",
+  "id": "gridRepresentation.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "example": "../../examples/full_example.json#/metadata/resourceInfo/gridInfo/0",
+  "example": "",
   "description": "Information about grid objects in the resource.",
   "translation": {
     "ISO 19115-2": ["MD_GridSpatialRepresentation"]
@@ -47,6 +47,7 @@
     "dimension": {
       "type": "object",
       "required": ["dimensionType", "dimensionSize"],
+      "additionalProperties": true,
       "properties": {
         "dimensionType": {
           "type": "string",
@@ -63,17 +64,10 @@
           }
         },
         "resolution": {
-          "type": "number",
-          "description": "Numeric Value that defines the degree of detail in the grid.",
+          "$ref": "./measure.json#",
+          "description": "The degree of detail in the grid.",
           "translation": {
             "ISO 19115-2": ["MD_GridSpatialRepresentation > axisDimensionProperties > MD_Dimension > resolution"]
-          }
-        },
-        "resolutionUnit": {
-          "type": "string",
-          "description": "Unit of measure for the resolution.",
-          "translation": {
-            "ISO 19115-2": ["MD_GridSpatialRepresentation > axisDimensionProperties > MD_Dimension > resolution @uom"]
           }
         },
         "dimensionTitle": {
