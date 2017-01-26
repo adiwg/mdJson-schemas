@@ -1,0 +1,83 @@
+{
+  "id": "spatialRepresentation.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "example": "",
+  "description": "",
+  "translation": {},
+  "type": "object",
+  "required": [],
+  "additionalProperties": true,
+  "oneOf": [{
+      "type": "object",
+      "title": "gridRepresentation",
+      "example": "",
+      "required": ["type", "gridRepresentation"],
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["grid"]
+        },
+        "gridRepresentation": {
+          "$ref": "./gridRepresentation.json#"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "vectorRepresentation",
+      "example": "",
+      "required": ["type", "vectorRepresentation"],
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["vector"]
+        },
+        "gridRepresentation": {
+          "$ref": "./vectorRepresentation.json#"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "georectifiedRepresentation",
+      "example": "",
+      "required": ["type", "georectifiedRepresentation"],
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["georectified"]
+        },
+        "gridRepresentation": {
+          "$ref": "./georectifiedRepresentation.json#"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "georeferencableRepresentation",
+      "example": "",
+      "required": ["type", "georeferencableRepresentation"],
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["georeferencable"]
+        },
+        "georeferencableRepresentation": {
+          "$ref": "./georeferencableRepresentation.json#"
+        }
+      }
+    }
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "Identifies the type of spatial representation defined for the object",
+      "example": "",
+      "enum": ["grid", "vector", "georectified", "georeferencable"]
+    }
+  }
+}

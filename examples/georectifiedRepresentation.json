@@ -1,5 +1,14 @@
  [{
    "gridRepresentation": {
+     "dimension": [{
+         "dimensionType": "dimensionType",
+         "dimensionSize": 9
+       },
+       {
+         "dimensionType": "dimensionType",
+         "dimensionSize": 9
+       }
+     ],
      "numberOfDimensions": 9,
      "cellGeometry": "cellGeometry",
      "transformParamsAvailability": true

@@ -1,46 +1,59 @@
-{
-   "spatialRepresentation": [
-      {
-         "type": "grid",
-         "gridRepresentation": {
-            "numberOfDimensions": 9,
-            "cellGeometry": "cellGeometry",
-            "transformParamsAvailability": true
-         },
-         "vectorRepresentation": {
-            "topologyLevel": "topologyLevel",
-            "vectorObject": [
-               {
-                  "objectType": "objectType",
-                  "objectCount": 9
-               }
-            ]
-         },
-         "georectifiedRepresentation": {
-            "gridRepresentation": {
-               "numberOfDimensions": 9,
-               "cellGeometry": "cellGeometry",
-               "transformParamsAvailability": true
-            },
-            "checkPointAvailable": true,
-            "cornerPoints": [
-               [0.0, 0.0],
-               [0.0, 1.0],
-               [1.0, 1.0],
-               [1.0, 0.0]
-            ],
-            "pointInPixel": "pointInPixel"
-         },
-         "georeferenceableRepresentation": {
-            "gridRepresentation": {
-               "numberOfDimensions": 9,
-               "cellGeometry": "cellGeometry",
-               "transformParamsAvailability": true
-            },
-            "controlPointAvailability": true,
-            "orientationParameterAvailability": true,
-            "georeferencedParameter": "georeferencedParameter"
-         }
-      }
-   ]
-}
+[{
+  "type": "grid",
+  "gridRepresentation": {
+    "dimension": [{
+      "dimensionType": "dimensionType",
+      "dimensionSize": 9
+    }, {
+      "dimensionType": "dimensionType",
+      "dimensionSize": 9
+    }],
+    "numberOfDimensions": 9,
+    "cellGeometry": "cellGeometry",
+    "transformationParameterAvailability": true
+  }
+}, {
+  "type": "vector",
+  "vectorRepresentation": {
+    "topologyLevel": "topologyLevel",
+    "vectorObject": [{
+      "objectType": "objectType",
+      "objectCount": 9
+    }]
+  }
+}, {
+  "type": "georectified",
+  "georectifiedRepresentation": {
+    "gridRepresentation": {
+      "numberOfDimensions": 9,
+      "cellGeometry": "cellGeometry",
+      "transformParamsAvailability": true
+    },
+    "checkPointAvailable": true,
+    "cornerPoints": [
+      [0.0, 0.0],
+      [0.0, 1.0],
+      [1.0, 1.0],
+      [1.0, 0.0]
+    ],
+    "pointInPixel": "pointInPixel"
+  }
+}, {
+  "type": "georeferencable",
+  "georeferencableRepresentation": {
+    "gridRepresentation": {
+      "dimension": [{
+        "dimensionType": "dimensionType",
+        "dimensionSize": 9
+      }, {
+        "dimensionType": "dimensionType",
+        "dimensionSize": 9
+      }],
+      "numberOfDimensions": 9,
+      "cellGeometry": "cellGeometry"
+    },
+    "controlPointAvailability": true,
+    "orientationParameterAvailability": true,
+    "georeferencedParameter": "georeferencedParameter"
+  }
+}]
