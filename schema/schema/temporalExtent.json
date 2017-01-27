@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "temporalExtent.json#",
+  "type": "object",
+  "title": "",
+  "description": "A temporal boundary comprising all or a portion of the resource.",
+  "required": ["type"],
+  "additionalProperties": true,
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "The type of temporal extent.",
+      "example": "",
+      "translation": {},
+      "enum": ["instant", "period"]
+    }
+  },
+  "oneOf": [{
+    "title": "Type is instant.",
+    "required": ["timeInstant"],
+    "properties": {
+      "timeInstant": {
+        "$ref": "./timeInstant.json#",
+        "description": "Represents an identifiable position in time."
+      }
+    }
+  }, {
+    "title": "Type is period.",
+    "required": ["timePeriod"],
+    "properties": {
+      "timePeriod": {
+        "$ref": "./timePeriod.json#"
+      }
+    }
+  }]
+}
