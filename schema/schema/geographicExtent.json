@@ -3,9 +3,7 @@
   "id": "geographicExtent.json#",
   "type": "object",
   "description": "Describes the spatial area of the resource",
-  "required": [],
-  "minProperties": ,
-  "maxProperties": ,
+  "required": ["geographicElement"],
   "additionalProperties": false,
   "properties": {
     "containsData": {
@@ -31,17 +29,7 @@
         "ISO 19115-2": ["EX_Extent > geographicElement"]
       },
       "items": {
-        "type": "object",
-        "example": "",
-        "properties": {
-          "type": {
-            "enum": ["Feature", "FeatureCollection", "GeometryCollection", "Point", "MultiPoint", "LineString", "MultiLineString", "Polygon", "MultiPolygon"],
-            "description": "The type of geographic object."
-          }
-        },
-        "oneOf": [{
-          "$ref": "geojson/geojson.json#"
-        }]
+        "$ref": "#/definitions/geographicElement"
       }
     }
   },
@@ -81,6 +69,19 @@
           "translation": {}
         }
       }
+    },
+    "geographicElement": {
+      "type": "object",
+      "example": "",
+      "properties": {
+        "type": {
+          "enum": ["Feature", "FeatureCollection", "GeometryCollection", "Point", "MultiPoint", "LineString", "MultiLineString", "Polygon", "MultiPolygon"],
+          "description": "The type of geographic object."
+        }
+      },
+      "oneOf": [{
+        "$ref": "geojson.json#"
+      }]
     }
   }
 }
