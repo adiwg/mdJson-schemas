@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "geographicExtent.json#",
+  "type": "object",
+  "description": "Describes the spatial area of the resource",
+  "required": [],
+  "minProperties": ,
+  "maxProperties": ,
+  "additionalProperties": false,
+  "properties": {
+    "containsData": {
+      "type": "boolean",
+      "description": "Idication of whether the geographic element encompasses an area covered by the data or an area where data are not present.",
+      "example": "",
+      "translation": {}
+    },
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "Identifier representing a geographic area.",
+      "example": ""
+    },
+    "boundingBox": {
+      "$ref": "#/definitions/boundingBox",
+      "description": "General geographic position of the resource.",
+      "example": ""
+    },
+    "geographicElement": {
+      "type": "array",
+      "description": "An array of objects each describing a geographic boundary or location comprising all or a portion of the resource.",
+      "translation": {
+        "ISO 19115-2": ["EX_Extent > geographicElement"]
+      },
+      "items": {
+        "type": "object",
+        "example": "",
+        "properties": {
+          "type": {
+            "enum": ["Feature", "FeatureCollection", "GeometryCollection", "Point", "MultiPoint", "LineString", "MultiLineString", "Polygon", "MultiPolygon"],
+            "description": "The type of geographic object."
+          }
+        },
+        "oneOf": [{
+          "$ref": "geojson/geojson.json#"
+        }]
+      }
+    }
+  },
+  "definitions": {
+    "boundingBox": {
+      "type": "object",
+      "description": "The four sides of geodetic box defining the area of the resource",
+      "required": ["westLongitude",
+        "eastLongitude",
+        "southLatitude",
+        "northLatitude"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "westLongitude": {
+          "type": "number",
+          "description": "",
+          "example": "",
+          "translation": {}
+        },
+        "eastLongitude": {
+          "type": "number",
+          "description": "",
+          "example": "",
+          "translation": {}
+        },
+        "southLatitude": {
+          "type": "number",
+          "description": "",
+          "example": "",
+          "translation": {}
+        },
+        "northLatitude": {
+          "type": "number",
+          "description": "",
+          "example": "",
+          "translation": {}
+        }
+      }
+    }
+  }
+}

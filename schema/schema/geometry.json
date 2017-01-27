@@ -148,6 +148,7 @@
       "description": "A position is the fundamental geometry construct. A position is represented by an array of numbers following x, y, z order (easting, northing, altitude for coordinates in a projected coordinate reference system, or longitude, latitude, altitude for coordinates in a geographic coordinate reference system).",
       "type": "array",
       "minItems": 2,
+      "maxItems": 3,
       "items": {
         "type": "number"
       }

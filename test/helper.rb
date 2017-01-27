@@ -15,7 +15,7 @@ class TestHelper < Minitest::Test
 
     @@schema = File.join(File.dirname(__FILE__), '..', 'schema', 'schema.json')
 
-    @@strict = true
+    @@strict = false
 
     def self.load_json(filename)
         JSON.load File.new(filename)
@@ -24,10 +24,19 @@ class TestHelper < Minitest::Test
     schemas = `git ls-files #{@@dir}/schema`.split($/)
 
     schemas.each do |schema|
-      name = File.basename(schema)
+      dir, name = File.split(schema)
+      parent = File.basename(dir)
+
 p name
+p schema
       jschema = JSON::Schema.new(TestHelper.load_json(schema), Addressable::URI.parse(name))
       JSON::Validator.add_schema(jschema)
+
+      if parent != 'schema'
+        name.prepend(parent + '/')
+        jschema = JSON::Schema.new(TestHelper.load_json(schema), Addressable::URI.parse(name))
+      end
+
       # JSON::Validator.schema_reader = JSON::Schema::Reader.new(
       #   :accept_uri => false,
       #   :accept_file => false
