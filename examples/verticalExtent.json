@@ -1,15 +1,11 @@
-{
-   "verticalExtent": [
-      {
-         "description": "description",
-         "minValue": 9.9,
-         "maxValue": 9.9,
-         "crsId": {
-            "referenceSystemType": "referenceSystemType",
-            "referenceSystem": {
-               "identifier": "identifier"
-            }
-         }
-      }
-   ]
-}
+[{
+  "description": "description",
+  "minValue": 9.9,
+  "maxValue": 9.9,
+  "crsId": {
+    "type": "referenceSystemType",
+    "systemIdentifier": {
+      "identifier": "identifier"
+    }
+  }
+}]
