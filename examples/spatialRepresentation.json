@@ -10,7 +10,7 @@
     }],
     "numberOfDimensions": 9,
     "cellGeometry": "cellGeometry",
-    "transformationParameterAvailability": true
+    "transformationParameterAvailable": true
   }
 }, {
   "type": "vector",
@@ -27,7 +27,7 @@
     "gridRepresentation": {
       "numberOfDimensions": 9,
       "cellGeometry": "cellGeometry",
-      "transformParamsAvailability": true
+      "transformationParameterAvailable": true
     },
     "checkPointAvailable": true,
     "cornerPoints": [
@@ -52,8 +52,8 @@
       "numberOfDimensions": 9,
       "cellGeometry": "cellGeometry"
     },
-    "controlPointAvailability": true,
-    "orientationParameterAvailability": true,
+    "controlPointAvailable": true,
+    "orientationParameterAvailable": true,
     "georeferencedParameter": "georeferencedParameter"
   }
 }]

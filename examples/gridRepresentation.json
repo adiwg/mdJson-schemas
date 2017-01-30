@@ -10,5 +10,5 @@
     }
   ],
   "cellGeometry": "cellGeometry",
-  "transformationParameterAvailability": true
+  "transformationParameterAvailable": true
 }]

@@ -4,19 +4,19 @@
     "type" : "object",
     "title" : "georeferencableRepresentation",
     "description" : "Grid with cells irregularly spaced in any given geographic/map projection coordinate system, whose individual cells can be geolocated using geolocation information supplied with the data but cannot be geolocated from the grid properties alone.",
-    "required" : ["controlPointAvailability","orientationParameterAvailability","georeferencedParameter"],
+    "required" : ["controlPointAvailable","orientationParameterAvailable","georeferencedParameter"],
     "additionalProperties" : true,
     "properties" : {
       "gridRepresentation": {
           "$ref" : "./gridRepresentation.json#"
       },
-      "controlPointAvailability": {
+      "controlPointAvailable": {
           "type" : "boolean",
           "description" : "Indication of whether or not control point(s) exist.",
           "example": "",
           "translation": {}
       },
-      "orientationParameterAvailability": {
+      "orientationParameterAvailable": {
           "type" : "boolean",
           "description" : "Description of the parameters used to describe sensor orientation.",
           "example": "",

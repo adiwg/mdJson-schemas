@@ -11,7 +11,7 @@
      ],
      "numberOfDimensions": 9,
      "cellGeometry": "cellGeometry",
-     "transformParamsAvailability": true
+     "transformationParameterAvailable": true
    },
    "checkPointAvailable": true,
    "checkPointDescription": "checkPointDescription",
