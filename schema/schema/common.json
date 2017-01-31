@@ -38,6 +38,10 @@
           "example": "",
           "translation": {},
           "minLength": 1
+        },
+        "description": {
+            "type" : "string",
+            "description" : "Supplemental information describing the date context."
         }
       }
     }
