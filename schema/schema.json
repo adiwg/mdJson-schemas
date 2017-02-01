@@ -9,18 +9,18 @@
     "schema": {
       "type": "object",
       "description": "Identifies the version of the JSON schema standard that applies to the metadata.",
-      "example": "../examples/full_example.json#/version",
+      "example": "",
       "required": ["name", "version"],
       "additionalProperties": true,
       "properties": {
         "name": {
           "type": "string",
-          "example": "../examples/full_example.json#/version",
+          "example": "",
           "description": "Schema identifier, i.e. the name of the schema standard."
         },
         "version": {
           "type": "string",
-          "example": "../examples/full_example.json#/version",
+          "example": "",
           "description": "Specific version number of the schema standard.",
           "pattern": "[0-9]\\.[0-9]\\.[0-9]"
         }
@@ -32,11 +32,11 @@
       "minItems": 1,
       "uniqueItems": true,
       "items": {
-        "$ref": "schema/contact.json"
+        "$ref": "contact.json"
       }
     },
     "metadata": {
-      "$ref": "schema/metadata.json"
+      "$ref": "metadata.json"
     },
     "dataDictionary": {
       "type": "array",
@@ -44,9 +44,9 @@
       "translation": {
         "ISO 19115-2": ["FC_FeatureCatalogue"]
       },
-      "example": "../examples/full_example.json#/dataDictionary",
+      "example": "",
       "items": {
-        "$ref": "schema/dataDictionary.json"
+        "$ref": "dataDictionary.json"
       }
     }
   }
