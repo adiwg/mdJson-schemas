@@ -3,12 +3,12 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Information about the resource.",
   "type": "object",
-  "example": "../../examples/full_example.json#/metadata/resourceInfo",
+  "example": "",
   "translation": {
     "ISO 19115-2": ["MD_DataIdentification"],
     "FGDC CSDGM": ["idinfo"]
   },
-  "required": ["resourceType", "citation", "abstract", "status", "language", "pointOfContact"],
+  "required": ["resourceType", "citation", "abstract", "status", "defaultResourceLocale", "pointOfContact"],
   "additionalProperties": true,
   "properties": {
     "resourceType": {
@@ -24,26 +24,7 @@
         "ISO 19115-2": ["MD_DataIdentification > citation > CI_Citation"],
         "FGDC CSDGM": ["idinfo > citation"]
       },
-      "$ref": "citation.json#"
-    },
-    "resourceTimePeriod": {
-      "description": "Time period for the resource, e.g. project start and end date(s).",
-      "translation": {
-        "ISO 19115-2": ["EX_Extent > temporalElement > EX_TemporalExtent > extent > TimePeriod"]
-      },
-      "$ref": "extent.json#/definitions/timePeriod"
-    },
-    "pointOfContact": {
-      "type": "array",
-      "description": "Identification of, and means of communication with, person(s) and organizations that may be contacted for acquiring knowledge about or acquisition of the resource.",
-      "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > pointOfContact"]
-      },
-      "minItems": 1,
-      "uniqueItems": true,
-      "items": {
-        "$ref": "./responsibility.json#"
-      }
+      "$ref": "./citation.json#"
     },
     "abstract": {
       "type": "string",
@@ -57,51 +38,6 @@
       "type": "string",
       "description": "A short description of the resource. Max of 300 characters."
     },
-    "status": {
-      "type": "string",
-      "description": "Status of the resource.",
-      "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > status [MD_ProgressCode]"],
-        "FGDC CSDGM": ["idinfo > status > progress"]
-      }
-    },
-    "hasMapLocation": {
-      "type": "boolean",
-      "description": "A flag indicating that a resource has a geographic location associated with it and therefore can be located using a map interface."
-    },
-    "hasDataAvailable": {
-      "type": "boolean",
-      "description": "A flag to indicate whether data for this resource is available for distribution."
-    },
-    "language": {
-      "type": "array",
-      "deprecated": true,
-      "description": "Language(s) used within the resource. Should be a valid ISO 639-3 code. NOTE:This property has been deprecated in favor of 'locale'.",
-      "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > language"]
-      },
-      "items": {
-        "type": "string"
-      }
-    },
-    "characterSet": {
-      "type": "array",
-      "deprecated": true,
-      "description": "Full name of the character encoding standard used by the resource. NOTE:This property has been deprecated in favor of 'locale'.",
-      "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > characterSet [MD_CharacterSetCode]"]
-      },
-      "items": {
-        "type": "string"
-      }
-    },
-    "locale": {
-      "type": "array",
-      "description": "Localised language(s) and characterset(s) used within the resource.",
-      "items": {
-        "$ref": "locale.json"
-      }
-    },
     "purpose": {
       "type": "string",
       "description": "A summary of intentions for which the resource was created.",
@@ -110,12 +46,30 @@
         "FGDC CSDGM": ["idinfo > descript > purpose"]
       }
     },
+    "timePeriod": {
+      "description": "Time period for the resource, e.g. project start and end date(s).",
+      "translation": {
+        "ISO 19115-2": ["EX_Extent > temporalElement > EX_TemporalExtent > extent > TimePeriod"]
+      },
+      "$ref": "./timePeriod.json#"
+    },
     "credit": {
       "type": "array",
       "description": "A narrative identification of additional resources credited for the resource.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > credit"],
         "FGDC CSDGM": ["idinfo > datacred"]
+      },
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "array",
+      "description": "Status of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > status [MD_ProgressCode]"],
+        "FGDC CSDGM": ["idinfo > status > progress"]
       },
       "items": {
         "type": "string"
@@ -131,24 +85,115 @@
         "type": "string"
       }
     },
-    "environmentDescription": {
-      "type": "string",
-      "description": "Description of the dataset in the producer's processing environment, including items such as the software, the computer, the computer operating system, file name, and the dataset size.",
+    "pointOfContact": {
+      "type": "array",
+      "description": "Identification of, and means of communication with, person(s) and organizations that may be contacted for acquiring knowledge about or acquisition of the resource.",
       "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > environmentDescription"],
-        "FGDC CSDGM": ["idinfo > native"]
+        "ISO 19115-2": ["MD_DataIdentification > pointOfContact"]
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "./responsibility.json#"
       }
     },
-    "resourceNativeFormat": {
+    "spatialReferenceSystem": {
       "type": "array",
-      "description": "Provides a description of the format of the resource(s).",
+      "description": "Geospatial referencing system used in the the data resource. The reference can be provided by an EPSG number, a named reference, or providing the parameters in a well known text (WKT) format.",
+      "example": "",
+      "translation": {
+        "ISO 19115-2": ["MD_Metadata > referenceSystemInfo > MD_ReferenceSystem > referenceSystemIdentifier > RS_Identifier > code"]
+      },
+      "items": {
+        "$ref": "./spatialReference.json#"
+      }
+    },
+    "spatialRepresentationType": {
+      "type": "array",
+      "description": "Format of the resource geographic extent, such as: vector, grid, etc.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdenification > spatialRepresentationType [MD_SpatialRepresentationTypeCode]"],
+        "FGDC CSDGM": ["spdoinfo"]
+      },
+      "items": {
+        "type": "string"
+      }
+    },
+    "spatialRepresentation": {
+      "type": "array",
+      "description": "Method used to spatially represent geographic information.",
+      "translation": {
+        "ISO 19115-2": ["MD_GridSpatialRepresentation"]
+      },
+      "items": {
+        "$ref": "./spatialRepresentation.json#"
+      }
+    },
+    "spatialResolution": {
+      "type": "array",
+      "description": "Information about the scale of the geographic extent.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdenification > spatialResolution > MD_Resolution"]
+      },
+      "items": {
+        "$ref": "./spatialResolution.json#"
+      }
+    },
+    "temporalResolution": {
+      "type": "array",
+      "description": "Information about the termporal period of the resource.",
+      "translation": {},
+      "items": {
+        "$ref": "./timePeriod.json#/definitions/duration"
+      }
+    },
+    "extent": {
+      "type": "array",
+      "description": "Information about the geographic, vertical, and temporal extent of the resource. A resource may have multiple extents.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > extent > EX_Extent"]
+      },
+      "items": {
+        "$ref": "extent.json"
+      }
+    },
+    "coverageDescription": {
+      "type": "array",
+      "description": "Details about the content of a raster(grid) resource.",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > contentInfo"]
+      },
+      "items": {
+        "$ref": "./coverageDescription.json"
+      }
+    },
+    "taxonomy": {
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > taxonomy"],
+        "FGDC CSDGM": ["idinfo > taxonomy"]
+      },
+      "$ref": "taxonomy.json"
+    },
+    "graphicOverview": {
+      "type": "array",
+      "description": "Provides a path or link to images, maps, flow charts, models, etc. that illustrate the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > graphicOverview > MD_BrowseGraphic"]
+      },
+      "items": {
+        "$ref": "graphic.json#"
+      }
+    },
+    "resourceFormat": {
+      "type": "array",
+      "description": "Provides a description of the format of the resource.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > resourceFormat > MD_Format"]
       },
       "minItems": 1,
       "uniqueItems": true,
       "items": {
-        "$ref": "distributor.json#/definitions/format"
+        "$ref": "./format.json#"
       }
     },
     "keyword": {
@@ -163,17 +208,7 @@
         "$ref": "keyword.json"
       }
     },
-    "resourceMaintenance": {
-      "type": "array",
-      "description": "Information about the maintenance of the resource.",
-      "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > resourceMaintenance > MD_MaintenanceInformation"]
-      },
-      "items": {
-        "$ref": "maintInfo.json#"
-      }
-    },
-    "resourceSpecificUsage": {
+    "resourceUsage": {
       "type": "array",
       "description": "Description of ways in which the resource is currently or has been used.",
       "translation": {
@@ -184,156 +219,44 @@
         "$ref": "usage.json"
       }
     },
-    "graphicOverview": {
-      "type": "array",
-      "description": "Provides a path or link to images, maps, flow charts, models, etc. that illustrate the resource.",
-      "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > graphicOverview > MD_BrowseGraphic"]
-      },
-      "items": {
-        "$ref": "graphic.json#"
-      }
-    },
     "constraint": {
-      "type": "object",
+      "type": "array",
       "description": "Provides information about constraints to the use of the resource.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > resourceConstraints"]
       },
-      "properties": {
-        "useLimitation": {
-          "type": "array",
-          "description": "Limitation affecting the fitness for use of the resource or metadata. For example, \"not to be used for navigation\".",
-          "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint",
-          "translation": {
-            "ISO 19115-2": ["MD_DataIdentification > resourceConstraints > MD_Constraints[useLimitation]"]
-          },
-          "items": {
-            "$ref": "resourceConstraint.json#/definitions/useLimitation"
-          }
-        },
-        "legalConstraint": {
-          "type": "array",
-          "description": "Restrictions and legal prerequisites for accessing and using the resource or metadata.",
-          "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint/legalConstraint",
-          "translation": {
-            "ISO 19115-2": ["MI_Metadata > resourceConstraints > MD_LegalConstraints"]
-          },
-          "items": {
-            "$ref": "resourceConstraint.json#/definitions/legalConstraint"
-          }
-        },
-        "securityConstraint": {
-          "type": "array",
-          "description": "Handling restrictions imposed on the resource or metadata for national security or similar security concerns.",
-          "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint/securityConstraint",
-          "translation": {
-            "ISO 19115-2": ["MI_Metadata > resourceConstraints > MD_SecurityConstraints"]
-          },
-          "items": {
-            "$ref": "resourceConstraint.json#/definitions/securityConstraint"
-          }
-        }
+      "items": {
+        "$ref": "./constraint.json#"
       }
     },
-    "taxonomy": {
-      "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > taxonomy"],
-        "FGDC CSDGM": ["idinfo > taxonomy"]
-      },
-      "$ref": "taxonomy.json"
+    "defaultResourceLocale": {
+      "description": "Localised language(s) and characterset(s) used within the resource.",
+      "$ref": "./locale.json#"
+
     },
-    "spatialReferenceSystem": {
-      "description": "Geospatial referencing system used in the the data resource. The reference can be provided by an EPSG number, a named reference, or providing the parameters in a well known text (WKT) format.",
-      "example": "../../examples/spatialRef.json",
-      "translation": {
-        "ISO 19115-2": ["MD_Metadata > referenceSystemInfo > MD_ReferenceSystem > referenceSystemIdentifier > RS_Identifier > code"]
-      },
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "array",
-          "description": "A recognized reference system name.",
-          "items": {
-            "type": "string"
-          }
-        },
-        "epsgNumber": {
-          "type": "array",
-          "description": "The EPSG Geodetic Parameter Dataset of the reference system, see epsg-registry.org.",
-          "items": {
-            "type": "integer"
-          }
-        },
-        "wkt": {
-          "type": "array",
-          "description": "Well-known text representation of the reference system.",
-          "items": {
-            "type": "string"
-          }
-        }
-      }
-    },
-    "spatialRepresentation": {
+    "otherResourceLocale": {
       "type": "array",
-      "description": "Format of the resource geographic extent, such as: vector, grid, etc.",
+      "description": "Alternate localised language(s) and characterset(s) used within the resource.",
+      "items": {
+        "$ref": "./locale.json#"
+      }
+    },
+    "resourceMaintenance": {
+      "type": "array",
+      "description": "Information about the maintenance of the resource.",
       "translation": {
-        "ISO 19115-2": ["MD_DataIdenification > spatialRepresentationType [MD_SpatialRepresentationTypeCode]"],
-        "FGDC CSDGM": ["spdoinfo"]
+        "ISO 19115-2": ["MD_DataIdentification > resourceMaintenance > MD_MaintenanceInformation"]
       },
       "items": {
-        "type": "string"
+        "$ref": "maintInfo.json#"
       }
     },
-    "spatialResolution": {
-      "type": "array",
-      "description": "Information about the scale of the geographic extent.",
+    "environmentDescription": {
+      "type": "string",
+      "description": "Description of the dataset in the producer's processing environment, including items such as the software, the computer, the computer operating system, file name, and the dataset size.",
       "translation": {
-        "ISO 19115-2": ["MD_DataIdenification > spatialResolution > MD_Resolution"]
-      },
-      "items": {
-        "$ref": "resolution.json"
-      }
-    },
-    "extent": {
-      "type": "array",
-      "description": "Information about the geographic, vertical, and temporal extent of the resource. A resource may have multiple extents.",
-      "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > extent > EX_Extent"]
-      },
-      "items": {
-        "$ref": "extent.json"
-      }
-    },
-    "gridInfo": {
-      "type": "array",
-      "description": "Information about grid objects in the resource.",
-      "translation": {
-        "ISO 19115-2": ["MD_GridSpatialRepresentation"]
-      },
-      "items": {
-        "$ref": "gridInfo.json"
-      }
-    },
-    "coverageInfo": {
-      "type": "array",
-      "description": "Details about the content of a raster(grid) resource.",
-      "translation": {
-        "ISO 19115-2": ["MI_Metadata > contentInfo"]
-      },
-      "items": {
-        "$ref": "coverageInfo.json"
-      }
-    },
-    "dataQualityInfo": {
-      "type": "array",
-      "description": "Information that describes the data quality, lineage, and/or processing steps that were applied to the whole or part of the data resource.",
-      "translation": {
-        "ISO 19115-2": ["MI_Metadata > dataQualityInfo > DQ_DataQuality"],
-        "FGDC CSDGM": ["dataqual"]
-      },
-      "items": {
-        "$ref": "dataQuality.json#"
+        "ISO 19115-2": ["MD_DataIdentification > environmentDescription"],
+        "FGDC CSDGM": ["idinfo > native"]
       }
     },
     "supplementalInfo": {
