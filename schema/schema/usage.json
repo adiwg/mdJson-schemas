@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Description of ways in which the resource is currently or has been used.",
-  "example": "../../examples/full_example.json#/metadata/resourceInfo/resourceSpecificUsage/0",
+  "example": "",
   "translation": {
     "ISO 19115-2": ["MD_Usage"]
   },
@@ -17,11 +17,41 @@
         "ISO 19115-2": ["MD_Usage > specific usage"]
       }
     },
+    "temporalExtent": {
+      "type": "array",
+      "description": "Date and time of the first use or range of uses of the resource and/or resource series.",
+      "translation": {},
+      "items": {
+        "$ref": "./temporalExtent.json#"
+      }
+    },
     "userDeterminedLimitation": {
       "type": "string",
       "description": "A brief description of applications, determined by the user, for which the resource is not suitable.",
       "translation": {
         "ISO 19115-2": ["MD_Usage > userDeterminedLimitations"]
+      }
+    },
+    "limitationResponse": {
+      "type": "array",
+      "description": "Response to the user-determined limitations.",
+      "translation": {},
+      "items": {
+        "type": "string"
+      }
+    },
+    "documentedIssue": {
+      "$ref": "./citation.json#",
+      "description": "Citation of a description of known issues associated with the resource along with proposed solutions if available.",
+      "example": ""
+    },
+    "additionalDocumentation": {
+      "type": "array",
+      "description": "Publications that describe usage of data.",
+      "example": "",
+      "translation": {},
+      "items": {
+        "$ref": "./citation.json#"
       }
     },
     "userContactInfo": {
