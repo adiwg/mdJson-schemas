@@ -1,16 +1,13 @@
-{
-  "taxonomicSystem": [
-    {
-      "citation": {
-        "title": "title"
-      },
-      "modifications": "modifications"
+[{
+    "citation": {
+      "title": "title"
     },
-    {
-      "citation": {
-        "title": "title"
-      },
-      "modifications": "modifications"
-    }
-  ]
-}
+    "modifications": "modifications"
+  },
+  {
+    "citation": {
+      "title": "title"
+    },
+    "modifications": "modifications"
+  }
+]
