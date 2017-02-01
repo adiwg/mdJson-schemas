@@ -1,15 +1,10 @@
-{
-   "additionalDocumentation": [
-      {
-         "resourceType": "resourceType",
-         "citation": [
-            {
-               "title": "title"
-            },
-            {
-               "title": "title"
-            }
-         ]
-      }
-   ]
-}
+[{
+  "resourceType": "resourceType",
+  "citation": [{
+      "title": "title"
+    },
+    {
+      "title": "title"
+    }
+  ]
+}]

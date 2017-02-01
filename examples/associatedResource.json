@@ -1,15 +1,11 @@
-{
-   "associatedResource": [
-      {
-         "resourceType": "resourceType",
-         "associationType": "associationType",
-         "initiativeType": "initiativeType",
-         "resourceCitation": {
-            "title": "title"
-         },
-         "metadataCitation": {
-            "title": "title"
-         }
-      }
-   ]
-}
+[{
+  "resourceType": "resourceType",
+  "associationType": "associationType",
+  "initiativeType": "initiativeType",
+  "resourceCitation": {
+    "title": "title"
+  },
+  "metadataCitation": {
+    "title": "title"
+  }
+}]
