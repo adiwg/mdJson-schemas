@@ -9,11 +9,17 @@
   },
   "additionalProperties": true,
   "anyOf": [{
-    "required": ["description"],
-    "required": ["geographicExtent"],
-    "required": ["verticalExtent"],
-    "required": ["temporalExtent"]
-  }],
+      "required": ["description"]
+    },
+    {
+      "required": ["geographicExtent"]
+    }, {
+      "required": ["verticalExtent"]
+    },
+    {
+      "required": ["temporalExtent"]
+    }
+  ],
   "properties": {
     "description": {
       "type": "string",
