@@ -18,19 +18,29 @@
       "metadataIdentifier": {
         "identifier": "identifier"
       },
+      "metadataDate": [{
+        "date": "2016-10-31",
+        "dateType": "creation"
+      }, {
+        "date": "2016-10-31",
+        "dateType": "dateType"
+      }, {
+        "date": "2016-10-31",
+        "dateType": "dateType"
+      }],
       "metadataContact": [{
         "role": "role",
-        "timePeriod": {
+        "timePeriod": [{
           "startDateTime": "2016-10-31"
-        },
+        }],
         "party": [{
           "contactId": "individualId0"
         }]
       }, {
         "role": "role",
-        "timePeriod": {
+        "timePeriod": [{
           "startDateTime": "2016-10-31"
-        },
+        }],
         "party": [{
           "contactId": "individualId1"
         }]
@@ -42,11 +52,12 @@
         "title": "title"
       },
       "abstract": "abstract",
+      "status": ["status"],
       "pointOfContact": [{
         "role": "role",
-        "timePeriod": {
+        "timePeriod": [{
           "startDateTime": "2016-10-14"
-        },
+        }],
         "party": [{
           "contactId": "individualId0"
         }]
@@ -60,12 +71,26 @@
   },
   "dataDictionary": [{
     "resourceType": "resourceType",
+    "subject": "subject",
+    "responsibleParty": {
+      "role": "role",
+      "party": [{
+        "contactId": "individualId0"
+      }]
+    },
     "citation": {
       "title": "title"
     },
     "description": "description"
   }, {
     "resourceType": "resourceType",
+    "subject": "subject",
+    "responsibleParty": {
+      "role": "role",
+      "party": [{
+        "contactId": "individualId0"
+      }]
+    },
     "citation": {
       "title": "title"
     },
