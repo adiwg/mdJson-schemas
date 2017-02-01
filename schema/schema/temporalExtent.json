@@ -19,6 +19,10 @@
     "title": "Type is instant.",
     "required": ["timeInstant"],
     "properties": {
+      "type": {
+        "type": "string",
+        "enum": ["instant"]
+      },
       "timeInstant": {
         "$ref": "./timeInstant.json#",
         "description": "Represents an identifiable position in time."
@@ -28,6 +32,10 @@
     "title": "Type is period.",
     "required": ["timePeriod"],
     "properties": {
+      "type": {
+        "type": "string",
+        "enum": ["period"]
+      },
       "timePeriod": {
         "$ref": "./timePeriod.json#"
       }
