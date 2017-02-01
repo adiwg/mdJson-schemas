@@ -4,7 +4,7 @@
   "type": "object",
   "description": "General information about the metadata record.",
   "example": "",
-  "required": ["metadataContact", "metadataCreationDate"],
+  "required": ["metadataContact", "metadataDate"],
   "additionalProperties": true,
   "properties": {
     "metadataIdentifier": {
@@ -53,14 +53,6 @@
         "$ref": "./responsibility.json#"
       }
     },
-    "metadataCreationDate": {
-      "$ref": "common.json#/definitions/date",
-      "description": "Date that the metadata was created.",
-      "translation": {
-        "ISO 19115-2": ["MI_Metadata > dateStamp"],
-        "FGDC CSDGM": ["metainfo > metd"]
-      }
-    },
     "metadataDate": {
       "type": "array",
       "description": "Date that the metadata was updated.",
@@ -68,9 +60,24 @@
         "ISO 19115-2": ["MI_Metadata > dateStamp"],
         "FGDC CSDGM": ["metainfo > metrd"]
       },
+      "minItems": 1,
       "items": {
         "$ref": "common.json#/definitions/dateObject"
-      }
+      },
+      "allOf": [{
+        "type": "array",
+        "items": [{
+          "properties": {
+            "type": "object",
+            "title": "Creation data is required.",
+            "description": "A creation date must be the first object in the array.",
+            "dateType": {
+              "type": "string",
+              "enum": ["creation"]
+            }
+          }
+        }]
+      }]
     },
     "metadataOnlineResource": {
       "type": "array",
