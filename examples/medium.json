@@ -1,20 +1,16 @@
-{
-   "medium": [
-      {
-         "mediumSpecification": {
-            "title": "title"
-         },
-         "density": 9.9,
-         "units": "units",
-         "numberOfVolumes": 9,
-         "mediumFormat": [
-            "mediumFormat0",
-            "mediumFormat1"
-         ],
-         "note": "note",
-         "identifier": {
-            "identifier": "identifier"
-         }
-      }
-   ]
-}
+[{
+  "mediumSpecification": {
+    "title": "title"
+  },
+  "density": 9.9,
+  "units": "units",
+  "numberOfVolumes": 9,
+  "mediumFormat": [
+    "mediumFormat0",
+    "mediumFormat1"
+  ],
+  "note": "note",
+  "identifier": {
+    "identifier": "identifier"
+  }
+}]
