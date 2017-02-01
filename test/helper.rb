@@ -9,37 +9,24 @@ require 'json-schema'
 require File.join(File.dirname(__FILE__), '..', 'lib', 'adiwg-mdjson_schemas.rb')
 
 class TestHelper < Minitest::Test
-    @@dir = File.join(File.dirname(__FILE__), '..', 'schema/')
+  @@dir = File.join(File.dirname(__FILE__), '..', '/')
 
-    @@example = File.join(File.dirname(__FILE__), '..', 'examples/')
+  @@example = File.join(File.dirname(__FILE__), '..', 'examples/')
 
-    @@schema = File.join(File.dirname(__FILE__), '..', 'schema', 'schema.json')
+  @@schema = File.join(File.dirname(__FILE__), '..', 'schema', 'schema.json')
 
-    @@strict = false
+  @@strict = false
 
-    def self.load_json(filename)
-        JSON.load File.new(filename)
-    end
+  def self.load_json(filename)
+    JSON.load File.new(filename)
+  end
 
-    schemas = `git ls-files #{@@dir}/schema`.split($/)
+  schemas = `git ls-files #{@@dir}/schema`.split($INPUT_RECORD_SEPARATOR)
 
-    schemas.each do |schema|
-      dir, name = File.split(schema)
-      parent = File.basename(dir)
+  schemas.each do |schema|
+    name = File.basename(schema)
+    jschema = JSON::Schema.new(TestHelper.load_json(schema), Addressable::URI.parse(name))
 
-p name
-p schema
-      jschema = JSON::Schema.new(TestHelper.load_json(schema), Addressable::URI.parse(name))
-      JSON::Validator.add_schema(jschema)
-
-      if parent != 'schema'
-        name.prepend(parent + '/')
-        jschema = JSON::Schema.new(TestHelper.load_json(schema), Addressable::URI.parse(name))
-      end
-
-      # JSON::Validator.schema_reader = JSON::Schema::Reader.new(
-      #   :accept_uri => false,
-      #   :accept_file => false
-      # )
-    end
+    JSON::Validator.add_schema(jschema)
+  end
 end
