@@ -7,7 +7,7 @@
   "translation": {
     "ISO 19115-2": ["MD_Usage"]
   },
-  "required": ["specificUsage", "userContactInfo"],
+  "required": ["specificUsage"],
   "additionalProperties": true,
   "properties": {
     "specificUsage": {
