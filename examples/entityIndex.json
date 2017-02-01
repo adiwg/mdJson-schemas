@@ -1,12 +1,8 @@
-{
-   "index": [
-      {
-         "codeName": "codeName",
-         "allowDuplicates": false,
-         "attributeCodeName": [
-            "attributeCodeName0",
-            "attributeCodeName1"
-         ]
-      }
-   ]
-}
+[{
+  "codeName": "codeName",
+  "allowDuplicates": false,
+  "attributeCodeName": [
+    "attributeCodeName0",
+    "attributeCodeName1"
+  ]
+}]
