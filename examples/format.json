@@ -1,11 +1,7 @@
-{
-   "format": [
-      {
-         "formatSpecification": {
-            "title": "title"
-         },
-         "amendmentNumber": "amendmentNumber",
-         "compressionMethod": "compressionMethod"
-      }
-   ]
-}
+[{
+  "formatSpecification": {
+    "title": "title"
+  },
+  "amendmentNumber": "amendmentNumber",
+  "compressionMethod": "compressionMethod"
+}]
