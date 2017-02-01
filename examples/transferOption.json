@@ -1,43 +1,36 @@
-{
-   "transferOption": [
-      {
-         "unitsOfDistribution": "unitsOfDistribution",
-         "transferSize": 9.9,
-         "onlineOption": [
-            {
-               "resourceURI": "uri0"
-            },
-            {
-               "resourceURI": "uri1"
-            }
-         ],
-         "offlineOption": [
-            {
-               "mediumSpecification": {
-                  "title": "title0"
-               }
-            },
-            {
-               "mediumSpecification": {
-                  "title": "title1"
-               }
-            }
-         ],
-         "transferFrequency": {
-            "months": 9
-         },
-         "distributionFormat": [
-            {
-               "formatSpecification": {
-                  "title": "title0"
-               }
-            },
-            {
-               "formatSpecification": {
-                  "title": "title1"
-               }
-            }
-         ]
+[{
+  "unitsOfDistribution": "unitsOfDistribution",
+  "transferSize": 9.9,
+  "onlineOption": [{
+      "uri": "http://adiwg.org"
+    },
+    {
+      "uri": "http://adiwg.org/"
+    }
+  ],
+  "offlineOption": [{
+      "mediumSpecification": {
+        "title": "title0"
       }
-   ]
-}
+    },
+    {
+      "mediumSpecification": {
+        "title": "title1"
+      }
+    }
+  ],
+  "transferFrequency": {
+    "months": 9
+  },
+  "distributionFormat": [{
+      "formatSpecification": {
+        "title": "title0"
+      }
+    },
+    {
+      "formatSpecification": {
+        "title": "title1"
+      }
+    }
+  ]
+}]
