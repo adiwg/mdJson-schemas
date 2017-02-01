@@ -1,10 +1,6 @@
-{
-   "orderProcess": [
-      {
-         "fees": "0.00USD",
-         "plannedAvailability": "2016-10-21T00:00:00",
-         "orderingInstructions": "orderingInstructions",
-         "turnaround": "turnaround"
-      }
-   ]
-}
+[{
+  "fees": "0.00USD",
+  "plannedAvailability": "2016-10-21T00:00:00",
+  "orderingInstructions": "orderingInstructions",
+  "turnaround": "turnaround"
+}]
