@@ -8,6 +8,8 @@
   },
   "oneOf": [{
       "type": "object",
+      "title": "scaleFactor",
+      "required": ["scaleFactor"],
       "properties": {
         "scaleFactor": {
           "type": "number",
@@ -21,6 +23,8 @@
       }
     }, {
       "type": "object",
+      "title": "measure",
+      "required": ["measure"],
       "properties": {
         "measure": {
           "type": "object",
@@ -33,6 +37,8 @@
     },
     {
       "type": "object",
+      "title": "levelOfDetail",
+      "required": ["levelOfDetail"],
       "properties": {
         "levelOfDetail": {
           "type": "string",
