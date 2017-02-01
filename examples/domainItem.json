@@ -1,14 +1,11 @@
-{
-   "domainItem": [
-      {
-         "name": "name",
-         "value": "value",
-         "definition": "definition"
-      },
-      {
-         "name": "Alaska",
-         "value": "AK",
-         "definition": "State of Alaska"
-      }
-   ]
-}
+[{
+    "name": "name",
+    "value": "value",
+    "definition": "definition"
+  },
+  {
+    "name": "Alaska",
+    "value": "AK",
+    "definition": "State of Alaska"
+  }
+]
