@@ -155,7 +155,7 @@
                 "ISO 19115-2": ["geographicElement > EX_GeographicDescription > geographicIdentifier > MD_Identifier"]
               },
               "items": {
-                "$ref": "../identifier.json#"
+                "$ref": "./identifier.json#"
               }
             }
           }
