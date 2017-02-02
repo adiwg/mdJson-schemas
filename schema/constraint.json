@@ -13,7 +13,6 @@
     "required": ["security"],
     "properties": {
       "type": {
-        "type": "string",
         "enum": ["security"]
       }
     }
@@ -23,7 +22,6 @@
     "required": ["legal"],
     "properties": {
       "type": {
-        "type": "string",
         "enum": ["legal"]
       }
     }
