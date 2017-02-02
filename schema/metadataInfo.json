@@ -67,10 +67,10 @@
       "allOf": [{
         "type": "array",
         "items": [{
+          "type": "object",
+          "title": "Creation date required.",
+          "description": "A creation date must be the first object in the array.",
           "properties": {
-            "type": "object",
-            "title": "Creation data is required.",
-            "description": "A creation date must be the first object in the array.",
             "dateType": {
               "type": "string",
               "enum": ["creation"]

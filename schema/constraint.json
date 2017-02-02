@@ -4,18 +4,25 @@
   "description": "schema for resource constraint",
   "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint",
   "anyOf": [{
+    "title": "useLimitation is required",
     "required": ["useLimitation"]
   }, {
+    "title": "security is required",
     "required": ["security"],
-    "type": {
-      "type": "string",
-      "enum": ["security"]
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": ["security"]
+      }
     }
   }, {
+    "title": "legal is required",
     "required": ["legal"],
-    "type": {
-      "type": "string",
-      "enum": ["legal"]
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": ["legal"]
+      }
     }
   }],
   "properties": {

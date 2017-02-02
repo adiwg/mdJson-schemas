@@ -9,14 +9,18 @@
   },
   "additionalProperties": true,
   "anyOf": [{
+      "title": "description is required",
       "required": ["description"]
     },
     {
+      "title": "geographicExtent is required",
       "required": ["geographicExtent"]
     }, {
+      "title": "verticalExtent is required",
       "required": ["verticalExtent"]
     },
     {
+      "title": "temporalExtent is required",
       "required": ["temporalExtent"]
     }
   ],

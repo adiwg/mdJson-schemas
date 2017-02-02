@@ -1,6 +1,7 @@
 {
   "id": "graphic.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "graphic",
   "example": "../../examples/full_example.json#/metadata/resourceInfo/graphicOverview/0",
   "description": "Provides a path or link to images, maps, flow charts, models, etc. that illustrate the resource.",
   "type": "object",
