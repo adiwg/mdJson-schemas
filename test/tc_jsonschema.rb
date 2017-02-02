@@ -3,7 +3,7 @@ require 'helper.rb'
 class TestSchema < TestHelper
   def test_schemas
     # Validate the schemas themselves
-    schemas = `git ls-files #{@@dir}/schema`.split($INPUT_RECORD_SEPARATOR)
+    schemas = `git ls-files #{@@dir}/schema`.split($/)
     errors = []
 
     schemas.each do |schema|

@@ -21,7 +21,7 @@ class TestHelper < Minitest::Test
     JSON.load File.new(filename)
   end
 
-  schemas = `git ls-files #{@@dir}/schema`.split($INPUT_RECORD_SEPARATOR)
+  schemas = `git ls-files #{@@dir}/schema`.split($/)
 
   schemas.each do |schema|
     name = File.basename(schema)
