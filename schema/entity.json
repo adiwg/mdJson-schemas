@@ -65,7 +65,7 @@
         "ISO 19115-2": ["FC_FeatureCatalogue > Note: the index is written as a text description into featureType > FC_FeatureType > constrainedBy > FC_Constraint > description"]
       },
       "items": {
-        "#ref": "#/definitions/index"
+        "$ref": "#/definitions/index"
       }
     },
     "attribute": {
@@ -75,7 +75,7 @@
         "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute"]
       },
       "items": {
-        "#ref": "#/definitions/attribute"
+        "$ref": "#/definitions/attribute"
       }
     },
     "foreignKey": {

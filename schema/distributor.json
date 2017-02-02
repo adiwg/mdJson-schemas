@@ -27,7 +27,7 @@
         "ISO 19115-2": ["MD_Distribution > distributor > MD_Distributor > distributionOrderProcess"]
       },
       "items": {
-        "#ref":"./orderProcess.json#"
+        "$ref":"./orderProcess.json#"
       }
     },
     "transferOption": {
@@ -39,7 +39,7 @@
         "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt"]
       },
       "items": {
-        "#ref": "./transferOption.json#"
+        "$ref": "./transferOption.json#"
       }
     }
   }

@@ -27,7 +27,7 @@
       }
     },
     "locale": {
-      "#ref": "./locale.json",
+      "$ref": "./locale.json",
       "description": "Defines the language and country of origin in which the data dictionary is written.  E.g. 'eng; USA', 'eng; UK', 'esp; MEX'.",
       "translation": {
         "ISO 19115-2": ["FC_FeatureCatalogue > language"]
@@ -54,7 +54,7 @@
       "description": "A list of permissable values used to constrain an attribute's value.  A single domain may be assigned to multiple attributes in a table or database.",
       "example": "",
       "items": {
-        "#ref": "./domain.json#"
+        "$ref": "./domain.json#"
       }
     },
     "entity": {
@@ -64,7 +64,7 @@
         "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType"]
       },
       "items": {
-        "#ref": "./entity.json#"
+        "$ref": "./entity.json#"
       }
     }
   }

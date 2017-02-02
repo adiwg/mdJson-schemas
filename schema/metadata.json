@@ -51,7 +51,7 @@
         "FGDC CSDGM": ["idinfo > crossref"]
       },
       "items": {
-        "#ref": "./associatedResource.json#"
+        "$ref": "./associatedResource.json#"
       }
     },
     "additionalDocumentation": {

@@ -43,7 +43,7 @@
       },
       "additionalProperties": true,
       "items": {
-        "#ref": "./medium.json#"
+        "$ref": "./medium.json#"
       },
       "distributionFormat": {
         "type": "array",

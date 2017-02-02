@@ -8,7 +8,7 @@
   "additionalProperties": true,
   "properties": {
     "mediumSpecification": {
-      "#ref": "./citation.json#",
+      "$ref": "./citation.json#",
       "description": "Name of the formaton which the resource may be stored",
       "translation": {
         "ISO 19115-2": ["MD_Medium > name [MD_MediumNameCode]"],
