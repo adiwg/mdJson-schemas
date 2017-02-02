@@ -4,9 +4,11 @@
   "description": "schema for resource constraint",
   "example": "../../examples/full_example.json#/metadata/resourceInfo/constraint",
   "anyOf": [{
+    "type": "object",
     "title": "useLimitation is required",
     "required": ["useLimitation"]
   }, {
+    "type": "object",
     "title": "security is required",
     "required": ["security"],
     "properties": {
@@ -16,6 +18,7 @@
       }
     }
   }, {
+    "type": "object",
     "title": "legal is required",
     "required": ["legal"],
     "properties": {
