@@ -7,9 +7,11 @@
   "minProperties": 1,
   "additionalProperties": true,
   "anyOf": [{
+      "title": "allocation is required",
       "required": ["allocation"]
     },
     {
+      "title": "timePeriod is required",
       "required": ["timePeriod"]
     }
   ],
@@ -57,9 +59,9 @@
       }
     },
     "timePeriod": {
-        "$ref" : "./timePeriod.json#",
-        "description" : "The period for which the allocation is relevant.",
-        "example": ""
+      "$ref": "./timePeriod.json#",
+      "description": "The period for which the allocation is relevant.",
+      "example": ""
     }
   }
 }

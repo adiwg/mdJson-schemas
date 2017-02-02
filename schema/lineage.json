@@ -9,14 +9,17 @@
   },
   "additionalProperties": true,
   "anyOf": [{
+      "title": "statement is required",
       "required": ["statement"],
       "description": "A statement is required."
     },
     {
+      "title": "source is required",
       "required": ["source"],
       "description": "At least one source is required."
     },
     {
+      "title": "processStep is required",
       "required": ["processStep"],
       "description": "At least one processStep is required."
     }

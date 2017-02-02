@@ -20,7 +20,6 @@
     "required": ["timeInstant"],
     "properties": {
       "type": {
-        "type": "string",
         "enum": ["instant"]
       },
       "timeInstant": {
@@ -33,7 +32,6 @@
     "required": ["timePeriod"],
     "properties": {
       "type": {
-        "type": "string",
         "enum": ["period"]
       },
       "timePeriod": {
