@@ -1,13 +1,12 @@
-=begin
-* Description: Patches json-schema gem to work on windows
-* Author: Josh Bradley
-* Date: 2014-09-17
-* License: Public Domain
-=end
+
 
 module JSON
 
   class Validator
+
+    # Patches json-schema(<2.5) gem to work on Windows
+    #
+    # @author Josh Bradley
 
     def load_ref_schema(parent_schema,ref)
       uri = URI.parse(ref)
