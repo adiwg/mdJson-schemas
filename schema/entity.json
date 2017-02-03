@@ -7,7 +7,7 @@
     "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType"]
   },
   "example": "",
-  "required": ["entityId", "codeName", "definition"],
+  "required": ["codeName", "definition"],
   "additionalProperties": true,
   "properties": {
     "entityId": {
@@ -167,6 +167,12 @@
           "description": "Indicates whether null values are allowed for the attribute",
           "translation": {
             "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > cardinality > Multiplicity > range > MultiplicityRange > lower > integer[0=optional | 1=required]"]
+          }
+        },
+        "allowMany": {
+          "type": "boolean",
+          "description": "Indicates whether null values are allowed for the attribute",
+          "translation": {
           }
         },
         "units": {
