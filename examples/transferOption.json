@@ -19,9 +19,9 @@
       }
     }
   ],
-  "transferFrequency": {
+  "transferFrequency": [{
     "months": 9
-  },
+  }],
   "distributionFormat": [{
       "formatSpecification": {
         "title": "title0"

@@ -22,18 +22,20 @@
    },
    "responsibleParty": [{
        "role": "role0",
-       "roleExtent": {
-         "description": "description0"
-       },
+       "timePeriod": [{
+         "startDateTime": "2016-10-14T11:10:15.2-10:00",
+         "endDateTime": "2016-12-31"
+       }],
        "party": [{
          "contactId": "individualId0"
        }]
      },
      {
        "role": "role1",
-       "roleExtent": {
-         "description": "description1"
-       },
+       "timePeriod": [{
+         "startDateTime": "2016-10-14T11:10:15.2-10:00",
+         "endDateTime": "2016-12-31"
+       }],
        "party": [{
          "contactId": "individualId0"
        }]

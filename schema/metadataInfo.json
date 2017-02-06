@@ -19,7 +19,7 @@
       "translation": {
         "ISO 19115-2": ["MI_Metadata > parentIdentifier"]
       },
-      "$ref": "citation.json#/definitions/citationFull"
+      "$ref": "citation.json#"
     },
     "defaultMetadataLocale": {
       "description": "Main localised language and characterset used within the metadata record.",

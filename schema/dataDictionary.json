@@ -20,27 +20,34 @@
       }
     },
     "recommendedUse": {
-      "type": "string",
+      "type": "array",
       "description": "Description of kind(s) of use to which this dictionary may be put.",
       "translation": {
         "ISO 19115-2": ["FC_FeatureCatalogue > fieldOfApplication > CharacterString"]
+      },
+      "items": {
+        "type": "string"
       }
     },
     "locale": {
-      "$ref": "./locale.json",
+      "type": "array",
       "description": "Defines the language and country of origin in which the data dictionary is written.  E.g. 'eng; USA', 'eng; UK', 'esp; MEX'.",
       "translation": {
         "ISO 19115-2": ["FC_FeatureCatalogue > language"]
+      },
+      "items": {
+        "$ref": "./locale.json"
       }
+
     },
     "responsibleParty": {
       "$ref": "./responsibility.json#",
       "description": "Name, address, country, and telecommunications address of person or organization having primary responsibility for the intellectual content of this dictionary."
     },
     "dictionaryFormat": {
-        "type" : "string",
-        "description" : "Formal functional language used in the dictionary.",
-        "translation": {}
+      "type": "string",
+      "description": "Formal functional language used in the dictionary.",
+      "translation": {}
     },
     "dictionaryIncludedWithResource": {
       "type": "boolean",

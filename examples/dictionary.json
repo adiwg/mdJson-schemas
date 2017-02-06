@@ -1,11 +1,21 @@
 [{
-  "resourceType": "resourceType",
   "citation": {
     "title": "title"
   },
-  "description": "description",
-  "language": "language",
   "subject": "subject",
+  "locale": [
+     {
+        "language": "language1",
+        "country": "country1",
+        "characterSet": "characterSet1"
+     },
+     {
+        "language": "rar",
+        "country": "COK",
+        "characterSet": "UTF-8"
+     }
+  ],
+  "recommendedUse": [""],
   "responsibleParty": {
     "role": "role",
     "party": [{

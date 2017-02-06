@@ -41,7 +41,7 @@
         "translation": {
           "ISO 19115-2": ["MD_Identifier > authority > CI_Citation"]
         },
-        "$ref": "./citation.json#/definitions/citationFull"
+        "$ref": "./citation.json#"
       }
     }
 }

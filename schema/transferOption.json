@@ -44,17 +44,26 @@
       "additionalProperties": true,
       "items": {
         "$ref": "./medium.json#"
-      },
-      "distributionFormat": {
-        "type": "array",
-        "description": "Provides information about the format used by the distributor.",
-        "translation": {
-          "ISO 19115-2": ["MD_Distribution > distributor > MD_Distributor > distributorFormat > MD_Format"],
-          "FGDC CSDGM": ["distinfo > stdorder > digform"]
-        },
-        "items": {
-          "$ref": "#/definitions/format"
+      }
+    },
+    "transferFrequency": {
+        "type" : "array",
+        "description" : "The rate of occurrence of distribution.",
+        "example": "",
+        "translation": {},
+        "items" : {
+          "$ref": "./timePeriod.json#/definitions/duration"
         }
+    },
+    "distributionFormat": {
+      "type": "array",
+      "description": "Provides information about the format used by the distributor.",
+      "translation": {
+        "ISO 19115-2": ["MD_Distribution > distributor > MD_Distributor > distributorFormat > MD_Format"],
+        "FGDC CSDGM": ["distinfo > stdorder > digform"]
+      },
+      "items": {
+        "$ref": "./format.json#"
       }
     }
   }

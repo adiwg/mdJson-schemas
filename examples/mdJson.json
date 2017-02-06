@@ -70,7 +70,6 @@
     }
   },
   "dataDictionary": [{
-    "resourceType": "resourceType",
     "subject": "subject",
     "responsibleParty": {
       "role": "role",
@@ -80,10 +79,8 @@
     },
     "citation": {
       "title": "title"
-    },
-    "description": "description"
+    }
   }, {
-    "resourceType": "resourceType",
     "subject": "subject",
     "responsibleParty": {
       "role": "role",
@@ -93,7 +90,6 @@
     },
     "citation": {
       "title": "title"
-    },
-    "description": "description"
+    }
   }]
 }

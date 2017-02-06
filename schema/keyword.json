@@ -33,7 +33,7 @@
         "ISO 19115-2": ["MD_Keywords > thesaurusName > CI_Citation"],
         "FGDC CSDGM": ["idinfo>keywords>theme>themekt", "idinfo>keywords>place>placekt", "idinfo>keywords>temporal>tempkt", "idinfo>keywords>stratum>stratkt"]
       },
-      "$ref": "citation.json#/definitions/citationFull"
+      "$ref": "citation.json#"
     }
   },
   "definitions": {

@@ -1,147 +1,138 @@
 {
   "id": "citation.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "schema for citation",
+  "type": "object",
+  "title": "citation",
+  "description": "A citation object.",
+  "required": ["title"],
+  "example": "",
   "translation": {
+    "FGDC CSDGM": ["idinfo > citation > citeinfo"],
     "ISO 19115-2": ["CI_Citation"]
   },
-  "type": "object",
-  "required": ["title"],
-  "allOf": [{
-    "$ref": "#/definitions/citationFull"
-  }],
-  "definitions": {
-    "citationFull": {
-      "type": "object",
-      "title": "full citation",
-      "description": "A full citation object, all attributes are supported.",
-      "example": "",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Name by which the cited resource is known.",
       "translation": {
-        "FGDC CSDGM": ["idinfo > citation > citeinfo"]
+        "ISO 19115-2": ["CI_Citation > title", "FC_FeatureCatalogue > name"],
+        "FGDC CSDGM": ["idinfo > citation > citeinfo > title"]
+      }
+    },
+    "alternateTitle": {
+      "type": "array",
+      "description": "Alias by which the cited resource is known.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > alternateTitle"]
       },
-      "properties": {
-        "title": {
-          "type": "string",
-          "description": "Name by which the cited resource is known.",
-          "translation": {
-            "ISO 19115-2": ["CI_Citation > title", "FC_FeatureCatalogue > name"],
-            "FGDC CSDGM": ["idinfo > citation > citeinfo > title"]
-          }
-        },
-        "alternateTitle": {
-          "type": "array",
-          "description": "Alias by which the cited resource is known.",
-          "translation": {
-            "ISO 19115-2": ["CI_Citation > alternateTitle"]
+      "items": {
+        "type": "string"
+      }
+    },
+    "date": {
+      "type": "array",
+      "description": "Date referenced to the cited resource.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > date > CI_Date"]
+      },
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "example": "",
+        "required": ["date", "dateType"],
+        "properties": {
+          "date": {
+            "translation": {
+              "ISO 19115-2": ["CI_Date > date", "FC_FeatureCatalogue > versionDate"],
+              "FGDC CSDGM": ["idinfo > citation > citeinfo > pubdate"]
+            },
+            "$ref": "common.json#/definitions/date"
           },
-          "items": {
-            "type": "string"
-          }
-        },
-        "date": {
-          "type": "array",
-          "description": "Date referenced to the cited resource.",
-          "translation": {
-            "ISO 19115-2": ["CI_Citation > date > CI_Date"]
-          },
-          "minItems": 1,
-          "items": {
-            "type": "object",
-            "example": "",
-            "required": ["date", "dateType"],
-            "properties": {
-              "date": {
-                "translation": {
-                  "ISO 19115-2": ["CI_Date > date", "FC_FeatureCatalogue > versionDate"],
-                  "FGDC CSDGM": ["idinfo > citation > citeinfo > pubdate"]
-                },
-                "$ref": "common.json#/definitions/date"
-              },
-              "dateType": {
-                "type": "string",
-                "description": "The type of date in the context of the citation.",
-                "translation": {
-                  "ISO 19115-2": ["CI_Date > dateType [CI_DateTypeCode]"]
-                }
-              }
+          "dateType": {
+            "type": "string",
+            "description": "The type of date in the context of the citation.",
+            "translation": {
+              "ISO 19115-2": ["CI_Date > dateType [CI_DateTypeCode]"]
             }
-          }
-        },
-        "edition": {
-          "type": "string",
-          "description": "Version identifier for the resource.",
-          "translation": {
-            "ISO 19115-2": ["CI_Citation > edition"],
-            "FGDC CSDGM": ["idinfo > citation > edition"]
-          }
-        },
-        "responsibleParty": {
-          "type": "array",
-          "description": "Identification of, and means of communication with, person(s) and organization(s) associated with the cited resource.",
-          "translation": {
-            "ISO 19115-2": ["CI_Citation > citedResponsibleParty > CI_ResponsibleParty", "FC_FeatureCatalogue > producer > CI_ResponisbleParty"],
-            "FGDC CSDGM": ["idinfo > ptcontac > cntinfo"]
-          },
-          "minItems": 1,
-          "items": {
-            "$ref": "responsibility.json#"
-          }
-        },
-        "presentationForm": {
-          "type": "array",
-          "description": "The form that the resource is presented, such as: digital map, digital document, etc.",
-          "translation": {
-            "ISO 19115-2": ["CI_Citation > presentationForm [CI_PresentationFormCode]"],
-            "FGDC CSDGM": ["idinfo > citation > geoform"]
-          },
-          "items": {
-            "type": "string"
-          }
-        },
-        "identifier": {
-          "type": "array",
-          "description": "Identifier for the resource in the context of the citation.",
-          "translation": {
-            "ISO 19115-2": ["CI_Citation > identifier"]
-          },
-          "items": {
-            "$ref": "./identifier.json#"
-          }
-        },
-        "series": {
-          "$ref": "#/definitions/series"
-
-        },
-        "otherCitationDetails": {
-          "type": "array",
-          "description": "Other information required to complete the citation that is not recorded elsewhere.",
-          "example": "",
-          "translation": {},
-          "items": {
-            "type": "string"
-          }
-        },
-        "onlineResource": {
-          "type": "array",
-          "description": "On-line information related to the citation.",
-          "translation": {
-            "ISO 19115-2": ["CI_Citation > citedResponsibleParty > CI_ResponsibleParty > contact > CI_Contact > onlineResource > CI_OnlineResource"]
-          },
-          "items": {
-            "$ref": "onlineResource.json#"
-          }
-        },
-        "graphic": {
-          "type": "array",
-          "description": "Online graphic associated with the citation",
-          "example": "",
-          "translation": {},
-          "items": {
-            "$ref": "./graphic.json#"
           }
         }
       }
     },
+    "edition": {
+      "type": "string",
+      "description": "Version identifier for the resource.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > edition", "FC_FeatureCatalogue > versionNumber"],
+        "FGDC CSDGM": ["idinfo > citation > edition"]
+      }
+    },
+    "responsibleParty": {
+      "type": "array",
+      "description": "Identification of, and means of communication with, person(s) and organization(s) associated with the cited resource.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > citedResponsibleParty > CI_ResponsibleParty", "FC_FeatureCatalogue > producer > CI_ResponisbleParty"],
+        "FGDC CSDGM": ["idinfo > ptcontac > cntinfo"]
+      },
+      "minItems": 1,
+      "items": {
+        "$ref": "responsibility.json#"
+      }
+    },
+    "presentationForm": {
+      "type": "array",
+      "description": "The form that the resource is presented, such as: digital map, digital document, etc.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > presentationForm [CI_PresentationFormCode]"],
+        "FGDC CSDGM": ["idinfo > citation > geoform"]
+      },
+      "items": {
+        "type": "string"
+      }
+    },
+    "identifier": {
+      "type": "array",
+      "description": "Identifier for the resource in the context of the citation.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > identifier"]
+      },
+      "items": {
+        "$ref": "./identifier.json#"
+      }
+    },
+    "series": {
+      "$ref": "#/definitions/series"
+
+    },
+    "otherCitationDetails": {
+      "type": "array",
+      "description": "Other information required to complete the citation that is not recorded elsewhere.",
+      "example": "",
+      "translation": {},
+      "items": {
+        "type": "string"
+      }
+    },
+    "onlineResource": {
+      "type": "array",
+      "description": "On-line information related to the citation.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > citedResponsibleParty > CI_ResponsibleParty > contact > CI_Contact > onlineResource > CI_OnlineResource"]
+      },
+      "items": {
+        "$ref": "onlineResource.json#"
+      }
+    },
+    "graphic": {
+      "type": "array",
+      "description": "Online graphic associated with the citation",
+      "example": "",
+      "translation": {},
+      "items": {
+        "$ref": "./graphic.json#"
+      }
+    }
+  },
+  "definitions": {
     "series": {
       "type": "object",
       "description": "Information about the series, or aggregate resource, to which a resource belongs.",
@@ -160,25 +151,6 @@
           "type": "string"
         }
       }
-    },
-    "dictionary": {
-      "type": "object",
-      "example": "",
-      "required": ["title", "date"],
-      "title": "dictionary citation",
-      "description": "A citation object for data dictionaries.",
-      "properties": {
-        "edition": {
-          "type": "string",
-          "description": "Version identifier for the dictionary.",
-          "translation": {
-            "ISO 19115-2": ["FC_FeatureCatalogue > versionNumber"]
-          }
-        }
-      },
-      "allOf": [{
-        "$ref": "#/definitions/citationFull"
-      }]
     }
   }
 }
