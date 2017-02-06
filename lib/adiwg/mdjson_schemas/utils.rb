@@ -36,11 +36,21 @@ module ADIWG
 
       # Pre-load all of the json-schemas for mdJSON validation
       #
+      # @param [Boolean] strict If true, will disallow additional properties
       # @return [nil]
-      def self.load_schemas
+      def self.load_schemas(strict=false)
         Dir.glob(schema_dir + '*.json') do |schema|
+          loaded = Utils.load_json(schema)
           name = File.basename(schema)
-          jschema = JSON::Schema.new(Utils.load_json(schema), Addressable::URI.parse(name))
+
+          if strict
+            loaded['additionalProperties'] = false
+            loaded['definitions'].each do |_key, val|
+              val['additionalProperties'] = false
+            end unless loaded['definitions'].nil?
+          end
+
+          jschema = JSON::Schema.new(loaded, Addressable::URI.parse(name))
 
           JSON::Validator.add_schema(jschema)
         end

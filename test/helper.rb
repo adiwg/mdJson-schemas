@@ -17,16 +17,17 @@ class TestHelper < Minitest::Test
 
   @@strict = false
 
-  def self.load_json(filename)
-    JSON.load File.new(filename)
-  end
-
-  schemas = `git ls-files #{@@dir}/schema`.split($/)
-
-  schemas.each do |schema|
-    name = File.basename(schema)
-    jschema = JSON::Schema.new(TestHelper.load_json(schema), Addressable::URI.parse(name))
-
-    JSON::Validator.add_schema(jschema)
-  end
+  # def self.load_json(filename)
+  #   JSON.load File.new(filename)
+  # end
+  #
+  # schemas = `git ls-files #{@@dir}/schema`.split($/)
+  #
+  # schemas.each do |schema|
+  #   name = File.basename(schema)
+  #   jschema = JSON::Schema.new(TestHelper.load_json(schema), Addressable::URI.parse(name))
+  #
+  #   JSON::Validator.add_schema(jschema)
+  # end
+  ADIWG::MdjsonSchemas::Utils.load_schemas(false)
 end
