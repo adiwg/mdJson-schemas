@@ -84,7 +84,9 @@
       "translation": {
         "ISO 19115-2": ["Note: the foreign key is written as a text description into FC_FeatureCatalogue > featureType > FC_FeatureType > constrainedBy > FC_Constraint"]
       },
-      "items": {}
+      "items": {
+        "$ref": "#/definitions/foreignKey"
+      }
     }
   },
   "definitions": {
@@ -172,8 +174,7 @@
         "allowMany": {
           "type": "boolean",
           "description": "Indicates whether null values are allowed for the attribute",
-          "translation": {
-          }
+          "translation": {}
         },
         "units": {
           "type": "string",
