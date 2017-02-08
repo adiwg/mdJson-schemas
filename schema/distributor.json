@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "title": "distributor",
-  "example": "",
+  "example":"../examples/distributor.json",
   "description": "Information about the distributor of and options for obtaining the resource.",
   "translation": {
     "ISO 19115-2": ["MD_Distribution"],
@@ -32,7 +32,6 @@
     },
     "transferOption": {
       "type": "array",
-      "example": "",
       "description": "Describes method and media by which a resource is obtained from the distributor.",
       "translation": {
         "ISO 19115-2": ["MD_Distributor > distributorTransferOptions"],

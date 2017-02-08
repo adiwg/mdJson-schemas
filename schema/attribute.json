@@ -4,6 +4,7 @@
   "type": "object",
   "title": "",
   "description": "",
+  "example":"../examples/attribute.json",
   "required": [],
   "dependencies": {
     "minValue": ["units"],
@@ -38,11 +39,9 @@
     "attributeIdentifier": {
       "type": "array",
       "description": "Identifiers for each attribute included in the resource. NOTE: These identifiers can be used to provide names for the attribute from a standard set of names.",
-      "example": "",
       "translation": {},
       "items": {
-        "$ref": "./identifier.json#",
-        "example": ""
+        "$ref": "./identifier.json#"
       }
     },
     "minValue": {

@@ -25,7 +25,7 @@
     "dateObject": {
       "type": "object",
       "description": "An ISO 8601 date/timestamp and type.",
-      "example": "",
+      "example": "../examples/date.json",
       "required": ["date", "dateType"],
       "additionalProperties": true,
       "properties": {
@@ -35,7 +35,6 @@
         "dateType": {
           "type": "string",
           "description": "The type of date.",
-          "example": "",
           "translation": {},
           "minLength": 1
         },

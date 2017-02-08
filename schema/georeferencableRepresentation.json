@@ -1,49 +1,45 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id" : "georeferencableRepresentation.json#",
-    "type" : "object",
-    "title" : "georeferencableRepresentation",
-    "description" : "Grid with cells irregularly spaced in any given geographic/map projection coordinate system, whose individual cells can be geolocated using geolocation information supplied with the data but cannot be geolocated from the grid properties alone.",
-    "required" : ["controlPointAvailable","orientationParameterAvailable","georeferencedParameter"],
-    "additionalProperties" : true,
-    "properties" : {
-      "gridRepresentation": {
-          "$ref" : "./gridRepresentation.json#"
-      },
-      "controlPointAvailable": {
-          "type" : "boolean",
-          "description" : "Indication of whether or not control point(s) exist.",
-          "example": "",
-          "translation": {}
-      },
-      "orientationParameterAvailable": {
-          "type" : "boolean",
-          "description" : "Description of the parameters used to describe sensor orientation.",
-          "example": "",
-          "translation": {}
-      },
-      "orientationParameterDescription": {
-          "type" : "string",
-          "description" : "Description of parameters used to describe sensor orientation.",
-          "example": "",
-          "translation": {},
-          "minLength" : 1
-      },
-      "georeferencedParameter": {
-          "type" : "string",
-          "title" : "",
-          "description" : "Information which support grid data georeferencing.",
-          "example": "",
-          "translation": {}
-      },
-      "parameterCitation": {
-          "type" : "array",
-          "description" : "Reference providing description of the parameters.",
-          "example": "",
-          "translation": {},
-          "items" : {
-              "$ref" : "./citation.json#"
-          }
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "georeferencableRepresentation.json#",
+  "type": "object",
+  "title": "georeferencableRepresentation",
+  "description": "Grid with cells irregularly spaced in any given geographic/map projection coordinate system, whose individual cells can be geolocated using geolocation information supplied with the data but cannot be geolocated from the grid properties alone.",
+  "example": "../examples/georeferencableRepresentation.json",
+  "required": ["controlPointAvailable", "orientationParameterAvailable", "georeferencedParameter"],
+  "additionalProperties": true,
+  "properties": {
+    "gridRepresentation": {
+      "$ref": "./gridRepresentation.json#"
+    },
+    "controlPointAvailable": {
+      "type": "boolean",
+      "description": "Indication of whether or not control point(s) exist.",
+      "translation": {}
+    },
+    "orientationParameterAvailable": {
+      "type": "boolean",
+      "description": "Description of the parameters used to describe sensor orientation.",
+      "translation": {}
+    },
+    "orientationParameterDescription": {
+      "type": "string",
+      "description": "Description of parameters used to describe sensor orientation.",
+      "translation": {},
+      "minLength": 1
+    },
+    "georeferencedParameter": {
+      "type": "string",
+      "title": "",
+      "description": "Information which support grid data georeferencing.",
+      "translation": {}
+    },
+    "parameterCitation": {
+      "type": "array",
+      "description": "Reference providing description of the parameters.",
+      "translation": {},
+      "items": {
+        "$ref": "./citation.json#"
       }
     }
+  }
 }

@@ -3,24 +3,22 @@
   "id": "geographicExtent.json#",
   "type": "object",
   "description": "Describes the spatial area of the resource",
+  "example": "../examples/geographicExtent.json",
   "required": ["geographicElement"],
   "additionalProperties": false,
   "properties": {
     "containsData": {
       "type": "boolean",
       "description": "Idication of whether the geographic element encompasses an area covered by the data or an area where data are not present.",
-      "example": "",
       "translation": {}
     },
     "identifier": {
       "$ref": "./identifier.json#",
-      "description": "Identifier representing a geographic area.",
-      "example": ""
+      "description": "Identifier representing a geographic area."
     },
     "boundingBox": {
       "$ref": "#/definitions/boundingBox",
-      "description": "General geographic position of the resource.",
-      "example": ""
+      "description": "General geographic position of the resource."
     },
     "geographicElement": {
       "type": "array",
@@ -37,6 +35,7 @@
     "boundingBox": {
       "type": "object",
       "description": "The four sides of geodetic box defining the area of the resource",
+      "example": "../examples/boundingBox.json",
       "required": ["westLongitude",
         "eastLongitude",
         "southLatitude",
@@ -47,32 +46,28 @@
         "westLongitude": {
           "type": "number",
           "description": "",
-          "example": "",
           "translation": {}
         },
         "eastLongitude": {
           "type": "number",
           "description": "",
-          "example": "",
           "translation": {}
         },
         "southLatitude": {
           "type": "number",
           "description": "",
-          "example": "",
           "translation": {}
         },
         "northLatitude": {
           "type": "number",
           "description": "",
-          "example": "",
           "translation": {}
         }
       }
     },
     "geographicElement": {
       "type": "object",
-      "example": "",
+      "example": "../examples/geoJson.json",
       "properties": {
         "type": {
           "enum": ["Feature", "FeatureCollection", "GeometryCollection", "Point", "MultiPoint", "LineString", "MultiLineString", "Polygon", "MultiPolygon"],

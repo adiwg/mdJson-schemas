@@ -6,6 +6,7 @@
     "ISO 19115-2": ["EX_Extent > geographicElement > EX_GeographicBoundingBox, EX_GeographicBoundingBox > westBoundLongitude > Decimal {west}, EX_GeographicBoundingBox > eastBoundLongitude > Decimal {east}, EX_GeographicBoundingBox > southBoundLatitude > Decimal {south}, EX_GeographicBoundingBox > northBoundLatitude > Decimal {north}"],
     "FGDC CSDGM": ["[idinfo > spdom > bounding > westbc], [idinfo > spdom > bounding > eastbc], [idinfo > spdom > bounding > northbc], [idinfo > spdom > bounding > southbc]"]
   },
+  "example":"../examples/boundingBox.json",
   "type": "array",
   "minItems": 4,
   "items": {

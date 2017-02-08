@@ -3,6 +3,7 @@
   "id": "domain.json#",
   "type": "object",
   "description": "A list of permissable values used to constrain an attribute's value.  A single domain may be assigned to multiple attributes in a table or database.",
+  "example":"../examples/domain.json",
   "required": ["domainId", "codeName", "description", "domainItem"],
   "additionalProperties": true,
   "properties": {
@@ -34,7 +35,7 @@
     "domainItem": {
       "type": "object",
       "description": "An array of member objects that enumerate and define the valid values for a domain.",
-      "example": "",
+      "example":"../examples/domainItem.json",
       "required": ["name", "value", "definition"],
       "additionalProperties": true,
       "properties": {

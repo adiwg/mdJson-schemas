@@ -1,14 +1,11 @@
-{
-   "locale": [
-      {
-         "language": "language1",
-         "country": "country1",
-         "characterSet": "characterSet1"
-      },
-      {
-         "language": "rar",
-         "country": "COK",
-         "characterSet": "UTF-8"
-      }
-   ]
-}
+[{
+    "language": "language1",
+    "country": "country1",
+    "characterSet": "characterSet1"
+  },
+  {
+    "language": "rar",
+    "country": "COK",
+    "characterSet": "UTF-8"
+  }
+]

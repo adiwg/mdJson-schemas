@@ -5,7 +5,7 @@
   "title": "citation",
   "description": "A citation object.",
   "required": ["title"],
-  "example": "",
+  "example": "../examples/citation.json",
   "translation": {
     "FGDC CSDGM": ["idinfo > citation > citeinfo"],
     "ISO 19115-2": ["CI_Citation"]
@@ -38,7 +38,7 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "example": "",
+        "example":"../examples/date.json",
         "required": ["date", "dateType"],
         "properties": {
           "date": {
@@ -106,7 +106,6 @@
     "otherCitationDetails": {
       "type": "array",
       "description": "Other information required to complete the citation that is not recorded elsewhere.",
-      "example": "",
       "translation": {},
       "items": {
         "type": "string"
@@ -125,7 +124,6 @@
     "graphic": {
       "type": "array",
       "description": "Online graphic associated with the citation",
-      "example": "",
       "translation": {},
       "items": {
         "$ref": "./graphic.json#"
@@ -135,8 +133,9 @@
   "definitions": {
     "series": {
       "type": "object",
+      "title": "series",
       "description": "Information about the series, or aggregate resource, to which a resource belongs.",
-      "example": "",
+      "example": "../series.json",
       "translation": {},
       "minProperties": 1,
       "additionalProperties": true,

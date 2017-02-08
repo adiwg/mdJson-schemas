@@ -3,6 +3,7 @@
   "id": "attributeGroup.json#",
   "type": "object",
   "description": "Information about groups of attributes describing a coverage.",
+  "example":"../examples/attributeGroup.json",
   "required": ["attributeContentType"],
   "additionalProperties": true,
   "properties": {
@@ -19,7 +20,6 @@
     "attribute": {
       "type": "array",
       "description": "",
-      "example": "",
       "translation": {},
       "items": {
         "$ref": "./attribute.json#"

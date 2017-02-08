@@ -21,47 +21,53 @@
       "description": "Funds contributed to support the development of the resource.",
       "example": "",
       "items": {
-        "type": "object",
-        "required": ["amount", "currency"],
-        "additionalProperties": true,
-        "properties": {
-          "amount": {
-            "type": "number",
-            "description": "The amount of the allocation in the indicated currency.",
-            "example": ""
-          },
-          "currency": {
-            "type": "string",
-            "description": "The ISO 4217 currency code.",
-            "example": ""
-          },
-          "sourceId": {
-            "type": "string",
-            "description": "The contactId of the entity providing the allocation.",
-            "example": ""
-          },
-          "recipientId": {
-            "type": "string",
-            "description": "The contactId of the entity receiving the allocation.",
-            "example": ""
-          },
-          "matching": {
-            "type": "boolean",
-            "description": "Tdicates whether the funds are to be considered matching funds.",
-            "example": ""
-          },
-          "comment": {
-            "type": "string",
-            "description": "Additional information relevant to the allocation.",
-            "example": ""
-          }
-        }
+        "$ref": "#/definitions/allocation"
       }
     },
     "timePeriod": {
       "$ref": "./timePeriod.json#",
       "description": "The period for which the allocation is relevant.",
       "example": ""
+    }
+  },
+  "definitions": {
+    "allocation": {
+      "type": "object",
+      "example": "../examples/allocation.json",
+      "required": ["amount", "currency"],
+      "additionalProperties": true,
+      "properties": {
+        "amount": {
+          "type": "number",
+          "description": "The amount of the allocation in the indicated currency.",
+          "example": ""
+        },
+        "currency": {
+          "type": "string",
+          "description": "The ISO 4217 currency code.",
+          "example": ""
+        },
+        "sourceId": {
+          "type": "string",
+          "description": "The contactId of the entity providing the allocation.",
+          "example": ""
+        },
+        "recipientId": {
+          "type": "string",
+          "description": "The contactId of the entity receiving the allocation.",
+          "example": ""
+        },
+        "matching": {
+          "type": "boolean",
+          "description": "Tdicates whether the funds are to be considered matching funds.",
+          "example": ""
+        },
+        "comment": {
+          "type": "string",
+          "description": "Additional information relevant to the allocation.",
+          "example": ""
+        }
+      }
     }
   }
 }

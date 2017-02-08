@@ -8,6 +8,7 @@
     "ISO 19115-2": ["MD_DataIdentification > aggregationInfo > MD_AggregateInformation > aggregateDataSetName > CI_Citation"],
     "FGDC CSDGM": ["idinfo > crossref "]
   },
+  "example": "../examples/additionalDocumentation.json",
   "required": ["citation"],
   "properties": {
     "resourceType": {
