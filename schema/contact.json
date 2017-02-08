@@ -161,6 +161,14 @@
         "FGDC CSDGM": ["cntinfo > cntaddr"]
       },
       "properties": {
+        "addressType":{
+            "type" : "array",
+            "description" : "The type of address, usually mailing and/or physical.",
+            "translation": {},
+            "items" : {
+              "type": "string"
+            }
+        },
         "deliveryPoint": {
           "type": "array",
           "description": "Address line for the location.",
