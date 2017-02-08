@@ -1,7 +1,7 @@
 {
   "id": "spatialRepresentation.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "example": "",
+  "example": "../examples/spatialRepresentation.json",
   "description": "",
   "translation": {},
   "type": "object",
@@ -10,7 +10,7 @@
   "oneOf": [{
       "type": "object",
       "title": "gridRepresentation",
-      "example": "",
+      "example": "../examples/gridRepresentation.json",
       "required": ["type", "gridRepresentation"],
       "additionalProperties": true,
       "properties": {
@@ -26,7 +26,7 @@
     {
       "type": "object",
       "title": "vectorRepresentation",
-      "example": "",
+      "example": "../examples/vectorRepresentation.json",
       "required": ["type", "vectorRepresentation"],
       "additionalProperties": true,
       "properties": {
@@ -42,7 +42,7 @@
     {
       "type": "object",
       "title": "georectifiedRepresentation",
-      "example": "",
+      "example": "../examples/georectifiedRepresentation.json",
       "required": ["type", "georectifiedRepresentation"],
       "additionalProperties": true,
       "properties": {
@@ -58,7 +58,7 @@
     {
       "type": "object",
       "title": "georeferencableRepresentation",
-      "example": "",
+      "example": "../examples/georeferencableRepresentation.json",
       "required": ["type", "georeferencableRepresentation"],
       "additionalProperties": true,
       "properties": {
@@ -76,7 +76,6 @@
     "type": {
       "type": "string",
       "description": "Identifies the type of spatial representation defined for the object",
-      "example": "",
       "enum": ["grid", "vector", "georectified", "georeferencable"]
     }
   }

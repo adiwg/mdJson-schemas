@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id": "timeInstant.json#",
   "type": "object",
-  "example": "",
+  "example": "../examples/timeInstant.json",
   "required": ["dateTime"],
   "additionalProperties": true,
   "properties": {
@@ -15,8 +15,7 @@
     },
     "identifier": {
       "$ref": "./identifier.json#",
-      "description": "Identifier assigned to the timeInstant.",
-      "example": ""
+      "description": "Identifier assigned to the timeInstant."
     },
     "description": {
       "type": "string",
@@ -29,7 +28,6 @@
       "type": "array",
       "title": "",
       "description": "Name of the timeInstant",
-      "example": "",
       "translation": {},
       "items": {
         "type": "string"

@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Description of ways in which the resource is currently or has been used.",
-  "example": "",
+  "example": "../examples/usage.json",
   "translation": {
     "ISO 19115-2": ["MD_Usage"]
   },
@@ -42,13 +42,11 @@
     },
     "documentedIssue": {
       "$ref": "./citation.json#",
-      "description": "Citation of a description of known issues associated with the resource along with proposed solutions if available.",
-      "example": ""
+      "description": "Citation of a description of known issues associated with the resource along with proposed solutions if available."
     },
     "additionalDocumentation": {
       "type": "array",
       "description": "Publications that describe usage of data.",
-      "example": "",
       "translation": {},
       "items": {
         "$ref": "./citation.json#"

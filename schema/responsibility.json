@@ -3,6 +3,7 @@
   "id": "responsibility.json#",
   "type": "object",
   "description": "Identifies contact role(s).",
+  "example": "../examples/responsibility.json",
   "required": ["role", "party"],
   "additionalProperties": true,
   "properties": {
@@ -20,7 +21,6 @@
     "timePeriod": {
       "type": "array",
       "description": "The period of time for which the role is valid.",
-      "example": "",
       "translation": {},
       "items": {
         "$ref": "./timePeriod.json#"
@@ -29,7 +29,6 @@
     "party": {
       "type": "array",
       "description": "Identifies all the contacts associated with the role.",
-      "example": "",
       "translation": {},
       "minItems": 1,
       "items": {
@@ -43,7 +42,6 @@
           "organizationMembers": {
             "type": "array",
             "description": "Identifies individuals that have an association with an organization contact.",
-            "example": "",
             "translation": {},
             "items": {
               "type": "string"

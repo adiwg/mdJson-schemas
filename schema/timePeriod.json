@@ -3,7 +3,7 @@
   "id": "timePeriod.json#",
   "type": "object",
   "description": "A span of time represented by a starting date-time and an ending date-time.",
-  "example": "",
+  "example": "../examples/timePeriod.json",
   "minProperties": 1,
   "additionalProperties": true,
 
@@ -22,15 +22,13 @@
         "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod > description "]
       }
     },
-    "identifier":{
-        "$ref" : "./identifier.json#",
-        "description" : "Identifier for the timePeriod.",
-        "example": ""
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "Identifier for the timePeriod."
     },
     "periodName": {
       "type": "array",
       "description": "Names associated with the time period.",
-      "example": "",
       "translation": {},
       "minItems": 1,
       "items": {
@@ -71,7 +69,7 @@
     "duration": {
       "type": "object",
       "description": "Object for collecting information about a duration or period of time.",
-      "example": "",
+      "example": "../examples/duration.json",
       "translation": {},
       "minProperties": 1,
       "additionalProperties": true,
@@ -102,7 +100,7 @@
     "timeInterval": {
       "type": "object",
       "description": "Defines a length of time in sepcific units.",
-      "example": "",
+      "example": "../examples/timeInterval.json",
       "translation": {},
       "required": ["interval", "units"],
       "additionalProperties": true,
@@ -110,13 +108,11 @@
         "interval": {
           "type": "number",
           "description": "The amount of time.",
-          "example": "",
           "translation": {}
         },
         "units": {
           "type": "string",
           "description": "The unit of time for the interval.",
-          "example": "",
           "translation": {},
           "minLength": 1
         }

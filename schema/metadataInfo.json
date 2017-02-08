@@ -3,7 +3,7 @@
   "id": "metadataInfo.json#",
   "type": "object",
   "description": "General information about the metadata record.",
-  "example": "",
+  "example": "../examples/metadataInfo.json",
   "required": ["metadataContact", "metadataDate"],
   "additionalProperties": true,
   "properties": {
@@ -35,7 +35,6 @@
     "scope": {
       "type": "array",
       "description": "The scope/type of resource for which metadata is provided.",
-      "example": "",
       "translation": {},
       "items": {
         "$ref": "./scope.json#"
@@ -82,7 +81,6 @@
     "metadataOnlineResource": {
       "type": "array",
       "description": "Online location where the metadata is available.",
-      "example": "",
       "translation": {},
       "items": {
         "$ref": "./onlineResource.json#"
@@ -91,7 +89,6 @@
     "alternateMetadataReference": {
       "type": "array",
       "description": "Reference to alternative metadata for the resource.",
-      "example": "",
       "translation": {},
       "items": {
         "$ref": "./citation.json#"

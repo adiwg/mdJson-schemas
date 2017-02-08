@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The main body of the metadata record.",
   "type": "object",
-  "example": "",
+  "example": "../examples/metadata.json",
   "translation": {
     "ISO 19115-2": ["MI_Metadata"],
     "FGDC CSDGM": ["metadata"]
@@ -24,7 +24,6 @@
     "resourceLineage": {
       "type": "array",
       "description": "Information on the history of the resource.",
-      "example": "",
       "translation": {},
       "items": {
         "$ref": "./lineage.json#"
@@ -33,7 +32,6 @@
     "resourceDistribution": {
       "type": "array",
       "description": "Information about the distributor of and options for obtaining the resource.",
-      "example": "",
       "translation": {
         "ISO 19115-2": ["MD_Metadata > distribution > MD_Distribution"],
         "FGDC CSDGM": ["distinfo"]
@@ -45,7 +43,6 @@
     "associatedResource": {
       "type": "array",
       "description": "Other resources which are directly related to the subject resource such as parent, child, or sibling datasets or projects.",
-      "example": "",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > aggregationInfo > MD_AggregateInformation"],
         "FGDC CSDGM": ["idinfo > crossref"]
@@ -68,7 +65,6 @@
     "funding": {
       "type": "array",
       "description": "Information about funding for the resource.",
-      "example": "",
       "items": {
         "$ref": "./funding.json#"
       }

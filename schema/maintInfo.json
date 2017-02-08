@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Information about the maintenance of a resource.",
-  "example": "",
+  "example": "../examples/maintenance.json",
   "translation": {
     "ISO 19115-2": ["MD_MaintenanceInformation"]
   },
@@ -17,22 +17,20 @@
       }
     },
     "date": {
-        "type" : "array",
-        "description" : "Date related to resource maintenance.",
-        "example": "",
-        "translation": {},
-        "items" : {
-          "$ref": "common.json#/definitions/dateObject"
-        }
+      "type": "array",
+      "description": "Date related to resource maintenance.",
+      "translation": {},
+      "items": {
+        "$ref": "common.json#/definitions/dateObject"
+      }
     },
     "scope": {
-        "type" : "array",
-        "description" : "Type of resource to which the maintenance information applies.",
-        "example": "",
-        "translation": {},
-        "items" : {
-          "$ref": "./scope.json#"
-        }
+      "type": "array",
+      "description": "Type of resource to which the maintenance information applies.",
+      "translation": {},
+      "items": {
+        "$ref": "./scope.json#"
+      }
     },
     "note": {
       "type": "array",
@@ -43,8 +41,7 @@
       "items": {
         "type": "string"
       }
-    }
-    ,
+    },
     "contact": {
       "type": "array",
       "description": "Contact information for the maintainer of the resource.",

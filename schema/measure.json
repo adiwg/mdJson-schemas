@@ -2,29 +2,26 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id": "measure.json#",
   "type": "object",
-  "title": "",
+  "title": "measure",
   "description": "Number and type of units",
-  "required": ["type", "value", "unitOfMeasure"],
+  "example": "../examples/measure.json",  "required": ["type", "value", "unitOfMeasure"],
   "additionalProperties": true,
   "properties": {
     "type": {
       "type": "string",
       "description": "The type of measurement.",
-      "example": "",
-      "translation": {},
+            "translation": {},
       "enum": ["distance", "length", "vertical", "angle"]
     },
     "value": {
       "type": "number",
       "description": "The number of units in the measurement.",
-      "example": "",
-      "translation": {}
+            "translation": {}
     },
     "unitOfMeasure": {
       "type": "string",
       "description": "The type of units to associated with the value.",
-      "example": "",
-      "translation": {},
+            "translation": {},
       "minLength": 1
     }
   }

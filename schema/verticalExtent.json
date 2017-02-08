@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id": "verticalExtent.json#",
-
   "type": "object",
   "description": "Vertical element of an extent.",
+  "example": "../examples/verticalExtent.json",
   "translation": {
     "ISO 19115-2": ["EX_Extent > verticalElement > EX_VerticalExtent "]
   },
@@ -30,8 +30,7 @@
     },
     "crsId": {
       "$ref": "./spatialReference.json#",
-      "description": "Identifies the vertical coordinate reference system used for the minimum and maximum values.",
-      "example": ""
+      "description": "Identifies the vertical coordinate reference system used for the minimum and maximum values."
     }
   }
 }

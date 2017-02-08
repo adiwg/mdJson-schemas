@@ -3,7 +3,7 @@
     "id" : "identifier.json#",
     "title": "identifier",
     "description": "Assigned identifier for a resource.",
-    "example": "",
+    "example":"../examples/identifier.json",
     "translation": {
       "ISO 19115-2": ["MD_Identifier"]
     },

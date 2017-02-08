@@ -2,7 +2,7 @@
   "id": "graphic.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "graphic",
-  "example": "../../examples/full_example.json#/metadata/resourceInfo/graphicOverview/0",
+  "example":"../examples/graphic.json",
   "description": "Provides a path or link to images, maps, flow charts, models, etc. that illustrate the resource.",
   "type": "object",
   "required": ["fileName"],
@@ -35,7 +35,6 @@
     "fileConstraint": {
       "type": "array",
       "description": "Identifies, legal, security, and other constraint requirements associated with use and distribution of the graphic",
-      "example": "../../examples/",
       "translation": {},
       "items": {
         "$ref": "constraint.json#"

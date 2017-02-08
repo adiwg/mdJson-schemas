@@ -8,7 +8,7 @@
     "ISO 19115-2": ["MD_Distributor > distributorTransferOptions > MD_DigitalTransferOptions"],
     "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt"]
   },
-  "example": "",
+  "example": "../examples/transferOption.json",
   "required": [],
   "additionalProperties": true,
   "properties": {
@@ -22,7 +22,6 @@
     },
     "onlineOption": {
       "type": "array",
-      "example": "",
       "description": "Information about obtaining the resource on-line.",
       "translation": {
         "ISO 19115-2": ["MD_DigitalTransferOptions > online > CI_OnlineResource"],
@@ -35,7 +34,6 @@
     },
     "offlineOption": {
       "type": "array",
-      "example": "",
       "description": "Information about obtaining the resource through off-line procedure.",
       "translation": {
         "ISO 19115-2": ["MD_DigitalTransferOptions > offline > MD_Medium"],
@@ -47,13 +45,12 @@
       }
     },
     "transferFrequency": {
-        "type" : "array",
-        "description" : "The rate of occurrence of distribution.",
-        "example": "",
-        "translation": {},
-        "items" : {
-          "$ref": "./timePeriod.json#/definitions/duration"
-        }
+      "type": "array",
+      "description": "The rate of occurrence of distribution.",
+      "translation": {},
+      "items": {
+        "$ref": "./timePeriod.json#/definitions/duration"
+      }
     },
     "distributionFormat": {
       "type": "array",

@@ -1,7 +1,7 @@
 {
   "id": "gridRepresentation.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "example": "",
+  "example":"../examples/gridRepresentation.json",
   "description": "Information about grid objects in the resource.",
   "translation": {
     "ISO 19115-2": ["MD_GridSpatialRepresentation"]

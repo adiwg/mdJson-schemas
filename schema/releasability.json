@@ -2,13 +2,13 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id": "releasability.json#",
   "type": "object",
-  "description": "",
+  "description": "Information about resource release constraints.",
+  "example":"../examples/releasability.json",
   "minProperties": 1,
   "additionalProperties": true,
   "properties": {
     "addressee": {
       "type": "array",
-      "example": "",
 
       "minItems": 1,
       "items": {
@@ -18,15 +18,13 @@
     "statement": {
       "type": "string",
       "description": "The release statement.",
-      "example": "",
-      "translation": {},
+            "translation": {},
       "minLength": 1
     },
     "disseminationConstraint": {
       "type": "array",
       "description": "Factor in determining releasability",
-      "example": "",
-      "translation": {},
+            "translation": {},
       "items": {
         "type": "string"
       }

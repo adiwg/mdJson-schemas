@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Information on the history of the resource.",
-  "example": "",
+  "example": "../examples/lineage.json",
   "translation": {
     "ISO 19115-2": ["LI_Lineage"]
   },
@@ -35,13 +35,11 @@
     "scope": {
       "$ref": "./scope.json#",
       "description": "Type of resource and/or extent to which the lineage information applies.",
-      "example": "",
       "translation": {}
     },
     "citation": {
       "type": "array",
       "description": "Citation to a reference that describes the lineage.",
-      "example": "",
       "translation": {},
       "items": {
         "$ref": "./citation.json#"
@@ -74,7 +72,7 @@
     "processStep": {
       "type": "object",
       "description": "Process or methodology steps applied to development of the resource.",
-      "example": "../../examples/full_example.json#/metadata/resourceInfo/dataQualityInfo/0/lineage/processStep",
+      "example": "../examples/processStep.json",
       "translation": {
         "ISO 19115-2": ["LI_ProcessStep"]
       },
@@ -125,7 +123,6 @@
         "reference": {
           "type": "array",
           "description": "Citation for process step documentation.",
-          "example": "",
           "translation": {},
           "items": {
             "$ref": "./citation.json#"
@@ -136,7 +133,7 @@
     "source": {
       "type": "object",
       "description": "Information about the source data used in creating the data identified by the data quality scope.",
-      "example": "../../examples/full_example.json#/metadata/resourceInfo/dataQualityInfo/0/lineage/source",
+      "example": "../examples/source.json",
       "translation": {
         "ISO 19115-2": ["LI_Source"]
       },
@@ -160,7 +157,6 @@
         "metadataCitation": {
           "type": "array",
           "description": "Citation providing information about the metadata for the source.",
-          "example": "",
           "translation": {},
           "items": {
             "$ref": "citation.json#"
@@ -169,13 +165,11 @@
         "scaleDenominator": {
           "type": "integer",
           "description": "The number below the line in a vulgar fraction",
-          "example": "",
           "translation": {}
         },
         "referenceSystem": {
           "$ref": "./spatialReference.json#",
           "description": "Spatial reference system used by the source.",
-          "example": "",
           "translation": {}
         },
         "processStep": {

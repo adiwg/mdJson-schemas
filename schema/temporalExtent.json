@@ -4,6 +4,7 @@
   "type": "object",
   "title": "",
   "description": "A temporal boundary comprising all or a portion of the resource.",
+  "example":"../examples/temporalExtent.json",
   "required": ["type"],
   "additionalProperties": true,
   "properties": {

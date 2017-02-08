@@ -7,7 +7,7 @@
   "translation": {
     "ISO 19115-2": ["MD_Distribution > distributor > MD_Distributor > distributionOrderProcess > MD_StandardOrderProcess"]
   },
-  "example": "",
+  "example":"../examples/orderProcess.json",
   "additionalProperties": true,
   "properties": {
     "fees": {

@@ -4,6 +4,7 @@
   "type": "object",
   "title": "medium",
   "description": "Information about offline media on which the resource can be stored or distributed.",
+  "example": "../examples/medium.json",
   "required": [],
   "additionalProperties": true,
   "properties": {

@@ -1,7 +1,7 @@
 {
   "id": "locale.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "example": "../../examples/full_example.json#/metadata/resourceInfo/locale/0",
+  "example":"../examples/locale.json",
   "description": "Localised language(s) and characterset(s) used within the resource being described.",
   "type": "object",
   "required": ["language", "characterSet"],
