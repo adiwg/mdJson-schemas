@@ -38,22 +38,44 @@ module ADIWG
       #
       # @param [Boolean] strict If true, will disallow additional properties
       # @return [nil]
-      def self.load_schemas(strict=false)
+      def self.load_schemas(strict = false)
         Dir.glob(schema_dir + '*.json') do |schema|
           loaded = Utils.load_json(schema)
           name = File.basename(schema)
 
           if strict
             loaded['additionalProperties'] = false
-            loaded['definitions'].each do |_key, val|
-              val['additionalProperties'] = false
-            end unless loaded['definitions'].nil?
+            unless loaded['definitions'].nil?
+              loaded['definitions'].each do |_key, val|
+                val['additionalProperties'] = false
+              end
+            end
           end
 
           jschema = JSON::Schema.new(loaded, Addressable::URI.parse(name))
 
           JSON::Validator.add_schema(jschema)
         end
+      end
+
+      # Load one schema and make it strict, i.e. additionalProperties=false and
+      # all properties required
+      #
+      # @param [String] schema The filename of the schema to load
+      # @return [Hash] The schema as Ruby hash
+      def self.load_strict(schema)
+        loaded = load_json(schema_dir + schema)
+        loaded['additionalProperties'] = false
+        loaded['required'] = loaded['properties'].keys unless loaded['properties'].nil?
+
+        unless loaded['definitions'].nil?
+          loaded['definitions'].each do |_key, val|
+            val['additionalProperties'] = false
+            val['required'] = val['properties'].keys unless val['properties'].nil?
+          end
+        end
+
+        loaded
       end
     end
   end
