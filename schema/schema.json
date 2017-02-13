@@ -36,6 +36,14 @@
     "metadata": {
       "$ref": "metadata.json"
     },
+    "metadataRepository": {
+      "type": "array",
+      "description": "Identifies repositories for distribution of the resource metadata.",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "metadataRepository.json"
+      }
+    },
     "dataDictionary": {
       "type": "array",
       "description": "A description of the contents, format and structure of the physical objects in a data resource.",

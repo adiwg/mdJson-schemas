@@ -69,6 +69,10 @@
       }
     }
   },
+  "metadataRepository": [{
+    "repository": "uuid",
+    "metadataFormat": "format"
+  }],
   "dataDictionary": [{
     "subject": "subject",
     "responsibleParty": {
