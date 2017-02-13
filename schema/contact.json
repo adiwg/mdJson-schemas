@@ -76,6 +76,19 @@
         "$ref": "#/definitions/address"
       }
     },
+    "electronicMailAddress": {
+      "type": "array",
+      "description": "E-mail or electronic mailbox address.",
+      "translation": {
+        "ISO 19115-2": ["CI_Address > electronicMailAddress"],
+        "FGDC CSDGM": ["cntinfo > cntemail"]
+      },
+      "items": {
+        "type": "string",
+        "pattern": "^.+@.+\\..+$"
+      },
+      "uniqueItems": true
+    },
     "onlineResource": {
       "type": "array",
       "description": "Information about accessing on-line resources and services. This may be a website, profile page, GitHub page, etc. related to the contact.",
@@ -123,7 +136,7 @@
   "definitions": {
     "phone": {
       "type": "object",
-      "example":"../examples/phone.json",
+      "example": "../examples/phone.json",
       "required": ["phoneNumber"],
       "properties": {
         "phoneName": {
@@ -152,7 +165,7 @@
     },
     "address": {
       "type": "object",
-      "example":"../examples/address.json",
+      "example": "../examples/address.json",
       "description": "Physical and email address at which the organization or individual may be contacted.",
       "translation": {
         "ISO 19115-2": [
@@ -161,13 +174,13 @@
         "FGDC CSDGM": ["cntinfo > cntaddr"]
       },
       "properties": {
-        "addressType":{
-            "type" : "array",
-            "description" : "The type of address, usually mailing and/or physical.",
-            "translation": {},
-            "items" : {
-              "type": "string"
-            }
+        "addressType": {
+          "type": "array",
+          "description": "The type of address, usually mailing and/or physical.",
+          "translation": {},
+          "items": {
+            "type": "string"
+          }
         },
         "deliveryPoint": {
           "type": "array",
@@ -212,19 +225,6 @@
             "ISO 19115-2": ["CI_Address > postalCode"],
             "FGDC CSDGM": ["cntinfo > cntaddr > postal"]
           }
-        },
-        "electronicMailAddress": {
-          "type": "array",
-          "description": "E-mail or electronic mailbox address.",
-          "translation": {
-            "ISO 19115-2": ["CI_Address > electronicMailAddress"],
-            "FGDC CSDGM": ["cntinfo > cntemail"]
-          },
-          "items": {
-            "type": "string",
-            "pattern": "^.+@.+\\..+$"
-          },
-          "uniqueItems": true
         }
       },
       "additionalProperties": true

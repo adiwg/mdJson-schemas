@@ -22,10 +22,14 @@
      "service": ["service0", "service1", "service2"]
    }],
    "address": [{
-     "electronicMailAddress": ["electronicMailAddress@foo.bar"]
+     "addressType": ["mailing", "physical"]
    }, {
-     "electronicMailAddress": ["electronicMailAddress@foo.bar"]
+     "addressType": ["mailing", "physical"]
    }],
+   "electronicMailAddress": [
+     "email0@example.com",
+     "email1@example.com"
+   ],
    "onlineResource": [{
      "uri": "urn:uri"
    }, {
