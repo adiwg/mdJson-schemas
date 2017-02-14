@@ -182,6 +182,10 @@
             "type": "string"
           }
         },
+        "description": {
+          "type": "string",
+          "description": "Description of the address."
+        },
         "deliveryPoint": {
           "type": "array",
           "description": "Address line for the location.",

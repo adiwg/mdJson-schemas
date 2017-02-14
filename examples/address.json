@@ -1,5 +1,6 @@
 [{
   "addressType": ["mailing", "physical"],
+  "description": "description",
   "deliveryPoint": [
     "deliveryPoint0",
     "deliveryPoint1"
