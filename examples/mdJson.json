@@ -71,7 +71,7 @@
   },
   "metadataRepository": [{
     "repository": "uuid",
-    "metadataFormat": "format"
+    "metadataStandard": "format"
   }],
   "dataDictionary": [{
     "subject": "subject",

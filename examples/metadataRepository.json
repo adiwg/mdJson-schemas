@@ -1,7 +1,7 @@
 [{
   "repository": "fb44075d-14fa-49ab-934a-76a38a78f6ec",
-  "metadataFormat": "iso19115_1"
+  "metadataStandard": "iso19115_1"
 }, {
   "repository": "933b8ffa-58dd-40ee-a01e-fe4d009f52b0",
-  "metadataFormat": "iso19115_2"
+  "metadataStandard": "iso19115_2"
 }]

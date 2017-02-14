@@ -13,7 +13,7 @@
           "description" : "Identifier for the metadata repository to which the metadata record is to be pushed.",
           "minLength" : 1
       },
-      "metadataFormat": {
+      "metadataStandard": {
           "type" : "string",
           "description" : "Indicates in what format the metadata record should be delivered to the repository.",
           "minLength" : 1
