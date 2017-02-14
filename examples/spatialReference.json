@@ -1,20 +1,20 @@
  [{
-     "type": "referenceSystemType",
-     "systemIdentifier": {
+     "referenceSystemType": "referenceSystemType",
+     "referenceSystemIdentifier": {
        "identifier": "identifier"
      }
    },
    {
-     "type": "projected",
-     "systemIdentifier": {
+     "referenceSystemType": "projected",
+     "referenceSystemIdentifier": {
        "identifier": "Zone 10",
        "namespace": "UTM",
        "description": "Universal Transverse Mercator Zone 10 Seattle, Washington"
      }
    },
    {
-     "type": "geodeticGeographic2D",
-     "systemIdentifier": {
+     "referenceSystemType": "geodeticGeographic2D",
+     "referenceSystemIdentifier": {
        "identifier": "4326",
        "namespace": "urn:ogc:def:crs:EPSG",
        "description": "epsg projection 4326 - wgs 84 - Latitude Longitude",
@@ -24,8 +24,8 @@
      }
    },
    {
-     "type": "projected",
-     "systemIdentifier": {
+     "referenceSystemType": "projected",
+     "referenceSystemIdentifier": {
        "identifier": "PROJCS ['Wyoming 4901, Eastern Zone (1983, meters)', GEOGCS ['GRS 80', DATUM ['GRS 80', SPHEROID ['GRS 80', 6378137.000000, 298.257222]], PRIMEM ['Greenwich', 0.000000 ], UNIT ['Decimal Degree', 0.01745329251994330]], PROJECTION ['Transverse Mercator'], PARAMETER ['Scale_Factor', 0.999938], PARAMETER ['Central_Meridian', -105.166667], PARAMETER ['Latitude_Of_Origin', 40.500000], PARAMETER ['False_Easting', 200000.000000], UNIT ['Meter', 1.000000000000]]",
        "namespace": "WKT",
        "description": "Well Known Text for East Wyoming"

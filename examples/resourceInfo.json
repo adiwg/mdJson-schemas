@@ -39,13 +39,13 @@
     }]
   }],
   "spatialReferenceSystem": [{
-    "type": "referenceSystemType0",
-    "systemIdentifier": {
+    "referenceSystemType": "referenceSystemType0",
+    "referenceSystemIdentifier": {
       "identifier": "identifier"
     }
   }, {
-    "type": "referenceSystemType1",
-    "systemIdentifier": {
+    "referenceSystemType": "referenceSystemType1",
+    "referenceSystemIdentifier": {
       "identifier": "identifier"
     }
   }],

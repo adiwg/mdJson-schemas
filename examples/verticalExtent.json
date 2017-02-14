@@ -3,8 +3,8 @@
   "minValue": 9.9,
   "maxValue": 9.9,
   "crsId": {
-    "type": "referenceSystemType",
-    "systemIdentifier": {
+    "referenceSystemType": "referenceSystemType",
+    "referenceSystemIdentifier": {
       "identifier": "identifier"
     }
   }

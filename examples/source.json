@@ -10,8 +10,8 @@
    }],
    "scaleDenominator": 9,
    "referenceSystem": {
-     "type": "referenceSystemType",
-     "systemIdentifier": {
+     "referenceSystemType": "referenceSystemType",
+     "referenceSystemIdentifier": {
        "identifier": "identifier"
      }
    },
