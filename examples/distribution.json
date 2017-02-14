@@ -3,8 +3,13 @@
   "distributor": [{
       "contact": {
         "role": "role",
-        "timePeriod": [{
-          "startDateTime": "2016-10-21"
+        "roleExtent": [{
+          "temporalExtent": [{
+            "type": "period",
+            "timePeriod": {
+              "startDateTime": "2016-10-24T11:10:15.2-10:00"
+            }
+          }]
         }],
         "party": [{
           "contactId": "individualId0"
@@ -14,8 +19,13 @@
     {
       "contact": {
         "role": "role",
-        "timePeriod": [{
-          "startDateTime": "2016-10-21"
+        "roleExtent": [{
+          "temporalExtent": [{
+            "type": "period",
+            "timePeriod": {
+              "startDateTime": "2016-10-24T11:10:15.2-10:00"
+            }
+          }]
         }],
         "party": [{
           "contactId": "individualId0"

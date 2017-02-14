@@ -26,8 +26,13 @@
   }],
   "metadataContact": [{
       "role": "role",
-      "timePeriod": [{
-        "startDateTime": "2016-10-31"
+      "roleExtent": [{
+        "temporalExtent": [{
+          "type": "period",
+          "timePeriod": {
+            "startDateTime": "2016-10-24T11:10:15.2-10:00"
+          }
+        }]
       }],
       "party": [{
         "contactId": "individualId0"
@@ -35,8 +40,13 @@
     },
     {
       "role": "role",
-      "timePeriod": [{
-        "startDateTime": "2016-10-31"
+      "roleExtent": [{
+        "temporalExtent": [{
+          "type": "period",
+          "timePeriod": {
+            "startDateTime": "2016-10-24T11:10:15.2-10:00"
+          }
+        }]
       }],
       "party": [{
         "contactId": "individualId0"

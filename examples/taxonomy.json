@@ -33,8 +33,13 @@
   ],
   "observer": [{
       "role": "role",
-      "timePeriod": [{
-        "startDateTime": "2016-10-22"
+      "roleExtent": [{
+        "temporalExtent": [{
+          "type": "period",
+          "timePeriod": {
+            "startDateTime": "2016-10-24T11:10:15.2-10:00"
+          }
+        }]
       }],
       "party": [{
         "contactId": "individualId0"
@@ -42,8 +47,13 @@
     },
     {
       "role": "role",
-      "timePeriod": [{
-        "startDateTime": "2016-10-22"
+      "roleExtent": [{
+        "temporalExtent": [{
+          "type": "period",
+          "timePeriod": {
+            "startDateTime": "2016-10-24T11:10:15.2-10:00"
+          }
+        }]
       }],
       "party": [{
         "contactId": "individualId0"
@@ -56,8 +66,13 @@
       "specimen": "specimen",
       "repository": {
         "role": "role",
-        "timePeriod": [{
-          "startDateTime": "2016-10-14"
+        "roleExtent": [{
+          "temporalExtent": [{
+            "type": "period",
+            "timePeriod": {
+              "startDateTime": "2016-10-24T11:10:15.2-10:00"
+            }
+          }]
         }],
         "party": [{
           "contactId": "individualId0"
@@ -68,8 +83,13 @@
       "specimen": "specimen",
       "repository": {
         "role": "role",
-        "timePeriod": [{
-          "startDateTime": "2016-10-14"
+        "roleExtent": [{
+          "temporalExtent": [{
+            "type": "period",
+            "timePeriod": {
+              "startDateTime": "2016-10-24T11:10:15.2-10:00"
+            }
+          }]
         }],
         "party": [{
           "contactId": "individualId0"

@@ -22,9 +22,13 @@
    },
    "responsibleParty": [{
        "role": "role0",
-       "timePeriod": [{
-         "startDateTime": "2016-10-14T11:10:15.2-10:00",
-         "endDateTime": "2016-12-31"
+       "roleExtent": [{
+         "temporalExtent": [{
+           "type": "period",
+           "timePeriod": {
+             "startDateTime": "2016-10-24T11:10:15.2-10:00"
+           }
+         }]
        }],
        "party": [{
          "contactId": "individualId0"
@@ -32,9 +36,13 @@
      },
      {
        "role": "role1",
-       "timePeriod": [{
-         "startDateTime": "2016-10-14T11:10:15.2-10:00",
-         "endDateTime": "2016-12-31"
+       "roleExtent": [{
+         "temporalExtent": [{
+           "type": "period",
+           "timePeriod": {
+             "startDateTime": "2016-10-24T11:10:15.2-10:00"
+           }
+         }]
        }],
        "party": [{
          "contactId": "individualId0"
