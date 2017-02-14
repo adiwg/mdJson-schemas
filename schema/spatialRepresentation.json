@@ -57,17 +57,17 @@
     },
     {
       "type": "object",
-      "title": "georeferencableRepresentation",
-      "example": "../examples/georeferencableRepresentation.json",
-      "required": ["type", "georeferencableRepresentation"],
+      "title": "georeferenceableRepresentation",
+      "example": "../examples/georeferenceableRepresentation.json",
+      "required": ["type", "georeferenceableRepresentation"],
       "additionalProperties": true,
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["georeferencable"]
+          "enum": ["georeferenceable"]
         },
-        "georeferencableRepresentation": {
-          "$ref": "./georeferencableRepresentation.json#"
+        "georeferenceableRepresentation": {
+          "$ref": "./georeferenceableRepresentation.json#"
         }
       }
     }
@@ -76,7 +76,7 @@
     "type": {
       "type": "string",
       "description": "Identifies the type of spatial representation defined for the object",
-      "enum": ["grid", "vector", "georectified", "georeferencable"]
+      "enum": ["grid", "vector", "georectified", "georeferenceable"]
     }
   }
 }

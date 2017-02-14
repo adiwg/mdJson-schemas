@@ -39,8 +39,8 @@
     "pointInPixel": "pointInPixel"
   }
 }, {
-  "type": "georeferencable",
-  "georeferencableRepresentation": {
+  "type": "georeferenceable",
+  "georeferenceableRepresentation": {
     "gridRepresentation": {
       "dimension": [{
         "dimensionType": "dimensionType",
