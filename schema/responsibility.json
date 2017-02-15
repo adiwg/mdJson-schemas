@@ -32,20 +32,25 @@
       "translation": {},
       "minItems": 1,
       "items": {
-        "type": "object",
-        "required": ["contactId"],
-        "properties": {
-          "contactId": {
-            "type": "string",
-            "description": "Identifier matching a contactId in the main contact array."
-          },
-          "organizationMembers": {
-            "type": "array",
-            "description": "Identifies individuals that have an association with an organization contact.",
-            "translation": {},
-            "items": {
-              "type": "string"
-            }
+        "$ref": "#/definitions/party"
+      }
+    }
+  },
+  "definitions": {
+    "party": {
+      "type": "object",
+      "required": ["contactId"],
+      "properties": {
+        "contactId": {
+          "type": "string",
+          "description": "Identifier matching a contactId in the main contact array."
+        },
+        "organizationMembers": {
+          "type": "array",
+          "description": "Identifies individuals that have an association with an organization contact.",
+          "translation": {},
+          "items": {
+            "type": "string"
           }
         }
       }
