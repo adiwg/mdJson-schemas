@@ -1,5 +1,8 @@
 [{
-  "resourceType": "resourceType",
+  "resourceType": [{
+    "type": "MD_ScopeCode",
+    "name": ""
+  }],
   "associationType": "associationType",
   "initiativeType": "initiativeType",
   "resourceCitation": {

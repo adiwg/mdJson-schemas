@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Information about the resource.",
   "type": "object",
-  "example":"../examples/resourceInfo.json",
+  "example": "../examples/resourceInfo.json",
   "translation": {
     "ISO 19115-2": ["MD_DataIdentification"],
     "FGDC CSDGM": ["idinfo"]
@@ -12,10 +12,14 @@
   "additionalProperties": true,
   "properties": {
     "resourceType": {
-      "type": "string",
+      "type": "array",
       "description": "Identifies the type of resource, such as: a dataset, study, publication, etc.",
       "translation": {
         "ISO 19115-2": ["MI_Metadata > hierarchyLevel [MD_ScopeCode]"]
+      },
+      "minItems": 1,
+      "items": {
+        "$ref": "./resourceType.json#"
       }
     },
     "citation": {

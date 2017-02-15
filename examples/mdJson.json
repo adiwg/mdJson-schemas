@@ -57,7 +57,10 @@
       }]
     },
     "resourceInfo": {
-      "resourceType": "resourceType",
+      "resourceType": [{
+        "type": "MD_ScopeCode",
+        "name": ""
+      }],
       "citation": {
         "title": "title"
       },

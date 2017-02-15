@@ -27,10 +27,14 @@
       }
     },
     "resourceType": {
-      "type": "string",
+      "type": "array",
       "description": "Identifies the type of resource, such as: a dataset, study, publication, etc.",
       "translation": {
         "ISO 19115-2": ["[MD_ScopeCode]"]
+      },
+      "minItems": 1,      
+      "items": {
+        "$ref": "./resourceType.json#"
       }
     },
     "resourceCitation": {

@@ -29,7 +29,10 @@
      }]
    },
    "resourceInfo": {
-     "resourceType": "resourceType",
+     "resourceType": [{
+       "type": "MD_ScopeCode",
+       "name": ""
+     }],
      "citation": {
        "title": "title"
      },
@@ -70,14 +73,20 @@
      }
    ],
    "associatedResource": [{
-       "resourceType": "resourceType",
+       "resourceType": [{
+         "type": "MD_ScopeCode",
+         "name": ""
+       }],
        "associationType": "associationType",
        "resourceCitation": {
          "title": "title"
        }
      },
      {
-       "resourceType": "resourceType",
+       "resourceType": [{
+         "type": "MD_ScopeCode",
+         "name": ""
+       }],
        "associationType": "associationType",
        "resourceCitation": {
          "title": "title"
@@ -85,13 +94,19 @@
      }
    ],
    "additionalDocumentation": [{
-       "resourceType": "resourceType",
+       "resourceType": [{
+         "type": "MD_ScopeCode",
+         "name": ""
+       }],
        "citation": [{
          "title": "title"
        }]
      },
      {
-       "resourceType": "resourceType",
+       "resourceType": [{
+         "type": "MD_ScopeCode",
+         "name": ""
+       }],
        "citation": [{
          "title": "title"
        }]
