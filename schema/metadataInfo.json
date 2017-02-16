@@ -32,14 +32,6 @@
         "$ref": "locale.json"
       }
     },
-    "scope": {
-      "type": "array",
-      "description": "The scope/type of resource for which metadata is provided.",
-      "translation": {},
-      "items": {
-        "$ref": "./scope.json#"
-      }
-    },
     "metadataContact": {
       "type": "array",
       "description": "Person or organization responsible for metadata information (metadata custodian).",
