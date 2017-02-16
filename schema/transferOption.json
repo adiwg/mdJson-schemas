@@ -45,12 +45,10 @@
       }
     },
     "transferFrequency": {
-      "type": "array",
       "description": "The rate of occurrence of distribution.",
       "translation": {},
-      "items": {
-        "$ref": "./timePeriod.json#/definitions/duration"
-      }
+      "$ref": "./timePeriod.json#/definitions/duration"
+
     },
     "distributionFormat": {
       "type": "array",
