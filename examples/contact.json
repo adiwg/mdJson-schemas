@@ -41,4 +41,12 @@
    ],
    "contactInstructions": "contactInstructions",
    "contactType": "contactType"
+ }, {
+   "contactId": "contactId",
+   "isOrganization": true,
+   "name": "name",
+   "memberOfOrganization": [
+     "memberOfOrganization0",
+     "memberOfOrganization1"
+   ]
  }]

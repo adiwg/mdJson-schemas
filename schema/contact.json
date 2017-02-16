@@ -123,13 +123,11 @@
     }
   },
   "not": {
+    "required":["isOrganization","positionName"],
     "properties": {
       "isOrganization": {
         "type": "boolean",
         "enum": [true]
-      },
-      "positionName": {
-        "type": "string"
       }
     }
   },
