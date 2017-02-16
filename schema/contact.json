@@ -122,15 +122,6 @@
       "description": "User defined contact type."
     }
   },
-  "not": {
-    "required":["isOrganization","positionName"],
-    "properties": {
-      "isOrganization": {
-        "type": "boolean",
-        "enum": [true]
-      }
-    }
-  },
   "definitions": {
     "phone": {
       "type": "object",
