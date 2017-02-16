@@ -19,32 +19,44 @@
       "description": "Detailed description/listing of the items specified by the scope.",
       "translation": {},
       "items": {
-        "type": "object",
-        "required": ["type", "description"],
-        "additionalProperties": true,
-        "properties": {
-          "type": {
-            "type": "string",
-            "description": "The type of item described.",
-            "translation": {},
-            "minLength": 1,
-            "enum": ["dataset", "attribute", "feature", "other"]
-          },
-          "description": {
-            "type": "string",
-            "description": "Description of the scope item.",
-            "translation": {},
-            "minLength": 1
-          }
-        }
+        "$ref": "#/definitions/scopeDescription"
       }
     },
-    "timePeriod": {
+    "scopeExtent": {
       "type": "array",
-      "description": "information about the temporal extent of the resource specified by the scope",
+      "description": "Information about the horizontal, vertical and temporal extent of the resource specified by the scope.",
       "translation": {},
       "items": {
-        "$ref": "./timePeriod.json#"
+        "$ref": "./extent.json#"
+      }
+    }
+  },
+  "definitions": {
+    "scopeDescription": {
+      "type": "object",
+      "additionalProperties": true,
+      "minProperties": 1,
+      "properties": {
+        "dataset": {
+          "type": "string",
+          "description": "Dataset to which the information applies.",
+          "translation": {}
+        },
+        "attribute": {
+          "type": "string",
+          "description": "Instances of attribute types to which the information is applied.",
+          "translation": {}
+        },
+        "feature": {
+          "type": "string",
+          "description": "Instances of feature types to which the information is applied.",
+          "translation": {}
+        },
+        "other": {
+          "type": "string",
+          "description": "Class of information that does not fall into the other categories to which the information applies.",
+          "translation": {}
+        }
       }
     }
   }
