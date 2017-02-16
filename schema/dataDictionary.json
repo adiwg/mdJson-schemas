@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "A catalogue containing definitions and descriptions of the resource types, resource attributes, and resource associations.",
-  "example":"../examples/dictionary.json",
+  "example": "../examples/dictionary.json",
   "required": ["subject", "citation", "responsibleParty"],
   "additionalProperties": true,
   "properties": {
@@ -12,10 +12,13 @@
       "$ref": "./citation.json#"
     },
     "subject": {
-      "type": "string",
+      "type": "array",
       "description": "Identifies the scope of the data dictionary. E.g. 'database', 'dataset', 'table'.",
       "translation": {
         "ISO 19115-2": ["FC_FeatureCatalogue > scope"]
+      },
+      "items": {
+        "type": "string"
       }
     },
     "recommendedUse": {

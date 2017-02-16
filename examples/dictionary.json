@@ -2,7 +2,7 @@
   "citation": {
     "title": "title"
   },
-  "subject": "subject",
+  "subject": ["subject"],
   "locale": [
      {
         "language": "language1",

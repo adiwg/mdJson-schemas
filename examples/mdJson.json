@@ -92,7 +92,7 @@
     "metadataStandard": "format"
   }],
   "dataDictionary": [{
-    "subject": "subject",
+    "subject": ["subject"],
     "responsibleParty": {
       "role": "role",
       "party": [{
@@ -103,7 +103,7 @@
       "title": "title"
     }
   }, {
-    "subject": "subject",
+    "subject": ["subject"],
     "responsibleParty": {
       "role": "role",
       "party": [{
