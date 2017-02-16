@@ -8,7 +8,7 @@
     "ISO 19115-2": ["MI_Metadata"],
     "FGDC CSDGM": ["metadata"]
   },
-  "required": ["resourceInfo"],
+  "required": ["resourceInfo", "metadataInfo"],
   "additionalProperties": false,
   "properties": {
     "metadataInfo": {
