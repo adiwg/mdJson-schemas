@@ -20,7 +20,7 @@
     },
     "roleExtent": {
       "type": "array",
-      "description": "The period of time for which the role is valid.",
+      "description": "The area or period of time for which the role is valid.",
       "translation": {},
       "items": {
         "$ref": "./extent.json#"
