@@ -19,7 +19,6 @@
     "allocation": {
       "type": "array",
       "description": "Funds contributed to support the development of the resource.",
-      "example": "",
       "items": {
         "$ref": "#/definitions/allocation"
       }

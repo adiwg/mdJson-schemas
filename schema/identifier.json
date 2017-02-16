@@ -37,7 +37,6 @@
       },
       "authority": {
         "description": "Citation for the authority issuing the identifier.",
-        "example": "",
         "translation": {
           "ISO 19115-2": ["MD_Identifier > authority > CI_Citation"]
         },
