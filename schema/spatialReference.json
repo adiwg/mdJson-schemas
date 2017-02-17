@@ -10,10 +10,11 @@
   "required": ["referenceSystemIdentifier", "referenceSystemType"],
   "additionalProperties": true,
   "properties": {
-    "type": {
-      "referenceSystemType": "string",
+    "referenceSystemType": {
+      "type": "string",
       "description": "Type of reference system used.",
       "translation": {},
+      "codelist": "iso_referenceSystemType",
       "minLength": 1
     },
     "referenceSystemIdentifier": {
