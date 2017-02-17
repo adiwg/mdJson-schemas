@@ -127,6 +127,11 @@
           "items": {
             "$ref": "./citation.json#"
           }
+        },
+        "scope": {
+          "$ref": "./scope.json#",
+          "description": "Type of resource and/or extent to which the process information.",
+          "translation": {}
         }
       }
     },
@@ -146,7 +151,7 @@
             "ISO 19115-2": ["LI_Source > description"]
           }
         },
-        "citation": {
+        "sourceCitation": {
           "description": "A citation providing information about the source dataset, including an online resource or other access instructions.",
           "translation": {
             "ISO 19115-2": ["LI_Source > sourceCitation > CI_Citation"],
@@ -162,8 +167,8 @@
             "$ref": "citation.json#"
           }
         },
-        "scaleDenominator": {
-          "type": "integer",
+        "spatialResolution": {
+          "$ref": "./spatialResolution.json#",
           "description": "The number below the line in a vulgar fraction",
           "translation": {}
         },
@@ -172,7 +177,7 @@
           "description": "Spatial reference system used by the source.",
           "translation": {}
         },
-        "processStep": {
+        "sourceProcessStep": {
           "type": "array",
           "description": "A description of a non-trivial event or transformation taken to prepare the source data for use in creating the data identified by the data quality scope.",
           "translation": {
@@ -181,6 +186,11 @@
           "items": {
             "$ref": "#/definitions/processStep"
           }
+        },
+        "scope": {
+          "$ref": "./scope.json#",
+          "description": "Type of resource and/or extent to which the process information.",
+          "translation": {}
         }
       }
     }

@@ -1,6 +1,6 @@
  [{
    "description": "description",
-   "citation": {
+   "sourceCitation": {
      "title": "title"
    },
    "metadataCitation": [{
@@ -15,7 +15,7 @@
        "identifier": "identifier"
      }
    },
-   "processStep": [{
+   "sourceProcessStep": [{
      "description": "description"
    }, {
      "description": "description"
