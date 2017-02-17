@@ -7,7 +7,6 @@
     "ISO 19115-2": ["MD_Metadata > referenceSystemInfo > MD_ReferenceSystem > referenceSystemIdentifier > RS_Identifier > code"]
   },
   "type": "object",
-  "required": ["referenceSystemIdentifier", "referenceSystemType"],
   "additionalProperties": true,
   "properties": {
     "referenceSystemType": {
@@ -21,5 +20,14 @@
       "$ref": "./identifier.json#",
       "description": "The reference system identifier or definition."
     }
-  }
+  },
+  "anyOf": [{
+      "title": "referenceSystemType is required",
+      "required": ["referenceSystemType"]
+    },
+    {
+      "title": "referenceSystemIdentifier is required",
+      "required": ["referenceSystemIdentifier"]
+    }
+  ]
 }
