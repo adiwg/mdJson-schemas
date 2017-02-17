@@ -42,12 +42,12 @@
           "description": "Dataset to which the information applies.",
           "translation": {}
         },
-        "attribute": {
+        "attributes": {
           "type": "string",
           "description": "Instances of attribute types to which the information is applied.",
           "translation": {}
         },
-        "feature": {
+        "features": {
           "type": "string",
           "description": "Instances of feature types to which the information is applied.",
           "translation": {}
