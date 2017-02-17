@@ -6,6 +6,7 @@
   "translation": {
     "ISO 19115-2": ["MD_Resolution"]
   },
+  "minProperties": 1,
   "oneOf": [{
       "type": "object",
       "title": "scaleFactor",

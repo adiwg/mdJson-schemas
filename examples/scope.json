@@ -4,8 +4,7 @@
      "dataset": "dataset"
    }],
    "scopeExtent": [{
-     "temporalExtent": [{
-       "type": "period",
+     "temporalExtent": [{       
        "timePeriod": {
          "id": "id",
          "description": "description",

@@ -18,7 +18,6 @@
       "role": "role",
       "roleExtent": [{
         "temporalExtent": [{
-          "type": "period",
           "timePeriod": {
             "startDateTime": "2016-10-24T11:10:15.2-10:00"
           }
@@ -32,7 +31,6 @@
       "role": "role",
       "roleExtent": [{
         "temporalExtent": [{
-          "type": "period",
           "timePeriod": {
             "startDateTime": "2016-10-24T11:10:15.2-10:00"
           }

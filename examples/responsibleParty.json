@@ -1,8 +1,7 @@
  [{
    "role": "role",
    "roleExtent": [{
-     "temporalExtent": [{
-       "type": "period",
+     "temporalExtent": [{       
        "timePeriod": {
          "id": "id",
          "description": "description",
@@ -31,7 +30,6 @@
        }
      }]
    }],
-
    "party": [{
      "contactId": "individualId0"
    }]

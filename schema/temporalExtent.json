@@ -5,23 +5,12 @@
   "title": "",
   "description": "A temporal boundary comprising all or a portion of the resource.",
   "example":"../examples/temporalExtent.json",
-  "required": ["type"],
   "additionalProperties": true,
-  "properties": {
-    "type": {
-      "type": "string",
-      "description": "The type of temporal extent.",
-      "translation": {},
-      "enum": ["instant", "period"]
-    }
-  },
+  "minProperties": 1,
   "oneOf": [{
     "title": "Type is instant.",
     "required": ["timeInstant"],
     "properties": {
-      "type": {
-        "enum": ["instant"]
-      },
       "timeInstant": {
         "$ref": "./timeInstant.json#",
         "description": "Represents an identifiable position in time."
@@ -31,9 +20,6 @@
     "title": "Type is period.",
     "required": ["timePeriod"],
     "properties": {
-      "type": {
-        "enum": ["period"]
-      },
       "timePeriod": {
         "$ref": "./timePeriod.json#"
       }

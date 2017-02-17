@@ -90,8 +90,6 @@
       ]
     ]
   },
-
-
   {
     "type": "GeometryCollection",
     "bbox": [-10.0, -10.0, 10.0, 10.0],
@@ -108,8 +106,6 @@
       }
     ]
   },
-
-
   {
     "type": "Feature",
     "id": "featureId",
@@ -122,8 +118,6 @@
       "see": "geometryProperties 2.0"
     }
   },
-
-
   {
     "type": "FeatureCollection",
     "bbox": [-10.0, -10.0, 10.0, 10.0],
