@@ -11,13 +11,9 @@
       "type": "object",
       "title": "gridRepresentation",
       "example": "../examples/gridRepresentation.json",
-      "required": ["type", "gridRepresentation"],
+      "required": ["gridRepresentation"],
       "additionalProperties": true,
       "properties": {
-        "type": {
-          "type": "string",
-          "enum": ["grid"]
-        },
         "gridRepresentation": {
           "$ref": "./gridRepresentation.json#"
         }
@@ -27,13 +23,9 @@
       "type": "object",
       "title": "vectorRepresentation",
       "example": "../examples/vectorRepresentation.json",
-      "required": ["type", "vectorRepresentation"],
+      "required": ["vectorRepresentation"],
       "additionalProperties": true,
       "properties": {
-        "type": {
-          "type": "string",
-          "enum": ["vector"]
-        },
         "gridRepresentation": {
           "$ref": "./vectorRepresentation.json#"
         }
@@ -43,13 +35,9 @@
       "type": "object",
       "title": "georectifiedRepresentation",
       "example": "../examples/georectifiedRepresentation.json",
-      "required": ["type", "georectifiedRepresentation"],
+      "required": ["georectifiedRepresentation"],
       "additionalProperties": true,
       "properties": {
-        "type": {
-          "type": "string",
-          "enum": ["georectified"]
-        },
         "gridRepresentation": {
           "$ref": "./georectifiedRepresentation.json#"
         }
@@ -59,7 +47,7 @@
       "type": "object",
       "title": "georeferenceableRepresentation",
       "example": "../examples/georeferenceableRepresentation.json",
-      "required": ["type", "georeferenceableRepresentation"],
+      "required": ["georeferenceableRepresentation"],
       "additionalProperties": true,
       "properties": {
         "type": {
@@ -71,12 +59,5 @@
         }
       }
     }
-  ],
-  "properties": {
-    "type": {
-      "type": "string",
-      "description": "Identifies the type of spatial representation defined for the object",
-      "enum": ["grid", "vector", "georectified", "georeferenceable"]
-    }
-  }
+  ]
 }
