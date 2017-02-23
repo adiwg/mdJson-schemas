@@ -4,7 +4,6 @@
   "type": "object",
   "description": "Describes the spatial area of the resource",
   "example": "../examples/geographicExtent.json",
-  "required": ["geographicElement"],
   "additionalProperties": false,
   "properties": {
     "containsData": {
