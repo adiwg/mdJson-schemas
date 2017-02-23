@@ -35,7 +35,6 @@
       "translation": {
         "ISO 19115-2": ["CI_Citation > date > CI_Date"]
       },
-      "minItems": 1,
       "items": {
         "type": "object",
         "example":"../examples/date.json",
@@ -73,7 +72,6 @@
         "ISO 19115-2": ["CI_Citation > citedResponsibleParty > CI_ResponsibleParty", "FC_FeatureCatalogue > producer > CI_ResponisbleParty"],
         "FGDC CSDGM": ["idinfo > ptcontac > cntinfo"]
       },
-      "minItems": 1,
       "items": {
         "$ref": "responsibility.json#"
       }
@@ -137,7 +135,6 @@
       "description": "Information about the series, or aggregate resource, to which a resource belongs.",
       "example": "../series.json",
       "translation": {},
-      "minProperties": 1,
       "additionalProperties": true,
       "properties": {
         "seriesName": {

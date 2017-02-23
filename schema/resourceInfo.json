@@ -75,6 +75,7 @@
         "ISO 19115-2": ["MD_DataIdentification > status [MD_ProgressCode]"],
         "FGDC CSDGM": ["idinfo > status > progress"]
       },
+      "minItems": 1,
       "items": {
         "type": "string"
       }
