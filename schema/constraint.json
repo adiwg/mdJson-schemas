@@ -9,7 +9,7 @@
     "required": ["useLimitation"]
   }, {
     "type": "object",
-    "title": "security is required",
+    "title": "security required if type is security",
     "required": ["security"],
     "properties": {
       "type": {
@@ -18,7 +18,7 @@
     }
   }, {
     "type": "object",
-    "title": "legal is required",
+    "title": "legal required if type is legal",
     "required": ["legal"],
     "properties": {
       "type": {
@@ -28,9 +28,8 @@
   }],
   "properties": {
     "type": {
-      "type": "string",
-      "description": "Indicates the type of constraint.",
-      "enum": ["use", "legal", "security"]
+      "enum": ["use", "legal", "security"],
+      "description": "Indicates the type of constraint."
     },
     "useLimitation": {
       "type": "array",
