@@ -4,24 +4,24 @@
   "type": "object",
   "title": "measure",
   "description": "Number and type of units",
-  "example": "../examples/measure.json",  "required": ["type", "value", "unitOfMeasure"],
+  "example": "../examples/measure.json",
+  "required": ["type", "value", "unitOfMeasure"],
   "additionalProperties": true,
   "properties": {
     "type": {
-      "type": "string",
+      "enum": ["distance", "length", "angle", "measure", "scale"],
       "description": "The type of measurement.",
-            "translation": {},
-      "enum": ["distance", "length", "vertical", "angle"]
+      "translation": {}
     },
     "value": {
       "type": "number",
       "description": "The number of units in the measurement.",
-            "translation": {}
+      "translation": {}
     },
     "unitOfMeasure": {
       "type": "string",
       "description": "The type of units to associated with the value.",
-            "translation": {},
+      "translation": {},
       "minLength": 1
     }
   }

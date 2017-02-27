@@ -24,8 +24,7 @@
     "orientationParameterDescription": {
       "type": "string",
       "description": "Description of parameters used to describe sensor orientation.",
-      "translation": {},
-      "minLength": 1
+      "translation": {}
     },
     "georeferencedParameter": {
       "type": "string",
