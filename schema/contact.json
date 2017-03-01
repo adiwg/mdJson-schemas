@@ -123,25 +123,27 @@
     }
   },
   "oneOf": [{
-    "description": "name is required for organization",
+    "title": "name is required for organization",
     "required": ["name"],
     "properties": {
       "isOrganization": {
+        "title": "isOrganization is true",
         "enum": [true]
       }
     }
   }, {
-    "description": "name or positionName is required for individual",
+    "title": "name or positionName is required for individual",
     "properties": {
       "isOrganization": {
+        "title": "isOrganization is false",
         "enum": [false]
       }
     },
     "anyOf": [{
-      "description": "name is required",
+      "title": "name is required",
       "required": ["name"]
     }, {
-      "description": "positionName is required",
+      "title": "positionName is required",
       "required": ["positionName"]
     }]
   }],
