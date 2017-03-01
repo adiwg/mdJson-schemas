@@ -30,7 +30,6 @@
       "type": "array",
       "description": "Names associated with the time period.",
       "translation": {},
-      "minItems": 1,
       "items": {
         "type": "string"
       }
