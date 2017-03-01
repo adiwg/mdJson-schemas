@@ -106,7 +106,7 @@
       "additionalProperties": true,
       "properties": {
         "interval": {
-          "type": "integer",
+          "type": "number",
           "description": "The amount of time.",
           "translation": {}
         },
