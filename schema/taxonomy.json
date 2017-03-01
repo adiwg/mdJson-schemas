@@ -67,7 +67,6 @@
         "ISO 19115-2": ["MD_TaxonSys > voucher > MD_Vouchers"],
         "FGDC CSDGM": ["idinfo > taxonomy > taxonsys > vouchers"]
       },
-      "minItems": 1,
       "items": {
         "$ref": "#/definitions/voucher"
       }
