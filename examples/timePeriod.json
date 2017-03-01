@@ -12,8 +12,8 @@
    "startDateTime": "2016-10-14T11:10:15.2-10:00",
    "endDateTime": "2016-12-31",
    "timeInterval": {
-     "interval": 9.9,
-     "units": "units"
+     "interval": 9,
+     "units": "year"
    },
    "duration": {
      "years": 1,

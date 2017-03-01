@@ -99,22 +99,21 @@
     },
     "timeInterval": {
       "type": "object",
-      "description": "Defines a length of time in sepcific units.",
+      "description": "Defines a length of time in specific units.",
       "example": "../examples/timeInterval.json",
       "translation": {},
       "required": ["interval", "units"],
       "additionalProperties": true,
       "properties": {
         "interval": {
-          "type": "number",
+          "type": "integer",
           "description": "The amount of time.",
           "translation": {}
         },
         "units": {
-          "type": "string",
+          "enum": ["year", "month", "day", "hour", "minute", "second"],
           "description": "The unit of time for the interval.",
-          "translation": {},
-          "minLength": 1
+          "translation": {}
         }
       }
     }
