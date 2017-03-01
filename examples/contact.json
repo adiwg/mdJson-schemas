@@ -49,4 +49,12 @@
      "memberOfOrganization0",
      "memberOfOrganization1"
    ]
+ }, {
+   "contactId": "contactId",
+   "isOrganization": false,
+   "positionName": "positionName"
+ }, {
+   "contactId": "contactId",
+   "isOrganization": true,
+   "name": "name"
  }]
