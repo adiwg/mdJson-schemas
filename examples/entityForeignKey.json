@@ -1,0 +1,17 @@
+[{
+    "localAttributeCodeName": [
+      "localAttributeCodeName0",
+      "localAttributeCodeName1"
+    ],
+    "referencedEntityCodeName": "referencedEntityCodeName",
+    "referencedAttributeCodeName": [
+      "referencedAttributeCodeName0",
+      "referencedAttributeCodeName1"
+    ]
+  },
+  {
+    "localAttributeCodeName": ["employeeID"],
+    "referencedEntityCodeName": "EMPLOYEE",
+    "referencedAttributeCodeName": ["employeeID"]
+  }
+]

@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "identifier.json#",
+    "title": "identifier",
+    "description": "Assigned identifier for a resource.",
+    "example":"../examples/identifier.json",
+    "translation": {
+      "ISO 19115-2": ["MD_Identifier"]
+    },
+    "type": "object",
+    "required": ["identifier"],
+    "properties": {
+      "identifier": {
+        "type": "string",
+        "description": "A name that is used to identify the resource.",
+        "translation": {
+          "ISO 19115-2": ["MD_Identifier > code"]
+        }
+      },
+      "namespace": {
+        "type": "string",
+        "description": "A string which unambiguously defines the namespace for the identifier.",
+        "translation": {
+          "ISO 19115-2": ["RS_Identifier > codeSpace"]
+        }
+      },
+      "version": {
+        "type": "string",
+        "description": "The version of the identifier.",
+        "translation": {
+          "ISO 19115-2": ["RS_Identifier > version"]
+        }
+      },
+      "description": {
+        "type": "string",
+        "description": "A natural language description of the meaning of the identifier value."
+      },
+      "authority": {
+        "description": "Citation for the authority issuing the identifier.",
+        "translation": {
+          "ISO 19115-2": ["MD_Identifier > authority > CI_Citation"]
+        },
+        "$ref": "./citation.json#"
+      }
+    }
+}

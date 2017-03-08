@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "responsibility.json#",
+  "type": "object",
+  "description": "Identifies contact role(s).",
+  "example": "../examples/responsibility.json",
+  "required": ["role", "party"],
+  "additionalProperties": true,
+  "properties": {
+    "role": {
+      "type": "string",
+      "description": "Function performed by the contact in the current context.",
+      "translation": {
+        "ISO 19115-2": [
+          "MI_Metadata > Contact > CI_Contact > role [CI_RoleCode]"
+        ],
+        "FGDC CSDGM": ["metainfo > cntinfo > cntpos"]
+      },
+      "minLength": 1
+    },
+    "roleExtent": {
+      "type": "array",
+      "description": "The area or period of time for which the role is valid.",
+      "translation": {},
+      "items": {
+        "$ref": "./extent.json#"
+      }
+    },
+    "party": {
+      "type": "array",
+      "description": "Identifies all the contacts associated with the role.",
+      "translation": {},
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/party"
+      }
+    }
+  },
+  "definitions": {
+    "party": {
+      "type": "object",
+      "required": ["contactId"],
+      "properties": {
+        "contactId": {
+          "type": "string",
+          "description": "Identifier matching a contactId in the main contact array."
+        },
+        "organizationMembers": {
+          "type": "array",
+          "description": "Identifies individuals that have an association with an organization contact.",
+          "translation": {},
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,11 @@
-{
-  "language": "eng",
-  "country": "USA",
-  "characterSet": "usAscii"
-}
+[{
+    "language": "language1",
+    "country": "country1",
+    "characterSet": "characterSet1"
+  },
+  {
+    "language": "rar",
+    "country": "COK",
+    "characterSet": "UTF-8"
+  }
+]

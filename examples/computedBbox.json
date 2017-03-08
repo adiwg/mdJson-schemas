@@ -1,0 +1,380 @@
+[{
+    "geographicElement": [{
+        "type": "Point",
+        "coordinates": [100.0, 0.0]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [100.0, 0.0],
+          [101.0, 1.0]
+        ]
+      },
+      {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [100.0, 0.0],
+            [101.0, 0.0],
+            [101.0, 1.0],
+            [100.0, 1.0],
+            [100.0, 0.0]
+          ]
+        ]
+      },
+      {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [100.0, 0.0],
+            [101.0, 0.0],
+            [101.0, 1.0],
+            [100.0, 1.0],
+            [100.0, 0.0]
+          ],
+          [
+            [100.8, 0.8],
+            [100.8, 0.2],
+            [100.2, 0.2],
+            [100.2, 0.8],
+            [100.8, 0.8]
+          ]
+        ]
+      },
+      {
+        "type": "MultiPoint",
+        "coordinates": [
+          [100.0, 0.0],
+          [101.0, 1.0]
+        ]
+      },
+      {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [100.0, 0.0],
+            [101.0, 1.0]
+          ],
+          [
+            [102.0, 2.0],
+            [103.0, 3.0]
+          ]
+        ]
+      },
+      {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [102.0, 2.0],
+              [103.0, 2.0],
+              [103.0, 3.0],
+              [102.0, 3.0],
+              [102.0, 2.0]
+            ]
+          ],
+          [
+            [
+              [100.0, 0.0],
+              [101.0, 0.0],
+              [101.0, 1.0],
+              [100.0, 1.0],
+              [100.0, 0.0]
+            ],
+            [
+              [100.2, 0.2],
+              [100.2, 0.8],
+              [100.8, 0.8],
+              [100.8, 0.2],
+              [100.2, 0.2]
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "GeometryCollection",
+        "bbox": [-10.0, -10.0, 10.0, 10.0],
+        "geometries": [{
+            "type": "Point",
+            "coordinates": [100.0, 0.0]
+          },
+          {
+            "type": "LineString",
+            "coordinates": [
+              [101.0, 0.0],
+              [102.0, 1.0]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Feature",
+        "id": "featureId",
+        "bbox": [-10.0, -10.0, 10.0, 10.0],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [102.0, 0.5]
+        },
+        "properties": {
+          "see": "geometryProperties 2.0"
+        }
+      },
+      {
+        "type": "FeatureCollection",
+        "bbox": [-10.0, -10.0, 10.0, 10.0],
+        "features": [{
+            "type": "Feature",
+            "id": "featureId",
+            "bbox": [-10.0, -10.0, 10.0, 10.0],
+            "geometry": {
+              "type": "Point",
+              "coordinates": [102.0, 0.5]
+            },
+            "properties": {
+              "see": "geometryProperties 2.0"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "featureId",
+            "bbox": [-10.0, -10.0, 10.0, 10.0],
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [102.0, 0.0],
+                [103.0, 1.0],
+                [104.0, 0.0],
+                [105.0, 1.0]
+              ]
+            },
+            "properties": {
+              "see": "geometryProperties 2.0"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "featureId",
+            "bbox": [-10.0, -10.0, 10.0, 10.0],
+            "geometry": {
+              "type": "GeometryCollection",
+              "bbox": [-10.0, -10.0, 10.0, 10.0],
+              "geometries": [{
+                  "type": "Point",
+                  "coordinates": [100.0, 0.0]
+                },
+                {
+                  "type": "LineString",
+                  "coordinates": [
+                    [101.0, 0.0],
+                    [102.0, 1.0]
+                  ]
+                }
+              ]
+            },
+            "properties": {
+              "description": "description"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "geographicElement": [{
+        "type": "Point",
+        "coordinates": [-48.0, 65.0]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [-60.0, 62.45],
+          [-65.0, 61.889]
+        ]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [-175.0, 62.45],
+          [-178.0, 61.889]
+        ]
+      },
+      {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-155.0, 64.4],
+            [-177.0, 62.0],
+            [-179.0, 61.0],
+            [-168.0, 63.0],
+            [-155.0, 64.4]
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "geographicElement": [{
+        "type": "Point",
+        "coordinates": [148.0, 65.0]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [160.0, 62.45],
+          [165.0, 61.889]
+        ]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [175.0, 62.45],
+          [-178.0, 61.889]
+        ]
+      },
+      {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [155.0, 64.4],
+            [-177.0, 62.0],
+            [-179.0, 61.0],
+            [168.0, 63.0],
+            [155.0, 64.4]
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "geographicElement": [{
+        "type": "Point",
+        "coordinates": [-170.0, 65.0]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [-150.0, 62.45],
+          [-152.0, 61.889]
+        ]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [-178.0, 62.45],
+          [178.0, 61.889]
+        ]
+      },
+      {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-163.0, 64.4],
+            [-173.0, 62.0],
+            [-170.0, 61.0],
+            [-164.0, 63.0],
+            [-163.0, 64.4]
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "geographicElement": [{
+        "type": "Point",
+        "coordinates": [48.0, 65.0]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [-35.0, 62.45],
+          [-29.0, 61.889]
+        ]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [31.0, 62.45],
+          [42.0, 61.889]
+        ]
+      },
+      {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-19.0, 64.4],
+            [23.0, 62.0],
+            [21.0, 61.0],
+            [17.0, 63.0],
+            [-19.0, 64.4]
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "geographicElement": [{
+        "type": "Point",
+        "coordinates": [-48.0, -65.0]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [-60.0, -62.45],
+          [-65.0, -61.889]
+        ]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [-175.0, -62.45],
+          [-178.0, -61.889]
+        ]
+      },
+      {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-155.0, -64.4],
+            [-177.0, -62.0],
+            [-179.0, -61.0],
+            [-168.0, -63.0],
+            [-155.0, -64.4]
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "geographicElement": [{
+        "type": "Point",
+        "coordinates": [-48.0, -65.0]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [-60.0, 62.45],
+          [-65.0, -61.889]
+        ]
+      },
+      {
+        "type": "LineString",
+        "coordinates": [
+          [-175.0, 62.45],
+          [-178.0, -61.889]
+        ]
+      },
+      {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-155.0, -64.4],
+            [-177.0, -62.0],
+            [-179.0, -61.0],
+            [-168.0, -63.0],
+            [-155.0, -64.4]
+          ]
+        ]
+      }
+    ]
+  }
+]

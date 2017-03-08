@@ -1,0 +1,251 @@
+{
+  "id": "contact.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Basic information for a contact.",
+  "translation": {
+    "ISO 19115-2": ["Contact > CI_ResponsibleParty"],
+    "FGDC CSDGM": ["cntinfo"]
+  },
+  "example": "../examples/contact.json",
+  "type": "object",
+  "title": "contact",
+  "required": ["contactId", "isOrganization"],
+  "additionalProperties": true,
+  "properties": {
+    "contactId": {
+      "type": "string",
+      "description": "Unique identifier for the contact."
+    },
+    "isOrganization": {
+      "type": "boolean",
+      "default": false
+    },
+    "name": {
+      "type": "string",
+      "description": "",
+      "translation": {
+        "ISO 19115-2": ["CI_ResponsibleParty > individualName",
+          "CI_ResponsibleParty > organisationName"
+        ],
+        "FGDC CSDGM": ["cntinfo > cntperp > cntper",
+          "cntinfo > cntperp > cntorg"
+        ]
+      }
+    },
+    "positionName": {
+      "type": "string",
+      "description": "Role or position of the person, usually within a given organization.",
+      "translation": {
+        "ISO 19115-2": ["CI_ResponsibleParty > positionName"],
+        "FGDC CSDGM": ["cntinfo > cntpos"]
+      }
+    },
+    "memberOfOrganization": {
+      "type": "array",
+      "description": "Organizations that this contact is related to.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "logoGraphic": {
+      "type": "array",
+      "description": "Logo for contact.",
+      "translation": {
+        "ISO 19115-2": [""],
+        "FGDC CSDGM": [""]
+      },
+      "items": [{
+        "$ref": "graphic.json#"
+      }]
+    },
+    "phone": {
+      "type": "array",
+      "description": "Supplemental instructions on how or when to contact the individual or organization.",
+      "translation": {
+        "ISO 19115-2": ["CI_Contact > contactInstructions"],
+        "FGDC CSDGM": ["cntinfo > cntinst"]
+      },
+      "items": {
+        "$ref": "#/definitions/phone"
+      }
+    },
+    "address": {
+      "type": "array",
+      "description": "Addresses for this contact.",
+      "items": {
+        "$ref": "#/definitions/address"
+      }
+    },
+    "electronicMailAddress": {
+      "type": "array",
+      "description": "E-mail or electronic mailbox address.",
+      "translation": {
+        "ISO 19115-2": ["CI_Address > electronicMailAddress"],
+        "FGDC CSDGM": ["cntinfo > cntemail"]
+      },
+      "items": {
+        "type": "string",
+        "pattern": "^.+@.+\\..+$"
+      },
+      "uniqueItems": true
+    },
+    "onlineResource": {
+      "type": "array",
+      "description": "Information about accessing on-line resources and services. This may be a website, profile page, GitHub page, etc. related to the contact.",
+      "translation": {
+        "ISO 19115-2": [
+          "CI_ResponsibleParty > contactInfo > CI_Contact > onlineResource > CI_OnlineResource"
+        ]
+      },
+      "items": {
+        "$ref": "onlineResource.json#"
+      },
+      "uniqueItems": true
+    },
+    "hoursOfService": {
+      "type": "array",
+      "description": "",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contactInstructions": {
+      "type": "string",
+      "description": "Supplemental instructions on how or when to contact the individual or organization.",
+      "translation": {
+        "ISO 19115-2": ["CI_Contact > contactInstructions"],
+        "FGDC CSDGM": ["cntinfo > cntinst"]
+      }
+    },
+    "contactType": {
+      "type": "string",
+      "description": "User defined contact type."
+    }
+  },
+  "oneOf": [{
+    "title": "name is required for organization",
+    "required": ["name"],
+    "properties": {
+      "isOrganization": {
+        "title": "isOrganization is true",
+        "enum": [true]
+      }
+    }
+  }, {
+    "title": "name or positionName is required for individual",
+    "properties": {
+      "isOrganization": {
+        "title": "isOrganization is false",
+        "enum": [false]
+      }
+    },
+    "anyOf": [{
+      "title": "name is required",
+      "required": ["name"]
+    }, {
+      "title": "positionName is required",
+      "required": ["positionName"]
+    }]
+  }],
+  "definitions": {
+    "phone": {
+      "type": "object",
+      "example": "../examples/phone.json",
+      "required": ["phoneNumber"],
+      "properties": {
+        "phoneName": {
+          "type": "string",
+          "description": "Descriptive name of the phone number."
+        },
+        "phoneNumber": {
+          "type": "string",
+          "description": "Telephone number. Recommended format is to use 'x' or 'ext' to denote extensions.",
+          "translation": {
+            "ISO 19115-2": ["CI_Telephone > voice | facsimile"],
+            "FGDC CSDGM": ["cntinfo > cntvoice"]
+          },
+          "pattern": "^[0-9+()#. \/ext-]+$"
+        },
+        "service": {
+          "type": "array",
+          "description": "Type(s) of phone number, e.g. voice, sms.",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "address": {
+      "type": "object",
+      "example": "../examples/address.json",
+      "description": "Physical and email address at which the organization or individual may be contacted.",
+      "translation": {
+        "ISO 19115-2": [
+          "CI_ResponsibleParty > contactInfo > CI_Contact > address > CI_Address"
+        ],
+        "FGDC CSDGM": ["cntinfo > cntaddr"]
+      },
+      "properties": {
+        "addressType": {
+          "type": "array",
+          "description": "The type of address, usually mailing and/or physical.",
+          "translation": {},
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the address."
+        },
+        "deliveryPoint": {
+          "type": "array",
+          "description": "Address line for the location.",
+          "translation": {
+            "ISO 19115-2": ["CI_Address > deliveryPoint"],
+            "FGDC CSDGM": ["cntinfo > cntaddr > address"]
+          },
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "city": {
+          "type": "string",
+          "description": "City of the location.",
+          "translation": {
+            "ISO 19115-2": ["CI_Address > city"],
+            "FGDC CSDGM": ["cntinfo > cntaddr > city"]
+          }
+        },
+        "administrativeArea": {
+          "type": "string",
+          "description": "State, province of the location.",
+          "translation": {
+            "ISO 19115-2": ["CI_Address > administrativeArea"],
+            "FGDC CSDGM": ["cntinfo > cntaddr > state"]
+          }
+        },
+        "postalCode": {
+          "type": "string",
+          "description": "ZIP or other postal code.",
+          "translation": {
+            "ISO 19115-2": ["CI_Address > postalCode"],
+            "FGDC CSDGM": ["cntinfo > cntaddr > postal"]
+          }
+        },
+        "country": {
+          "type": "string",
+          "description": "ZIP or other postal code.",
+          "translation": {
+            "ISO 19115-2": ["CI_Address > postalCode"],
+            "FGDC CSDGM": ["cntinfo > cntaddr > postal"]
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

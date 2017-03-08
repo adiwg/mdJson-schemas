@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "associatedResource.json#",
+  "type": "object",
+  "title": "associatedResource",
+  "description": "Other resources which are directly related to the subject resource such as parent, child, or sibling datasets or projects.",
+  "example": "../examples/associatedResource.json",
+  "translation": {
+    "ISO 19115-2": ["MD_DataIdentification > aggregationInfo > MD_AggregateInformation"],
+    "FGDC CSDGM": ["idinfo > crossref"]
+  },
+  "required": ["associationType", "resourceType", "resourceCitation"],
+  "additionalProperties": true,
+  "properties": {
+    "associationType": {
+      "type": "string",
+      "description": "Identifies how the associated resource is related to the subject resource such as 'is a component of', 'larger work citation', 'cross reference', etc.",
+      "translation": {
+        "ISO 19115-2": ["MD_AggregateInformation > associationType [DS_AssociationTypeCode]"]
+      }
+    },
+    "initiativeType": {
+      "type": "string",
+      "description": "Identifies type of initiative under which the resource was produced - the activity that resulted in the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_AggregateInformation > initiativeType > [DS_InitiativeTypeCode]"]
+      }
+    },
+    "resourceType": {
+      "type": "array",
+      "description": "Identifies the type of resource, such as: a dataset, study, publication, etc.",
+      "translation": {
+        "ISO 19115-2": ["[MD_ScopeCode]"]
+      },
+      "minItems": 1,      
+      "items": {
+        "$ref": "./resourceType.json#"
+      }
+    },
+    "resourceCitation": {
+      "description": "Citation for the associated resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_AggregateInformation > aggregateDataSetName > CI_Citation"],
+        "FGDC CSDGM": ["idinfo > crossref > citeinfo"]
+      },
+      "$ref": "./citation.json#"
+    },
+    "metadataCitation": {
+      "description": "Citation for the associated resource metadata.",
+      "$ref": "./citation.json#"
+    }
+  }
+}

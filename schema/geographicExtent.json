@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "geographicExtent.json#",
+  "type": "object",
+  "description": "Describes the spatial area of the resource",
+  "example": "../examples/geographicExtent.json",
+  "additionalProperties": false,
+  "properties": {
+    "containsData": {
+      "type": "boolean",
+      "description": "Idication of whether the geographic element encompasses an area covered by the data or an area where data are not present.",
+      "translation": {}
+    },
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "Identifier representing a geographic area."
+    },
+    "boundingBox": {
+      "$ref": "#/definitions/boundingBox",
+      "description": "General geographic position of the resource."
+    },
+    "geographicElement": {
+      "type": "array",
+      "description": "An array of objects each describing a geographic boundary or location comprising all or a portion of the resource.",
+      "translation": {
+        "ISO 19115-2": ["EX_Extent > geographicElement"]
+      },
+      "items": {
+        "$ref": "#/definitions/geographicElement"
+      }
+    }
+  },
+  "definitions": {
+    "boundingBox": {
+      "type": "object",
+      "description": "The four sides of geodetic box defining the area of the resource",
+      "example": "../examples/boundingBox.json",
+      "required": ["westLongitude",
+        "eastLongitude",
+        "southLatitude",
+        "northLatitude"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "westLongitude": {
+          "type": "number",
+          "description": "",
+          "translation": {}
+        },
+        "eastLongitude": {
+          "type": "number",
+          "description": "",
+          "translation": {}
+        },
+        "southLatitude": {
+          "type": "number",
+          "description": "",
+          "translation": {}
+        },
+        "northLatitude": {
+          "type": "number",
+          "description": "",
+          "translation": {}
+        }
+      }
+    },
+    "geographicElement": {
+      "type": "object",
+      "example": "../examples/geoJson.json",
+      "properties": {
+        "type": {
+          "enum": ["Feature", "FeatureCollection", "GeometryCollection", "Point", "MultiPoint", "LineString", "MultiLineString", "Polygon", "MultiPolygon"],
+          "description": "The type of geographic object."
+        }
+      },
+      "oneOf": [{
+        "$ref": "geojson.json#"
+      }]
+    }
+  }
+}

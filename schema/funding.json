@@ -1,0 +1,72 @@
+{
+  "id": "funding.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "",
+  "required": [],
+  "minProperties": 1,
+  "additionalProperties": true,
+  "anyOf": [{
+      "title": "allocation is required",
+      "required": ["allocation"]
+    },
+    {
+      "title": "timePeriod is required",
+      "required": ["timePeriod"]
+    }
+  ],
+  "properties": {
+    "allocation": {
+      "type": "array",
+      "description": "Funds contributed to support the development of the resource.",
+      "items": {
+        "$ref": "#/definitions/allocation"
+      }
+    },
+    "timePeriod": {
+      "$ref": "./timePeriod.json#",
+      "description": "The period for which the allocation is relevant.",
+      "example": ""
+    }
+  },
+  "definitions": {
+    "allocation": {
+      "type": "object",
+      "example": "../examples/allocation.json",
+      "required": ["amount", "currency"],
+      "additionalProperties": true,
+      "properties": {
+        "amount": {
+          "type": "number",
+          "description": "The amount of the allocation in the indicated currency.",
+          "example": ""
+        },
+        "currency": {
+          "type": "string",
+          "description": "The ISO 4217 currency code.",
+          "example": ""
+        },
+        "sourceId": {
+          "type": "string",
+          "description": "The contactId of the entity providing the allocation.",
+          "example": ""
+        },
+        "recipientId": {
+          "type": "string",
+          "description": "The contactId of the entity receiving the allocation.",
+          "example": ""
+        },
+        "matching": {
+          "type": "boolean",
+          "description": "Tdicates whether the funds are to be considered matching funds.",
+          "example": ""
+        },
+        "comment": {
+          "type": "string",
+          "description": "Additional information relevant to the allocation.",
+          "example": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+ [{
+   "sequenceIdentifier": "sequenceIdentifier",
+   "sequenceIdentifierType": "sequenceIdentifierType",
+   "attributeDescription": "attributeDescription",
+   "attributeIdentifier": [{
+     "identifier": "identifier"
+   }],
+   "minValue": 9.9,
+   "maxValue": 9.9,
+   "units": "units",
+   "scaleFactor": 999,
+   "offset": 999,
+   "meanValue": 9.9,
+   "numberOfValues": 999,
+   "standardDeviation": 9.9,
+   "bitsPerValue": 999,
+   "boundMin": 9.9,
+   "boundMax": 9.9,
+   "boundUnits": "boundUnits",
+   "peakResponse": 9.9,
+   "toneGradations": 999,
+   "bandBoundaryDefinition": "bandBoundaryDefinition",
+   "nominalSpatialResolution": 9.9,
+   "transferFunctionType": "transferFunctionType",
+   "transmittedPolarization": "transmittedPolarization",
+   "detectedPolarization": "detectedPolarization"
+ }]

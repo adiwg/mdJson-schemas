@@ -1,0 +1,48 @@
+{
+  "id": "coverageDescription.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "example":"../examples/coverageDescription.json",
+  "description": "Details about the content of a raster resource.",
+  "translation": {
+    "ISO 19115-2": ["MI_Metadata > contentInfo"]
+  },
+  "required": ["coverageName", "coverageDescription"],
+  "additionalProperties": true,
+  "properties": {
+    "coverageName": {
+      "type": "string",
+      "description": "The name(title) of the coverage.",
+      "translation": {
+        "ISO 19115-2": ["MI_ImageDescription | MI_CoverageDescription > attributeDescription > gco:RecordType"]
+      }
+    },
+    "coverageDescription": {
+      "type": "string",
+      "description": "A description of the coverage",
+      "translation": {
+        "ISO 19115-2": ["MI_ImageDescription | MI_CoverageDescription > attributeDescription > gco:RecordType"]
+      }
+    },
+    "processingLevelCode": {
+      "description": "Code that identifies the level of radiometric and geometric processing that has been applied.",
+      "translation": {
+        "ISO 19115-2": ["MI_ImageDescription > processingLevelCode > RS_Identifier"]
+      },
+      "$ref": "./identifier.json#"
+    },
+    "attributeGroup": {
+      "type": "array",
+      "description": "Information about groups of attributes describing a coverage.",
+      "translation": {},
+      "items": {
+        "$ref": "./attributeGroup.json#"
+      }
+    },
+    "imageDescription": {
+      "$ref": "./imageDescription.json#",
+      "translation": {}
+    }
+
+  }
+}

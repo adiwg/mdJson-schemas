@@ -1,0 +1,73 @@
+{
+  "id": "metadata.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The main body of the metadata record.",
+  "type": "object",
+  "example": "../examples/metadata.json",
+  "translation": {
+    "ISO 19115-2": ["MI_Metadata"],
+    "FGDC CSDGM": ["metadata"]
+  },
+  "required": ["resourceInfo", "metadataInfo"],
+  "additionalProperties": false,
+  "properties": {
+    "metadataInfo": {
+      "$ref": "./metadataInfo.json#"
+    },
+    "resourceInfo": {
+      "translation": {
+        "ISO 19115-2": ["MD_Metadata > identificationInfo > MD_DataIdentification"],
+        "FGDC CSDGM": ["idinfo"]
+      },
+      "$ref": "resourceInfo.json#"
+    },
+    "resourceLineage": {
+      "type": "array",
+      "description": "Information on the history of the resource.",
+      "translation": {},
+      "items": {
+        "$ref": "./lineage.json#"
+      }
+    },
+    "resourceDistribution": {
+      "type": "array",
+      "description": "Information about the distributor of and options for obtaining the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_Metadata > distribution > MD_Distribution"],
+        "FGDC CSDGM": ["distinfo"]
+      },
+      "items": {
+        "$ref": "distribution.json#"
+      }
+    },
+    "associatedResource": {
+      "type": "array",
+      "description": "Other resources which are directly related to the subject resource such as parent, child, or sibling datasets or projects.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > aggregationInfo > MD_AggregateInformation"],
+        "FGDC CSDGM": ["idinfo > crossref"]
+      },
+      "items": {
+        "$ref": "./associatedResource.json#"
+      }
+    },
+    "additionalDocumentation": {
+      "type": "array",
+      "description": "Other documents related to, but not defining, the resource such as factsheets, data catalog pages, award documents, proposals, and informational websites.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > aggregationInfo > MD_AggregateInformation > aggregateDataSetName > CI_Citation"],
+        "FGDC CSDGM": ["idinfo > crossref "]
+      },
+      "items": {
+        "$ref": "./additionalDocumentation.json#"
+      }
+    },
+    "funding": {
+      "type": "array",
+      "description": "Information about funding for the resource.",
+      "items": {
+        "$ref": "./funding.json#"
+      }
+    }
+  }
+}

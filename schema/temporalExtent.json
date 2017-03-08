@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "temporalExtent.json#",
+  "type": "object",
+  "title": "",
+  "description": "A temporal boundary comprising all or a portion of the resource.",
+  "example":"../examples/temporalExtent.json",
+  "additionalProperties": true,
+  "minProperties": 1,
+  "oneOf": [{
+    "title": "Type is instant.",
+    "required": ["timeInstant"],
+    "properties": {
+      "timeInstant": {
+        "$ref": "./timeInstant.json#",
+        "description": "Represents an identifiable position in time."
+      }
+    }
+  }, {
+    "title": "Type is period.",
+    "required": ["timePeriod"],
+    "properties": {
+      "timePeriod": {
+        "$ref": "./timePeriod.json#"
+      }
+    }
+  }]
+}

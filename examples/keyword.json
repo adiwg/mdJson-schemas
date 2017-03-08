@@ -1,0 +1,14 @@
+[{
+  "keyword": [{
+      "keyword": "keyword0",
+      "keywordId": "keywordId0"
+    },
+    {
+      "keyword": "keyword1"
+    }
+  ],
+  "keywordType": "keywordType",
+  "thesaurus": {
+    "title": "title"
+  }
+}]

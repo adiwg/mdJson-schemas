@@ -1,0 +1,25 @@
+[{
+  "gridRepresentation": {
+    "numberOfDimensions": 9,
+    "dimension": [{
+        "dimensionType": "dimensionType",
+        "dimensionSize": 9
+      },
+      {
+        "dimensionType": "dimensionType",
+        "dimensionSize": 9
+      }
+    ],
+    "cellGeometry": "cellGeometry",
+    "transformationParameterAvailable": true
+  },
+  "controlPointAvailable": true,
+  "orientationParameterAvailable": true,
+  "orientationParameterDescription": "orientationParameterDescription",
+  "georeferencedParameter": "georeferencedParameter",
+  "parameterCitation": [{
+    "title": "title"
+  }, {
+    "title": "title"
+  }]
+}]

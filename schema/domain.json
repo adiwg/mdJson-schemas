@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "domain.json#",
+  "type": "object",
+  "description": "A list of permissable values used to constrain an attribute's value.  A single domain may be assigned to multiple attributes in a table or database.",
+  "example":"../examples/domain.json",
+  "required": ["domainId", "codeName", "description", "domainItem"],
+  "additionalProperties": true,
+  "properties": {
+    "domainId": {
+      "type": "string",
+      "description": "A user provided unique ID for this domain.  The ID will be used to locate the domain in the domain array."
+    },
+    "commonName": {
+      "type": "string",
+      "description": "A short common name for the domain."
+    },
+    "codeName": {
+      "type": "string",
+      "description": "The code or 'lookup table' name for the domin used in the database schema definitions."
+    },
+    "description": {
+      "type": "string",
+      "description": "A brief description of the domain including identification of any established sources used in creating the list of domain items."
+    },
+    "domainItem": {
+      "type": "array",
+      "description": "An array of member objects that enumerate and define the valid values for a domain.",
+      "items": {
+        "$ref": "#/definitions/domainItem"
+      }
+    }
+  },
+  "definitions": {
+    "domainItem": {
+      "type": "object",
+      "description": "An array of member objects that enumerate and define the valid values for a domain.",
+      "example":"../examples/domainItem.json",
+      "required": ["name", "value", "definition"],
+      "additionalProperties": true,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "A descriptive name associated with a domain value",
+          "translation": {
+            "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > listedValue > FC_ListedValue > label"]
+          }
+        },
+        "value": {
+          "type": "string",
+          "description": "A descriptive name associated with a domain value",
+          "translation": {
+            "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > listedValue > FC_ListedValue > label"]
+          }
+        },
+        "definition": {
+          "type": "string",
+          "description": "A brief definition for the domain item",
+          "translation": {
+            "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > listedValue > FC_ListedValue > definition"]
+          }
+        }
+      }
+    }
+  }
+}

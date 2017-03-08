@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "spatialReference.json#",
+  "description": "Geospatial referencing system used in the the data resource. The reference can be provided by an EPSG number, a named reference, or providing the parameters in a well known text (WKT) format.",
+  "example": "../examples/spatialReference.json",
+  "translation": {
+    "ISO 19115-2": ["MD_Metadata > referenceSystemInfo > MD_ReferenceSystem > referenceSystemIdentifier > RS_Identifier > code"]
+  },
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "referenceSystemType": {
+      "type": "string",
+      "description": "Type of reference system used.",
+      "translation": {},
+      "codelist": "iso_referenceSystemType",
+      "minLength": 1
+    },
+    "referenceSystemIdentifier": {
+      "$ref": "./identifier.json#",
+      "description": "The reference system identifier or definition."
+    }
+  },
+  "anyOf": [{
+      "title": "referenceSystemType is required",
+      "required": ["referenceSystemType"]
+    },
+    {
+      "title": "referenceSystemIdentifier is required",
+      "required": ["referenceSystemIdentifier"]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "medium.json#",
+  "type": "object",
+  "title": "medium",
+  "description": "Information about offline media on which the resource can be stored or distributed.",
+  "example": "../examples/medium.json",
+  "required": [],
+  "additionalProperties": true,
+  "properties": {
+    "mediumSpecification": {
+      "$ref": "./citation.json#",
+      "description": "Name of the formaton which the resource may be stored",
+      "translation": {
+        "ISO 19115-2": ["MD_Medium > name [MD_MediumNameCode]"],
+        "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt > offoptn > offmedia"]
+      }
+    },
+    "density": {
+      "type": "number",
+      "description": "Density at which the data are recorded."
+    },
+    "units": {
+      "type": "string",
+      "description": "Units of measure for the recording density."
+    },
+    "numberOfVolumes": {
+      "type": "integer",
+      "description": "The number of items identified in the media resource.",
+      "translation": {}
+    },
+    "mediumFormat": {
+      "type": "array",
+      "description": "Method used by the resource provider to write to the medium, such as: tar, iso9660, etc.",
+      "translation": {
+        "ISO 19115-2": ["MD_Medium > mediumFormat [MD_MediumFormatCode]"],
+        "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt > offoptn > recfmt"]
+      },
+      "items": {
+        "type": "string"
+      }
+    },
+    "note": {
+      "type": "string",
+      "description": "Description of other limitations or requirements for using the medium.",
+      "translation": {
+        "ISO 19115-2": ["MD_Medium > mediumNote"],
+        "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt > offoptn > compat"]
+      }
+    },
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "Unique identifier for the medium."
+    }
+  }
+}

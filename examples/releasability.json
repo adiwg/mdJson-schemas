@@ -1,0 +1,36 @@
+ [{
+   "addressee": [{
+     "role": "role",
+     "roleExtent": [{
+       "temporalExtent": [{
+         "timePeriod": {
+           "startDateTime": "2016-10-24T11:10:15.2-10:00"
+         }
+       }]
+     }],
+     "party": [{
+       "contactId": "individualId0"
+     }]
+   }],
+   "statement": "statement",
+   "disseminationConstraint": [
+     "disseminationConstraint0",
+     "disseminationConstraint1"
+   ]
+ }, {
+   "statement": "statement"
+ }, {
+   "addressee": [{
+     "role": "role",
+     "roleExtent": [{
+       "temporalExtent": [{         
+         "timePeriod": {
+           "startDateTime": "2016-10-24T11:10:15.2-10:00"
+         }
+       }]
+     }],
+     "party": [{
+       "contactId": "individualId0"
+     }]
+   }]
+ }]

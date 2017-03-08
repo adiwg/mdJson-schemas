@@ -1,0 +1,70 @@
+ [{
+   "type": "use",
+   "useLimitation": [
+     "useLimitation0",
+     "useLimitation1"
+   ],
+   "scope": {
+     "scopeCode": "scopeCode"
+   },
+   "graphic": [{
+     "fileName": "fileName0"
+   }, {
+     "fileName": "fileName1"
+   }],
+   "reference": [{
+     "title": "title0"
+   }, {
+     "title": "title1"
+   }],
+   "releasability": {
+     "statement": "statement"
+   },
+   "responsibleParty": [{
+       "role": "role0",
+       "roleExtent": [{
+         "temporalExtent": [{
+           "timePeriod": {
+             "startDateTime": "2016-10-24T11:10:15.2-10:00"
+           }
+         }]
+       }],
+       "party": [{
+         "contactId": "individualId0"
+       }]
+     },
+     {
+       "role": "role1",
+       "roleExtent": [{
+         "temporalExtent": [{
+           "timePeriod": {
+             "startDateTime": "2016-10-24T11:10:15.2-10:00"
+           }
+         }]
+       }],
+       "party": [{
+         "contactId": "individualId0"
+       }]
+     }
+   ],
+   "legal": {
+     "useConstraint": [
+       "useConstraint0",
+       "useConstraint1"
+     ],
+     "accessConstraint": [
+       "accessConstraint0",
+       "accessConstraint1"
+     ],
+     "otherConstraint": [
+       "otherConstraint0",
+       "otherConstraint1"
+     ]
+   },
+   "security": {
+     "classification": "classification",
+     "classificationSystem": "classificationSystem",
+     "userNote": "userNote",
+     "handlingDescription": "handlingDescription"
+   }
+ }]

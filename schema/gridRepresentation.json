@@ -1,0 +1,90 @@
+{
+  "id": "gridRepresentation.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "example":"../examples/gridRepresentation.json",
+  "description": "Information about grid objects in the resource.",
+  "translation": {
+    "ISO 19115-2": ["MD_GridSpatialRepresentation"]
+  },
+  "type": "object",
+  "required": ["numberOfDimensions", "cellGeometry", "dimension"],
+  "additionalProperties": true,
+  "properties": {
+    "numberOfDimensions": {
+      "type": "number",
+      "description": "The number of independent spatial-temporal axes.",
+      "translation": {
+        "ISO 19115-2": ["MD_GridSpatialRepresentation > numberOfDimensions"]
+      }
+    },
+    "dimension": {
+      "type": "array",
+      "description": "Information about spatial-temporal axis properties.",
+      "translation": {
+        "ISO 19115-2": ["MD_GridSpatialRepresentation > axisDimensionProperties"]
+      },
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/dimension"
+      }
+    },
+    "cellGeometry": {
+      "type": "string",
+      "description": "Identification of grid data as point or cell.",
+      "translation": {
+        "ISO 19115-2": ["MD_GridSpatialRepresentation > cellGeometry"]
+      }
+    },
+    "transformationParameterAvailable": {
+      "type": "boolean",
+      "description": "An indication of whether or not parameters for transformation between image coordinates and geographic or map coordinates exist (are available).",
+      "translation": {
+        "ISO 19115-2": ["MD_GridSpatialRepresentation > transformationParameterAvailability"]
+      }
+    }
+  },
+  "definitions": {
+    "dimension": {
+      "type": "object",
+      "required": ["dimensionType", "dimensionSize"],
+      "additionalProperties": true,
+      "properties": {
+        "dimensionType": {
+          "type": "string",
+          "description": "The type of dimension for this axis.",
+          "translation": {
+            "ISO 19115-2": ["MD_GridSpatialRepresentation > axisDimensionProperties > MD_Dimension > dimensionName > MD_DimensionNameTypeCode"]
+          }
+        },
+        "dimensionSize": {
+          "type": "integer",
+          "description": "The number of elements along the axis.",
+          "translation": {
+            "ISO 19115-2": ["MD_GridSpatialRepresentation > axisDimensionProperties > MD_Dimension > dimensionSize"]
+          }
+        },
+        "resolution": {
+          "$ref": "./measure.json#",
+          "description": "The degree of detail in the grid.",
+          "translation": {
+            "ISO 19115-2": ["MD_GridSpatialRepresentation > axisDimensionProperties > MD_Dimension > resolution"]
+          }
+        },
+        "dimensionTitle": {
+          "type": "string",
+          "description": "The name of the axis.",
+          "translation": {
+            "ISO 19115-2": [""]
+          }
+        },
+        "dimensionDescription": {
+          "type": "string",
+          "description": "The description of the axis.",
+          "translation": {
+            "ISO 19115-2": [""]
+          }
+        }
+      }
+    }
+  }
+}

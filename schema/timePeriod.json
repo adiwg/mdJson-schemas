@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "timePeriod.json#",
+  "type": "object",
+  "description": "A span of time represented by a starting date-time and an ending date-time.",
+  "example": "../examples/timePeriod.json",
+  "minProperties": 1,
+  "additionalProperties": true,
+
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "A unique identifier for a time period.",
+      "translation": {
+        "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod @id"]
+      }
+    },
+    "description": {
+      "type": "string",
+      "description": "A brief description providing relevant information about the time period.",
+      "translation": {
+        "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod > description "]
+      }
+    },
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "Identifier for the timePeriod."
+    },
+    "periodName": {
+      "type": "array",
+      "description": "Names associated with the time period.",
+      "translation": {},
+      "items": {
+        "type": "string"
+      }
+    },
+    "startDateTime": {
+      "description": "Starting date, or date and time.",
+      "translation": {
+        "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod > beginPosition "],
+        "FGDC CSDGM": ["idinfo > timeperd > rngdates > begdate"]
+      },
+      "$ref": "common.json#/definitions/date"
+    },
+    "endDateTime": {
+      "description": "Ending date, or date and time.",
+      "translation": {
+        "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod > endPosition"],
+        "FGDC CSDGM": ["idinfo > timeperd > rngdates > enddate"]
+      },
+      "$ref": "common.json#/definitions/date"
+    },
+    "timeInterval": {
+      "$ref": "#/definitions/timeInterval"
+    },
+    "duration": {
+      "$ref": "#/definitions/duration"
+    }
+  },
+  "anyOf": [{
+    "title": "startDateTime required",
+    "required": ["startDateTime"]
+  }, {
+    "title": "endDateTime required",
+    "required": ["endDateTime"]
+  }],
+  "definitions": {
+    "duration": {
+      "type": "object",
+      "description": "Object for collecting information about a duration or period of time.",
+      "example": "../examples/duration.json",
+      "translation": {},
+      "minProperties": 1,
+      "additionalProperties": true,
+      "properties": {
+        "years": {
+          "$ref": "#/definitions/durationPart"
+        },
+        "months": {
+          "$ref": "#/definitions/durationPart"
+        },
+        "days": {
+          "$ref": "#/definitions/durationPart"
+        },
+        "hours": {
+          "$ref": "#/definitions/durationPart"
+        },
+        "minutes": {
+          "$ref": "#/definitions/durationPart"
+        },
+        "seconds": {
+          "$ref": "#/definitions/durationPart"
+        }
+      }
+    },
+    "durationPart": {
+      "type": "integer"
+    },
+    "timeInterval": {
+      "type": "object",
+      "description": "Defines a length of time in specific units.",
+      "example": "../examples/timeInterval.json",
+      "translation": {},
+      "required": ["interval", "units"],
+      "additionalProperties": true,
+      "properties": {
+        "interval": {
+          "type": "number",
+          "description": "The amount of time.",
+          "translation": {}
+        },
+        "units": {
+          "enum": ["year", "month", "day", "hour", "minute", "second"],
+          "description": "The unit of time for the interval.",
+          "translation": {}
+        }
+      }
+    }
+  }
+}

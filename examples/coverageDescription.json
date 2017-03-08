@@ -1,0 +1,21 @@
+[{
+  "coverageName": "coverageName",
+  "coverageDescription": "coverageDescription",
+  "processingLevelCode": {
+    "identifier": "identifier"
+  },
+  "attributeGroup": [{
+      "attributeContentType": [
+        "attributeContentType"
+      ]
+    },
+    {
+      "attributeContentType": [
+        "attributeContentType"
+      ]
+    }
+  ],
+  "imageDescription": {
+    "illuminationElevationAngle": 60.0
+  }
+}]

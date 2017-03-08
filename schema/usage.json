@@ -1,0 +1,67 @@
+{
+  "id": "usage.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Description of ways in which the resource is currently or has been used.",
+  "example": "../examples/usage.json",
+  "translation": {
+    "ISO 19115-2": ["MD_Usage"]
+  },
+  "required": ["specificUsage"],
+  "additionalProperties": true,
+  "properties": {
+    "specificUsage": {
+      "type": "string",
+      "description": "A brief description about how the resource is being used.",
+      "translation": {
+        "ISO 19115-2": ["MD_Usage > specific usage"]
+      }
+    },
+    "temporalExtent": {
+      "type": "array",
+      "description": "Date and time of the first use or range of uses of the resource and/or resource series.",
+      "translation": {},
+      "items": {
+        "$ref": "./temporalExtent.json#"
+      }
+    },
+    "userDeterminedLimitation": {
+      "type": "string",
+      "description": "A brief description of applications, determined by the user, for which the resource is not suitable.",
+      "translation": {
+        "ISO 19115-2": ["MD_Usage > userDeterminedLimitations"]
+      }
+    },
+    "limitationResponse": {
+      "type": "array",
+      "description": "Response to the user-determined limitations.",
+      "translation": {},
+      "items": {
+        "type": "string"
+      }
+    },
+    "documentedIssue": {
+      "$ref": "./citation.json#",
+      "description": "Citation of a description of known issues associated with the resource along with proposed solutions if available."
+    },
+    "additionalDocumentation": {
+      "type": "array",
+      "description": "Publications that describe usage of data.",
+      "translation": {},
+      "items": {
+        "$ref": "./citation.json#"
+      }
+    },
+    "userContactInfo": {
+      "type": "array",
+      "description": "Identification of the persons and/or organizations that are using the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_Usage > userContactInfo"]
+      },
+      "uniqueItems": true,
+      "items": {
+        "$ref": "./responsibility.json#"
+      }
+    }
+  }
+}

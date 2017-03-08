@@ -1,0 +1,172 @@
+{
+  "id": "constraint.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "schema for resource constraint",
+  "example":"../examples/constraint.json",
+  "anyOf": [{
+    "type": "object",
+    "title": "useLimitation is required",
+    "required": ["useLimitation"]
+  }, {
+    "type": "object",
+    "title": "security required if type is security",
+    "required": ["security"],
+    "properties": {
+      "type": {
+        "enum": ["security"]
+      }
+    }
+  }, {
+    "type": "object",
+    "title": "legal required if type is legal",
+    "required": ["legal"],
+    "properties": {
+      "type": {
+        "enum": ["legal"]
+      }
+    }
+  }],
+  "properties": {
+    "type": {
+      "enum": ["use", "legal", "security"],
+      "description": "Indicates the type of constraint."
+    },
+    "useLimitation": {
+      "type": "array",
+      "description": "Limitation affecting the fitness for use of the resource or metadata. For example, \"not to be used for navigation\".",
+      "translation": {
+        "ISO 19115-2": ["MD_Constraints > useLimitation"]
+      },
+      "items": {
+        "type": "string"
+      }
+    },
+    "scope": {
+      "description": "temporal extent and or level of the application of the constraint restrictions.",
+      "$ref": "./scope.json#"
+    },
+    "graphic": {
+      "type": "array",
+      "description": "Graphic or symbol indicating the constraint",
+      "items": {
+        "$ref": "./graphic.json#"
+      }
+    },
+    "reference": {
+      "type": "array",
+      "description": "Citation for the limitation or constraint",
+      "translation": {},
+      "items": {
+        "$ref": "./citation.json#"
+      }
+    },
+    "releasability": {
+      "$ref": "./releasability.json#",
+      "description": "Information concerning the parties to who the resource can or cannot be released."
+    },
+    "responsibleParty": {
+      "type": "array",
+      "description": "Entity responsible for the resource constraint",
+      "translation": {},
+      "items": {
+        "$ref": "./responsibility.json#"
+      }
+    },
+    "legal": {
+      "$ref": "#/definitions/legalConstraint"
+    },
+    "security": {
+      "$ref": "#/definitions/securityConstraint"
+
+    }
+
+
+  },
+  "definitions": {
+    "legalConstraint": {
+      "type": "object",
+      "description": "Restrictions and legal prerequisites for accessing and using the resource or metadata.",
+      "example":"../examples/legalConstraint.json",
+      "translation": {
+        "ISO 19115-2": ["MD_LegalConstraints"]
+      },
+      "additionalProperties": true,
+      "minProperties": 1,
+      "properties": {
+        "accessConstraint": {
+          "type": "array",
+          "description": "Access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource or metadata.",
+          "translation": {
+            "ISO 19115-2": ["MD_LegalConstraints > accessConstraints [MD_RestrictionCode]"],
+            "FGDC CSDGM": ["idinfo > accconst"]
+          },
+          "items": {
+            "type": "string"
+          }
+        },
+        "useConstraint": {
+          "type": "array",
+          "description": "Constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations or warnings on using the resource or metadata.",
+          "translation": {
+            "ISO 19115-2": ["MD_LegalConstraints > useConstraints [MD_RestrictionCode]"],
+            "FGDC CSDGM": ["idinfo > useconst"]
+          },
+          "items": {
+            "type": "string"
+          }
+        },
+        "otherConstraint": {
+          "type": "array",
+          "description": "Other restrictions and legal prerequisites for accessing and using the resource or metadata.",
+          "translation": {
+            "ISO 19115-2": ["MD_LegalConstraints > otherConstraints"]
+          },
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "securityConstraint": {
+      "type": "object",
+      "description": "Handling restrictions imposed on the resource or metadata for national security or similar security concerns.",
+      "example":"../examples/securityConstraint.json",
+      "translation": {
+        "ISO 19115-2": ["MD_SecurityConstraints"]
+      },
+      "required": ["classification"],
+      "minProperties": 1,
+      "additionalProperties": true,
+      "properties": {
+        "classification": {
+          "type": "string",
+          "description": "Name of the handling restrictions on the resource or metadata.",
+          "translation": {
+            "ISO 19115-2": ["MD_SecurityConstraints > classification [MD_ClassificationCode]"]
+          }
+        },
+        "userNote": {
+          "type": "string",
+          "description": "Explanation of the application of the legal constraints or other restrictions and legal prerequisites for obtaining and using the resource or metadata.",
+          "translation": {
+            "ISO 19115-2": ["MD_SecurityConstraints > userNote"]
+          }
+        },
+        "classificationSystem": {
+          "type": "string",
+          "description": "Name of the classification system associated with a security constraint.",
+          "translation": {
+            "ISO 19115-2": ["MD_SecurityConstraints > classificationSystem"]
+          }
+        },
+        "handlingDescription": {
+          "type": "string",
+          "description": "Additional description regarding the security handling of the resource or metadata.",
+          "translation": {
+            "ISO 19115-2": ["MD_SecurityConstraints > handlingDescription"]
+          }
+        }
+      }
+    }
+  }
+}

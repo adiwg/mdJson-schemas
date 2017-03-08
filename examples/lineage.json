@@ -1,0 +1,21 @@
+[{
+  "statement": "statement",
+  "scope": {
+    "scopeCode": "scopeCode"
+  },
+  "citation": [{
+    "title": "title"
+  }, {
+    "title": "title"
+  }],
+  "source": [{
+    "description": "description"
+  }, {
+    "description": "description"
+  }],
+  "sourceProcessStep": [{
+    "description": "description"
+  }, {
+    "description": "description"
+  }]
+}]

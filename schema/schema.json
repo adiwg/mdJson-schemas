@@ -1,36 +1,34 @@
 {
   "id": "schema.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "version": "1.1.3",
+  "version": "2.0.0",
   "description": "schema for ADIwg mdJSON metadata",
+  "example": "../examples/mdJson.json",
   "type": "object",
-  "required": ["version", "contact", "metadata"],
+  "required": ["schema", "contact"],
   "properties": {
-    "version": {
-      "type": "object",
-      "description": "Identifies the version of the JSON schema standard that applies to the metadata.",
-      "example": "../examples/full_example.json#/version",
-      "required": ["name", "version"],
-      "additionalProperties": true,
-      "properties": {
-        "name": {
-          "type": "string",
-          "example": "../examples/full_example.json#/version",
-          "description": "Schema identifier, i.e. the name of the schema standard."
-        },
-        "version": {
-          "type": "string",
-          "example": "../examples/full_example.json#/version",
-          "description": "Specific version number of the schema standard.",
-          "pattern": "[0-9]\\.[0-9]\\.[0-9]"
-        }
-      }
+    "schema": {
+      "$ref": "#/definitions/schema"
     },
     "contact": {
-      "$ref": "schema/contact.json"
+      "type": "array",
+      "description": "An array of contacts to be referenced throughout the metadata. Any contact used in the metadata record must be stored within this array and referenced by contactId. Items in array may be used 0-n times throughout the record.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "contact.json"
+      }
     },
     "metadata": {
-      "$ref": "schema/metadata.json"
+      "$ref": "metadata.json"
+    },
+    "metadataRepository": {
+      "type": "array",
+      "description": "Identifies repositories for distribution of the resource metadata.",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "metadataRepository.json"
+      }
     },
     "dataDictionary": {
       "type": "array",
@@ -38,31 +36,29 @@
       "translation": {
         "ISO 19115-2": ["FC_FeatureCatalogue"]
       },
-      "example": "../examples/full_example.json#/dataDictionary",
+      "example": "../examples/dataDictionary.json",
       "items": {
-        "$ref": "schema/dataDictionary.json"
+        "$ref": "dataDictionary.json"
       }
     }
   },
   "definitions": {
-    "url": {
-      "type": "string",
-      "pattern": "(https?|ftp):\\/\\/(-\\.)?([^\\s\\/?\\.#-]+\\.?)+(\\/[^\\s]*)?$"
-    },
-    "uri": {
-      "type": "string",
-      "description": "Location (address) for on-line access using a Uniform Resource Identifier, usually in the form of a Uniform Resource Locator (URL).",
-      "example": "../examples/uri.json",
-      "translation": {
-        "ISO 19115-2": ["CI_OnlineResource > linkage"]
-      },
-      "pattern": "([A-Za-z][A-Za-z0-9+\\-.]*):(?:(//)(?:((?:[A-Za-z0-9\\-._~!$&'()*+,;=:]|%[0-9A-Fa-f]{2})*)@)?((?:\\[(?:(?:(?:(?:[0-9A-Fa-f]{1,4}:){6}|::(?:[0-9A-Fa-f]{1,4}:){5}|(?:[0-9A-Fa-f]{1,4})?::(?:[0-9A-Fa-f]{1,4}:){4}|(?:(?:[0-9A-Fa-f]{1,4}:){0,1}[0-9A-Fa-f]{1,4})?::(?:[0-9A-Fa-f]{1,4}:){3}|(?:(?:[0-9A-Fa-f]{1,4}:){0,2}[0-9A-Fa-f]{1,4})?::(?:[0-9A-Fa-f]{1,4}:){2}|(?:(?:[0-9A-Fa-f]{1,4}:){0,3}[0-9A-Fa-f]{1,4})?::[0-9A-Fa-f]{1,4}:|(?:(?:[0-9A-Fa-f]{1,4}:){0,4}[0-9A-Fa-f]{1,4})?::)(?:[0-9A-Fa-f]{1,4}:[0-9A-Fa-f]{1,4}|(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))|(?:(?:[0-9A-Fa-f]{1,4}:){0,5}[0-9A-Fa-f]{1,4})?::[0-9A-Fa-f]{1,4}|(?:(?:[0-9A-Fa-f]{1,4}:){0,6}[0-9A-Fa-f]{1,4})?::)|[Vv][0-9A-Fa-f]+\\.[A-Za-z0-9\\-._~!$&'()*+,;=:]+)\\]|(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|(?:[A-Za-z0-9\\-._~!$&'()*+,;=]|%[0-9A-Fa-f]{2})*))(?::([0-9]*))?((?:/(?:[A-Za-z0-9\\-._~!$&'()*+,;=:@]|%[0-9A-Fa-f]{2})*)*)|/((?:(?:[A-Za-z0-9\\-._~!$&'()*+,;=:@]|%[0-9A-Fa-f]{2})+(?:/(?:[A-Za-z0-9\\-._~!$&'()*+,;=:@]|%[0-9A-Fa-f]{2})*)*)?)|((?:[A-Za-z0-9\\-._~!$&'()*+,;=:@]|%[0-9A-Fa-f]{2})+(?:/(?:[A-Za-z0-9\\-._~!$&'()*+,;=:@]|%[0-9A-Fa-f]{2})*)*)|)(?:\\?((?:[A-Za-z0-9\\-._~!$&'()*+,;=:@/?]|%[0-9A-Fa-f]{2})*))?(?:\\#((?:[A-Za-z0-9\\-._~!$&'()*+,;=:@/?]|%[0-9A-Fa-f]{2})*))?"
-    },
-    "date": {
-      "type": "string",
-      "description": "An ISO 8601 date/timestamp.",
-      "example": "../examples/date.json",
-      "pattern": "^(\\d{4}(-\\d{2})?(-\\d{2})?$)|(^\\d{4}-\\d{2}-\\d{2}(T\\d{2})?(\\:\\d{2}(\\:\\d{2}(\\.\\d+)?)?|Z)?(Z|(-|\\+)\\d{2}(:\\d{2})?)?$)"
+    "schema": {
+      "type": "object",
+      "description": "Identifies the version of the JSON schema standard that applies to the metadata.",
+      "required": ["name", "version"],
+      "additionalProperties": true,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Schema identifier, i.e. the name of the schema standard."
+        },
+        "version": {
+          "type": "string",
+          "description": "Specific version number of the schema standard.",
+          "pattern": "[0-9]\\.[0-9]\\.[0-9]"
+        }
+      }
     }
   }
 }

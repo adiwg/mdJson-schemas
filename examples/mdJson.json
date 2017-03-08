@@ -1,0 +1,114 @@
+{
+  "schema": {
+    "name": "name",
+    "version": "0.0.0"
+  },
+  "contact": [{
+    "contactId": "individualId0",
+    "isOrganization": false,
+    "name": "name0",
+    "positionName": "foobar"
+  }, {
+    "contactId": "individualId1",
+    "isOrganization": false,
+    "name": "name1"
+  }],
+  "metadata": {
+    "metadataInfo": {
+      "metadataIdentifier": {
+        "identifier": "identifier"
+      },
+      "metadataDate": [{
+        "date": "2016-10-31",
+        "dateType": "creation"
+      }, {
+        "date": "2016-10-31",
+        "dateType": "dateType"
+      }, {
+        "date": "2016-10-31",
+        "dateType": "dateType"
+      }],
+      "metadataContact": [{
+        "role": "role",
+        "roleExtent": [{
+          "temporalExtent": [{
+            "timePeriod": {
+              "startDateTime": "2016-10-24T11:10:15.2-10:00"
+            }
+          }]
+        }],
+        "party": [{
+          "contactId": "individualId0"
+        }]
+      }, {
+        "role": "role",
+        "roleExtent": [{
+          "temporalExtent": [{
+            "timePeriod": {
+              "startDateTime": "2016-10-24T11:10:15.2-10:00"
+            }
+          }]
+        }],
+        "party": [{
+          "contactId": "individualId1"
+        }]
+      }]
+    },
+    "resourceInfo": {
+      "resourceType": [{
+        "type": "MD_ScopeCode",
+        "name": ""
+      }],
+      "citation": {
+        "title": "title"
+      },
+      "abstract": "abstract",
+      "status": ["status"],
+      "pointOfContact": [{
+        "role": "role",
+        "roleExtent": [{
+          "temporalExtent": [{            
+            "timePeriod": {
+              "startDateTime": "2016-10-24T11:10:15.2-10:00"
+            }
+          }]
+        }],
+        "party": [{
+          "contactId": "individualId0"
+        }]
+      }],
+      "defaultResourceLocale": {
+        "language": "LanguageCode",
+        "country": "CountryCode",
+        "characterSet": "MD_CharacterSetCode"
+      }
+    }
+  },
+  "metadataRepository": [{
+    "repository": "uuid",
+    "metadataStandard": "format"
+  }],
+  "dataDictionary": [{
+    "subject": ["subject"],
+    "responsibleParty": {
+      "role": "role",
+      "party": [{
+        "contactId": "individualId0"
+      }]
+    },
+    "citation": {
+      "title": "title"
+    }
+  }, {
+    "subject": ["subject"],
+    "responsibleParty": {
+      "role": "role",
+      "party": [{
+        "contactId": "individualId0"
+      }]
+    },
+    "citation": {
+      "title": "title"
+    }
+  }]
+}

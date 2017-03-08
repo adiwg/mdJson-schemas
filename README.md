@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/adiwg/mdJson-schemas.svg?branch=master)](https://travis-ci.org/adiwg/mdJson-schemas)
 [![Gem Version](https://badge.fury.io/rb/adiwg-mdjson_schemas.svg)](http://badge.fury.io/rb/adiwg-mdjson_schemas)
+[![Bower version](https://badge.fury.io/bo/mdjson-schemas.svg)](https://badge.fury.io/bo/mdjson-schemas)
 
 # mdJson-schemas
 
@@ -8,7 +9,7 @@ JSON schemas for the ADIwg project and data metadata standard
 
 ## Ruby Gem
 
-TODO: Write a gem description
+Use with [ruby-json-schema/json-schema](https://github.com/ruby-json-schema/json-schema) to validate mdJSON records in Ruby.
 
 ### Installation
 
@@ -24,9 +25,19 @@ Or install it yourself as:
 
     $ gem install adiwg-json_schemas
 
+## Bower
+
+Install:
+
+    $ bower install mdjson-schemas
+
 ### Usage
 
-TODO: Write usage instructions here
+The main schema file is `schema/schema.json`.  Load that file in your validator.
+
+**NOTE**: The schemas use relative addresses for `$ref` paths. This causes a problem
+with the [ruby-json-schema/json-schema](https://github.com/ruby-json-schema/json-schema) gem.
+As a workaround, you can pre-load all of the schemas by calling `ADIWG::MdjsonSchemas::Utils::load_schemas` before validation.
 
 ## Contributing
 

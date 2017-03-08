@@ -1,0 +1,15 @@
+ [{
+   "illuminationElevationAngle": 9.9,
+   "illuminationAzimuthAngle": 9.9,
+   "imagingCondition": "imagingCondition",
+   "imageQualityCode": {
+     "identifier": "identifier"
+   },
+   "cloudCoverPercent": 9.9,
+   "compressionQuantity": 9,
+   "triangulationIndicator": true,
+   "radiometricCalibrationAvailable": true,
+   "cameraCalibrationAvailable": true,
+   "filmDistortionAvailable": true,
+   "lensDistortionAvailable": true
+ }]

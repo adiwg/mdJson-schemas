@@ -1,0 +1,55 @@
+{
+  "id": "spatialResolution.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Information about the scale of the geographic extent.",
+  "example": "../examples/spatialResolution.json",
+  "translation": {
+    "ISO 19115-2": ["MD_Resolution"]
+  },
+  "minProperties": 1,
+  "oneOf": [{
+      "type": "object",
+      "title": "scaleFactor",
+      "required": ["scaleFactor"],
+      "properties": {
+        "scaleFactor": {
+          "type": "number",
+          "title": "scaleFactor",
+          "example": "../examples/spatialResolution.json",
+          "description": "Scale of geographic extent expressed in a hardcopy map scale fraction (denominator).",
+          "translation": {
+            "ISO 19115-2": ["MD_Resolution > equivalentScale > MD_RepresentativeFraction > denominator > Integer"]
+          }
+        }
+      }
+    }, {
+      "type": "object",
+      "title": "measure",
+      "required": ["measure"],
+      "properties": {
+        "measure": {
+          "type": "object",
+          "title": "measure",
+          "example": "../examples/spatialResolution.json",
+          "description": "Scale of geographic extent expressed in ground distance parameters or angle.",
+          "$ref": "./measure.json#"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "levelOfDetail",
+      "required": ["levelOfDetail"],
+      "properties": {
+        "levelOfDetail": {
+          "type": "string",
+          "title": "levelOfDetail",
+          "description": "A brief textual description of the spatial resolution of the resource",
+          "example": "../examples/spatialResolution.json",
+          "translation": {},
+          "minLength": 1
+        }
+      }
+    }
+  ]
+}

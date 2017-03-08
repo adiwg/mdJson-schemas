@@ -1,0 +1,63 @@
+{
+  "id": "spatialRepresentation.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "example": "../examples/spatialRepresentation.json",
+  "description": "",
+  "translation": {},
+  "type": "object",
+  "required": [],
+  "additionalProperties": true,
+  "oneOf": [{
+      "type": "object",
+      "title": "gridRepresentation",
+      "example": "../examples/gridRepresentation.json",
+      "required": ["gridRepresentation"],
+      "additionalProperties": true,
+      "properties": {
+        "gridRepresentation": {
+          "$ref": "./gridRepresentation.json#"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "vectorRepresentation",
+      "example": "../examples/vectorRepresentation.json",
+      "required": ["vectorRepresentation"],
+      "additionalProperties": true,
+      "properties": {
+        "gridRepresentation": {
+          "$ref": "./vectorRepresentation.json#"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "georectifiedRepresentation",
+      "example": "../examples/georectifiedRepresentation.json",
+      "required": ["georectifiedRepresentation"],
+      "additionalProperties": true,
+      "properties": {
+        "gridRepresentation": {
+          "$ref": "./georectifiedRepresentation.json#"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "georeferenceableRepresentation",
+      "example": "../examples/georeferenceableRepresentation.json",
+      "required": ["georeferenceableRepresentation"],
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["georeferenceable"]
+        },
+        "georeferenceableRepresentation": {
+          "$ref": "./georeferenceableRepresentation.json#"
+        }
+      }
+    }
+  ]
+}

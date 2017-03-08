@@ -1,129 +1,79 @@
-[
-  {
-    "title": "title",
-    "alternateTitle": "alternateTitle",
-    "date": [
-      {
-        "date": "1111-11-11",
-        "dateType": "dateType1"
-      }, {
-        "date": "1112-11-11",
-        "dateType": "dateType2"
-      }
-    ],
-    "edition": "edition",
-    "responsibleParty": [
-      {
-        "contactId": "contactId1",
-        "role": "role1"
-      }, {
-        "contactId": "contactId2",
-        "role": "role2"
-      }
-    ],
-    "presentationForm": ["presentationForm1", "presentationForm2"],
-    "identifier": [
-      {
-        "identifier": "identifier1",
-        "type": "type1",
-        "authority": {
-          "title": "title",
-          "date": [
-            {
-              "date": "1111-11-11",
-              "dateType": "dateType1"
-            }
-          ],
-          "responsibleParty": [
-            {
-              "contactId": "contactId1",
-              "role": "role1"
-            }
-          ],
-          "onlineResource": [
-            {
-              "uri": "http://thisisanexample1.com",
-              "protocol": "protocol1",
-              "name": "name1",
-              "description": "description1",
-              "function": "function1"
-            }
-          ]
-        }
-      }
-    ],
-    "onlineResource": [
-      {
-        "uri": "http://thisisanexample1.com",
-        "protocol": "protocol1",
-        "name": "name1",
-        "description": "description1",
-        "function": "function1"
-      },
-      {
-        "uri": "http://thisisanexample2.com",
-        "protocol": "protocol2",
-        "name": "name2",
-        "description": "description2",
-        "function": "function2"
-      }
-    ]
-  }, {
-    "title": "Project Tracking System",
-    "date": [
-      {
-        "date": "2013-03-13",
-        "dateType": "creation"
-      }
-    ]
-  }, {
-    "title": "Project Tracking System",
-    "date": [
-      {
-        "date": "2013-03-13",
-        "dateType": "creation"
-      }
-    ],
-    "responsibleParty": [
-      {
-        "contactId": "1",
-        "role": "originator"
-      }, {
-        "contactId": "2",
-        "role": "publisher"
-      }
-    ]
-  }, {
-    "title": "Project Tracking System",
-    "date": [
-      {
-        "date": "2011-11-11",
-        "dateType": "publication"
-      }, {
-        "date": "2013-03-13",
-        "dateType": "revision"
-      }
-    ],
-    "edition": "version 1.2.0",
-    "responsibleParty": [
-      {
-        "contactId": "1",
-        "role": "originator"
-      }, {
-        "contactId": "2",
-        "role": "publisher"
-      }
-    ],
-    "presentationForm": ["digitalDocument"],
-    "onlineResource": [
-      {
-        "uri": "http://dx.doi.org/10.1000/182"
-      }
-    ],
-    "additionalIdentifier": {
-      "doi": "10.1000/182",
-      "isbn": "HB12365.214",
-      "issn": "0ab4-dd983c01"
+[{
+  "title": "title",
+  "alternateTitle": [
+    "alternateTitle0",
+    "alternateTitle1"
+  ],
+  "date": [{
+      "date": "2016-10-13",
+      "dateType": "dateType"
+    },
+    {
+      "date": "2016-10-22",
+      "dateType": "dateType"
     }
-  }
-]
+  ],
+  "edition": "edition",
+  "responsibleParty": [{
+      "role": "role",
+      "roleExtent": [{
+        "temporalExtent": [{
+          "timePeriod": {
+            "startDateTime": "2016-10-24T11:10:15.2-10:00"
+          }
+        }]
+      }],
+      "party": [{
+        "contactId": "individualId0"
+      }]
+    },
+    {
+      "role": "role",
+      "roleExtent": [{
+        "temporalExtent": [{
+          "timePeriod": {
+            "startDateTime": "2016-10-24T11:10:15.2-10:00"
+          }
+        }]
+      }],
+      "party": [{
+        "contactId": "individualId0"
+      }]
+    }
+  ],
+  "presentationForm": [
+    "presentationForm0",
+    "presentationForm1"
+  ],
+  "identifier": [{
+      "identifier": "identifier",
+      "authority": {
+        "title": "title"
+      }
+    },
+    {
+      "identifier": "identifier"
+    }
+  ],
+  "series": {
+    "seriesName": "seriesName"
+  },
+  "otherCitationDetails": [
+    "otherCitationDetails0",
+    "otherCitationDetails1"
+  ],
+  "onlineResource": [{
+      "uri": "http://adiwg.org"
+    },
+    {
+      "uri": "http://adiwg.org"
+    }
+  ],
+  "graphic": [{
+      "fileName": "fileName"
+    },
+    {
+      "fileName": "fileName"
+    }
+  ]
+}]

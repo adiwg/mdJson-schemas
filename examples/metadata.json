@@ -1,0 +1,125 @@
+ [{
+   "metadataInfo": {
+     "metadataIdentifier": {
+       "identifier": "identifier"
+     },
+     "metadataDate": [{
+       "date": "2016-10-31",
+       "dateType": "creation"
+     }, {
+       "date": "2016-10-31",
+       "dateType": "dateType"
+     }, {
+       "date": "2016-10-31",
+       "dateType": "dateType"
+     }],
+     "metadataContact": [{
+       "role": "role",
+       "roleExtent": [{
+         "temporalExtent": [{
+           "timePeriod": {
+             "startDateTime": "2016-10-24T11:10:15.2-10:00"
+           }
+         }]
+       }],
+       "party": [{
+         "contactId": "individualId0"
+       }]
+     }]
+   },
+   "resourceInfo": {
+     "resourceType": [{
+       "type": "MD_ScopeCode",
+       "name": ""
+     }],
+     "citation": {
+       "title": "title"
+     },
+     "abstract": "abstract",
+     "status": ["status"],
+     "pointOfContact": [{
+       "role": "role",
+       "roleExtent": [{
+         "temporalExtent": [{           
+           "timePeriod": {
+             "startDateTime": "2016-10-24T11:10:15.2-10:00"
+           }
+         }]
+       }],
+       "party": [{
+         "contactId": "individualId0"
+       }]
+     }],
+     "defaultResourceLocale": {
+       "language": "LanguageCode",
+       "country": "CountryCode",
+       "characterSet": "MD_CharacterSetCode"
+     }
+   },
+   "resourceLineage": [{
+       "statement": "statement"
+     },
+     {
+       "statement": "statement"
+     }
+   ],
+   "resourceDistribution": [{
+       "description": "description"
+     },
+     {
+       "description": "description"
+     }
+   ],
+   "associatedResource": [{
+       "resourceType": [{
+         "type": "MD_ScopeCode",
+         "name": ""
+       }],
+       "associationType": "associationType",
+       "resourceCitation": {
+         "title": "title"
+       }
+     },
+     {
+       "resourceType": [{
+         "type": "MD_ScopeCode",
+         "name": ""
+       }],
+       "associationType": "associationType",
+       "resourceCitation": {
+         "title": "title"
+       }
+     }
+   ],
+   "additionalDocumentation": [{
+       "resourceType": [{
+         "type": "MD_ScopeCode",
+         "name": ""
+       }],
+       "citation": [{
+         "title": "title"
+       }]
+     },
+     {
+       "resourceType": [{
+         "type": "MD_ScopeCode",
+         "name": ""
+       }],
+       "citation": [{
+         "title": "title"
+       }]
+     }
+   ],
+   "funding": [{
+       "allocation": [{
+         "amount": 9.9,
+         "currency": "currency"
+       }]
+     },
+     {
+       "timePeriod": {
+         "endDateTime": "2016-12-31"
+       }
+     }
+   ]
+ }]

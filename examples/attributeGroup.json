@@ -1,0 +1,17 @@
+[{
+  "attributeContentType": [
+    "attributeContentType0",
+    "attributeContentType1"
+  ],
+  "attribute": [{
+      "sequenceIdentifier": "sequenceIdentifier0",
+      "attributeDescription": "attributeDescription0",
+      "sequenceIdentifierType": "sequenceIdentifierType0"
+    },
+    {
+      "sequenceIdentifier": "sequenceIdentifier1",
+      "attributeDescription": "attributeDescription1",
+      "sequenceIdentifierType": "sequenceIdentifierType1"
+    }
+  ]
+}]

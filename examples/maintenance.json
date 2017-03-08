@@ -1,0 +1,46 @@
+ [{
+   "frequency": "frequency",
+   "date": [{
+     "date": "2016-10-12",
+     "dateType": "dateType"
+   }, {
+     "date": "2016-10-12",
+     "dateType": "dateType"
+   }],
+   "scope": [{
+     "scopeCode": "scopeCode"
+   }, {
+     "scopeCode": "scopeCode"
+   }],
+   "note": [
+     "note0",
+     "note1"
+   ],
+   "contact": [{
+       "role": "role",
+       "roleExtent": [{
+         "temporalExtent": [{
+           "timePeriod": {
+             "startDateTime": "2016-10-24T11:10:15.2-10:00"
+           }
+         }]
+       }],
+       "party": [{
+         "contactId": "individualId0"
+       }]
+     },
+     {
+       "role": "role",
+       "roleExtent": [{
+         "temporalExtent": [{           
+           "timePeriod": {
+             "startDateTime": "2016-10-24T11:10:15.2-10:00"
+           }
+         }]
+       }],
+       "party": [{
+         "contactId": "individualId1"
+       }]
+     }
+   ]
+ }]

@@ -1,0 +1,33 @@
+ [{
+   "fileName": "fileName",
+   "fileDescription": "fileDescription",
+   "fileType": "fileType",
+   "fileConstraint": [{
+       "type": "use",
+       "useLimitation": [
+         "useLimitation0",
+         "useLimitation1"
+       ]
+     },
+     {
+       "type": "legal",
+       "legal": {
+         "useConstraint": [
+           "useConstraint0",
+           "useConstraint1"
+         ],
+         "accessConstraint": [
+           "accessConstraint0",
+           "accessConstraint1"
+         ],
+         "otherConstraint": [
+           "otherConstraint0",
+           "otherConstraint1"
+         ]
+       }
+     }
+   ],
+   "fileUri": [{
+     "uri": "http://adiwg.org"
+   }]
+ }]

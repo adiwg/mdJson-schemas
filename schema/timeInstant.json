@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "timeInstant.json#",
+  "type": "object",
+  "example": "../examples/timeInstant.json",
+  "required": ["dateTime"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "A unique identifier for the timeInstant.",
+      "translation": {
+        "ISO 19115-2": ["EX_TemporalExtent > extent > TimeInstant @id"]
+      }
+    },
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "Identifier assigned to the timeInstant."
+    },
+    "description": {
+      "type": "string",
+      "description": "A brief description providing relevant information about the date and time.",
+      "translation": {
+        "ISO 19115-2": ["EX_TemporalExtent > extent > TimeInstant > description"]
+      }
+    },
+    "instantName": {
+      "type": "array",
+      "title": "",
+      "description": "Name of the timeInstant",
+      "translation": {},
+      "items": {
+        "type": "string"
+      }
+    },
+    "dateTime": {
+      "translation": {
+        "ISO 19115-2": ["EX_TemporalExtent > extent > TimeInstant > timePosition"]
+      },
+      "$ref": "common.json#/definitions/date"
+    }
+  }
+
+}

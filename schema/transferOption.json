@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "transferOption.json#",
+  "type": "object",
+  "title": "transferOption",
+  "description": "Describes method and media by which a resource is obtained from the distributor.",
+  "translation": {
+    "ISO 19115-2": ["MD_Distributor > distributorTransferOptions > MD_DigitalTransferOptions"],
+    "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt"]
+  },
+  "example": "../examples/transferOption.json",
+  "required": [],
+  "additionalProperties": true,
+  "properties": {
+    "transferSize": {
+      "type": "number",
+      "description": "Estimated size of a unit in the specified transfer format, expressed in megabytes."
+    },
+    "unitsOfDistribution": {
+      "type": "string",
+      "description": "The tiles, layers, geographic areas, etc., in which data are available."
+    },
+    "onlineOption": {
+      "type": "array",
+      "description": "Information about obtaining the resource on-line.",
+      "translation": {
+        "ISO 19115-2": ["MD_DigitalTransferOptions > online > CI_OnlineResource"],
+        "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt > onlinopt"]
+      },
+      "items": {
+        "$ref": "onlineResource.json#"
+      },
+      "uniqueItems": true
+    },
+    "offlineOption": {
+      "type": "array",
+      "description": "Information about obtaining the resource through off-line procedure.",
+      "translation": {
+        "ISO 19115-2": ["MD_DigitalTransferOptions > offline > MD_Medium"],
+        "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt > offoptn"]
+      },
+      "additionalProperties": true,
+      "items": {
+        "$ref": "./medium.json#"
+      }
+    },
+    "transferFrequency": {
+      "description": "The rate of occurrence of distribution.",
+      "translation": {},
+      "$ref": "./timePeriod.json#/definitions/duration"
+
+    },
+    "distributionFormat": {
+      "type": "array",
+      "description": "Provides information about the format used by the distributor.",
+      "translation": {
+        "ISO 19115-2": ["MD_Distribution > distributor > MD_Distributor > distributorFormat > MD_Format"],
+        "FGDC CSDGM": ["distinfo > stdorder > digform"]
+      },
+      "items": {
+        "$ref": "./format.json#"
+      }
+    }
+  }
+}

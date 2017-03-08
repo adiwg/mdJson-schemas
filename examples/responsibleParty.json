@@ -1,0 +1,36 @@
+ [{
+   "role": "role",
+   "roleExtent": [{
+     "temporalExtent": [{
+       "timePeriod": {
+         "id": "id",
+         "description": "description",
+         "identifier": {
+           "identifier": "identifier",
+           "namespace": "namespace"
+         },
+         "periodName": [
+           "periodName0",
+           "periodName1"
+         ],
+         "startDateTime": "2016-10-14T11:10:15.2-10:00",
+         "endDateTime": "2016-12-31",
+         "timeInterval": {
+           "interval": 9.9,
+           "units": "year"
+         },
+         "duration": {
+           "years": 1,
+           "months": 1,
+           "days": 1,
+           "hours": 1,
+           "minutes": 1,
+           "seconds": 1
+         }
+       }
+     }]
+   }],
+   "party": [{
+     "contactId": "individualId0"
+   }]
+ }]
