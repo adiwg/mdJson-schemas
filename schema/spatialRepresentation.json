@@ -26,7 +26,7 @@
       "required": ["vectorRepresentation"],
       "additionalProperties": true,
       "properties": {
-        "gridRepresentation": {
+        "vectorRepresentation": {
           "$ref": "./vectorRepresentation.json#"
         }
       }
@@ -38,7 +38,7 @@
       "required": ["georectifiedRepresentation"],
       "additionalProperties": true,
       "properties": {
-        "gridRepresentation": {
+        "georectifiedRepresentation": {
           "$ref": "./georectifiedRepresentation.json#"
         }
       }
@@ -50,10 +50,6 @@
       "required": ["georeferenceableRepresentation"],
       "additionalProperties": true,
       "properties": {
-        "type": {
-          "type": "string",
-          "enum": ["georeferenceable"]
-        },
         "georeferenceableRepresentation": {
           "$ref": "./georeferenceableRepresentation.json#"
         }
