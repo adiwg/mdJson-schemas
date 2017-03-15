@@ -5,7 +5,7 @@
   "title": "georeferenceableRepresentation",
   "description": "Grid with cells irregularly spaced in any given geographic/map projection coordinate system, whose individual cells can be geolocated using geolocation information supplied with the data but cannot be geolocated from the grid properties alone.",
   "example": "../examples/georeferenceableRepresentation.json",
-  "required": ["controlPointAvailable", "orientationParameterAvailable", "georeferencedParameter"],
+  "required": ["gridRepresentation", "controlPointAvailable", "orientationParameterAvailable", "georeferencedParameter"],
   "additionalProperties": true,
   "properties": {
     "gridRepresentation": {
