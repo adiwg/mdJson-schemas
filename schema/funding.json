@@ -38,33 +38,28 @@
       "properties": {
         "amount": {
           "type": "number",
-          "description": "The amount of the allocation in the indicated currency.",
-          "example": ""
+          "description": "The amount of the allocation in the indicated currency."
         },
         "currency": {
           "type": "string",
-          "description": "The ISO 4217 currency code.",
-          "example": ""
+          "description": "The ISO 4217 currency code."
         },
         "sourceId": {
           "type": "string",
-          "description": "The contactId of the entity providing the allocation.",
-          "example": ""
+          "description": "The contactId of the entity providing the allocation."
         },
         "recipientId": {
           "type": "string",
-          "description": "The contactId of the entity receiving the allocation.",
-          "example": ""
+          "description": "The contactId of the entity receiving the allocation."
         },
         "matching": {
           "type": "boolean",
           "description": "Tdicates whether the funds are to be considered matching funds.",
-          "example": ""
+          "default": false
         },
         "comment": {
           "type": "string",
-          "description": "Additional information relevant to the allocation.",
-          "example": ""
+          "description": "Additional information relevant to the allocation."
         }
       }
     }

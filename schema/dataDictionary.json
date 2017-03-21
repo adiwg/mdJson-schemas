@@ -56,7 +56,8 @@
       "description": "Indication of whether or not the data dictionary is included with the resource.",
       "translation": {
         "ISO 19115-2": ["MD_FeatureCatalogueDescription > includedWithDataset"]
-      }
+      },
+      "default": false
     },
     "domain": {
       "type": "array",

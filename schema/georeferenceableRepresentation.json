@@ -14,12 +14,14 @@
     "controlPointAvailable": {
       "type": "boolean",
       "description": "Indication of whether or not control point(s) exist.",
-      "translation": {}
+      "translation": {},
+      "default": false
     },
     "orientationParameterAvailable": {
       "type": "boolean",
       "description": "Description of the parameters used to describe sensor orientation.",
-      "translation": {}
+      "translation": {},
+      "default": false
     },
     "orientationParameterDescription": {
       "type": "string",

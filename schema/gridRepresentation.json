@@ -40,7 +40,8 @@
       "description": "An indication of whether or not parameters for transformation between image coordinates and geographic or map coordinates exist (are available).",
       "translation": {
         "ISO 19115-2": ["MD_GridSpatialRepresentation > transformationParameterAvailability"]
-      }
+      },
+      "default": false
     }
   },
   "definitions": {

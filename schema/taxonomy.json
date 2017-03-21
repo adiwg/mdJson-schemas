@@ -36,7 +36,7 @@
       "translation": {},
       "minItems": 1,
       "items": {
-        "$ref": "./identifier.json#"        
+        "$ref": "./identifier.json#"
       }
     },
     "observer": {

@@ -3,7 +3,7 @@
   "id": "imageDescription.json#",
   "type": "object",
   "description": "Information about an image's suitability for use.",
-  "example":"../examples/imageDescription.json",  
+  "example":"../examples/imageDescription.json",
   "translation": {
     "ISO 19115-2": ["MI_ImageDescription"]
   },
@@ -65,28 +65,32 @@
       "description": "Indication of whether or not the radiometric calibration information for generating the radiometrically calibrated standard data product is available.",
       "translation": {
         "ISO 19115-2": ["MI_ImageDescription > radiometricCalibrationDataAvailability"]
-      }
+      },
+      "default": false
     },
     "cameraCalibrationAvailable": {
       "type": "boolean",
       "description": "Indication of whether or not constants are available which allow for camera calibration corrections.",
       "translation": {
         "ISO 19115-2": ["MI_ImageDescription > camerCalibrationInformationAvailability"]
-      }
+      },
+      "default": false
     },
     "filmDistortionAvailable": {
       "type": "boolean",
       "description": "Indication of whether or not Calibration Reseau information is available",
       "translation": {
         "ISO 19115-2": ["MI_ImageDescription > filmDistrotionInformationAvailability"]
-      }
+      },
+      "default": false
     },
     "lensDistortionAvailable": {
       "type": "boolean",
       "description": "Indication of whether or not lens aberration correction information is available.",
       "translation": {
         "ISO 19115-2": ["MI_ImageDescription > lensDistortionInformationAvailability"]
-      }
+      },
+      "default": false
     }
   }
 }

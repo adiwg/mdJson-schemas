@@ -108,7 +108,8 @@
           "description": "Indicates whether the index allows duplicates or values are required to be unique.  true = allow duplicates; false = values must be unique.",
           "translation": {
             "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > constrainedBy > FC_Constraint > description > CharacterString"]
-          }
+          },
+          "default": false
         },
         "attributeCodeName": {
           "type": "array",
@@ -168,12 +169,14 @@
           "description": "Indicates whether null values are allowed for the attribute",
           "translation": {
             "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > cardinality > Multiplicity > range > MultiplicityRange > lower > integer[0=optional | 1=required]"]
-          }
+          },
+          "default": false
         },
         "allowMany": {
           "type": "boolean",
           "description": "Indicates whether null values are allowed for the attribute",
-          "translation": {}
+          "translation": {},
+          "default": false
         },
         "units": {
           "type": "string",

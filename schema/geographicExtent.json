@@ -9,7 +9,8 @@
     "containsData": {
       "type": "boolean",
       "description": "Idication of whether the geographic element encompasses an area covered by the data or an area where data are not present.",
-      "translation": {}
+      "translation": {},
+      "default": true
     },
     "identifier": {
       "$ref": "./identifier.json#",
