@@ -20,6 +20,10 @@
       "type": "string",
       "description": "An ISO 8601 date/timestamp.",
       "example": "../examples/date.json",
+      "translation": {
+        "ISO 19115-2": ["CI_Date > date", "FC_FeatureCatalogue > versionDate"],
+        "FGDC CSDGM": ["idinfo > citation > citeinfo > pubdate"]
+      },
       "pattern": "^(\\d{4}(-\\d{2})?(-\\d{2})?$)|(^\\d{4}-\\d{2}-\\d{2}(T\\d{2})?(\\:\\d{2}(\\:\\d{2}(\\.\\d+)?)?|Z)?(Z|(-|\\+)\\d{2}(:\\d{2})?)?$)"
     },
     "dateObject": {
@@ -35,12 +39,15 @@
         "dateType": {
           "type": "string",
           "description": "The type of date.",
-          "translation": {},
+          "translation": {
+            "ISO 19115-2": ["CI_Date > dateType [CI_DateTypeCode]"]
+          },
+          "codelist": "iso_dateType",
           "minLength": 1
         },
         "description": {
-            "type" : "string",
-            "description" : "Supplemental information describing the date context."
+          "type": "string",
+          "description": "Supplemental information describing the date context."
         }
       }
     }

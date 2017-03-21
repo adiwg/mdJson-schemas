@@ -36,25 +36,7 @@
         "ISO 19115-2": ["CI_Citation > date > CI_Date"]
       },
       "items": {
-        "type": "object",
-        "example":"../examples/date.json",
-        "required": ["date", "dateType"],
-        "properties": {
-          "date": {
-            "translation": {
-              "ISO 19115-2": ["CI_Date > date", "FC_FeatureCatalogue > versionDate"],
-              "FGDC CSDGM": ["idinfo > citation > citeinfo > pubdate"]
-            },
-            "$ref": "common.json#/definitions/date"
-          },
-          "dateType": {
-            "type": "string",
-            "description": "The type of date in the context of the citation.",
-            "translation": {
-              "ISO 19115-2": ["CI_Date > dateType [CI_DateTypeCode]"]
-            }
-          }
-        }
+        "$ref": "common.json#/definitions/dateObject"
       }
     },
     "edition": {
