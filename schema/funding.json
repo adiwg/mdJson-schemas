@@ -54,7 +54,7 @@
         },
         "matching": {
           "type": "boolean",
-          "description": "Tdicates whether the funds are to be considered matching funds.",
+          "description": "Indicates whether the funds are to be considered matching funds.",
           "default": false
         },
         "comment": {
