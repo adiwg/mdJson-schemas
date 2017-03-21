@@ -10,8 +10,7 @@
     "topologyLevel": {
       "type": "string",
       "description": "Identifies the degree of complexity of the spatial relationships",
-      "translation": {},
-      "minLength": 1
+      "translation": {}
     },
     "vectorObject": {
       "type": "array",

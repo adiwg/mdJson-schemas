@@ -20,8 +20,7 @@
     "checkPointDescription": {
       "type": "string",
       "description": "Description of geographic positions points used to test the accuracy of the georeferenced grid data.",
-      "translation": {},
-      "minLength": 1
+      "translation": {}
     },
     "cornerPoints": {
       "description": "The earth location in the coordinate system defined by the Spatial Reference System and the grid coordinate of the cells at opposite ends of grid coverage along two diagonals in the grid spatial dimensions. Note: There are four corner points in a georectified grid; at least two corner points along one diagonal are required. The first corner point corresponds to the origin of the grid.",
@@ -60,14 +59,12 @@
     "transformationDimensionDescription": {
       "type": "string",
       "description": "Point in a pixel corresponding to the Earth location of the pixel.",
-      "translation": {},
-      "minLength": 1
+      "translation": {}
     },
     "transformationDimensionMapping": {
       "type": "string",
       "description": "Point in a pixel corresponding to the Earth location of the pixel.",
-      "translation": {},
-      "minLength": 1
+      "translation": {}
     }
   },
   "definitions": {
