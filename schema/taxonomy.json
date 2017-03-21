@@ -35,7 +35,9 @@
       "description": "Information on any non-authoritative materials (e.g. field guides) useful for reconstructing the actual process.",
       "translation": {},
       "minItems": 1,
-      "items": {}
+      "items": {
+        "$ref": "./identifier.json#"        
+      }
     },
     "observer": {
       "type": "array",
