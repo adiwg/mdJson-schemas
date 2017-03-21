@@ -7,6 +7,8 @@
   "translation": {
     "ISO 19115-2": ["MD_MaintenanceInformation"]
   },
+  "codelist": "iso_maintenanceFrequency",
+  "required": ["frequency"],
   "additionalProperties": true,
   "properties": {
     "frequency": {
