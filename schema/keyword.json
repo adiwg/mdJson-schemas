@@ -46,15 +46,14 @@
     "$ref": "#/definitions/isoTopicCategory"
   }, {
     "title": "not an isoTopicCategory",
-    "not": {
-      "type": "object",
-      "properties": {
-        "keywordType": {
+    "type": "object",
+    "properties": {
+      "keywordType": {
+        "not": {
           "enum": ["isoTopicCategory"]
         }
       }
     }
-
   }],
   "definitions": {
     "keywordObject": {
