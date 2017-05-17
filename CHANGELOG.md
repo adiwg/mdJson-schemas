@@ -1,5 +1,12 @@
 # mdJson-schemas Changelog
 
+## [v2.1.0](https://github.com/adiwg/mdJson-schemas/tree/v2.1.0) (2017-05-17)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.0.3...v2.1.0)
+
+**Implemented enhancements:**
+
+- Deprecate resourceInfo\>topicCategory [\#144](https://github.com/adiwg/mdJson-schemas/issues/144)
+
 ## [v2.0.3](https://github.com/adiwg/mdJson-schemas/tree/v2.0.3) (2017-03-21)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.0.2...v2.0.3)
 
