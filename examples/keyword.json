@@ -11,4 +11,17 @@
   "thesaurus": {
     "title": "title"
   }
+}, {
+  "keyword": [{
+      "keyword": "farming",
+      "keywordId": "keywordId0"
+    },
+    {
+      "keyword": "biota"
+    }
+  ],
+  "keywordType": "isoTopicCategory",
+  "thesaurus": {
+    "title": "title"
+  }
 }]

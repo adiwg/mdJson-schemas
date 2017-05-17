@@ -82,7 +82,8 @@
     },
     "topicCategory": {
       "type": "array",
-      "description": "General theme keyword of the resource, such as: oceans, biota atmosphere, etc.",
+      "deprecated": true,
+      "description": "**This property is deprecated in favor of using a keyword entry with a type of \"isoTopicCategory\".**\n\nGeneral theme keyword of the resource, such as: oceans, biota atmosphere, etc.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > topicCategory"]
       },
