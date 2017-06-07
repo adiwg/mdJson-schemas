@@ -17,6 +17,13 @@
           "type" : "string",
           "description" : "Indicates in what format the metadata record should be delivered to the repository.",
           "minLength" : 1
+      },
+      "citation": {
+        "description": "Citation for the repository.",
+        "translation": {
+          "ISO 19115-2": ["CI_Citation"]
+        },
+        "$ref": "./citation.json#"
       }
     }
 }

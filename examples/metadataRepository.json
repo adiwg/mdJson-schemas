@@ -1,7 +1,24 @@
 [{
   "repository": "fb44075d-14fa-49ab-934a-76a38a78f6ec",
-  "metadataStandard": "iso19115_1"
+  "metadataStandard": "iso19115_1",
+  "citation": {
+    "title": "title"
+  }
 }, {
   "repository": "933b8ffa-58dd-40ee-a01e-fe4d009f52b0",
   "metadataStandard": "iso19115_2"
+}, {
+  "repository": "data.gov",
+  "citation": {
+    "title": "title"
+  },
+  "identifier": {
+    "identifier": "identifier",
+    "namespace": "namespace",
+    "version": "version",
+    "description": "description",
+    "authority": {
+      "title": "title"
+    }
+  }
 }]
