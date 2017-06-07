@@ -1,7 +1,14 @@
 # Change Log
 
-## [v2.1.2](https://github.com/adiwg/mdJson-schemas/tree/v2.1.2)
+## [v2.2.0](https://github.com/adiwg/mdJson-schemas/tree/v2.2.0)
 
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.1.2...v2.2.0)
+
+**Implemented enhancements:**
+
+- Add metadataRepository-\>citation [\#147](https://github.com/adiwg/mdJson-schemas/issues/147)
+
+## [v2.1.2](https://github.com/adiwg/mdJson-schemas/tree/v2.1.2) (2017-05-19)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.1.1...v2.1.2)
 
 **Implemented enhancements:**
