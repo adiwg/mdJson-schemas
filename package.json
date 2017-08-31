@@ -11,6 +11,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "files":[
+    "examples",
+    "schema"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adiwg/mdJson-schemas.git"
