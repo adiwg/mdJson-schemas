@@ -1,7 +1,9 @@
 # Change Log
 
-## [v2.2.0](https://github.com/adiwg/mdJson-schemas/tree/v2.2.0)
+## [v2.3.0](https://github.com/adiwg/mdJson-schemas/tree/v2.3.0) (2017-08-31)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.2.0...v2.3.0)
 
+## [v2.2.0](https://github.com/adiwg/mdJson-schemas/tree/v2.2.0) (2017-06-07)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.1.2...v2.2.0)
 
 **Implemented enhancements:**
