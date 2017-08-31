@@ -69,8 +69,11 @@
           "description": "Additional information relevant to the allocation."
         },
         "onlineResource": {
+          "type": "array",
           "description": "On-line information related to the allocation.",
-          "$ref": "onlineResource.json#"
+          "items": {
+            "$ref": "onlineResource.json#"
+          }
         }
       }
     }
