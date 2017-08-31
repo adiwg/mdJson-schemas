@@ -5,7 +5,6 @@
   "description": "",
   "translation": {},
   "type": "object",
-  "required": [],
   "additionalProperties": true,
   "oneOf": [{
       "type": "object",

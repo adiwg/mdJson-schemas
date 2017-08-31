@@ -9,7 +9,6 @@
     "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt"]
   },
   "example": "../examples/transferOption.json",
-  "required": [],
   "additionalProperties": true,
   "properties": {
     "transferSize": {
