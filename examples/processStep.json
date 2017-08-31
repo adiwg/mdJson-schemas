@@ -21,7 +21,7 @@
     {
       "role": "role",
       "roleExtent": [{
-        "temporalExtent": [{          
+        "temporalExtent": [{
           "timePeriod": {
             "startDateTime": "2016-10-24T11:10:15.2-10:00"
           }
@@ -32,6 +32,64 @@
       }]
     }
   ],
+  "stepSource": [{
+    "description": "description",
+    "sourceCitation": {
+      "title": "title"
+    },
+    "metadataCitation": [{
+      "title": "title"
+    }, {
+      "title": "title"
+    }],
+    "spatialResolution": {
+      "measure": {
+        "type": "distance",
+        "value": 99.9,
+        "unitOfMeasure": "unitOfMeasure"
+      }
+    },
+    "referenceSystem": {
+      "referenceSystemType": "referenceSystemType",
+      "referenceSystemIdentifier": {
+        "identifier": "identifier"
+      }
+    },
+    "sourceProcessStep": [{
+      "description": "description"
+    }, {
+      "description": "description"
+    }]
+  }],
+  "stepProduct": [{
+    "description": "description",
+    "sourceCitation": {
+      "title": "title"
+    },
+    "metadataCitation": [{
+      "title": "title"
+    }, {
+      "title": "title"
+    }],
+    "spatialResolution": {
+      "measure": {
+        "type": "distance",
+        "value": 99.9,
+        "unitOfMeasure": "unitOfMeasure"
+      }
+    },
+    "referenceSystem": {
+      "referenceSystemType": "referenceSystemType",
+      "referenceSystemIdentifier": {
+        "identifier": "identifier"
+      }
+    },
+    "sourceProcessStep": [{
+      "description": "description"
+    }, {
+      "description": "description"
+    }]
+  }],
   "reference": [{
       "title": "title"
     },

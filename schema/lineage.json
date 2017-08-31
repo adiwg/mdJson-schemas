@@ -120,6 +120,28 @@
             "$ref": "./responsibility.json#"
           }
         },
+        "stepSource": {
+          "type": "array",
+          "description": "Information about the source data used in the process step.",
+          "translation": {
+            "ISO 19115-2": ["DQ_DataQuality > LI_Lineage > LI_ProcessStep > LI_source"],
+            "FGDC CSDGM": ["dataqual > lineage > procstep > srcused"]
+          },
+          "items": {
+            "$ref": "#/definitions/source"
+          }
+        },
+        "stepProduct": {
+          "type": "array",
+          "description": "Information about an intermediate data set that (1) is significant in the opinion of the data producer, (2) is generated in the processing step, and (3) is used in later processing steps.",
+          "translation": {
+            "ISO 19115-2": ["DQ_DataQuality > LI_Lineage > LI_ProcessStep > LI_source"],
+            "FGDC CSDGM": ["dataqual > lineage > procstep > srcprod"]
+          },
+          "items": {
+            "$ref": "#/definitions/source"
+          }
+        },
         "reference": {
           "type": "array",
           "description": "Citation for process step documentation.",
@@ -143,6 +165,17 @@
         "ISO 19115-2": ["LI_Source"]
       },
       "additionalProperties": true,
+      "anyOf": [{
+          "title": "description  is required",
+          "required": ["description"],
+          "description": "A description  is required."
+        },
+        {
+          "title": "scope  is required",
+          "required": ["scope"],
+          "description": "At least one scope is required."
+        }
+      ],
       "properties": {
         "description": {
           "type": "string",
