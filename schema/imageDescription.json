@@ -7,7 +7,6 @@
   "translation": {
     "ISO 19115-2": ["MI_ImageDescription"]
   },
-  "required": [],
   "additionalProperties": true,
   "properties": {
     "illuminationElevationAngle": {

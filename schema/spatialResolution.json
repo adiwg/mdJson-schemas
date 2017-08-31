@@ -28,7 +28,6 @@
       "required": ["measure"],
       "properties": {
         "measure": {
-          "type": "object",
           "title": "measure",
           "example": "../examples/spatialResolution.json",
           "description": "Scale of geographic extent expressed in ground distance parameters or angle.",

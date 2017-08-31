@@ -3,7 +3,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "",
-  "required": [],
   "minProperties": 1,
   "additionalProperties": true,
   "anyOf": [{
@@ -70,8 +69,11 @@
           "description": "Additional information relevant to the allocation."
         },
         "onlineResource": {
+          "type": "array",
           "description": "On-line information related to the allocation.",
-          "$ref": "onlineResource.json#"
+          "items": {
+            "$ref": "onlineResource.json#"
+          }
         }
       }
     }

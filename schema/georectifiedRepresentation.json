@@ -46,7 +46,6 @@
       }]
     },
     "centerPoint": {
-      "type": "array",
       "description": "The earth location in the coordinate system defined by the Spatial Reference System and the grid coordinate of the cell halfway between opposite ends of the grid in the spatial dimensions.",
       "$ref": "#/definitions/point"
     },
