@@ -27,6 +27,10 @@
       "$ref": "./timePeriod.json#",
       "description": "The period for which the allocation is relevant.",
       "example": ""
+    },
+    "description": {
+      "type": "string",
+      "description": "Information describing the funding."
     }
   },
   "definitions": {
@@ -36,6 +40,10 @@
       "required": ["amount", "currency"],
       "additionalProperties": true,
       "properties": {
+        "sourceAllocationId": {
+          "type": "string",
+          "description": "Identifier used by the source contact to reference the allocation."
+        },
         "amount": {
           "type": "number",
           "description": "The amount of the allocation in the indicated currency."
@@ -60,6 +68,10 @@
         "comment": {
           "type": "string",
           "description": "Additional information relevant to the allocation."
+        },
+        "onlineResource": {
+          "description": "On-line information related to the allocation.",
+          "$ref": "onlineResource.json#"
         }
       }
     }
