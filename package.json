@@ -1,6 +1,6 @@
 {
   "name": "mdjson-schemas",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "JSON schemas, examples, and templates for ADIwg metadata standards",
   "main": "index.js",
   "directories": {
@@ -9,11 +9,14 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "prepublish": "scripts/prepublish.js",
+    "pretest": "scripts/prepublish.js"
   },
-  "files":[
+  "files": [
     "examples",
-    "schema"
+    "schema",
+    "resources"
   ],
   "repository": {
     "type": "git",
@@ -37,9 +40,10 @@
   "homepage": "https://github.com/adiwg/mdJson-schemas#readme",
   "devDependencies": {
     "ajv": "^5.2.2",
-    "mocha": "^3.5.0"
-  },
-  "dependencies": {
-    "require-directory": "^2.1.1"
+    "buildify": "^0.4.0",
+    "glob": "^7.1.2",
+    "mkdirp": "^0.5.1",
+    "mocha": "^3.5.0",
+    "rimraf": "^2.6.1"
   }
 }
