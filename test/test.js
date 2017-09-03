@@ -1,6 +1,9 @@
+'use strict';
+
 const assert = require('assert');
 const fs = require('fs');
 const Schemas = require('../index.js');
+const SchemasFile = require('../resources/js/schemas.js');
 const schemaFolder = '../schema/';
 
 describe('Test schemas:', function() {
@@ -41,6 +44,21 @@ describe('Test schemas:', function() {
     });
 
     it('should validate example', function() {
+      ajv.validate('schema', data);
+      assert.equal(ajv.errors, null);
+    });
+
+    it('should load all schemas from schemas.js file', function() {
+      ajv.removeSchema();
+
+      Object.keys(SchemasFile).forEach(function(key) {
+        let val = SchemasFile[key];
+
+        ajv.addSchema(val, key);
+      });
+    });
+
+    it('should validate example again', function() {
       ajv.validate('schema', data);
       assert.equal(ajv.errors, null);
     });
