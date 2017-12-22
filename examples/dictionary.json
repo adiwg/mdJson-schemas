@@ -2,6 +2,7 @@
   "citation": {
     "title": "title"
   },
+  "description": "description",
   "subject": ["subject"],
   "locale": [
      {

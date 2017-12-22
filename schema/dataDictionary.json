@@ -11,6 +11,11 @@
       "description": "Citation for the dictionary.",
       "$ref": "./citation.json#"
     },
+    "description": {
+      "type": "string",
+      "description": "A free text description of the contents of the data dictionary.",
+      "translation": {}
+    },
     "subject": {
       "type": "array",
       "description": "Identifies the scope of the data dictionary. E.g. 'database', 'dataset', 'table'.",
