@@ -29,7 +29,7 @@
     "dateObject": {
       "type": "object",
       "description": "An ISO 8601 date/timestamp and type.",
-      "example": "../examples/date.json",
+      "example": "../examples/dateObject.json",
       "required": ["date", "dateType"],
       "additionalProperties": true,
       "properties": {
