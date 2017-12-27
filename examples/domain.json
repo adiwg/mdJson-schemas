@@ -13,17 +13,15 @@
         "value": "value1",
         "definition": "definition1"
       }
-    ]
+    ],
+    "domainReference":{
+      "title": "domainReference"
+    }
   },
   {
     "domainId": "dom022",
     "commonName": "US States",
     "codeName": "STATE",
-    "description": "States of the United States of America",
-    "domainItem": [{
-      "name": "",
-      "value": "",
-      "definition": ""
-    }]
+    "description": "States of the United States of America"
   }
 ]

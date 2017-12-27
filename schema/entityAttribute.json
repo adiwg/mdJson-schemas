@@ -38,7 +38,7 @@
     "attributeReference": {
       "description": "Reference to a standard or external description of the entity attribute.",
       "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > citation > CI_Citation"],
+        "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute  > definitionReference > FC_DefinitionReference > definitionSource > FC_DefinitionSource > source > CI_Citation"],
         "FGDC CSDGM": ["eainfo > detailed > attr > attrdef"]
       },
       "$ref": "./citation.json#"
