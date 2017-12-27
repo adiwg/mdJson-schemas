@@ -21,6 +21,9 @@
     "codeName": "",
     "alias": [""],
     "definition": "",
+    "entityReference": [{
+      "title": "entityReference"
+    }],
     "primaryKeyAttributeCodeName": [""],
     "index": [{
       "codeName": "",
@@ -43,6 +46,9 @@
       "localAttributeCodeName": [""],
       "referencedEntityCodeName": "",
       "referencedAttributeCodeName": [""]
-    }]
+    }],
+    "fieldSeparatorCharacter": ",",
+    "numberOfHeaderLines": 9,
+    "quoteCharacter": "\""
   }
 ]

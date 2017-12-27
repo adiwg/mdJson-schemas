@@ -48,6 +48,17 @@
         "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > definition"]
       }
     },
+    "entityReference": {
+      "type": "array",
+      "description": "Reference to a standard or external schema which describes the entity.",
+      "translation": {
+        "FGDC CSDGM": ["eainfo > overview > eadetcit"],
+        "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType"]
+      },
+      "items": {
+        "$ref": "./citation.json#"
+      }
+    },
     "primaryKeyAttributeCodeName": {
       "type": "array",
       "description": "An array of quoted attribute code names that together compose the primary key set for the entity",
@@ -87,6 +98,29 @@
       "items": {
         "$ref": "#/definitions/foreignKey"
       }
+    },
+    "fieldSeparatorCharacter":{
+        "type" : "string",
+        "description" : "The character which indicates the end of the data field contents.",
+        "translation": {
+          "FGDC CSDGM": ["distinfo > stdorder > digform > digtinfo > asciistr > dfwidthd"]
+        },
+        "minLength" : 1
+    },
+    "numberOfHeaderLines":{
+        "type" : "integer",
+        "description" : "The number of lines at the beginning of the file before the data content actually begins.",
+        "translation": {
+          "FGDC CSDGM": ["distinfo > stdorder > digform > digtinfo > asciistr > numheadl"]
+        }
+    },
+    "quoteCharacter":{
+        "type" : "string",
+        "description" : "Character used to quote fields in the data representation so that the field delimiter can be used as part of the field value. This character is typically a single quote mark or double quote mark.",
+        "translation": {
+          "FGDC CSDGM": ["distinfo > stdorder > digform > digtinfo > asciistr > quotech"]
+        },
+        "minLength" : 1
     }
   },
   "definitions": {
