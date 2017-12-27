@@ -86,7 +86,7 @@
         "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute"]
       },
       "items": {
-        "$ref": "#/definitions/attribute"
+        "$ref": "./entityAttribute.json#"
       }
     },
     "foreignKey": {
@@ -154,82 +154,6 @@
           "items": {
             "type": "string"
           }
-        }
-      }
-    },
-    "attribute": {
-      "type": "object",
-      "example": "../examples/entityAttribute.json",
-      "required": ["codeName", "dataType", "definition", "allowNull"],
-      "additionalProperties": true,
-      "properties": {
-        "commonName": {
-          "type": "string",
-          "description": "The common name used to identify this attribute",
-          "translation": {
-            "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > memberName > localName"]
-          }
-        },
-        "codeName": {
-          "type": "string",
-          "description": "The code used to identify this attribute.  Most often this will be the table or spreadsheet column name",
-          "translation": {
-            "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > code > CharacterString"]
-          }
-        },
-        "alias": {
-          "type": "array",
-          "description": "An array of quoted strings providing alternate names by which the attribute is known",
-          "items": {
-            "type": "string"
-          }
-        },
-        "definition": {
-          "type": "string",
-          "description": "A succinct but comprehensive definition for the attribute",
-          "translation": {
-            "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > definition > CharacterString"]
-          }
-        },
-        "dataType": {
-          "type": "string",
-          "description": "The datatype for the attribute.  Names for datatypes vary widely by database management system.  Use the datatype name associated with the database system that implemented the entity.  E.g. 'integer', 'boolean', 'decimal(8,5)', 'varchar(200)'",
-          "translation": {
-            "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > valueType > TypeName > aName > CharacterString"]
-          }
-        },
-        "allowNull": {
-          "type": "boolean",
-          "description": "Indicates whether null values are allowed for the attribute",
-          "translation": {
-            "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > cardinality > Multiplicity > range > MultiplicityRange > lower > integer[0=optional | 1=required]"]
-          },
-          "default": false
-        },
-        "allowMany": {
-          "type": "boolean",
-          "description": "Indicates whether null values are allowed for the attribute",
-          "translation": {},
-          "default": false
-        },
-        "units": {
-          "type": "string",
-          "description": "A unit-of-measure for the attribute.  E.g. 'meters', 'atmospheres', 'liters'",
-          "translation": {
-            "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > valueMeasurementUnit > [UnitDefinition > identifier | ConversionalUnit > identifier, name, catalogSystem, conversionToPreferredUnit, formula | BaseUnit > identifier, name, catalogSymbol, unitSystem | DerivedUnit > identifier, name, remarks, catalogSymbol, derivationUnitTerm]"]
-          }
-        },
-        "domainId": {
-          "type": "string",
-          "description": "Provides the domain ID for the  dictionary Domain containing the list of permissable values for this attribute"
-        },
-        "minValue": {
-          "type": "string",
-          "description": "The minimum range value permissible for this attribute"
-        },
-        "maxValue": {
-          "type": "string",
-          "description": "The maximum range value permissible for this attribute"
         }
       }
     },

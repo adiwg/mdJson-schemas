@@ -13,8 +13,4 @@ class TestEntity < TestHelper
         errors = JSON::Validator.fully_validate('entity.json', @@example + 'entityForeignKey.json', fragment:'#/definitions/foreignKey', strict: @@strict, list: true)
         assert(errors.empty?, errors.join("\n"))
     end
-    def test_attribute
-        errors = JSON::Validator.fully_validate('entity.json', @@example + 'entityAttribute.json', fragment:'#/definitions/attribute', strict: @@strict, list: true)
-        assert(errors.empty?, errors.join("\n"))
-    end
 end

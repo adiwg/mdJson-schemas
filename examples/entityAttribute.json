@@ -6,12 +6,37 @@
       "alias1"
     ],
     "definition": "definition",
+    "attributeReference": {
+      "title": "attributeReference"
+    },
     "dataType": "dataType",
     "allowNull": true,
     "units": "units",
+    "unitsResolution": 9.9,
+    "isCaseSensitive": false,
     "domainId": "domainId",
     "minValue": "minValue",
-    "maxValue": "maxValue"
+    "maxValue": "maxValue",
+    "fieldWidth": 9,
+    "missingValue": "missingValue",
+    "valueRange": [{
+      "minRangeValue": "0",
+      "maxRangeValue": "9.9"
+    }],
+    "timePeriod": [{
+      "id": "id",
+      "description": "description",
+      "identifier": {
+        "identifier": "identifier",
+        "namespace": "namespace"
+      },
+      "periodName": [
+        "periodName0",
+        "periodName1"
+      ],
+      "startDateTime": "2016-10-14T11:10:15.2-10:00",
+      "endDateTime": "2016-12-31"
+    }]
   },
   {
     "commonName": "Employee ID",
@@ -24,8 +49,12 @@
     "dataType": "numeric",
     "allowNull": true,
     "units": "meters",
+    "unitsResolution": 1,
+    "isCaseSensitive": true,
     "domainId": "dom042",
     "minValue": "1000000",
-    "maxValue": "5000000"
+    "maxValue": "5000000",
+    "fieldWidth": 7,
+    "missingValue": "-999"
   }
 ]

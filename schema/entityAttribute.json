@@ -1,0 +1,177 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "entityAttribute.json#",
+  "title": "attribute",
+  "type": "object",
+  "example": "../examples/entityAttribute.json",
+  "required": ["codeName", "dataType", "definition", "allowNull"],
+  "additionalProperties": true,
+  "properties": {
+    "commonName": {
+      "type": "string",
+      "description": "The common name used to identify this attribute",
+      "translation": {
+        "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > memberName > localName"]
+      }
+    },
+    "codeName": {
+      "type": "string",
+      "description": "The code used to identify this attribute.  Most often this will be the table or spreadsheet column name",
+      "translation": {
+        "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > code > CharacterString"]
+      }
+    },
+    "alias": {
+      "type": "array",
+      "description": "An array of quoted strings providing alternate names by which the attribute is known",
+      "items": {
+        "type": "string"
+      }
+    },
+    "definition": {
+      "type": "string",
+      "description": "A succinct but comprehensive definition for the attribute",
+      "translation": {
+        "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > definition > CharacterString"]
+      }
+    },
+    "attributeReference": {
+      "description": "Reference to a standard or external description of the entity attribute.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > citation > CI_Citation"],
+        "FGDC CSDGM": ["eainfo > detailed > attr > attrdef"]
+      },
+      "$ref": "./citation.json#"
+    },
+    "dataType": {
+      "type": "string",
+      "description": "The datatype for the attribute.  Names for datatypes vary widely by database management system.  Use the datatype name associated with the database system that implemented the entity.  E.g. 'integer', 'boolean', 'decimal(8,5)', 'varchar(200)'",
+      "translation": {
+        "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > valueType > TypeName > aName > CharacterString"]
+      }
+    },
+    "allowNull": {
+      "type": "boolean",
+      "description": "Indicates whether null values are allowed for the attribute",
+      "translation": {
+        "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > cardinality > Multiplicity > range > MultiplicityRange > lower > integer[0=optional | 1=required]"]
+      },
+      "default": false
+    },
+    "allowMany": {
+      "type": "boolean",
+      "description": "Indicates whether null values are allowed for the attribute",
+      "translation": {},
+      "default": false
+    },
+    "units": {
+      "type": "string",
+      "description": "A unit-of-measure for the attribute.  E.g. 'meters', 'atmospheres', 'liters'",
+      "translation": {
+        "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > valueMeasurementUnit > [UnitDefinition > identifier | ConversionalUnit > identifier, name, catalogSystem, conversionToPreferredUnit, formula | BaseUnit > identifier, name, catalogSymbol, unitSystem | DerivedUnit > identifier, name, remarks, catalogSymbol, derivationUnitTerm]"]
+      }
+    },
+    "unitsResolution": {
+      "type": "number",
+      "description": "The smallest unit increment to which an attribute value is measured.",
+      "translation": {
+        "FGDC CSDGM": [
+          "eainfo > detailed > attr > attrdomv > rdom > attrunit",
+          "eainfo > detailed > attr > attrdomv > rdom > attrmres"
+        ]
+      }
+    },
+    "isCaseSensitive": {
+      "type": "boolean",
+      "default": false,
+      "description": "Indicates if the content of the data set is encoded in case-sensitive ASCII.",
+      "translation": {
+        "FGDC CSDGM": ["distinfo > stdorder > digform > digtinfo > asciistr > casesens"]
+      }
+    },
+    "fieldWidth": {
+      "type": "integer",
+      "description": "The number of characters in the data field.",
+      "translation": {
+        "FGDC CSDGM": ["distinfo > stdorder > digform > digtinfo > asciistr > datafiel > dfwidth"]
+
+      }
+    },
+    "missingValue": {
+      "type": "string",
+      "description": "The code which represents missing data.",
+      "translation": {
+        "FGDC CSDGM": ["distinfo > stdorder > digform > digtinfo > asciistr > datafiel > missingv"]
+
+      }
+    },
+    "domainId": {
+      "type": "string",
+      "description": "Provides the domain ID for the  dictionary Domain containing the list of permissable values for this attribute"
+    },
+    "minValue": {
+      "type": "string",
+      "description": "The minimum range value permissible for this attribute"
+    },
+    "maxValue": {
+      "type": "string",
+      "description": "The maximum range value permissible for this attribute"
+    },
+    "valueRange": {
+      "type": "array",
+      "description": "The minimum and maximum values that may be assigned to the attribute.",
+      "items": {
+        "$ref": "#/definitions/valueRange"
+      }
+    },
+    "timePeriod":{
+        "type" : "array",
+        "description" : "The earliest or only date for which the attribute values are current. In cases when a range of dates are provided, this is the earliest date for which the information is valid.",
+        "translation": {
+          "FGDC CSDGM": [
+            "eainfo > detailed > attr > attrdomv > begdatea",
+            "eainfo > detailed > attr > attrdomv > enddatea"
+          ]
+        },
+        "items" : {
+            "$ref" : "./timePeriod.json#"
+        }
+    }
+  },
+  "definitions": {
+    "valueRange": {
+      "type": "object",
+      "description": "The minimum and maximum values of a continuum of valid values.",
+      "example": "../examples/valueRange.json",
+      "translation": {
+        "FGDC CSDGM": [
+          "eainfo > detailed > attr > attrdomv > rdom"
+        ]
+      },
+      "required": ["minRangeValue", "maxRangeValue"],
+      "additionalProperties": true,
+      "properties": {
+        "minRangeValue": {
+          "type": "string",
+          "description": "The least value that the attribute can be assigned.",
+          "translation": {
+            "FGDC CSDGM": [
+              "eainfo > detailed > attr > attrdomv > rdom > rdommin"
+            ]
+          },
+          "minLength": 1
+        },
+        "maxRangeValue": {
+          "type": "string",
+          "description": "The greatest value that the attribute can be assigned.",
+          "translation": {
+            "FGDC CSDGM": [
+              "eainfo > detailed > attr > attrdomv > rdom > rdommax"
+            ]
+          },
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
