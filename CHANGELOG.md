@@ -1,7 +1,43 @@
 # Change Log
 
+## [v2.4.0](https://github.com/adiwg/mdJson-schemas/tree/v2.4.0)
+
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.3.2...v2.4.0)
+
+**Implemented enhancements:**
+
+- dataDictionary rule change [\#172](https://github.com/adiwg/mdJson-schemas/issues/172)
+- entityAttribute rule change [\#168](https://github.com/adiwg/mdJson-schemas/issues/168)
+- entity rule change [\#167](https://github.com/adiwg/mdJson-schemas/issues/167)
+- domain rule change [\#166](https://github.com/adiwg/mdJson-schemas/issues/166)
+- valueRange new object [\#165](https://github.com/adiwg/mdJson-schemas/issues/165)
+
+**Fixed bugs:**
+
+- check keyword rules [\#173](https://github.com/adiwg/mdJson-schemas/issues/173)
+- OrderProcess plannedAvailability example incorrect [\#151](https://github.com/adiwg/mdJson-schemas/issues/151)
+
+**Closed issues:**
+
+- resourceTimePeriod [\#148](https://github.com/adiwg/mdJson-schemas/issues/148)
+
+## [v2.3.2](https://github.com/adiwg/mdJson-schemas/tree/v2.3.2) (2017-10-03)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.3.1...v2.3.2)
+
+## [v2.3.1](https://github.com/adiwg/mdJson-schemas/tree/v2.3.1) (2017-09-03)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.3.0...v2.3.1)
+
 ## [v2.3.0](https://github.com/adiwg/mdJson-schemas/tree/v2.3.0) (2017-08-31)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.2.0...v2.3.0)
+
+**Implemented enhancements:**
+
+- Support for Award ID in funding allocation [\#150](https://github.com/adiwg/mdJson-schemas/issues/150)
+- Support for Lineage Process Step Source references [\#149](https://github.com/adiwg/mdJson-schemas/issues/149)
+
+**Fixed bugs:**
+
+- Support for Lineage Process Step Source references [\#149](https://github.com/adiwg/mdJson-schemas/issues/149)
 
 ## [v2.2.0](https://github.com/adiwg/mdJson-schemas/tree/v2.2.0) (2017-06-07)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.1.2...v2.2.0)
