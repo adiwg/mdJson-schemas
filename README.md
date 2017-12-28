@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/adiwg/mdJson-schemas.svg?branch=master)](https://travis-ci.org/adiwg/mdJson-schemas)
 [![Gem Version](https://badge.fury.io/rb/adiwg-mdjson_schemas.svg)](http://badge.fury.io/rb/adiwg-mdjson_schemas)
 [![Bower version](https://badge.fury.io/bo/mdjson-schemas.svg)](https://badge.fury.io/bo/mdjson-schemas)
+[![npm version](https://badge.fury.io/js/mdjson-schemas.svg)](https://badge.fury.io/js/mdjson-schemas)
 
 # mdJson-schemas
 
@@ -31,13 +32,22 @@ Install:
 
     $ bower install mdjson-schemas
 
+## npm
+
+Install:
+
+    $ npm install mdjson-schemas
+
+    const Schemas = require('../resources/js/schemas.js');
+
+
 ### Usage
 
-The main schema file is `schema/schema.json`.  Load that file in your validator.
+The main schema file is `schema/schema.json`.  Load that file in your [validator](http://json-schema.org/implementations.html#libraries).
 
-**NOTE**: The schemas use relative addresses for `$ref` paths. This causes a problem
-with the [ruby-json-schema/json-schema](https://github.com/ruby-json-schema/json-schema) gem.
-As a workaround, you can pre-load all of the schemas by calling `ADIWG::MdjsonSchemas::Utils::load_schemas` before validation.
+**NOTE**: The schemas use relative addresses for `$ref` paths. If this causes a problem
+with the [ruby-json-schema/json-schema](https://github.com/ruby-json-schema/json-schema) gem,
+as a workaround you can pre-load all of the schemas by calling `ADIWG::MdjsonSchemas::Utils::load_schemas` before validation.
 
 ## Contributing
 
