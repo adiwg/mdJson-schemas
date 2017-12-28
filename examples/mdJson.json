@@ -1,7 +1,7 @@
 {
   "schema": {
     "name": "mdJson",
-    "version": "2.1.2"
+    "version": "2.4.0"
   },
   "contact": [{
       "contactId": "CID001",
@@ -152,7 +152,10 @@
       "address": [{
         "addressType": [
           "addressType"
-        ]
+        ],
+        "city": "Anchorage",
+        "administrativeArea": "AK",
+        "postalCode": "99508"
       }],
       "electronicMailAddress": [
         "e.mail@address.com2"
@@ -170,7 +173,22 @@
       "contactId": "CID003",
       "isOrganization": true,
       "name": "Arctic Landscape Conservation Cooperative",
-      "contactType": "federal"
+      "contactType": "federal",
+      "phone": [{
+        "phoneName": "single service",
+        "phoneNumber": "111-111-1111",
+        "service": [
+          "voice"
+        ]
+      }],
+      "address": [{
+        "addressType": [
+          "addressType"
+        ],
+        "city": "Anchorage",
+        "administrativeArea": "AK",
+        "postalCode": "99508"
+      }]
     },
     {
       "contactId": "CID004",
@@ -179,7 +197,22 @@
       "positionName": "Data Manager",
       "memberOfOrganization": [
         "CID003"
-      ]
+      ],
+      "phone": [{
+        "phoneName": "single service",
+        "phoneNumber": "111-111-1111",
+        "service": [
+          "voice"
+        ]
+      }],
+      "address": [{
+        "addressType": [
+          "addressType"
+        ],
+        "city": "Anchorage",
+        "administrativeArea": "AK",
+        "postalCode": "99508"
+      }]
     },
     {
       "contactId": "CID005",
@@ -194,7 +227,22 @@
       "memberOfOrganization": [
         "CID002"
       ],
-      "contactType": "individual"
+      "contactType": "individual",
+      "phone": [{
+        "phoneName": "single service",
+        "phoneNumber": "111-111-1111",
+        "service": [
+          "voice"
+        ]
+      }],
+      "address": [{
+        "addressType": [
+          "addressType"
+        ],
+        "city": "Anchorage",
+        "administrativeArea": "AK",
+        "postalCode": "99508"
+      }]
     }
   ],
   "metadata": {
@@ -548,11 +596,11 @@
         ],
         "date": [{
             "date": "2017-06-13",
-            "dateType": "date type"
+            "dateType": "publication"
           },
           {
             "date": "2017-06-22T16:15:14",
-            "dateType": "dateTime type"
+            "dateType": "revision"
           }
         ],
         "edition": "edition",
@@ -638,6 +686,12 @@
                 "CID004",
                 "CID001"
               ]
+            }]
+          },
+          {
+            "role": "originator",
+            "party": [{
+              "contactId": "CID004"
             }]
           }
         ],
@@ -898,7 +952,9 @@
         "Kamakawiwo'ole, Israel - Vocal"
       ],
       "timePeriod": {
-        "startDateTime": "2016-11-01"
+        "description": "ground condition",
+        "startDateTime": "2016-06-01",
+        "endDateTime": "2016-08-15"
       },
       "temporalResolution": [{
           "years": 1,
@@ -1140,7 +1196,7 @@
               "keyword": "Kaparuk"
             }
           ],
-          "keywordType": "Place Names",
+          "keywordType": "place",
           "thesaurus": {
             "title": "USGS Geographic Names Information System"
           }
@@ -1166,7 +1222,10 @@
               "keyword": "Teddy Bear"
             }
           ],
-          "keywordType": "Taxonomy"
+          "keywordType": "taxon",
+          "thesaurus": {
+            "title": "ITIS - Integrated Taxonomic Information System"
+          }
         },
         {
           "keyword": [{
@@ -1178,7 +1237,11 @@
             {
               "keyword": "eggs"
             }
-          ]
+          ],
+          "keywordType": "theme",
+          "thesaurus": {
+            "title": "Exploring Cookies"
+          }
         },
         {
           "keyword": [{
@@ -1194,7 +1257,23 @@
               "keywordId": "004"
             }
           ],
-          "keywordType": "isoTopicCategory"
+          "keywordType": "isoTopicCategory",
+          "thesaurus": {
+            "title": "ISO Topic Categories"
+          }
+        },
+        {
+          "keyword": [{
+              "keyword": "carbon dating"
+            },
+            {
+              "keyword": "ionization"
+            }
+          ],
+          "keywordType": "method",
+          "thesaurus": {
+            "title": "Lineage Methodology keyword set"
+          }
         }
       ],
       "taxonomy": {
@@ -1203,13 +1282,33 @@
               "title": "ITIS - Integrated Taxonomic Information System",
               "alternateTitle": [
                 "Citation for ITIS"
-              ]
+              ],
+              "date": [{
+                "date": "2013-06-22",
+                "dateType": "publication"
+              }],
+              "responsibleParty": [{
+                "role": "originator",
+                "party": [{
+                  "contactId": "CID004"
+                }]
+              }]
             },
             "modifications": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
           },
           {
             "citation": {
-              "title": "Some OTHER Taxonomic System"
+              "title": "Some OTHER Taxonomic System",
+              "date": [{
+                "date": "2013-06-22",
+                "dateType": "publication"
+              }],
+              "responsibleParty": [{
+                "role": "originator",
+                "party": [{
+                  "contactId": "CID004"
+                }]
+              }]
             }
           }
         ],
@@ -1220,7 +1319,17 @@
             "version": "version0",
             "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "authority": {
-              "title": "title0"
+              "title": "title0",
+              "date": [{
+                "date": "2013-06-22",
+                "dateType": "publication"
+              }],
+              "responsibleParty": [{
+                "role": "originator",
+                "party": [{
+                  "contactId": "CID004"
+                }]
+              }]
             }
           },
           {
@@ -1229,7 +1338,17 @@
             "version": "version1",
             "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "authority": {
-              "title": "title1"
+              "title": "title1",
+              "date": [{
+                "date": "2013-06-22",
+                "dateType": "publication"
+              }],
+              "responsibleParty": [{
+                "role": "originator",
+                "party": [{
+                  "contactId": "CID004"
+                }]
+              }]
             }
           }
         ],
@@ -1642,6 +1761,7 @@
       "extent": [{
           "description": "Extent 1: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
           "geographicExtent": [{
+              "description": "geographic extent description",
               "containsData": false,
               "identifier": {
                 "identifier": "identifier"
@@ -1985,16 +2105,47 @@
           "scopeCode": "scopeCode"
         },
         "citation": [{
-            "title": "Lineage Title 1"
+            "title": "Lineage Title 1",
+            "date": [{
+              "date": "2017-10-13",
+              "dateType": "publication"
+            }],
+            "responsibleParty": [{
+              "role": "originator",
+              "party": [{
+                "contactId": "CID004"
+              }]
+            }]
           },
           {
-            "title": "Lineage Title 2"
+            "title": "Lineage Title 2",
+            "date": [{
+              "date": "2017-10-13",
+              "dateType": "publication"
+            }],
+            "responsibleParty": [{
+              "role": "originator",
+              "party": [{
+                "contactId": "CID004"
+              }]
+            }]
           }
         ],
         "source": [{
+            "sourceId": "SRC001",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
             "sourceCitation": {
-              "title": "Source Citation Title"
+              "title": "Source Citation Title SRC001",
+              "date": [{
+                "date": "2017-10-13",
+                "dateType": "publication"
+              }],
+              "responsibleParty": [{
+                "role": "originator",
+                "party": [{
+                  "contactId": "CID004"
+                }]
+              }]
             },
             "metadataCitation": [{
                 "title": "First Source Metadata Citation"
@@ -2013,18 +2164,57 @@
               }
             },
             "sourceProcessStep": [{
-                "description": "description"
+                "description": "description",
+                "timePeriod": {
+                  "endDateTime": "2017-12-28T15:15"
+                }
               },
               {
-                "description": "description"
+                "description": "description",
+                "timePeriod": {
+                  "endDateTime": "2017-12-28T15:16"
+                }
               }
             ],
             "scope": {
-              "scopeCode": "scopeCode"
+              "scopeCode": "scopeCode SRC001",
+              "scopeExtent": [{
+                "temporalExtent": [{
+                  "timePeriod": {
+                    "description": "publication date",
+                    "startDateTime": "2016-11-01"
+                  }
+                }]
+              }]
             }
           },
           {
-            "description": "description"
+            "sourceId": "SRC002",
+            "description": "description",
+            "sourceCitation": {
+              "title": "Source Citation Title SRC002",
+              "date": [{
+                "date": "2017-10-13",
+                "dateType": "publication"
+              }],
+              "responsibleParty": [{
+                "role": "originator",
+                "party": [{
+                  "contactId": "CID004"
+                }]
+              }]
+            },
+            "scope": {
+              "scopeCode": "scopeCode SRC002",
+              "scopeExtent": [{
+                "temporalExtent": [{
+                  "timePeriod": {
+                    "description": "publication date",
+                    "startDateTime": "2016-11-02"
+                  }
+                }]
+              }]
+            }
           }
         ],
         "processStep": [{
@@ -2032,9 +2222,9 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
             "rationale": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
             "timePeriod": {
+              "id": "TimePeriod001",
               "startDateTime": "2016-10-14T11:10:15.2-10:00",
               "endDateTime": "2016-12-31",
-              "id": "TimePeriod001",
               "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
               "identifier": {
                 "identifier": "TimePeriod Identifier",
@@ -2077,7 +2267,10 @@
             }
           },
           {
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "timePeriod": {
+              "endDateTime": "2017-12-28T15:28"
+            }
           }
         ]
       },
