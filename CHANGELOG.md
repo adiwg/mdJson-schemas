@@ -1,7 +1,21 @@
 # Change Log
 
-## [v2.4.0](https://github.com/adiwg/mdJson-schemas/tree/v2.4.0)
+## [v2.4.2](https://github.com/adiwg/mdJson-schemas/tree/v2.4.2) (2018-01-25)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.1...v2.4.2)
 
+**Implemented enhancements:**
+
+- domainItem rule change [\#178](https://github.com/adiwg/mdJson-schemas/issues/178)
+- Deprecate dataDictionary.dictionaryFormat [\#176](https://github.com/adiwg/mdJson-schemas/issues/176)
+
+**Fixed bugs:**
+
+- Wrong standard for dictionaryIncludedwithResource translation note [\#177](https://github.com/adiwg/mdJson-schemas/issues/177)
+
+## [v2.4.1](https://github.com/adiwg/mdJson-schemas/tree/v2.4.1) (2017-12-28)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.0...v2.4.1)
+
+## [v2.4.0](https://github.com/adiwg/mdJson-schemas/tree/v2.4.0) (2017-12-27)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.3.2...v2.4.0)
 
 **Implemented enhancements:**
