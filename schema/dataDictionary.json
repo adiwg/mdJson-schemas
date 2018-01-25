@@ -53,6 +53,11 @@
     },
     "dictionaryFormat": {
       "type": "string",
+      "description": "DEPRECATED in favor of dictionaryFunctionalLanguage.",
+      "deprecated": true
+    },
+    "dictionaryFunctionalLanguage": {
+      "type": "string",
       "description": "Formal functional language used in the dictionary.",
       "translation": {}
     },

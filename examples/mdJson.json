@@ -2513,7 +2513,7 @@
           "contactId": "CID001"
         }]
       },
-      "dictionaryFormat": "format",
+      "dictionaryFunctionalLanguage": "UML",
       "dictionaryIncludedWithResource": true,
       "domain": [{
           "domainId": "domainId0",
@@ -2695,7 +2695,7 @@
           "contactId": "CID006"
         }]
       },
-      "dictionaryFormat": "MSSQL",
+      "dictionaryFunctionalLanguage": "MSSQL",
       "dictionaryIncludedWithResource": false
     }
   ],
