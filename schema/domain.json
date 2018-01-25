@@ -63,6 +63,10 @@
           "translation": {
             "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute > listedValue > FC_ListedValue > definition"]
           }
+        },
+        "reference": {
+          "description": "Reference to a standard to a standard which contains a definition for the domain item.",
+          "$ref": "./citation.json#"
         }
       }
     }
