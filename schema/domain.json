@@ -17,7 +17,7 @@
     },
     "codeName": {
       "type": "string",
-      "description": "The code or 'lookup table' name for the domin used in the database schema definitions."
+      "description": "The code or 'lookup table' name for the domain used in the database schema definitions."
     },
     "description": {
       "type": "string",
