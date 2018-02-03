@@ -1,5 +1,13 @@
 # Change Log
 
+## [v2.4.3](https://github.com/adiwg/mdJson-schemas/tree/v2.4.3)
+
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.2...v2.4.3)
+
+**Merged pull requests:**
+
+- Update mdJson.json example [\#183](https://github.com/adiwg/mdJson-schemas/pull/183) ([stansmith907](https://github.com/stansmith907))
+
 ## [v2.4.2](https://github.com/adiwg/mdJson-schemas/tree/v2.4.2) (2018-01-25)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.1...v2.4.2)
 
