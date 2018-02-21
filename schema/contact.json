@@ -187,11 +187,13 @@
         ],
         "FGDC CSDGM": ["cntinfo > cntaddr"]
       },
+      "required": ["addressType"],
       "properties": {
         "addressType": {
           "type": "array",
           "description": "The type of address, usually mailing and/or physical.",
           "translation": {},
+          "minItems": 1,
           "items": {
             "type": "string"
           }
