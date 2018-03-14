@@ -1,12 +1,30 @@
 # Change Log
 
-## [v2.4.3](https://github.com/adiwg/mdJson-schemas/tree/v2.4.3)
+## [v2.4.5](https://github.com/adiwg/mdJson-schemas/tree/v2.4.5)
 
-[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.2...v2.4.3)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.4...v2.4.5)
+
+**Merged pull requests:**
+
+- Update mdJson.json example for schema version 2.4.4 [\#198](https://github.com/adiwg/mdJson-schemas/pull/198) ([stansmith907](https://github.com/stansmith907))
+
+## [v2.4.4](https://github.com/adiwg/mdJson-schemas/tree/v2.4.4) (2018-02-21)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.3...v2.4.4)
+
+**Implemented enhancements:**
+
+- entityAttribute 2.0 [\#84](https://github.com/adiwg/mdJson-schemas/issues/84)
+
+**Fixed bugs:**
+
+- addressType required [\#185](https://github.com/adiwg/mdJson-schemas/issues/185)
 
 **Merged pull requests:**
 
 - Update mdJson.json example [\#183](https://github.com/adiwg/mdJson-schemas/pull/183) ([stansmith907](https://github.com/stansmith907))
+
+## [v2.4.3](https://github.com/adiwg/mdJson-schemas/tree/v2.4.3) (2018-02-03)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.2...v2.4.3)
 
 ## [v2.4.2](https://github.com/adiwg/mdJson-schemas/tree/v2.4.2) (2018-01-25)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.1...v2.4.2)
@@ -29,7 +47,6 @@
 **Implemented enhancements:**
 
 - dataDictionary rule change [\#172](https://github.com/adiwg/mdJson-schemas/issues/172)
-- entityAttribute rule change [\#168](https://github.com/adiwg/mdJson-schemas/issues/168)
 - entity rule change [\#167](https://github.com/adiwg/mdJson-schemas/issues/167)
 - domain rule change [\#166](https://github.com/adiwg/mdJson-schemas/issues/166)
 - valueRange new object [\#165](https://github.com/adiwg/mdJson-schemas/issues/165)
