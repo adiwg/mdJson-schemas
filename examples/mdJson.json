@@ -2830,6 +2830,11 @@
               },
               {
                 "transferSize": 10.9,
+                "onlineOption": [
+                  {
+                    "uri": "http://ISO.uri/adiwg/3"
+                  }
+                ],
                 "distributionFormat": [
                   {
                     "formatSpecification": {
