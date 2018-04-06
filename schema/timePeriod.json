@@ -91,7 +91,26 @@
         "seconds": {
           "$ref": "#/definitions/durationPart"
         }
-      }
+      },
+      "anyOf": [{
+        "title": "years is required",
+        "required": ["years"]
+      }, {
+        "title": "months is required",
+        "required": ["months"]
+      }, {
+        "title": "days is required",
+        "required": ["days"]
+      }, {
+        "title": "hours is required",
+        "required": ["hours"]
+      }, {
+        "title": "minutes is required",
+        "required": ["minutes"]
+      }, {
+        "title": "seconds is required",
+        "required": ["seconds"]
+      }]
     },
     "durationPart": {
       "type": "integer"
