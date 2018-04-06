@@ -4,7 +4,7 @@
   "type": "object",
   "title": "distribution",
   "description": "Information about the distributor of and options for obtaining the resource.",
-  "example":"../examples/distribution.json",
+  "example": "../examples/distribution.json",
   "translation": {
     "ISO 19115-2": ["MD_Metadata > distribution > MD_Distribution"],
     "FGDC CSDGM": ["distinfo"]
@@ -23,10 +23,18 @@
         "ISO 19115-2": ["MD_Distribution"],
         "FGDC CSDGM": ["distinfo"]
       },
+      "minItems": 1,
       "items": {
         "$ref": "./distributor.json#",
         "description": "Information about the distributor of and options for obtaining the resource."
       }
     }
-  }
+  },
+  "anyOf": [{
+    "title": "description is required",
+    "required": ["description"]
+  }, {
+    "title": "distributor is required",
+    "required": ["distributor"]
+  }]
 }
