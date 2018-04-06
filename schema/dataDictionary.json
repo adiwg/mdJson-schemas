@@ -22,6 +22,7 @@
       "translation": {
         "ISO 19115-2": ["FC_FeatureCatalogue > scope"]
       },
+      "minItems": 1,
       "items": {
         "type": "string"
       }
