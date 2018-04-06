@@ -2,7 +2,7 @@
   "id": "constraint.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "schema for resource constraint",
-  "example":"../examples/constraint.json",
+  "example": "../examples/constraint.json",
   "required": ["type"],
   "anyOf": [{
     "type": "object",
@@ -87,7 +87,7 @@
     "legalConstraint": {
       "type": "object",
       "description": "Restrictions and legal prerequisites for accessing and using the resource or metadata.",
-      "example":"../examples/legalConstraint.json",
+      "example": "../examples/legalConstraint.json",
       "translation": {
         "ISO 19115-2": ["MD_LegalConstraints"]
       },
@@ -126,12 +126,22 @@
             "type": "string"
           }
         }
-      }
+      },
+      "anyOf": [{
+        "title": "accessConstraint is required",
+        "required": ["accessConstraint"]
+      }, {
+        "title": "useConstraint is required",
+        "required": ["useConstraint"]
+      }, {
+        "title": "otherConstraint is required",
+        "required": ["otherConstraint"]
+      }]
     },
     "securityConstraint": {
       "type": "object",
       "description": "Handling restrictions imposed on the resource or metadata for national security or similar security concerns.",
-      "example":"../examples/securityConstraint.json",
+      "example": "../examples/securityConstraint.json",
       "translation": {
         "ISO 19115-2": ["MD_SecurityConstraints"]
       },
