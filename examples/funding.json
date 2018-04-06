@@ -4,6 +4,33 @@
         "currency": "USD",
         "sourceId": "Alpha contactId",
         "recipientId": "Beta contactId",
+        "responsibleParty": [{
+            "role": "role",
+            "roleExtent": [{
+              "temporalExtent": [{
+                "timePeriod": {
+                  "startDateTime": "2016-10-24T11:10:15.2-10:00"
+                }
+              }]
+            }],
+            "party": [{
+              "contactId": "individualId0"
+            }]
+          },
+          {
+            "role": "role",
+            "roleExtent": [{
+              "temporalExtent": [{
+                "timePeriod": {
+                  "startDateTime": "2016-10-24T11:10:15.2-10:00"
+                }
+              }]
+            }],
+            "party": [{
+              "contactId": "individualId0"
+            }]
+          }
+        ],
         "matching": true,
         "comment": "some comments about the allocation"
       },

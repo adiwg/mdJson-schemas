@@ -59,6 +59,13 @@
           "type": "string",
           "description": "The contactId of the entity receiving the allocation."
         },
+        "responsibleParty": {
+          "type": "array",
+          "description": "Individuals and/or organizations other than source and recipient that serve as contact points or other roles related to the allocation",
+          "items": {
+            "$ref": "responsibility.json#"
+          }
+        },
         "matching": {
           "type": "boolean",
           "description": "Indicates whether the funds are to be considered matching funds.",
