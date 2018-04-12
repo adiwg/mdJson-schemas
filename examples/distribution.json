@@ -1,5 +1,6 @@
 [{
   "description": "description",
+  "liabilityStatement": "liabilityStatement",
   "distributor": [{
       "contact": {
         "role": "role",

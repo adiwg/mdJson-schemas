@@ -16,6 +16,15 @@
       "description": "A description of a set of distribution options.",
       "translation": {}
     },
+    "liabilityStatement": {
+      "type": "string",
+      "description": "A statement of the liability assumed by the resource owner.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > resourceConstraints > MD_LegalConstraints > otherConstraints"],
+        "FGDC CSDGM": ["distinfo > distliab"],
+        "sbJSON": ["rights"]
+      }
+    },
     "distributor": {
       "type": "array",
       "description": "Information about the distributor of and options for obtaining the resource.",
