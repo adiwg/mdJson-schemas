@@ -35,6 +35,7 @@
     "scopeDescription": {
       "type": "object",
       "additionalProperties": true,
+      "minProperties": 1,
       "properties": {
         "dataset": {
           "type": "string",
