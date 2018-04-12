@@ -39,7 +39,7 @@
   }, {
     "role": "role2",
     "roleExtent": [{
-      "temporalExtent": [{        
+      "temporalExtent": [{
         "timePeriod": {
           "startDateTime": "2016-10-24T11:10:15.2-10:00"
         }
@@ -120,7 +120,7 @@
     "coverageName": "coverageName1",
     "coverageDescription": "coverageDescription1"
   }],
-  "taxonomy": {
+  "taxonomy": [{
     "taxonomicSystem": [{
       "citation": {
         "title": "title"
@@ -146,10 +146,10 @@
     }],
     "identificationProcedure": "identificationProcedure",
     "taxonomicClassification": {
-      "taxonomicRank": "taxonomicRank",
-      "latinName": "latinName"
+      "taxonomicLevel": "taxonomicLevel",
+      "taxonomicName": "taxonomicName"
     }
-  },
+  }],
   "graphicOverview": [{
     "fileName": "fileName0"
   }, {

@@ -3,8 +3,7 @@
     "name": "mdJson",
     "version": "2.4.0"
   },
-  "contact": [
-    {
+  "contact": [{
       "contactId": "CID001",
       "isOrganization": false,
       "name": "Stan Smith",
@@ -13,13 +12,11 @@
         "CID002",
         "CID003"
       ],
-      "logoGraphic": [
-        {
+      "logoGraphic": [{
           "fileName": "fileName0",
           "fileDescription": "fileDescription0",
           "fileType": "fileType0",
-          "fileConstraint": [
-            {
+          "fileConstraint": [{
               "type": "use",
               "useLimitation": [
                 "useLimitation0",
@@ -53,11 +50,9 @@
               }
             }
           ],
-          "fileUri": [
-            {
-              "uri": "http://ISO.uri/adiwg/0"
-            }
-          ]
+          "fileUri": [{
+            "uri": "http://ISO.uri/adiwg/0"
+          }]
         },
         {
           "fileName": "fileName1",
@@ -68,8 +63,7 @@
           "fileName": "fileName2"
         }
       ],
-      "phone": [
-        {
+      "phone": [{
           "phoneName": "mobile",
           "phoneNumber": "111-111-1111",
           "service": [
@@ -87,8 +81,7 @@
           ]
         }
       ],
-      "address": [
-        {
+      "address": [{
           "addressType": [
             "mailing",
             "physical"
@@ -121,8 +114,7 @@
         "e.mail@address.com1",
         "e.mail@address.com2"
       ],
-      "onlineResource": [
-        {
+      "onlineResource": [{
           "uri": "http://ISO.uri/adiwg/1",
           "protocol": "protocol",
           "name": "name",
@@ -147,38 +139,30 @@
       "memberOfOrganization": [
         "CID005"
       ],
-      "logoGraphic": [
-        {
-          "fileName": "fileName"
-        }
-      ],
-      "phone": [
-        {
-          "phoneName": "single service",
-          "phoneNumber": "111-111-1111",
-          "service": [
-            "voice"
-          ]
-        }
-      ],
-      "address": [
-        {
-          "addressType": [
-            "addressType"
-          ],
-          "city": "Anchorage",
-          "administrativeArea": "AK",
-          "postalCode": "99508"
-        }
-      ],
+      "logoGraphic": [{
+        "fileName": "fileName"
+      }],
+      "phone": [{
+        "phoneName": "single service",
+        "phoneNumber": "111-111-1111",
+        "service": [
+          "voice"
+        ]
+      }],
+      "address": [{
+        "addressType": [
+          "addressType"
+        ],
+        "city": "Anchorage",
+        "administrativeArea": "AK",
+        "postalCode": "99508"
+      }],
       "electronicMailAddress": [
         "e.mail@address.com2"
       ],
-      "onlineResource": [
-        {
-          "uri": "http://ISO.uri/adiwg/2"
-        }
-      ],
+      "onlineResource": [{
+        "uri": "http://ISO.uri/adiwg/2"
+      }],
       "hoursOfService": [
         "hoursOfService"
       ],
@@ -190,25 +174,21 @@
       "isOrganization": true,
       "name": "Arctic Landscape Conservation Cooperative",
       "contactType": "federal",
-      "phone": [
-        {
-          "phoneName": "single service",
-          "phoneNumber": "111-111-1111",
-          "service": [
-            "voice"
-          ]
-        }
-      ],
-      "address": [
-        {
-          "addressType": [
-            "addressType"
-          ],
-          "city": "Anchorage",
-          "administrativeArea": "AK",
-          "postalCode": "99508"
-        }
-      ]
+      "phone": [{
+        "phoneName": "single service",
+        "phoneNumber": "111-111-1111",
+        "service": [
+          "voice"
+        ]
+      }],
+      "address": [{
+        "addressType": [
+          "addressType"
+        ],
+        "city": "Anchorage",
+        "administrativeArea": "AK",
+        "postalCode": "99508"
+      }]
     },
     {
       "contactId": "CID004",
@@ -218,25 +198,21 @@
       "memberOfOrganization": [
         "CID003"
       ],
-      "phone": [
-        {
-          "phoneName": "single service",
-          "phoneNumber": "111-111-1111",
-          "service": [
-            "voice"
-          ]
-        }
-      ],
-      "address": [
-        {
-          "addressType": [
-            "addressType"
-          ],
-          "city": "Anchorage",
-          "administrativeArea": "AK",
-          "postalCode": "99508"
-        }
-      ]
+      "phone": [{
+        "phoneName": "single service",
+        "phoneNumber": "111-111-1111",
+        "service": [
+          "voice"
+        ]
+      }],
+      "address": [{
+        "addressType": [
+          "addressType"
+        ],
+        "city": "Anchorage",
+        "administrativeArea": "AK",
+        "postalCode": "99508"
+      }]
     },
     {
       "contactId": "CID005",
@@ -252,25 +228,21 @@
         "CID002"
       ],
       "contactType": "individual",
-      "phone": [
-        {
-          "phoneName": "single service",
-          "phoneNumber": "111-111-1111",
-          "service": [
-            "voice"
-          ]
-        }
-      ],
-      "address": [
-        {
-          "addressType": [
-            "addressType"
-          ],
-          "city": "Anchorage",
-          "administrativeArea": "AK",
-          "postalCode": "99508"
-        }
-      ]
+      "phone": [{
+        "phoneName": "single service",
+        "phoneNumber": "111-111-1111",
+        "service": [
+          "voice"
+        ]
+      }],
+      "address": [{
+        "addressType": [
+          "addressType"
+        ],
+        "city": "Anchorage",
+        "administrativeArea": "AK",
+        "postalCode": "99508"
+      }]
     }
   ],
   "metadata": {
@@ -294,8 +266,7 @@
           "alternateTitle0",
           "alternateTitle1"
         ],
-        "date": [
-          {
+        "date": [{
             "date": "2016-10-13",
             "dateType": "dateType0"
           },
@@ -305,149 +276,118 @@
           }
         ],
         "edition": "edition",
-        "responsibleParty": [
-          {
+        "responsibleParty": [{
             "role": "principalInvestigator",
-            "roleExtent": [
-              {
+            "roleExtent": [{
                 "description": "Extent 1: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
               },
               {
                 "description": "Extent 2: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                "geographicExtent": [
-                  {
-                    "containsData": true,
-                    "geographicElement": [
-                      {
-                        "type": "Feature",
-                        "id": "polygon-75",
-                        "bbox": [
-                          -10.0,
-                          -10.0,
-                          10.0,
-                          10.0
-                        ],
-                        "geometry": {
-                          "type": "Polygon",
-                          "coordinates": [
-                            [
-                              [
-                                -161.74223,
-                                67.663378
-                              ],
-                              [
-                                -161.440345,
-                                67.630173
-                              ],
-                              [
-                                -161.294611,
-                                67.656257
-                              ],
-                              [
-                                -161.228063,
-                                67.625736
-                              ],
-                              [
-                                -161.247712,
-                                67.585909
-                              ],
-                              [
-                                -161.334662,
-                                67.591324
-                              ],
-                              [
-                                -161.566245,
-                                67.491263
-                              ],
-                              [
-                                -161.812338,
-                                67.455299
-                              ],
-                              [
-                                -161.825019,
-                                67.40123
-                              ],
-                              [
-                                -162.128301,
-                                67.414364
-                              ],
-                              [
-                                -162.167825,
-                                67.363047
-                              ],
-                              [
-                                -162.383403,
-                                67.293329
-                              ],
-                              [
-                                -162.633432,
-                                67.272237
-                              ],
-                              [
-                                -162.645587,
-                                67.356665
-                              ],
-                              [
-                                -162.369023,
-                                67.455264
-                              ],
-                              [
-                                -162.287324,
-                                67.551235
-                              ],
-                              [
-                                -162.171139,
-                                67.559356
-                              ],
-                              [
-                                -161.99344,
-                                67.646806
-                              ],
-                              [
-                                -161.857964,
-                                67.620329
-                              ],
-                              [
-                                -161.769431,
-                                67.629407
-                              ],
-                              [
-                                -161.74223,
-                                67.663378
-                              ]
-                            ]
+                "geographicExtent": [{
+                  "containsData": true,
+                  "geographicElement": [{
+                    "type": "Feature",
+                    "id": "polygon-75",
+                    "bbox": [-10.0, -10.0,
+                      10.0,
+                      10.0
+                    ],
+                    "geometry": {
+                      "type": "Polygon",
+                      "coordinates": [
+                        [
+                          [-161.74223,
+                            67.663378
+                          ],
+                          [-161.440345,
+                            67.630173
+                          ],
+                          [-161.294611,
+                            67.656257
+                          ],
+                          [-161.228063,
+                            67.625736
+                          ],
+                          [-161.247712,
+                            67.585909
+                          ],
+                          [-161.334662,
+                            67.591324
+                          ],
+                          [-161.566245,
+                            67.491263
+                          ],
+                          [-161.812338,
+                            67.455299
+                          ],
+                          [-161.825019,
+                            67.40123
+                          ],
+                          [-162.128301,
+                            67.414364
+                          ],
+                          [-162.167825,
+                            67.363047
+                          ],
+                          [-162.383403,
+                            67.293329
+                          ],
+                          [-162.633432,
+                            67.272237
+                          ],
+                          [-162.645587,
+                            67.356665
+                          ],
+                          [-162.369023,
+                            67.455264
+                          ],
+                          [-162.287324,
+                            67.551235
+                          ],
+                          [-162.171139,
+                            67.559356
+                          ],
+                          [-161.99344,
+                            67.646806
+                          ],
+                          [-161.857964,
+                            67.620329
+                          ],
+                          [-161.769431,
+                            67.629407
+                          ],
+                          [-161.74223,
+                            67.663378
                           ]
+                        ]
+                      ]
+                    },
+                    "properties": {
+                      "description": "Agashashok River site",
+                      "featureName": [
+                        "Agashashok River",
+                        "Camp Mosquito"
+                      ],
+                      "identifier": [{
+                          "identifier": "AGAR"
                         },
-                        "properties": {
-                          "description": "Agashashok River site",
-                          "featureName": [
-                            "Agashashok River",
-                            "Camp Mosquito"
-                          ],
-                          "identifier": [
-                            {
-                              "identifier": "AGAR"
-                            },
-                            {
-                              "identifier": "Kup25"
-                            }
-                          ],
-                          "featureScope": "collectionSite",
-                          "acquisitionMethod": "butterfly net",
-                          "customField": "not in schema",
-                          "customArray": [
-                            "string 1",
-                            "string 2"
-                          ]
+                        {
+                          "identifier": "Kup25"
                         }
-                      }
-                    ]
-                  }
-                ]
+                      ],
+                      "featureScope": "collectionSite",
+                      "acquisitionMethod": "butterfly net",
+                      "customField": "not in schema",
+                      "customArray": [
+                        "string 1",
+                        "string 2"
+                      ]
+                    }
+                  }]
+                }]
               }
             ],
-            "party": [
-              {
+            "party": [{
                 "contactId": "CID001"
               },
               {
@@ -457,23 +397,20 @@
           },
           {
             "role": "funder",
-            "party": [
-              {
-                "contactId": "CID003",
-                "organizationMembers": [
-                  "CID004",
-                  "CID001"
-                ]
-              }
-            ]
+            "party": [{
+              "contactId": "CID003",
+              "organizationMembers": [
+                "CID004",
+                "CID001"
+              ]
+            }]
           }
         ],
         "presentationForm": [
           "presentationForm0",
           "presentationForm1"
         ],
-        "identifier": [
-          {
+        "identifier": [{
             "identifier": "identifier0"
           },
           {
@@ -489,16 +426,14 @@
           "otherCitationDetails0",
           "otherCitationDetails1"
         ],
-        "onlineResource": [
-          {
+        "onlineResource": [{
             "uri": "http://ISO.uri/adiwg/0"
           },
           {
             "uri": "http://ISO.uri/adiwg/1"
           }
         ],
-        "graphic": [
-          {
+        "graphic": [{
             "fileName": "fileName"
           },
           {
@@ -511,8 +446,7 @@
         "country": "country",
         "characterSet": "characterSet"
       },
-      "otherMetadataLocale": [
-        {
+      "otherMetadataLocale": [{
           "language": "language0",
           "country": "country0",
           "characterSet": "characterSet0"
@@ -523,11 +457,9 @@
           "characterSet": "characterSet1"
         }
       ],
-      "metadataContact": [
-        {
+      "metadataContact": [{
           "role": "author",
-          "party": [
-            {
+          "party": [{
               "contactId": "CID001"
             },
             {
@@ -540,15 +472,12 @@
         },
         {
           "role": "custodian",
-          "party": [
-            {
-              "contactId": "CID002"
-            }
-          ]
+          "party": [{
+            "contactId": "CID002"
+          }]
         }
       ],
-      "metadataDate": [
-        {
+      "metadataDate": [{
           "date": "2016-10-31",
           "dateType": "dateType"
         },
@@ -561,8 +490,7 @@
           "dateType": "nextUpdate"
         }
       ],
-      "metadataOnlineResource": [
-        {
+      "metadataOnlineResource": [{
           "uri": "http://ISO.uri/adiwg/0"
         },
         {
@@ -571,8 +499,7 @@
       ],
       "metadataMaintenance": {
         "frequency": "monthly",
-        "date": [
-          {
+        "date": [{
             "date": "2016-10-12",
             "dateType": "dateType00"
           },
@@ -581,14 +508,11 @@
             "dateType": "nextUpdate"
           }
         ],
-        "scope": [
-          {
+        "scope": [{
             "scopeCode": "dataset",
-            "scopeExtent": [
-              {
+            "scopeExtent": [{
                 "description": "Extent 1: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                "temporalExtent": [
-                  {
+                "temporalExtent": [{
                     "timeInstant": {
                       "dateTime": "2016-10-24T11:10:15.200-10:00"
                     }
@@ -602,137 +526,112 @@
               },
               {
                 "description": "Extent 2: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                "geographicExtent": [
-                  {
-                    "containsData": false,
-                    "identifier": {
-                      "identifier": "identifier"
+                "geographicExtent": [{
+                  "containsData": false,
+                  "identifier": {
+                    "identifier": "identifier"
+                  },
+                  "boundingBox": {
+                    "westLongitude": -140.0,
+                    "eastLongitude": -120.0,
+                    "southLatitude": 49.0,
+                    "northLatitude": 70.0
+                  },
+                  "geographicElement": [{
+                      "type": "Point",
+                      "coordinates": [
+                        100.0,
+                        0.0
+                      ]
                     },
-                    "boundingBox": {
-                      "westLongitude": -140.0,
-                      "eastLongitude": -120.0,
-                      "southLatitude": 49.0,
-                      "northLatitude": 70.0
-                    },
-                    "geographicElement": [
-                      {
-                        "type": "Point",
-                        "coordinates": [
+                    {
+                      "type": "LineString",
+                      "coordinates": [
+                        [
                           100.0,
                           0.0
+                        ],
+                        [
+                          101.0,
+                          1.0
                         ]
-                      },
-                      {
-                        "type": "LineString",
-                        "coordinates": [
-                          [
-                            100.0,
-                            0.0
+                      ]
+                    },
+                    {
+                      "type": "Polygon",
+                      "coordinates": [
+                        [
+                          [-161.74223,
+                            67.663378
                           ],
-                          [
-                            101.0,
-                            1.0
+                          [-161.440345,
+                            67.630173
+                          ],
+                          [-161.294611,
+                            67.656257
+                          ],
+                          [-161.228063,
+                            67.625736
+                          ],
+                          [-161.247712,
+                            67.585909
+                          ],
+                          [-161.334662,
+                            67.591324
+                          ],
+                          [-161.566245,
+                            67.491263
+                          ],
+                          [-161.812338,
+                            67.455299
+                          ],
+                          [-161.825019,
+                            67.40123
+                          ],
+                          [-162.128301,
+                            67.414364
+                          ],
+                          [-162.167825,
+                            67.363047
+                          ],
+                          [-162.383403,
+                            67.293329
+                          ],
+                          [-162.633432,
+                            67.272237
+                          ],
+                          [-162.645587,
+                            67.356665
+                          ],
+                          [-162.369023,
+                            67.455264
+                          ],
+                          [-162.287324,
+                            67.551235
+                          ],
+                          [-162.171139,
+                            67.559356
+                          ],
+                          [-161.99344,
+                            67.646806
+                          ],
+                          [-161.857964,
+                            67.620329
+                          ],
+                          [-161.769431,
+                            67.629407
+                          ],
+                          [-161.74223,
+                            67.663378
                           ]
                         ]
-                      },
-                      {
-                        "type": "Polygon",
-                        "coordinates": [
-                          [
-                            [
-                              -161.74223,
-                              67.663378
-                            ],
-                            [
-                              -161.440345,
-                              67.630173
-                            ],
-                            [
-                              -161.294611,
-                              67.656257
-                            ],
-                            [
-                              -161.228063,
-                              67.625736
-                            ],
-                            [
-                              -161.247712,
-                              67.585909
-                            ],
-                            [
-                              -161.334662,
-                              67.591324
-                            ],
-                            [
-                              -161.566245,
-                              67.491263
-                            ],
-                            [
-                              -161.812338,
-                              67.455299
-                            ],
-                            [
-                              -161.825019,
-                              67.40123
-                            ],
-                            [
-                              -162.128301,
-                              67.414364
-                            ],
-                            [
-                              -162.167825,
-                              67.363047
-                            ],
-                            [
-                              -162.383403,
-                              67.293329
-                            ],
-                            [
-                              -162.633432,
-                              67.272237
-                            ],
-                            [
-                              -162.645587,
-                              67.356665
-                            ],
-                            [
-                              -162.369023,
-                              67.455264
-                            ],
-                            [
-                              -162.287324,
-                              67.551235
-                            ],
-                            [
-                              -162.171139,
-                              67.559356
-                            ],
-                            [
-                              -161.99344,
-                              67.646806
-                            ],
-                            [
-                              -161.857964,
-                              67.620329
-                            ],
-                            [
-                              -161.769431,
-                              67.629407
-                            ],
-                            [
-                              -161.74223,
-                              67.663378
-                            ]
-                          ]
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                      ]
+                    }
+                  ]
+                }]
               }
             ],
-            "scopeDescription": [
-              {
+            "scopeDescription": [{
                 "dataset": "CUSTOMER",
                 "attributes": "customer_id, invoice"
               },
@@ -752,27 +651,21 @@
           "note00",
           "note01"
         ],
-        "contact": [
-          {
+        "contact": [{
             "role": "processor",
-            "party": [
-              {
-                "contactId": "CID004"
-              }
-            ]
+            "party": [{
+              "contactId": "CID004"
+            }]
           },
           {
             "role": "contributor",
-            "party": [
-              {
-                "contactId": "CID006"
-              }
-            ]
+            "party": [{
+              "contactId": "CID006"
+            }]
           }
         ]
       },
-      "alternateMetadataReference": [
-        {
+      "alternateMetadataReference": [{
           "title": "alternate metadata FGDC"
         },
         {
@@ -782,8 +675,7 @@
       "metadataStatus": "notAccepted"
     },
     "resourceInfo": {
-      "resourceType": [
-        {
+      "resourceType": [{
           "type": "tableDigital",
           "name": "My Table Name"
         },
@@ -798,8 +690,7 @@
           "How I spent my summer",
           "Research under the midnight-sun"
         ],
-        "date": [
-          {
+        "date": [{
             "date": "2017-06-13",
             "dateType": "publication"
           },
@@ -809,149 +700,118 @@
           }
         ],
         "edition": "edition",
-        "responsibleParty": [
-          {
+        "responsibleParty": [{
             "role": "principalInvestigator",
-            "roleExtent": [
-              {
+            "roleExtent": [{
                 "description": "Extent 1: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
               },
               {
                 "description": "Extent 2: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                "geographicExtent": [
-                  {
-                    "containsData": true,
-                    "geographicElement": [
-                      {
-                        "type": "Feature",
-                        "id": "polygon-75",
-                        "bbox": [
-                          -10.0,
-                          -10.0,
-                          10.0,
-                          10.0
-                        ],
-                        "geometry": {
-                          "type": "Polygon",
-                          "coordinates": [
-                            [
-                              [
-                                -161.74223,
-                                67.663378
-                              ],
-                              [
-                                -161.440345,
-                                67.630173
-                              ],
-                              [
-                                -161.294611,
-                                67.656257
-                              ],
-                              [
-                                -161.228063,
-                                67.625736
-                              ],
-                              [
-                                -161.247712,
-                                67.585909
-                              ],
-                              [
-                                -161.334662,
-                                67.591324
-                              ],
-                              [
-                                -161.566245,
-                                67.491263
-                              ],
-                              [
-                                -161.812338,
-                                67.455299
-                              ],
-                              [
-                                -161.825019,
-                                67.40123
-                              ],
-                              [
-                                -162.128301,
-                                67.414364
-                              ],
-                              [
-                                -162.167825,
-                                67.363047
-                              ],
-                              [
-                                -162.383403,
-                                67.293329
-                              ],
-                              [
-                                -162.633432,
-                                67.272237
-                              ],
-                              [
-                                -162.645587,
-                                67.356665
-                              ],
-                              [
-                                -162.369023,
-                                67.455264
-                              ],
-                              [
-                                -162.287324,
-                                67.551235
-                              ],
-                              [
-                                -162.171139,
-                                67.559356
-                              ],
-                              [
-                                -161.99344,
-                                67.646806
-                              ],
-                              [
-                                -161.857964,
-                                67.620329
-                              ],
-                              [
-                                -161.769431,
-                                67.629407
-                              ],
-                              [
-                                -161.74223,
-                                67.663378
-                              ]
-                            ]
+                "geographicExtent": [{
+                  "containsData": true,
+                  "geographicElement": [{
+                    "type": "Feature",
+                    "id": "polygon-75",
+                    "bbox": [-10.0, -10.0,
+                      10.0,
+                      10.0
+                    ],
+                    "geometry": {
+                      "type": "Polygon",
+                      "coordinates": [
+                        [
+                          [-161.74223,
+                            67.663378
+                          ],
+                          [-161.440345,
+                            67.630173
+                          ],
+                          [-161.294611,
+                            67.656257
+                          ],
+                          [-161.228063,
+                            67.625736
+                          ],
+                          [-161.247712,
+                            67.585909
+                          ],
+                          [-161.334662,
+                            67.591324
+                          ],
+                          [-161.566245,
+                            67.491263
+                          ],
+                          [-161.812338,
+                            67.455299
+                          ],
+                          [-161.825019,
+                            67.40123
+                          ],
+                          [-162.128301,
+                            67.414364
+                          ],
+                          [-162.167825,
+                            67.363047
+                          ],
+                          [-162.383403,
+                            67.293329
+                          ],
+                          [-162.633432,
+                            67.272237
+                          ],
+                          [-162.645587,
+                            67.356665
+                          ],
+                          [-162.369023,
+                            67.455264
+                          ],
+                          [-162.287324,
+                            67.551235
+                          ],
+                          [-162.171139,
+                            67.559356
+                          ],
+                          [-161.99344,
+                            67.646806
+                          ],
+                          [-161.857964,
+                            67.620329
+                          ],
+                          [-161.769431,
+                            67.629407
+                          ],
+                          [-161.74223,
+                            67.663378
                           ]
+                        ]
+                      ]
+                    },
+                    "properties": {
+                      "description": "Agashashok River site",
+                      "featureName": [
+                        "Agashashok River",
+                        "Camp Mosquito"
+                      ],
+                      "identifier": [{
+                          "identifier": "AGAR"
                         },
-                        "properties": {
-                          "description": "Agashashok River site",
-                          "featureName": [
-                            "Agashashok River",
-                            "Camp Mosquito"
-                          ],
-                          "identifier": [
-                            {
-                              "identifier": "AGAR"
-                            },
-                            {
-                              "identifier": "Kup25"
-                            }
-                          ],
-                          "featureScope": "collectionSite",
-                          "acquisitionMethod": "butterfly net",
-                          "customField": "not in schema",
-                          "customArray": [
-                            "string 1",
-                            "string 2"
-                          ]
+                        {
+                          "identifier": "Kup25"
                         }
-                      }
-                    ]
-                  }
-                ]
+                      ],
+                      "featureScope": "collectionSite",
+                      "acquisitionMethod": "butterfly net",
+                      "customField": "not in schema",
+                      "customArray": [
+                        "string 1",
+                        "string 2"
+                      ]
+                    }
+                  }]
+                }]
               }
             ],
-            "party": [
-              {
+            "party": [{
                 "contactId": "CID001"
               },
               {
@@ -961,31 +821,26 @@
           },
           {
             "role": "funder",
-            "party": [
-              {
-                "contactId": "CID003",
-                "organizationMembers": [
-                  "CID004",
-                  "CID001"
-                ]
-              }
-            ]
+            "party": [{
+              "contactId": "CID003",
+              "organizationMembers": [
+                "CID004",
+                "CID001"
+              ]
+            }]
           },
           {
             "role": "originator",
-            "party": [
-              {
-                "contactId": "CID004"
-              }
-            ]
+            "party": [{
+              "contactId": "CID004"
+            }]
           }
         ],
         "presentationForm": [
           "presentationForm0",
           "presentationForm1"
         ],
-        "identifier": [
-          {
+        "identifier": [{
             "identifier": "identifier0"
           },
           {
@@ -1001,16 +856,14 @@
           "otherCitationDetails0",
           "otherCitationDetails1"
         ],
-        "onlineResource": [
-          {
+        "onlineResource": [{
             "uri": "http://ISO.uri/adiwg/0"
           },
           {
             "uri": "http://ISO.uri/adiwg/1"
           }
         ],
-        "graphic": [
-          {
+        "graphic": [{
             "fileName": "fileName"
           },
           {
@@ -1021,11 +874,9 @@
       "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "shortAbstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "purpose": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "resourceUsage": [
-        {
+      "resourceUsage": [{
           "specificUsage": "My Specific Usage is quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
-          "temporalExtent": [
-            {
+          "temporalExtent": [{
               "timeInstant": {
                 "dateTime": "2016-10-24T11:10:15.2-10:00",
                 "id": "instant_001",
@@ -1079,8 +930,7 @@
                       "alternateTitle0",
                       "alternateTitle1"
                     ],
-                    "date": [
-                      {
+                    "date": [{
                         "date": "2016-10-13",
                         "dateType": "dateType0"
                       },
@@ -1090,11 +940,9 @@
                       }
                     ],
                     "edition": "edition",
-                    "responsibleParty": [
-                      {
+                    "responsibleParty": [{
                         "role": "principalInvestigator",
-                        "party": [
-                          {
+                        "party": [{
                             "contactId": "CID001"
                           },
                           {
@@ -1104,23 +952,20 @@
                       },
                       {
                         "role": "funder",
-                        "party": [
-                          {
-                            "contactId": "CID003",
-                            "organizationMembers": [
-                              "CID004",
-                              "CID001"
-                            ]
-                          }
-                        ]
+                        "party": [{
+                          "contactId": "CID003",
+                          "organizationMembers": [
+                            "CID004",
+                            "CID001"
+                          ]
+                        }]
                       }
                     ],
                     "presentationForm": [
                       "presentationForm0",
                       "presentationForm1"
                     ],
-                    "identifier": [
-                      {
+                    "identifier": [{
                         "identifier": "identifier0"
                       },
                       {
@@ -1136,16 +981,14 @@
                       "otherCitationDetails0",
                       "otherCitationDetails1"
                     ],
-                    "onlineResource": [
-                      {
+                    "onlineResource": [{
                         "uri": "http://ISO.uri/adiwg/0"
                       },
                       {
                         "uri": "http://ISO.uri/adiwg/1"
                       }
                     ],
-                    "graphic": [
-                      {
+                    "graphic": [{
                         "fileName": "fileName"
                       },
                       {
@@ -1168,8 +1011,7 @@
           ],
           "documentedIssue": {
             "title": "My Documented Issue",
-            "date": [
-              {
+            "date": [{
                 "date": "2016-10-13",
                 "dateType": "dateType0"
               },
@@ -1179,27 +1021,22 @@
               }
             ]
           },
-          "additionalDocumentation": [
-            {
+          "additionalDocumentation": [{
               "title": "title1"
             },
             {
               "title": "title2"
             }
           ],
-          "userContactInfo": [
-            {
+          "userContactInfo": [{
               "role": "administrator",
-              "party": [
-                {
-                  "contactId": "CID006"
-                }
-              ]
+              "party": [{
+                "contactId": "CID006"
+              }]
             },
             {
               "role": "coPrincipalInvestigator",
-              "party": [
-                {
+              "party": [{
                   "contactId": "CID001"
                 },
                 {
@@ -1217,11 +1054,9 @@
         "incomplete",
         "suspended"
       ],
-      "pointOfContact": [
-        {
+      "pointOfContact": [{
           "role": "pointOfContact",
-          "party": [
-            {
+          "party": [{
               "contactId": "CID001"
             },
             {
@@ -1231,11 +1066,9 @@
         },
         {
           "role": "principalInvestigator",
-          "party": [
-            {
-              "contactId": "CID004"
-            }
-          ]
+          "party": [{
+            "contactId": "CID004"
+          }]
         }
       ],
       "defaultResourceLocale": {
@@ -1243,8 +1076,7 @@
         "country": "USA",
         "characterSet": "UTF-8"
       },
-      "otherResourceLocale": [
-        {
+      "otherResourceLocale": [{
           "language": "language0",
           "country": "country0",
           "characterSet": "characterSet0"
@@ -1265,8 +1097,7 @@
         "startDateTime": "2016-06-01",
         "endDateTime": "2016-08-15"
       },
-      "temporalResolution": [
-        {
+      "temporalResolution": [{
           "years": 1,
           "months": 8,
           "days": 13
@@ -1275,8 +1106,7 @@
           "seconds": 5
         }
       ],
-      "spatialReferenceSystem": [
-        {
+      "spatialReferenceSystem": [{
           "referenceSystemType": "referenceSystemType0",
           "referenceSystemIdentifier": {
             "identifier": "spatial reference system identifier",
@@ -1289,8 +1119,7 @@
                 "alternateTitle0",
                 "alternateTitle1"
               ],
-              "date": [
-                {
+              "date": [{
                   "date": "2016-10-13",
                   "dateType": "dateType0"
                 },
@@ -1300,11 +1129,9 @@
                 }
               ],
               "edition": "edition",
-              "responsibleParty": [
-                {
+              "responsibleParty": [{
                   "role": "principalInvestigator",
-                  "party": [
-                    {
+                  "party": [{
                       "contactId": "CID001"
                     },
                     {
@@ -1314,23 +1141,20 @@
                 },
                 {
                   "role": "funder",
-                  "party": [
-                    {
-                      "contactId": "CID003",
-                      "organizationMembers": [
-                        "CID004",
-                        "CID001"
-                      ]
-                    }
-                  ]
+                  "party": [{
+                    "contactId": "CID003",
+                    "organizationMembers": [
+                      "CID004",
+                      "CID001"
+                    ]
+                  }]
                 }
               ],
               "presentationForm": [
                 "presentationForm0",
                 "presentationForm1"
               ],
-              "identifier": [
-                {
+              "identifier": [{
                   "identifier": "identifier0"
                 },
                 {
@@ -1346,16 +1170,14 @@
                 "otherCitationDetails0",
                 "otherCitationDetails1"
               ],
-              "onlineResource": [
-                {
+              "onlineResource": [{
                   "uri": "http://ISO.uri/adiwg/0"
                 },
                 {
                   "uri": "http://ISO.uri/adiwg/1"
                 }
               ],
-              "graphic": [
-                {
+              "graphic": [{
                   "fileName": "fileName"
                 },
                 {
@@ -1378,12 +1200,10 @@
         "vector",
         "stereoModel"
       ],
-      "spatialRepresentation": [
-        {
+      "spatialRepresentation": [{
           "gridRepresentation": {
             "numberOfDimensions": 9,
-            "dimension": [
-              {
+            "dimension": [{
                 "dimensionType": "column",
                 "dimensionSize": 9,
                 "resolution": {
@@ -1406,8 +1226,7 @@
         {
           "vectorRepresentation": {
             "topologyLevel": "fullTopology3D",
-            "vectorObject": [
-              {
+            "vectorObject": [{
                 "objectType": "object Type 0",
                 "objectCount": 9
               },
@@ -1422,8 +1241,7 @@
           "georectifiedRepresentation": {
             "gridRepresentation": {
               "numberOfDimensions": 9,
-              "dimension": [
-                {
+              "dimension": [{
                   "dimensionType": "row",
                   "dimensionSize": 90
                 },
@@ -1468,8 +1286,7 @@
           "georeferenceableRepresentation": {
             "gridRepresentation": {
               "numberOfDimensions": 9,
-              "dimension": [
-                {
+              "dimension": [{
                   "dimensionType": "row",
                   "dimensionSize": 90
                 },
@@ -1485,8 +1302,7 @@
             "orientationParameterAvailable": true,
             "orientationParameterDescription": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "georeferencedParameter": "Georeferenced Parameter 00",
-            "parameterCitation": [
-              {
+            "parameterCitation": [{
                 "title": "title0"
               },
               {
@@ -1496,8 +1312,7 @@
           }
         }
       ],
-      "spatialResolution": [
-        {
+      "spatialResolution": [{
           "scaleFactor": 99999
         },
         {
@@ -1511,10 +1326,8 @@
           "levelOfDetail": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         }
       ],
-      "keyword": [
-        {
-          "keyword": [
-            {
+      "keyword": [{
+          "keyword": [{
               "keyword": "Barrow"
             },
             {
@@ -1530,8 +1343,7 @@
           }
         },
         {
-          "keyword": [
-            {
+          "keyword": [{
               "keyword": "Brown Bear",
               "keywordId": "TSN12365741"
             },
@@ -1557,8 +1369,7 @@
           }
         },
         {
-          "keyword": [
-            {
+          "keyword": [{
               "keyword": "butter"
             },
             {
@@ -1574,8 +1385,7 @@
           }
         },
         {
-          "keyword": [
-            {
+          "keyword": [{
               "keyword": "inlandWaters",
               "keywordId": "012"
             },
@@ -1594,8 +1404,7 @@
           }
         },
         {
-          "keyword": [
-            {
+          "keyword": [{
               "keyword": "carbon dating"
             },
             {
@@ -1608,80 +1417,60 @@
           }
         }
       ],
-      "taxonomy": {
-        "taxonomicSystem": [
-          {
+      "taxonomy": [{
+        "taxonomicSystem": [{
             "citation": {
               "title": "ITIS - Integrated Taxonomic Information System",
               "alternateTitle": [
                 "Citation for ITIS"
               ],
-              "date": [
-                {
-                  "date": "2013-06-22",
-                  "dateType": "publication"
-                }
-              ],
-              "responsibleParty": [
-                {
-                  "role": "originator",
-                  "party": [
-                    {
-                      "contactId": "CID004"
-                    }
-                  ]
-                }
-              ]
+              "date": [{
+                "date": "2013-06-22",
+                "dateType": "publication"
+              }],
+              "responsibleParty": [{
+                "role": "originator",
+                "party": [{
+                  "contactId": "CID004"
+                }]
+              }]
             },
             "modifications": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
           },
           {
             "citation": {
               "title": "Some OTHER Taxonomic System",
-              "date": [
-                {
-                  "date": "2013-06-22",
-                  "dateType": "publication"
-                }
-              ],
-              "responsibleParty": [
-                {
-                  "role": "originator",
-                  "party": [
-                    {
-                      "contactId": "CID004"
-                    }
-                  ]
-                }
-              ]
+              "date": [{
+                "date": "2013-06-22",
+                "dateType": "publication"
+              }],
+              "responsibleParty": [{
+                "role": "originator",
+                "party": [{
+                  "contactId": "CID004"
+                }]
+              }]
             }
           }
         ],
         "generalScope": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "identificationReference": [
-          {
+        "identificationReference": [{
             "identifier": "identifier0",
             "namespace": "namespace0",
             "version": "version0",
             "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "authority": {
               "title": "title0",
-              "date": [
-                {
-                  "date": "2013-06-22",
-                  "dateType": "publication"
-                }
-              ],
-              "responsibleParty": [
-                {
-                  "role": "originator",
-                  "party": [
-                    {
-                      "contactId": "CID004"
-                    }
-                  ]
-                }
-              ]
+              "date": [{
+                "date": "2013-06-22",
+                "dateType": "publication"
+              }],
+              "responsibleParty": [{
+                "role": "originator",
+                "party": [{
+                  "contactId": "CID004"
+                }]
+              }]
             }
           },
           {
@@ -1691,30 +1480,22 @@
             "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "authority": {
               "title": "title1",
-              "date": [
-                {
-                  "date": "2013-06-22",
-                  "dateType": "publication"
-                }
-              ],
-              "responsibleParty": [
-                {
-                  "role": "originator",
-                  "party": [
-                    {
-                      "contactId": "CID004"
-                    }
-                  ]
-                }
-              ]
+              "date": [{
+                "date": "2013-06-22",
+                "dateType": "publication"
+              }],
+              "responsibleParty": [{
+                "role": "originator",
+                "party": [{
+                  "contactId": "CID004"
+                }]
+              }]
             }
           }
         ],
-        "observer": [
-          {
+        "observer": [{
             "role": "coPrincipalInvestigator",
-            "party": [
-              {
+            "party": [{
                 "contactId": "CID006"
               },
               {
@@ -1724,117 +1505,102 @@
           },
           {
             "role": "editor",
-            "party": [
-              {
-                "contactId": "CID001"
-              }
-            ]
+            "party": [{
+              "contactId": "CID001"
+            }]
           }
         ],
         "identificationProcedure": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "identificationCompleteness": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "voucher": [
-          {
+        "voucher": [{
             "specimen": "bear claw",
             "repository": {
               "role": "custodian",
-              "party": [
-                {
-                  "contactId": "CID002"
-                }
-              ]
+              "party": [{
+                "contactId": "CID002"
+              }]
             }
           },
           {
             "specimen": "moose tooth",
             "repository": {
               "role": "custodian",
-              "party": [
-                {
-                  "contactId": "CID002"
-                }
-              ]
+              "party": [{
+                "contactId": "CID002"
+              }]
             }
           }
         ],
         "taxonomicClassification": {
-          "taxonomicRank": "taxonomicRank0",
-          "latinName": "latinName",
+          "taxonomicLevel": "taxonomicLevel0",
+          "taxonomicName": "taxonomicName",
           "commonName": [
             "commonName0",
             "commonName1"
           ],
-          "subClassification": [
-            {
+          "subClassification": [{
               "taxonomicSystemId": "taxonomicSystemId00",
-              "taxonomicRank": "taxonomicRank00",
-              "latinName": "latinName",
+              "taxonomicLevel": "taxonomicLevel00",
+              "taxonomicName": "taxonomicName",
               "commonName": [
                 "commonName0",
                 "commonName1"
               ],
-              "subClassification": [
-                {
-                  "taxonomicRank": "taxonomicRank000",
-                  "latinName": "latinName",
-                  "commonName": [
-                    "commonName0",
-                    "commonName1"
-                  ],
-                  "subClassification": [
-                    {
-                      "taxonomicSystemId": "taxonomicSystemId0000.1",
-                      "taxonomicRank": "taxonomicRank0000.1",
-                      "latinName": "latinName",
-                      "commonName": [
-                        "commonName0",
-                        "commonName1"
-                      ],
-                      "subClassification": []
-                    },
-                    {
-                      "taxonomicSystemId": "taxonomicSystemId0000.2",
-                      "taxonomicRank": "taxonomicRank0000.2",
-                      "latinName": "latinName",
-                      "commonName": [
-                        "commonName0",
-                        "commonName1"
-                      ],
-                      "subClassification": []
-                    }
-                  ]
-                }
-              ]
+              "subClassification": [{
+                "taxonomicLevel": "taxonomicLevel000",
+                "taxonomicName": "taxonomicName",
+                "commonName": [
+                  "commonName0",
+                  "commonName1"
+                ],
+                "subClassification": [{
+                    "taxonomicSystemId": "taxonomicSystemId0000.1",
+                    "taxonomicLevel": "taxonomicLevel0000.1",
+                    "taxonomicName": "taxonomicName",
+                    "commonName": [
+                      "commonName0",
+                      "commonName1"
+                    ],
+                    "subClassification": []
+                  },
+                  {
+                    "taxonomicSystemId": "taxonomicSystemId0000.2",
+                    "taxonomicLevel": "taxonomicLevel0000.2",
+                    "taxonomicName": "taxonomicName",
+                    "commonName": [
+                      "commonName0",
+                      "commonName1"
+                    ],
+                    "subClassification": []
+                  }
+                ]
+              }]
             },
             {
-              "taxonomicRank": "taxonomicRank01",
-              "latinName": "latinName",
+              "taxonomicLevel": "taxonomicLevel01",
+              "taxonomicName": "taxonomicName",
               "commonName": [
                 "commonName0",
                 "commonName1"
               ],
-              "subClassification": [
-                {
-                  "taxonomicRank": "taxonomicRank010",
-                  "latinName": "latinName",
-                  "commonName": [
-                    "commonName0",
-                    "commonName1"
-                  ],
-                  "subClassification": []
-                }
-              ]
+              "subClassification": [{
+                "taxonomicLevel": "taxonomicLevel010",
+                "taxonomicName": "taxonomicName",
+                "commonName": [
+                  "commonName0",
+                  "commonName1"
+                ],
+                "subClassification": []
+              }]
             }
           ]
         }
-      },
-      "graphicOverview": [
-        {
+      }],
+      "graphicOverview": [{
           "fileName": "fileName 0",
           "fileDescription": "fileDescription 0",
           "fileType": "fileType 0",
-          "fileConstraint": [
-            {
+          "fileConstraint": [{
               "type": "use",
               "useLimitation": [
                 "useLimitation0",
@@ -1859,25 +1625,20 @@
               }
             }
           ],
-          "fileUri": [
-            {
-              "uri": "http://ISO.uri/adiwg/0"
-            }
-          ]
+          "fileUri": [{
+            "uri": "http://ISO.uri/adiwg/0"
+          }]
         },
         {
           "fileName": "fileName 1",
           "fileDescription": "fileDescription 1",
           "fileType": "fileType 1",
-          "fileUri": [
-            {
-              "uri": "http://ISO.uri/adiwg/1"
-            }
-          ]
+          "fileUri": [{
+            "uri": "http://ISO.uri/adiwg/1"
+          }]
         }
       ],
-      "constraint": [
-        {
+      "constraint": [{
           "type": "use",
           "useLimitation": [
             "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -1886,16 +1647,14 @@
           "scope": {
             "scopeCode": "scopeCode"
           },
-          "graphic": [
-            {
+          "graphic": [{
               "fileName": "fileName0"
             },
             {
               "fileName": "fileName1"
             }
           ],
-          "reference": [
-            {
+          "reference": [{
               "title": "title0"
             },
             {
@@ -1904,19 +1663,15 @@
           ],
           "releasability": {
             "statement": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            "addressee": [
-              {
+            "addressee": [{
                 "role": "client",
-                "party": [
-                  {
-                    "contactId": "CID001"
-                  }
-                ]
+                "party": [{
+                  "contactId": "CID001"
+                }]
               },
               {
                 "role": "stakeholder",
-                "party": [
-                  {
+                "party": [{
                     "contactId": "CID002"
                   },
                   {
@@ -1930,11 +1685,9 @@
               "unrestricted"
             ]
           },
-          "responsibleParty": [
-            {
+          "responsibleParty": [{
               "role": "coAuthor",
-              "party": [
-                {
+              "party": [{
                   "contactId": "CID006"
                 },
                 {
@@ -1944,11 +1697,9 @@
             },
             {
               "role": "rightsHolder",
-              "party": [
-                {
-                  "contactId": "CID005"
-                }
-              ]
+              "party": [{
+                "contactId": "CID005"
+              }]
             }
           ]
         },
@@ -1961,8 +1712,7 @@
           "scope": {
             "scopeCode": "scopeCode"
           },
-          "graphic": [
-            {
+          "graphic": [{
               "fileName": "fileName0"
             },
             {
@@ -1994,26 +1744,22 @@
           }
         }
       ],
-      "coverageDescription": [
-        {
+      "coverageDescription": [{
           "coverageName": "My First Coverage",
           "coverageDescription": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
           "processingLevelCode": {
             "identifier": "processing level code"
           },
-          "attributeGroup": [
-            {
+          "attributeGroup": [{
               "attributeContentType": [
                 "thematicClassification",
                 "physicalMeasurement"
               ],
-              "attribute": [
-                {
+              "attribute": [{
                   "sequenceIdentifier": "sequenceIdentifier 1",
                   "sequenceIdentifierType": "sequenceIdentifierType",
                   "attributeDescription": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                  "attributeIdentifier": [
-                    {
+                  "attributeIdentifier": [{
                       "identifier": "identifier 1"
                     },
                     {
@@ -2044,11 +1790,9 @@
                   "sequenceIdentifier": "sequenceIdentifier 2",
                   "sequenceIdentifierType": "sequenceIdentifierType",
                   "attributeDescription": "attributeDescription",
-                  "attributeIdentifier": [
-                    {
-                      "identifier": "identifier"
-                    }
-                  ],
+                  "attributeIdentifier": [{
+                    "identifier": "identifier"
+                  }],
                   "minValue": 9.9,
                   "maxValue": 9.9,
                   "units": "units",
@@ -2089,8 +1833,7 @@
           "processingLevelCode": {
             "identifier": "identifier"
           },
-          "attributeGroup": [
-            {
+          "attributeGroup": [{
               "attributeContentType": [
                 "attributeContentType"
               ]
@@ -2106,8 +1849,7 @@
           }
         }
       ],
-      "resourceFormat": [
-        {
+      "resourceFormat": [{
           "formatSpecification": {
             "title": "specification 1"
           },
@@ -2122,11 +1864,9 @@
           "compressionMethod": "compressionMethod"
         }
       ],
-      "resourceMaintenance": [
-        {
+      "resourceMaintenance": [{
           "frequency": "semi-annually",
-          "date": [
-            {
+          "date": [{
               "date": "2016-10-12",
               "dateType": "dateType"
             },
@@ -2135,8 +1875,7 @@
               "dateType": "dateType"
             }
           ],
-          "scope": [
-            {
+          "scope": [{
               "scopeCode": "scopeCode"
             },
             {
@@ -2147,16 +1886,12 @@
             "note0",
             "note1"
           ],
-          "contact": [
-            {
-              "role": "custodian",
-              "party": [
-                {
-                  "contactId": "CID005"
-                }
-              ]
-            }
-          ]
+          "contact": [{
+            "role": "custodian",
+            "party": [{
+              "contactId": "CID005"
+            }]
+          }]
         },
         {
           "frequency": "frequency1"
@@ -2164,11 +1899,9 @@
       ],
       "environmentDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "supplementalInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "extent": [
-        {
+      "extent": [{
           "description": "Extent 1: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "geographicExtent": [
-            {
+          "geographicExtent": [{
               "description": "geographic extent description",
               "containsData": false,
               "identifier": {
@@ -2180,8 +1913,7 @@
                 "southLatitude": 49.0,
                 "northLatitude": 70.0
               },
-              "geographicElement": [
-                {
+              "geographicElement": [{
                   "type": "Point",
                   "coordinates": [100.0, 0.0]
                 },
@@ -2224,45 +1956,40 @@
             },
             {
               "containsData": true,
-              "geographicElement": [
-                {
-                  "type": "Polygon",
-                  "coordinates": [
-                    [
-                      [-10.0, 50.0],
-                      [90.0, 50.0],
-                      [90.0, 25.0],
-                      [-10.0, 25.0],
-                      [-10.0, 50.0]
-                    ]
+              "geographicElement": [{
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [-10.0, 50.0],
+                    [90.0, 50.0],
+                    [90.0, 25.0],
+                    [-10.0, 25.0],
+                    [-10.0, 50.0]
                   ]
-                }
-              ]
+                ]
+              }]
             },
             {
               "containsData": true,
-              "geographicElement": [
-                {
-                  "type": "Polygon",
-                  "coordinates": [
-                    [
-                      [140, 65],
-                      [-170, 65],
-                      [-170, 55],
-                      [140, 55],
-                      [140, 65]
-                    ]
+              "geographicElement": [{
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [140, 65],
+                    [-170, 65],
+                    [-170, 55],
+                    [140, 55],
+                    [140, 65]
                   ]
-                }
-              ]
+                ]
+              }]
             },
             {
               "containsData": false,
               "identifier": {
                 "identifier": "identifier"
               },
-              "geographicElement": [
-                {
+              "geographicElement": [{
                   "type": "Polygon",
                   "coordinates": [
                     [
@@ -2289,8 +2016,7 @@
               ]
             }
           ],
-          "temporalExtent": [
-            {
+          "temporalExtent": [{
               "timeInstant": {
                 "dateTime": "2016-10-24T11:10:15.200-10:00"
               }
@@ -2301,8 +2027,7 @@
               }
             }
           ],
-          "verticalExtent": [
-            {
+          "verticalExtent": [{
               "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
               "minValue": 9.9,
               "maxValue": 9.9,
@@ -2327,14 +2052,12 @@
         },
         {
           "description": "Extent 2: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "geographicExtent": [
-            {
+          "geographicExtent": [{
               "containsData": false,
               "identifier": {
                 "identifier": "identifier"
               },
-              "geographicElement": [
-                {
+              "geographicElement": [{
                   "type": "Polygon",
                   "coordinates": [
                     [
@@ -2362,12 +2085,10 @@
             },
             {
               "containsData": true,
-              "geographicElement": [
-                {
+              "geographicElement": [{
                   "type": "GeometryCollection",
                   "bbox": [-10.0, -10.0, 10.0, 10.0],
-                  "geometries": [
-                    {
+                  "geometries": [{
                       "type": "Point",
                       "coordinates": [100.0, 0.0]
                     },
@@ -2396,207 +2117,178 @@
             },
             {
               "containsData": true,
-              "geographicElement": [
-                {
-                  "type": "Feature",
-                  "id": "polygon-75",
-                  "bbox": [-10.0, -10.0, 10.0, 10.0],
-                  "geometry": {
-                    "type": "Polygon",
-                    "coordinates": [
-                      [
-                        [-161.74223, 67.663378],
-                        [-161.440345, 67.630173],
-                        [-161.294611, 67.656257],
-                        [-161.228063, 67.625736],
-                        [-161.247712, 67.585909],
-                        [-161.334662, 67.591324],
-                        [-161.566245, 67.491263],
-                        [-161.812338, 67.455299],
-                        [-161.825019, 67.40123],
-                        [-162.128301, 67.414364],
-                        [-162.167825, 67.363047],
-                        [-162.383403, 67.293329],
-                        [-162.633432, 67.272237],
-                        [-162.645587, 67.356665],
-                        [-162.369023, 67.455264],
-                        [-162.287324, 67.551235],
-                        [-162.171139, 67.559356],
-                        [-161.99344, 67.646806],
-                        [-161.857964, 67.620329],
-                        [-161.769431, 67.629407],
-                        [-161.74223, 67.663378]
-                      ]
+              "geographicElement": [{
+                "type": "Feature",
+                "id": "polygon-75",
+                "bbox": [-10.0, -10.0, 10.0, 10.0],
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [-161.74223, 67.663378],
+                      [-161.440345, 67.630173],
+                      [-161.294611, 67.656257],
+                      [-161.228063, 67.625736],
+                      [-161.247712, 67.585909],
+                      [-161.334662, 67.591324],
+                      [-161.566245, 67.491263],
+                      [-161.812338, 67.455299],
+                      [-161.825019, 67.40123],
+                      [-162.128301, 67.414364],
+                      [-162.167825, 67.363047],
+                      [-162.383403, 67.293329],
+                      [-162.633432, 67.272237],
+                      [-162.645587, 67.356665],
+                      [-162.369023, 67.455264],
+                      [-162.287324, 67.551235],
+                      [-162.171139, 67.559356],
+                      [-161.99344, 67.646806],
+                      [-161.857964, 67.620329],
+                      [-161.769431, 67.629407],
+                      [-161.74223, 67.663378]
                     ]
-                  },
-                  "properties": {
-                    "description": "Agashashok River site",
-                    "featureName": [
-                      "Agashashok River",
-                      "Camp Mosquito"
-                    ],
-                    "identifier": [
-                      {
-                        "identifier": "AGAR"
-                      },
-                      {
-                        "identifier": "Kup25"
-                      }
-                    ],
-                    "featureScope": "collectionSite",
-                    "acquisitionMethod": "butterfly net",
-                    "customField": "not in schema",
-                    "customArray": [
-                      "string 1",
-                      "string 2"
-                    ]
-                  }
+                  ]
+                },
+                "properties": {
+                  "description": "Agashashok River site",
+                  "featureName": [
+                    "Agashashok River",
+                    "Camp Mosquito"
+                  ],
+                  "identifier": [{
+                      "identifier": "AGAR"
+                    },
+                    {
+                      "identifier": "Kup25"
+                    }
+                  ],
+                  "featureScope": "collectionSite",
+                  "acquisitionMethod": "butterfly net",
+                  "customField": "not in schema",
+                  "customArray": [
+                    "string 1",
+                    "string 2"
+                  ]
                 }
-              ]
+              }]
             },
             {
               "containsData": true,
-              "geographicElement": [
-                {
-                  "type": "FeatureCollection",
-                  "bbox": [-10.0, -10.0, 10.0, 10.0],
-                  "features": [
-                    {
-                      "type": "Feature",
-                      "id": "ALCC-BH55",
-                      "bbox": [-10.0, -10.0, 10.0, 10.0],
-                      "geometry": {
-                        "type": "Point",
-                        "coordinates": [102.0, 0.5]
-                      },
-                      "properties": {
-                        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                        "featureName": [
-                          "fake name"
-                        ]
-                      }
+              "geographicElement": [{
+                "type": "FeatureCollection",
+                "bbox": [-10.0, -10.0, 10.0, 10.0],
+                "features": [{
+                    "type": "Feature",
+                    "id": "ALCC-BH55",
+                    "bbox": [-10.0, -10.0, 10.0, 10.0],
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [102.0, 0.5]
                     },
-                    {
-                      "type": "Feature",
-                      "id": "ALCC-BH56",
-                      "bbox": [-10.0, -10.0, 10.0, 10.0],
-                      "geometry": {
-                        "type": "LineString",
-                        "coordinates": [
-                          [102.0, 0.0],
-                          [103.0, 1.0],
-                          [104.0, 0.0],
-                          [105.0, 1.0]
-                        ]
-                      },
-                      "properties": {
-                        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                      }
-                    },
-                    {
-                      "type": "Feature",
-                      "id": "ALCC-Co81",
-                      "bbox": [-10.0, -10.0, 10.0, 10.0],
-                      "geometry": {
-                        "type": "GeometryCollection",
-                        "bbox": [-10.0, -10.0, 10.0, 10.0],
-                        "geometries": [
-                          {
-                            "type": "Point",
-                            "coordinates": [100.0, 0.0]
-                          },
-                          {
-                            "type": "LineString",
-                            "coordinates": [
-                              [101.0, 0.0],
-                              [102.0, 1.0]
-                            ]
-                          }
-                        ]
-                      },
-                      "properties": {
-                        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                      }
+                    "properties": {
+                      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                      "featureName": [
+                        "fake name"
+                      ]
                     }
-                  ]
-                }
-              ]
+                  },
+                  {
+                    "type": "Feature",
+                    "id": "ALCC-BH56",
+                    "bbox": [-10.0, -10.0, 10.0, 10.0],
+                    "geometry": {
+                      "type": "LineString",
+                      "coordinates": [
+                        [102.0, 0.0],
+                        [103.0, 1.0],
+                        [104.0, 0.0],
+                        [105.0, 1.0]
+                      ]
+                    },
+                    "properties": {
+                      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "id": "ALCC-Co81",
+                    "bbox": [-10.0, -10.0, 10.0, 10.0],
+                    "geometry": {
+                      "type": "GeometryCollection",
+                      "bbox": [-10.0, -10.0, 10.0, 10.0],
+                      "geometries": [{
+                          "type": "Point",
+                          "coordinates": [100.0, 0.0]
+                        },
+                        {
+                          "type": "LineString",
+                          "coordinates": [
+                            [101.0, 0.0],
+                            [102.0, 1.0]
+                          ]
+                        }
+                      ]
+                    },
+                    "properties": {
+                      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    }
+                  }
+                ]
+              }]
             }
           ]
         }
       ]
     },
-    "resourceLineage": [
-      {
+    "resourceLineage": [{
         "statement": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "scope": {
           "scopeCode": "scopeCode"
         },
-        "citation": [
-          {
+        "citation": [{
             "title": "Lineage Title 1",
-            "date": [
-              {
-                "date": "2017-10-13",
-                "dateType": "publication"
-              }
-            ],
-            "responsibleParty": [
-              {
-                "role": "originator",
-                "party": [
-                  {
-                    "contactId": "CID004"
-                  }
-                ]
-              }
-            ]
+            "date": [{
+              "date": "2017-10-13",
+              "dateType": "publication"
+            }],
+            "responsibleParty": [{
+              "role": "originator",
+              "party": [{
+                "contactId": "CID004"
+              }]
+            }]
           },
           {
             "title": "Lineage Title 2",
-            "date": [
-              {
-                "date": "2017-10-13",
-                "dateType": "publication"
-              }
-            ],
-            "responsibleParty": [
-              {
-                "role": "originator",
-                "party": [
-                  {
-                    "contactId": "CID004"
-                  }
-                ]
-              }
-            ]
+            "date": [{
+              "date": "2017-10-13",
+              "dateType": "publication"
+            }],
+            "responsibleParty": [{
+              "role": "originator",
+              "party": [{
+                "contactId": "CID004"
+              }]
+            }]
           }
         ],
-        "source": [
-          {
+        "source": [{
             "sourceId": "SRC001",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
             "sourceCitation": {
               "title": "Source Citation Title SRC001",
-              "date": [
-                {
-                  "date": "2017-10-13",
-                  "dateType": "publication"
-                }
-              ],
-              "responsibleParty": [
-                {
-                  "role": "originator",
-                  "party": [
-                    {
-                      "contactId": "CID004"
-                    }
-                  ]
-                }
-              ]
+              "date": [{
+                "date": "2017-10-13",
+                "dateType": "publication"
+              }],
+              "responsibleParty": [{
+                "role": "originator",
+                "party": [{
+                  "contactId": "CID004"
+                }]
+              }]
             },
-            "metadataCitation": [
-              {
+            "metadataCitation": [{
                 "title": "First Source Metadata Citation"
               },
               {
@@ -2612,8 +2304,7 @@
                 "identifier": "identifier"
               }
             },
-            "sourceProcessStep": [
-              {
+            "sourceProcessStep": [{
                 "description": "description",
                 "timePeriod": {
                   "endDateTime": "2017-12-28T15:15"
@@ -2628,18 +2319,14 @@
             ],
             "scope": {
               "scopeCode": "scopeCode SRC001",
-              "scopeExtent": [
-                {
-                  "temporalExtent": [
-                    {
-                      "timePeriod": {
-                        "description": "publication date",
-                        "startDateTime": "2016-11-01"
-                      }
-                    }
-                  ]
-                }
-              ]
+              "scopeExtent": [{
+                "temporalExtent": [{
+                  "timePeriod": {
+                    "description": "publication date",
+                    "startDateTime": "2016-11-01"
+                  }
+                }]
+              }]
             }
           },
           {
@@ -2647,42 +2334,31 @@
             "description": "description",
             "sourceCitation": {
               "title": "Source Citation Title SRC002",
-              "date": [
-                {
-                  "date": "2017-10-13",
-                  "dateType": "publication"
-                }
-              ],
-              "responsibleParty": [
-                {
-                  "role": "originator",
-                  "party": [
-                    {
-                      "contactId": "CID004"
-                    }
-                  ]
-                }
-              ]
+              "date": [{
+                "date": "2017-10-13",
+                "dateType": "publication"
+              }],
+              "responsibleParty": [{
+                "role": "originator",
+                "party": [{
+                  "contactId": "CID004"
+                }]
+              }]
             },
             "scope": {
               "scopeCode": "scopeCode SRC002",
-              "scopeExtent": [
-                {
-                  "temporalExtent": [
-                    {
-                      "timePeriod": {
-                        "description": "publication date",
-                        "startDateTime": "2016-11-02"
-                      }
-                    }
-                  ]
-                }
-              ]
+              "scopeExtent": [{
+                "temporalExtent": [{
+                  "timePeriod": {
+                    "description": "publication date",
+                    "startDateTime": "2016-11-02"
+                  }
+                }]
+              }]
             }
           }
         ],
-        "processStep": [
-          {
+        "processStep": [{
             "stepId": "stepId",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
             "rationale": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
@@ -2707,26 +2383,20 @@
                 "months": 9
               }
             },
-            "processor": [
-              {
+            "processor": [{
                 "role": "processor",
-                "party": [
-                  {
-                    "contactId": "CID006"
-                  }
-                ]
+                "party": [{
+                  "contactId": "CID006"
+                }]
               },
               {
                 "role": "reviewer",
-                "party": [
-                  {
-                    "contactId": "CID004"
-                  }
-                ]
+                "party": [{
+                  "contactId": "CID004"
+                }]
               }
             ],
-            "reference": [
-              {
+            "reference": [{
                 "title": "Process Step Reference"
               },
               {
@@ -2749,119 +2419,101 @@
         "statement": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       }
     ],
-    "resourceDistribution": [
-      {
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-        "liabilityStatement": "Blah blah blah liability. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "distributor": [
-          {
-            "contact": {
-              "role": "distributor",
-              "party": [
+    "resourceDistribution": [{
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "liabilityStatement": "Blah blah blah liability. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "distributor": [{
+          "contact": {
+            "role": "distributor",
+            "party": [{
+              "contactId": "CID002"
+            }]
+          },
+          "orderProcess": [{
+              "fees": "10.00USD",
+              "plannedAvailability": "2016-10-21T00:00:00",
+              "orderingInstructions": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "turnaround": "turnaround"
+            },
+            {
+              "fees": "2.00USD"
+            }
+          ],
+          "transferOption": [{
+              "unitsOfDistribution": "units of distribution",
+              "transferSize": 9.9,
+              "onlineOption": [{
+                  "uri": "http://ISO.uri/adiwg/0"
+                },
                 {
-                  "contactId": "CID002"
+                  "uri": "http://ISO.uri/adiwg/1"
+                }
+              ],
+              "offlineOption": [{
+                  "mediumSpecification": {
+                    "title": "My Medium Specification Title"
+                  },
+                  "density": 9.9,
+                  "units": "units",
+                  "numberOfVolumes": 9,
+                  "mediumFormat": [
+                    "mediumFormat0",
+                    "mediumFormat1"
+                  ],
+                  "note": "note",
+                  "identifier": {
+                    "identifier": "Medium Identifier"
+                  }
+                },
+                {
+                  "mediumSpecification": {
+                    "title": "dium specification title 1"
+                  }
+                }
+              ],
+              "transferFrequency": {
+                "months": 9
+              },
+              "distributionFormat": [{
+                  "formatSpecification": {
+                    "title": "CSV"
+                  },
+                  "amendmentNumber": "2.0.8-beta",
+                  "compressionMethod": "7ZipUp",
+                  "technicalPrerequisite": "Blah blah blah 2.0 technical prerequisite"
+                },
+                {
+                  "formatSpecification": {
+                    "title": "format specification title 1"
+                  }
                 }
               ]
             },
-            "orderProcess": [
-              {
-                "fees": "10.00USD",
-                "plannedAvailability": "2016-10-21T00:00:00",
-                "orderingInstructions": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                "turnaround": "turnaround"
-              },
-              {
-                "fees": "2.00USD"
-              }
-            ],
-            "transferOption": [
-              {
-                "unitsOfDistribution": "units of distribution",
-                "transferSize": 9.9,
-                "onlineOption": [
-                  {
-                    "uri": "http://ISO.uri/adiwg/0"
-                  },
-                  {
-                    "uri": "http://ISO.uri/adiwg/1"
-                  }
-                ],
-                "offlineOption": [
-                  {
-                    "mediumSpecification": {
-                      "title": "My Medium Specification Title"
-                    },
-                    "density": 9.9,
-                    "units": "units",
-                    "numberOfVolumes": 9,
-                    "mediumFormat": [
-                      "mediumFormat0",
-                      "mediumFormat1"
-                    ],
-                    "note": "note",
-                    "identifier": {
-                      "identifier": "Medium Identifier"
-                    }
-                  },
-                  {
-                    "mediumSpecification": {
-                      "title": "dium specification title 1"
-                    }
-                  }
-                ],
-                "transferFrequency": {
-                  "months": 9
-                },
-                "distributionFormat": [
-                  {
-                    "formatSpecification": {
-                      "title": "CSV"
-                    },
-                    "amendmentNumber": "2.0.8-beta",
-                    "compressionMethod": "7ZipUp",
-                    "technicalPrerequisite": "Blah blah blah 2.0 technical prerequisite"
-                  },
-                  {
-                    "formatSpecification": {
-                      "title": "format specification title 1"
-                    }
-                  }
-                ]
-              },
-              {
-                "transferSize": 10.9,
-                "onlineOption": [
-                  {
-                    "uri": "http://ISO.uri/adiwg/3"
-                  }
-                ],
-                "distributionFormat": [
-                  {
-                    "formatSpecification": {
-                      "title": "Microsoft Excel"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "contact": {
-              "role": "distributor",
-              "party": [
-                {
-                  "contactId": "CID003"
+            {
+              "transferSize": 10.9,
+              "onlineOption": [{
+                "uri": "http://ISO.uri/adiwg/3"
+              }],
+              "distributionFormat": [{
+                "formatSpecification": {
+                  "title": "Microsoft Excel"
                 }
-              ]
+              }]
             }
+          ]
+        },
+        {
+          "contact": {
+            "role": "distributor",
+            "party": [{
+              "contactId": "CID003"
+            }]
           }
-        ]
-      }
-    ],
-    "associatedResource": [
-      {
-        "resourceType": [
-          {
+        }
+      ]
+    }],
+    "associatedResource": [{
+        "resourceType": [{
             "type": "modelHardcopy",
             "name": "Hardcopy of Model"
           },
@@ -2880,8 +2532,7 @@
         }
       },
       {
-        "resourceType": [
-          {
+        "resourceType": [{
             "type": "type0",
             "name": "name0"
           },
@@ -2900,10 +2551,8 @@
         }
       }
     ],
-    "additionalDocumentation": [
-      {
-        "resourceType": [
-          {
+    "additionalDocumentation": [{
+        "resourceType": [{
             "type": "webService",
             "name": "ADIwg API"
           },
@@ -2912,8 +2561,7 @@
             "name": "DMV Data"
           }
         ],
-        "citation": [
-          {
+        "citation": [{
             "title": "A Good Additional Document"
           },
           {
@@ -2922,8 +2570,7 @@
         ]
       },
       {
-        "resourceType": [
-          {
+        "resourceType": [{
             "type": "multimediaHardcopy",
             "name": "Multi-Media Hard-Copy"
           },
@@ -2932,28 +2579,22 @@
             "name": "Lab Specimen"
           }
         ],
-        "citation": [
-          {
-            "title": "A Much Mo Betha Additional Document"
-          }
-        ]
+        "citation": [{
+          "title": "A Much Mo Betha Additional Document"
+        }]
       }
     ],
-    "funding": [
-      {
-        "allocation": [
-          {
+    "funding": [{
+        "allocation": [{
             "sourceAllocationId": "A123FW009",
             "amount": 9999.99,
             "currency": "USD",
             "sourceId": "CID005",
             "recipientId": "CID006",
             "matching": true,
-            "onlineResource": [
-              {
-                "uri": "http://adiwg.org"
-              }
-            ],
+            "onlineResource": [{
+              "uri": "http://adiwg.org"
+            }],
             "comment": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
           },
           {
@@ -2984,20 +2625,17 @@
         }
       },
       {
-        "allocation": [
-          {
-            "amount": 9999.99,
-            "currency": "EUR"
-          }
-        ],
+        "allocation": [{
+          "amount": 9999.99,
+          "currency": "EUR"
+        }],
         "timePeriod": {
           "startDateTime": "2016-10-14"
         }
       }
     ]
   },
-  "dataDictionary": [
-    {
+  "dataDictionary": [{
       "citation": {
         "title": "title"
       },
@@ -3009,8 +2647,7 @@
         "use0",
         "use1"
       ],
-      "locale": [
-        {
+      "locale": [{
           "language": "language0",
           "country": "country0",
           "characterSet": "characterSet0"
@@ -3023,22 +2660,18 @@
       ],
       "responsibleParty": {
         "role": "author",
-        "party": [
-          {
-            "contactId": "CID001"
-          }
-        ]
+        "party": [{
+          "contactId": "CID001"
+        }]
       },
       "dictionaryFunctionalLanguage": "UML",
       "dictionaryIncludedWithResource": true,
-      "domain": [
-        {
+      "domain": [{
           "domainId": "DID001",
           "commonName": "commonName",
           "codeName": "codeName",
           "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "domainItem": [
-            {
+          "domainItem": [{
               "name": "name0",
               "value": "value0",
               "definition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
@@ -3060,32 +2693,26 @@
           "commonName": "commonName",
           "codeName": "codeName",
           "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "domainItem": [
-            {
-              "name": "name0",
-              "value": "value0",
-              "definition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
-            }
-          ]
+          "domainItem": [{
+            "name": "name0",
+            "value": "value0",
+            "definition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          }]
         }
       ],
-      "entity": [
-        {
+      "entity": [{
           "entityId": "entityId0",
           "commonName": "commonName",
           "codeName": "codeName",
           "definition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-          "entityReference": [
-            {
-              "title": "entity reference citation 0"
-            }
-          ],
+          "entityReference": [{
+            "title": "entity reference citation 0"
+          }],
           "primaryKeyAttributeCodeName": [
             "primaryAttribute0",
             "primaryAttribute1"
           ],
-          "index": [
-            {
+          "index": [{
               "codeName": "codeName0",
               "allowDuplicates": false,
               "attributeCodeName": [
@@ -3101,8 +2728,7 @@
               ]
             }
           ],
-          "attribute": [
-            {
+          "attribute": [{
               "commonName": "Department ID",
               "codeName": "codeName",
               "alias": [
@@ -3141,8 +2767,7 @@
               "maxValue": "5000000"
             }
           ],
-          "foreignKey": [
-            {
+          "foreignKey": [{
               "localAttributeCodeName": [
                 "localAttributeCodeName0",
                 "localAttributeCodeName1"
@@ -3169,16 +2794,13 @@
           "commonName": "commonName",
           "codeName": "codeName",
           "definition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-          "entityReference": [
-            {
-              "title": "entity reference citation 1"
-            }
-          ],
+          "entityReference": [{
+            "title": "entity reference citation 1"
+          }],
           "primaryKeyAttributeCodeName": [
             "primaryAttribute"
           ],
-          "attribute": [
-            {
+          "attribute": [{
               "commonName": "Supervisor",
               "codeName": "codeName",
               "alias": [
@@ -3231,27 +2853,22 @@
       "recommendedUse": [
         "Reconstruct database"
       ],
-      "locale": [
-        {
-          "language": "eng",
-          "country": "USA",
-          "characterSet": "UTF-8"
-        }
-      ],
+      "locale": [{
+        "language": "eng",
+        "country": "USA",
+        "characterSet": "UTF-8"
+      }],
       "responsibleParty": {
         "role": "author",
-        "party": [
-          {
-            "contactId": "CID006"
-          }
-        ]
+        "party": [{
+          "contactId": "CID006"
+        }]
       },
       "dictionaryFunctionalLanguage": "MSSQL",
       "dictionaryIncludedWithResource": false
     }
   ],
-  "metadataRepository": [
-    {
+  "metadataRepository": [{
       "repository": "USGS ScienceBase",
       "metadataStandard": "FGDC"
     },

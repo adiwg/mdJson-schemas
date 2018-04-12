@@ -98,7 +98,7 @@
       "commonName0",
       "commonName1"
     ],
-    "taxonomicRank": "taxonomicRank0",
-    "latinName": "latinName0"
+    "taxonomicLevel": "taxonomicLevel0",
+    "taxonomicName": "taxonomicName0"
   }
 }]

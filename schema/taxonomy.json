@@ -106,15 +106,22 @@
         "ISO 19115-2": ["MD_TaxonSys > taxonCl > MD_TaxonCl"],
         "FGDC CSDGM": ["idinfo > taxonomy > taxoncl"]
       },
-      "required": ["latinName", "taxonomicRank"],
       "additionalProperties": true,
+      "oneOf": [{
+        "title": "Requires taxonomicName and taxonomicLevel",
+        "required": ["taxonomicName", "taxonomicLevel"]
+      }, {
+        "title": "Requires latinName and taxonomicRank",
+        "deprecated": true,
+        "required": ["latinName", "taxonomicRank"]
+      }],
       "properties": {
         "taxonomicSystemId": {
           "type": "string",
           "description": "The ID assigned by the taxonomic system to the taxonomicRank.",
           "minLength": 1
         },
-        "taxonomicRank": {
+        "taxonomicLevel": {
           "type": "string",
           "description": "Name of the taxonomic rank for which the taxonValue is provided. Example: \"Kingdom\", \"Division\", \"Phylum\", \"Subphylum\", \"SuperClass\", \"Class\", \"SubClass\", \"InfraClass\", \"Superorder\", \"Order\", \"Suborder\", \"Infraorder\", \"Superfamily\", \"Family\", \"Subfamily\", \"Tribe\", \"Subtribe\", \"Genus\", \"Species\".",
           "translation": {
@@ -122,9 +129,27 @@
             "FGDC CSDGM": ["idinfo > taxonomy > taxoncl > taxonrn"]
           }
         },
-        "latinName": {
+        "taxonomicRank": {
+          "type": "string",
+          "deprecated": true,
+          "description": "DEPRECATED, use taxonomicLevel",
+          "translation": {
+            "ISO 19115-2": [" MD_TaxonCl > taxonrn"],
+            "FGDC CSDGM": ["idinfo > taxonomy > taxoncl > taxonrn"]
+          }
+        },
+        "taxonomicName": {
           "type": "string",
           "description": "Taxonomic rank value of the taxon being described.",
+          "translation": {
+            "ISO 19115-2": ["MD_TaxonCl > taxonrv"],
+            "FGDC CSDGM": ["idinfo > taxonomy > taxoncl > taxonrv"]
+          }
+        },
+        "latinName": {
+          "type": "string",
+          "deprecated": true,
+          "description": "DEPRECATED, use taxonomicName",
           "translation": {
             "ISO 19115-2": ["MD_TaxonCl > taxonrv"],
             "FGDC CSDGM": ["idinfo > taxonomy > taxoncl > taxonrv"]

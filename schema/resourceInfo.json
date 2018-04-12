@@ -173,11 +173,34 @@
       }
     },
     "taxonomy": {
+      "description": "Information on the taxa (1 or more) included in the data set, including keywords, taxonomic system and coverage information, and taxonomic classification system.",
       "translation": {
         "ISO 19115-2": ["MD_DataIdentification > taxonomy"],
         "FGDC CSDGM": ["idinfo > taxonomy"]
       },
-      "$ref": "taxonomy.json"
+      "oneOf": [{
+        "type": "array",
+        "title": "taxonomy",
+        "description": "An array of taxonomic objects",
+        "example": "../examples/taxonomy.json",
+        "translation": {
+          "ISO 19115-2": ["MD_TaxonSys"],
+          "FGDC CSDGM": ["idinfo > taxonomy"]
+        },
+        "items": {
+          "$ref": "taxonomy.json"
+        }
+      }, {
+        "type": "object",
+        "title": "taxonomy",
+        "description": "DEPRECATED, please use an array.",
+        "translation": {
+          "ISO 19115-2": ["MD_DataIdentification > taxonomy"],
+          "FGDC CSDGM": ["idinfo > taxonomy"]
+        },
+        "deprecated": true,
+        "$ref": "taxonomy.json"
+      }]
     },
     "graphicOverview": {
       "type": "array",
