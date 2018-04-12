@@ -1,7 +1,30 @@
 # Change Log
 
-## [v2.4.5](https://github.com/adiwg/mdJson-schemas/tree/v2.4.5)
+## [v2.4.7](https://github.com/adiwg/mdJson-schemas/tree/v2.4.7)
 
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.5...v2.4.7)
+
+**Implemented enhancements:**
+
+- taxonomy rule change [\#202](https://github.com/adiwg/mdJson-schemas/issues/202)
+- resourceInfo rule change [\#201](https://github.com/adiwg/mdJson-schemas/issues/201)
+- allocation rule change [\#200](https://github.com/adiwg/mdJson-schemas/issues/200)
+- distributionFormat rule change [\#182](https://github.com/adiwg/mdJson-schemas/issues/182)
+- distribution rule change [\#181](https://github.com/adiwg/mdJson-schemas/issues/181)
+- metadataInfo rule change [\#180](https://github.com/adiwg/mdJson-schemas/issues/180)
+
+**Fixed bugs:**
+
+- vectorRepresentation must have... [\#197](https://github.com/adiwg/mdJson-schemas/issues/197)
+- taxonomy identificationReference [\#195](https://github.com/adiwg/mdJson-schemas/issues/195)
+- resourceInfo resourceFormat\[1\] [\#193](https://github.com/adiwg/mdJson-schemas/issues/193)
+- duration must have ... [\#192](https://github.com/adiwg/mdJson-schemas/issues/192)
+- distribution must have ... [\#191](https://github.com/adiwg/mdJson-schemas/issues/191)
+- leagalConstraint must have ... [\#189](https://github.com/adiwg/mdJson-schemas/issues/189)
+- dictionary must have at least one subject [\#186](https://github.com/adiwg/mdJson-schemas/issues/186)
+- Remove or update dependency on uglify-js [\#179](https://github.com/adiwg/mdJson-schemas/issues/179)
+
+## [v2.4.5](https://github.com/adiwg/mdJson-schemas/tree/v2.4.5) (2018-03-14)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.4...v2.4.5)
 
 **Merged pull requests:**
