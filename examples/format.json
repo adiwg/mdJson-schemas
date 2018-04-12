@@ -3,5 +3,6 @@
     "title": "title"
   },
   "amendmentNumber": "amendmentNumber",
-  "compressionMethod": "compressionMethod"
+  "compressionMethod": "compressionMethod",
+  "technicalPrerequisite": "technicalPrerequisite"
 }]

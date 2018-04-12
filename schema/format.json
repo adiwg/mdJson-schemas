@@ -31,6 +31,15 @@
       "description": "Recommendations of algorithms or processes that can be applied to read or expand resources to which compression techniques have been applied.",
       "translation": {},
       "minLength": 1
+    },
+    "technicalPrerequisite": {
+      "type": "string",
+      "description": "Description of any technical capabilities that the consumer must have to use the data set in the form(s) provided by the distributor.",
+      "translation": {
+        "FGDC CSDGM": ["distinfo > techpreq"]
+      },
+      "minLength": 1
     }
+
   }
 }
