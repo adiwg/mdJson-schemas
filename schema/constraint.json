@@ -1,7 +1,7 @@
 {
   "id": "constraint.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "schema for resource constraint",
+  "description": "schema for constraint",
   "example": "../examples/constraint.json",
   "required": ["type"],
   "anyOf": [{
