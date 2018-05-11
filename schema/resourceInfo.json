@@ -191,7 +191,6 @@
           "$ref": "taxonomy.json"
         }
       }, {
-        "type": "object",
         "title": "taxonomy",
         "description": "DEPRECATED, please use an array.",
         "translation": {
