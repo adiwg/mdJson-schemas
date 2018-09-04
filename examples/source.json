@@ -1,4 +1,5 @@
  [{
+   "sourceId": "sourceId",
    "description": "description",
    "sourceCitation": {
      "title": "title"

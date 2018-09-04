@@ -177,6 +177,13 @@
         }
       ],
       "properties": {
+        "sourceId": {
+          "type": "string",
+          "description": "A unique identifier for the data source.",
+          "translation": {
+            "FGDC CSDGM": ["dataqual > lineage > srcinfo > srccitea"]
+          }
+        },
         "description": {
           "type": "string",
           "description": "A brief description about the source dataset used in creating the data identified by the data quality scope.",
