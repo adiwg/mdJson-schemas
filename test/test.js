@@ -29,7 +29,8 @@ describe('Test schemas:', function() {
     const Ajv = require('ajv');
     const data = require('../examples/mdJson.json');
     const ajv = new Ajv({
-      extendRefs: 'fail'
+      extendRefs: 'fail',
+      schemaId: 'id'
     });
 
     it('should load all schemas', function() {

@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/adiwg/mdJson-schemas#readme",
   "devDependencies": {
-    "ajv": "^5.2.2",
+    "ajv": "^6.5.0",
     "buildify": "github:powmedia/buildify#20458a121411f759dcc5ec1b441695eb7fc2b3b7",
     "glob": "^7.1.2",
     "mkdirp": "^0.5.1",
