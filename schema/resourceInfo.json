@@ -198,7 +198,9 @@
           "FGDC CSDGM": ["idinfo > taxonomy"]
         },
         "deprecated": true,
-        "$ref": "taxonomy.json"
+        "allOf": [{
+          "$ref": "taxonomy.json"
+        }]
       }]
     },
     "graphicOverview": {
