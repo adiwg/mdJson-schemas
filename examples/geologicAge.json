@@ -1,0 +1,12 @@
+[{
+  "ageTimeScale": "ageTimeScale",
+  "ageEstimate": "ageEstimate",
+  "ageUncertainty": "ageUncertainty",
+  "ageExplanation": "ageExplanation",
+  "ageReference": [{
+    "title": "citation title"
+  }]
+}, {
+  "ageTimeScale": "ageTimeScale",
+  "ageEstimate": "ageEstimate"
+}]

@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "geologicAge.json#",
+  "type": "object",
+  "title": "geologicAge",
+  "description": "A name, code, or date describing an event or period in geologic time, expressed either as an absolute date calculated using a named dating method, or as a relative date that is drawn from stratigraphy or biostratigraphy.",
+  "example": "../examples/geologicAge.json",
+  "translation": {
+    "FGDC CSDGM": ["timeperd > timeinfo > sngdate > geolage"]
+  },
+  "required": ["ageTimeScale", "ageEstimate"],
+  "additionalProperties": true,
+  "properties": {
+    "ageTimeScale": {
+      "type": "string",
+      "description": "Name of a recognized geologic time scale. This includes \"Absolute\" as the name of the time scale for measuring geologic dates before the present and names of geologic dating systems that are arrangements of symbols or names in order of relative geologic time",
+      "translation": {
+        "FGDC CSDGM": ["timeperd > timeinfo > sngdate > geolage > geolscal"]
+      }
+    },
+    "ageEstimate": {
+      "type": "string",
+      "description": "Either an absolute geologic date or a relative geologic age name describing an event or period in geologic time based on the Geologic_Time_Scale.",
+      "translation": {
+        "FGDC CSDGM": ["timeperd > timeinfo > sngdate > geolage > geolest"]
+      }
+    },
+    "ageUncertainty": {
+      "type": "string",
+      "description": "The error estimate for the geologic time. This should include the units of measure, a description of what the error estimate represents and how it was calculated.",
+      "translation": {
+        "FGDC CSDGM": ["timeperd > timeinfo > sngdate > geolage > geolun"]
+      }
+    },
+    "ageExplanation": {
+      "type": "string",
+      "description": "The name and/or description of the method used to calculate the ageEstimate. Detailed information about the method may be provided through references contained in the ageReference.",
+      "translation": {
+        "FGDC CSDGM": ["timeperd > timeinfo > sngdate > geolage > geolexpl"]
+      }
+    },
+    "ageReference": {
+        "type" : "array",
+        "description" : "Citation for works providing detailed information about any element of the geologicAge.",
+        "translation": {
+          "FGDC CSDGM": ["timeperd > timeinfo > sngdate > geolage > geolcit"]
+        },
+        "items" : {
+          "$ref": "./citation.json#"
+        }
+    }
+  },
+  "definitions": {}
+}
