@@ -60,7 +60,14 @@
     },
     "allowMany": {
       "type": "boolean",
+      "deprecated": true,
       "description": "Indicates whether null values are allowed for the attribute",
+      "translation": {},
+      "default": false
+    },
+    "mustBeUnique": {
+      "type": "boolean",
+      "description": "Indicates whether the attribute value is required to be unique.",
       "translation": {},
       "default": false
     },

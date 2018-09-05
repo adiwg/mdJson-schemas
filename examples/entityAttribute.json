@@ -11,6 +11,7 @@
     },
     "dataType": "dataType",
     "allowNull": true,
+    "mustBeUnique": false,
     "units": "units",
     "unitsResolution": 9.9,
     "isCaseSensitive": false,
