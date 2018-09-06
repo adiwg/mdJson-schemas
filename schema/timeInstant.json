@@ -3,7 +3,6 @@
   "id": "timeInstant.json#",
   "type": "object",
   "example": "../examples/timeInstant.json",
-  "required": ["dateTime"],
   "additionalProperties": true,
   "properties": {
     "id": {
@@ -33,12 +32,27 @@
         "type": "string"
       }
     },
+    "geologicAge": {
+      "translation": {
+        "FGDC CSDGM": ["timeperd > timeinfo > mdattim > sngdate > geolage"]
+      },
+      "$ref": "./geologicAge.json#"
+    },
     "dateTime": {
       "translation": {
         "ISO 19115-2": ["EX_TemporalExtent > extent > TimeInstant > timePosition"]
       },
       "$ref": "common.json#/definitions/date"
     }
-  }
+  },
+  "oneOf": [{
+    "title": "dateTime required",
+    "example": "../examples/timeInstant.json#/0",
+    "required": ["dateTime"]
+  }, {
+    "title": "geologicAge required",
+    "example": "../examples/timeInstant.json#/1",
+    "required": ["geologicAge"]
+  }]
 
 }

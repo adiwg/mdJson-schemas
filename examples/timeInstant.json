@@ -10,4 +10,24 @@
     "instantName1"
   ],
   "dateTime": "2016-10-24T10:25:00"
+}, {
+  "id": "id",
+  "description": "description",
+  "identifier": {
+    "identifier": "identifier",
+    "namespace": "namespace"
+  },
+  "instantName": [
+    "instantName0",
+    "instantName1"
+  ],
+  "geologicAge": {
+    "ageTimeScale": "ageTimeScale",
+    "ageEstimate": "ageEstimate",
+    "ageUncertainty": "ageUncertainty",
+    "ageExplanation": "ageExplanation",
+    "ageReference": [{
+      "title": "citation title"
+    }]
+  }
 }]

@@ -2022,6 +2022,29 @@
               }
             },
             {
+              "timeInstant": {
+                "id": "id",
+                "description": "description",
+                "identifier": {
+                  "identifier": "identifier",
+                  "namespace": "namespace"
+                },
+                "instantName": [
+                  "instantName0",
+                  "instantName1"
+                ],
+                "geologicAge": {
+                  "ageTimeScale": "ageTimeScale",
+                  "ageEstimate": "ageEstimate",
+                  "ageUncertainty": "ageUncertainty",
+                  "ageExplanation": "ageExplanation",
+                  "ageReference": [{
+                    "title": "citation title"
+                  }]
+                }
+              }
+            },
+            {
               "timePeriod": {
                 "startDateTime": "2016-10-24T11:10:15.200-10:00"
               }
