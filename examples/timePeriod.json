@@ -23,4 +23,23 @@
      "minutes": 1,
      "seconds": 1
    }
+ }, {
+   "id": "id",
+   "description": "description",
+   "identifier": {
+     "identifier": "identifier",
+     "namespace": "namespace"
+   },
+   "periodName": [
+     "periodName0",
+     "periodName1"
+   ],
+   "startGeologicAge": {
+     "ageTimeScale": "ageTimeScale",
+     "ageEstimate": "ageEstimate"
+   },
+   "endGeologicAge": {
+     "ageTimeScale": "ageTimeScale",
+     "ageEstimate": "ageEstimate"
+   }
  }]

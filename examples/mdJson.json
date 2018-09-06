@@ -2025,6 +2025,14 @@
               "timePeriod": {
                 "startDateTime": "2016-10-24T11:10:15.200-10:00"
               }
+            },
+            {
+              "timePeriod": {
+                "startGeologicAge": {
+                  "ageTimeScale": "International Chronostratigraphic Chart",
+                  "ageEstimate": "13.82"
+                }
+              }
             }
           ],
           "verticalExtent": [{

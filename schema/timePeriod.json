@@ -33,36 +33,72 @@
       "items": {
         "type": "string"
       }
-    },
-    "startDateTime": {
-      "description": "Starting date, or date and time.",
-      "translation": {
-        "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod > beginPosition "],
-        "FGDC CSDGM": ["idinfo > timeperd > rngdates > begdate"]
-      },
-      "$ref": "common.json#/definitions/date"
-    },
-    "endDateTime": {
-      "description": "Ending date, or date and time.",
-      "translation": {
-        "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod > endPosition"],
-        "FGDC CSDGM": ["idinfo > timeperd > rngdates > enddate"]
-      },
-      "$ref": "common.json#/definitions/date"
-    },
-    "timeInterval": {
-      "$ref": "#/definitions/timeInterval"
-    },
-    "duration": {
-      "$ref": "#/definitions/duration"
     }
   },
-  "anyOf": [{
-    "title": "startDateTime required",
-    "required": ["startDateTime"]
+  "oneOf": [{
+    "title": "dateTime",
+    "type": "object",
+    "description": "A timePeriod with a startDateTime and/or endDateTime.",
+    "example": "../examples/timePeriod.json#/0",
+    "properties": {
+      "startDateTime": {
+        "description": "Starting date, or date and time.",
+        "translation": {
+          "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod > beginPosition "],
+          "FGDC CSDGM": ["idinfo > timeperd > rngdates > begdate"]
+        },
+        "$ref": "common.json#/definitions/date"
+      },
+      "endDateTime": {
+        "description": "Ending date, or date and time.",
+        "translation": {
+          "ISO 19115-2": ["EX_TemporalExtent > extent > TimePeriod > endPosition"],
+          "FGDC CSDGM": ["idinfo > timeperd > rngdates > enddate"]
+        },
+        "$ref": "common.json#/definitions/date"
+      },
+      "timeInterval": {
+        "$ref": "#/definitions/timeInterval"
+      },
+      "duration": {
+        "$ref": "#/definitions/duration"
+      }
+    },
+    "anyOf": [{
+      "title": "startDateTime required",
+      "required": ["startDateTime"]
+    }, {
+      "title": "endDateTime required",
+      "required": ["endDateTime"]
+    }]
   }, {
-    "title": "endDateTime required",
-    "required": ["endDateTime"]
+    "title": "geologicAge",
+    "type": "object",
+    "description": "A timePeriod with a startGeologicAge and/or endGeologicAge.",
+    "example": "../examples/timePeriod.json#/1",
+    "properties": {
+      "startGeologicAge": {
+        "$ref": "./geologicAge.json#",
+        "description": "A name, code, or date for the beginning of an event or period in geologic time.",
+        "translation": {
+          "FGDC CSDGM": ["timeperd > timeinfo > rngdates > beggeol"]
+        }
+      },
+      "endGeologicAge": {
+        "$ref": "./geologicAge.json#",
+        "description": "A name, code, or date for the end of an event or period in geologic time.",
+        "translation": {
+          "FGDC CSDGM": ["timeperd > timeinfo > rngdates > endgeol"]
+        }
+      }
+    },
+    "anyOf": [{
+      "title": "startGeologicAge required",
+      "required": ["startGeologicAge"]
+    }, {
+      "title": "endGeologicAge required",
+      "required": ["endGeologicAge"]
+    }]
   }],
   "definitions": {
     "duration": {
