@@ -10,7 +10,7 @@
     "FGDC CSDGM": ["metadata > spref > horizsys > planar > mapproj"]
   },
   "required": ["projection"],
-  "additionalProperties": false,
+  "additionalProperties": true,
   "properties": {
     "projectionIdentifier": {
       "translation": {
