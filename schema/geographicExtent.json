@@ -33,8 +33,33 @@
       "items": {
         "$ref": "#/definitions/geographicElement"
       }
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the geographic areal domain of the data set. Examples include, \"Manistee River watershed\", \"extent of 7 ½ minute quads containing any property belonging to Yellowstone National Park\", or \"ponds and reservoirs larger than 2 acres in Jefferson County, Colorado\".",
+      "translation": {
+        "ISO 19115-2": ["EX_Extent > geographicElement > EX_GeographicDescription > geographicIdentifier > MD_Identifier > code"],
+        "FGDC CSDGM": ["idinfo > spdom > descgeog"]
+      }
     }
   },
+  "anyOf": [{
+      "title": "identifier is required",
+      "required": ["identifier"]
+    },
+    {
+      "title": "boundingBox is required",
+      "required": ["boundingBox"]
+    },
+    {
+      "title": "geographicElement is required",
+      "required": ["geographicElement"]
+    },
+    {
+      "title": "description is required",
+      "required": ["description"]
+    }
+  ],
   "definitions": {
     "boundingBox": {
       "type": "object",
