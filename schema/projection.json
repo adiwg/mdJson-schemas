@@ -1,0 +1,264 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "projection.json#",
+  "type": "object",
+  "title": "projection",
+  "description": "The set of parameters for the projection that applies to the resource.",
+  "example": "../examples/projection.json",
+  "translation": {
+    "ISO 19115-2": ["referenceSystemInfo > MD_CRS > projection"],
+    "FGDC CSDGM": ["metadata > spref > horizsys > planar > mapproj"]
+  },
+  "required": ["projection"],
+  "additionalProperties": false,
+  "properties": {
+    "projectionIdentifier": {
+      "translation": {
+        "ISO 19115-2": ["referenceSystemInfo > MD_CRS > projection > RS_Identifier"]
+      },
+      "$ref": "./identifier.json#"
+    },
+    "gridSystem": {
+      "type": "string",
+      "description": "The code for grid system.",
+      "codelist": "adiwg_mapGridSystem"
+    },
+    "gridSystemName": {
+      "type": "string",
+      "description": "The name of the grid UTM, State Plane, or other grid system."
+    },
+    "gridZone": {
+      "type": "string",
+      "description": "The unique zone identifier for grid coordinate systems."
+    },
+    "projection": {
+      "type": "string",
+      "description": "The code for the planar, grid, or local projection.",
+      "codelist": "adiwg_mapProjection"
+    },
+    "projectionName": {
+      "type": "string",
+      "description": "The name of the planar, grid, or local projection."
+    },
+    "standardParallel1": {
+      "type": "number",
+      "description": "The line of constant latitude at which the surface of the Earth and the plane or developable surface intersect.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > standardParallel"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > stdparll"]
+      }
+    },
+    "standardParallel2": {
+      "type": "number",
+      "description": "The line of constant latitude at which the surface of the Earth and the plane or developable surface intersect.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > standardParallel"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > stdparll"]
+      }
+    },
+    "longitudeOfCentralMeridian": {
+      "type": "number",
+      "description": "The line of longitude at the center of a map projection generally used as the basis for constructing the projection.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > longitudeOfCentralMeridian"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > longcm"]
+      }
+    },
+    "latitudeOfProjectionOrigin": {
+      "type": "number",
+      "description": "The latitude chosen as the origin of rectangular coordinates for a map projection.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > latitudeOfProjectionOrigin"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > latprjo"]
+      }
+    },
+    "falseEasting": {
+      "type": "number",
+      "description": "The value added to all 'x' values in the rectangular coordinates for a map projection. This value frequently is assigned to eliminate negative numbers.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > falseEasting"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > feast"]
+      }
+    },
+    "falseNorthing": {
+      "type": "number",
+      "description": "The value added to all 'y' values in the rectangular coordinates for a map projection. This value frequently is assigned to eliminate negative numbers.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > falseNorthing"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > fnorth"]
+      }
+    },
+    "falseEastingNorthingUnits": {
+      "type": "string",
+      "description": "The units of measure for falseEasting and falseNorthing.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > falseEastingNorthingUnits"]
+      }
+    },
+    "scaleFactorAtEquator": {
+      "type": "number",
+      "description": "A multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the equator.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > scaleFactorAtEquator"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > sfequat"]
+      }
+    },
+    "heightOfProspectivePointAboveSurface": {
+      "type": "number",
+      "description": "The height of viewpoint above the Earth, expressed in meters.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > heightOfProspectivePointAboveSurface"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > heightpt"]
+      }
+    },
+    "longitudeOfProjectionCenter": {
+      "type": "number",
+      "description": "The longitude of the point of projection for azimuthal projections.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > longitudeOfProjectionCenter"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > longpc"]
+      }
+    },
+    "latitudeOfProjectionCenter": {
+      "type": "number",
+      "description": "The latitude of the point of projection for azimuthal projections.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > latitudeOfProjectionCenter"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > latprjc"]
+      }
+    },
+    "scaleFactorAtCenterLine": {
+      "type": "number",
+      "description": "A multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the center line.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > latitudeOfProjectionCenter"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > latprjc"]
+      }
+    },
+    "scaleFactorAtCentralMeridian": {
+      "type": "number",
+      "description": "A multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance along the central meridian.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > latitudeOfProjectionCenter"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > latprjc"]
+      }
+    },
+    "straightVerticalLongitudeFromPole": {
+      "type": "number",
+      "description": "The longitude to be oriented straight up from the North or South Pole.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > latitudeOfProjectionCenter"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > latprjc"]
+      }
+    },
+    "scaleFactorAtProjectionOrigin": {
+      "type": "number",
+      "description": "A multiplier for reducing a distance obtained from a map by computation or scaling to the actual distance at the projection origin.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > latitudeOfProjectionCenter"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > latprjc"]
+      }
+    },
+    "azimuthAngle": {
+      "type": "number",
+      "description": "The angle measured clockwise from north, and expressed in degrees.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > obliqueLineAzimuthParameter > MD_ObliqueLineAzimuth > azimuthAngle"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > obqlazim > azimangl"]
+      }
+    },
+    "azimuthMeasurePointLongitude": {
+      "type": "number",
+      "description": "The longitude of the map projection origin.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > obliqueLineAzimuthParameter > MD_ObliqueLineAzimuth > azimuthMeasurePointLongitude"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > obqlazim > azimptl"]
+      }
+    },
+    "obliqueLinePoint": {
+      "$ref": "#/definitions/obliqueLinePoint"
+    },
+    "landsatNumber": {
+      "type": "integer",
+      "description": "The number of the Landsat satellite.",
+      "translation": {
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > landsat"]
+      }
+    },
+    "landsatPath": {
+      "type": "integer",
+      "description": "The number of the orbit of the Landsat satellite.",
+      "translation": {
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > pathnum"]
+      }
+    },
+    "localPlanarDescription": {
+      "type": "string",
+      "description": "A description of any right-handed planar coordinate system of which the z-axis coincides with a plumb line through the origin that locally is aligned with the surface of the Earth.",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > xxx"],
+        "FGDC CSDGM": ["spref > horizsys > planar > localp > localpd"]
+      }
+    },
+    "localPlanarGeoreference": {
+      "type": "string",
+      "description": "A description of the information provided to register the local planar system to the Earth (e.g. control points, satellite ephemeral data, inertial navigation data).",
+      "translation": {
+        "FGDC CSDGM": ["spref > horizsys > planar > localp > localpgi"]
+      }
+    },
+    "otherGridDescription": {
+      "type": "string",
+      "description": "A complete description of a grid system, not defined elsewhere in this standard, that was used for the data set. The information provided shall include the name of the grid system, the names of the parameters and values used for the data set, and the citation of the specification for the algorithms that describe the mathematical relationship between the Earth and the coordinates of the grid system."
+    },
+    "otherProjectionDescription": {
+      "type": "string",
+      "description": "A description of a projection, not defined elsewhere in the standard, that was used for the data set. The information provided shall include the name of the projection, names of parameters and values used for the data set, and the citation of the specification for the algorithms that describe the mathematical relationship between Earth and plane or developable surface for the projection.",
+      "translation": {
+        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > otherprj"]
+      }
+    }
+  },
+  "definitions": {
+    "obliqueLinePoint": {
+      "type": "array",
+      "description": "The method used to describe the line along which an oblique Mercator map projection is centered using two points near the limits of the mapped region that define the center line.",
+      "example": "../examples/obliqueLinePoint.json",
+      "translation": {
+        "ISO 19115-2": ["MD_ProjectionParameters > obliqueLineLatitude"],
+        "FGDC CSDGM": ["spref > horizsys > planar > mapproj > obqmerc > obqlpt"]
+      },
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "title": "point",
+        "description": "A point near the limits of the mapped region that define the center line for an oblique Mercator map projection.",
+        "translation": {
+          "ISO 19115-2": ["MD_ObliqueLinePoint"],
+          "FGDC CSDGM": ["spref > horizsys > planar > mapproj > obqmerc > obqlpt"]
+        },
+        "required": ["obliqueLineLatitude", "obliqueLineLongitude"],
+        "additionalProperties": true,
+        "properties": {
+          "obliqueLineLatitude": {
+            "type": "number",
+            "description": "The latitude of a point defining the oblique line.",
+            "translation": {
+              "ISO 19115-2": ["MD_ObliqueLinePoint > obliqueLineLatitude"],
+              "FGDC CSDGM": ["spref > horizsys > planar > mapproj > obqmerc > obqlpt > obqllat"]
+            }
+          },
+          "obliqueLineLongitude": {
+            "type": "number",
+            "description": "The longitude of a point defining the oblique line.",
+            "translation": {
+              "ISO 19115-2": ["MD_ObliqueLinePoint > obliqueLineLongitude"],
+              "FGDC CSDGM": ["spref > horizsys > planar > mapproj > obqmerc > obqlpt > obqllong"]
+            }
+          }
+        }
+      }
+    }
+  }
+}
