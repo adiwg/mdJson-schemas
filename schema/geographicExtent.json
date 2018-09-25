@@ -18,7 +18,11 @@
     },
     "boundingBox": {
       "$ref": "#/definitions/boundingBox",
-      "description": "General geographic position of the resource."
+      "description": "General geographic position of the resource.",
+      "translation": {
+        "ISO 19115-2": ["EX_GeographicBoundingBox"],
+        "FGDC CSDGM": ["idinfo > spdom > bounding"]
+      }
     },
     "geographicElement": {
       "type": "array",
@@ -45,24 +49,61 @@
       "properties": {
         "westLongitude": {
           "type": "number",
-          "description": "",
-          "translation": {}
+          "description": "Western-most coordinate of the limit of the dataset extent expressed in longitude, in decimal degrees.",
+          "translation": {
+            "ISO 19115-2": ["EX_GeographicBoundingBox > westBoundLongitude"],
+            "FGDC CSDGM": ["idinfo > spdom > bounding > westbc"]
+          }
         },
         "eastLongitude": {
           "type": "number",
-          "description": "",
-          "translation": {}
+          "description": "Eastern-most coordinate of the limit of the dataset extent expressed in longitude, in decimal degrees.",
+          "translation": {
+            "ISO 19115-2": ["EX_GeographicBoundingBox > eastBoundLongitude"],
+            "FGDC CSDGM": ["idinfo > spdom > bounding > eastbc"]
+          }
         },
         "southLatitude": {
           "type": "number",
-          "description": "",
-          "translation": {}
+          "description": "Southern-most coordinate of the limit of the dataset extent expressed in latitude, in decimal degrees.",
+          "translation": {
+            "ISO 19115-2": ["EX_GeographicBoundingBox > southBoundLatitude"],
+            "FGDC CSDGM": ["idinfo > spdom > bounding > southbc"]
+          }
         },
         "northLatitude": {
           "type": "number",
-          "description": "",
-          "translation": {}
+          "description": "Northern-most coordinate of the limit of the dataset extent expressed in latitude, in decimal degrees.",
+          "translation": {
+            "ISO 19115-2": ["EX_GeographicBoundingBox > northBoundLatitude"],
+            "FGDC CSDGM": ["idinfo > spdom > bounding > northbc"]
+          }
+        },
+        "minimumAltitude": {
+          "type": "number",
+          "description": "The minimum altitude(height above sea level) extent of coverage.",
+          "translation": {
+            "FGDC CSDGM": ["idinfo > spdom > bounding > boundalt > altmin"]
+          }
+        },
+        "maximumAltitude": {
+          "type": "number",
+          "description": "The maximum altitude(height above sea level) extent of coverage.",
+          "translation": {
+            "FGDC CSDGM": ["idinfo > spdom > bounding > boundalt > altmax"]
+          }
+        },
+        "unitsOfAltitude": {
+          "type": "string",
+          "description": "The units of measure in which altitude is expressed.",
+          "translation": {
+            "FGDC CSDGM": ["idinfo > spdom > bounding > boundalt > altunit"]
+          }
         }
+      },
+      "dependencies": {
+        "minimumAltitude": ["unitsOfAltitude"],
+        "maximumAltitude": ["unitsOfAltitude"]
       }
     },
     "geographicElement": {

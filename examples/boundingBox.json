@@ -1,6 +1,18 @@
- [{
-   "westLongitude": -140.0,
-   "eastLongitude": -120.0,
-   "southLatitude": 49.0,
-   "northLatitude": 70.0
- }]
+[{
+    "westLongitude": -140.0,
+    "eastLongitude": -120.0,
+    "southLatitude": 49.0,
+    "northLatitude": 70.0,
+    "minimumAltitude": 250.0,
+    "maximumAltitude": 1500.0,
+    "unitsOfAltitude": "meters"
+  },
+  {
+    "westLongitude": -140.0,
+    "eastLongitude": -120.0,
+    "southLatitude": 49.0,
+    "northLatitude": 70.0,
+    "maximumAltitude": 1500.0,
+    "unitsOfAltitude": "meters"
+  }
+]
