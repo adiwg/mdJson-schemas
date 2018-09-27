@@ -1,0 +1,20 @@
+[{
+    "datumIdentifier": {
+      "identifier": "identifier"
+    },
+    "ellipsoidIdentifier": {
+      "identifier": "identifier"
+    },
+    "semiMajorAxis": 9.9,
+    "axisUnits": "axisUnits",
+    "denominatorOfFlatteningRatio": 9.9
+  },
+  {
+    "datumIdentifier": {
+      "identifier": "identifier"
+    },
+    "ellipsoidIdentifier": {
+      "identifier": "identifier"
+    }
+  }
+]
