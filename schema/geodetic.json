@@ -4,6 +4,7 @@
   "type": "object",
   "title": "geodetic",
   "description": "Parameters for defining the shape of the earth.",
+  "example": "../examples/geodetic.json",
   "translation": {
     "ISO 19115-2": ["referenceSystemInfo > MD_CRS"],
     "FGDC CSDGM": ["metadata > spref > horizsys > geodetic"]

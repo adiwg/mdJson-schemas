@@ -1,0 +1,13 @@
+[{
+  "datumIdentifier": {
+    "identifier": "identifier"
+  },
+  "encodingMethod": "encodingMethod",
+  "isDepthSystem": false,
+  "verticalResolution": 9.9,
+  "unitOfMeasure": "unitOfMeasure"
+}, {
+  "datumIdentifier": {
+    "identifier": "identifier"
+  }
+}]
