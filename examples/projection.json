@@ -2,11 +2,7 @@
   "projectionIdentifier": {
     "identifier": "identifier"
   },
-  "gridSystem": "gridSystem",
-  "gridSystemName": "gridSystemName",
   "gridZone": "gridZone",
-  "projection": "projection",
-  "projectionName": "projectionName",
   "standardParallel1": 9.9,
   "standardParallel2": 9.9,
   "longitudeOfCentralMeridian": 9.9,
@@ -34,14 +30,19 @@
     }
   ],
   "landsatNumber": 9,
-  "landsatPath": 9,
-  "localPlanarDescription": "localPlanarDescription",
-  "localPlanarGeoreference": "localPlanarGeoreference",
-  "otherGridDescription": "otherGridDescription",
-  "otherProjectionDescription": "otherProjectionDescription"
+  "landsatPath": 9
 }, {
   "projectionIdentifier": {
-    "identifier": "identifier"
-  },
-  "projection": "projection"
-}]
+    "identifier": "alaska",
+    "namespace": "org.adiwg.code.mapProjection"
+  }
+}, {
+  "projectionIdentifier": {
+    "identifier": "identifier",
+    "namespace": "urn:ogc:def:crs:EPSG"
+  }
+}, {
+  "gridIdentifier": {
+    "identifier": "utm",
+    "namespace": "org.adiwg.code.mapGridSystem"
+  }}]

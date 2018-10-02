@@ -9,36 +9,104 @@
     "ISO 19115-2": ["referenceSystemInfo > MD_CRS > projection"],
     "FGDC CSDGM": ["metadata > spref > horizsys > planar > mapproj"]
   },
-  "required": ["projection"],
   "additionalProperties": true,
   "properties": {
     "projectionIdentifier": {
+      "description": "The identifier for the projection.",
       "translation": {
         "ISO 19115-2": ["referenceSystemInfo > MD_CRS > projection > RS_Identifier"]
       },
-      "$ref": "./identifier.json#"
+      "properties": {
+        "identifier": {
+          "type": "string",
+          "codelist": "adiwg_mapProjection"
+        },
+        "description": {
+          "type": "string",
+          "description": "A description of a projection, not defined elsewhere in the standard, that was used for the data set. The information provided shall include the name of the projection, names of parameters and values used for the data set, and the citation of the specification for the algorithms that describe the mathematical relationship between Earth and plane or developable surface for the projection.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > otherprj"]
+          },
+          "type": "string",
+          "description": "A complete description of a grid system, not defined elsewhere in this standard, that was used for the data set. The information provided shall include the name of the grid system, the names of the parameters and values used for the data set, and the citation of the specification for the algorithms that describe the mathematical relationship between the Earth and the coordinates of the grid system."
+        }
+
+      },
+      "allOf": [{
+        "$ref": "./identifier.json#"
+      }],
+      "dependencies": {
+        "namespace": {
+          "oneOf": [{
+              "properties": {
+                "namespace": {
+                  "enum": ["org.adiwg.code.mapProjection"]
+                },
+                "identifier": {
+                  "enum": ["alaska", "albers", "azimuthalEquidistant", "equidistantConic", "equirectangular", "generalVertical", "gnomonic", "lambertConic", "lambertEqualArea", "mercator", "miller", "obliqueMercator", "orthographic", "parameters", "polarStereo", "polyconic", "robinson", "sinusoidal", "spaceOblique", "stereographic", "transverseMercator", "grinten"]
+                }
+              }
+            },
+            {
+              "not": {
+                "properties": {
+                  "namespace": {
+                    "enum": ["org.adiwg.code.mapProjection"]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
     },
-    "gridSystem": {
-      "type": "string",
-      "description": "The code for grid system.",
-      "codelist": "adiwg_mapGridSystem"
-    },
-    "gridSystemName": {
-      "type": "string",
-      "description": "The name of the grid UTM, State Plane, or other grid system."
+    "gridIdentifier": {
+      "description": "The identifier for the gris system.",
+      "properties": {
+        "identifier": {
+          "type": "string",
+          "codelist": "adiwg_mapGridSystem"
+        },
+        "description": {
+          "type": "string",
+          "description": "A complete description of a grid system, not defined elsewhere in this standard, that was used for the data set. The information provided shall include the name of the grid system, the names of the parameters and values used for the data set, and the citation of the specification for the algorithms that describe the mathematical relationship between the Earth and the coordinates of the grid system.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > gridsys > othergrd"]
+          }
+        }
+
+      },
+      "allOf": [{
+        "$ref": "./identifier.json#"
+      }],
+      "dependencies": {
+        "namespace": {
+          "oneOf": [{
+              "properties": {
+                "namespace": {
+                  "enum": ["org.adiwg.code.mapGridSystem"]
+                },
+                "identifier": {
+                  "enum": ["utm","ups","spcs","arcsys","other"]
+                }
+              }
+            },
+            {
+              "not": {
+                "properties": {
+                  "namespace": {
+                    "enum": ["org.adiwg.code.mapGridSystem"]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
     },
     "gridZone": {
       "type": "string",
       "description": "The unique zone identifier for grid coordinate systems."
-    },
-    "projection": {
-      "type": "string",
-      "description": "The code for the planar, grid, or local projection.",
-      "codelist": "adiwg_mapProjection"
-    },
-    "projectionName": {
-      "type": "string",
-      "description": "The name of the planar, grid, or local projection."
     },
     "standardParallel1": {
       "type": "number",
@@ -191,34 +259,19 @@
       "translation": {
         "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > pathnum"]
       }
-    },
-    "localPlanarDescription": {
-      "type": "string",
-      "description": "A description of any right-handed planar coordinate system of which the z-axis coincides with a plumb line through the origin that locally is aligned with the surface of the Earth.",
-      "translation": {
-        "ISO 19115-2": ["MD_ProjectionParameters > xxx"],
-        "FGDC CSDGM": ["spref > horizsys > planar > localp > localpd"]
-      }
-    },
-    "localPlanarGeoreference": {
-      "type": "string",
-      "description": "A description of the information provided to register the local planar system to the Earth (e.g. control points, satellite ephemeral data, inertial navigation data).",
-      "translation": {
-        "FGDC CSDGM": ["spref > horizsys > planar > localp > localpgi"]
-      }
-    },
-    "otherGridDescription": {
-      "type": "string",
-      "description": "A complete description of a grid system, not defined elsewhere in this standard, that was used for the data set. The information provided shall include the name of the grid system, the names of the parameters and values used for the data set, and the citation of the specification for the algorithms that describe the mathematical relationship between the Earth and the coordinates of the grid system."
-    },
-    "otherProjectionDescription": {
-      "type": "string",
-      "description": "A description of a projection, not defined elsewhere in the standard, that was used for the data set. The information provided shall include the name of the projection, names of parameters and values used for the data set, and the citation of the specification for the algorithms that describe the mathematical relationship between Earth and plane or developable surface for the projection.",
-      "translation": {
-        "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > otherprj"]
-      }
     }
   },
+  "oneOf": [
+    {
+      "title": "projectionIdentifier is required.",
+      "required": ["projectionIdentifier"]
+    },
+    {
+      "title": "gridIdentifier is required.",
+      "required": ["gridIdentifier"]
+    }
+  ],
+
   "definitions": {
     "obliqueLinePoint": {
       "type": "array",
