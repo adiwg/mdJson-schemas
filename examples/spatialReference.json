@@ -25,10 +25,22 @@
    },
    {
      "referenceSystemType": "projected",
-     "referenceSystemIdentifier": {
-       "identifier": "PROJCS ['Wyoming 4901, Eastern Zone (1983, meters)', GEOGCS ['GRS 80', DATUM ['GRS 80', SPHEROID ['GRS 80', 6378137.000000, 298.257222]], PRIMEM ['Greenwich', 0.000000 ], UNIT ['Decimal Degree', 0.01745329251994330]], PROJECTION ['Transverse Mercator'], PARAMETER ['Scale_Factor', 0.999938], PARAMETER ['Central_Meridian', -105.166667], PARAMETER ['Latitude_Of_Origin', 40.500000], PARAMETER ['False_Easting', 200000.000000], UNIT ['Meter', 1.000000000000]]",
-       "namespace": "WKT",
-       "description": "Well Known Text for East Wyoming"
+     "referenceSystemWKT": "PROJCS ['Wyoming 4901, Eastern Zone (1983, meters)', GEOGCS ['GRS 80', DATUM ['GRS 80', SPHEROID ['GRS 80', 6378137.000000, 298.257222]], PRIMEM ['Greenwich', 0.000000 ], UNIT ['Decimal Degree', 0.01745329251994330]], PROJECTION ['Transverse Mercator'], PARAMETER ['Scale_Factor', 0.999938], PARAMETER ['Central_Meridian', -105.166667], PARAMETER ['Latitude_Of_Origin', 40.500000], PARAMETER ['False_Easting', 200000.000000], UNIT ['Meter', 1.000000000000]]"
+   },
+   {
+     "referenceSystemType": "geodeticGeographic2D",
+     "referenceSystemParameterSet": {
+       "geodetic": {
+         "datumIdentifier": {
+           "identifier": "identifier"
+         },
+         "ellipsoidIdentifier": {
+           "identifier": "identifier"
+         },
+         "semiMajorAxis": 9.9,
+         "axisUnits": "axisUnits",
+         "denominatorOfFlatteningRatio": 9.9
+       }
      }
    }
  ]

@@ -19,6 +19,13 @@
     "referenceSystemIdentifier": {
       "$ref": "./identifier.json#",
       "description": "The reference system identifier or definition."
+    },
+    "referenceSystemWKT":{
+      "type": "string",
+      "description": "Well Known Text (WKT) for spatial reference system."
+    },
+    "referenceSystemParameterSet":{
+      "$ref": "./referenceSystemParameterSet.json#"
     }
   },
   "anyOf": [{
@@ -28,6 +35,14 @@
     {
       "title": "referenceSystemIdentifier is required",
       "required": ["referenceSystemIdentifier"]
+    },
+    {
+      "title": "referenceSystemWKT is required",
+      "required": ["referenceSystemWKT"]
+    },
+    {
+      "title": "referenceSystemParameterSet is required",
+      "required": ["referenceSystemParameterSet"]
     }
   ]
 }
