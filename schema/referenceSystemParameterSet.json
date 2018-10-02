@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "referenceSystemParameterSet.json#",
+  "type": "object",
+  "title": "referenceSystemParameterSet",
+  "description": "The set of parameters describing a spatial reference system.",
+  "additionalProperties": true,
+  "properties": {
+    "projection": {
+      "$ref": "./projection.json#"
+    },
+    "geodetic": {
+      "$ref": "./geodetic.json#"
+    },
+    "verticalDatum": {
+      "$ref": "./verticalDatum.json#"
+    },
+    "local": {
+      "$ref": "#/definitions/local"
+    }
+  },
+  "oneOf": [{
+      "title": "projection is required.",
+      "required": ["projection"]
+    },
+    {
+      "title": "geodetic is required.",
+      "required": ["geodetic"]
+    },
+    {
+      "title": "verticalDatum is required.",
+      "required": ["verticalDatum"]
+    },
+    {
+      "title": "local is required.",
+      "required": ["local"]
+    }
+  ],
+  "definitions": {
+    "local": {
+      "type": "object",
+      "description": "A description of a local coordinate system.",
+      "example": "",
+      "translation": {
+        "FGDC CSDGM": ["spref > horizsys > local", "spref > horizsys > planar > localp"]
+      },
+      "required": ["description", "georeference"],
+      "additionalProperties": true,
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "A description of the local reference system.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > local > localgeo", "spref > horizsys > planar > localp > localpd"]
+          }
+        },
+        "georeference": {
+          "type": "string",
+          "description": "A description of the information provided to register the local system to the Earth (e.g. control points, satellite ephemeral data, inertial navigation data).",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > local > localdes", "spref > horizsys > planar > localp > localpgi"]
+          }
+        },
+        "fixedToEarth": {
+          "type": "boolean",
+          "default": true,
+          "description": "True if the z-axis of the coordinate system coincides with a plumb line through the origin that locally is aligned with the surface of the Earth."
+        }
+      }
+    }
+  }
+}
