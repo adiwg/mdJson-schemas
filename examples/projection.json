@@ -1,6 +1,7 @@
 [{
   "projectionIdentifier": {
-    "identifier": "identifier"
+    "identifier": "identifier",
+    "name": "name"
   },
   "gridZone": "gridZone",
   "standardParallel1": 9.9,
@@ -34,6 +35,7 @@
 }, {
   "projectionIdentifier": {
     "identifier": "alaska",
+    "name": "Modified Stereographic for Alaska",
     "namespace": "org.adiwg.code.mapProjection"
   }
 }, {

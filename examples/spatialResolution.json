@@ -8,4 +8,25 @@
    }
  }, {
    "levelOfDetail": "levelOfDetail"
+ }, {
+   "geographicResolution": {
+     "latitudeResolution": 9.9,
+     "longitudeResolution": 9.9,
+     "unitOfMeasure": "unitOfMeasure"
+   }
+ }, {
+   "bearingDistanceResolution": {
+     "distanceResolution": 9.9,
+     "distanceUnitOfMeasure": "",
+     "bearingResolution": 9.9,
+     "bearingUnitOfMeasure": "",
+     "bearingReferenceDirection": "north",
+     "bearingReferenceMeridian": "assumed"
+   }
+ }, {
+   "coordinateResolution": {
+     "abscissaResolutionX": 9.9,
+     "ordinateResolutionY": 9.9,
+     "unitOfMeasure": "unitOfMeasure"
+   }
  }]
