@@ -13,12 +13,14 @@
   "properties": {
     "projectionIdentifier": {
       "description": "The identifier for the projection.",
+      "required": ["identifier"],
       "translation": {
         "ISO 19115-2": ["referenceSystemInfo > MD_CRS > projection > RS_Identifier"]
       },
       "properties": {
         "identifier": {
           "type": "string",
+          "description": "The identifier for the projection. Combine with a namespace to explicitly identify the projection. For example, code=\"albers\" and namespace=\"org.adiwg.code.mapProjection\".",
           "codelist": "adiwg_mapProjection"
         },
         "description": {
@@ -61,10 +63,12 @@
       }
     },
     "gridIdentifier": {
-      "description": "The identifier for the gris system.",
+      "description": "The identifier for the grid system.",
+      "required": ["identifier"],
       "properties": {
         "identifier": {
           "type": "string",
+          "description": "The identifier for the grid system. Combine with a namespace to explicitly identify the grid system. For example, code=\"utm\" and namespace=\"org.adiwg.code.mapGridSystem\".",
           "codelist": "adiwg_mapGridSystem"
         },
         "description": {

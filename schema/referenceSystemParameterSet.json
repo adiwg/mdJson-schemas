@@ -4,6 +4,7 @@
   "type": "object",
   "title": "referenceSystemParameterSet",
   "description": "The set of parameters describing a spatial reference system.",
+  "example": "../examples/referenceSystemParameterSet.json",
   "additionalProperties": true,
   "properties": {
     "projection": {
@@ -40,7 +41,7 @@
     "local": {
       "type": "object",
       "description": "A description of a local coordinate system.",
-      "example": "",
+      "example": "../examples/referenceSystemParameterSet.json#/3",
       "translation": {
         "FGDC CSDGM": ["spref > horizsys > local", "spref > horizsys > planar > localp"]
       },
