@@ -84,7 +84,7 @@
     "geographicResolution": {
       "type": "object",
       "description": "The quantities of latitude and longitude which define the position of a point on the Earth's surface with respect to a reference spheroid.",
-      "example": "../spatialResolution.json",
+      "example": "../examples/spatialResolution.json",
       "translation": {
         "FGDC CSDGM": ["spref > horizsys > geograph"]
       },
@@ -116,7 +116,7 @@
     "bearingDistanceResolution": {
       "type": "object",
       "description": "The method of encoding the position of a point by measuring its distance and direction (azimuth angle) from another point.",
-      "example": "../spatialResolution.json",
+      "example": "../examples/spatialResolution.json",
       "translation": {
         "FGDC CSDGM": ["spref > horizsys > planar > planci > distbrep"]
       },
@@ -177,7 +177,7 @@
     "coordinateResolution": {
       "type": "object",
       "description": "",
-      "example": "../spatialResolution.json",
+      "example": "../examples/spatialResolution.json",
       "translation": {
         "FGDC CSDGM": ["spref > horizsys > planar > planci > coordrep"]
       },
