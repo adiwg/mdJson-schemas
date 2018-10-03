@@ -1,12 +1,52 @@
 # Change Log
 
-## [v2.4.7](https://github.com/adiwg/mdJson-schemas/tree/v2.4.7)
+## [v2.5.0](https://github.com/adiwg/mdJson-schemas/tree/v2.5.0)
 
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.9...v2.5.0)
+
+**Implemented enhancements:**
+
+- source rule change [\#174](https://github.com/adiwg/mdJson-schemas/issues/174)
+- timeInstant rule change [\#171](https://github.com/adiwg/mdJson-schemas/issues/171)
+- timePeriod rule change [\#170](https://github.com/adiwg/mdJson-schemas/issues/170)
+- geologicAge new object [\#169](https://github.com/adiwg/mdJson-schemas/issues/169)
+- entityAttribute rule change [\#168](https://github.com/adiwg/mdJson-schemas/issues/168)
+- verticalDatum new object [\#164](https://github.com/adiwg/mdJson-schemas/issues/164)
+- geographicResolution new object [\#163](https://github.com/adiwg/mdJson-schemas/issues/163)
+- bearingDistanceResolution new object [\#162](https://github.com/adiwg/mdJson-schemas/issues/162)
+- coordinateResolution new object [\#161](https://github.com/adiwg/mdJson-schemas/issues/161)
+- spatialResolution rule change [\#160](https://github.com/adiwg/mdJson-schemas/issues/160)
+- geodetic new object [\#159](https://github.com/adiwg/mdJson-schemas/issues/159)
+- obliqueLinePoint new object [\#158](https://github.com/adiwg/mdJson-schemas/issues/158)
+- projection new object [\#157](https://github.com/adiwg/mdJson-schemas/issues/157)
+- referenceSystemParameterSet new object [\#156](https://github.com/adiwg/mdJson-schemas/issues/156)
+- spatialReferenceSystem rule change [\#155](https://github.com/adiwg/mdJson-schemas/issues/155)
+- boundingBox 'altitude' rule change [\#154](https://github.com/adiwg/mdJson-schemas/issues/154)
+
+**Fixed bugs:**
+
+- geographicExtent must have ... [\#190](https://github.com/adiwg/mdJson-schemas/issues/190)
+
+## [v2.4.9](https://github.com/adiwg/mdJson-schemas/tree/v2.4.9) (2018-05-11)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.8...v2.4.9)
+
+**Implemented enhancements:**
+
+- distributor transferOption option required [\#196](https://github.com/adiwg/mdJson-schemas/issues/196)
+
+**Fixed bugs:**
+
+- scopeDescription must have ... [\#194](https://github.com/adiwg/mdJson-schemas/issues/194)
+- gridRepresentation transformationParameterAvailable required [\#187](https://github.com/adiwg/mdJson-schemas/issues/187)
+
+## [v2.4.8](https://github.com/adiwg/mdJson-schemas/tree/v2.4.8) (2018-04-13)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.7...v2.4.8)
+
+## [v2.4.7](https://github.com/adiwg/mdJson-schemas/tree/v2.4.7) (2018-04-12)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.5...v2.4.7)
 
 **Implemented enhancements:**
 
-- taxonomy rule change [\#202](https://github.com/adiwg/mdJson-schemas/issues/202)
 - resourceInfo rule change [\#201](https://github.com/adiwg/mdJson-schemas/issues/201)
 - allocation rule change [\#200](https://github.com/adiwg/mdJson-schemas/issues/200)
 - distributionFormat rule change [\#182](https://github.com/adiwg/mdJson-schemas/issues/182)
