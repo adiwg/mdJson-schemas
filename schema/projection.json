@@ -31,8 +31,14 @@
           },
           "type": "string",
           "description": "A complete description of a grid system, not defined elsewhere in this standard, that was used for the data set. The information provided shall include the name of the grid system, the names of the parameters and values used for the data set, and the citation of the specification for the algorithms that describe the mathematical relationship between the Earth and the coordinates of the grid system."
+        },
+        "name":{
+          "type": "string",
+          "description": "A descriptive name for the projection.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > mapprojn"]
+          }
         }
-
       },
       "allOf": [{
         "$ref": "./identifier.json#"
@@ -77,8 +83,14 @@
           "translation": {
             "FGDC CSDGM": ["spref > horizsys > planar > gridsys > othergrd"]
           }
+        },
+        "name":{
+          "type": "string",
+          "description": "A descriptive name for the grid system.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > gridsys > gridsysn"]
+          }
         }
-
       },
       "allOf": [{
         "$ref": "./identifier.json#"
