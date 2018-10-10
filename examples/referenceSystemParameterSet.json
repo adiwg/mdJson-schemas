@@ -27,12 +27,5 @@
       "verticalResolution": 9.9,
       "unitOfMeasure": "unitOfMeasure"
     }
-  },
-  {
-    "local": {
-      "description": "description",
-      "georeference": "georeference",
-      "fixedToEarth": true
-    }
   }
 ]

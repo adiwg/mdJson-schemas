@@ -3,6 +3,10 @@
     "identifier": "identifier",
     "name": "name"
   },
+  "gridIdentifier": {
+    "identifier": "utm",
+    "namespace": "org.adiwg.code.mapGridSystem"
+  },
   "gridZone": "gridZone",
   "standardParallel1": 9.9,
   "standardParallel2": 9.9,
@@ -31,7 +35,12 @@
     }
   ],
   "landsatNumber": 9,
-  "landsatPath": 9
+  "landsatPath": 9,
+  "local": {
+    "description": "description",
+    "georeference": "georeference",
+    "fixedToEarth": true
+  }
 }, {
   "projectionIdentifier": {
     "identifier": "alaska",
@@ -47,4 +56,21 @@
   "gridIdentifier": {
     "identifier": "utm",
     "namespace": "org.adiwg.code.mapGridSystem"
-  }}]
+  },
+  "projectionIdentifier": {
+    "identifier": "mercator",
+    "name": "Mercator",
+    "namespace": "org.adiwg.code.mapProjection"
+  }
+}, {
+  "local": {
+    "description": "description",
+    "georeference": "georeference",
+    "fixedToEarth": true
+  },
+  "projectionIdentifier": {
+    "identifier": "localPlanar",
+    "name": "Custom",
+    "namespace": "org.adiwg.code.mapProjection"
+  }
+}]

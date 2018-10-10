@@ -9,6 +9,7 @@
     "ISO 19115-2": ["referenceSystemInfo > MD_CRS > projection"],
     "FGDC CSDGM": ["metadata > spref > horizsys > planar > mapproj"]
   },
+  "required": ["projectionIdentifier"],
   "additionalProperties": true,
   "properties": {
     "projectionIdentifier": {
@@ -51,7 +52,7 @@
                   "enum": ["org.adiwg.code.mapProjection"]
                 },
                 "identifier": {
-                  "enum": ["alaska", "albers", "azimuthalEquidistant", "equidistantConic", "equirectangular", "generalVertical", "gnomonic", "lambertConic", "lambertEqualArea", "mercator", "miller", "obliqueMercator", "orthographic", "parameters", "polarStereo", "polyconic", "robinson", "sinusoidal", "spaceOblique", "stereographic", "transverseMercator", "grinten"]
+                  "enum": ["alaska", "albers", "azimuthalEquidistant", "equidistantConic", "equirectangular", "generalVertical", "gnomonic", "lambertConic", "lambertEqualArea", "mercator", "miller", "obliqueMercator", "orthographic", "parameters", "polarStereo", "polyconic", "robinson", "sinusoidal", "spaceOblique", "stereographic", "transverseMercator", "grinten", "localPlanar", "localSystem"]
                 }
               }
             },
@@ -275,19 +276,11 @@
       "translation": {
         "FGDC CSDGM": ["spref > horizsys > planar > mapprojp > pathnum"]
       }
+    },
+    "local": {
+      "$ref": "#/definitions/local"
     }
   },
-  "oneOf": [
-    {
-      "title": "projectionIdentifier is required.",
-      "required": ["projectionIdentifier"]
-    },
-    {
-      "title": "gridIdentifier is required.",
-      "required": ["gridIdentifier"]
-    }
-  ],
-
   "definitions": {
     "obliqueLinePoint": {
       "type": "array",
@@ -326,6 +319,37 @@
               "FGDC CSDGM": ["spref > horizsys > planar > mapproj > obqmerc > obqlpt > obqllong"]
             }
           }
+        }
+      }
+    },
+    "local": {
+      "type": "object",
+      "description": "A description of a local coordinate system.",
+      "example": "../examples/projection.json#/4",
+      "translation": {
+        "FGDC CSDGM": ["spref > horizsys > local", "spref > horizsys > planar > localp"]
+      },
+      "required": ["description", "georeference"],
+      "additionalProperties": true,
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "A description of the local reference system.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > local > localgeo", "spref > horizsys > planar > localp > localpd"]
+          }
+        },
+        "georeference": {
+          "type": "string",
+          "description": "A description of the information provided to register the local system to the Earth (e.g. control points, satellite ephemeral data, inertial navigation data).",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > local > localdes", "spref > horizsys > planar > localp > localpgi"]
+          }
+        },
+        "fixedToEarth": {
+          "type": "boolean",
+          "default": true,
+          "description": "True if the z-axis of the coordinate system coincides with a plumb line through the origin that locally is aligned with the surface of the Earth."
         }
       }
     }
