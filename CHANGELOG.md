@@ -1,7 +1,14 @@
 # Change Log
 
-## [v2.5.0](https://github.com/adiwg/mdJson-schemas/tree/v2.5.0)
+## [v2.5.1](https://github.com/adiwg/mdJson-schemas/tree/v2.5.1)
 
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.5.0...v2.5.1)
+
+**Implemented enhancements:**
+
+- geographicExtent 'description' rule change [\#153](https://github.com/adiwg/mdJson-schemas/issues/153)
+
+## [v2.5.0](https://github.com/adiwg/mdJson-schemas/tree/v2.5.0) (2018-10-03)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.4.9...v2.5.0)
 
 **Implemented enhancements:**
@@ -18,7 +25,6 @@
 - spatialResolution rule change [\#160](https://github.com/adiwg/mdJson-schemas/issues/160)
 - geodetic new object [\#159](https://github.com/adiwg/mdJson-schemas/issues/159)
 - obliqueLinePoint new object [\#158](https://github.com/adiwg/mdJson-schemas/issues/158)
-- projection new object [\#157](https://github.com/adiwg/mdJson-schemas/issues/157)
 - referenceSystemParameterSet new object [\#156](https://github.com/adiwg/mdJson-schemas/issues/156)
 - spatialReferenceSystem rule change [\#155](https://github.com/adiwg/mdJson-schemas/issues/155)
 - boundingBox 'altitude' rule change [\#154](https://github.com/adiwg/mdJson-schemas/issues/154)
