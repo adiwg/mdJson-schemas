@@ -35,7 +35,14 @@
       "description": "Information on any non-authoritative materials (e.g. field guides) useful for reconstructing the actual process.",
       "translation": {},
       "items": {
-        "$ref": "./identifier.json#"
+        "oneOf": [{
+            "$ref": "./citation.json#"
+          },
+          {
+            "$ref": "./identifier.json#",
+            "deprecated": true
+          }
+        ]
       }
     },
     "observer": {
@@ -73,7 +80,18 @@
       }
     },
     "taxonomicClassification": {
-      "$ref": "#/definitions/taxonomicClassification"
+      "oneOf": [{
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/taxonomicClassification"
+          }
+        },
+        {
+          "$ref": "#/definitions/taxonomicClassification",
+          "deprecated": true
+        }
+      ]
     }
   },
   "definitions": {
@@ -100,6 +118,7 @@
     },
     "taxonomicClassification": {
       "type": "object",
+      "title": "taxonomicClassification",
       "description": "Information about the range of taxa addressed in the data set or collection. NOTE It is recommended that one provide information starting from the taxonomic rank of kingdom, to a level which reflects the data set or collection being documented.",
       "example": "../examples/taxonomicClassification.json",
       "translation": {
@@ -107,7 +126,7 @@
         "FGDC CSDGM": ["idinfo > taxonomy > taxoncl"]
       },
       "additionalProperties": true,
-      "oneOf": [{
+      "anyOf": [{
         "title": "Requires taxonomicName and taxonomicLevel",
         "required": ["taxonomicName", "taxonomicLevel"]
       }, {

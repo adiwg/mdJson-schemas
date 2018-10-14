@@ -1512,42 +1512,48 @@
         ],
         "generalScope": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "identificationReference": [{
-            "identifier": "identifier0",
-            "namespace": "namespace0",
-            "version": "version0",
-            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            "authority": {
-              "title": "title0",
-              "date": [{
-                "date": "2013-06-22",
-                "dateType": "publication"
-              }],
-              "responsibleParty": [{
-                "role": "originator",
-                "party": [{
-                  "contactId": "CID004"
+            "title": "citation",
+            "identifier": [{
+              "identifier": "identifier0",
+              "namespace": "namespace0",
+              "version": "version0",
+              "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "authority": {
+                "title": "title0",
+                "date": [{
+                  "date": "2013-06-22",
+                  "dateType": "publication"
+                }],
+                "responsibleParty": [{
+                  "role": "originator",
+                  "party": [{
+                    "contactId": "CID004"
+                  }]
                 }]
-              }]
-            }
+              }
+            }]
           },
           {
-            "identifier": "identifier1",
-            "namespace": "namespace1",
-            "version": "version1",
-            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            "authority": {
-              "title": "title1",
-              "date": [{
-                "date": "2013-06-22",
-                "dateType": "publication"
-              }],
-              "responsibleParty": [{
-                "role": "originator",
-                "party": [{
-                  "contactId": "CID004"
+            "title": "citation1",
+            "identifier": [{
+              "identifier": "identifier1",
+              "namespace": "namespace1",
+              "version": "version1",
+              "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+              "authority": {
+                "title": "title1",
+                "date": [{
+                  "date": "2013-06-22",
+                  "dateType": "publication"
+                }],
+                "responsibleParty": [{
+                  "role": "originator",
+                  "party": [{
+                    "contactId": "CID004"
+                  }]
                 }]
-              }]
-            }
+              }
+            }]
           }
         ],
         "observer": [{
@@ -1588,70 +1594,75 @@
             }
           }
         ],
-        "taxonomicClassification": {
-          "taxonomicLevel": "taxonomicLevel0",
-          "taxonomicName": "taxonomicName",
-          "commonName": [
-            "commonName0",
-            "commonName1"
-          ],
-          "subClassification": [{
-              "taxonomicSystemId": "taxonomicSystemId00",
-              "taxonomicLevel": "taxonomicLevel00",
-              "taxonomicName": "taxonomicName",
-              "commonName": [
-                "commonName0",
-                "commonName1"
-              ],
-              "subClassification": [{
-                "taxonomicLevel": "taxonomicLevel000",
+        "taxonomicClassification": [{
+            "taxonomicLevel": "taxonomicLevel0",
+            "taxonomicName": "taxonomicName",
+            "commonName": [
+              "commonName0",
+              "commonName1"
+            ],
+            "subClassification": [{
+                "taxonomicSystemId": "taxonomicSystemId00",
+                "taxonomicLevel": "taxonomicLevel00",
                 "taxonomicName": "taxonomicName",
                 "commonName": [
                   "commonName0",
                   "commonName1"
                 ],
                 "subClassification": [{
-                    "taxonomicSystemId": "taxonomicSystemId0000.1",
-                    "taxonomicLevel": "taxonomicLevel0000.1",
-                    "taxonomicName": "taxonomicName",
-                    "commonName": [
-                      "commonName0",
-                      "commonName1"
-                    ],
-                    "subClassification": []
-                  },
-                  {
-                    "taxonomicSystemId": "taxonomicSystemId0000.2",
-                    "taxonomicLevel": "taxonomicLevel0000.2",
-                    "taxonomicName": "taxonomicName",
-                    "commonName": [
-                      "commonName0",
-                      "commonName1"
-                    ],
-                    "subClassification": []
-                  }
-                ]
-              }]
-            },
-            {
-              "taxonomicLevel": "taxonomicLevel01",
-              "taxonomicName": "taxonomicName",
-              "commonName": [
-                "commonName0",
-                "commonName1"
-              ],
-              "subClassification": [{
-                "taxonomicLevel": "taxonomicLevel010",
+                  "taxonomicLevel": "taxonomicLevel000",
+                  "taxonomicName": "taxonomicName",
+                  "commonName": [
+                    "commonName0",
+                    "commonName1"
+                  ],
+                  "subClassification": [{
+                      "taxonomicSystemId": "taxonomicSystemId0000.1",
+                      "taxonomicLevel": "taxonomicLevel0000.1",
+                      "taxonomicName": "taxonomicName",
+                      "commonName": [
+                        "commonName0",
+                        "commonName1"
+                      ],
+                      "subClassification": []
+                    },
+                    {
+                      "taxonomicSystemId": "taxonomicSystemId0000.2",
+                      "taxonomicLevel": "taxonomicLevel0000.2",
+                      "taxonomicName": "taxonomicName",
+                      "commonName": [
+                        "commonName0",
+                        "commonName1"
+                      ],
+                      "subClassification": []
+                    }
+                  ]
+                }]
+              },
+              {
+                "taxonomicLevel": "taxonomicLevel01",
                 "taxonomicName": "taxonomicName",
                 "commonName": [
                   "commonName0",
                   "commonName1"
                 ],
-                "subClassification": []
-              }]
-            }
-          ]
-        }
+                "subClassification": [{
+                  "taxonomicLevel": "taxonomicLevel010",
+                  "taxonomicName": "taxonomicName",
+                  "commonName": [
+                    "commonName0",
+                    "commonName1"
+                  ],
+                  "subClassification": []
+                }]
+              }
+            ]
+          },
+          {
+            "taxonomicLevel": "taxonomicLevel0201",
+            "taxonomicName": "taxonomicName"
+          }
+        ]
       }],
       "graphicOverview": [{
           "fileName": "fileName 0",

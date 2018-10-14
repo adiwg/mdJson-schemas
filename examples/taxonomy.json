@@ -22,13 +22,16 @@
       }
     },
     {
-      "identifier": "identifier1",
-      "namespace": "namespace1",
-      "version": "version1",
-      "description": "description1",
-      "authority": {
-        "title": "title1"
-      }
+      "title": "title",
+      "identifier": [{
+        "identifier": "identifier1",
+        "namespace": "namespace1",
+        "version": "version1",
+        "description": "description1",
+        "authority": {
+          "title": "title1"
+        }
+      }]
     }
   ],
   "observer": [{
@@ -93,12 +96,24 @@
       }
     }
   ],
-  "taxonomicClassification": {
+  "taxonomicClassification": [{
+    "taxonomicSystemId": "taxonomicSystemId0",
     "commonName": [
       "commonName0",
       "commonName1"
     ],
     "taxonomicLevel": "taxonomicLevel0",
-    "taxonomicName": "taxonomicName0"
-  }
+    "taxonomicName": "taxonomicName0",
+    "subClassification": [{
+      "taxonomicSystemId": "taxonomicSystemId1",
+      "commonName": [
+        "commonName0",
+        "commonName1"
+      ],
+      "taxonomicLevel": "taxonomicLevel1",
+      "taxonomicName": "taxonomicName1",
+      "latinName": "latinName",
+      "taxonomicRank": "taxonomicName1"
+    }]
+  }]
 }]
