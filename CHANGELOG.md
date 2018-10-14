@@ -1,11 +1,18 @@
 # Change Log
 
-## [v2.5.1](https://github.com/adiwg/mdJson-schemas/tree/v2.5.1)
+## [v2.6.0](https://github.com/adiwg/mdJson-schemas/tree/v2.6.0) (2018-10-14)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.5.1...v2.6.0)
 
+**Fixed bugs:**
+
+- taxonomy rule change [\#202](https://github.com/adiwg/mdJson-schemas/issues/202)
+
+## [v2.5.1](https://github.com/adiwg/mdJson-schemas/tree/v2.5.1) (2018-10-10)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.5.0...v2.5.1)
 
 **Implemented enhancements:**
 
+- projection new object [\#157](https://github.com/adiwg/mdJson-schemas/issues/157)
 - geographicExtent 'description' rule change [\#153](https://github.com/adiwg/mdJson-schemas/issues/153)
 
 ## [v2.5.0](https://github.com/adiwg/mdJson-schemas/tree/v2.5.0) (2018-10-03)
