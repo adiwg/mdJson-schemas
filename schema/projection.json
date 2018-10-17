@@ -52,7 +52,7 @@
                   "enum": ["org.adiwg.code.mapProjection"]
                 },
                 "identifier": {
-                  "enum": ["alaska", "albers", "azimuthalEquidistant", "equidistantConic", "equirectangular", "generalVertical", "gnomonic", "lambertConic", "lambertEqualArea", "mercator", "miller", "obliqueMercator", "orthographic", "parameters", "polarStereo", "polyconic", "robinson", "sinusoidal", "spaceOblique", "stereographic", "transverseMercator", "grinten", "localPlanar", "localSystem"]
+                  "enum": ["alaska", "albers", "azimuthalEquidistant", "equidistantConic", "equirectangular", "generalVertical", "gnomonic", "lambertConic", "lambertEqualArea", "mercator", "miller", "obliqueMercator", "orthographic", "parameters", "polarStereo", "polyconic", "robinson", "sinusoidal", "spaceOblique", "stereographic", "transverseMercator", "grinten", "localPlanar", "localSystem", "other"]
                 }
               }
             },
