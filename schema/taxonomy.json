@@ -8,7 +8,7 @@
     "ISO 19115-2": ["MD_TaxonSys"],
     "FGDC CSDGM": ["idinfo > taxonomy"]
   },
-  "required": ["taxonomicSystem", "identificationProcedure", "taxonomicClassification"],
+  "required": ["taxonomicSystem", "taxonomicClassification"],
   "additionalProperties": true,
   "properties": {
     "taxonomicSystem": {
