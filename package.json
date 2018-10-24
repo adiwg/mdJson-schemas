@@ -1,6 +1,6 @@
 {
   "name": "mdjson-schemas",
-  "version": "2.6.1",
+  "version": "2.6.2",
   "description": "JSON schemas, examples, and templates for ADIwg metadata standards",
   "main": "index.js",
   "directories": {
