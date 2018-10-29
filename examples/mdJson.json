@@ -1370,9 +1370,9 @@
       }, {
         "bearingDistanceResolution": {
           "distanceResolution": 9.9,
-          "distanceUnitOfMeasure": "",
+          "distanceUnitOfMeasure": "distanceUnitOfMeasure",
           "bearingResolution": 9.9,
-          "bearingUnitOfMeasure": "",
+          "bearingUnitOfMeasure": "bearingUnitOfMeasure",
           "bearingReferenceDirection": "north",
           "bearingReferenceMeridian": "assumed"
         }
