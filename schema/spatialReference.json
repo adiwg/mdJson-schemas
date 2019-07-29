@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://adiwg.github.io/mdJson-schemas/schema/spatialReference.json#",
+  "description": "Geospatial referencing system used in the the data resource. The reference can be provided by an EPSG number, a named reference, or providing the parameters in a well known text (WKT) format.",
+  "example": "../examples/spatialReference.json",
+  "translation": {
+    "ISO 19115-2": ["MD_Metadata > referenceSystemInfo > MD_ReferenceSystem > referenceSystemIdentifier > RS_Identifier > code"]
+  },
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "referenceSystemType": {
+      "type": "string",
+      "description": "Type of reference system used.",
+      "translation": {},
+      "codelist": "iso_referenceSystemType",
+      "minLength": 1
+    },
+    "referenceSystemIdentifier": {
+      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#",
+      "description": "The reference system identifier or definition."
+    },
+    "referenceSystemWKT":{
+      "type": "string",
+      "description": "Well Known Text (WKT) for spatial reference system."
+    },
+    "referenceSystemParameterSet":{
+      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./referenceSystemParameterSet.json#"
+    }
+  },
+  "anyOf": [{
+      "title": "referenceSystemType is required",
+      "required": ["referenceSystemType"]
+    },
+    {
+      "title": "referenceSystemIdentifier is required",
+      "required": ["referenceSystemIdentifier"]
+    },
+    {
+      "title": "referenceSystemWKT is required",
+      "required": ["referenceSystemWKT"]
+    },
+    {
+      "title": "referenceSystemParameterSet is required",
+      "required": ["referenceSystemParameterSet"]
+    }
+  ]
+}

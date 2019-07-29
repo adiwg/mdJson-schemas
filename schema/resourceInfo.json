@@ -1,0 +1,298 @@
+{
+  "id": "https://adiwg.github.io/mdJson-schemas/schema/resourceInfo.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Information about the resource.",
+  "type": "object",
+  "example": "../examples/resourceInfo.json",
+  "translation": {
+    "ISO 19115-2": ["MD_DataIdentification"],
+    "FGDC CSDGM": ["idinfo"]
+  },
+  "required": ["resourceType", "citation", "abstract", "status", "defaultResourceLocale", "pointOfContact"],
+  "additionalProperties": true,
+  "properties": {
+    "resourceType": {
+      "type": "array",
+      "description": "Identifies the type of resource, such as: a dataset, study, publication, etc.",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > hierarchyLevel [MD_ScopeCode]"]
+      },
+      "minItems": 1,
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./resourceType.json#"
+      }
+    },
+    "citation": {
+      "description": "Citation for the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > citation > CI_Citation"],
+        "FGDC CSDGM": ["idinfo > citation"]
+      },
+      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+    },
+    "abstract": {
+      "type": "string",
+      "description": "Brief narrative summary of the content of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > abstract"],
+        "FGDC CSDGM": ["idinfo > descript > abstract"]
+      }
+    },
+    "shortAbstract": {
+      "type": "string",
+      "description": "A short description of the resource. Max of 300 characters."
+    },
+    "purpose": {
+      "type": "string",
+      "description": "A summary of intentions for which the resource was created.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > purpose"],
+        "FGDC CSDGM": ["idinfo > descript > purpose"]
+      }
+    },
+    "timePeriod": {
+      "description": "Time period for the resource, e.g. project start and end date(s).",
+      "translation": {
+        "ISO 19115-2": ["EX_Extent > temporalElement > EX_TemporalExtent > extent > TimePeriod"]
+      },
+      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./timePeriod.json#"
+    },
+    "credit": {
+      "type": "array",
+      "description": "A narrative identification of additional resources credited for the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > credit"],
+        "FGDC CSDGM": ["idinfo > datacred"]
+      },
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "array",
+      "description": "Status of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > status [MD_ProgressCode]"],
+        "FGDC CSDGM": ["idinfo > status > progress"]
+      },
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "topicCategory": {
+      "type": "array",
+      "deprecated": true,
+      "description": "**This property is deprecated in favor of using a keyword entry with a type of \"isoTopicCategory\".**\n\nGeneral theme keyword of the resource, such as: oceans, biota atmosphere, etc.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > topicCategory"]
+      },
+      "items": {
+        "type": "string"
+      }
+    },
+    "pointOfContact": {
+      "type": "array",
+      "description": "Identification of, and means of communication with, person(s) and organizations that may be contacted for acquiring knowledge about or acquisition of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > pointOfContact"]
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
+      }
+    },
+    "spatialReferenceSystem": {
+      "type": "array",
+      "description": "Geospatial referencing system used in the the data resource. The reference can be provided by an EPSG number, a named reference, or providing the parameters in a well known text (WKT) format.",
+      "translation": {
+        "ISO 19115-2": ["MD_Metadata > referenceSystemInfo > MD_ReferenceSystem > referenceSystemIdentifier > RS_Identifier > code"]
+      },
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./spatialReference.json#"
+      }
+    },
+    "spatialRepresentationType": {
+      "type": "array",
+      "description": "Format of the resource geographic extent, such as: vector, grid, etc.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdenification > spatialRepresentationType [MD_SpatialRepresentationTypeCode]"],
+        "FGDC CSDGM": ["spdoinfo"]
+      },
+      "items": {
+        "type": "string"
+      }
+    },
+    "spatialRepresentation": {
+      "type": "array",
+      "description": "Method used to spatially represent geographic information.",
+      "translation": {
+        "ISO 19115-2": ["MD_GridSpatialRepresentation"]
+      },
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./spatialRepresentation.json#"
+      }
+    },
+    "spatialResolution": {
+      "type": "array",
+      "description": "Information about the scale of the geographic extent.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdenification > spatialResolution > MD_Resolution"]
+      },
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./spatialResolution.json#"
+      }
+    },
+    "temporalResolution": {
+      "type": "array",
+      "description": "Information about the termporal period of the resource.",
+      "translation": {},
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./timePeriod.json#/definitions/duration"
+      }
+    },
+    "extent": {
+      "type": "array",
+      "description": "Information about the geographic, vertical, and temporal extent of the resource. A resource may have multiple extents.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > extent > EX_Extent"]
+      },
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/extent.json"
+      }
+    },
+    "coverageDescription": {
+      "type": "array",
+      "description": "Details about the content of a raster(grid) resource.",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > contentInfo"]
+      },
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./coverageDescription.json"
+      }
+    },
+    "taxonomy": {
+      "description": "Information on the taxa (1 or more) included in the data set, including keywords, taxonomic system and coverage information, and taxonomic classification system.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > taxonomy"],
+        "FGDC CSDGM": ["idinfo > taxonomy"]
+      },
+      "oneOf": [{
+        "type": "array",
+        "title": "taxonomy",
+        "description": "An array of taxonomic objects",
+        "example": "../examples/taxonomy.json",
+        "translation": {
+          "ISO 19115-2": ["MD_TaxonSys"],
+          "FGDC CSDGM": ["idinfo > taxonomy"]
+        },
+        "items": {
+          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/taxonomy.json"
+        }
+      }, {
+        "title": "taxonomy",
+        "description": "DEPRECATED, please use an array.",
+        "translation": {
+          "ISO 19115-2": ["MD_DataIdentification > taxonomy"],
+          "FGDC CSDGM": ["idinfo > taxonomy"]
+        },
+        "deprecated": true,
+        "allOf": [{
+          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/taxonomy.json"
+        }]
+      }]
+    },
+    "graphicOverview": {
+      "type": "array",
+      "description": "Provides a path or link to images, maps, flow charts, models, etc. that illustrate the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > graphicOverview > MD_BrowseGraphic"]
+      },
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/graphic.json#"
+      }
+    },
+    "resourceFormat": {
+      "type": "array",
+      "description": "Provides a description of the format of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > resourceFormat > MD_Format"]
+      },
+      "uniqueItems": true,
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./format.json#"
+      }
+    },
+    "keyword": {
+      "type": "array",
+      "description": "Provides category keywords, their type, and reference source.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > descriptiveKeywords > MD_Keywords"],
+        "FGDC CSDGM": ["idinfo > keywords"]
+      },
+      "uniqueItems": true,
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/keyword.json"
+      }
+    },
+    "resourceUsage": {
+      "type": "array",
+      "description": "Description of ways in which the resource is currently or has been used.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > resourceSpecificUsage > MD_Usage"]
+      },
+      "uniqueItems": true,
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/usage.json"
+      }
+    },
+    "constraint": {
+      "type": "array",
+      "description": "Provides information about constraints to the use of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > resourceConstraints"]
+      },
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./constraint.json#"
+      }
+    },
+    "defaultResourceLocale": {
+      "description": "Localised language(s) and characterset(s) used within the resource.",
+      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./locale.json#"
+
+    },
+    "otherResourceLocale": {
+      "type": "array",
+      "description": "Alternate localised language(s) and characterset(s) used within the resource.",
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./locale.json#"
+      }
+    },
+    "resourceMaintenance": {
+      "type": "array",
+      "description": "Information about the maintenance of the resource.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > resourceMaintenance > MD_MaintenanceInformation"]
+      },
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/maintInfo.json#"
+      }
+    },
+    "environmentDescription": {
+      "type": "string",
+      "description": "Description of the dataset in the producer's processing environment, including items such as the software, the computer, the computer operating system, file name, and the dataset size.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > environmentDescription"],
+        "FGDC CSDGM": ["idinfo > native"]
+      }
+    },
+    "supplementalInfo": {
+      "type": "string",
+      "description": "Any other descriptive information about the dataset.",
+      "translation": {
+        "ISO 19115-2": ["MD_DataIdentification > supplementalInfo"]
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://adiwg.github.io/mdJson-schemas/schema/referenceSystemParameterSet.json#",
+  "type": "object",
+  "title": "referenceSystemParameterSet",
+  "description": "The set of parameters describing a spatial reference system.",
+  "example": "../examples/referenceSystemParameterSet.json",
+  "additionalProperties": true,
+  "properties": {
+    "projection": {
+      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./projection.json#"
+    },
+    "geodetic": {
+      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./geodetic.json#"
+    },
+    "verticalDatum": {
+      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./verticalDatum.json#"
+    }
+  },
+  "oneOf": [{
+      "title": "projection is required.",
+      "required": ["projection"]
+    },
+    {
+      "title": "geodetic is required.",
+      "required": ["geodetic"]
+    },
+    {
+      "title": "verticalDatum is required.",
+      "required": ["verticalDatum"]
+    }
+  ]
+}

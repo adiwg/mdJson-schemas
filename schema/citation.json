@@ -1,0 +1,134 @@
+{
+  "id": "https://adiwg.github.io/mdJson-schemas/schema/citation.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "citation",
+  "description": "A citation object.",
+  "required": ["title"],
+  "example": "../examples/citation.json",
+  "translation": {
+    "FGDC CSDGM": ["idinfo > citation > citeinfo"],
+    "ISO 19115-2": ["CI_Citation"]
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Name by which the cited resource is known.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > title", "FC_FeatureCatalogue > name"],
+        "FGDC CSDGM": ["idinfo > citation > citeinfo > title"]
+      }
+    },
+    "alternateTitle": {
+      "type": "array",
+      "description": "Alias by which the cited resource is known.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > alternateTitle"]
+      },
+      "items": {
+        "type": "string"
+      }
+    },
+    "date": {
+      "type": "array",
+      "description": "Date referenced to the cited resource.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > date > CI_Date"]
+      },
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/common.json#/definitions/dateObject"
+      }
+    },
+    "edition": {
+      "type": "string",
+      "description": "Version identifier for the resource.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > edition", "FC_FeatureCatalogue > versionNumber"],
+        "FGDC CSDGM": ["idinfo > citation > edition"]
+      }
+    },
+    "responsibleParty": {
+      "type": "array",
+      "description": "Identification of, and means of communication with, person(s) and organization(s) associated with the cited resource.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > citedResponsibleParty > CI_ResponsibleParty", "FC_FeatureCatalogue > producer > CI_ResponisbleParty"],
+        "FGDC CSDGM": ["idinfo > ptcontac > cntinfo"]
+      },
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/responsibility.json#"
+      }
+    },
+    "presentationForm": {
+      "type": "array",
+      "description": "The form that the resource is presented, such as: digital map, digital document, etc.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > presentationForm [CI_PresentationFormCode]"],
+        "FGDC CSDGM": ["idinfo > citation > geoform"]
+      },
+      "items": {
+        "type": "string"
+      }
+    },
+    "identifier": {
+      "type": "array",
+      "description": "Identifier for the resource in the context of the citation.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > identifier"]
+      },
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+      }
+    },
+    "series": {
+      "$ref": "#/definitions/series"
+
+    },
+    "otherCitationDetails": {
+      "type": "array",
+      "description": "Other information required to complete the citation that is not recorded elsewhere.",
+      "translation": {},
+      "items": {
+        "type": "string"
+      }
+    },
+    "onlineResource": {
+      "type": "array",
+      "description": "On-line information related to the citation.",
+      "translation": {
+        "ISO 19115-2": ["CI_Citation > citedResponsibleParty > CI_ResponsibleParty > contact > CI_Contact > onlineResource > CI_OnlineResource"]
+      },
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/onlineResource.json#"
+      }
+    },
+    "graphic": {
+      "type": "array",
+      "description": "Online graphic associated with the citation",
+      "translation": {},
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./graphic.json#"
+      }
+    }
+  },
+  "definitions": {
+    "series": {
+      "type": "object",
+      "title": "series",
+      "description": "Information about the series, or aggregate resource, to which a resource belongs.",
+      "example": "../series.json",
+      "translation": {},
+      "additionalProperties": true,
+      "properties": {
+        "seriesName": {
+          "type": "string"
+        },
+        "seriesIssue": {
+          "type": "string"
+        },
+        "issuePage": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

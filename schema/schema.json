@@ -1,0 +1,64 @@
+{
+  "id": "https://adiwg.github.io/mdJson-schemas/schema/schema.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "version": "2.6.3",
+  "description": "schema for ADIwg mdJSON metadata",
+  "example": "../examples/mdJson.json",
+  "type": "object",
+  "required": ["schema", "contact"],
+  "properties": {
+    "schema": {
+      "$ref": "#/definitions/schema"
+    },
+    "contact": {
+      "type": "array",
+      "description": "An array of contacts to be referenced throughout the metadata. Any contact used in the metadata record must be stored within this array and referenced by contactId. Items in array may be used 0-n times throughout the record.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/contact.json"
+      }
+    },
+    "metadata": {
+      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/metadata.json"
+    },
+    "metadataRepository": {
+      "type": "array",
+      "description": "Identifies repositories for distribution of the resource metadata.",
+      "uniqueItems": true,
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/metadataRepository.json"
+      }
+    },
+    "dataDictionary": {
+      "type": "array",
+      "description": "A description of the contents, format and structure of the physical objects in a data resource.",
+      "translation": {
+        "ISO 19115-2": ["FC_FeatureCatalogue"]
+      },
+      "example": "../examples/dataDictionary.json",
+      "items": {
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/dataDictionary.json"
+      }
+    }
+  },
+  "definitions": {
+    "schema": {
+      "type": "object",
+      "description": "Identifies the version of the JSON schema standard that applies to the metadata.",
+      "required": ["name", "version"],
+      "additionalProperties": true,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Schema identifier, i.e. the name of the schema standard."
+        },
+        "version": {
+          "type": "string",
+          "description": "Specific version number of the schema standard.",
+          "pattern": "[0-9]\\.[0-9]\\.[0-9]"
+        }
+      }
+    }
+  }
+}

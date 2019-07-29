@@ -1,0 +1,58 @@
+{
+  "id": "https://adiwg.github.io/mdJson-schemas/schema/spatialRepresentation.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "example": "../examples/spatialRepresentation.json",
+  "description": "",
+  "translation": {},
+  "type": "object",
+  "additionalProperties": true,
+  "oneOf": [{
+      "type": "object",
+      "title": "gridRepresentation",
+      "example": "../examples/gridRepresentation.json",
+      "required": ["gridRepresentation"],
+      "additionalProperties": true,
+      "properties": {
+        "gridRepresentation": {
+          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./gridRepresentation.json#"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "vectorRepresentation",
+      "example": "../examples/vectorRepresentation.json",
+      "required": ["vectorRepresentation"],
+      "additionalProperties": true,
+      "properties": {
+        "vectorRepresentation": {
+          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./vectorRepresentation.json#"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "georectifiedRepresentation",
+      "example": "../examples/georectifiedRepresentation.json",
+      "required": ["georectifiedRepresentation"],
+      "additionalProperties": true,
+      "properties": {
+        "georectifiedRepresentation": {
+          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./georectifiedRepresentation.json#"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "georeferenceableRepresentation",
+      "example": "../examples/georeferenceableRepresentation.json",
+      "required": ["georeferenceableRepresentation"],
+      "additionalProperties": true,
+      "properties": {
+        "georeferenceableRepresentation": {
+          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./georeferenceableRepresentation.json#"
+        }
+      }
+    }
+  ]
+}

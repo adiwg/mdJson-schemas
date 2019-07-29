@@ -1,0 +1,210 @@
+{
+  "id": "https://adiwg.github.io/mdJson-schemas/schema/spatialResolution.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Information about the scale of the geographic extent.",
+  "example": "../examples/spatialResolution.json",
+  "translation": {
+    "ISO 19115-2": ["MD_Resolution"]
+  },
+  "minProperties": 1,
+  "oneOf": [{
+      "type": "object",
+      "title": "scaleFactor",
+      "required": ["scaleFactor"],
+      "properties": {
+        "scaleFactor": {
+          "type": "number",
+          "title": "scaleFactor",
+          "example": "../examples/spatialResolution.json",
+          "description": "Scale of geographic extent expressed in a hardcopy map scale fraction (denominator).",
+          "translation": {
+            "ISO 19115-2": ["MD_Resolution > equivalentScale > MD_RepresentativeFraction > denominator > Integer"]
+          }
+        }
+      }
+    }, {
+      "type": "object",
+      "title": "measure",
+      "required": ["measure"],
+      "properties": {
+        "measure": {
+          "title": "measure",
+          "example": "../examples/spatialResolution.json",
+          "description": "Scale of geographic extent expressed in ground distance parameters or angle.",
+          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./measure.json#"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "levelOfDetail",
+      "required": ["levelOfDetail"],
+      "properties": {
+        "levelOfDetail": {
+          "type": "string",
+          "title": "levelOfDetail",
+          "description": "A brief textual description of the spatial resolution of the resource",
+          "example": "../examples/spatialResolution.json",
+          "minLength": 1
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "geographicResolution",
+      "required": ["geographicResolution"],
+      "properties": {
+        "geographicResolution": {
+          "$ref": "#/definitions/geographicResolution"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "bearingDistanceResolution",
+      "required": ["bearingDistanceResolution"],
+      "properties": {
+        "bearingDistanceResolution": {
+          "$ref": "#/definitions/bearingDistanceResolution"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "coordinateResolution",
+      "required": ["coordinateResolution"],
+      "properties": {
+        "coordinateResolution": {
+          "$ref": "#/definitions/coordinateResolution"
+        }
+      }
+    }
+  ],
+  "definitions": {
+    "geographicResolution": {
+      "type": "object",
+      "description": "The quantities of latitude and longitude which define the position of a point on the Earth's surface with respect to a reference spheroid.",
+      "example": "../examples/spatialResolution.json",
+      "translation": {
+        "FGDC CSDGM": ["spref > horizsys > geograph"]
+      },
+      "required": ["latitudeResolution", "longitudeResolution", "unitOfMeasure"],
+      "properties": {
+        "latitudeResolution": {
+          "type": "number",
+          "description": "The minimum difference between two adjacent latitude values expressed in Geographic Coordinate Units of measure.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > geograph > latres"]
+          }
+        },
+        "longitudeResolution": {
+          "type": "number",
+          "description": "The minimum difference between two adjacent longitude values expressed in Geographic Coordinate Units of measure.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > geograph > longres"]
+          }
+        },
+        "unitOfMeasure": {
+          "type": "string",
+          "description": "The unit of measure used for the latitude and longitude values.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > planci > plandu"]
+          }
+        }
+      }
+    },
+    "bearingDistanceResolution": {
+      "type": "object",
+      "description": "The method of encoding the position of a point by measuring its distance and direction (azimuth angle) from another point.",
+      "example": "../examples/spatialResolution.json",
+      "translation": {
+        "FGDC CSDGM": ["spref > horizsys > planar > planci > distbrep"]
+      },
+      "required": ["distanceResolution",
+        "distanceUnitOfMeasure",
+        "bearingResolution",
+        "bearingUnitOfMeasure",
+        "bearingReferenceDirection",
+        "bearingReferenceMeridian"
+      ],
+      "properties": {
+        "distanceResolution": {
+          "type": "number",
+          "description": "The minimum distance measurable between two points, expressed Planar Distance Units of measure.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > planci > distbrep > distres"]
+          }
+        },
+        "distanceUnitOfMeasure": {
+          "type": "string",
+          "description": "The units for the distance resolution.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > planci > plandu"]
+          }
+        },
+        "bearingResolution": {
+          "type": "number",
+          "description": "The minimum angle measurable between two points, expressed in Bearing Units of measure.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > planci > distbrep > bearres"]
+          }
+        },
+        "bearingUnitOfMeasure": {
+          "type": "string",
+          "description": "The units of measure used for angles.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > planci > distbrep > bearunit"]
+          }
+        },
+        "bearingReferenceDirection": {
+          "type": "string",
+          "description": "The direction from which the bearing is measured.",
+          "enum": ["north", "south"],
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > planci > distbrep > bearrefd"]
+          }
+        },
+        "bearingReferenceMeridian": {
+          "type": "string",
+          "description": "The axis from which the bearing is measured.",
+          "enum": ["assumed", "grid", "magnetic", "astronomic", "geodetic"],
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > planci > distbrep > bearrefm"]
+          }
+        }
+      }
+    },
+    "coordinateResolution": {
+      "type": "object",
+      "description": "",
+      "example": "../examples/spatialResolution.json",
+      "translation": {
+        "FGDC CSDGM": ["spref > horizsys > planar > planci > coordrep"]
+      },
+      "required": ["abscissaResolutionX", "ordinateResolutionY", "unitOfMeasure"],
+      "properties": {
+        "abscissaResolutionX": {
+          "type": "number",
+          "description": "The (nominal) minimum distance between the 'x' or column values of two adjacent points, expressed in Planar Distance.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > planci > coordrep > absres"]
+          }
+        },
+        "ordinateResolutionY": {
+          "type": "number",
+          "description": "The (nominal) minimum distance between the 'y' or column values of two adjacent points, expressed in Planar Distance.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > planci > coordrep > ordres"]
+          }
+        },
+        "unitOfMeasure": {
+          "type": "string",
+          "description": "The units of the ordinate and abscissa axis.",
+          "translation": {
+            "FGDC CSDGM": ["spref > horizsys > planar > planci > plandu"]
+          }
+        }
+      }
+    }
+  }
+}

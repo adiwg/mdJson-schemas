@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id" : "metadataRepository.json#",
+    "type" : "object",
+    "title" : "metadataRepository",
+    "description" : "",
+    "example":"../examples/metadataRepository.json",
+    "required" : ["repository"],
+    "additionalProperties" : true,
+    "properties" : {
+      "repository": {
+          "type" : "string",
+          "description" : "Identifier for the metadata repository to which the metadata record is to be pushed.",
+          "minLength" : 1
+      },
+      "metadataStandard": {
+          "type" : "string",
+          "description" : "Indicates in what format the metadata record should be delivered to the repository.",
+          "minLength" : 1
+      },
+      "citation": {
+        "description": "Citation for the repository.",
+        "translation": {
+          "ISO 19115-2": ["CI_Citation"]
+        },
+        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+      }
+    }
+}
