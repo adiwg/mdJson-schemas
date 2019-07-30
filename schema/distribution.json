@@ -34,7 +34,7 @@
       },
       "minItems": 1,
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./distributor.json#",
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./distributor.json#",
         "description": "Information about the distributor of and options for obtaining the resource."
       }
     }

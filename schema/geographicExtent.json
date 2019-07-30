@@ -13,7 +13,7 @@
       "default": true
     },
     "identifier": {
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#",
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#",
       "description": "Identifier representing a geographic area."
     },
     "boundingBox": {
@@ -141,7 +141,7 @@
         }
       },
       "oneOf": [{
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/geojson.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/geojson.json#"
       }]
     }
   }

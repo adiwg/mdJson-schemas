@@ -35,7 +35,7 @@
       "translation": {
         "ISO 19115-2": ["MI_ImageDescription > imageQualityCode > RS_Identifier"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
     },
     "cloudCoverPercent": {
       "type": "number",

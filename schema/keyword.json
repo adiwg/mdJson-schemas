@@ -39,7 +39,7 @@
           "idinfo>keywords>stratum>stratkt"
         ]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
     }
   },
   "oneOf": [{

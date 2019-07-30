@@ -19,7 +19,7 @@
       },
       "minItems": 1,
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./resourceType.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./resourceType.json#"
       }
     },
     "citation": {
@@ -27,7 +27,7 @@
       "description": "Citation for the additional resource.",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
       }
     }
   }

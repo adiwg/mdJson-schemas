@@ -37,7 +37,7 @@
       "description": "Identifies, legal, security, and other constraint requirements associated with use and distribution of the graphic",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/constraint.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/constraint.json#"
       }
     },
     "fileUri": {
@@ -47,7 +47,7 @@
         "ISO 19115-2": ["MD_BrowseGraphic > filename @xlink:href"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/onlineResource.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/onlineResource.json#"
       }
     }
   }

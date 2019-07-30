@@ -12,24 +12,24 @@
       "translation": {
         "ISO 19115-2": ["MI_Metadata > fileIdentifier"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
     },
     "parentMetadata": {
       "description": "Identifier of the metadata to which this metadata is a subset (child).",
       "translation": {
         "ISO 19115-2": ["MI_Metadata > parentIdentifier"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
     },
     "defaultMetadataLocale": {
       "description": "Main localised language and characterset used within the metadata record.",
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/locale.json"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/locale.json"
     },
     "otherMetadataLocale": {
       "type": "array",
       "description": "Additional localised language(s) and characterset(s) used within the metadata record.",
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/locale.json"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/locale.json"
       }
     },
     "metadataContact": {
@@ -41,7 +41,7 @@
       },
       "minItems": 1,
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
       }
     },
     "metadataDate": {
@@ -52,7 +52,7 @@
         "FGDC CSDGM": ["metainfo > metrd"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/common.json#/definitions/dateObject"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/common.json#/definitions/dateObject"
       }
     },
     "metadataOnlineResource": {
@@ -60,7 +60,7 @@
       "description": "Online location where the metadata is available.",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./onlineResource.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./onlineResource.json#"
       }
     },
     "metadataConstraint": {
@@ -71,7 +71,7 @@
         "FGDC CSDGM": ["metainfo > metac", "metainfo > metuc"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./constraint.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./constraint.json#"
       }
     },
     "alternateMetadataReference": {
@@ -79,7 +79,7 @@
       "description": "Reference to alternative metadata for the resource.",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
       }
     },
     "metadataStatus": {
@@ -91,7 +91,7 @@
       "translation": {
         "ISO 19115-2": ["MI_Metadata > metadataMaintenance > MD_MaintenanceInformation"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/maintInfo.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/maintInfo.json#"
     }
   }
 }

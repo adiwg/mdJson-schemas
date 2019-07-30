@@ -9,7 +9,7 @@
   "additionalProperties": true,
   "properties": {
     "gridRepresentation": {
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./gridRepresentation.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./gridRepresentation.json#"
     },
     "checkPointAvailable": {
       "type": "boolean",

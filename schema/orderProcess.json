@@ -23,7 +23,7 @@
       "translation": {
         "ISO 19115-2": ["MD_StandardOrderProcess > plannedAvailabilityDateTime"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/common.json#/definitions/date"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/common.json#/definitions/date"
     },
     "orderingInstructions": {
       "type": "string",

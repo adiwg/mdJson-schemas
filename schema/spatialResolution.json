@@ -31,7 +31,7 @@
           "title": "measure",
           "example": "../examples/spatialResolution.json",
           "description": "Scale of geographic extent expressed in ground distance parameters or angle.",
-          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./measure.json#"
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./measure.json#"
         }
       }
     },

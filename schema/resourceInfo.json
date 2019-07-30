@@ -19,7 +19,7 @@
       },
       "minItems": 1,
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./resourceType.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./resourceType.json#"
       }
     },
     "citation": {
@@ -28,7 +28,7 @@
         "ISO 19115-2": ["MD_DataIdentification > citation > CI_Citation"],
         "FGDC CSDGM": ["idinfo > citation"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
     },
     "abstract": {
       "type": "string",
@@ -55,7 +55,7 @@
       "translation": {
         "ISO 19115-2": ["EX_Extent > temporalElement > EX_TemporalExtent > extent > TimePeriod"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./timePeriod.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./timePeriod.json#"
     },
     "credit": {
       "type": "array",
@@ -100,7 +100,7 @@
       "minItems": 1,
       "uniqueItems": true,
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
       }
     },
     "spatialReferenceSystem": {
@@ -110,7 +110,7 @@
         "ISO 19115-2": ["MD_Metadata > referenceSystemInfo > MD_ReferenceSystem > referenceSystemIdentifier > RS_Identifier > code"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./spatialReference.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./spatialReference.json#"
       }
     },
     "spatialRepresentationType": {
@@ -131,7 +131,7 @@
         "ISO 19115-2": ["MD_GridSpatialRepresentation"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./spatialRepresentation.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./spatialRepresentation.json#"
       }
     },
     "spatialResolution": {
@@ -141,7 +141,7 @@
         "ISO 19115-2": ["MD_DataIdenification > spatialResolution > MD_Resolution"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./spatialResolution.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./spatialResolution.json#"
       }
     },
     "temporalResolution": {
@@ -149,7 +149,7 @@
       "description": "Information about the termporal period of the resource.",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./timePeriod.json#/definitions/duration"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./timePeriod.json#/definitions/duration"
       }
     },
     "extent": {
@@ -159,7 +159,7 @@
         "ISO 19115-2": ["MD_DataIdentification > extent > EX_Extent"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/extent.json"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/extent.json"
       }
     },
     "coverageDescription": {
@@ -169,7 +169,7 @@
         "ISO 19115-2": ["MI_Metadata > contentInfo"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./coverageDescription.json"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./coverageDescription.json"
       }
     },
     "taxonomy": {
@@ -188,7 +188,7 @@
           "FGDC CSDGM": ["idinfo > taxonomy"]
         },
         "items": {
-          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/taxonomy.json"
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/taxonomy.json"
         }
       }, {
         "title": "taxonomy",
@@ -199,7 +199,7 @@
         },
         "deprecated": true,
         "allOf": [{
-          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/taxonomy.json"
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/taxonomy.json"
         }]
       }]
     },
@@ -210,7 +210,7 @@
         "ISO 19115-2": ["MD_DataIdentification > graphicOverview > MD_BrowseGraphic"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/graphic.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/graphic.json#"
       }
     },
     "resourceFormat": {
@@ -221,7 +221,7 @@
       },
       "uniqueItems": true,
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./format.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./format.json#"
       }
     },
     "keyword": {
@@ -233,7 +233,7 @@
       },
       "uniqueItems": true,
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/keyword.json"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/keyword.json"
       }
     },
     "resourceUsage": {
@@ -244,7 +244,7 @@
       },
       "uniqueItems": true,
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/usage.json"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/usage.json"
       }
     },
     "constraint": {
@@ -254,19 +254,19 @@
         "ISO 19115-2": ["MD_DataIdentification > resourceConstraints"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./constraint.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./constraint.json#"
       }
     },
     "defaultResourceLocale": {
       "description": "Localised language(s) and characterset(s) used within the resource.",
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./locale.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./locale.json#"
 
     },
     "otherResourceLocale": {
       "type": "array",
       "description": "Alternate localised language(s) and characterset(s) used within the resource.",
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./locale.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./locale.json#"
       }
     },
     "resourceMaintenance": {
@@ -276,7 +276,7 @@
         "ISO 19115-2": ["MD_DataIdentification > resourceMaintenance > MD_MaintenanceInformation"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/maintInfo.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/maintInfo.json#"
       }
     },
     "environmentDescription": {

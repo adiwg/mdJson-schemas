@@ -22,7 +22,7 @@
       "description": "Date and time of the first use or range of uses of the resource and/or resource series.",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./temporalExtent.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./temporalExtent.json#"
       }
     },
     "userDeterminedLimitation": {
@@ -41,7 +41,7 @@
       }
     },
     "documentedIssue": {
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#",
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#",
       "description": "Citation of a description of known issues associated with the resource along with proposed solutions if available."
     },
     "additionalDocumentation": {
@@ -49,7 +49,7 @@
       "description": "Publications that describe usage of data.",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
       }
     },
     "userContactInfo": {
@@ -60,7 +60,7 @@
       },
       "uniqueItems": true,
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
       }
     }
   }

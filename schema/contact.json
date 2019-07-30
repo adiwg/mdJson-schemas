@@ -55,7 +55,7 @@
         "FGDC CSDGM": [""]
       },
       "items": [{
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/graphic.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/graphic.json#"
       }]
     },
     "phone": {
@@ -98,7 +98,7 @@
         ]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/onlineResource.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/onlineResource.json#"
       },
       "uniqueItems": true
     },

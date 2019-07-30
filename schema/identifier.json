@@ -40,7 +40,7 @@
         "translation": {
           "ISO 19115-2": ["MD_Identifier > authority > CI_Citation"]
         },
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
       }
     }
 }

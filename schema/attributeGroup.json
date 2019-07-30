@@ -22,7 +22,7 @@
       "description": "",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./attribute.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./attribute.json#"
       }
     }
   }

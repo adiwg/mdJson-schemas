@@ -13,7 +13,7 @@
   "additionalProperties": true,
   "properties": {
     "formatSpecification": {
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#",
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#",
       "translation": {
         "ISO 19115-2": ["MD_Format > name", "MD_Format > version"],
         "FGDC CSDGM": ["distinfo > stdorder > digform > digtinfo > formname", "idinfo > citation > citeinfo > edition"]

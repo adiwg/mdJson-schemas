@@ -14,7 +14,7 @@
       "additionalProperties": true,
       "properties": {
         "gridRepresentation": {
-          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./gridRepresentation.json#"
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./gridRepresentation.json#"
         }
       }
     },
@@ -26,7 +26,7 @@
       "additionalProperties": true,
       "properties": {
         "vectorRepresentation": {
-          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./vectorRepresentation.json#"
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./vectorRepresentation.json#"
         }
       }
     },
@@ -38,7 +38,7 @@
       "additionalProperties": true,
       "properties": {
         "georectifiedRepresentation": {
-          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./georectifiedRepresentation.json#"
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./georectifiedRepresentation.json#"
         }
       }
     },
@@ -50,7 +50,7 @@
       "additionalProperties": true,
       "properties": {
         "georeferenceableRepresentation": {
-          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./georeferenceableRepresentation.json#"
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./georeferenceableRepresentation.json#"
         }
       }
     }

@@ -40,7 +40,7 @@
       "description": "Identifiers for each attribute included in the resource. NOTE: These identifiers can be used to provide names for the attribute from a standard set of names.",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
       }
     },
     "minValue": {

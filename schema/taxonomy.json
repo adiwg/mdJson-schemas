@@ -36,10 +36,10 @@
       "translation": {},
       "items": {
         "oneOf": [{
-            "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+            "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
           },
           {
-            "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#",
+            "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#",
             "deprecated": true
           }
         ]
@@ -52,7 +52,7 @@
         "ISO 19115-2": ["MD_TaxonSys > obs > CI_ResponsibleParty"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
       }
     },
     "identificationProcedure": {
@@ -102,7 +102,7 @@
       "additionalProperties": true,
       "properties": {
         "citation": {
-          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/citation.json",
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/citation.json",
           "description": "Information about the classification system or authority used.",
           "translation": {
             "ISO 19115-2": ["MD_TaxonSys > classSys > CI_Citation"],
@@ -217,7 +217,7 @@
             "ISO 19115-2": ["MD_Vouchers > reposit > CI_ResponsibleParty"],
             "FGDC CSDGM": ["idinfo > taxonomy > taxonsys > vouchers > reposit"]
           },
-          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
         }
       }
     }

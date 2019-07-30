@@ -36,7 +36,7 @@
         "ISO 19115-2": ["CI_Citation > date > CI_Date"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/common.json#/definitions/dateObject"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/common.json#/definitions/dateObject"
       }
     },
     "edition": {
@@ -55,7 +55,7 @@
         "FGDC CSDGM": ["idinfo > ptcontac > cntinfo"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/responsibility.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/responsibility.json#"
       }
     },
     "presentationForm": {
@@ -76,7 +76,7 @@
         "ISO 19115-2": ["CI_Citation > identifier"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
       }
     },
     "series": {
@@ -98,7 +98,7 @@
         "ISO 19115-2": ["CI_Citation > citedResponsibleParty > CI_ResponsibleParty > contact > CI_Contact > onlineResource > CI_OnlineResource"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/onlineResource.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/onlineResource.json#"
       }
     },
     "graphic": {
@@ -106,7 +106,7 @@
       "description": "Online graphic associated with the citation",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./graphic.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./graphic.json#"
       }
     }
   },

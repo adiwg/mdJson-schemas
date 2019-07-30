@@ -42,7 +42,7 @@
         }
       },
       "allOf": [{
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
       }],
       "dependencies": {
         "namespace": {
@@ -94,7 +94,7 @@
         }
       },
       "allOf": [{
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
       }],
       "dependencies": {
         "namespace": {

@@ -23,7 +23,7 @@
       "description": "The area or period of time for which the role is valid.",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./extent.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./extent.json#"
       }
     },
     "party": {

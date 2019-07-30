@@ -9,7 +9,7 @@
   "properties": {
     "citation": {
       "description": "Citation for the dictionary.",
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
     },
     "description": {
       "type": "string",
@@ -44,12 +44,12 @@
         "ISO 19115-2": ["FC_FeatureCatalogue > language"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./locale.json"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./locale.json"
       }
 
     },
     "responsibleParty": {
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#",
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#",
       "description": "Name, address, country, and telecommunications address of person or organization having primary responsibility for the intellectual content of this dictionary."
     },
     "dictionaryFormat": {
@@ -74,7 +74,7 @@
       "type": "array",
       "description": "A list of permissable values used to constrain an attribute's value.  A single domain may be assigned to multiple attributes in a table or database.",
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./domain.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./domain.json#"
       }
     },
     "entity": {
@@ -84,7 +84,7 @@
         "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./entity.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./entity.json#"
       }
     }
   }

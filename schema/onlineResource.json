@@ -8,7 +8,7 @@
   "additionalProperties": true,
   "properties": {
     "uri": {
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/common.json#/definitions/uri"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/common.json#/definitions/uri"
     },
     "name": {
       "type": "string",

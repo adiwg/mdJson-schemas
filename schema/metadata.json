@@ -12,21 +12,21 @@
   "additionalProperties": false,
   "properties": {
     "metadataInfo": {
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./metadataInfo.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./metadataInfo.json#"
     },
     "resourceInfo": {
       "translation": {
         "ISO 19115-2": ["MD_Metadata > identificationInfo > MD_DataIdentification"],
         "FGDC CSDGM": ["idinfo"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/resourceInfo.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/resourceInfo.json#"
     },
     "resourceLineage": {
       "type": "array",
       "description": "Information on the history of the resource.",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./lineage.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./lineage.json#"
       }
     },
     "resourceDistribution": {
@@ -37,7 +37,7 @@
         "FGDC CSDGM": ["distinfo"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/distribution.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/distribution.json#"
       }
     },
     "associatedResource": {
@@ -48,7 +48,7 @@
         "FGDC CSDGM": ["idinfo > crossref"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./associatedResource.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./associatedResource.json#"
       }
     },
     "additionalDocumentation": {
@@ -59,14 +59,14 @@
         "FGDC CSDGM": ["idinfo > crossref "]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./additionalDocumentation.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./additionalDocumentation.json#"
       }
     },
     "funding": {
       "type": "array",
       "description": "Information about funding for the resource.",
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./funding.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./funding.json#"
       }
     }
   }

@@ -18,7 +18,7 @@
         "ISO 19115-2": ["MD_Distribution > distributor > MD_Distributor > distributorContact > CI_ResponsibleParty"],
         "FGDC CSDGM": ["distinfo > distrib > cntinfo"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
     },
     "orderProcess": {
       "type": "array",
@@ -27,7 +27,7 @@
         "ISO 19115-2": ["MD_Distribution > distributor > MD_Distributor > distributionOrderProcess"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./orderProcess.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./orderProcess.json#"
       }
     },
     "transferOption": {
@@ -38,7 +38,7 @@
         "FGDC CSDGM": ["distinfo > stdorder > digform > digtopt"]
       },
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./transferOption.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./transferOption.json#"
       }
     }
   }

@@ -17,7 +17,7 @@
         "ISO 19115-2": ["referenceSystemInfo > MD_CRS > datum > RS_Identifier > code"],
         "FGDC CSDGM": ["metadata > spref > horizsys > geodetic > horizdn"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
     },
     "ellipsoidIdentifier": {
       "description": "The identification given to established representations of the Earth's shape.",
@@ -25,7 +25,7 @@
         "ISO 19115-2": ["referenceSystemInfo > MD_CRS > ellipsoid > RS_Identifier > code"],
         "FGDC CSDGM": ["metadata > spref > horizsys > geodetic > horizdn"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
     },
     "semiMajorAxis": {
       "type": "number",

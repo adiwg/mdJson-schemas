@@ -8,11 +8,11 @@
   "required": ["type"],
   "properties": {
     "bbox": {
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/bbox.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/bbox.json#"
     }
   },
   "oneOf": [{
-    "$ref: "https://adiwg.github.io/mdJson-schemas/schema/geometry.json#"
+    "$ref": "https://adiwg.github.io/mdJson-schemas/schema/geometry.json#"
   }, {
     "$ref": "#/definitions/geometryCollection"
   }, {
@@ -41,7 +41,7 @@
             "ISO 19115-2": ["EX_Extent > geographicElement > EX_BoundingPolygon > polygon > MultiGeometry > geometryMembers"]
           },
           "items": {
-            "$ref: "https://adiwg.github.io/mdJson-schemas/schema/geometry.json#"
+            "$ref": "https://adiwg.github.io/mdJson-schemas/schema/geometry.json#"
           }
         }
       }
@@ -64,7 +64,7 @@
             "title": "null geometry",
             "description": "A feature object with no associated geometry. For example, a null value may be used when defining a bounding box only."
           }, {
-            "$ref: "https://adiwg.github.io/mdJson-schemas/schema/geometry.json#"
+            "$ref": "https://adiwg.github.io/mdJson-schemas/schema/geometry.json#"
           }, {
             "$ref": "#/definitions/geometryCollection"
           }]
@@ -148,7 +148,7 @@
               "ISO 19115-2": ["geographicElement > EX_GeographicDescription > geographicIdentifier > MD_Identifier"]
             },
             "items": {
-              "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+              "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
             }
           }
         }

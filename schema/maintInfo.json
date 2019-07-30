@@ -23,7 +23,7 @@
       "description": "Date related to resource maintenance.",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/common.json#/definitions/dateObject"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/common.json#/definitions/dateObject"
       }
     },
     "scope": {
@@ -31,7 +31,7 @@
       "description": "Type of resource to which the maintenance information applies.",
       "translation": {},
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./scope.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./scope.json#"
       }
     },
     "note": {
@@ -53,7 +53,7 @@
       },
       "uniqueItems": true,
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
       }
     }
   }

@@ -34,7 +34,7 @@
       },
       "minItems": 1,      
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./resourceType.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./resourceType.json#"
       }
     },
     "resourceCitation": {
@@ -43,11 +43,11 @@
         "ISO 19115-2": ["MD_AggregateInformation > aggregateDataSetName > CI_Citation"],
         "FGDC CSDGM": ["idinfo > crossref > citeinfo"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
     },
     "metadataCitation": {
       "description": "Citation for the associated resource metadata.",
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
     }
   }
 }

@@ -16,18 +16,18 @@
       "minItems": 1,
       "uniqueItems": true,
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/contact.json"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/contact.json"
       }
     },
     "metadata": {
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/metadata.json"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/metadata.json"
     },
     "metadataRepository": {
       "type": "array",
       "description": "Identifies repositories for distribution of the resource metadata.",
       "uniqueItems": true,
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/metadataRepository.json"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/metadataRepository.json"
       }
     },
     "dataDictionary": {
@@ -38,7 +38,7 @@
       },
       "example": "../examples/dataDictionary.json",
       "items": {
-        "$ref: "https://adiwg.github.io/mdJson-schemas/schema/dataDictionary.json"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/dataDictionary.json"
       }
     }
   },

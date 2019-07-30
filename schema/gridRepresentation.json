@@ -65,7 +65,7 @@
           }
         },
         "resolution": {
-          "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./measure.json#",
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./measure.json#",
           "description": "The degree of detail in the grid.",
           "translation": {
             "ISO 19115-2": ["MD_GridSpatialRepresentation > axisDimensionProperties > MD_Dimension > resolution"]

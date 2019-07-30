@@ -18,7 +18,7 @@
         "ISO 19115-2": ["referenceSystemInfo > MD_CRS > datum > RS_Identifier > code"],
         "FGDC CSDGM": ["metadata > spref > vertdef > altsys > altdatum", "metadata > spref > vertdef > depthsys > depthdn"]
       },
-      "$ref: "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
     },
     "encodingMethod": {
       "type": "string",
