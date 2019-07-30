@@ -23,7 +23,7 @@
         "translation": {
           "ISO 19115-2": ["CI_Citation"]
         },
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
       }
     }
 }

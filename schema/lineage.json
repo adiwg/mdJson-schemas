@@ -33,7 +33,7 @@
       }
     },
     "scope": {
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./scope.json#",
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/scope.json#",
       "description": "Type of resource and/or extent to which the lineage information applies.",
       "translation": {}
     },
@@ -42,7 +42,7 @@
       "description": "Citation to a reference that describes the lineage.",
       "translation": {},
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
       }
     },
     "processStep": {
@@ -107,7 +107,7 @@
             "ISO 19115-2": ["LI_ProcessStep > dateTime"],
             "FGDC CSDGM": ["dataqual > lineage > procstep > procdate"]
           },
-          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./timePeriod.json#"
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/timePeriod.json#"
         },
         "processor": {
           "type": "array",
@@ -117,7 +117,7 @@
             "FGDC CSDGM": ["dataqual > lineage > procstep > proccont > cntinfo"]
           },
           "items": {
-            "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
+            "$ref": "https://adiwg.github.io/mdJson-schemas/schema/responsibility.json#"
           }
         },
         "stepSource": {
@@ -147,11 +147,11 @@
           "description": "Citation for process step documentation.",
           "translation": {},
           "items": {
-            "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+            "$ref": "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
           }
         },
         "scope": {
-          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./scope.json#",
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/scope.json#",
           "description": "Type of resource and/or extent to which the process information.",
           "translation": {}
         }
@@ -208,12 +208,12 @@
           }
         },
         "spatialResolution": {
-          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./spatialResolution.json#",
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/spatialResolution.json#",
           "description": "The number below the line in a vulgar fraction",
           "translation": {}
         },
         "referenceSystem": {
-          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./spatialReference.json#",
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/spatialReference.json#",
           "description": "Spatial reference system used by the source.",
           "translation": {}
         },
@@ -228,7 +228,7 @@
           }
         },
         "scope": {
-          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./scope.json#",
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/scope.json#",
           "description": "Type of resource and/or extent to which the process information.",
           "translation": {}
         }

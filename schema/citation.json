@@ -76,7 +76,7 @@
         "ISO 19115-2": ["CI_Citation > identifier"]
       },
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/identifier.json#"
       }
     },
     "series": {
@@ -106,7 +106,7 @@
       "description": "Online graphic associated with the citation",
       "translation": {},
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./graphic.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/graphic.json#"
       }
     }
   },

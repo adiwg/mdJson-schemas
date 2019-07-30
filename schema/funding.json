@@ -23,7 +23,7 @@
       }
     },
     "timePeriod": {
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./timePeriod.json#",
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/timePeriod.json#",
       "description": "The period for which the allocation is relevant.",
       "example": ""
     },

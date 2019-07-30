@@ -40,13 +40,13 @@
       },
       "additionalProperties": true,
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./medium.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/medium.json#"
       }
     },
     "transferFrequency": {
       "description": "The rate of occurrence of distribution.",
       "translation": {},
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./timePeriod.json#/definitions/duration"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/timePeriod.json#/definitions/duration"
 
     },
     "distributionFormat": {
@@ -57,7 +57,7 @@
         "FGDC CSDGM": ["distinfo > stdorder > digform"]
       },
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./format.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/format.json#"
       }
     }
   }

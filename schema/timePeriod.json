@@ -23,7 +23,7 @@
       }
     },
     "identifier": {
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#",
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/identifier.json#",
       "description": "Identifier for the timePeriod."
     },
     "periodName": {
@@ -78,14 +78,14 @@
     "example": "../examples/timePeriod.json#/1",
     "properties": {
       "startGeologicAge": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./geologicAge.json#",
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/geologicAge.json#",
         "description": "A name, code, or date for the beginning of an event or period in geologic time.",
         "translation": {
           "FGDC CSDGM": ["timeperd > timeinfo > rngdates > beggeol"]
         }
       },
       "endGeologicAge": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./geologicAge.json#",
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/geologicAge.json#",
         "description": "A name, code, or date for the end of an event or period in geologic time.",
         "translation": {
           "FGDC CSDGM": ["timeperd > timeinfo > rngdates > endgeol"]

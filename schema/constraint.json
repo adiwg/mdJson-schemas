@@ -44,13 +44,13 @@
     },
     "scope": {
       "description": "temporal extent and or level of the application of the constraint restrictions.",
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./scope.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/scope.json#"
     },
     "graphic": {
       "type": "array",
       "description": "Graphic or symbol indicating the constraint",
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./graphic.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/graphic.json#"
       }
     },
     "reference": {
@@ -58,11 +58,11 @@
       "description": "Citation for the limitation or constraint",
       "translation": {},
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
       }
     },
     "releasability": {
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./releasability.json#",
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/releasability.json#",
       "description": "Information concerning the parties to who the resource can or cannot be released."
     },
     "responsibleParty": {
@@ -70,7 +70,7 @@
       "description": "Entity responsible for the resource constraint",
       "translation": {},
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/responsibility.json#"
       }
     },
     "legal": {

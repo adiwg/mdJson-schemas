@@ -46,7 +46,7 @@
           "FGDC CSDGM": ["timeperd > timeinfo > sngdate > geolage > geolcit"]
         },
         "items" : {
-          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+          "$ref": "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
         }
     }
   },

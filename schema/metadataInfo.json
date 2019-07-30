@@ -12,7 +12,7 @@
       "translation": {
         "ISO 19115-2": ["MI_Metadata > fileIdentifier"]
       },
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/identifier.json#"
     },
     "parentMetadata": {
       "description": "Identifier of the metadata to which this metadata is a subset (child).",
@@ -41,7 +41,7 @@
       },
       "minItems": 1,
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./responsibility.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/responsibility.json#"
       }
     },
     "metadataDate": {
@@ -60,7 +60,7 @@
       "description": "Online location where the metadata is available.",
       "translation": {},
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./onlineResource.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/onlineResource.json#"
       }
     },
     "metadataConstraint": {
@@ -71,7 +71,7 @@
         "FGDC CSDGM": ["metainfo > metac", "metainfo > metuc"]
       },
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./constraint.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/constraint.json#"
       }
     },
     "alternateMetadataReference": {
@@ -79,7 +79,7 @@
       "description": "Reference to alternative metadata for the resource.",
       "translation": {},
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
       }
     },
     "metadataStatus": {

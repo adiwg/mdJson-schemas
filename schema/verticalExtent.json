@@ -29,7 +29,7 @@
       }
     },
     "crsId": {
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./spatialReference.json#",
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/spatialReference.json#",
       "description": "Identifies the vertical coordinate reference system used for the minimum and maximum values."
     }
   }

@@ -29,18 +29,18 @@
       "translation": {
         "ISO 19115-2": ["MI_ImageDescription > processingLevelCode > RS_Identifier"]
       },
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/identifier.json#"
     },
     "attributeGroup": {
       "type": "array",
       "description": "Information about groups of attributes describing a coverage.",
       "translation": {},
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./attributeGroup.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/attributeGroup.json#"
       }
     },
     "imageDescription": {
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./imageDescription.json#",
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/imageDescription.json#",
       "translation": {}
     }
 

@@ -17,7 +17,7 @@
       "minLength": 1
     },
     "referenceSystemIdentifier": {
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#",
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/identifier.json#",
       "description": "The reference system identifier or definition."
     },
     "referenceSystemWKT":{
@@ -25,7 +25,7 @@
       "description": "Well Known Text (WKT) for spatial reference system."
     },
     "referenceSystemParameterSet":{
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./referenceSystemParameterSet.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/referenceSystemParameterSet.json#"
     }
   },
   "anyOf": [{

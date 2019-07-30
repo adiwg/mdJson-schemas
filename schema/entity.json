@@ -56,7 +56,7 @@
         "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType"]
       },
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
       }
     },
     "primaryKeyAttributeCodeName": {
@@ -86,7 +86,7 @@
         "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType > carrierOfCharacteristics > FC_FeatureAttribute"]
       },
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./entityAttribute.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/entityAttribute.json#"
       }
     },
     "foreignKey": {

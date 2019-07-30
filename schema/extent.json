@@ -35,7 +35,7 @@
     "geographicExtent": {
       "type": "array",
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./geographicExtent.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/geographicExtent.json#"
       }
     },
     "verticalExtent": {
@@ -45,14 +45,14 @@
         "ISO 19115-2": ["EX_Extent > verticalElement > EX_VerticalExtent "]
       },
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./verticalExtent.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/verticalExtent.json#"
       }
     },
     "temporalExtent": {
       "type": "array",
       "description": "An array of objects each describing a temporal boundary comprising all or a portion of the resource.",
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./temporalExtent.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/temporalExtent.json#"
       }
     }
   }

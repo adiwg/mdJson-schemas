@@ -27,7 +27,7 @@
       "description": "Information about the horizontal, vertical and temporal extent of the resource specified by the scope.",
       "translation": {},
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./extent.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/extent.json#"
       }
     }
   },

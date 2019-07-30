@@ -9,7 +9,7 @@
   "additionalProperties": true,
   "properties": {
     "gridRepresentation": {
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./gridRepresentation.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/gridRepresentation.json#"
     },
     "controlPointAvailable": {
       "type": "boolean",
@@ -39,7 +39,7 @@
       "description": "Reference providing description of the parameters.",
       "translation": {},
       "items": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./citation.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/citation.json#"
       }
     }
   }

@@ -12,7 +12,7 @@
     "required": ["timeInstant"],
     "properties": {
       "timeInstant": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./timeInstant.json#",
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/timeInstant.json#",
         "description": "Represents an identifiable position in time."
       }
     }
@@ -21,7 +21,7 @@
     "required": ["timePeriod"],
     "properties": {
       "timePeriod": {
-        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./timePeriod.json#"
+        "$ref": "https://adiwg.github.io/mdJson-schemas/schema/timePeriod.json#"
       }
     }
   }]

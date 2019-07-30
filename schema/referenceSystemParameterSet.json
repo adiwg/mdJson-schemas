@@ -8,13 +8,13 @@
   "additionalProperties": true,
   "properties": {
     "projection": {
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./projection.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/projection.json#"
     },
     "geodetic": {
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./geodetic.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/geodetic.json#"
     },
     "verticalDatum": {
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./verticalDatum.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/verticalDatum.json#"
     }
   },
   "oneOf": [{

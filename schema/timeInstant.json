@@ -13,7 +13,7 @@
       }
     },
     "identifier": {
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./identifier.json#",
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/identifier.json#",
       "description": "Identifier assigned to the timeInstant."
     },
     "description": {
@@ -36,7 +36,7 @@
       "translation": {
         "FGDC CSDGM": ["timeperd > timeinfo > mdattim > sngdate > geolage"]
       },
-      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/./geologicAge.json#"
+      "$ref": "https://adiwg.github.io/mdJson-schemas/schema/geologicAge.json#"
     },
     "dateTime": {
       "translation": {
