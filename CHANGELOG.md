@@ -1,5 +1,25 @@
 # Change Log
 
+## [v2.7.0](https://github.com/adiwg/mdJson-schemas/tree/v2.7.0) (2019-09-11)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.6.3...v2.7.0)
+
+**Implemented enhancements:**
+
+- Add applicationProfile and protocolRequest to onlineResource [\#232](https://github.com/adiwg/mdJson-schemas/issues/232)
+
+## [v2.6.3](https://github.com/adiwg/mdJson-schemas/tree/v2.6.3) (2018-10-29)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.6.2...v2.6.3)
+
+**Fixed bugs:**
+
+- Schema example failing [\#207](https://github.com/adiwg/mdJson-schemas/issues/207)
+
+## [v2.6.2](https://github.com/adiwg/mdJson-schemas/tree/v2.6.2) (2018-10-24)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.6.1...v2.6.2)
+
+## [v2.6.1](https://github.com/adiwg/mdJson-schemas/tree/v2.6.1) (2018-10-17)
+[Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.6.0...v2.6.1)
+
 ## [v2.6.0](https://github.com/adiwg/mdJson-schemas/tree/v2.6.0) (2018-10-14)
 [Full Changelog](https://github.com/adiwg/mdJson-schemas/compare/v2.5.1...v2.6.0)
 
