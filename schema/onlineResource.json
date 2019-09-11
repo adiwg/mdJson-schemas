@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Information about accessing online resources and services.",
-  "example":"../examples/onlineResource.json",
+  "example": "../examples/onlineResource.json",
   "required": ["uri"],
   "additionalProperties": true,
   "properties": {
@@ -36,6 +36,20 @@
       "description": "Function performed by the online resource.",
       "translation": {
         "ISO 19115-2": ["CI_OnlineResource > function > CI_OnlineFunctionCode [codelist]"]
+      }
+    },
+    "applicationProfile": {
+      "type": "string",
+      "description": "Name of an application profile that can be used with the online resource.",
+      "translation": {
+        "ISO 19115-2": ["CI_OnlineResource > applicationProfile"]
+      }
+    },
+    "protocolRequest": {
+      "type": "string",
+      "description": "Request used to access the resource depending on the protocol, e.g. body of POST(http)_ request.",
+      "translation": {
+        "ISO 19115-1": ["CI_OnlineResource > protocolRequest"]
       }
     }
   }

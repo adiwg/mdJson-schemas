@@ -3,7 +3,9 @@
   "protocol": "protocol",
   "name": "name",
   "description": "description",
-  "function": "function"
+  "applicationProfile": "applicationProfile",
+  "function": "function",
+  "protocolRequest": "protocolRequest"
 }, {
   "uri": "https://www.amazon.com/Kindle-eBooks",
   "protocol": "HTTP",
