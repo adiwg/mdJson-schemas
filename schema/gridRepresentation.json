@@ -42,6 +42,15 @@
         "ISO 19115-2": ["MD_GridSpatialRepresentation > transformationParameterAvailability"]
       },
       "default": false
+    },
+    "scope": {
+      "type": "array",
+      "minItems": 0,
+      "description": "",
+      "translation": {},
+      "items": {
+        "$ref": "#/definitions/scope"
+      }
     }
   },
   "definitions": {

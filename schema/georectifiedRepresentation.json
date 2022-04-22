@@ -64,6 +64,15 @@
       "type": "string",
       "description": "Point in a pixel corresponding to the Earth location of the pixel.",
       "translation": {}
+    },
+    "scope": {
+      "type": "array",
+      "minItems": 0,
+      "description": "",
+      "translation": {},
+      "items": {
+        "$ref": "#/definitions/scope"
+      }
     }
   },
   "definitions": {

@@ -20,6 +20,15 @@
       "items": {
         "$ref": "#/definitions/vectorObject"
       }
+    },
+    "scope": {
+      "type": "array",
+      "minItems": 0,
+      "description": "",
+      "translation": {},
+      "items": {
+        "$ref": "#/definitions/scope"
+      }
     }
   },
   "anyOf": [{
