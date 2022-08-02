@@ -32,6 +32,16 @@
         ]
       }
     },
+   "externalIdentifiers": {
+      "type": "array",
+      "description": "Identifier for a contact, such as ORCid, RoR",
+      "translation": {
+        "ISO 19115-1": ["CI_ResponsibleParty > partyIdentifier"]
+      },
+      "items": {
+        "$ref": "identifier.json#"
+      }
+    },
     "positionName": {
       "type": "string",
       "description": "Role or position of the person, usually within a given organization.",
