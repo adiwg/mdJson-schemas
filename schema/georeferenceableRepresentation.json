@@ -41,6 +41,14 @@
       "items": {
         "$ref": "./citation.json#"
       }
+    },
+    "scope": {
+      "type": "array",
+      "minItems": 0,
+      "description": "",
+      "translation": {},
+      "items": {
+        "$ref": "./scope.json#"
     }
   }
 }
