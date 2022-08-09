@@ -71,13 +71,6 @@
         "ISO 19115-2": ["MI_CoverageDescription > gmd:dimension > gmd:MD_Band > gmd:scaleFactor > gco:Real"]
       }
     },
-    "rangeElementDescriptions": {
-      "type": "array",
-      "description": "Provides definitions and values for range elements such as missing data or other flags associated with an MD_SampleDimension.",
-      "translation": {
-        "ISO 19115-1": ["mrc:MD_CoverageDescription > mrc:attributeGroup > mrc:attribute > mrc:MD_SampleDimension"]
-      }
-    },
     "offset": {
       "type": "number",
       "description": "The physical value corresponding to an attribute value of zero.",
@@ -105,6 +98,14 @@
       "description": "The maximum number of significant bits in the uncompressed representation for the value in each pixel.",
       "translation": {
         "ISO 19115-2": ["MI_CoverageDescription > gmd:dimension > gmd:MD_Band > gmd:bitsPerValue > gco:Integer"]
+      }
+    },
+    "rangeElementDescription": {
+      "type": "array",
+      "description": "Provides definitions and values for range elements such as missing data or other flags associated with an MD_SampleDimension.",
+      "translation": {
+        "ISO 19115-1": ["mrc:MD_CoverageDescription > mrc:attributeGroup > mrc:attribute > mrc:MD_SampleDimension"],
+        "FGDC CSDGM": ["no translation"]
       }
     },
     "boundMin": {
