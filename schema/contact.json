@@ -32,7 +32,7 @@
         ]
       }
     },
-   "externalIdentifiers": {
+   "externalIdentifier": {
       "type": "array",
       "description": "Identifier for a contact, such as ORCid, RoR",
       "translation": {
