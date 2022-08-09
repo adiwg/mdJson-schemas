@@ -8,7 +8,7 @@
       "ISO 19115-2": ["MD_Identifier"]
     },
     "type": "object",
-    "required": ["identifier", "namespace"],
+    "required": ["identifier"],
     "properties": {
       "identifier": {
         "type": "string",
