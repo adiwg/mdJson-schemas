@@ -7,6 +7,14 @@
   "minProperties": 1,
   "additionalProperties": true,
   "properties": {
+    "scope": {
+      "type": "array",
+      "minItems": 0,
+      "description": "Level and extent of the spatial representation",
+      "translation": {},
+      "items": {
+        "$ref": "./scope.json#"
+    },
     "topologyLevel": {
       "type": "string",
       "description": "Identifies the degree of complexity of the spatial relationships",
@@ -20,14 +28,6 @@
       "items": {
         "$ref": "#/definitions/vectorObject"
       }
-    },
-    "scope": {
-      "type": "array",
-      "minItems": 0,
-      "description": "",
-      "translation": {},
-      "items": {
-        "$ref": "./scope.json#"
     }
   },
   "anyOf": [{

@@ -10,6 +10,14 @@
   "required": ["numberOfDimensions", "cellGeometry", "dimension"],
   "additionalProperties": true,
   "properties": {
+    "scope": {
+      "type": "array",
+      "minItems": 0,
+      "description": "Level and extent of the spatial representation",
+      "translation": {},
+      "items": {
+        "$ref": "./scope.json#"
+    },
     "numberOfDimensions": {
       "type": "number",
       "description": "The number of independent spatial-temporal axes.",
@@ -42,14 +50,6 @@
         "ISO 19115-2": ["MD_GridSpatialRepresentation > transformationParameterAvailability"]
       },
       "default": false
-    },
-    "scope": {
-      "type": "array",
-      "minItems": 0,
-      "description": "",
-      "translation": {},
-      "items": {
-        "$ref": "./scope.json#"
     }
   },
   "definitions": {

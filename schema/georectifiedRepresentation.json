@@ -8,6 +8,14 @@
   "required": ["gridRepresentation", "checkPointAvailable", "cornerPoints", "pointInPixel"],
   "additionalProperties": true,
   "properties": {
+    "scope": {
+      "type": "array",
+      "minItems": 0,
+      "description": "Level and extent of the spatial representation",
+      "translation": {},
+      "items": {
+        "$ref": "./scope.json#"
+    },
     "gridRepresentation": {
       "$ref": "./gridRepresentation.json#"
     },
@@ -64,14 +72,6 @@
       "type": "string",
       "description": "Point in a pixel corresponding to the Earth location of the pixel.",
       "translation": {}
-    },
-    "scope": {
-      "type": "array",
-      "minItems": 0,
-      "description": "",
-      "translation": {},
-      "items": {
-        "$ref": "./scope.json#"
     }
   },
   "definitions": {
