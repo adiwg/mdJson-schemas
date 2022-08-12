@@ -32,6 +32,17 @@
         ]
       }
     },
+   "externalIdentifier": {
+      "type": "array",
+      "description": "IIdentifier for a contact, such as ORCID iD or ROR",
+      "translation": {
+        "ISO 19115-1": ["CI_ResponsibleParty > partyIdentifier"],
+        "FGDC CSDGM": ["no translation"]
+      },
+      "items": {
+        "$ref": "identifier.json#"
+      }
+    },
     "positionName": {
       "type": "string",
       "description": "Role or position of the person, usually within a given organization.",
