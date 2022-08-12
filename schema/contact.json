@@ -34,7 +34,7 @@
     },
    "externalIdentifier": {
       "type": "array",
-      "description": "Identifier for a contact, such as ORCid, RoR",
+      "description": "IIdentifier for a contact, such as ORCID iD or ROR",
       "translation": {
         "ISO 19115-1": ["CI_ResponsibleParty > partyIdentifier"],
         "FGDC CSDGM": ["no translation"]
