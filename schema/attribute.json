@@ -100,6 +100,14 @@
         "ISO 19115-2": ["MI_CoverageDescription > gmd:dimension > gmd:MD_Band > gmd:bitsPerValue > gco:Integer"]
       }
     },
+    "rangeElementDescription": {
+      "type": "array",
+      "description": "Provides definitions and values for range elements such as missing data or other flags associated with an MD_SampleDimension.",
+      "translation": {
+        "ISO 19115-1": ["mrc:MD_CoverageDescription > mrc:attributeGroup > mrc:attribute > mrc:MD_SampleDimension"],
+        "FGDC CSDGM": ["no translation"]
+      }
+    },
     "boundMin": {
       "type": "number",
       "description": "The shortest wavelength that the sensor is capable of collecting within a designated band."
