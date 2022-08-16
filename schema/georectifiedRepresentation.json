@@ -19,6 +19,7 @@
       },
       "items": {
         "$ref": "./scope.json#"
+      }
     },
     "gridRepresentation": {
       "$ref": "./gridRepresentation.json#"
