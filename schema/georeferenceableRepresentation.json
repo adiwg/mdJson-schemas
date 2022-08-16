@@ -8,6 +8,18 @@
   "required": ["gridRepresentation", "controlPointAvailable", "orientationParameterAvailable", "georeferencedParameter"],
   "additionalProperties": true,
   "properties": {
+    "scope": {
+      "type": "array",
+      "minItems": 0,
+      "description": "Level and extent of the spatial representation",
+      "translation": {
+        "ISO 19115-1": ["spatialRepresentationInfo > MD_GridSpatialRepresentation > scope"],
+        "ISO 19115-2": ["spatialRepresentationInfo > MD_GridSpatialRepresentation > scope"],
+        "FGDC CSDGM": ["no translation"]
+      },
+      "items": {
+        "$ref": "./scope.json#"
+    },
     "gridRepresentation": {
       "$ref": "./gridRepresentation.json#"
     },
