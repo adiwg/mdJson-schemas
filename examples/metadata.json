@@ -121,5 +121,6 @@
          "endDateTime": "2016-12-31"
        }
      }
-   ]
+   ],
+   "dataQuality": []
  }]

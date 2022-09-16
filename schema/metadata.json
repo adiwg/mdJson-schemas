@@ -21,6 +21,14 @@
       },
       "$ref": "resourceInfo.json#"
     },
+    "dataQuality": {
+      "type": "array",
+      "desription": "data quality",
+      "translation": {},
+      "items": {
+        "$ref": "./dataQuality.json#"
+      }
+    },
     "resourceLineage": {
       "type": "array",
       "description": "Information on the history of the resource.",
