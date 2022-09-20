@@ -16,6 +16,13 @@
         "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > scope"]
       },
       "$ref": "./scope.json#"
+    },
+    "standaloneQualityReport": {
+      "description": "data quality report in plain written form",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > standaloneQualityReport"]
+      },
+      "$ref": "./standaloneQualityReport.json#"
     }
   }
 }
