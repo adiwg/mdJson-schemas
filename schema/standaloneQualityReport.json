@@ -7,7 +7,6 @@
   "translation": {
     "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > standaloneQualityReport"]
   },
-  "required": [],
   "properties": {
     "reportReference": {
       "translation": {

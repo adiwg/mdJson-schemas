@@ -6,7 +6,6 @@
   "translation": {
     "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > Report > coverageResult"]
   },
-  "required": [],
   "properties": {
     "dateTime": {
       "type": "string"
