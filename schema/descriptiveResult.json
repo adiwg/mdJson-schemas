@@ -1,0 +1,22 @@
+{
+  "id": "descriptiveResult.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "example": "../examples/descriptiveResult.json",
+  "description": "",
+  "translation": {
+    "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > Report > descriptiveResult"]
+  },
+  "required": [],
+  "properties": {
+    "dateTime": {
+      "type": "string"
+    },
+    "scope": {
+      "$ref": "./scope.json#"
+    },
+    "statement": {
+      "type": "string"
+    }
+  }
+}
