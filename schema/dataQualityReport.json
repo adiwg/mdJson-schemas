@@ -16,6 +16,30 @@
       "items": {
         "$ref": "./conformanceResult.json#"
       }
+    },
+    "coverageResult": {
+      "type": "array",
+      "items": {
+        "$ref": "./coverageResult.json#"
+      }
+    },
+    "descriptiveResult": {
+      "type": "array",
+      "items": {
+        "$ref": "./descriptiveResult.json#"
+      }
+    },
+    "evaluationMethod": {
+      "type": "array",
+      "items": {
+        "$ref": "./evaluationMethod.json#"
+      }
+    },
+    "quantitativeResult": {
+      "type": "array",
+      "items": {
+        "$ref": "./quantitativeResult.json#"
+      }
     }
   }
 }
