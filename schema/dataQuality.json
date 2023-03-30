@@ -1,0 +1,33 @@
+{
+  "id": "dataQuality.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "example": "../examples/dataQuality.json",
+  "description": "Details about data quality.",
+  "translation": {
+    "ISO 19115-2": ["MI_Metadata > DQ_DataQuality"]
+  },
+  "additionalProperties": true,
+  "properties": {
+    "scope": {
+      "description": "scope of data quality report",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > scope"]
+      },
+      "$ref": "./scope.json#"
+    },
+    "standaloneQualityReport": {
+      "description": "data quality report in plain written form",
+      "translation": {
+        "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > standaloneQualityReport"]
+      },
+      "$ref": "./standaloneQualityReport.json#"
+    },
+    "report": {
+      "type": "array",
+      "items": {
+        "$ref": "./dataQualityReport.json#"
+      }
+    }
+  }
+}

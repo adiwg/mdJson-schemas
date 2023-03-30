@@ -1,0 +1,45 @@
+{
+  "id": "evaluationMethod.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "example": "../examples/evaluationMethod.json",
+  "description": "",
+  "translation": {
+    "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > Report > evaluationMethod"]
+  },
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "dateTime": {
+      "type": "string"
+    },
+    "methodDescription": {
+      "type": "string"
+    },
+    "evaluationProcedure": {
+      "$ref": "./citation.json#"
+    },
+    "referenceDocument": {
+      "type": "array",
+      "items": {
+        "$ref": "./citation.json#"
+      }
+    },
+    "evaluationMethodType": {
+      "type": "string"
+    },
+    "deductiveSource": {
+      "type": "string"
+    },
+    "samplingScheme": {
+      "type": "string"
+    },
+    "lotDescription": {
+      "type": "string"
+    },
+    "samplingRatio": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "conformanceResult.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "example": "../examples/conformanceResult.json",
+  "description": "Information about the outcome of evaluating the obtained value (or set of values) against a specified acceptable conformance quality level",
+  "translation": {
+    "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > Report > conformanceResult"]
+  },
+  "properties": {
+    "dateTime": {
+      "type": "string"
+    },
+    "scope": {
+      "$ref": "./scope.json#"
+    },
+    "specification": {
+      "$ref": "./citation.json#"
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "pass": {
+      "type": "boolean"
+    }
+  }
+}
