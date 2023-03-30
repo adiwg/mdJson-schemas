@@ -43,7 +43,7 @@
     "buildify": "github:powmedia/buildify#20458a121411f759dcc5ec1b441695eb7fc2b3b7",
     "glob": "^7.1.2",
     "mkdirp": "^0.5.1",
-    "mocha": "^5.2.0",
+    "mocha": "^10.2.0",
     "rimraf": "^2.6.1"
   }
 }
