@@ -11,6 +11,9 @@
     "qualityMeasure": {
       "$ref": "./qualityMeasure.json#"
     },
+    "evaluationMethod": {
+      "$ref": "./evaluationMethod.json#"
+    },
     "conformanceResult": {
       "type": "array",
       "items": {
@@ -27,12 +30,6 @@
       "type": "array",
       "items": {
         "$ref": "./descriptiveResult.json#"
-      }
-    },
-    "evaluationMethod": {
-      "type": "array",
-      "items": {
-        "$ref": "./evaluationMethod.json#"
       }
     },
     "quantitativeResult": {
