@@ -5,10 +5,11 @@
     "description": "provides definitions and values for range elements such as missing data or other flags associated with a Sample Dimension.",
     "example":"../examples/rangeElementDescription.json",
     "translation": {
-      "ISO 19115-2": ["MD_Identifier"]
+      "ISO 19115-1": ["mrc:MD_CoverageDescription > mrc:attributeGroup > mrc:attribute > mrc:MD_SampleDimension"],
+      "FGDC CSDGM": ["no translation"]
     },
     "type": "object",
-    "required": ["identifier"],
+    "required": ["name", "definition", "rangeElement"],
     "properties": {
       "name": {
         "type": "string",
