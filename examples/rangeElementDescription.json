@@ -2,9 +2,9 @@
     "rangeElementDescription":
        [
           {
-             "name": { },
-             "definition": { },
-             "rangeElement": [ ]
+             "name": "example name",
+             "definition": "example definition",
+             "rangeElement": [ "elem1", "elem2" ]
           }
        ]
 }
