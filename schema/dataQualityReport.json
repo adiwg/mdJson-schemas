@@ -14,6 +14,18 @@
     "evaluationMethod": {
       "$ref": "./evaluationMethod.json#"
     },
+    "quantitativeResult": {
+      "type": "array",
+      "items": {
+        "$ref": "./quantitativeResult.json#"
+      }
+    },
+    "descriptiveResult": {
+      "type": "array",
+      "items": {
+        "$ref": "./descriptiveResult.json#"
+      }
+    },
     "conformanceResult": {
       "type": "array",
       "items": {
@@ -24,18 +36,6 @@
       "type": "array",
       "items": {
         "$ref": "./coverageResult.json#"
-      }
-    },
-    "descriptiveResult": {
-      "type": "array",
-      "items": {
-        "$ref": "./descriptiveResult.json#"
-      }
-    },
-    "quantitativeResult": {
-      "type": "array",
-      "items": {
-        "$ref": "./quantitativeResult.json#"
       }
     }
   }
