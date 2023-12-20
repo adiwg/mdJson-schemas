@@ -2,6 +2,7 @@
   "id": "dataQuality.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "required": ["report"],
   "example": "../examples/dataQuality.json",
   "description": "Details about data quality.",
   "translation": {
@@ -19,12 +20,15 @@
     "standaloneQualityReport": {
       "description": "data quality report in plain written form",
       "translation": {
-        "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > standaloneQualityReport"]
+        "ISO 19115-2": [
+          "MI_Metadata > DQ_DataQuality > standaloneQualityReport"
+        ]
       },
       "$ref": "./standaloneQualityReport.json#"
     },
     "report": {
       "type": "array",
+      "minItems": 1,
       "items": {
         "$ref": "./dataQualityReport.json#"
       }
