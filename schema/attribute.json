@@ -106,6 +106,9 @@
       "translation": {
         "ISO 19115-1": ["mrc:MD_CoverageDescription > mrc:attributeGroup > mrc:attribute > mrc:MD_SampleDimension"],
         "FGDC CSDGM": ["no translation"]
+      },
+      "items": {
+        "$ref": "./rangeElementDescription.json#"
       }
     },
     "boundMin": {
