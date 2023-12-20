@@ -2,12 +2,59 @@
   "id": "dataQualityReport.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "required": ["type"],
   "example": "../examples/dataQualityReport.json",
   "description": "Details about data quality.",
   "translation": {
     "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > standaloneQualityReport"]
   },
+  "anyOf": [
+    {
+      "title": "quantitativeResult is required",
+      "required": ["quantitativeResult"]
+    },
+    {
+      "title": "descriptiveResult is required",
+      "required": ["descriptiveResult"]
+    },
+    {
+      "title": "conformanceResult is required",
+      "required": ["conformanceResult"]
+    },
+    {
+      "title": "coverageResult is required",
+      "required": ["coverageResult"]
+    }
+  ],
   "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "DQ_AbsoluteExternalPositionalAccuracy",
+        "DQ_AccuracyOfATimeMeasurement",
+        "DQ_ConceptualConsistency",
+        "DQ_CompletenessCommission",
+        "DQ_CompletenessOmmission",
+        "DQ_Confidence",
+        "DQ_CoverageResult",
+        "DQ_DomainConsistency",
+        "DQ_FormatConsistency",
+        "DQ_GriddedDataPositionalAccuracy",
+        "DQ_Homogeneity",
+        "DQ_NonQuantitativeAttributeCorrectness",
+        "DQ_QuantitativeAttributeAccuracy",
+        "DQ_RelativeInternalPositionalAccuracy",
+        "DQ_Representativity",
+        "DQ_TemporalConsistency",
+        "DQ_TemporalValidity",
+        "DQ_ThematicClassisificationCorrectness",
+        "DQ_TopologicalConsistency",
+        "DQ_UsibilityElement"
+      ]
+    },
+    "standaloneQualityReportDetails": {
+      "type": "string"
+    },
     "qualityMeasure": {
       "$ref": "./qualityMeasure.json#"
     },
