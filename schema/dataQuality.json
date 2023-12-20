@@ -2,7 +2,7 @@
   "id": "dataQuality.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "required": ["report"],
+  "required": ["scope", "report"],
   "example": "../examples/dataQuality.json",
   "description": "Details about data quality.",
   "translation": {
