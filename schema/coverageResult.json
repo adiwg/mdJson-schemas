@@ -2,10 +2,21 @@
   "id": "coverageResult.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "required": ["spatialRepresentationType", "spatialRepresentation"],
   "description": "",
   "translation": {
     "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > Report > coverageResult"]
   },
+  "anyOf": [
+    {
+      "title": "required",
+      "required": ["resourceFormat", "resultFile"]
+    },
+    {
+      "title": "required",
+      "required": ["resultContent"]
+    }
+  ],
   "properties": {
     "dateTime": {
       "type": "string"

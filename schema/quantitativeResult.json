@@ -2,10 +2,13 @@
   "id": "quantitativeResult.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "required": ["value"],
   "example": "../examples/quantitativeResult.json",
   "description": "",
   "translation": {
-    "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > Report > quantitativeResult"]
+    "ISO 19115-2": [
+      "MI_Metadata > DQ_DataQuality > Report > quantitativeResult"
+    ]
   },
   "properties": {
     "dateTime": {
@@ -16,6 +19,7 @@
     },
     "value": {
       "type": "array",
+      "minItems": 1,
       "items": {
         "type": "number"
       }

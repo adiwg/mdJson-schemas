@@ -2,6 +2,7 @@
   "id": "descriptiveResult.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "required": ["statement"],
   "example": "../examples/descriptiveResult.json",
   "description": "",
   "translation": {
