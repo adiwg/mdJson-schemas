@@ -4,7 +4,7 @@
   "type": "object",
   "required": ["value"],
   "example": "../examples/quantitativeResult.json",
-  "description": "",
+  "description": "The values or information about the value(s) (or set of values) obtained from applying a data quality measure.",
   "translation": {
     "ISO 19115-2": [
       "MI_Metadata > DQ_DataQuality > Report > quantitativeResult"
@@ -12,23 +12,28 @@
   },
   "properties": {
     "dateTime": {
-      "type": "string"
+      "type": "string",
+      "description": "Date when the result was generated."
     },
     "scope": {
-      "$ref": "./scope.json#"
+      "$ref": "./scope.json#",
+      "description": "Scope of the result."
     },
     "value": {
       "type": "array",
+      "description": "Quantitative value or values, content determined by the evaluation procedure used, accordingly with the value type and valueStructure defined for the measure.",
       "minItems": 1,
       "items": {
         "type": "number"
       }
     },
     "valueUnits": {
-      "type": "string"
+      "type": "string",
+      "description": "Value unit for reporting a data quality result."
     },
     "valueRecordType": {
-      "type": "string"
+      "type": "string",
+      "description": "Value type for reporting a data quality result, depends of the implementation."
     }
   }
 }

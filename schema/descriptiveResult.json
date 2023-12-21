@@ -4,19 +4,22 @@
   "type": "object",
   "required": ["statement"],
   "example": "../examples/descriptiveResult.json",
-  "description": "",
+  "description": "Data quality descriptive result.",
   "translation": {
     "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > Report > descriptiveResult"]
   },
   "properties": {
     "dateTime": {
-      "type": "string"
+      "type": "string",
+      "description": "Date when the result was generated."
     },
     "scope": {
-      "$ref": "./scope.json#"
+      "$ref": "./scope.json#",
+      "description": "Scope of the result."
     },
     "statement": {
-      "type": "string"
+      "type": "string",
+      "description": "Textual expression of the descriptive result."
     }
   }
 }

@@ -4,25 +4,30 @@
   "type": "object",
   "required": ["specification", "pass"],
   "example": "../examples/conformanceResult.json",
-  "description": "Information about the outcome of evaluating the obtained value (or set of values) against a specified acceptable conformance quality level",
+  "description": "Information about the outcome of evaluating the obtained value (or set of values) against a specified acceptable conformance quality level.",
   "translation": {
     "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > Report > conformanceResult"]
   },
   "properties": {
     "dateTime": {
-      "type": "string"
+      "type": "string",
+      "description": "Date when the result was generated."
     },
     "scope": {
-      "$ref": "./scope.json#"
+      "$ref": "./scope.json#",
+      "description": "Scope of the result."
     },
     "specification": {
-      "$ref": "./citation.json#"
+      "$ref": "./citation.json#",
+      "description": "Citation of data product specification or user requirement against which data are being evaluated."
     },
     "explanation": {
-      "type": "string"
+      "type": "string",
+      "description": "Explanation of the meaning of conformance for this result."
     },
     "pass": {
-      "type": "boolean"
+      "type": "boolean",
+      "description": "Indication of the conformance result where 0 = fail and 1 = pass. Default: false."
     }
   }
 }

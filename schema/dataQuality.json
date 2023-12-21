@@ -4,21 +4,21 @@
   "type": "object",
   "required": ["scope", "report"],
   "example": "../examples/dataQuality.json",
-  "description": "Details about data quality.",
+  "description": "Quality information for the data specified by a data quality scope.",
   "translation": {
     "ISO 19115-2": ["MI_Metadata > DQ_DataQuality"]
   },
   "additionalProperties": true,
   "properties": {
     "scope": {
-      "description": "scope of data quality report",
+      "description": "The specific data to which the data quality information applies.",
       "translation": {
         "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > scope"]
       },
       "$ref": "./scope.json#"
     },
     "standaloneQualityReport": {
-      "description": "data quality report in plain written form",
+      "description": "Reference to an external standalone quality report.",
       "translation": {
         "ISO 19115-2": [
           "MI_Metadata > DQ_DataQuality > standaloneQualityReport"
@@ -28,6 +28,7 @@
     },
     "report": {
       "type": "array",
+      "description": "Aspect of quantitative quality information.",
       "minItems": 1,
       "items": {
         "$ref": "./dataQualityReport.json#"
