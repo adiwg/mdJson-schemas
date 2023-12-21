@@ -9,10 +9,21 @@
   },
   "properties": {
     "type": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "DQ_EvaluationMethod",
+        "DQ_DataInspection",
+        "DQ_AggregationDerivation",
+        "DQ_FullInspection",
+        "DQ_IndirectEvaluation",
+        "DQ_SampleBasedInspection"
+      ]
     },
     "dateTime": {
-      "type": "string"
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "methodDescription": {
       "type": "string"
