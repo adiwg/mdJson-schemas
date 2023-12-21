@@ -49,7 +49,11 @@
         "DQ_TemporalValidity",
         "DQ_ThematicClassisificationCorrectness",
         "DQ_TopologicalConsistency",
-        "DQ_UsibilityElement"
+        "DQ_UsibilityElement",
+        "DQ_Completeness",
+        "DQ_LogicalConsistency",
+        "DQ_PositioinalAccuracy",
+        "DQ_TemporalQuality"
       ]
     },
     "standaloneQualityReportDetails": {
