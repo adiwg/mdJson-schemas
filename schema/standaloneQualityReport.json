@@ -11,6 +11,7 @@
   "properties": {
     "reportReference": {
       "description": "Reference to the associated standalone quality report.",
+      "maxItems": 1,
       "translation": {
         "ISO 19115-2": [
           "DQ_DataQuality > standaloneQualityReport > reportReference"
@@ -21,6 +22,7 @@
     "abstract": {
       "type": "string",
       "description": "Abstract for the associated standalone quality report.",
+      "maxItems": 1,
       "translation": {
         "ISO 19115-2": ["DQ_DataQuality > standaloneQualityReport > abstract"]
       }
