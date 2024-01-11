@@ -96,6 +96,13 @@
       "items": {
         "$ref": "./coverageResult.json#"
       }
+    },
+    "derivedElementReport": {
+      "type": "array",
+      "description": "In case of aggregation or derivation, indicates the original element.",
+      "items": {
+        "$ref": "./dataQualityReport.json#"
+      }
     }
   }
 }

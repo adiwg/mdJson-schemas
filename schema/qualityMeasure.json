@@ -7,9 +7,10 @@
   "translation": {
     "ISO 19115-2": ["MI_Metadata > DQ_DataQuality >"]
   },
+  "required": ["description"],
   "anyOf": [
     {
-      "title": "identifier required",
+      "title": "identifier optional",
       "required": ["identifier"]
     },
     {
