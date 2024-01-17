@@ -9,11 +9,11 @@
   },
   "anyOf": [
     {
-      "title": "required",
+      "title": "resourceFormat and resultFile required",
       "required": ["resourceFormat", "resultFile"]
     },
     {
-      "title": "required",
+      "title": "resultContent required",
       "required": ["resultContent"]
     }
   ],
@@ -46,7 +46,7 @@
       "description": "Provides information about the format of the result coverage data."
     },
     "resultFile": {
-      "type": "string",
+      "$ref": "./qualityResultFile.json#",
       "description": "Provides information about the data file containing the result coverage data."
     }
   }
