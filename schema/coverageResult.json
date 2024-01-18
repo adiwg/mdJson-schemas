@@ -13,8 +13,8 @@
       "required": ["resourceFormat", "resultFile"]
     },
     {
-      "title": "resultContent required",
-      "required": ["resultContent"]
+      "title": "resultContentDescription required",
+      "required": ["resultContentDescription"]
     }
   ],
   "properties": {
