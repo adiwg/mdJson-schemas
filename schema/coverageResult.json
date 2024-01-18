@@ -34,12 +34,9 @@
       "$ref": "./spatialRepresentation.json#",
       "description": "Provides the digital representation of data quality measures composing the coverage result."
     },
-    "resultContent": {
-      "type": "array",
-      "description": "Provides the description of the content of the result coverage when the quality coverage is included with the resource being described. i.e. semantic definition of the data quality measures.",
-      "items": {
-        "type": "string"
-      }
+    "resultContentDescription": {
+      "$ref": "./coverageDescription.json#",
+      "description": "Provides the description of the content of the result coverage when the quality coverage is included with the resource being described. i.e. semantic definition of the data quality measures."
     },
     "resourceFormat": {
       "$ref": "./format.json#",
