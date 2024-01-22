@@ -3,43 +3,64 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "example": "../examples/evaluationMethod.json",
-  "description": "",
+  "description": "Description of the evaluation method and procedure applied.",
   "translation": {
     "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > Report > evaluationMethod"]
   },
   "properties": {
     "type": {
-      "type": "string"
+      "type": "string",
+      "description": "Type of evaluation method.",
+      "enum": [
+        "DQ_EvaluationMethod",
+        "DQ_DataInspection",
+        "DQ_AggregationDerivation",
+        "DQ_FullInspection",
+        "DQ_IndirectEvaluation",
+        "DQ_SampleBasedInspection"
+      ]
     },
     "dateTime": {
-      "type": "string"
+      "type": "array",
+      "description": "Date or range of dates on which a data quality measure was applied.",
+      "items": {
+        "type": "string"
+      }
     },
     "methodDescription": {
-      "type": "string"
+      "type": "string",
+      "description": "Description of the evaluation method."
     },
     "evaluationProcedure": {
+      "description": "Reference to the procedure information.",
       "$ref": "./citation.json#"
     },
     "referenceDocument": {
       "type": "array",
+      "description": "Information on documents which are referenced in developing and applying a data quality evaluation method.",
       "items": {
         "$ref": "./citation.json#"
       }
     },
     "evaluationMethodType": {
-      "type": "string"
+      "type": "string",
+      "description": "Type of method used to evaluate quality of the data."
     },
     "deductiveSource": {
-      "type": "string"
+      "type": "string",
+      "description": "Information on which data are used as sources in deductive evaluation method."
     },
     "samplingScheme": {
-      "type": "string"
+      "type": "string",
+      "description": "Information of the type of sampling scheme and description of the sampling procedure."
     },
     "lotDescription": {
-      "type": "string"
+      "type": "string",
+      "description": "Information of how lots are defined."
     },
     "samplingRatio": {
-      "type": "string"
+      "type": "string",
+      "description": "Information on how many samples on average are extracted for inspection from each lot of population."
     }
   }
 }

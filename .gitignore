@@ -18,3 +18,5 @@ tmp
 .project
 node_modules
 resources/js
+
+.DS_Store

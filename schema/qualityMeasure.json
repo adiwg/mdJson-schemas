@@ -3,22 +3,36 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "example": "../examples/qualityMeasure.json",
-  "description": "Reference to the measure used",
+  "description": "Reference to the measure used.",
   "translation": {
     "ISO 19115-2": ["MI_Metadata > DQ_DataQuality >"]
   },
+  "required": ["description"],
+  "anyOf": [
+    {
+      "title": "identifier optional",
+      "required": ["identifier"]
+    },
+    {
+      "title": "name required if no identifier",
+      "required": ["name"]
+    }
+  ],
   "properties": {
     "identifier": {
+      "description": "Identifier of the measure, value uniquely identifying the measure within a namespace.",
       "$ref": "./identifier.json#"
     },
     "name": {
       "type": "array",
+      "description": "Name of the test applied to the data.",
       "items": {
         "type": "string"
       }
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "description": "Description of the measure."
     }
   }
 }
