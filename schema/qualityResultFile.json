@@ -1,0 +1,26 @@
+{
+  "id": "qualityResultFile.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": ["fileName", "fileType", "fileDescription", "fileFormat"],
+  "description": "Quality result file.",
+  "translation": {},
+  "properties": {
+    "fileName": {
+      "type": "string",
+      "description": "Name of the result file."
+    },
+    "fileType": {
+      "type": "string",
+      "description": "MIME file type of the result file."
+    },
+    "fileDescription": {
+      "type": "string",
+      "description": "Description of the result file."
+    },
+    "fileFormat": {
+      "$ref": "./format.json#",
+      "description": "Description of the computer language construct that specifies the representation of data objects in a record, file, message, storage device or transmission channel."
+    }
+  }
+}

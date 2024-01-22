@@ -2,43 +2,106 @@
   "id": "dataQualityReport.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "required": ["type"],
   "example": "../examples/dataQualityReport.json",
-  "description": "Details about data quality.",
+  "description": "Aspect of quantitative quality information.",
   "translation": {
     "ISO 19115-2": ["MI_Metadata > DQ_DataQuality > standaloneQualityReport"]
   },
+  "anyOf": [
+    {
+      "title": "quantitativeResult is required",
+      "required": ["quantitativeResult"]
+    },
+    {
+      "title": "descriptiveResult is required",
+      "required": ["descriptiveResult"]
+    },
+    {
+      "title": "conformanceResult is required",
+      "required": ["conformanceResult"]
+    },
+    {
+      "title": "coverageResult is required",
+      "required": ["coverageResult"]
+    }
+  ],
   "properties": {
+    "type": {
+      "type": "string",
+      "description": "The type of quality report.",
+      "enum": [
+        "DQ_AbsoluteExternalPositionalAccuracy",
+        "DQ_AccuracyOfATimeMeasurement",
+        "DQ_ConceptualConsistency",
+        "DQ_CompletenessCommission",
+        "DQ_CompletenessOmmission",
+        "DQ_Confidence",
+        "DQ_CoverageResult",
+        "DQ_DomainConsistency",
+        "DQ_FormatConsistency",
+        "DQ_GriddedDataPositionalAccuracy",
+        "DQ_Homogeneity",
+        "DQ_NonQuantitativeAttributeCorrectness",
+        "DQ_QuantitativeAttributeAccuracy",
+        "DQ_RelativeInternalPositionalAccuracy",
+        "DQ_Representativity",
+        "DQ_TemporalConsistency",
+        "DQ_TemporalValidity",
+        "DQ_ThematicClassisificationCorrectness",
+        "DQ_TopologicalConsistency",
+        "DQ_UsibilityElement",
+        "DQ_Completeness",
+        "DQ_LogicalConsistency",
+        "DQ_PositioinalAccuracy",
+        "DQ_TemporalQuality"
+      ]
+    },
+    "standaloneQualityReportDetails": {
+      "type": "string",
+      "description": "Clause in the standaloneQualityReport where this data quality element or any related data quality element (original results in case of derivation or aggregation) is described."
+    },
     "qualityMeasure": {
+      "description": "Reference to measure used.",
       "$ref": "./qualityMeasure.json#"
+    },
+    "evaluationMethod": {
+      "description": "Evaluation information.",
+      "$ref": "./evaluationMethod.json#"
+    },
+    "quantitativeResult": {
+      "type": "array",
+      "description": "The values or information about the value(s) (or set of values) obtained from applying a data quality measure.",
+      "items": {
+        "$ref": "./quantitativeResult.json#"
+      }
+    },
+    "descriptiveResult": {
+      "type": "array",
+      "description": "Data quality descriptive result.",
+      "items": {
+        "$ref": "./descriptiveResult.json#"
+      }
     },
     "conformanceResult": {
       "type": "array",
+      "description": "Information about the outcome of evaluating the obtained value (or set of values) against a specified acceptable conformance quality level.",
       "items": {
         "$ref": "./conformanceResult.json#"
       }
     },
     "coverageResult": {
       "type": "array",
+      "description": "Result of a data quality measure organizing the measured values as a coverage.",
       "items": {
         "$ref": "./coverageResult.json#"
       }
     },
-    "descriptiveResult": {
+    "derivedElementReport": {
       "type": "array",
+      "description": "In case of aggregation or derivation, indicates the original element.",
       "items": {
-        "$ref": "./descriptiveResult.json#"
-      }
-    },
-    "evaluationMethod": {
-      "type": "array",
-      "items": {
-        "$ref": "./evaluationMethod.json#"
-      }
-    },
-    "quantitativeResult": {
-      "type": "array",
-      "items": {
-        "$ref": "./quantitativeResult.json#"
+        "$ref": "./dataQualityReport.json#"
       }
     }
   }

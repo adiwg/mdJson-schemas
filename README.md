@@ -5,7 +5,6 @@
 
 # mdJson-schemas
 
-
 JSON schemas for the ADIwg project and data metadata standard
 
 ## Ruby Gem
@@ -26,12 +25,6 @@ Or install it yourself as:
 
     $ gem install adiwg-json_schemas
 
-## Bower
-
-Install:
-
-    $ bower install mdjson-schemas
-
 ## npm
 
 Install:
@@ -40,10 +33,9 @@ Install:
 
     const Schemas = require('../resources/js/schemas.js');
 
-
 ### Usage
 
-The main schema file is `schema/schema.json`.  Load that file in your [validator](http://json-schema.org/implementations.html#libraries).
+The main schema file is `schema/schema.json`. Load that file in your [validator](http://json-schema.org/implementations.html#libraries).
 
 **NOTE**: The schemas use relative addresses for `$ref` paths. If this causes a problem
 with the [ruby-json-schema/json-schema](https://github.com/ruby-json-schema/json-schema) gem,
