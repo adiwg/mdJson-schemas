@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "rangeElementDescription.json#",
+  "type": "object",
+  "title": "",
+  "description": "provides definitions and values for range elements such as missing data or other flags associated with a Sample Dimension.",
+  "example": "../examples/rangeElementDescription.json",
+  "translation": {
+    "ISO 19115-1": [
+      "mrc:MD_CoverageDescription > mrc:attributeGroup > mrc:attribute > mrc:MD_SampleDimension"
+    ],
+    "FGDC CSDGM": ["no translation"]
+  },
+  "required": ["name", "definition", "rangeElement"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "designation associated with a set of range elements.",
+      "translation": {
+        "ISO 19115-1": [
+          "mrc:MD_CoverageDescription > mrc:attributeGroup > mrc:attribute > mrc:MD_SampleDimension"
+        ],
+        "FGDC CSDGM": ["no translation"]
+      }
+    },
+    "definition": {
+      "type": "string",
+      "description": "description of a set of specific range elements.",
+      "translation": {
+        "ISO 19115-1": [
+          "mrc:MD_CoverageDescription > mrc:attributeGroup > mrc:attribute > mrc:MD_SampleDimension"
+        ],
+        "FGDC CSDGM": ["no translation"]
+      }
+    },
+    "rangeElement": {
+      "type": "array",
+      "description": "specific range elements, i.e. range elements associated with a name and their definition.",
+      "translation": {
+        "ISO 19115-1": [
+          "mrc:MD_CoverageDescription > mrc:attributeGroup > mrc:attribute > mrc:MD_SampleDimension"
+        ],
+        "FGDC CSDGM": ["no translation"]
+      },
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
