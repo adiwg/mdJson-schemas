@@ -35,7 +35,7 @@
         "DQ_AccuracyOfATimeMeasurement",
         "DQ_ConceptualConsistency",
         "DQ_CompletenessCommission",
-        "DQ_CompletenessOmmission",
+        "DQ_CompletenessOmission",
         "DQ_Confidence",
         "DQ_CoverageResult",
         "DQ_DomainConsistency",
