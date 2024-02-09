@@ -44,6 +44,7 @@
         "DQ_Homogeneity",
         "DQ_NonQuantitativeAttributeCorrectness",
         "DQ_QuantitativeAttributeAccuracy",
+        "DQ_NonQuantitativeAttributeAccuracy",
         "DQ_RelativeInternalPositionalAccuracy",
         "DQ_Representativity",
         "DQ_TemporalConsistency",
