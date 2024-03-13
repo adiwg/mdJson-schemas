@@ -30,6 +30,13 @@
     "type": {
       "type": "string",
       "description": "The type of quality report.",
+      "translation": {
+        "ISO 19115-2": [
+          "MI_Metadata > DQ_DataQuality > Report > [DQ_Element type]"
+        ],
+        "FDGD CSDGM": ["no translation"],
+        "DCAT": ["no translation"]
+      },
       "enum": [
         "AbsoluteExternalPositionalAccuracy",
         "AccuracyOfATimeMeasurement",
