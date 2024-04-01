@@ -1,0 +1,10 @@
+{
+  "id": "acq-.json",
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "example": "../examples/acq-.json",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {}
+}
