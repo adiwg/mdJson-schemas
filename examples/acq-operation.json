@@ -1,0 +1,18 @@
+{
+    "operation": [
+       {
+          "operationId": "operation ID",
+          "description": "operation description",
+          "citation": { },
+          "identifier": { },
+          "status": "MD_ProgressCode",
+          "operationType": "MI_OperationTypeCode",
+          "objective": ["objectiveId"],
+          "parentOperation": "operationId",
+          "childOperation": ["operationId"],
+          "plan": "planId",
+          "platform": ["platformId"],
+          "significantEvent": ["eventId"]
+       }
+    ]
+}

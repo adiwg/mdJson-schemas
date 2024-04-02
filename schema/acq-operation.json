@@ -1,10 +1,71 @@
 {
-  "id": "acq-.json",
+  "id": "acq-operation.json",
   "$schema": "https://json-schema.org/draft-04/schema#",
   "description": "",
   "type": "object",
-  "example": "../examples/acq-.json",
+  "example": "../examples/acq-operation.json",
   "additionalProperties": false,
-  "required": [],
-  "properties": {}
+  "required": ["operationId","identifier","status","parentOperation"],
+  "properties": {
+    "operationId": {
+      "type": "string",
+      "description": "a unique identifier for the operation"
+    },
+    "description": {
+      "type": "string",
+      "description": "description of the mission on which the platform observations are made and the objectives of that mission"
+    },
+    "citation": { 
+      "$ref": "./citation.json",
+      "description": "identification of the mission"
+    },
+    "identifier": { 
+      "$ref": "./identifier.json",
+      "description": "unique identification of the operation"
+    },
+    "status": {
+      "type": "string",
+      "description":  "status of the data acquisition"
+    },
+    "operationType": {
+      "type": "string",
+      "description":  "collection technique for the operation"
+    },
+    "objective": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description":  "object(s) or area(s) of interest to be sensed"
+    },
+    "parentOperation": {
+      "type": "string",
+      "description": "heritage of the operation"
+    },
+    "childOperation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description":  "sub-missions that make up part of a larger mission"
+    },
+    "plan": {
+      "type": "string",
+      "description": "plan satisfied by the operation"
+    },
+    "platform": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description":  "platform (or platforms) used in the operation"
+    },
+    "significantEvent": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "record of an event occurring during an operation"
+    }
+  }
 }
