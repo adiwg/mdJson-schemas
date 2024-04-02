@@ -5,7 +5,12 @@
   "type": "object",
   "example": "../examples/acq-operation.json",
   "additionalProperties": false,
-  "required": ["operationId","identifier","status","parentOperation"],
+  "required": [
+    "operationId",
+    "identifier",
+    "status",
+    "parentOperation"
+  ],
   "properties": {
     "operationId": {
       "type": "string",
@@ -15,28 +20,49 @@
       "type": "string",
       "description": "description of the mission on which the platform observations are made and the objectives of that mission"
     },
-    "citation": { 
+    "citation": {
       "$ref": "./citation.json",
       "description": "identification of the mission"
     },
-    "identifier": { 
+    "identifier": {
       "$ref": "./identifier.json",
       "description": "unique identification of the operation"
     },
     "status": {
       "type": "string",
-      "description":  "status of the data acquisition"
+      "description": "status of the data acquisition",
+      "enum": [
+        "completed",
+        "historicalArchive",
+        "obsolete",
+        "onGoing",
+        "planned",
+        "required",
+        "underDevelopment",
+        "final",
+        "pending",
+        "retired",
+        "superseded",
+        "tentative",
+        "valid",
+        "accepted",
+        "notAccepted",
+        "withdrawn",
+        "proposed",
+        "deprecated"
+      ]
     },
     "operationType": {
       "type": "string",
-      "description":  "collection technique for the operation"
+      "description": "collection technique for the operation",
+      "enum": ["real","simulated","synthesized"]
     },
     "objective": {
       "type": "array",
       "items": {
         "type": "string"
       },
-      "description":  "object(s) or area(s) of interest to be sensed"
+      "description": "object(s) or area(s) of interest to be sensed"
     },
     "parentOperation": {
       "type": "string",
@@ -47,7 +73,7 @@
       "items": {
         "type": "string"
       },
-      "description":  "sub-missions that make up part of a larger mission"
+      "description": "sub-missions that make up part of a larger mission"
     },
     "plan": {
       "type": "string",
@@ -58,7 +84,7 @@
       "items": {
         "type": "string"
       },
-      "description":  "platform (or platforms) used in the operation"
+      "description": "platform (or platforms) used in the operation"
     },
     "significantEvent": {
       "type": "array",
