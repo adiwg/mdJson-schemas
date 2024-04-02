@@ -32,30 +32,34 @@
       "type": "string",
       "description": "status of the data acquisition",
       "enum": [
+        "accepted",
         "completed",
+        "deprecated",
+        "final",
         "historicalArchive",
+        "notAccepted",
         "obsolete",
         "onGoing",
-        "planned",
-        "required",
-        "underDevelopment",
-        "final",
         "pending",
+        "planned",
+        "proposed",
+        "required",
         "retired",
         "superseded",
         "tentative",
+        "underDevelopment",
         "valid",
-        "accepted",
-        "notAccepted",
-        "withdrawn",
-        "proposed",
-        "deprecated"
+        "withdrawn"
       ]
     },
     "operationType": {
       "type": "string",
       "description": "collection technique for the operation",
-      "enum": ["real","simulated","synthesized"]
+      "enum": [
+        "real",
+        "simulated",
+        "synthesized"
+      ]
     },
     "objective": {
       "type": "array",
