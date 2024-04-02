@@ -1,10 +1,48 @@
 {
   "id": "acq-.json",
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "description": "",
+  "description": "designation of the platform used to acquire the dataset",
   "type": "object",
-  "example": "../examples/acq-.json",
+  "example": "../examples/acq-platform.json",
   "additionalProperties": false,
-  "required": [],
-  "properties": {}
+  "required": ["platformId","identifer","description","instrument"],
+  "properties": {
+    "platformId": {
+      "type": "string",
+      "description": "a unique identifier for the platform"
+    },
+    "citation": {
+      "$ref": "./citation.json",
+      "description": "source where information about the platform is described"
+    },
+    "identifier": {
+      "$ref": "./identifier.json",
+      "description": "unique identification of the platform"
+    },
+    "description": {
+      "type": "string",
+      "description": "narrative description of the platform supporting the instrument"
+    },
+    "sponsor": {
+      "type": "array",
+      "items": {
+        "$ref": "./responsibility.json"
+      },
+      "description": "organization responsible for building, launch, or operation of the platform"
+    },
+    "instrument": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "instrument(s) mounted on a platform"
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "list of events affecting a platform"
+    }
+  }
 }
