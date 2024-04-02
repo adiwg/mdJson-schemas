@@ -1,0 +1,15 @@
+{
+    "objective": [
+       {
+          "objectiveId": "objective ID",
+          "identifier": [ ],
+          "priority": "objective priority",
+          "objectiveType": ["MI_ObjectiveTypeCode"],
+          "function": ["objective function one"],
+          "extent": [ ],
+          "objectiveOccurrence": ["eventId"],
+          "pass": ["passId"],
+          "sensingInstrument": ["instrumentId"]
+       }
+    ]
+}
