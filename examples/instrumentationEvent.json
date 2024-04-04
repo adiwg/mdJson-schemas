@@ -4,7 +4,7 @@
             "citation": [ ],
             "description": "description here",
             "extent": [ ],
-             "eventType": { },
-             "revisionHistory": ["revhist"]
+             "eventType": "dataLoss",
+             "revisionHistory": []
           }
  }
