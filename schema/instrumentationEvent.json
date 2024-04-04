@@ -21,12 +21,27 @@
         },
          "eventType": {
             "type": "string",
-            "description": "type of the instrumentationEvent"
+            "description": "type of the instrumentationEvent",
+            "enum": [
+                "announcement",
+                "calibration",
+                "calibrationCoefficientUpdate",
+                "dataLoss",
+                "fatal",
+                "manoeuvre",
+                "missingData",
+                "notice",
+                "prelaunch",
+                "severe",
+                "switchOff",
+                "switchOn",
+                "clean"
+            ]            
         },
          "revisionHistory": {
             "type": "array",
             "items": {
-                "type": "string"
+                "$ref": "./revision.json"
             },
             "description": "history of revisions to the instrumentationEvent"
         }
