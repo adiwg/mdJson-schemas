@@ -1,0 +1,20 @@
+{
+    "id": "requestedDate.json",
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "example": "../examples/requestedDate.json",
+    "additionalProperties": false,
+    "required": ["requestedDateOfCollection","latestAcceptableDate"],
+    "properties": {
+        "requestedDateOfCollection": {
+            "type": "string",
+            "description": "preferred date and time of collection"
+        },
+        "latestAcceptableDate": {
+            "type": "string",
+            "description": "latest date and time collection must be completed"
+        }
+    }
+}
+  
