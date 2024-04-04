@@ -16,7 +16,10 @@
             "description": "individual or organization responsible for the revision"
         },
         "dateInfo": {
-
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
             "description": "information about dates related to the revision"
         }
     }
