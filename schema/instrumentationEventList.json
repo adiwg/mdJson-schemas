@@ -1,0 +1,40 @@
+{
+    "id": "instrumentationEventList.json",
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "example": "../examples/instrumentationEventList.json",
+    "additionalProperties": false,
+    "required": ["description"],
+    "properties": {
+            "citation": {
+                "type": "array",
+                "items": {
+                    "$ref": "./citation.json"
+                },
+                "description": "description of the language and character-set used for the instrumentationEventList"
+            },
+            "description": {
+                "type": "string",
+                "description": "description of the language and character-set used for the instrumentationEventList"
+            },
+            "locale": {
+                "$ref": "./locale.json",
+                "description": "description of the language and character-set used for the instrumentationEventList"
+            },
+            "constraints": {
+                "type": "array",
+                "items": {
+                    "$ref": "./constraint.json"
+                },
+                "description": "use and access constraints"
+            },
+            "instrumentationEvent": {
+                "type": "array",
+                "items": {
+                    "$ref": "./instrumentationEvent.json"
+                },
+                "description": "event(s) in the list of events"
+            }
+    }
+}
