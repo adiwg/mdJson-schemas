@@ -31,7 +31,7 @@
       "enum": ["start", "end", "instantaneous"]
     },
     "time": {
-      "type": "string",
+      "$ref": "./common.json#/definitions/date",
       "description": "time the event occurred"
     },
     "expectedObjective": {
