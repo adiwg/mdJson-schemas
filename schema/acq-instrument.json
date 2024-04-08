@@ -34,7 +34,7 @@
     "history": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "./instrumentationEventList.json"
       },
       "description":  "list of events associated with the instrument"
     },
