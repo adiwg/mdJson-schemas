@@ -8,11 +8,11 @@
     "required": ["requestedDateOfCollection","latestAcceptableDate"],
     "properties": {
         "requestedDateOfCollection": {
-            "type": "string",
+            "$ref": "./common.json#/definitions/date",
             "description": "preferred date and time of collection"
         },
         "latestAcceptableDate": {
-            "type": "string",
+            "$ref": "./common.json#/definitions/date",
             "description": "latest date and time collection must be completed"
         }
     }
