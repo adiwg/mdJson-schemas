@@ -1,10 +1,56 @@
 {
-  "id": "acq-.json",
+  "id": "acq-event.json",
   "$schema": "https://json-schema.org/draft-04/schema#",
   "description": "",
   "type": "object",
-  "example": "../examples/acq-.json",
+  "example": "../examples/acq-event.json",
   "additionalProperties": false,
-  "required": [],
-  "properties": {}
+  "required": ["eventId", "identifier", "trigger", "context", "sequence", "time"],
+  "properties": {
+    "eventId": {
+      "type": "string",
+      "description": "a unique identifier for the event"
+    },
+    "identifier": {
+      "$ref": "./identifier.json",
+      "description": "event name or number"
+    },
+    "trigger": {
+      "type": "string",
+      "description": "initiator of the event",
+      "enum": ["automatic", "manual", "preProgrammed"]
+    },
+    "context": {
+      "type": "string",
+      "description": "meaning of the event",
+      "enum": ["acquisition", "pass", "waypoint"]
+    },
+    "sequence": {
+      "type": "string",
+      "description": "relative time ordering of the event",
+      "enum": ["start", "end", "instantaneous"]
+    },
+    "time": {
+      "type": "string",
+      "description": "time the event occurred"
+    },
+    "expectedObjective": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "objective or objectives satisfied by an event"
+    },
+    "relatedPass": {
+      "type": "string",
+      "description": "pass during which an event occurs"
+    },
+    "relatedSensor": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "instrument or instruments for which the event is meaningful"
+    }
+  }
 }
