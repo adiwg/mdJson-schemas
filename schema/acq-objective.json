@@ -25,7 +25,8 @@
     "objectiveType": {
       "type": "array",
       "items": {
-        "$ref": "MI_ObjectiveTypeCode"
+        "type": "string",
+        "enum": ["instantaneousCollection","persistentView","survey"]
       },
       "description": "collection techniques for the objective"
     },
