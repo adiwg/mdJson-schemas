@@ -5,7 +5,7 @@
   "type": "object",
   "example": "../examples/acq-pass.json",
   "additionalProperties": false,
-  "required": [],
+  "required": ["passId","identifier"],
   "properties": {
     "passId": {
       "$ref": "./identifier.json",
