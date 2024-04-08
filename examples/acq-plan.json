@@ -1,0 +1,8 @@
+{
+    "planId": "plan ID",
+    "planType": "linear",
+    "status": "accepted",
+    "citation": { },
+    "planOperation": ["operationId"],
+    "satisfiedRequirement": ["requirementId"]
+}
