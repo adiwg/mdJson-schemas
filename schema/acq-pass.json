@@ -1,10 +1,30 @@
 {
-  "id": "acq-.json",
+  "id": "acq-pass.json",
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "description": "",
+  "description": "identification of collection coverage",
   "type": "object",
-  "example": "../examples/acq-.json",
+  "example": "../examples/acq-pass.json",
   "additionalProperties": false,
   "required": [],
-  "properties": {}
+  "properties": {
+    "passId": {
+      "$ref": "./identifier.json",
+      "description": "unique identifier for the pass"
+    },
+    "identifier": {
+      "$ref": "./identifier.json",
+      "description": "a unique identifier for the pass"
+    },
+    "extent": {
+      "$ref": "./extent.json",
+      "description": "area covered by the pass"
+    },
+    "relatedEvent": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "occurrence of one or more events for a pass"
+    }
+  }
 }
