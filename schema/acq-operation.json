@@ -80,7 +80,7 @@
       "description": "sub-missions that make up part of a larger mission"
     },
     "plan": {
-      "type": "string",
+      "ref": "./acq-plan.json",
       "description": "plan satisfied by the operation"
     },
     "platform": {
