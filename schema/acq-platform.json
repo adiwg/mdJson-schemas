@@ -33,7 +33,7 @@
     "instrument": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "./acq-instrument.json"
       },
       "description": "instrument(s) mounted on a platform"
     },
@@ -43,6 +43,10 @@
         "$ref": "./instrumentationEventList.json"
       },
       "description": "list of events affecting a platform"
+    },
+    "hostId": {
+      "$ref": "./identifer.json",
+      "description": "a unique identifier for the host platform"
     }
   }
 }
