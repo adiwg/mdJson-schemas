@@ -8,7 +8,7 @@
   "required": ["passId","identifier"],
   "properties": {
     "passId": {
-      "$ref": "./identifier.json",
+      "type": "string",
       "description": "unique identifier for the pass"
     },
     "identifier": {
