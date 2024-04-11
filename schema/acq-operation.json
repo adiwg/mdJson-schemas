@@ -58,7 +58,7 @@
       "enum": [
         "real",
         "simulated",
-        "synthesized"
+        "synthetic"
       ]
     },
     "objective": {
