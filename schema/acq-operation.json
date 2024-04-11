@@ -64,18 +64,18 @@
     "objective": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "./acq-objective.json"
       },
       "description": "object(s) or area(s) of interest to be sensed"
     },
     "parentOperation": {
-      "type": "string",
+      "$ref": "./acq-operation.json",
       "description": "heritage of the operation"
     },
     "childOperation": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "./acq-operation.json"
       },
       "description": "sub-missions that make up part of a larger mission"
     },
@@ -86,14 +86,14 @@
     "platform": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "./acq-platform.json"
       },
       "description": "platform (or platforms) used in the operation"
     },
     "significantEvent": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "./acq-event.json"
       },
       "description": "record of an event occurring during an operation"
     }
