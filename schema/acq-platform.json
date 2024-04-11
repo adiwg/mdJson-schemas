@@ -5,7 +5,7 @@
   "type": "object",
   "example": "../examples/acq-platform.json",
   "additionalProperties": false,
-  "required": ["platformId","identifer","description","instrument"],
+  "required": ["platformId", "identifer", "description", "instrument"],
   "properties": {
     "platformId": {
       "type": "string",
@@ -43,10 +43,6 @@
         "$ref": "./instrumentationEventList.json"
       },
       "description": "list of events affecting a platform"
-    },
-    "hostId": {
-      "$ref": "./identifer.json",
-      "description": "a unique identifier for the host platform"
     }
   }
 }
