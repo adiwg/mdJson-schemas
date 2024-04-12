@@ -5,7 +5,10 @@
   "type": "array",
   "example": "../examples/acq-objective.json",
   "additionalProperties": false,
-  "required": ["objectiveId","identifier"],
+  "required": [
+    "objectiveId",
+    "identifier"
+  ],
   "properties": {
     "objectiveId": {
       "type": "string",
@@ -26,7 +29,11 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["instantaneousCollection","persistentView","survey"]
+        "enum": [
+          "instantaneousCollection",
+          "persistentView",
+          "survey"
+        ]
       },
       "description": "collection techniques for the objective"
     },
@@ -47,24 +54,23 @@
     "objectiveOccurrence": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "./acq-event.json"
       },
       "description": "event or events associated with objective completion"
     },
     "pass": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "./acq-pass.json"
       },
       "description": "pass of the platform over the objective"
     },
     "sensingInstrument": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "./acq-instrument.json"
       },
       "description": "instrument which senses the objective data"
-      }
     }
   }
 }
