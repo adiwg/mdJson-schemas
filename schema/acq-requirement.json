@@ -1,10 +1,55 @@
 {
-  "id": "acq-.json",
+  "id": "acq-requirement.json",
   "$schema": "https://json-schema.org/draft-04/schema#",
   "description": "",
   "type": "object",
-  "example": "../examples/acq-.json",
+  "example": "../examples/acq-requirement.json",
   "additionalProperties": false,
-  "required": [],
-  "properties": {}
+  "properties": {
+    "requirementId": {
+      "type": "string",
+      "description": "Unique identifier for the requirement"
+    },
+    "citation": {
+      "$ref": "./citation.json",
+      "description": ""
+    },
+    "identifier": {
+      "$ref": "./identifier.json",
+      "description": ""
+    },
+    "requestor": {
+      "type": "array",
+      "items": {
+        "$ref": "./responsibility.json"
+      },
+      "description": ""
+    },
+    "recipient": {
+      "type": "array",
+      "items": {
+        "$ref": "./responsibility.json"
+      },
+      "description": ""
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["critical","highImportance","mediumImportance","lowImportance"]
+    },
+    "requestedDate": {
+      "$ref": "./requestedDate.json",
+      "description": ""
+    },
+    "expiryDate": {
+      "$ref": "./common.json#/definitions/date",
+      "description": ""
+    },
+    "satisfiedPlan": {
+      "type": "array",
+      "items": {
+        "$ref": "./acq-plan.json"
+      },
+      "description": ""
+    }
+  }
 }
