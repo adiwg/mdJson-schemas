@@ -38,7 +38,7 @@
       "description": "relative ordered importance, or urgency, of the requirement"
     },
     "requestedDate": {
-      "$ref": "./requestedDate.json",
+      "$ref": "./acq-requestedDate.json",
       "description": "required or preferred acquisition date and time"
     },
     "expiryDate": {
