@@ -1,9 +1,9 @@
 {
-    "id": "requestedDate.json",
+    "id": "acq-requestedDate.json",
     "$schema": "https://json-schema.org/draft-04/schema#",
     "description": "range of date validity",
     "type": "object",
-    "example": "../examples/requestedDate.json",
+    "example": "../examples/acq-requestedDate.json",
     "additionalProperties": false,
     "required": ["requestedDateOfCollection","latestAcceptableDate"],
     "properties": {

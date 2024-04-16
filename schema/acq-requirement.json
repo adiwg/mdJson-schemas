@@ -1,10 +1,57 @@
 {
-  "id": "acq-.json",
+  "id": "acq-requirement.json",
   "$schema": "https://json-schema.org/draft-04/schema#",
-  "description": "",
+  "description": "requirement to be satisfied by the planned data acquisition",
   "type": "object",
-  "example": "../examples/acq-.json",
+  "required": ["requirementId","identifier","requestor","recipient","priority","requestedDate","expiryDate"],
+  "example": "../examples/acq-requirement.json",
   "additionalProperties": false,
-  "required": [],
-  "properties": {}
+  "properties": {
+    "requirementId": {
+      "type": "string",
+      "description": "a unique identifier for the requirement"
+    },
+    "citation": {
+      "$ref": "./citation.json",
+      "description": "identification of reference or guidance material for the requirement"
+    },
+    "identifier": {
+      "$ref": "./identifier.json",
+      "description": "unique name, or code, for the requirement"
+    },
+    "requestor": {
+      "type": "array",
+      "items": {
+        "$ref": "./responsibility.json"
+      },
+      "description": "origin of requirement"
+    },
+    "recipient": {
+      "type": "array",
+      "items": {
+        "$ref": "./responsibility.json"
+      },
+      "description": "person(s), or body(ies), to receive results of requirement"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["critical","highImportance","mediumImportance","lowImportance"],
+      "description": "relative ordered importance, or urgency, of the requirement"
+    },
+    "requestedDate": {
+      "$ref": "./acq-requestedDate.json",
+      "description": "required or preferred acquisition date and time"
+    },
+    "expiryDate": {
+      "$ref": "./common.json#/definitions/date",
+      "description": "date and time after which collection is no longer valid"
+    },
+    "satisfiedPlan": {
+      "type": "array",
+      "items": {
+        "$ref": "./acq-plan.json"
+      },
+      "description": "plan that identifies solution to satisfy the requirement"
+    }
+  }
 }
