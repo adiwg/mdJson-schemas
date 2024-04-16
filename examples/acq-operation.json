@@ -6,11 +6,11 @@
       "identifier": { },
       "status": "pending",
       "operationType": "real",
-      "objective": ["objectiveId"],
-      "parentOperation": "operationId",
-      "childOperation": ["operationId"],
-      "plan": "planId",
-      "platform": ["platformId"],
-      "significantEvent": ["eventId"]
+      "objective": [ ],
+      "parentOperation": { },
+      "childOperation": [ ],
+      "plan": { },
+      "platform": [ ],
+      "significantEvent": [ ]
    }
 ]
