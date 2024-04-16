@@ -1,13 +1,11 @@
-{
-    "platform": [
-       {
-          "platformId": "platform ID",
-          "citation": { },
-          "identifier": { },
-          "description": "platform description",
-          "sponsor": [ ],
-          "instrument": ["instrumentId"],
-          "history": [ ]
-       }
-    ]
-}
+[
+   {
+      "platformId": "platform ID",
+      "citation": { },
+      "identifier": { },
+      "description": "platform description",
+      "sponsor": [ ],
+      "instrument": [ ],
+      "history": [ ]
+   }
+]

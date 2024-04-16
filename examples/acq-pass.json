@@ -1,6 +1,8 @@
-{
-    "passId": "pass ID",
-    "identifier": { },
-    "extent": { },
-    "relatedEvent": ["eventId"]
-}
+[
+    {
+        "passId": "pass ID",
+        "identifier": { },
+        "extent": { },
+        "relatedEvent": [ ]
+    }
+]
