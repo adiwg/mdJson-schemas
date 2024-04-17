@@ -79,7 +79,7 @@
                 ]
             },
             "items": {
-                "$ref": "#/definitions/source"
+                "$ref": "./source.json#"
             }
         },
         "stepProduct": {
@@ -94,7 +94,7 @@
                 ]
             },
             "items": {
-                "$ref": "#/definitions/source"
+                "$ref": "./source.json#"
             }
         },
         "reference": {
