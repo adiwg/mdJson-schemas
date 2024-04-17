@@ -39,7 +39,7 @@
         "parameter": {
             "type": "array",
             "items": {
-                "$ref": "./ProcessParameter .json#"
+                "$ref": "./ProcessParameter.json#"
             },
             "description": "details of the methodology by which geographic information was derived from the instrument readings"
         }
