@@ -1,0 +1,34 @@
+{
+    "id": "nominalResolution.json#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "Information about the source data used in creating the data identified by the data quality scope.",
+    "example": "../examples/nominalResolution.json",
+    "additionalProperties": true,
+    "oneOf": [
+        {
+            "title": "Scanning Resolution is required",
+            "required": [
+                "scanningResolution"
+            ]
+        },
+        {
+            "title": "Ground Resolution is required",
+            "required": [
+                "groundResolution"
+            ]
+        }
+    ],
+    "properties": {
+        "scanningResolution": { 
+         "type": "distance",
+         "value": 999.9,
+         "unitOfMeasure": "units"
+      },
+      "groundResolution": {
+         "type": "distance",
+         "value": 999.9,
+         "unitOfMeasure": "units"
+      }
+    }
+}
