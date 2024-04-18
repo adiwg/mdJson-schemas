@@ -20,15 +20,13 @@
         }
     ],
     "properties": {
-        "scanningResolution": { 
-         "type": "distance",
-         "value": 999.9,
-         "unitOfMeasure": "units"
-      },
-      "groundResolution": {
-         "type": "distance",
-         "value": 999.9,
-         "unitOfMeasure": "units"
-      }
+        "scanningResolution": {
+            "$ref": "./measure.json#",
+            "description": "distance between consistent parts of (center, left side, right side) adjacent pixels in the scan plane"
+        },
+        "groundResolution": {
+            "$ref": "./measure.json#",
+            "description": "consistent parts of (center, left side, right side) adjacent pixels in the object space"
+        }
     }
 }
