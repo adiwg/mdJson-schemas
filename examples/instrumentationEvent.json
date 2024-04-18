@@ -1,10 +1,9 @@
-{
-    "instrumentationEvent": 
-        {
-            "citation": [ ],
-            "description": "description here",
-            "extent": [ ],
-             "eventType": "dataLoss",
-             "revisionHistory": [ ]
-          }
- }
+[
+    {
+        "citation": [ ],
+        "description": "description here",
+        "extent": [ ],
+        "eventType": "dataLoss",
+        "revisionHistory": [ ]
+    }
+]
