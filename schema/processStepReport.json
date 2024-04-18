@@ -2,7 +2,7 @@
     "id": "processStepReport.json#",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
-    "description": "Information on the history of the resource.",
+    "description": "report of what occurred during the process step",
     "example": "../examples/processStepReport.json",
     "required": ["name"],
     "properties": {
