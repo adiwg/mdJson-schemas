@@ -10,22 +10,6 @@
         ]
     },
     "additionalProperties": true,
-    "anyOf": [
-        {
-            "title": "description  is required",
-            "required": [
-                "description"
-            ],
-            "description": "A description  is required."
-        },
-        {
-            "title": "scope  is required",
-            "required": [
-                "scope"
-            ],
-            "description": "At least one scope is required."
-        }
-    ],
     "properties": {
         "sourceId": {
             "type": "string",
