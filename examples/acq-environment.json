@@ -1,5 +1,5 @@
-{
-    "environment": {
+[
+    {    
        "averageAirTemperature": 9.9,
        "maxRelativeHumidity": 9.9,
        "maxAltitude": 9.9,
@@ -7,4 +7,4 @@
        "solarAzimuth": 9.9,
        "solarElevation": 9.9
     }
-}
+]

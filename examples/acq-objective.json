@@ -1,15 +1,13 @@
-{
-    "objective": [
-       {
-          "objectiveId": "objective ID",
-          "identifier": [ ],
-          "priority": "objective priority",
-          "objectiveType": ["persistentView"],
-          "function": ["objective function one"],
-          "extent": [ ],
-          "objectiveOccurrence": ["eventId"],
-          "pass": ["passId"],
-          "sensingInstrument": ["instrumentId"]
-       }
-    ]
-}
+[
+   {
+      "objectiveId": "objective ID",
+      "identifier": [ ],
+      "priority": "objective priority",
+      "objectiveType": ["instantaneousCollection"],
+      "function": [],
+      "extent": [ ],
+      "objectiveOccurrence": [ ],
+      "pass": [ ],
+      "sensingInstrument": [ ]
+   }
+]

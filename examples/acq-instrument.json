@@ -1,14 +1,12 @@
-{
-    "instrument": [
-       {
-          "instrumentId": "instrument ID",
-          "citation": [],
-          "identifier": {},
-          "instrumentType": "instrument type",
-          "description": "instrument description",
-          "mountedOn": "platformId",
-          "history": ["events list"],
-          "hostId": "host instrument ID"
-       }
-    ]
-}
+[
+   {
+      "instrumentId": "instrument ID",
+      "citation": [],
+      "identifier": {},
+      "instrumentType": "instrument type",
+      "description": "instrument description",
+      "mountedOn": "platformId",
+      "history": [ ],
+      "hostId": "host instrument ID"
+   }
+]
