@@ -142,7 +142,11 @@
           "$ref": "./scope.json#",
           "description": "Type of resource and/or extent to which the process information.",
           "translation": {}
-        }
+        },
+        "processingInformation": {
+          "$ref": "./processingInformation.json#",
+          "description": "comprehensive information about the procedure(s), process(es) and algorithm(s) applied in the process step"
+         }
       }
     }
   }
