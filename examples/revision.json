@@ -1,8 +1,5 @@
 {
-    "revision":
-       {
-          "description": "description",
-          "responsibleParty": [ ],
-          "dateInfo": [ ]
-       }
+   "description": "description",
+   "responsibleParty": [ ],
+   "dateInfo": [ ]
 }

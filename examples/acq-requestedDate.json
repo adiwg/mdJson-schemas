@@ -1,6 +1,4 @@
 {
-    "requestedDate": {
-       "requestedDateOfCollection": "2019-06-10T16:01:00",
-       "latestAcceptableDate": "2019-06-13:T16:02:00"
-    }
+    "requestedDateOfCollection": "2019-06-10T16:01:00",
+    "latestAcceptableDate": "2019-06-13:T16:02:00"
 }

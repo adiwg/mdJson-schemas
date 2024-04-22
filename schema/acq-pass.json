@@ -22,7 +22,7 @@
     "relatedEvent": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "./acq-event.json"
       },
       "description": "occurrence of one or more events for a pass"
     }

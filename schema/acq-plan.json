@@ -51,14 +51,14 @@
       "type": "array",
       "description": "Identification of the activity or activities that satisfy a plan",
       "items": {
-        "type": "string"
+        "$ref": "./acq-operation.json"
       }
     },
     "satisfiedRequirement": {
       "type": "array",
       "description": "Requirement satisfied by the plan",
       "items": {
-        "type": "string"
+        "$ref": "./acq-requirement.json"
       }
     }
   }

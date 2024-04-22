@@ -28,7 +28,7 @@
       "description": "textual description of the instrument"
     },
     "mountedOn": {
-      "type": "string",
+      "$ref": "./acq-platform.json",
       "description": "platform on which the instrument is mounted"
     },
     "history": {

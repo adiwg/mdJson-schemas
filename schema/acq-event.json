@@ -23,7 +23,7 @@
     "context": {
       "type": "string",
       "description": "meaning of the event",
-      "enum": ["acquisition", "pass", "waypoint"]
+      "enum": ["acquisition", "pass", "wayPoint"]
     },
     "sequence": {
       "type": "string",
@@ -37,18 +37,18 @@
     "expectedObjective": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "./acq-objective.json"
       },
       "description": "objective or objectives satisfied by an event"
     },
     "relatedPass": {
-      "type": "string",
+      "$ref": "./acq-pass.json",
       "description": "pass during which an event occurs"
     },
     "relatedSensor": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "./acq-instrument.json"
       },
       "description": "instrument or instruments for which the event is meaningful"
     }

@@ -1,7 +1,9 @@
-{
-    "citation": [ ],
-    "description": "description here",
-    "locale": { },
-    "constraints": [ ],
-    "instrumentationEvent": [ ]
-}
+[
+    {
+        "citation": [ ],
+        "description": "description here",
+        "locale": { },
+        "constraints": [ ],
+        "instrumentationEvent": [ ]
+    }
+]
