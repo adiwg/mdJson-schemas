@@ -63,7 +63,7 @@
         "FGDC CSDGM": ["dataqual > lineage > srcinfo"]
       },
       "items": {
-        "$ref": "#/definitions/source"
+        "$ref": "./source.json#"
       }
     }
   },

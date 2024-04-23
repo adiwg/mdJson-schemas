@@ -1,0 +1,88 @@
+{
+    "id": "source.json#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "Information about the source data used in creating the data identified by the data quality scope.",
+    "example": "../examples/source.json",
+    "translation": {
+        "ISO 19115-2": [
+            "LI_Source"
+        ]
+    },
+    "additionalProperties": true,
+    "properties": {
+        "sourceId": {
+            "type": "string",
+            "description": "A unique identifier for the data source.",
+            "translation": {
+                "FGDC CSDGM": [
+                    "dataqual > lineage > srcinfo > srccitea"
+                ]
+            }
+        },
+        "description": {
+            "type": "string",
+            "description": "A brief description about the source dataset used in creating the data identified by the data quality scope.",
+            "translation": {
+                "ISO 19115-2": [
+                    "LI_Source > description"
+                ]
+            }
+        },
+        "sourceCitation": {
+            "description": "A citation providing information about the source dataset, including an online resource or other access instructions.",
+            "translation": {
+                "ISO 19115-2": [
+                    "LI_Source > sourceCitation > CI_Citation"
+                ],
+                "FGDC CSDGM": [
+                    "dataqual > lineage > srcinfo > srccite > citeinfo"
+                ]
+            },
+            "$ref": "citation.json#"
+        },
+        "metadataCitation": {
+            "type": "array",
+            "description": "Citation providing information about the metadata for the source.",
+            "translation": {},
+            "items": {
+                "$ref": "citation.json#"
+            }
+        },
+        "spatialResolution": {
+            "$ref": "./spatialResolution.json#",
+            "description": "The number below the line in a vulgar fraction",
+            "translation": {}
+        },
+        "referenceSystem": {
+            "$ref": "./spatialReference.json#",
+            "description": "Spatial reference system used by the source.",
+            "translation": {}
+        },
+        "sourceProcessStep": {
+            "type": "array",
+            "description": "A description of a non-trivial event or transformation taken to prepare the source data for use in creating the data identified by the data quality scope.",
+            "translation": {
+                "ISO 19115-2": [
+                    "LI_Source > sourceStep > LI_ProcessStep"
+                ]
+            },
+            "items": {
+                "$ref": "./processStep.json#"
+            }
+        },
+        "scope": {
+            "$ref": "./scope.json#",
+            "description": "Type of resource and/or extent to which the process information.",
+            "translation": {}
+        },
+        "processLevel": {
+            "$ref": "./identifier.json#",
+            "description": "processing level of the source data"
+        },
+        "resolution": {
+            "$ref": "./nominalResolution.json#",
+            "description": "distance between consistent parts (centre, left side, right side) of two adjacent pixel",
+        }
+    }
+}
