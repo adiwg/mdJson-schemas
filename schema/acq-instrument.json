@@ -1,9 +1,9 @@
 {
-  "id": "acq-instrument.json",
+  "id": "instrument.json#",
   "$schema": "https://json-schema.org/draft-04/schema#",
   "description": "",
   "type": "object",
-  "example": "../examples/acq-instrument.json",
+  "example": "../examples/instrument.json",
   "additionalProperties": false,
   "required": ["instrumentId","identifier","instrumentType"],
   "properties": {
@@ -28,7 +28,7 @@
       "description": "textual description of the instrument"
     },
     "mountedOn": {
-      "$ref": "./acq-platform.json",
+      "$ref": "./platform.json",
       "description": "platform on which the instrument is mounted"
     },
     "history": {

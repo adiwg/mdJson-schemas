@@ -1,9 +1,9 @@
 {
-  "id": "acq-objective.json",
+  "id": "objective.json#",
   "$schema": "https://json-schema.org/draft-04/schema#",
   "description": "describes the characteristics, spatial and temporal extent of the intended object to be observed",
   "type": "array",
-  "example": "../examples/acq-objective.json",
+  "example": "../examples/objective.json",
   "additionalProperties": false,
   "required": [
     "objectiveId",
@@ -54,21 +54,21 @@
     "objectiveOccurrence": {
       "type": "array",
       "items": {
-        "$ref": "./acq-event.json"
+        "$ref": "./event.json"
       },
       "description": "event or events associated with objective completion"
     },
     "pass": {
       "type": "array",
       "items": {
-        "$ref": "./acq-pass.json"
+        "$ref": "./pass.json"
       },
       "description": "pass of the platform over the objective"
     },
     "sensingInstrument": {
       "type": "array",
       "items": {
-        "$ref": "./acq-instrument.json"
+        "$ref": "./instrument.json"
       },
       "description": "instrument which senses the objective data"
     }
