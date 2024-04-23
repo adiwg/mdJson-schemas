@@ -9,7 +9,7 @@
   "properties": {
     "eventId": {
       "type": "string",
-      "description": "a unique identifier for the event"
+      "description": "a unique mdJSON system identifier for the event"
     },
     "identifier": {
       "$ref": "./identifier.json",

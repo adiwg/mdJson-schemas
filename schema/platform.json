@@ -9,7 +9,7 @@
   "properties": {
     "platformId": {
       "type": "string",
-      "description": "a unique identifier for the platform"
+      "description": "a unique mdJSON system identifier for the platform"
     },
     "citation": {
       "$ref": "./citation.json",

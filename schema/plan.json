@@ -9,7 +9,7 @@
   "properties": {
     "planId": {
       "type": "string",
-      "description": "A unique identifier for the plan"
+      "description": "a unique mdJSON system identifier for the plan"
     },
     "planType": {
       "type": "string",

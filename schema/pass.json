@@ -13,7 +13,7 @@
     },
     "identifier": {
       "$ref": "./identifier.json",
-      "description": "a unique identifier for the pass"
+      "description": "a unique mdJSON system identifier for the pass"
     },
     "extent": {
       "$ref": "./extent.json",

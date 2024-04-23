@@ -14,7 +14,7 @@
   "properties": {
     "operationId": {
       "type": "string",
-      "description": "a unique identifier for the operation"
+      "description": "a unique mdJSON system identifier for the operation"
     },
     "description": {
       "type": "string",
