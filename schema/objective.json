@@ -18,7 +18,7 @@
       "type": "array",
       "description": "code used to identify the objective",
       "items": {
-        "$ref": "./identifier.json"
+        "$ref": "./identifier.json#"
       }
     },
     "priority": {
@@ -47,28 +47,28 @@
     "extent": {
       "type": "array",
       "items": {
-        "$ref": "./extent.json"
+        "$ref": "./extent.json#"
       },
       "description": "extent information including the bounding box, bounding polygon, vertical and temporal extent of the objective"
     },
     "objectiveOccurrence": {
       "type": "array",
       "items": {
-        "$ref": "./event.json"
+        "$ref": "./event.json#"
       },
       "description": "event or events associated with objective completion"
     },
     "pass": {
       "type": "array",
       "items": {
-        "$ref": "./pass.json"
+        "$ref": "./pass.json#"
       },
       "description": "pass of the platform over the objective"
     },
     "sensingInstrument": {
       "type": "array",
       "items": {
-        "$ref": "./instrument.json"
+        "$ref": "./instrument.json#"
       },
       "description": "instrument which senses the objective data"
     }
