@@ -1,5 +1,5 @@
 {
-    "id": "instrumentationEventList.json",
+    "id": "instrumentationEventList.json#",
     "$schema": "https://json-schema.org/draft-04/schema#",
     "description": "",
     "type": "object",
