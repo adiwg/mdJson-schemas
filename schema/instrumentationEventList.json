@@ -10,7 +10,7 @@
             "citation": {
                 "type": "array",
                 "items": {
-                    "$ref": "./citation.json"
+                    "$ref": "./citation.json#"
                 },
                 "description": "description of the language and character-set used for the instrumentationEventList"
             },
@@ -19,20 +19,20 @@
                 "description": "description of the language and character-set used for the instrumentationEventList"
             },
             "locale": {
-                "$ref": "./locale.json",
+                "$ref": "./locale.json#",
                 "description": "description of the language and character-set used for the instrumentationEventList"
             },
             "constraints": {
                 "type": "array",
                 "items": {
-                    "$ref": "./constraint.json"
+                    "$ref": "./constraint.json#"
                 },
                 "description": "use and access constraints"
             },
             "instrumentationEvent": {
                 "type": "array",
                 "items": {
-                    "$ref": "./instrumentationEvent.json"
+                    "$ref": "./instrumentationEvent.json#"
                 },
                 "description": "event(s) in the list of events"
             }
