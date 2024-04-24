@@ -12,7 +12,7 @@
       "description": "a unique mdJSON system identifier for the event"
     },
     "identifier": {
-      "$ref": "./identifier.json",
+      "$ref": "./identifier.json#",
       "description": "event name or number"
     },
     "trigger": {
@@ -37,18 +37,18 @@
     "expectedObjective": {
       "type": "array",
       "items": {
-        "$ref": "./objective.json"
+        "$ref": "./objective.json#"
       },
       "description": "objective or objectives satisfied by an event"
     },
     "relatedPass": {
-      "$ref": "./pass.json",
+      "$ref": "./pass.json#",
       "description": "pass during which an event occurs"
     },
     "relatedSensor": {
       "type": "array",
       "items": {
-        "$ref": "./instrument.json"
+        "$ref": "./instrument.json#"
       },
       "description": "instrument or instruments for which the event is meaningful"
     }
