@@ -1,9 +1,9 @@
 {
-  "id": "acq-environment.json",
+  "id": "environment.json#",
   "$schema": "https://json-schema.org/draft-04/schema#",
   "description": "information about the environmental conditions during the acquisition",
   "type": "object",
-  "example": "../examples/acq-environment.json",
+  "example": "../examples/environment.json",
   "additionalProperties": false,
   "properties": {
     "averageAirTemperature": {

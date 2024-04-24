@@ -18,53 +18,53 @@
     "plan": {
       "type": "array",
       "items": {
-        "$ref": "./acq-plan.json#"
+        "$ref": "./plan.json#"
       }
     },
     "requirement": {
       "type": "array",
       "items": {
-        "$ref": "./acq-requirement.json#"
+        "$ref": "./requirement.json#"
       }
     },
     "objective": {
       "type": "array",
       "items": {
-        "$ref": "./acq-objective.json#"
+        "$ref": "./objective.json#"
       }
     },
     "platform": {
       "type": "array",
       "items": {
-        "$ref": "./acq-platform.json#"
+        "$ref": "./platform.json#"
       }
     },
     "instrument": {
       "type": "array",
       "items": {
-        "$ref": "./acq-instrument.json#"
+        "$ref": "./instrument.json#"
       }
     },
     "operation": {
       "type": "array",
       "items": {
-        "$ref": "./acq-operation.json#"
+        "$ref": "./operation.json#"
       }
     },
     "event": {
       "type": "array",
       "items": {
-        "$ref": "./acq-event.json#"
+        "$ref": "./event.json#"
       }
     },
     "pass": {
       "type": "array",
       "items": {
-        "$ref": "./acq-pass.json#"
+        "$ref": "./pass.json#"
       }
     },
     "environment": {
-      "$ref": "./acq-environment.json#"
+      "$ref": "./environment.json#"
     }
   }
 }

@@ -1,9 +1,9 @@
 {
-  "id": "acq-pass.json",
+  "id": "pass.json#",
   "$schema": "https://json-schema.org/draft-04/schema#",
   "description": "identification of collection coverage",
   "type": "object",
-  "example": "../examples/acq-pass.json",
+  "example": "../examples/pass.json",
   "additionalProperties": false,
   "required": ["passId","identifier"],
   "properties": {
@@ -13,7 +13,7 @@
     },
     "identifier": {
       "$ref": "./identifier.json",
-      "description": "a unique identifier for the pass"
+      "description": "a unique mdJSON system identifier for the pass"
     },
     "extent": {
       "$ref": "./extent.json",
@@ -22,7 +22,7 @@
     "relatedEvent": {
       "type": "array",
       "items": {
-        "$ref": "./acq-event.json"
+        "$ref": "./event.json"
       },
       "description": "occurrence of one or more events for a pass"
     }

@@ -1,15 +1,15 @@
 {
-  "id": "acq-platform.json",
+  "id": "platform.json#",
   "$schema": "https://json-schema.org/draft-04/schema#",
   "description": "designation of the platform used to acquire the dataset",
   "type": "object",
-  "example": "../examples/acq-platform.json",
+  "example": "../examples/platform.json",
   "additionalProperties": false,
   "required": ["platformId", "identifer", "description", "instrument"],
   "properties": {
     "platformId": {
       "type": "string",
-      "description": "a unique identifier for the platform"
+      "description": "a unique mdJSON system identifier for the platform"
     },
     "citation": {
       "$ref": "./citation.json",
@@ -33,7 +33,7 @@
     "instrument": {
       "type": "array",
       "items": {
-        "$ref": "./acq-instrument.json"
+        "$ref": "./instrument.json"
       },
       "description": "instrument(s) mounted on a platform"
     },
