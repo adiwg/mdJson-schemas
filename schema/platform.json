@@ -12,11 +12,11 @@
       "description": "a unique mdJSON system identifier for the platform"
     },
     "citation": {
-      "$ref": "./citation.json",
+      "$ref": "./citation.json#",
       "description": "source where information about the platform is described"
     },
     "identifier": {
-      "$ref": "./identifier.json",
+      "$ref": "./identifier.json#",
       "description": "unique identification of the platform"
     },
     "description": {
@@ -26,21 +26,21 @@
     "sponsor": {
       "type": "array",
       "items": {
-        "$ref": "./responsibility.json"
+        "$ref": "./responsibility.json#"
       },
       "description": "organization responsible for building, launch, or operation of the platform"
     },
     "instrument": {
       "type": "array",
       "items": {
-        "$ref": "./instrument.json"
+        "$ref": "./instrument.json#"
       },
       "description": "instrument(s) mounted on a platform"
     },
     "history": {
       "type": "array",
       "items": {
-        "$ref": "./instrumentationEventList.json"
+        "$ref": "./instrumentationEventList.json#"
       },
       "description": "list of events affecting a platform"
     }
