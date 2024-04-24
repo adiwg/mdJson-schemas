@@ -12,17 +12,17 @@
       "description": "unique identifier for the pass"
     },
     "identifier": {
-      "$ref": "./identifier.json",
+      "$ref": "./identifier.json#",
       "description": "a unique mdJSON system identifier for the pass"
     },
     "extent": {
-      "$ref": "./extent.json",
+      "$ref": "./extent.json#",
       "description": "area covered by the pass"
     },
     "relatedEvent": {
       "type": "array",
       "items": {
-        "$ref": "./event.json"
+        "$ref": "./event.json#"
       },
       "description": "occurrence of one or more events for a pass"
     }
