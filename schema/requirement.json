@@ -12,24 +12,24 @@
       "description": "a unique mdJSON system identifier for the requirement"
     },
     "citation": {
-      "$ref": "./citation.json",
+      "$ref": "./citation.json#",
       "description": "identification of reference or guidance material for the requirement"
     },
     "identifier": {
-      "$ref": "./identifier.json",
+      "$ref": "./identifier.json#",
       "description": "unique name, or code, for the requirement"
     },
     "requestor": {
       "type": "array",
       "items": {
-        "$ref": "./responsibility.json"
+        "$ref": "./responsibility.json#"
       },
       "description": "origin of requirement"
     },
     "recipient": {
       "type": "array",
       "items": {
-        "$ref": "./responsibility.json"
+        "$ref": "./responsibility.json#"
       },
       "description": "person(s), or body(ies), to receive results of requirement"
     },
@@ -39,7 +39,7 @@
       "description": "relative ordered importance, or urgency, of the requirement"
     },
     "requestedDate": {
-      "$ref": "./requestedDate.json",
+      "$ref": "./requestedDate.json#",
       "description": "required or preferred acquisition date and time"
     },
     "expiryDate": {
@@ -49,7 +49,7 @@
     "satisfiedPlan": {
       "type": "array",
       "items": {
-        "$ref": "./plan.json"
+        "$ref": "./plan.json#"
       },
       "description": "plan that identifies solution to satisfy the requirement"
     }
