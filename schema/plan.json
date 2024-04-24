@@ -51,7 +51,7 @@
       "type": "array",
       "description": "Identification of the activity or activities that satisfy a plan",
       "items": {
-        "$ref": "./operation.json"
+        "$ref": "./operation.json#"
       }
     },
     "satisfiedRequirement": {
