@@ -12,11 +12,11 @@
       "description": "a unique mdJSON system identifier for the instrument"
     },
     "citation": {
-      "$ref": "./citation.json",
+      "$ref": "./citation.json#",
       "description": "complete citation of the instrument"
     },
     "identifier": {
-      "$ref": "./identifier.json",
+      "$ref": "./identifier.json#",
       "description": "unique identification of the instrument"
     },
     "instrumentType": {
@@ -28,18 +28,18 @@
       "description": "textual description of the instrument"
     },
     "mountedOn": {
-      "$ref": "./platform.json",
+      "$ref": "./platform.json#",
       "description": "platform on which the instrument is mounted"
     },
     "history": {
       "type": "array",
       "items": {
-        "$ref": "./instrumentationEventList.json"
+        "$ref": "./instrumentationEventList.json#"
       },
       "description":  "list of events associated with the instrument"
     },
     "hostId": {
-      "$ref": "./identifier.json",
+      "$ref": "./identifier.json#",
       "description": "identifier of the hosting instrument for a sensor"
     }
   }
