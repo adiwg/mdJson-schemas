@@ -12,7 +12,7 @@
             "description": "description of the revision."
         },
         "responsibleParty": {
-            "$ref": "./responsibility.json",
+            "$ref": "./responsibility.json#",
             "description": "individual or organization responsible for the revision"
         },
         "dateInfo": {
