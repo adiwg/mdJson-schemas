@@ -21,11 +21,11 @@
       "description": "description of the mission on which the platform observations are made and the objectives of that mission"
     },
     "citation": {
-      "$ref": "./citation.json",
+      "$ref": "./citation.json#",
       "description": "identification of the mission"
     },
     "identifier": {
-      "$ref": "./identifier.json",
+      "$ref": "./identifier.json#",
       "description": "unique identification of the operation"
     },
     "status": {
@@ -64,36 +64,36 @@
     "objective": {
       "type": "array",
       "items": {
-        "$ref": "./objective.json"
+        "$ref": "./objective.json#"
       },
       "description": "object(s) or area(s) of interest to be sensed"
     },
     "parentOperation": {
-      "$ref": "./operation.json",
+      "$ref": "./operation.json#",
       "description": "heritage of the operation"
     },
     "childOperation": {
       "type": "array",
       "items": {
-        "$ref": "./operation.json"
+        "$ref": "./operation.json#"
       },
       "description": "sub-missions that make up part of a larger mission"
     },
     "plan": {
-      "ref": "./plan.json",
+      "ref": "./plan.json#",
       "description": "plan satisfied by the operation"
     },
     "platform": {
       "type": "array",
       "items": {
-        "$ref": "./platform.json"
+        "$ref": "./platform.json#"
       },
       "description": "platform (or platforms) used in the operation"
     },
     "significantEvent": {
       "type": "array",
       "items": {
-        "$ref": "./event.json"
+        "$ref": "./event.json#"
       },
       "description": "record of an event occurring during an operation"
     }
