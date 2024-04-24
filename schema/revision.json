@@ -1,5 +1,5 @@
 {
-    "id": "revision.json",
+    "id": "revision.json#",
     "$schema": "https://json-schema.org/draft-04/schema#",
     "description": "history of the revision of an event",
     "type": "object",
