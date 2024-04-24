@@ -58,7 +58,7 @@
       "type": "array",
       "description": "Requirement satisfied by the plan",
       "items": {
-        "$ref": "./requirement.json"
+        "$ref": "./requirement.json#"
       }
     }
   }
