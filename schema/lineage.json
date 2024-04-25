@@ -57,7 +57,6 @@
     },
     "source": {
       "type": "array",
-      "description": "Information about the source data used in creating the data identified by the data quality scope.",
       "translation": {
         "ISO 19115-2": ["LI_Lineage > source > LI_Source"],
         "FGDC CSDGM": ["dataqual > lineage > srcinfo"]
