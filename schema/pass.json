@@ -1,6 +1,6 @@
 {
   "id": "pass.json#",
-  "$schema": "https://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "identification of collection coverage",
   "type": "object",
   "example": "../examples/pass.json",

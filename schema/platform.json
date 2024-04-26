@@ -1,6 +1,6 @@
 {
   "id": "platform.json#",
-  "$schema": "https://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "designation of the platform used to acquire the dataset",
   "type": "object",
   "example": "../examples/platform.json",

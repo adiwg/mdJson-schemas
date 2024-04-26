@@ -1,6 +1,6 @@
 {
   "id": "requirement.json#",
-  "$schema": "https://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "requirement to be satisfied by the planned data acquisition",
   "type": "object",
   "required": ["requirementId","identifier","requestor","recipient","priority","requestedDate","expiryDate"],

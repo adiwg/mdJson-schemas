@@ -1,6 +1,6 @@
 {
   "id": "objective.json#",
-  "$schema": "https://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "describes the characteristics, spatial and temporal extent of the intended object to be observed",
   "type": "array",
   "example": "../examples/objective.json",
