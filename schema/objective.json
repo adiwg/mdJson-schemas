@@ -2,13 +2,10 @@
   "id": "objective.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "describes the characteristics, spatial and temporal extent of the intended object to be observed",
-  "type": "array",
+  "type": "object",
   "example": "../examples/objective.json",
   "additionalProperties": false,
-  "required": [
-    "objectiveId",
-    "identifier"
-  ],
+  "required": ["objectiveId", "identifier"],
   "properties": {
     "objectiveId": {
       "type": "string",
@@ -29,11 +26,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": [
-          "instantaneousCollection",
-          "persistentView",
-          "survey"
-        ]
+        "enum": ["instantaneousCollection", "persistentView", "survey"]
       },
       "description": "collection techniques for the objective"
     },
