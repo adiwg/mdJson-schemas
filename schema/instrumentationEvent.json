@@ -5,7 +5,7 @@
     "type": "object",
     "example": "../examples/instrumentationEvent.json",
     "additionalProperties": false,
-    "required": ["description","type"],
+    "required": ["description","eventType"],
     "properties": {
         "citation": {
             "$ref": "./citation.json#",

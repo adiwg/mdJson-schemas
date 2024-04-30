@@ -5,7 +5,7 @@
   "type": "object",
   "example": "../examples/platform.json",
   "additionalProperties": false,
-  "required": ["platformId", "identifer", "description", "instrument"],
+  "required": ["platformId", "identifier", "description", "instrument"],
   "properties": {
     "platformId": {
       "type": "string",

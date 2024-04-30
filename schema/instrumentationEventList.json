@@ -1,7 +1,7 @@
 {
     "id": "instrumentationEventList.json#",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "description": "",
+    "description": "list of events related to platform, instrument, sensor",
     "type": "object",
     "example": "../examples/instrumentationEventList.json",
     "additionalProperties": false,
