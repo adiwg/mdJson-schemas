@@ -46,7 +46,7 @@
         "FormatConsistency",
         "TopologicalConsistency",
         "ThematicClassificationCorrectness",
-        "NonQuantitativeAttributeAccuracy",
+        "NonQuantitativeAttributeCorrectness",
         "QuantitativeAttributeAccuracy",
         "AccuracyOfATimeMeasurement",
         "TemporalValidity",
