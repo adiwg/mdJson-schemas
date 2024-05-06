@@ -12,12 +12,11 @@
       "type": "string",
       "description": "Type of evaluation method.",
       "enum": [
-        "DQ_EvaluationMethod",
-        "DQ_DataInspection",
-        "DQ_AggregationDerivation",
-        "DQ_FullInspection",
-        "DQ_IndirectEvaluation",
-        "DQ_SampleBasedInspection"
+        "evaluationMethod",
+        "data",
+        "aggregationDerivation",
+        "fullInspection",
+        "sampleBasedInspection"
       ]
     },
     "dateTime": {
