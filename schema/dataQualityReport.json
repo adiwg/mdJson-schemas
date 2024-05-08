@@ -38,8 +38,8 @@
         "DCAT": ["no translation"]
       },
       "enum": [
-        "AbsolutePositionalAccuracy",
-        "RelativePositionalAccuracy",
+        "AbsoluteExternalPositionalAccuracy",
+        "RelativeInternalPositionalAccuracy",
         "GriddedDataPositionalAccuracy",
         "ConceptualConsistency",
         "DomainConsistency",
@@ -51,8 +51,8 @@
         "AccuracyOfATimeMeasurement",
         "TemporalValidity",
         "TemporalConsistency",
-        "Commission",
-        "Omission"
+        "CompletenessCommission",
+        "CompletenessOmission"
       ]
     },
     "standaloneQualityReportDetails": {
