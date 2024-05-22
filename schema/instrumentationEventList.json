@@ -8,11 +8,8 @@
     "required": ["description"],
     "properties": {
             "citation": {
-                "type": "array",
-                "items": {
-                    "$ref": "./citation.json#"
-                },
-                "description": "description of the language and character-set used for the instrumentationEventList"
+                "$ref": "./citation.json#",
+                "description": "citation to the instrumentationEventList"
             },
             "description": {
                 "type": "string",

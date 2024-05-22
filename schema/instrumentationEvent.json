@@ -8,7 +8,10 @@
     "required": ["description","eventType"],
     "properties": {
         "citation": {
-            "$ref": "./citation.json#",
+            "type": "array",
+            "items": {
+                "$ref": "./citation.json#"
+            },
             "description": "citation to the instrumentationEvent"
         },
         "description": {
