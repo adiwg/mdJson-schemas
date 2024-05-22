@@ -8,8 +8,7 @@
   "required": [
     "operationId",
     "identifier",
-    "status",
-    "parentOperation"
+    "status"
   ],
   "properties": {
     "operationId": {

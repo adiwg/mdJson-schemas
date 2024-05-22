@@ -38,21 +38,21 @@
         "DCAT": ["no translation"]
       },
       "enum": [
-        "AbsoluteExternalPositionalAccuracy",
-        "RelativeInternalPositionalAccuracy",
-        "GriddedDataPositionalAccuracy",
-        "ConceptualConsistency",
-        "DomainConsistency",
-        "FormatConsistency",
-        "TopologicalConsistency",
-        "ThematicClassificationCorrectness",
-        "NonQuantitativeAttributeCorrectness",
-        "QuantitativeAttributeAccuracy",
-        "AccuracyOfATimeMeasurement",
-        "TemporalValidity",
-        "TemporalConsistency",
-        "CompletenessCommission",
-        "CompletenessOmission"
+        "DQ_AbsoluteExternalPositionalAccuracy",
+        "DQ_RelativeInternalPositionalAccuracy",
+        "DQ_GriddedDataPositionalAccuracy",
+        "DQ_ConceptualConsistency",
+        "DQ_DomainConsistency",
+        "DQ_FormatConsistency",
+        "DQ_TopologicalConsistency",
+        "DQ_ThematicClassificationCorrectness",
+        "DQ_NonQuantitativeAttributeCorrectness",
+        "DQ_QuantitativeAttributeAccuracy",
+        "DQ_AccuracyOfATimeMeasurement",
+        "DQ_TemporalValidity",
+        "DQ_TemporalConsistency",
+        "DQ_CompletenessCommission",
+        "DQ_CompletenessOmission"
       ]
     },
     "standaloneQualityReportDetails": {
