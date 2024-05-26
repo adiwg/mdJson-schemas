@@ -22,5 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", ">= 0"
   spec.add_development_dependency "json-schema", "~> 2.8.1"
   spec.add_development_dependency "minitest", "~>5"
-  spec.add_development_dependency "adiwg-mdcodes", "2.9.4-beta.5"
+  spec.add_development_dependency "adiwg-mdcodes", "2.10.0"
 end
