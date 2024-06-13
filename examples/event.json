@@ -1,0 +1,13 @@
+[
+    {
+        "eventId": "event ID",
+        "identifier": { },
+        "trigger": "manual",
+        "context": "pass",
+        "sequence": "start",
+        "time": "2019-06-10T16:07:00",
+        "expectedObjective": ["objectiveId"],
+        "relatedPass": "passId",
+        "relatedSensor": ["instrumentId"]
+    }
+]

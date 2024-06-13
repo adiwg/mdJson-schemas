@@ -1,0 +1,10 @@
+[
+    {    
+       "averageAirTemperature": 9.9,
+       "maxRelativeHumidity": 9.9,
+       "maxAltitude": 9.9,
+       "meteorologicalConditions": "meteorological conditions",
+       "solarAzimuth": 9.9,
+       "solarElevation": 9.9
+    }
+]

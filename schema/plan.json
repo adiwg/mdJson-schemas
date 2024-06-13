@@ -1,0 +1,65 @@
+{
+  "id": "plan.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Designations for the planning information related to meeting the data acquisition requirements.",
+  "type": "object",
+  "example": "../examples/plan.json",
+  "additionalProperties": false,
+  "required": ["planId", "status", "citation"],
+  "properties": {
+    "planId": {
+      "type": "string",
+      "description": "a unique mdJSON system identifier for the plan"
+    },
+    "planType": {
+      "type": "string",
+      "description": "Manner of sampling geometry that the planner expects for collection of objective data",
+      "enum": ["point", "linear", "areal", "strip"]
+    },
+    "status": {
+      "type": "string",
+      "description": "Current status of the plan (pending, completed, etc.)",
+      "enum": [
+        "accepted",
+        "cancelled",
+        "completed",
+        "deprecated",
+        "final",
+        "funded",
+        "historicalArchive",
+        "notAccepted",
+        "obsolete",
+        "onGoing",
+        "pending",
+        "planned",
+        "proposed",
+        "required",
+        "retired",
+        "superseded",
+        "suspended",
+        "tentative",
+        "underDevelopment",
+        "valid",
+        "withdrawn"
+      ]
+    },
+    "citation": {
+      "description": "Identification of authority requesting target collection",
+      "$ref": "./citation.json#"
+    },
+    "planOperation": {
+      "type": "array",
+      "description": "Identification of the activity or activities that satisfy a plan",
+      "items": {
+        "$ref": "./operation.json#"
+      }
+    },
+    "satisfiedRequirement": {
+      "type": "array",
+      "description": "Requirement satisfied by the plan",
+      "items": {
+        "$ref": "./requirement.json#"
+      }
+    }
+  }
+}

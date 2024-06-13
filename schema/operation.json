@@ -1,0 +1,100 @@
+{
+  "id": "operation.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "example": "../examples/operation.json",
+  "additionalProperties": false,
+  "required": [
+    "operationId",
+    "identifier",
+    "status"
+  ],
+  "properties": {
+    "operationId": {
+      "type": "string",
+      "description": "a unique mdJSON system identifier for the operation"
+    },
+    "description": {
+      "type": "string",
+      "description": "description of the mission on which the platform observations are made and the objectives of that mission"
+    },
+    "citation": {
+      "$ref": "./citation.json#",
+      "description": "identification of the mission"
+    },
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "unique identification of the operation"
+    },
+    "status": {
+      "type": "string",
+      "description": "status of the data acquisition",
+      "enum": [
+        "accepted",
+        "completed",
+        "deprecated",
+        "final",
+        "historicalArchive",
+        "notAccepted",
+        "obsolete",
+        "onGoing",
+        "pending",
+        "planned",
+        "proposed",
+        "required",
+        "retired",
+        "superseded",
+        "tentative",
+        "underDevelopment",
+        "valid",
+        "withdrawn"
+      ]
+    },
+    "operationType": {
+      "type": "string",
+      "description": "collection technique for the operation",
+      "enum": [
+        "real",
+        "simulated",
+        "synthetic"
+      ]
+    },
+    "objective": {
+      "type": "array",
+      "items": {
+        "$ref": "./objective.json#"
+      },
+      "description": "object(s) or area(s) of interest to be sensed"
+    },
+    "parentOperation": {
+      "$ref": "./operation.json#",
+      "description": "heritage of the operation"
+    },
+    "childOperation": {
+      "type": "array",
+      "items": {
+        "$ref": "./operation.json#"
+      },
+      "description": "sub-missions that make up part of a larger mission"
+    },
+    "plan": {
+      "ref": "./plan.json#",
+      "description": "plan satisfied by the operation"
+    },
+    "platform": {
+      "type": "array",
+      "items": {
+        "$ref": "./platform.json#"
+      },
+      "description": "platform (or platforms) used in the operation"
+    },
+    "significantEvent": {
+      "type": "array",
+      "items": {
+        "$ref": "./event.json#"
+      },
+      "description": "record of an event occurring during an operation"
+    }
+  }
+}

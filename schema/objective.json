@@ -1,0 +1,69 @@
+{
+  "id": "objective.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "describes the characteristics, spatial and temporal extent of the intended object to be observed",
+  "type": "object",
+  "example": "../examples/objective.json",
+  "additionalProperties": false,
+  "required": ["objectiveId", "identifier"],
+  "properties": {
+    "objectiveId": {
+      "type": "string",
+      "description": "a unique mdJSON system identifier for the objective"
+    },
+    "identifier": {
+      "type": "array",
+      "description": "code used to identify the objective",
+      "items": {
+        "$ref": "./identifier.json#"
+      }
+    },
+    "priority": {
+      "type": "string",
+      "description": "priority applied to the target"
+    },
+    "objectiveType": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["instantaneousCollection", "persistentView", "survey"]
+      },
+      "description": "collection techniques for the objective"
+    },
+    "function": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "role or purpose performed by or activity performed at the objective"
+    },
+    "extent": {
+      "type": "array",
+      "items": {
+        "$ref": "./extent.json#"
+      },
+      "description": "extent information including the bounding box, bounding polygon, vertical and temporal extent of the objective"
+    },
+    "objectiveOccurrence": {
+      "type": "array",
+      "items": {
+        "$ref": "./event.json#"
+      },
+      "description": "event or events associated with objective completion"
+    },
+    "pass": {
+      "type": "array",
+      "items": {
+        "$ref": "./pass.json#"
+      },
+      "description": "pass of the platform over the objective"
+    },
+    "sensingInstrument": {
+      "type": "array",
+      "items": {
+        "$ref": "./instrument.json#"
+      },
+      "description": "instrument which senses the objective data"
+    }
+  }
+}

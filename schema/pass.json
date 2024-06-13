@@ -1,0 +1,30 @@
+{
+  "id": "pass.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "identification of collection coverage",
+  "type": "object",
+  "example": "../examples/pass.json",
+  "additionalProperties": false,
+  "required": ["passId","identifier"],
+  "properties": {
+    "passId": {
+      "type": "string",
+      "description": "unique identifier for the pass"
+    },
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "a unique mdJSON system identifier for the pass"
+    },
+    "extent": {
+      "$ref": "./extent.json#",
+      "description": "area covered by the pass"
+    },
+    "relatedEvent": {
+      "type": "array",
+      "items": {
+        "$ref": "./event.json#"
+      },
+      "description": "occurrence of one or more events for a pass"
+    }
+  }
+}

@@ -16,7 +16,9 @@
     },
     "resourceInfo": {
       "translation": {
-        "ISO 19115-2": ["MD_Metadata > identificationInfo > MD_DataIdentification"],
+        "ISO 19115-2": [
+          "MD_Metadata > identificationInfo > MD_DataIdentification"
+        ],
         "FGDC CSDGM": ["idinfo"]
       },
       "$ref": "resourceInfo.json#"
@@ -52,7 +54,9 @@
       "type": "array",
       "description": "Other resources which are directly related to the subject resource such as parent, child, or sibling datasets or projects.",
       "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > aggregationInfo > MD_AggregateInformation"],
+        "ISO 19115-2": [
+          "MD_DataIdentification > aggregationInfo > MD_AggregateInformation"
+        ],
         "FGDC CSDGM": ["idinfo > crossref"]
       },
       "items": {
@@ -63,7 +67,9 @@
       "type": "array",
       "description": "Other documents related to, but not defining, the resource such as factsheets, data catalog pages, award documents, proposals, and informational websites.",
       "translation": {
-        "ISO 19115-2": ["MD_DataIdentification > aggregationInfo > MD_AggregateInformation > aggregateDataSetName > CI_Citation"],
+        "ISO 19115-2": [
+          "MD_DataIdentification > aggregationInfo > MD_AggregateInformation > aggregateDataSetName > CI_Citation"
+        ],
         "FGDC CSDGM": ["idinfo > crossref "]
       },
       "items": {
@@ -75,6 +81,13 @@
       "description": "Information about funding for the resource.",
       "items": {
         "$ref": "./funding.json#"
+      }
+    },
+    "acquisition": {
+      "type": "array",
+      "description": "Information about the acquisition of the resource.",
+      "items": {
+        "$ref": "./acquisition.json#"
       }
     }
   }

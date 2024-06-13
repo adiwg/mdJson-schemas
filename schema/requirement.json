@@ -1,0 +1,57 @@
+{
+  "id": "requirement.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "requirement to be satisfied by the planned data acquisition",
+  "type": "object",
+  "required": ["requirementId","identifier","requestor","recipient","priority","requestedDate","expiryDate"],
+  "example": "../examples/requirement.json",
+  "additionalProperties": false,
+  "properties": {
+    "requirementId": {
+      "type": "string",
+      "description": "a unique mdJSON system identifier for the requirement"
+    },
+    "citation": {
+      "$ref": "./citation.json#",
+      "description": "identification of reference or guidance material for the requirement"
+    },
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "unique name, or code, for the requirement"
+    },
+    "requestor": {
+      "type": "array",
+      "items": {
+        "$ref": "./responsibility.json#"
+      },
+      "description": "origin of requirement"
+    },
+    "recipient": {
+      "type": "array",
+      "items": {
+        "$ref": "./responsibility.json#"
+      },
+      "description": "person(s), or body(ies), to receive results of requirement"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["critical","highImportance","mediumImportance","lowImportance"],
+      "description": "relative ordered importance, or urgency, of the requirement"
+    },
+    "requestedDate": {
+      "$ref": "./requestedDate.json#",
+      "description": "required or preferred acquisition date and time"
+    },
+    "expiryDate": {
+      "$ref": "./common.json#/definitions/date",
+      "description": "date and time after which collection is no longer valid"
+    },
+    "satisfiedPlan": {
+      "type": "array",
+      "items": {
+        "$ref": "./plan.json#"
+      },
+      "description": "plan that identifies solution to satisfy the requirement"
+    }
+  }
+}

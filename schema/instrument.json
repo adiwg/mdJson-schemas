@@ -1,0 +1,46 @@
+{
+  "id": "instrument.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "example": "../examples/instrument.json",
+  "additionalProperties": false,
+  "required": ["instrumentId","identifier","instrumentType"],
+  "properties": {
+    "instrumentId": {
+      "type": "string",
+      "description": "a unique mdJSON system identifier for the instrument"
+    },
+    "citation": {
+      "$ref": "./citation.json#",
+      "description": "complete citation of the instrument"
+    },
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "unique identification of the instrument"
+    },
+    "instrumentType": {
+      "type": "string",
+      "description": "name of the type of instrument. Examples: framing, linescan, push-broom, panframe"
+    },
+    "description": {
+      "type": "string",
+      "description": "textual description of the instrument"
+    },
+    "mountedOn": {
+      "$ref": "./platform.json#",
+      "description": "platform on which the instrument is mounted"
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "$ref": "./instrumentationEventList.json#"
+      },
+      "description":  "list of events associated with the instrument"
+    },
+    "hostId": {
+      "$ref": "./identifier.json#",
+      "description": "identifier of the hosting instrument for a sensor"
+    }
+  }
+}

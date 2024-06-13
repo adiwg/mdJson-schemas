@@ -1,0 +1,48 @@
+{
+  "id": "platform.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "designation of the platform used to acquire the dataset",
+  "type": "object",
+  "example": "../examples/platform.json",
+  "additionalProperties": false,
+  "required": ["platformId", "identifier", "description", "instrument"],
+  "properties": {
+    "platformId": {
+      "type": "string",
+      "description": "a unique mdJSON system identifier for the platform"
+    },
+    "citation": {
+      "$ref": "./citation.json#",
+      "description": "source where information about the platform is described"
+    },
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "unique identification of the platform"
+    },
+    "description": {
+      "type": "string",
+      "description": "narrative description of the platform supporting the instrument"
+    },
+    "sponsor": {
+      "type": "array",
+      "items": {
+        "$ref": "./responsibility.json#"
+      },
+      "description": "organization responsible for building, launch, or operation of the platform"
+    },
+    "instrument": {
+      "type": "array",
+      "items": {
+        "$ref": "./instrument.json#"
+      },
+      "description": "instrument(s) mounted on a platform"
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "$ref": "./instrumentationEventList.json#"
+      },
+      "description": "list of events affecting a platform"
+    }
+  }
+}
