@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    adiwg-mdjson_schemas (2.9.5)
+    adiwg-mdjson_schemas (2.10.0)
 
 GEM
   remote: https://rubygems.org/

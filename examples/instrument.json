@@ -1,0 +1,12 @@
+[
+   {
+      "instrumentId": "instrument ID",
+      "citation": [],
+      "identifier": {},
+      "instrumentType": "instrument type",
+      "description": "instrument description",
+      "mountedOn": "platformId",
+      "history": [ ],
+      "hostId": "host instrument ID"
+   }
+]

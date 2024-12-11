@@ -1,0 +1,52 @@
+{
+    "id": "instrumentationEvent.json#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "an event related to a platform, instrument, sensor",
+    "type": "object",
+    "example": "../examples/instrumentationEvent.json",
+    "additionalProperties": false,
+    "required": ["description","eventType"],
+    "properties": {
+        "citation": {
+            "type": "array",
+            "items": {
+                "$ref": "./citation.json#"
+            },
+            "description": "citation to the instrumentationEvent"
+        },
+        "description": {
+            "type": "string",
+            "description": "description of the instrumentationEvent"
+        },
+        "extent": {
+            "$ref": "./extent.json#",
+            "description": "extent of the instrumentationEvent"
+        },
+         "eventType": {
+            "type": "string",
+            "description": "type of the instrumentationEvent",
+            "enum": [
+                "announcement",
+                "calibration",
+                "calibrationCoefficientUpdate",
+                "dataLoss",
+                "fatal",
+                "manoeuvre",
+                "missingData",
+                "notice",
+                "prelaunch",
+                "severe",
+                "switchOff",
+                "switchOn",
+                "clean"
+            ]            
+        },
+         "revisionHistory": {
+            "type": "array",
+            "items": {
+                "$ref": "./revision.json#"
+            },
+            "description": "history of revisions to the instrumentationEvent"
+        }
+    }
+  }
