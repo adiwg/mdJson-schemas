@@ -37,13 +37,6 @@
         "FGDC CSDGM": ["no translation"],
         "DCAT": ["no translation"]
       },
-      "translation": {
-        "ISO 19115-2": [
-          "MI_Metadata > DQ_DataQuality > Report > [DQ_Element type]"
-        ],
-        "FGDC CSDGM": ["no translation"],
-        "DCAT": ["no translation"]
-      },
       "enum": [
         "DQ_AbsoluteExternalPositionalAccuracy",
         "DQ_RelativeInternalPositionalAccuracy",
