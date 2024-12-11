@@ -1,0 +1,70 @@
+{
+  "id": "acquisition.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Designations for the measuring instruments, the platform carrying them, and the mission to which the data contributes.",
+  "type": "object",
+  "example": "../examples/acquisition.json",
+  "translation": {
+    "ISO 19115-2": [
+      "MD_Metadata > acquisitionInformation > MI_AcquisitionInformation"
+    ],
+    "FGDC CSDGM": ["idinfo > accconst"]
+  },
+  "additionalProperties": false,
+  "properties": {
+    "scope": {
+      "$ref": "./scope.json#"
+    },
+    "plan": {
+      "type": "array",
+      "items": {
+        "$ref": "./plan.json#"
+      }
+    },
+    "requirement": {
+      "type": "array",
+      "items": {
+        "$ref": "./requirement.json#"
+      }
+    },
+    "objective": {
+      "type": "array",
+      "items": {
+        "$ref": "./objective.json#"
+      }
+    },
+    "platform": {
+      "type": "array",
+      "items": {
+        "$ref": "./platform.json#"
+      }
+    },
+    "instrument": {
+      "type": "array",
+      "items": {
+        "$ref": "./instrument.json#"
+      }
+    },
+    "operation": {
+      "type": "array",
+      "items": {
+        "$ref": "./operation.json#"
+      }
+    },
+    "event": {
+      "type": "array",
+      "items": {
+        "$ref": "./event.json#"
+      }
+    },
+    "pass": {
+      "type": "array",
+      "items": {
+        "$ref": "./pass.json#"
+      }
+    },
+    "environment": {
+      "$ref": "./environment.json#"
+    }
+  }
+}
