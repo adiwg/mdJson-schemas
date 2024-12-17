@@ -1,0 +1,13 @@
+[
+   {
+      "objectiveId": "objective ID",
+      "identifier": [ ],
+      "priority": "objective priority",
+      "objectiveType": ["instantaneousCollection"],
+      "function": [],
+      "extent": [ ],
+      "objectiveOccurrence": [ ],
+      "pass": [ ],
+      "sensingInstrument": [ ]
+   }
+]

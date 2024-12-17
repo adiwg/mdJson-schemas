@@ -1,0 +1,34 @@
+{
+  "id": "environment.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "information about the environmental conditions during the acquisition",
+  "type": "object",
+  "example": "../examples/environment.json",
+  "additionalProperties": false,
+  "properties": {
+    "averageAirTemperature": {
+      "type": "number",
+      "description": "average air temperature along the flight pass during the photo flight"
+    },
+    "maxRelativeHumidity": {
+      "type": "number",
+      "description": "maximum relative humidity along the flight pass during the photo flight"
+    },
+    "maxAltitude": {
+      "type": "number",
+      "description": "maximum altitude during the photo flight"
+    },
+    "meteorologicalConditions": {
+      "type": "string",
+      "description": "meteorological conditions in the photo flight area, in particular clouds, snow and wind"
+    },
+    "solarAzimuth": {
+      "type": "number",
+      "description": "clockwise angle in degrees from north to the centre of the sun’s disc. Note: This angle is calculated from the nadir point of the sensor, not at the centre point of the image"
+    },
+    "solarElevation": {
+      "type": "number",
+      "description": "angle between the horizon and the centre of the Sun’s disk"
+    }
+  }
+}

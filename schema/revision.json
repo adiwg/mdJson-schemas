@@ -1,0 +1,27 @@
+{
+    "id": "revision.json#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "history of the revision of an event",
+    "type": "object",
+    "example": "../examples/revision.json",
+    "additionalProperties": false,
+    "required": ["description", "responsibleParty", "dateInfo"],
+    "properties": {
+        "description": {
+            "type": "string",
+            "description": "description of the revision."
+        },
+        "responsibleParty": {
+            "$ref": "./responsibility.json#",
+            "description": "individual or organization responsible for the revision"
+        },
+        "dateInfo": {
+            "type": "array",
+            "items": {
+                "$ref": "./common.json#/definitions/date"
+            },
+            "description": "information about dates related to the revision"
+        }
+    }
+  }
+  
