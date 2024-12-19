@@ -1,0 +1,19 @@
+{
+    "id": "algorithm.json#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "details of the methodology by which geographic information was derived from the instrument readings",
+    "example": "../examples/algorithm.json",
+    "additionalProperties": true,
+    "required": ["citation","description"],
+    "properties": {
+        "citation": {
+            "$ref": "./citation.json#",
+            "description": "information identifying the algorithm and version or date"
+        },
+        "description": {
+            "type": "string",
+            "description": "information describing the algorithm used to generate the data"
+        }
+    }
+}

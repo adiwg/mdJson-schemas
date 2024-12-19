@@ -1,0 +1,22 @@
+{
+    "id": "processStepReport.json#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "report of what occurred during the process step",
+    "example": "../examples/processStepReport.json",
+    "required": ["name"],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "name of the processing report"
+        },
+        "description": {
+            "type": "string",
+            "description": "textual description of what occurred during the process step"
+        },
+        "fileType": {
+            "type": "string",
+            "description": "type of file that contains the processing report"
+        }
+    }
+}
