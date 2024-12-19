@@ -1,0 +1,16 @@
+[
+   {
+      "operationId": "operation ID",
+      "description": "operation description",
+      "citation": { },
+      "identifier": { },
+      "status": "pending",
+      "operationType": "real",
+      "objective": [ ],
+      "parentOperation": { },
+      "childOperation": [ ],
+      "plan": { },
+      "platform": [ ],
+      "significantEvent": [ ]
+   }
+]

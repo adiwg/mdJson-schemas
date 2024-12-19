@@ -1,6 +1,6 @@
 {
   "name": "mdjson-schemas",
-  "version": "2.9.3-beta.0",
+  "version": "2.10.0",
   "description": "JSON schemas, examples, and templates for ADIwg metadata standards",
   "main": "index.js",
   "directories": {
@@ -10,6 +10,7 @@
   },
   "scripts": {
     "test": "mocha",
+    "build": "bundle && npm install && npm run prepublish",
     "prepublish": "node scripts/prepublish.js",
     "release": "npm run prepublish && npm publish"
   },

@@ -1,0 +1,20 @@
+{
+    "id": "requestedDate.json#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "range of date validity",
+    "type": "object",
+    "example": "../examples/requestedDate.json",
+    "additionalProperties": false,
+    "required": ["requestedDateOfCollection","latestAcceptableDate"],
+    "properties": {
+        "requestedDateOfCollection": {
+            "$ref": "./common.json#/definitions/date",
+            "description": "preferred date and time of collection"
+        },
+        "latestAcceptableDate": {
+            "$ref": "./common.json#/definitions/date",
+            "description": "latest date and time collection must be completed"
+        }
+    }
+}
+  

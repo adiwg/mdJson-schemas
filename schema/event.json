@@ -1,0 +1,56 @@
+{
+  "id": "event.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "designations for the planning information related to meeting the data acquisition requirements",
+  "type": "object",
+  "example": "../examples/event.json",
+  "additionalProperties": false,
+  "required": ["eventId", "identifier", "trigger", "context", "sequence", "time"],
+  "properties": {
+    "eventId": {
+      "type": "string",
+      "description": "a unique mdJSON system identifier for the event"
+    },
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "event name or number"
+    },
+    "trigger": {
+      "type": "string",
+      "description": "initiator of the event",
+      "enum": ["automatic", "manual", "preProgrammed"]
+    },
+    "context": {
+      "type": "string",
+      "description": "meaning of the event",
+      "enum": ["acquisition", "pass", "wayPoint"]
+    },
+    "sequence": {
+      "type": "string",
+      "description": "relative time ordering of the event",
+      "enum": ["start", "end", "instantaneous"]
+    },
+    "time": {
+      "$ref": "./common.json#/definitions/date",
+      "description": "time the event occurred"
+    },
+    "expectedObjective": {
+      "type": "array",
+      "items": {
+        "$ref": "./objective.json#"
+      },
+      "description": "objective or objectives satisfied by an event"
+    },
+    "relatedPass": {
+      "$ref": "./pass.json#",
+      "description": "pass during which an event occurs"
+    },
+    "relatedSensor": {
+      "type": "array",
+      "items": {
+        "$ref": "./instrument.json#"
+      },
+      "description": "instrument or instruments for which the event is meaningful"
+    }
+  }
+}
