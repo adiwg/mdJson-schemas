@@ -7,6 +7,10 @@
   "required": ["subject", "citation", "responsibleParty"],
   "additionalProperties": true,
   "properties": {
+    "dictionaryId": {
+      "type": "string",
+      "description": "Unique identifier for the dictionary."
+    },
     "citation": {
       "description": "Citation for the dictionary.",
       "$ref": "./citation.json#"
@@ -31,7 +35,9 @@
       "type": "array",
       "description": "Description of kind(s) of use to which this dictionary may be put.",
       "translation": {
-        "ISO 19115-2": ["FC_FeatureCatalogue > fieldOfApplication > CharacterString"]
+        "ISO 19115-2": [
+          "FC_FeatureCatalogue > fieldOfApplication > CharacterString"
+        ]
       },
       "items": {
         "type": "string"
@@ -46,7 +52,6 @@
       "items": {
         "$ref": "./locale.json"
       }
-
     },
     "responsibleParty": {
       "$ref": "./responsibility.json#",
