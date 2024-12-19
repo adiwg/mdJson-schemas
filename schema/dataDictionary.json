@@ -9,7 +9,12 @@
   "properties": {
     "dictionaryId": {
       "type": "string",
-      "description": "Unique identifier for the dictionary."
+      "description": "Unique identifier for the dictionary.",
+      "translation": {
+        "FGDC CSDGM": [],
+        "ISO 19115-2": [],
+        "DCAT": []
+      }
     },
     "citation": {
       "description": "Citation for the dictionary.",
