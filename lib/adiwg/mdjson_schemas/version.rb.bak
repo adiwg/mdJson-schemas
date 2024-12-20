@@ -1,0 +1,10 @@
+module ADIWG
+    module MdjsonSchemas
+        # Current schema version number
+<<<<<<< HEAD
+        VERSION = "2.10.0"
+=======
+        VERSION = "2.10.1"
+>>>>>>> develop
+    end
+end
