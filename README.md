@@ -50,4 +50,5 @@ as a workaround you can pre-load all of the schemas by calling `ADIWG::MdjsonSch
 5. Create new Pull Request
 
 ### See [CONTRIBUTING](CONTRIBUTING.md) file
+
 View the CONTRIBUTING file for additional guidelines related to developing mdJson schemas.
