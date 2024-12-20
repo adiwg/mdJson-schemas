@@ -51,4 +51,4 @@ as a workaround you can pre-load all of the schemas by calling `ADIWG::MdjsonSch
 
 ### See [CONTRIBUTING](CONTRIBUTING.md) file
 
-View the CONTRIBUTING file for additional guidelines related to developing mdJson schemas.
+View the [CONTRIBUTING.md](CONTRIBUTING.md) file for additional guidelines related to developing mdJson schemas.
