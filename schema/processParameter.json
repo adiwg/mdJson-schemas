@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "processParameter.json#",
+    "type": "object",
+    "description": "comprehensive information about the procedure(s), process(es) and algorithm(s) applied in the process step",
+    "example": "../examples/processParamter.json",
+    "required": ["name","direction","optionality","repeatability"],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "name or type of parameter"
+        },
+        "direction": {
+            "type": "string",
+            "description": "indication the parameter is an input to the process, an output or both",
+            "enum": [
+                "in",
+                "out",
+                "in/out"
+            ]
+        },
+        "description": {
+            "type": "string",
+            "description": "narrative explaining the role of the parameter"
+        },
+        "optionality": {
+            "type": "boolean",
+            "description": "indication the parameter is required"
+        },
+        "repeatability": {
+            "type": "boolean",
+            "description": "indication if more than one value of the parameter may be provided"
+        },
+        "valuetype": {
+            "type": "string",
+            "description": "data type of the value"
+        },
+        "value": {
+            "type": "string",
+            "description": "constant value"
+        },
+        "resource": {
+            "type": "array",
+            "items": {
+                "$ref": "./source.json#"
+            },
+            "description": "resource to be processed"
+        }
+    }
+}

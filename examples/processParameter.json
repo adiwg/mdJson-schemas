@@ -1,0 +1,11 @@
+[
+    {
+        "name": "parameter name",
+        "direction": "in",
+        "description": "description",
+        "optionality": true,
+        "repeatability": false,
+        "valuetype": "value",
+        "value": [ ]
+    }
+]
