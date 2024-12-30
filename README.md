@@ -49,6 +49,6 @@ as a workaround you can pre-load all of the schemas by calling `ADIWG::MdjsonSch
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-### Ignore anything below this line
+### See [CONTRIBUTING](CONTRIBUTING.md) file
 
-Just making changes to make changes to something. Trying to resolve merge conflicts.
+View the [CONTRIBUTING.md](CONTRIBUTING.md) file for additional guidelines related to developing mdJson schemas.

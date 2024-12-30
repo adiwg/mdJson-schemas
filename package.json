@@ -11,8 +11,11 @@
   "scripts": {
     "test": "mocha",
     "build": "bundle && npm install && npm run prepublish",
+    "clean": "sh scripts/clean.sh",
     "prepublish": "node scripts/prepublish.js",
-    "release": "npm run prepublish && npm publish"
+    "release": "npm run clean && npm run build && npm publish && gem build mdjson-schemas.gemspec && gem push mdjson-schemas-*.gem",
+    "release:npm": "npm run build && npm publish",
+    "release:gem": "npm run clean && npm run build && gem build mdjson-schemas.gemspec && gem push mdjson-schemas-*.gem"
   },
   "files": [
     "examples",
