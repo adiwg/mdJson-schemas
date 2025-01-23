@@ -13,9 +13,9 @@
     "build": "bundle && npm install && npm run prepublish",
     "clean": "sh scripts/clean.sh",
     "prepublish": "node scripts/prepublish.js",
-    "release": "npm run clean && npm run build && npm publish && gem build mdjson-schemas.gemspec && gem push mdjson-schemas-*.gem",
+    "release": "npm run clean && npm run build && npm publish && gem build adiwg-json_schemas.gemspec && gem push adiwg-mdjson_schemas-*.gem",
     "release:npm": "npm run build && npm publish",
-    "release:gem": "npm run clean && npm run build && gem build mdjson-schemas.gemspec && gem push mdjson-schemas-*.gem"
+    "release:gem": "npm run clean && npm run build && gem build adiwg-json_schemas.gemspec && gem push adiwg-mdjson_schemas-*.gem"
   },
   "files": [
     "examples",
