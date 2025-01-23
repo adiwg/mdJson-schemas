@@ -7,6 +7,16 @@
   "required": ["subject", "citation", "responsibleParty"],
   "additionalProperties": true,
   "properties": {
+    "dictionaryId": {
+      "type": "string",
+      "description": "Unique identifier for the dictionary.",
+      "translation": {
+        "ISO 19115-2": ["FC_FeatureCatalogue > identifier > MD_Identifier"],
+        "FGDC CSDGM": ["no translation"],
+        "DCAT": ["no translation"],
+        "sbJSON": ["no translation"]
+      }
+    },
     "citation": {
       "description": "Citation for the dictionary.",
       "$ref": "./citation.json#"
@@ -14,7 +24,12 @@
     "description": {
       "type": "string",
       "description": "A free text description of the contents of the data dictionary.",
-      "translation": {}
+      "translation": {
+        "ISO 19115-2": [],
+        "FGDC CSDGM": ["eainfo > detailed > enttype > enttypd"],
+        "DCAT": ["no translation"],
+        "sbJSON": ["no translation"]
+      }
     },
     "subject": {
       "type": "array",
@@ -46,7 +61,6 @@
       "items": {
         "$ref": "./locale.json"
       }
-
     },
     "responsibleParty": {
       "$ref": "./responsibility.json#",
@@ -60,19 +74,33 @@
     "dictionaryFunctionalLanguage": {
       "type": "string",
       "description": "Formal functional language used in the dictionary.",
-      "translation": {}
+      "translation": {
+        "ISO 19115-2": ["FC_FeatureCatalogue > functionalLanguage"],
+        "FGDC CSDGM": ["no translation"],
+        "DCAT": ["no translation"],
+        "sbJSON": ["no translation"]
+      }
     },
     "dictionaryIncludedWithResource": {
       "type": "boolean",
       "description": "Indication of whether or not the data dictionary is included with the resource.",
       "translation": {
-        "ISO 19115-3": ["MD_FeatureCatalogueDescription > includedWithDataset"]
+        "ISO 19115-3": ["MD_FeatureCatalogueDescription > includedWithDataset"],
+        "FGDC CSDGM": ["eainfo"],
+        "DCAT": ["no translation"],
+        "sbJSON": ["no translation"]
       },
       "default": false
     },
     "domain": {
       "type": "array",
       "description": "A list of permissable values used to constrain an attribute's value.  A single domain may be assigned to multiple attributes in a table or database.",
+      "translation": {
+        "ISO 19115-2": ["FC_FeatureAttribute > listedValue"],
+        "FGDC CSDGM": ["eainfo > detailed > attr > attrdomv"],
+        "DCAT": ["no translation"],
+        "sbJSON": ["no translation"]
+      },
       "items": {
         "$ref": "./domain.json#"
       }
@@ -81,7 +109,10 @@
       "type": "array",
       "description": "Defines the structure of a discrete data object within the data resource.  The data object may be a table, dataset, or single sheet of a spreadsheet.",
       "translation": {
-        "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType"]
+        "ISO 19115-2": ["FC_FeatureCatalogue > featureType > FC_FeatureType"],
+        "FGDC CSDGM": ["eainfo"],
+        "DCAT": ["no translation"],
+        "sbJSON": ["no translation"]
       },
       "items": {
         "$ref": "./entity.json#"

@@ -15,7 +15,7 @@ Use with [ruby-json-schema/json-schema](https://github.com/ruby-json-schema/json
 
 Add this line to your application's Gemfile:
 
-    gem 'adiwg-json_schemas'
+    gem 'adiwg-mdjson_schemas'
 
 And then execute:
 
@@ -23,7 +23,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install adiwg-json_schemas
+    $ gem install adiwg-mdjson_schemas
 
 ## npm
 
@@ -49,6 +49,6 @@ as a workaround you can pre-load all of the schemas by calling `ADIWG::MdjsonSch
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-### Ignore anything below this line
+### See [CONTRIBUTING](CONTRIBUTING.md) file
 
-Just making changes to make changes to something. Trying to resolve merge conflicts.
+View the [CONTRIBUTING.md](CONTRIBUTING.md) file for additional guidelines related to developing mdJson schemas.
