@@ -1,7 +1,7 @@
 {
   "id": "schema.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "version": "2.10.1",
+  "version": "2.10.2",
   "description": "schema for ADIwg mdJSON metadata",
   "example": "../examples/mdJson.json",
   "type": "object",
@@ -56,7 +56,7 @@
         "version": {
           "type": "string",
           "description": "Specific version number of the schema standard.",
-          "pattern": "[0-9]\\.[0-9]\\.[0-9]"
+          "pattern": "[0-9]+\\.[0-9]+\\.[0-9]"
         }
       }
     }
