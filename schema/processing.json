@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "processing.json#",
+  "type": "object",
+  "description": "comprehensive information about the procedure(s), process(es) and algorithm(s) applied in the process step",
+  "example": "../examples/processing.json",
+  "required": ["identifier"],
+  "properties": {
+    "identifier": {
+      "$ref": "./identifier.json#",
+      "description": "information to identify the processing package that produced the data"
+    },
+    "softwareReference": {
+      "$ref": "./citation.json#",
+      "description": "reference to document describing processing software"
+    },
+    "procedureDescription": {
+      "type": "string",
+      "description": "additional details about the processing procedures"
+    },
+    "documentation": {
+      "type": "array",
+      "items": {
+        "$ref": "./citation.json#"
+      },
+      "description": "reference to documentation describing the processing"
+    },
+    "runtimeParameters": {
+      "type": "string",
+      "description": "parameters to control the processing operations, entered at run time"
+    },
+    "algorithm": {
+      "type": "array",
+      "items": {
+        "$ref": "./algorithm.json#"
+      },
+      "description": "details of the methodology by which geographic information was derived from the instrument readings"
+    },
+    "parameter": {
+      "type": "array",
+      "items": {
+        "$ref": "./processParameter.json#"
+      },
+      "description": "details of the methodology by which geographic information was derived from the instrument readings"
+    }
+  }
+}
